@@ -1,0 +1,1259 @@
+{
+  "nodes": [
+    {
+      "id": "min_gerencia_hotelera_002_s1",
+      "label": "KM-MIN-002: Gerencia Hotelera - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-09",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana, Recepcionista"
+    },
+    {
+      "id": "min_adm_finanzas_hotel_juan_001",
+      "label": "KM-MIN-001: Administración y Finanzas (HOTEL-JUAN) - Sesión 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-26",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Juan Herrera"
+    },
+    {
+      "id": "min_gerencia_hotelera_ayb_001_s1",
+      "label": "KM-MIN-001: Gerencia Hotelera (A y B) - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesión 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Emil (jefe cocina), Equipo Calidad Seguimiento y Control"
+    },
+    {
+      "id": "min_gerencia_hotelera_003_s2",
+      "label": "KM-MIN-003: Gerencia Hotelera - Sesión 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesión 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-09",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana, Recepcionista"
+    },
+    {
+      "id": "min_gerencia_hotelera_ayb_003_s1",
+      "label": "KM-MIN-003: Gerencia Hotelera (A y B) - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-25",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana Montes, Michelle Montenegro"
+    },
+    {
+      "id": "min_asesoria_contraloria_001_s1",
+      "label": "KM-MIN-001: Asesoría de Contraloría - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": "María Da Costa (Meche)"
+    },
+    {
+      "id": "min_talento_humano_001_s1",
+      "label": "KM-MIN-001: Talento Humano - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesión 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-02-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": null
+    },
+    {
+      "id": "min_gerencia_hotelera_001_s1",
+      "label": "KM-MIN-001: Gerencia Hotelera - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-02-13",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana"
+    },
+    {
+      "id": "min_talento_humano_002_s1",
+      "label": "KM-MIN-002: Talento Humano - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Andry García"
+    },
+    {
+      "id": "min_operaciones_001_s1",
+      "label": "KM-MIN-001: Operaciones - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesión 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Equipo Calidad Seguimiento y Control"
+    },
+    {
+      "id": "min_asesoria_legal_001_s1",
+      "label": "KM-MIN-001: Asesoría Legal - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": null
+    },
+    {
+      "id": "min_gerencia_hotelera_ayb_003_s2",
+      "label": "KM-MIN-003: Gerencia Hotelera (A y B) - Sesión 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-25",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana Montes, Michelle Montenegro"
+    },
+    {
+      "id": "min_talento_humano_003_s2",
+      "label": "KM-MIN-003: Talento Humano - Sesión 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Andry Garcia"
+    },
+    {
+      "id": "min_adm_fin_compras_almacen_001_s2",
+      "label": "KM-MIN-001: Administración y Finanzas (Dpto. Compras y Almacén) - Sesión 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Víctor Pérez"
+    },
+    {
+      "id": "min_adm_fin_ccs_001_s1",
+      "label": "KM-MIN-001: Administración y Finanzas (CCS) - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (CCS) - Sesió 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-11",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Departamento de Finanzas"
+    },
+    {
+      "id": "min_adm_fin_compras_001_s1",
+      "label": "KM-MIN-001: Administración y Finanzas (Dpto. Compras) - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-02-11",
+      "author": "Rodrigo Gramcko",
+      "contributor": null
+    },
+    {
+      "id": "min_adm_fin_hotel_libny_001_s1",
+      "label": "KM-MIN-001: Administración y Finanzas (HOTEL-LIBNY) - Sesión 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-17",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Administración Koral Ohs"
+    },
+    {
+      "id": "concept_odoo_reimplementacion",
+      "label": "Reimplementación y Migración de Odoo",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_cloudbeds",
+      "label": "Sistema Cloudbeds (PMS Hotelero)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_poster_sistema",
+      "label": "Sistema Poster (Comandas A&B)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_visito_bot",
+      "label": "Visito (Bot de Mensajería IA)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesión 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_nomina_gestion",
+      "label": "Gestión de Nómina y Compensación",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesión 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_cuentas_pagar",
+      "label": "Gestión de Cuentas por Pagar",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_control_inventario",
+      "label": "Control e Inventario de Almacén",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_checkin_process",
+      "label": "Proceso de Check-in de Huéspedes",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_contraloria_procesos",
+      "label": "Procesos de Contraloría y Auditoría",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_tramites_legales",
+      "label": "Trámites Legales y Permisos Empresariales",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_reactivacion_marina",
+      "label": "Reactivación de Marina",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_proceso_compras",
+      "label": "Proceso de Compras y Requisiciones",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_reclutamiento_personal",
+      "label": "Reclutamiento y Gestión de Personal",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_gestion_declaraciones_fiscales",
+      "label": "Gestión de Declaraciones Fiscales y Parafiscales",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_conciliacion_pagos",
+      "label": "Conciliación Bancaria y Pagos",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (CCS) - Sesió 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_operaciones_mantenimiento",
+      "label": "Operaciones y Mantenimiento del Hotel",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesión 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "person_rodrigo_gramcko",
+      "label": "Rodrigo Gramcko (Almus Dev)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "person_adriana_montes",
+      "label": "Adriana Montes (Calidad, Seguimiento y Control)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "person_juan_herrera",
+      "label": "Juan Herrera (Administración)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "person_andry_garcia",
+      "label": "Andry García (Talento Humano)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "person_maria_da_costa",
+      "label": "María Da Costa - Meche (Contraloría)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "person_victor_perez",
+      "label": "Víctor Pérez (Almacén)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "org_almus_dev",
+      "label": "Almus Dev",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "org_koral_hotel",
+      "label": "Hotel Koral Morrocoy",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_gerencia_hotelera_002_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_adm_finanzas_hotel_juan_001",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_gerencia_hotelera_ayb_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesión 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_gerencia_hotelera_003_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesión 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_gerencia_hotelera_ayb_003_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_asesoria_contraloria_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_talento_humano_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesión 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_gerencia_hotelera_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_talento_humano_002_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_operaciones_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesión 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_asesoria_legal_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_gerencia_hotelera_ayb_003_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_talento_humano_003_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_adm_fin_compras_almacen_001_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_adm_fin_ccs_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (CCS) - Sesió 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_adm_fin_compras_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "min_adm_fin_hotel_libny_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_rodrigo_gramcko",
+      "target": "org_almus_dev",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_adriana_montes",
+      "target": "min_gerencia_hotelera_002_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_adriana_montes",
+      "target": "min_gerencia_hotelera_ayb_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesión 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_adriana_montes",
+      "target": "min_gerencia_hotelera_ayb_003_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_adriana_montes",
+      "target": "min_gerencia_hotelera_ayb_003_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_juan_herrera",
+      "target": "min_adm_finanzas_hotel_juan_001",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_andry_garcia",
+      "target": "min_talento_humano_002_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_andry_garcia",
+      "target": "min_talento_humano_003_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_maria_da_costa",
+      "target": "min_asesoria_contraloria_001_s1",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "person_victor_perez",
+      "target": "min_adm_fin_compras_almacen_001_s2",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "concept_cloudbeds",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "concept_checkin_process",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "org_koral_hotel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_003_s2",
+      "target": "concept_visito_bot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesión 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_003_s2",
+      "target": "concept_cloudbeds",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesión 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "concept_cloudbeds",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "concept_visito_bot",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_ayb_003_s1",
+      "target": "concept_poster_sistema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_ayb_001_s1",
+      "target": "org_koral_hotel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesión 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "concept_contraloria_procesos",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "concept_control_inventario",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_talento_humano_001_s1",
+      "target": "concept_nomina_gestion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesión 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_talento_humano_002_s1",
+      "target": "concept_nomina_gestion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_talento_humano_002_s1",
+      "target": "concept_gestion_declaraciones_fiscales",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_talento_humano_003_s2",
+      "target": "concept_reclutamiento_personal",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_talento_humano_003_s2",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_finanzas_hotel_juan_001",
+      "target": "concept_cuentas_pagar",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_compras_almacen_001_s2",
+      "target": "concept_control_inventario",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_compras_almacen_001_s2",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "concept_conciliacion_pagos",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (CCS) - Sesió 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (CCS) - Sesió 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "concept_gestion_declaraciones_fiscales",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (CCS) - Sesió 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_compras_001_s1",
+      "target": "concept_proceso_compras",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_compras_001_s1",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_conciliacion_pagos",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_poster_sistema",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_cloudbeds",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_asesoria_legal_001_s1",
+      "target": "concept_tramites_legales",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_asesoria_legal_001_s1",
+      "target": "concept_reactivacion_marina",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_operaciones_001_s1",
+      "target": "concept_operaciones_mantenimiento",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesión 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_operaciones_001_s1",
+      "target": "concept_proceso_compras",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesión 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "min_gerencia_hotelera_ayb_003_s1",
+      "target": "min_gerencia_hotelera_ayb_003_s2",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesión 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "weight": 0.9
+    },
+    {
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "min_gerencia_hotelera_003_s2",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesión 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "min_talento_humano_001_s1",
+      "target": "min_talento_humano_002_s1",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "min_talento_humano_002_s1",
+      "target": "min_talento_humano_003_s2",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "concept_cloudbeds",
+      "target": "concept_odoo_reimplementacion",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "concept_nomina_gestion",
+      "target": "concept_gestion_declaraciones_fiscales",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesión 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 0.8
+    },
+    {
+      "source": "concept_cuentas_pagar",
+      "target": "concept_conciliacion_pagos",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "concept_proceso_compras",
+      "target": "concept_control_inventario",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administración y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 0.85
+    },
+    {
+      "source": "concept_contraloria_procesos",
+      "target": "concept_conciliacion_pagos",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría de Contraloría - Sesión 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 0.75
+    },
+    {
+      "source": "concept_tramites_legales",
+      "target": "concept_reactivacion_marina",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesoría Legal - Sesión 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_poster_sistema",
+      "target": "concept_cloudbeds",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "org_almus_dev",
+      "target": "org_koral_hotel",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "concept_reclutamiento_personal",
+      "target": "concept_nomina_gestion",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesión 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 0.7
+    },
+    {
+      "source": "concept_checkin_process",
+      "target": "concept_cloudbeds",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesión 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "odoo_reimplementacion_cross_departamental",
+      "label": "Reimplementación de Odoo como eje transversal a todos los departamentos del hotel",
+      "nodes": [
+        "concept_odoo_reimplementacion",
+        "min_gerencia_hotelera_001_s1",
+        "min_asesoria_contraloria_001_s1",
+        "min_adm_fin_compras_001_s1",
+        "min_talento_humano_003_s2",
+        "min_adm_fin_ccs_001_s1",
+        "min_adm_fin_hotel_libny_001_s1"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md"
+    },
+    {
+      "id": "rodrigo_gramcko_levantamiento_procesos",
+      "label": "Rodrigo Gramcko lidera sesiones de levantamiento de procesos en todos los departamentos",
+      "nodes": [
+        "person_rodrigo_gramcko",
+        "org_almus_dev",
+        "org_koral_hotel",
+        "min_gerencia_hotelera_001_s1",
+        "min_talento_humano_001_s1",
+        "min_asesoria_contraloria_001_s1",
+        "min_operaciones_001_s1"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md"
+    },
+    {
+      "id": "sistemas_operativos_hotel_integracion",
+      "label": "Sistemas operativos del hotel (Cloudbeds, Poster, Visito) deben integrarse en Odoo",
+      "nodes": [
+        "concept_cloudbeds",
+        "concept_poster_sistema",
+        "concept_visito_bot",
+        "concept_odoo_reimplementacion"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/Núcleos del Proyecto/📁 Gestión de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesión 1 329653cd4151807f9627d392ddd8d5f0.md"
+    }
+  ],
+  "input_tokens": 42000,
+  "output_tokens": 4500
+}

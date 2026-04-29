@@ -1,0 +1,334 @@
+{
+  "communities": {
+    "0": [
+      "andry_garcia_rrhh",
+      "asis_operaciones",
+      "asis_talento_humano",
+      "cierre_quincenal",
+      "cloudbeds_pms",
+      "excel_herramienta",
+      "inatur_ente",
+      "odoo_erp",
+      "pago_anticipado",
+      "proceso_checkin",
+      "proceso_conciliacion_bancaria",
+      "proceso_facturacion_compras",
+      "reporte_venetur_inatur",
+      "richard_operaciones",
+      "seniat_ente",
+      "serac_empresa",
+      "venetur_ente",
+      "whatsapp_comunicacion"
+    ],
+    "1": [
+      "asis_admin_ccs",
+      "asis_admin_hotel_juan",
+      "asis_admin_hotel_libny",
+      "asis_asesor_legal",
+      "asis_controloria",
+      "erika_finanzas",
+      "guia_sunagro",
+      "inventario_admin_ccs",
+      "inventario_ciclico",
+      "juan_herrera",
+      "libny_administracion",
+      "meche_controloria",
+      "minuta_km_min_001_admin_juan",
+      "minuta_km_min_001_admin_libny",
+      "poster_pos",
+      "registro_diario_estacionamiento",
+      "rodrigo_gramcko"
+    ],
+    "2": [
+      "asis_bar_servicio",
+      "asis_caja",
+      "asis_cocina",
+      "asis_compras_almacen",
+      "douglas_capitan_fb",
+      "emil_jefe_cocina",
+      "inventario_compras_almacen",
+      "minuta_km_min_002_gerencia",
+      "proceso_comanda",
+      "proceso_compras_flujo",
+      "proceso_requisicion",
+      "victor_perez_almacen"
+    ],
+    "3": [
+      "cloudbeds",
+      "gestion_de_proyecto",
+      "hotel_koral",
+      "inventario_adm_finanzas_libny",
+      "inventario_gerencia_hotelera",
+      "microsoft_teams",
+      "minutas_koral",
+      "poster",
+      "visito"
+    ],
+    "4": [
+      "desarrollos",
+      "imo",
+      "imo_documentos_asis_tobe",
+      "imo_pre_implementacion",
+      "implementacion",
+      "inventario_adm_finanzas_juan",
+      "odoo",
+      "procesos"
+    ],
+    "5": [
+      "departamento_ayb",
+      "departamento_operaciones",
+      "imo_documentos_inventario",
+      "inventario_ayb_bar",
+      "inventario_ayb_caja",
+      "inventario_ayb_cocina",
+      "inventario_operaciones"
+    ],
+    "6": [
+      "concept_gestion_declaraciones_fiscales",
+      "concept_nomina_gestion",
+      "concept_reclutamiento_personal",
+      "min_talento_humano_001_s1",
+      "min_talento_humano_002_s1",
+      "min_talento_humano_003_s2",
+      "person_andry_garcia"
+    ],
+    "7": [
+      "min_gerencia_hotelera_ayb_001_s1",
+      "min_gerencia_hotelera_ayb_003_s1",
+      "min_gerencia_hotelera_ayb_003_s2",
+      "org_almus_dev",
+      "org_koral_hotel",
+      "person_adriana_montes",
+      "person_rodrigo_gramcko"
+    ],
+    "8": [
+      "concept_contraloria_procesos",
+      "concept_control_inventario",
+      "min_adm_fin_compras_almacen_001_s2",
+      "min_asesoria_contraloria_001_s1",
+      "person_maria_da_costa",
+      "person_victor_perez"
+    ],
+    "9": [
+      "concept_checkin_process",
+      "concept_cloudbeds",
+      "concept_visito_bot",
+      "min_gerencia_hotelera_001_s1",
+      "min_gerencia_hotelera_002_s1",
+      "min_gerencia_hotelera_003_s2"
+    ],
+    "10": [
+      "departamento_adm_finanzas",
+      "departamento_talento_humano",
+      "inventario_asesor_contraloria",
+      "inventario_asesor_legal",
+      "inventario_talento_humano"
+    ],
+    "11": [
+      "concept_conciliacion_pagos",
+      "concept_odoo_reimplementacion",
+      "concept_poster_sistema",
+      "min_adm_fin_ccs_001_s1",
+      "min_adm_fin_hotel_libny_001_s1"
+    ],
+    "12": [
+      "capacitacion",
+      "competencias_organizacionales",
+      "encuestas_liderazgo",
+      "gestion_de_cambio"
+    ],
+    "13": [
+      "concept_operaciones_mantenimiento",
+      "concept_proceso_compras",
+      "min_adm_fin_compras_001_s1",
+      "min_operaciones_001_s1"
+    ],
+    "14": [
+      "concept_cuentas_pagar",
+      "min_adm_finanzas_hotel_juan_001",
+      "person_juan_herrera"
+    ],
+    "15": [
+      "concept_reactivacion_marina",
+      "concept_tramites_legales",
+      "min_asesoria_legal_001_s1"
+    ],
+    "16": [
+      "adriana_operaciones",
+      "asis_gerencia_hotelera"
+    ],
+    "17": [
+      "cloudways_hosting"
+    ],
+    "18": [
+      "joseline_asistente"
+    ]
+  },
+  "cohesion": {
+    "0": 0.11,
+    "1": 0.13,
+    "2": 0.23,
+    "3": 0.28,
+    "4": 0.29,
+    "5": 0.52,
+    "6": 0.48,
+    "7": 0.48,
+    "8": 0.33,
+    "9": 0.53,
+    "10": 0.6,
+    "11": 0.5,
+    "12": 0.5,
+    "13": 0.5,
+    "14": 0.67,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0
+  },
+  "gods": [
+    {
+      "id": "person_rodrigo_gramcko",
+      "label": "Rodrigo Gramcko (Almus Dev)",
+      "degree": 18
+    },
+    {
+      "id": "imo_documentos_inventario",
+      "label": "Documentos (Inventario) IMO",
+      "degree": 11
+    },
+    {
+      "id": "odoo",
+      "label": "Odoo (ERP)",
+      "degree": 9
+    },
+    {
+      "id": "inventario_adm_finanzas_libny",
+      "label": "Inventario: Administraci\u00f3n y Finanzas (HOTEL-Libny)",
+      "degree": 8
+    },
+    {
+      "id": "inventario_gerencia_hotelera",
+      "label": "Inventario: Gerencia Hotelera",
+      "degree": 8
+    },
+    {
+      "id": "concept_odoo_reimplementacion",
+      "label": "Reimplementaci\u00f3n y Migraci\u00f3n de Odoo",
+      "degree": 8
+    },
+    {
+      "id": "concept_cloudbeds",
+      "label": "Sistema Cloudbeds (PMS Hotelero)",
+      "degree": 7
+    },
+    {
+      "id": "min_gerencia_hotelera_002_s1",
+      "label": "KM-MIN-002: Gerencia Hotelera - Sesi\u00f3n 1",
+      "degree": 6
+    },
+    {
+      "id": "min_talento_humano_002_s1",
+      "label": "KM-MIN-002: Talento Humano - Sesi\u00f3n 1",
+      "degree": 6
+    },
+    {
+      "id": "imo",
+      "label": "I.M.O. (Inventario, Mapeo, Operaciones)",
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "I.M.O. (Inventario, Mapeo, Operaciones)",
+      "target": "Procesos",
+      "source_files": [
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udccb Procesos 31f653cd415180a096f8f0ed166a60cd.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link; peripheral node `Procesos` unexpectedly reaches hub `I.M.O. (Inventario, Mapeo, Operaciones)`"
+    },
+    {
+      "source": "Inventario: Administraci\u00f3n y Finanzas (HOTEL-Juan)",
+      "target": "Inventario: Administraci\u00f3n y Finanzas (HOTEL-Libny)",
+      "source_files": [
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Juan) 32f653cd415180018911ecde2842cd8b.md",
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Sistema Cloudbeds (PMS Hotelero)",
+      "target": "Reimplementaci\u00f3n y Migraci\u00f3n de Odoo",
+      "source_files": [
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Gesti\u00f3n de Cuentas por Pagar",
+      "target": "Conciliaci\u00f3n Bancaria y Pagos",
+      "source_files": [
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "Gesti\u00f3n de Cambio",
+      "target": "Capacitaci\u00f3n",
+      "source_files": [
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+        "Privado y Compartido/N\u00facleos del Proyecto/\ud83c\udf93 Capacitaci\u00f3n 31f653cd415180caafeace02896abb9b.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    }
+  ],
+  "questions": [
+    {
+      "type": "ambiguous_edge",
+      "question": "What is the exact relationship between `AS-IS Talento Humano` and `Venetur`?",
+      "why": "Edge tagged AMBIGUOUS (relation: references) - confidence is low."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Rodrigo Gramcko (Almus Dev)` connect `Community 7` to `Community 6`, `Community 8`, `Community 9`, `Community 11`, `Community 13`, `Community 14`, `Community 15`?",
+      "why": "High betweenness centrality (0.071) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Odoo (ERP)` connect `Community 4` to `Community 10`, `Community 3`, `Community 12`?",
+      "why": "High betweenness centrality (0.027) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Documentos (Inventario) IMO` connect `Community 5` to `Community 10`, `Community 3`, `Community 4`?",
+      "why": "High betweenness centrality (0.023) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `Inventario: Administraci\u00f3n y Finanzas (HOTEL-Libny)` (e.g. with `Inventario: Administraci\u00f3n y Finanzas (HOTEL-Juan)` and `Hotel Koral Morrocoy`) actually correct?",
+      "why": "`Inventario: Administraci\u00f3n y Finanzas (HOTEL-Libny)` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Capacitaci\u00f3n`, `Desarrollos`, `Visito (Messaging Platform)` to the rest of the system?",
+      "why": "13 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

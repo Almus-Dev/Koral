@@ -1,0 +1,4341 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "ayb_comanda_flow",
+        "label": "A&B Comanda Processing Flow (Caja, Bar, Cocina)",
+        "nodes": [
+          "inventario_ayb_caja",
+          "inventario_ayb_bar",
+          "inventario_ayb_cocina"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md"
+      },
+      {
+        "id": "odoo_adoption_project_nucleos",
+        "label": "Odoo Adoption Project Core Nuclei (IMO, Implementaci\u00f3n, Procesos, Desarrollos)",
+        "nodes": [
+          "imo",
+          "implementacion",
+          "procesos",
+          "desarrollos"
+        ],
+        "relation": "form",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\u2699\ufe0f Implementaci\u00f3n 31f653cd41518081bebfe6b5d45a23e7.md"
+      },
+      {
+        "id": "adm_finanzas_cash_reconciliation",
+        "label": "Administration & Finance Cash Reconciliation Flow (Libny, Juan, Contralor\u00eda)",
+        "nodes": [
+          "inventario_adm_finanzas_libny",
+          "inventario_adm_finanzas_juan",
+          "inventario_asesor_contraloria"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md"
+      },
+      {
+        "id": "h001",
+        "label": "F&B Operations Triad",
+        "nodes": [
+          "asis_cocina",
+          "asis_bar_servicio",
+          "asis_caja"
+        ],
+        "relation": "jointly_constitute",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "attributes": {
+          "rationale": "Kitchen, Bar/Service, and Caja together constitute the complete F&B service operation at Koral Morrocoy. They share a single broken printer bottleneck, the same comanda flow, the same requisition path to Almac\u00e9n, and the same goal of digitalizing orders via Poster on tablets. No pairwise edge fully captures this three-way operational dependency."
+        }
+      },
+      {
+        "id": "h002",
+        "label": "Financial Close Cycle",
+        "nodes": [
+          "cierre_quincenal",
+          "proceso_facturacion_compras",
+          "proceso_conciliacion_bancaria",
+          "odoo_erp"
+        ],
+        "relation": "forms_closure_cycle",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.9,
+        "attributes": {
+          "rationale": "The biweekly fiscal close, purchase billing process, bank reconciliation, and Odoo together form a single compliance cycle that cannot be described pairwise: the close triggers reconciliation, reconciliation validates billing, billing is registered in Odoo, and Odoo feeds the close report. The four-way relationship adds information beyond any pairwise combination."
+        }
+      },
+      {
+        "id": "h003",
+        "label": "Hotel Admin Data Hub",
+        "nodes": [
+          "libny_administracion",
+          "cloudbeds_pms",
+          "odoo_erp",
+          "reporte_venetur_inatur"
+        ],
+        "relation": "forms_reporting_hub",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "attributes": {
+          "rationale": "Libny acts as the sole human integration point between Cloudbeds (guest data) and Odoo (financial data), combining both to produce the Venetur/Inatur daily report. This four-node hub is a single point of failure: if Libny is unavailable, the mandatory regulatory reporting chain breaks entirely. The group relationship adds risk context beyond pairwise edges."
+        }
+      },
+      {
+        "id": "odoo_reimplementacion_cross_departamental",
+        "label": "Reimplementaci\u00f3n de Odoo como eje transversal a todos los departamentos del hotel",
+        "nodes": [
+          "concept_odoo_reimplementacion",
+          "min_gerencia_hotelera_001_s1",
+          "min_asesoria_contraloria_001_s1",
+          "min_adm_fin_compras_001_s1",
+          "min_talento_humano_003_s2",
+          "min_adm_fin_ccs_001_s1",
+          "min_adm_fin_hotel_libny_001_s1"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+      },
+      {
+        "id": "rodrigo_gramcko_levantamiento_procesos",
+        "label": "Rodrigo Gramcko lidera sesiones de levantamiento de procesos en todos los departamentos",
+        "nodes": [
+          "person_rodrigo_gramcko",
+          "org_almus_dev",
+          "org_koral_hotel",
+          "min_gerencia_hotelera_001_s1",
+          "min_talento_humano_001_s1",
+          "min_asesoria_contraloria_001_s1",
+          "min_operaciones_001_s1"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+      },
+      {
+        "id": "sistemas_operativos_hotel_integracion",
+        "label": "Sistemas operativos del hotel (Cloudbeds, Poster, Visito) deben integrarse en Odoo",
+        "nodes": [
+          "concept_cloudbeds",
+          "concept_poster_sistema",
+          "concept_visito_bot",
+          "concept_odoo_reimplementacion"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Gesti\u00f3n de Cambio",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "rationale": "Concentra documentos de an\u00e1lisis y acompa\u00f1amiento para asegurar la adopci\u00f3n de Odoo por parte del equipo. Incluye an\u00e1lisis de competencias organizacionales y encuestas de liderazgo para medir disposici\u00f3n al cambio e identificar \u00e1reas prioritarias de acompa\u00f1amiento.",
+      "id": "gestion_de_cambio",
+      "community": 12,
+      "norm_label": "gestion de cambio"
+    },
+    {
+      "label": "Capacitaci\u00f3n",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83c\udf93 Capacitaci\u00f3n 31f653cd415180caafeace02896abb9b.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "id": "capacitacion",
+      "community": 12,
+      "norm_label": "capacitacion"
+    },
+    {
+      "label": "I.M.O. (Inventario, Mapeo, Operaciones)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "rationale": "Documenta c\u00f3mo opera la organizaci\u00f3n hoy y hacia d\u00f3nde evoluciona con Odoo. Se organiza por departamento con inventario de tareas y documento AS-IS + TO-BE, permitiendo comparar estado actual con propuesta de mejora sin documentos separados.",
+      "id": "imo",
+      "community": 4,
+      "norm_label": "i.m.o. (inventario, mapeo, operaciones)"
+    },
+    {
+      "label": "Gesti\u00f3n de Proyecto",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto 31f653cd415180fcbea1f6d2b6a6e732.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "rationale": "Lleva el seguimiento operativo del proyecto. Contiene calendario de reuniones e hitos y lista de minutas con prop\u00f3sito, acuerdos, compromisos y pr\u00f3ximos pasos.",
+      "id": "gestion_de_proyecto",
+      "community": 3,
+      "norm_label": "gestion de proyecto"
+    },
+    {
+      "label": "Procesos",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udccb Procesos 31f653cd415180a096f8f0ed166a60cd.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "rationale": "Documentaci\u00f3n final de c\u00f3mo opera cada proceso dentro de Odoo. Material de consulta diaria post Go-Live. Organizado en flujos de proceso y manuales de usuario.",
+      "id": "procesos",
+      "community": 4,
+      "norm_label": "procesos"
+    },
+    {
+      "label": "Desarrollos",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcbb Desarrollos 31f653cd41518028852eceb06829af4d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "rationale": "Registra cada personalizaci\u00f3n o desarrollo t\u00e9cnico acordado en el proyecto. Cada entrada documenta la aplicaci\u00f3n, concepto y alcance preciso, con trazabilidad completa desde especificaci\u00f3n hasta entrega.",
+      "id": "desarrollos",
+      "community": 4,
+      "norm_label": "desarrollos"
+    },
+    {
+      "label": "Implementaci\u00f3n",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\u2699\ufe0f Implementaci\u00f3n 31f653cd41518081bebfe6b5d45a23e7.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": null,
+      "contributor": null,
+      "rationale": "Registra todo lo configurado y parametrizado en Odoo durante el proyecto, organizado por aplicaci\u00f3n. Documento de referencia t\u00e9cnica post Go-Live para equipo consultor y cliente.",
+      "id": "implementacion",
+      "community": 4,
+      "norm_label": "implementacion"
+    },
+    {
+      "label": "Inventario: A y B (Caja)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_ayb_caja",
+      "community": 5,
+      "norm_label": "inventario: a y b (caja)"
+    },
+    {
+      "label": "Inventario: Operaciones",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Operaciones 32d653cd41518091b6dcedfe1d696b9b.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_operaciones",
+      "community": 5,
+      "norm_label": "inventario: operaciones"
+    },
+    {
+      "label": "Inventario: Administraci\u00f3n y Finanzas (HOTEL-Libny)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-18",
+      "author": null,
+      "contributor": "Libny",
+      "id": "inventario_adm_finanzas_libny",
+      "community": 3,
+      "norm_label": "inventario: administracion y finanzas (hotel-libny)"
+    },
+    {
+      "label": "Inventario: A y B (Bar)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Bar) 32d653cd415180bbb1cedd702a688ae2.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_ayb_bar",
+      "community": 5,
+      "norm_label": "inventario: a y b (bar)"
+    },
+    {
+      "label": "Inventario: Administraci\u00f3n y Finanzas (HOTEL-Juan)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Juan) 32f653cd415180018911ecde2842cd8b.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-26",
+      "author": null,
+      "contributor": "Juan",
+      "id": "inventario_adm_finanzas_juan",
+      "community": 4,
+      "norm_label": "inventario: administracion y finanzas (hotel-juan)"
+    },
+    {
+      "label": "Inventario: Asesor de Contralor\u00eda",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor de contraloria 326653cd415180309e92f3c66522a0c1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-17",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_asesor_contraloria",
+      "community": 10,
+      "norm_label": "inventario: asesor de contraloria"
+    },
+    {
+      "label": "Inventario: Talento Humano",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Talento Humano 326653cd415180409154d6e27411e753.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-17",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_talento_humano",
+      "community": 10,
+      "norm_label": "inventario: talento humano"
+    },
+    {
+      "label": "Inventario: Gerencia Hotelera",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-17",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_gerencia_hotelera",
+      "community": 3,
+      "norm_label": "inventario: gerencia hotelera"
+    },
+    {
+      "label": "Inventario: A y B (Cocina)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Cocina) 32d653cd415180c89585ec433013f0a5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_ayb_cocina",
+      "community": 5,
+      "norm_label": "inventario: a y b (cocina)"
+    },
+    {
+      "label": "Inventario: Asesor Legal",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor Legal 326653cd415180cd85e8ec4e9bd6137e.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-17",
+      "author": null,
+      "contributor": null,
+      "id": "inventario_asesor_legal",
+      "community": 10,
+      "norm_label": "inventario: asesor legal"
+    },
+    {
+      "label": "Odoo (ERP)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\u2699\ufe0f Implementaci\u00f3n 31f653cd41518081bebfe6b5d45a23e7.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "odoo",
+      "community": 4,
+      "norm_label": "odoo (erp)"
+    },
+    {
+      "label": "Cloudbeds (PMS)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "cloudbeds",
+      "community": 3,
+      "norm_label": "cloudbeds (pms)"
+    },
+    {
+      "label": "Poster (POS System)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "poster",
+      "community": 3,
+      "norm_label": "poster (pos system)"
+    },
+    {
+      "label": "Microsoft Teams",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "microsoft_teams",
+      "community": 3,
+      "norm_label": "microsoft teams"
+    },
+    {
+      "label": "Visito (Messaging Platform)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "visito",
+      "community": 3,
+      "norm_label": "visito (messaging platform)"
+    },
+    {
+      "label": "An\u00e1lisis de Competencias Organizacionales",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "competencias_organizacionales",
+      "community": 12,
+      "norm_label": "analisis de competencias organizacionales"
+    },
+    {
+      "label": "Encuestas de Liderazgo",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "encuestas_liderazgo",
+      "community": 12,
+      "norm_label": "encuestas de liderazgo"
+    },
+    {
+      "label": "Minutas Koral Morrocoy",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto 31f653cd415180fcbea1f6d2b6a6e732.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "minutas_koral",
+      "community": 3,
+      "norm_label": "minutas koral morrocoy"
+    },
+    {
+      "label": "Pre-Implementaci\u00f3n (IMO)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "imo_pre_implementacion",
+      "community": 4,
+      "norm_label": "pre-implementacion (imo)"
+    },
+    {
+      "label": "Documentos (Inventario) IMO",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "imo_documentos_inventario",
+      "community": 5,
+      "norm_label": "documentos (inventario) imo"
+    },
+    {
+      "label": "Documentos AS-IS + TO-BE IMO",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "imo_documentos_asis_tobe",
+      "community": 4,
+      "norm_label": "documentos as-is + to-be imo"
+    },
+    {
+      "label": "Departamento de Alimentos y Bebidas (A&B)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "departamento_ayb",
+      "community": 5,
+      "norm_label": "departamento de alimentos y bebidas (a&b)"
+    },
+    {
+      "label": "Departamento de Administraci\u00f3n y Finanzas",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "departamento_adm_finanzas",
+      "community": 10,
+      "norm_label": "departamento de administracion y finanzas"
+    },
+    {
+      "label": "Departamento de Talento Humano",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Talento Humano 326653cd415180409154d6e27411e753.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "departamento_talento_humano",
+      "community": 10,
+      "norm_label": "departamento de talento humano"
+    },
+    {
+      "label": "Departamento de Operaciones",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Operaciones 32d653cd41518091b6dcedfe1d696b9b.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "departamento_operaciones",
+      "community": 5,
+      "norm_label": "departamento de operaciones"
+    },
+    {
+      "label": "Hotel Koral Morrocoy",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto 31f653cd415180fcbea1f6d2b6a6e732.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "hotel_koral",
+      "community": 3,
+      "norm_label": "hotel koral morrocoy"
+    },
+    {
+      "label": "Inventario Administraci\u00f3n y Finanzas CCS",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Process inventory document for CCS Administration & Finance covering 6 areas: banking ops, supplier payments, tax obligations, accounting in Odoo, master data configuration, intercompany inventory updates",
+        "department": "Administraci\u00f3n y Finanzas",
+        "location": "CCS",
+        "areas_count": 6
+      },
+      "id": "inventario_admin_ccs",
+      "community": 1,
+      "norm_label": "inventario administracion y finanzas ccs"
+    },
+    {
+      "label": "Inventario Compras y Almac\u00e9n",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Process inventory for Purchases & Warehouse covering supplier creation (jur\u00eddico, natural, jur\u00eddico with natural bank account), product creation, quote comparison, document request, biweekly order review, reimbursement support, framework agreements",
+        "department": "Compras y Almac\u00e9n"
+      },
+      "id": "inventario_compras_almacen",
+      "community": 2,
+      "norm_label": "inventario compras y almacen"
+    },
+    {
+      "label": "AS-IS Inventario A y B (CAJA)",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS document for Box/Register area of F&B. Covers 18+ tasks: guest list verification, breakfast service, cava management, requisition process, afternoon shift. Kitchen printer broken forces all print through register printer.",
+        "department": "Alimentos y Bebidas",
+        "subdepartment": "Caja",
+        "critical_issue": "Kitchen printer broken; internet intermittency disrupts command flow"
+      },
+      "id": "asis_caja",
+      "community": 2,
+      "norm_label": "as-is inventario a y b (caja)"
+    },
+    {
+      "label": "AS-IS Asesor Legal",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Legal Advisor covering 12 tasks: statute updates, vessel licenses, fire permits, INSASEL registration, marina reactivation. Rodrigo Gramcko is sole executor of all legal tasks with no formal document management system.",
+        "department": "Asesor\u00eda Legal",
+        "sole_executor": "rodrigo_gramcko"
+      },
+      "id": "asis_asesor_legal",
+      "community": 1,
+      "norm_label": "as-is asesor legal"
+    },
+    {
+      "label": "AS-IS Administraci\u00f3n y Finanzas Hotel (Juan)",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Hotel Admin Juan covering Phase 1: Billing in Purchases. Tasks include SENIAT document validation, exceptional purchase orders, order validation before import to invoice.",
+        "department": "Administraci\u00f3n y Finanzas",
+        "location": "Hotel",
+        "responsible": "juan_herrera"
+      },
+      "id": "asis_admin_hotel_juan",
+      "community": 1,
+      "norm_label": "as-is administracion y finanzas hotel (juan)"
+    },
+    {
+      "label": "AS-IS Asesor Contralor\u00eda",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Controller covering 14 task groups: departmental supervision, operations monitoring, monthly financial analysis, results reporting, work plans, risk identification, cyclic inventory coordination, system inventory verification, inventory depuration, advisory services, audit coordination, fiscal audit, document organization, banking user admin, payment execution, inventory/accounting book downloads. Department currently inactive.",
+        "department": "Contralor\u00eda",
+        "responsible": "meche_controloria",
+        "status": "currently_inactive",
+        "critical_issue": "Retroactive modifications to closed periods making reports unreliable; Odoo parametrization errors"
+      },
+      "id": "asis_controloria",
+      "community": 1,
+      "norm_label": "as-is asesor contraloria"
+    },
+    {
+      "label": "AS-IS Compras y Almac\u00e9n",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Purchases & Warehouse. Victor P\u00e9rez manages warehouse. Flow: Victor counts \u2192 Sr. Alberto (GG) approves \u2192 communicates to Compras via WhatsApp \u2192 orders placed \u2192 Victor receives & validates against Odoo \u2192 enters in Odoo \u2192 notifies Compras. Sr. Alberto orders on weekends disrupting price comparison.",
+        "department": "Compras y Almac\u00e9n",
+        "warehouse_manager": "victor_perez_almacen",
+        "critical_issue": "Sr. Alberto orders on weekends disrupting price comparison and days off"
+      },
+      "id": "asis_compras_almacen",
+      "community": 2,
+      "norm_label": "as-is compras y almacen"
+    },
+    {
+      "label": "AS-IS Inventario A y B (Cocina)",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Kitchen covering all meal phases (breakfast 1.1-1.5, lunch 2.1-2.5, snacks 3.1-3.4, requisitions 4.1-4.6, dinner 5.1-5.4, cleaning 6.1-6.3, protein processing 7.1-7.5). Requisition flow: format \u2192 Gerencia Operaciones sign \u2192 Almac\u00e9n delivers & signs.",
+        "department": "Cocina",
+        "responsible": "emil_jefe_cocina",
+        "morning_opener": "falcon_cocina"
+      },
+      "id": "asis_cocina",
+      "community": 2,
+      "norm_label": "as-is inventario a y b (cocina)"
+    },
+    {
+      "label": "AS-IS Operaciones",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Operations covering pool tasks, landscaping, maintenance requests, electrical tasks, water tank, gasoil tank, gas tank, well/water pump, sewage pumps. Richard doesn't use Odoo; no admin assistant; communication bottleneck.",
+        "department": "Operaciones",
+        "responsible": "richard_operaciones",
+        "critical_issue": "Richard doesn't use Odoo; no admin assistant; communication bottleneck"
+      },
+      "id": "asis_operaciones",
+      "community": 0,
+      "norm_label": "as-is operaciones"
+    },
+    {
+      "label": "AS-IS Talento Humano",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for HR covering parafiscal documentation (IVSS, INCES, FAOV, MPPPST): monthly portal review, solvency downloads, payment commitment reporting.",
+        "department": "Talento Humano",
+        "responsible": "andry_garcia_rrhh"
+      },
+      "id": "asis_talento_humano",
+      "community": 0,
+      "norm_label": "as-is talento humano"
+    },
+    {
+      "label": "AS-IS Inventario A y B (Bar)",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Bar/Service area covering all meal phases. Tablets cannot send orders directly to kitchen due to network problems; manual paper comandas used as workaround. Key desire: mesoneros tablet to kitchen directly, freeing caja for billing only.",
+        "department": "Alimentos y Bebidas",
+        "subdepartment": "Bar/Servicio",
+        "responsible": "douglas_capitan_fb",
+        "critical_issue": "Tablets cannot send orders directly to kitchen due to network problems"
+      },
+      "id": "asis_bar_servicio",
+      "community": 2,
+      "norm_label": "as-is inventario a y b (bar)"
+    },
+    {
+      "label": "AS-IS Administraci\u00f3n y Finanzas Hotel (Libny)",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Hotel Admin Libny covering Phase 1: Daily cash register closes. Tasks include bank payment verification via portal, Cloudbeds xlsx activity report export and validation. Libny has sole access to banking portals.",
+        "department": "Administraci\u00f3n y Finanzas",
+        "location": "Hotel",
+        "responsible": "libny_administracion",
+        "critical_issue": "Single point of failure: Libny sole access to banking portals"
+      },
+      "id": "asis_admin_hotel_libny",
+      "community": 1,
+      "norm_label": "as-is administracion y finanzas hotel (libny)"
+    },
+    {
+      "label": "AS-IS Administraci\u00f3n y Finanzas CCS",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for CCS Admin covering banking operations (daily availability, payment planning, rate monitoring, POS tracking, account openings) and supplier payments (platform payments, retention reimbursements, urgent purchases, fuel/rent payments). Communication risk via personal WhatsApp instead of corporate channels.",
+        "department": "Administraci\u00f3n y Finanzas",
+        "location": "CCS",
+        "responsible": "erika_finanzas",
+        "critical_issue": "Communication via personal WhatsApp instead of corporate channels"
+      },
+      "id": "asis_admin_ccs",
+      "community": 1,
+      "norm_label": "as-is administracion y finanzas ccs"
+    },
+    {
+      "label": "AS-IS Gerencia Hotelera",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Current-state AS-IS for Hotel Management covering check-in process (walk-in and reservation-based) and guest data registration in Cloudbeds. Special cases: institutional reservations (no charge), Family & Friends (special rate from Rafael), Venetur alliance guests.",
+        "department": "Gerencia Hotelera",
+        "responsible": "adriana_operaciones",
+        "systems": [
+          "cloudbeds_pms",
+          "bcv_tasa"
+        ]
+      },
+      "id": "asis_gerencia_hotelera",
+      "community": 16,
+      "norm_label": "as-is gerencia hotelera"
+    },
+    {
+      "label": "KM-MIN-002: Gerencia Hotelera (A y B) - Sesi\u00f3n 1",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Meeting minutes March 25, 2026 between Rodrigo Gramcko, Adriana Montes, Douglas for F&B process lifting. Covers all meal phases, inventory, digitalization needs. Key finding: need for mesonero-to-kitchen direct tablet ordering. Standard inventory for 50 persons. 2 tablets available, need at least 1 more.",
+        "date": "2026-03-25",
+        "attendees": [
+          "rodrigo_gramcko",
+          "adriana_operaciones",
+          "douglas_capitan_fb"
+        ],
+        "tablets_available": 2,
+        "tablets_needed": 3
+      },
+      "id": "minuta_km_min_002_gerencia",
+      "community": 2,
+      "norm_label": "km-min-002: gerencia hotelera (a y b) - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (HOTEL-JUAN) - Sesi\u00f3n 1",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Meeting minutes March 26, 2026 with Juan Herrera covering purchase billing and biweekly fiscal close. Key data: 56 invoices per biweekly close, ~500 bank movements monthly, 25 open orders in Compras vs 18 in CxP. Payment maturity trend: 2023=0% with invoice, 2024=60%, 2025=90% with invoice.",
+        "date": "2026-03-26",
+        "attendees": [
+          "rodrigo_gramcko",
+          "juan_herrera"
+        ],
+        "invoices_per_close": 56,
+        "monthly_bank_movements": 500,
+        "open_orders_compras": 25,
+        "open_orders_cxp": 18
+      },
+      "id": "minuta_km_min_001_admin_juan",
+      "community": 1,
+      "norm_label": "km-min-001: administracion y finanzas (hotel-juan) - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (HOTEL-LIBNY) - Sesi\u00f3n 2",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Meeting minutes March 17, 2026 with Rodrigo, Juan, Libni covering admin process lifting: occupancy reports for Venetur/Inatur (critical), bank reconciliation, inventory management, rental/lease invoicing, platform management (Odoo, Cloudways, Poster), manual formats, parking closes, technology integration. Parking rates: 5\u20ac small, 10\u20ac medium, 20\u20ac bus.",
+        "date": "2026-03-17",
+        "attendees": [
+          "rodrigo_gramcko",
+          "juan_herrera",
+          "libny_administracion"
+        ],
+        "parking_rate_small": "5 EUR",
+        "parking_rate_medium": "10 EUR",
+        "parking_rate_bus": "20 EUR"
+      },
+      "id": "minuta_km_min_001_admin_libny",
+      "community": 1,
+      "norm_label": "km-min-001: administracion y finanzas (hotel-libny) - sesion 2"
+    },
+    {
+      "label": "Odoo ERP",
+      "type": "system",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Central ERP system used across all departments at Koral Morrocoy for invoicing, inventory, purchasing, accounting, and reconciliation. Multiple parametrization errors identified.",
+        "vendor": "Odoo",
+        "usage": "enterprise-wide",
+        "known_issues": "parametrization errors; retroactive modifications to closed periods"
+      },
+      "id": "odoo_erp",
+      "community": 0,
+      "norm_label": "odoo erp"
+    },
+    {
+      "label": "Cloudbeds PMS",
+      "type": "system",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Property Management System used for hotel guest management, check-in, occupancy reports. Used by Libny and Gerencia Hotelera.",
+        "vendor": "Cloudbeds",
+        "usage": "hotel_management"
+      },
+      "id": "cloudbeds_pms",
+      "community": 0,
+      "norm_label": "cloudbeds pms"
+    },
+    {
+      "label": "Poster POS",
+      "type": "system",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Point of Sale system used for F&B order management (comandas). Caja uses Poster to receive and process orders. Menu synchronization with Poster evaluated to avoid price errors.",
+        "vendor": "Poster",
+        "usage": "food_and_beverage"
+      },
+      "id": "poster_pos",
+      "community": 1,
+      "norm_label": "poster pos"
+    },
+    {
+      "label": "Cloudways",
+      "type": "system",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Hosting/cloud platform managed by Adriana. Used for product creation distinct from Odoo and Poster.",
+        "vendor": "Cloudways",
+        "managed_by": "adriana_operaciones"
+      },
+      "id": "cloudways_hosting",
+      "community": 17,
+      "norm_label": "cloudways"
+    },
+    {
+      "label": "WhatsApp (Comunicaci\u00f3n Operativa)",
+      "type": "system",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Primary communication channel used across departments: guest lists to F&B, purchase approvals from GG, supplier invoice requests, payment confirmations. Mix of personal and corporate accounts creates governance risk.",
+        "usage": "cross-departmental",
+        "risk": "personal vs corporate account confusion"
+      },
+      "id": "whatsapp_comunicacion",
+      "community": 0,
+      "norm_label": "whatsapp (comunicacion operativa)"
+    },
+    {
+      "label": "Excel (Control Paralelo)",
+      "type": "system",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Used as parallel control tool for bank reconciliation (marking reconciled movements), occupancy reporting to Venetur/Inatur, and various manual tracking. Parallel to Odoo rather than integrated.",
+        "usage": "reconciliation_and_reporting"
+      },
+      "id": "excel_herramienta",
+      "community": 0,
+      "norm_label": "excel (control paralelo)"
+    },
+    {
+      "label": "Rodrigo Gramcko",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Project lead conducting AS-IS lifting sessions and process analysis across all departments. Also sole executor of all legal advisory tasks.",
+        "roles": [
+          "project_lead",
+          "asesor_legal"
+        ],
+        "departments": [
+          "Gesti\u00f3n de Proyecto",
+          "Asesor\u00eda Legal"
+        ]
+      },
+      "id": "rodrigo_gramcko",
+      "community": 1,
+      "norm_label": "rodrigo gramcko"
+    },
+    {
+      "label": "Erika",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Finance manager at CCS. Responsible for banking operations, payment authorizations, and financial oversight. One of the required approvers for payments.",
+        "role": "Gerente de Finanzas",
+        "department": "Administraci\u00f3n y Finanzas CCS"
+      },
+      "id": "erika_finanzas",
+      "community": 1,
+      "norm_label": "erika"
+    },
+    {
+      "label": "Juan Herrera",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Administrative assistant at Hotel. Handles purchase billing (Phase 1 AS-IS), invoice validation per SENIAT, biweekly fiscal close coordination. Key informant in KM-MIN-001 session.",
+        "role": "Asistente Administrativo",
+        "department": "Administraci\u00f3n y Finanzas Hotel"
+      },
+      "id": "juan_herrera",
+      "community": 1,
+      "norm_label": "juan herrera"
+    },
+    {
+      "label": "Libny / Libni",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Administrative assistant at Hotel. Handles daily cash close, bank portal verification (sole access), Cloudbeds report export, rental invoicing, Poster and Odoo product creation, manual format design. Critical single point of failure for banking access.",
+        "role": "Asistente Administrativa",
+        "department": "Administraci\u00f3n y Finanzas Hotel",
+        "sole_access": "portales_bancarios"
+      },
+      "id": "libny_administracion",
+      "community": 1,
+      "norm_label": "libny / libni"
+    },
+    {
+      "label": "Joseline",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Administrative assistant at CCS. Works alongside Erika in banking operations and supplier payment tasks.",
+        "role": "Asistente Administrativa",
+        "department": "Administraci\u00f3n y Finanzas CCS"
+      },
+      "id": "joseline_asistente",
+      "community": 18,
+      "norm_label": "joseline"
+    },
+    {
+      "label": "Meche",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Controller manager. Department currently inactive. Responsible for 14 task groups spanning financial supervision, cyclic inventory coordination, audit coordination, banking user admin. Identified Odoo parametrization errors as critical issue.",
+        "role": "Gerente de Contralor\u00eda",
+        "department": "Contralor\u00eda",
+        "status": "department_currently_inactive"
+      },
+      "id": "meche_controloria",
+      "community": 1,
+      "norm_label": "meche"
+    },
+    {
+      "label": "Andry Garc\u00eda",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "HR manager. Responsible for parafiscal documentation management (IVSS, INCES, FAOV, MPPPST). Works with Marilyn (HR Analyst).",
+        "role": "Gerente de Talento Humano",
+        "department": "Talento Humano"
+      },
+      "id": "andry_garcia_rrhh",
+      "community": 0,
+      "norm_label": "andry garcia"
+    },
+    {
+      "label": "Victor P\u00e9rez",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Warehouse manager. Performs physical inventory counts, receives and validates deliveries against Odoo, enters receipts in Odoo, notifies Compras. Central node in procurement flow.",
+        "role": "Jefe de Almac\u00e9n",
+        "department": "Compras y Almac\u00e9n"
+      },
+      "id": "victor_perez_almacen",
+      "community": 2,
+      "norm_label": "victor perez"
+    },
+    {
+      "label": "Douglas",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Service captain in F&B. Key informant in KM-MIN-002. Oversees mesonero operations, guard handover, requisition process. Advocates for direct tablet-to-kitchen order flow.",
+        "role": "Capit\u00e1n de Servicio",
+        "department": "Alimentos y Bebidas"
+      },
+      "id": "douglas_capitan_fb",
+      "community": 2,
+      "norm_label": "douglas"
+    },
+    {
+      "label": "Emil",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Kitchen head chef. Responsible for all kitchen phases (breakfast, lunch, snacks, dinner, cleaning, protein processing). Coordinates requisitions through Gerencia Operaciones.",
+        "role": "Jefe de Cocina",
+        "department": "Cocina"
+      },
+      "id": "emil_jefe_cocina",
+      "community": 2,
+      "norm_label": "emil"
+    },
+    {
+      "label": "Richard",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Operations manager. Does not use Odoo. No admin assistant assigned. Creates communication bottleneck because all maintenance requests and operational decisions pass through him without digital tracking.",
+        "role": "Gerente de Operaciones",
+        "department": "Operaciones",
+        "critical_issue": "Does not use Odoo; no admin assistant; communication bottleneck"
+      },
+      "id": "richard_operaciones",
+      "community": 0,
+      "norm_label": "richard"
+    },
+    {
+      "label": "Adriana Montes",
+      "type": "person",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Hotel operations supervisor/hotel management. Manages physical inventory supervision for reception stores, Cloudways product creation, signs requisitions, and participates in KM-MIN-002 F&B process lifting.",
+        "role": "Supervisora / Gerencia Hotelera",
+        "department": "Gerencia Hotelera"
+      },
+      "id": "adriana_operaciones",
+      "community": 16,
+      "norm_label": "adriana montes"
+    },
+    {
+      "label": "SERAC (Servicios Erac 22, CA)",
+      "type": "organization",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Operating company for Koral Morrocoy hotel. All internal administrative, financial, and operational processes documented in the AS-IS files are under SERAC.",
+        "type": "empresa_operadora",
+        "hotel": "Koral Morrocoy"
+      },
+      "id": "serac_empresa",
+      "community": 0,
+      "norm_label": "serac (servicios erac 22, ca)"
+    },
+    {
+      "label": "Venetur",
+      "type": "organization",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Venezuelan state tourism entity requiring daily occupancy and income reports from the hotel. Creates work duplication by requiring multiple formats for the same data. Hotel has an alliance arrangement with Venetur guests.",
+        "type": "ente_gubernamental",
+        "relationship": "regulador_y_aliado"
+      },
+      "id": "venetur_ente",
+      "community": 0,
+      "norm_label": "venetur"
+    },
+    {
+      "label": "Inatur",
+      "type": "organization",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Venezuelan national tourism institute also receiving daily occupancy reports. Parallel regulatory recipient alongside Venetur.",
+        "type": "ente_gubernamental",
+        "relationship": "regulador"
+      },
+      "id": "inatur_ente",
+      "community": 0,
+      "norm_label": "inatur"
+    },
+    {
+      "label": "SENIAT",
+      "type": "organization",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Venezuelan tax authority. Invoices must comply with SENIAT requirements: RIC, fiscal address, invoice number, control number, date, letterhead, legibility. All billing processes validated against SENIAT standards.",
+        "type": "ente_gubernamental",
+        "relationship": "autoridad_fiscal"
+      },
+      "id": "seniat_ente",
+      "community": 0,
+      "norm_label": "seniat"
+    },
+    {
+      "label": "Cierre Fiscal Quincenal",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Biweekly fiscal close performed on the 15th and last day of each month. Consolidates all invoices (open, closed, pending), reconciliations, errors, and information requests. 56 invoices per close period, ~500 bank movements monthly. Key compliance checkpoint.",
+        "frequency": "biweekly",
+        "days": [
+          "15th",
+          "last_day_of_month"
+        ],
+        "invoices_per_close": 56,
+        "monthly_bank_movements": 500
+      },
+      "id": "cierre_quincenal",
+      "community": 0,
+      "norm_label": "cierre fiscal quincenal"
+    },
+    {
+      "label": "Inventario C\u00edclico",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Cyclic inventory process coordinated by Controller (Meche) to validate physical stock against Odoo system records. Also referenced in Purchases & Warehouse AS-IS. Used to detect discrepancies and depurate obsolete inventory records.",
+        "coordinators": [
+          "meche_controloria",
+          "victor_perez_almacen"
+        ],
+        "purpose": "stock_validation_and_depuration"
+      },
+      "id": "inventario_ciclico",
+      "community": 1,
+      "norm_label": "inventario ciclico"
+    },
+    {
+      "label": "Proceso de Comandas (Orden de Pedido F&B)",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "F&B order flow: Mesonero takes order on paper \u2192 delivers to Caja \u2192 Caja enters in Poster \u2192 sends to kitchen. Critical bottleneck: kitchen printer broken so all orders print through Caja printer. Desired future state: mesonero tablet \u2192 kitchen directly via Poster.",
+        "current_flow": "mesonero_papel \u2192 caja \u2192 poster \u2192 cocina",
+        "desired_flow": "mesonero_tablet \u2192 cocina_directa",
+        "blocker": "network_problems_and_broken_kitchen_printer"
+      },
+      "id": "proceso_comanda",
+      "community": 2,
+      "norm_label": "proceso de comandas (orden de pedido f&b)"
+    },
+    {
+      "label": "Proceso de Requisici\u00f3n de Insumos",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Requisition flow used by Kitchen and Bar: department fills manual format \u2192 Gerencia Operaciones signs \u2192 Almac\u00e9n receives request \u2192 delivers products \u2192 signs comprobante. If almac\u00e9n lacks stock, Compras is notified to purchase.",
+        "flow": "formato_manual \u2192 firma_gerencia_operaciones \u2192 almacen_entrega \u2192 comprobante",
+        "escalation": "compras_si_sin_stock"
+      },
+      "id": "proceso_requisicion",
+      "community": 2,
+      "norm_label": "proceso de requisicion de insumos"
+    },
+    {
+      "label": "Proceso de Facturaci\u00f3n en Compras",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Purchase billing process: solicitud \u2192 pedido (compras) \u2192 validaci\u00f3n SENIAT \u2192 conversi\u00f3n monetaria (USD/VES) \u2192 registro Odoo \u2192 solicitud pago finanzas \u2192 autorizaci\u00f3n gerencia \u2192 comprobante proveedor \u2192 conciliaci\u00f3n bancaria. 2025: 90% payments with prior invoice vs 0% in 2023.",
+        "maturity_trend": {
+          "2023": "0%_con_factura",
+          "2024": "60%_con_factura",
+          "2025": "90%_con_factura"
+        },
+        "key_system": "odoo_erp"
+      },
+      "id": "proceso_facturacion_compras",
+      "community": 0,
+      "norm_label": "proceso de facturacion en compras"
+    },
+    {
+      "label": "Conciliaci\u00f3n Bancaria",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Bank reconciliation performed by Libny (hotel) and Erika/Joseline (CCS). Covers Banesco, Banplus, Banco Exterior and USD platforms (PayPal, Binance, Zelle). Ideally weekly, monthly close in first 5 days. ~500 monthly movements distributed among several responsible parties.",
+        "frequency": "weekly_ideal_monthly_close",
+        "banks": [
+          "Banesco",
+          "Banplus",
+          "Banco Exterior"
+        ],
+        "usd_platforms": [
+          "PayPal",
+          "Binance",
+          "Zelle"
+        ],
+        "monthly_movements": 500
+      },
+      "id": "proceso_conciliacion_bancaria",
+      "community": 0,
+      "norm_label": "conciliacion bancaria"
+    },
+    {
+      "label": "Proceso de Check-In Hotelero",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Hotel check-in covering walk-in and reservation-based arrivals. Guest data registered in Cloudbeds. Special cases: institutional (no charge), Family & Friends (Rafael special rate), Venetur alliance guests. BCV exchange rate used for USD conversion.",
+        "system": "cloudbeds_pms",
+        "special_cases": [
+          "institucional_cortesia",
+          "family_and_friends",
+          "venetur_alianza"
+        ]
+      },
+      "id": "proceso_checkin",
+      "community": 0,
+      "norm_label": "proceso de check-in hotelero"
+    },
+    {
+      "label": "Reporte Diario Venetur/Inatur",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Daily occupancy and income report sent to Venetur and Inatur. Data extracted from Odoo (P&L report) and Cloudbeds (guest report). Submitted via email and WhatsApp between midnight and 1am during high season. Venetur requests duplicate formats causing work redundancy. Automation opportunity identified.",
+        "frequency": "daily",
+        "submission_time": "00:00-01:00",
+        "sources": [
+          "odoo_erp",
+          "cloudbeds_pms"
+        ],
+        "format": "Excel_Venetur_template",
+        "issue": "duplicate_formats_requested_by_venetur"
+      },
+      "id": "reporte_venetur_inatur",
+      "community": 0,
+      "norm_label": "reporte diario venetur/inatur"
+    },
+    {
+      "label": "Flujo de Compras (Procurement Flow)",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Procurement flow: Victor (almac\u00e9n) counts stock \u2192 presents to Sr. Alberto (GG) \u2192 GG approves via WhatsApp to Compras \u2192 Compras places order with supplier \u2192 Victor receives and validates against Odoo \u2192 enters receipt in Odoo \u2192 notifies Compras. Weekend ordering by GG disrupts weekday processes.",
+        "flow": "almacen_count \u2192 GG_approval \u2192 compras_order \u2192 almacen_receive \u2192 odoo_entry \u2192 compras_notify",
+        "blocker": "weekend_orders_from_GG"
+      },
+      "id": "proceso_compras_flujo",
+      "community": 2,
+      "norm_label": "flujo de compras (procurement flow)"
+    },
+    {
+      "label": "Gu\u00eda Sunagro",
+      "type": "document",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Mandatory regulatory document for regulated food products (oils, flours, groceries). Must be validated on Sunagro portal same day as receipt to avoid fines. Must match invoice and warehouse receipt.",
+        "regulator": "Sunagro",
+        "regulated_products": [
+          "aceites",
+          "harinas",
+          "viveres"
+        ],
+        "validation": "portal_sunagro_same_day"
+      },
+      "id": "guia_sunagro",
+      "community": 1,
+      "norm_label": "guia sunagro"
+    },
+    {
+      "label": "Pago Anticipado (Anticipo a Proveedor)",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Payments made to suppliers before invoice is issued. Tracked in pending folders. 10% of payments in 2025 are still anticipos. Requires reconciliation when invoice arrives. Cases include equipment loans and advance payments to musicians.",
+        "volume_2025": "10%_of_payments",
+        "reconciliation": "anticipo_matched_to_invoice_when_received"
+      },
+      "id": "pago_anticipado",
+      "community": 0,
+      "norm_label": "pago anticipado (anticipo a proveedor)"
+    },
+    {
+      "label": "Registro Diario de Estacionamiento",
+      "type": "process",
+      "confidence": "EXTRACTED",
+      "attributes": {
+        "rationale": "Daily parking register managed by security guard. Rates: 5 EUR small vehicle, 10 EUR medium, 20 EUR bus. Security head provides income report to Libny for invoicing. Daily cash close with electronic payment validation.",
+        "rates": {
+          "small": "5 EUR",
+          "medium": "10 EUR",
+          "bus": "20 EUR"
+        },
+        "responsible": "libny_administracion"
+      },
+      "id": "registro_diario_estacionamiento",
+      "community": 1,
+      "norm_label": "registro diario de estacionamiento"
+    },
+    {
+      "label": "KM-MIN-002: Gerencia Hotelera - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-09",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana, Recepcionista",
+      "id": "min_gerencia_hotelera_002_s1",
+      "community": 9,
+      "norm_label": "km-min-002: gerencia hotelera - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (HOTEL-JUAN) - Sesi\u00f3n 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-26",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Juan Herrera",
+      "id": "min_adm_finanzas_hotel_juan_001",
+      "community": 14,
+      "norm_label": "km-min-001: administracion y finanzas (hotel-juan) - sesion 2"
+    },
+    {
+      "label": "KM-MIN-001: Gerencia Hotelera (A y B) - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Emil (jefe cocina), Equipo Calidad Seguimiento y Control",
+      "id": "min_gerencia_hotelera_ayb_001_s1",
+      "community": 7,
+      "norm_label": "km-min-001: gerencia hotelera (a y b) - sesion 1"
+    },
+    {
+      "label": "KM-MIN-003: Gerencia Hotelera - Sesi\u00f3n 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesi\u00f3n 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-09",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana, Recepcionista",
+      "id": "min_gerencia_hotelera_003_s2",
+      "community": 9,
+      "norm_label": "km-min-003: gerencia hotelera - sesion 2"
+    },
+    {
+      "label": "KM-MIN-003: Gerencia Hotelera (A y B) - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-25",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana Montes, Michelle Montenegro",
+      "id": "min_gerencia_hotelera_ayb_003_s1",
+      "community": 7,
+      "norm_label": "km-min-003: gerencia hotelera (a y b) - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Mar\u00eda Da Costa (Meche)",
+      "id": "min_asesoria_contraloria_001_s1",
+      "community": 8,
+      "norm_label": "km-min-001: asesoria de contraloria - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Talento Humano - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesi\u00f3n 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-02-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": null,
+      "id": "min_talento_humano_001_s1",
+      "community": 6,
+      "norm_label": "km-min-001: talento humano - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Gerencia Hotelera - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-02-13",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana",
+      "id": "min_gerencia_hotelera_001_s1",
+      "community": 9,
+      "norm_label": "km-min-001: gerencia hotelera - sesion 1"
+    },
+    {
+      "label": "KM-MIN-002: Talento Humano - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Andry Garc\u00eda",
+      "id": "min_talento_humano_002_s1",
+      "community": 6,
+      "norm_label": "km-min-002: talento humano - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Operaciones - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesi\u00f3n 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-24",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Equipo Calidad Seguimiento y Control",
+      "id": "min_operaciones_001_s1",
+      "community": 13,
+      "norm_label": "km-min-001: operaciones - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Asesor\u00eda Legal - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": null,
+      "id": "min_asesoria_legal_001_s1",
+      "community": 15,
+      "norm_label": "km-min-001: asesoria legal - sesion 1"
+    },
+    {
+      "label": "KM-MIN-003: Gerencia Hotelera (A y B) - Sesi\u00f3n 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-25",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Adriana Montes, Michelle Montenegro",
+      "id": "min_gerencia_hotelera_ayb_003_s2",
+      "community": 7,
+      "norm_label": "km-min-003: gerencia hotelera (a y b) - sesion 2"
+    },
+    {
+      "label": "KM-MIN-003: Talento Humano - Sesi\u00f3n 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-10",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Andry Garcia",
+      "id": "min_talento_humano_003_s2",
+      "community": 6,
+      "norm_label": "km-min-003: talento humano - sesion 2"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (Dpto. Compras y Almac\u00e9n) - Sesi\u00f3n 2",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-12",
+      "author": "Rodrigo Gramcko",
+      "contributor": "V\u00edctor P\u00e9rez",
+      "id": "min_adm_fin_compras_almacen_001_s2",
+      "community": 8,
+      "norm_label": "km-min-001: administracion y finanzas (dpto. compras y almacen) - sesion 2"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-11",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Departamento de Finanzas",
+      "id": "min_adm_fin_ccs_001_s1",
+      "community": 11,
+      "norm_label": "km-min-001: administracion y finanzas (ccs) - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (Dpto. Compras) - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-02-11",
+      "author": "Rodrigo Gramcko",
+      "contributor": null,
+      "id": "min_adm_fin_compras_001_s1",
+      "community": 13,
+      "norm_label": "km-min-001: administracion y finanzas (dpto. compras) - sesion 1"
+    },
+    {
+      "label": "KM-MIN-001: Administraci\u00f3n y Finanzas (HOTEL-LIBNY) - Sesi\u00f3n 1",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-03-17",
+      "author": "Rodrigo Gramcko",
+      "contributor": "Administraci\u00f3n Koral Ohs",
+      "id": "min_adm_fin_hotel_libny_001_s1",
+      "community": 11,
+      "norm_label": "km-min-001: administracion y finanzas (hotel-libny) - sesion 1"
+    },
+    {
+      "label": "Reimplementaci\u00f3n y Migraci\u00f3n de Odoo",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_odoo_reimplementacion",
+      "community": 11,
+      "norm_label": "reimplementacion y migracion de odoo"
+    },
+    {
+      "label": "Sistema Cloudbeds (PMS Hotelero)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_cloudbeds",
+      "community": 9,
+      "norm_label": "sistema cloudbeds (pms hotelero)"
+    },
+    {
+      "label": "Sistema Poster (Comandas A&B)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_poster_sistema",
+      "community": 11,
+      "norm_label": "sistema poster (comandas a&b)"
+    },
+    {
+      "label": "Visito (Bot de Mensajer\u00eda IA)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesi\u00f3n 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_visito_bot",
+      "community": 9,
+      "norm_label": "visito (bot de mensajeria ia)"
+    },
+    {
+      "label": "Gesti\u00f3n de N\u00f3mina y Compensaci\u00f3n",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesi\u00f3n 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_nomina_gestion",
+      "community": 6,
+      "norm_label": "gestion de nomina y compensacion"
+    },
+    {
+      "label": "Gesti\u00f3n de Cuentas por Pagar",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_cuentas_pagar",
+      "community": 14,
+      "norm_label": "gestion de cuentas por pagar"
+    },
+    {
+      "label": "Control e Inventario de Almac\u00e9n",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_control_inventario",
+      "community": 8,
+      "norm_label": "control e inventario de almacen"
+    },
+    {
+      "label": "Proceso de Check-in de Hu\u00e9spedes",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_checkin_process",
+      "community": 9,
+      "norm_label": "proceso de check-in de huespedes"
+    },
+    {
+      "label": "Procesos de Contralor\u00eda y Auditor\u00eda",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_contraloria_procesos",
+      "community": 8,
+      "norm_label": "procesos de contraloria y auditoria"
+    },
+    {
+      "label": "Tr\u00e1mites Legales y Permisos Empresariales",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_tramites_legales",
+      "community": 15,
+      "norm_label": "tramites legales y permisos empresariales"
+    },
+    {
+      "label": "Reactivaci\u00f3n de Marina",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_reactivacion_marina",
+      "community": 15,
+      "norm_label": "reactivacion de marina"
+    },
+    {
+      "label": "Proceso de Compras y Requisiciones",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_proceso_compras",
+      "community": 13,
+      "norm_label": "proceso de compras y requisiciones"
+    },
+    {
+      "label": "Reclutamiento y Gesti\u00f3n de Personal",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_reclutamiento_personal",
+      "community": 6,
+      "norm_label": "reclutamiento y gestion de personal"
+    },
+    {
+      "label": "Gesti\u00f3n de Declaraciones Fiscales y Parafiscales",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_gestion_declaraciones_fiscales",
+      "community": 6,
+      "norm_label": "gestion de declaraciones fiscales y parafiscales"
+    },
+    {
+      "label": "Conciliaci\u00f3n Bancaria y Pagos",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_conciliacion_pagos",
+      "community": 11,
+      "norm_label": "conciliacion bancaria y pagos"
+    },
+    {
+      "label": "Operaciones y Mantenimiento del Hotel",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesi\u00f3n 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "concept_operaciones_mantenimiento",
+      "community": 13,
+      "norm_label": "operaciones y mantenimiento del hotel"
+    },
+    {
+      "label": "Rodrigo Gramcko (Almus Dev)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "person_rodrigo_gramcko",
+      "community": 7,
+      "norm_label": "rodrigo gramcko (almus dev)"
+    },
+    {
+      "label": "Adriana Montes (Calidad, Seguimiento y Control)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "person_adriana_montes",
+      "community": 7,
+      "norm_label": "adriana montes (calidad, seguimiento y control)"
+    },
+    {
+      "label": "Juan Herrera (Administraci\u00f3n)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "person_juan_herrera",
+      "community": 14,
+      "norm_label": "juan herrera (administracion)"
+    },
+    {
+      "label": "Andry Garc\u00eda (Talento Humano)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "person_andry_garcia",
+      "community": 6,
+      "norm_label": "andry garcia (talento humano)"
+    },
+    {
+      "label": "Mar\u00eda Da Costa - Meche (Contralor\u00eda)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "person_maria_da_costa",
+      "community": 8,
+      "norm_label": "maria da costa - meche (contraloria)"
+    },
+    {
+      "label": "V\u00edctor P\u00e9rez (Almac\u00e9n)",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "person_victor_perez",
+      "community": 8,
+      "norm_label": "victor perez (almacen)"
+    },
+    {
+      "label": "Almus Dev",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "org_almus_dev",
+      "community": 7,
+      "norm_label": "almus dev"
+    },
+    {
+      "label": "Hotel Koral Morrocoy",
+      "file_type": "document",
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "org_koral_hotel",
+      "community": 7,
+      "norm_label": "hotel koral morrocoy"
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "gestion_de_cambio",
+      "_tgt": "competencias_organizacionales",
+      "source": "gestion_de_cambio",
+      "target": "competencias_organizacionales"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "gestion_de_cambio",
+      "_tgt": "encuestas_liderazgo",
+      "source": "gestion_de_cambio",
+      "target": "encuestas_liderazgo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "gestion_de_cambio",
+      "_tgt": "odoo",
+      "source": "gestion_de_cambio",
+      "target": "odoo"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udd04 Gesti\u00f3n de Cambio 31f653cd415180709cb5c8f92eb56136.md",
+      "source_location": null,
+      "weight": 0.75,
+      "_src": "gestion_de_cambio",
+      "_tgt": "capacitacion",
+      "source": "gestion_de_cambio",
+      "target": "capacitacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo",
+      "_tgt": "imo_pre_implementacion",
+      "source": "imo",
+      "target": "imo_pre_implementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo",
+      "_tgt": "imo_documentos_inventario",
+      "source": "imo",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo",
+      "_tgt": "imo_documentos_asis_tobe",
+      "source": "imo",
+      "target": "imo_documentos_asis_tobe"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo",
+      "_tgt": "odoo",
+      "source": "imo",
+      "target": "odoo"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 0.8,
+      "_src": "imo",
+      "_tgt": "procesos",
+      "source": "imo",
+      "target": "procesos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto 31f653cd415180fcbea1f6d2b6a6e732.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "gestion_de_proyecto",
+      "_tgt": "minutas_koral",
+      "source": "gestion_de_proyecto",
+      "target": "minutas_koral"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto 31f653cd415180fcbea1f6d2b6a6e732.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "gestion_de_proyecto",
+      "_tgt": "hotel_koral",
+      "source": "gestion_de_proyecto",
+      "target": "hotel_koral"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udccb Procesos 31f653cd415180a096f8f0ed166a60cd.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "procesos",
+      "_tgt": "odoo",
+      "source": "procesos",
+      "target": "odoo"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\u2699\ufe0f Implementaci\u00f3n 31f653cd41518081bebfe6b5d45a23e7.md",
+      "source_location": null,
+      "weight": 0.7,
+      "_src": "implementacion",
+      "_tgt": "desarrollos",
+      "source": "desarrollos",
+      "target": "implementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\u2699\ufe0f Implementaci\u00f3n 31f653cd41518081bebfe6b5d45a23e7.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "implementacion",
+      "_tgt": "odoo",
+      "source": "implementacion",
+      "target": "odoo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_ayb_caja",
+      "source": "inventario_ayb_caja",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_ayb_caja",
+      "_tgt": "poster",
+      "source": "inventario_ayb_caja",
+      "target": "poster"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md",
+      "source_location": null,
+      "weight": 0.9,
+      "_src": "inventario_ayb_caja",
+      "_tgt": "departamento_ayb",
+      "source": "inventario_ayb_caja",
+      "target": "departamento_ayb"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "inventario_ayb_caja",
+      "_tgt": "inventario_ayb_bar",
+      "source": "inventario_ayb_caja",
+      "target": "inventario_ayb_bar"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "inventario_ayb_caja",
+      "_tgt": "inventario_ayb_cocina",
+      "source": "inventario_ayb_caja",
+      "target": "inventario_ayb_cocina"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_operaciones",
+      "source": "inventario_operaciones",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Operaciones 32d653cd41518091b6dcedfe1d696b9b.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_operaciones",
+      "_tgt": "departamento_operaciones",
+      "source": "inventario_operaciones",
+      "target": "departamento_operaciones"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_adm_finanzas_libny",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_adm_finanzas_libny",
+      "_tgt": "odoo",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "odoo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_adm_finanzas_libny",
+      "_tgt": "cloudbeds",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "cloudbeds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_adm_finanzas_libny",
+      "_tgt": "poster",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "poster"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_adm_finanzas_libny",
+      "_tgt": "microsoft_teams",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "microsoft_teams"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_adm_finanzas_libny",
+      "_tgt": "departamento_adm_finanzas",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "departamento_adm_finanzas"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Juan) 32f653cd415180018911ecde2842cd8b.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "inventario_adm_finanzas_juan",
+      "_tgt": "inventario_adm_finanzas_libny",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "inventario_adm_finanzas_juan"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md",
+      "source_location": null,
+      "weight": 0.9,
+      "_src": "inventario_adm_finanzas_libny",
+      "_tgt": "hotel_koral",
+      "source": "inventario_adm_finanzas_libny",
+      "target": "hotel_koral"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_ayb_bar",
+      "source": "inventario_ayb_bar",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Bar) 32d653cd415180bbb1cedd702a688ae2.md",
+      "source_location": null,
+      "weight": 0.9,
+      "_src": "inventario_ayb_bar",
+      "_tgt": "departamento_ayb",
+      "source": "inventario_ayb_bar",
+      "target": "departamento_ayb"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Bar) 32d653cd415180bbb1cedd702a688ae2.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "inventario_ayb_bar",
+      "_tgt": "inventario_ayb_cocina",
+      "source": "inventario_ayb_bar",
+      "target": "inventario_ayb_cocina"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_adm_finanzas_juan",
+      "source": "inventario_adm_finanzas_juan",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Juan) 32f653cd415180018911ecde2842cd8b.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_adm_finanzas_juan",
+      "_tgt": "odoo",
+      "source": "inventario_adm_finanzas_juan",
+      "target": "odoo"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Juan) 32f653cd415180018911ecde2842cd8b.md",
+      "source_location": null,
+      "weight": 0.95,
+      "_src": "inventario_adm_finanzas_juan",
+      "_tgt": "departamento_adm_finanzas",
+      "source": "inventario_adm_finanzas_juan",
+      "target": "departamento_adm_finanzas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_asesor_contraloria",
+      "source": "inventario_asesor_contraloria",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor de contraloria 326653cd415180309e92f3c66522a0c1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_asesor_contraloria",
+      "_tgt": "odoo",
+      "source": "inventario_asesor_contraloria",
+      "target": "odoo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor de contraloria 326653cd415180309e92f3c66522a0c1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_asesor_contraloria",
+      "_tgt": "departamento_adm_finanzas",
+      "source": "inventario_asesor_contraloria",
+      "target": "departamento_adm_finanzas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor de contraloria 326653cd415180309e92f3c66522a0c1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_asesor_contraloria",
+      "_tgt": "departamento_talento_humano",
+      "source": "inventario_asesor_contraloria",
+      "target": "departamento_talento_humano"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_talento_humano",
+      "source": "inventario_talento_humano",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Talento Humano 326653cd415180409154d6e27411e753.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_talento_humano",
+      "_tgt": "odoo",
+      "source": "inventario_talento_humano",
+      "target": "odoo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Talento Humano 326653cd415180409154d6e27411e753.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_talento_humano",
+      "_tgt": "departamento_talento_humano",
+      "source": "inventario_talento_humano",
+      "target": "departamento_talento_humano"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Talento Humano 326653cd415180409154d6e27411e753.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_talento_humano",
+      "_tgt": "departamento_adm_finanzas",
+      "source": "inventario_talento_humano",
+      "target": "departamento_adm_finanzas"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Talento Humano 326653cd415180409154d6e27411e753.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "inventario_talento_humano",
+      "_tgt": "hotel_koral",
+      "source": "inventario_talento_humano",
+      "target": "hotel_koral"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_gerencia_hotelera",
+      "source": "inventario_gerencia_hotelera",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "cloudbeds",
+      "source": "inventario_gerencia_hotelera",
+      "target": "cloudbeds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "odoo",
+      "source": "inventario_gerencia_hotelera",
+      "target": "odoo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "microsoft_teams",
+      "source": "inventario_gerencia_hotelera",
+      "target": "microsoft_teams"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "visito",
+      "source": "inventario_gerencia_hotelera",
+      "target": "visito"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "departamento_ayb",
+      "source": "inventario_gerencia_hotelera",
+      "target": "departamento_ayb"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "departamento_talento_humano",
+      "source": "inventario_gerencia_hotelera",
+      "target": "departamento_talento_humano"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Gerencia Hotelera 326653cd4151808a921df8345f975c7d.md",
+      "source_location": null,
+      "weight": 0.95,
+      "_src": "inventario_gerencia_hotelera",
+      "_tgt": "hotel_koral",
+      "source": "inventario_gerencia_hotelera",
+      "target": "hotel_koral"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_ayb_cocina",
+      "source": "inventario_ayb_cocina",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Cocina) 32d653cd415180c89585ec433013f0a5.md",
+      "source_location": null,
+      "weight": 0.9,
+      "_src": "inventario_ayb_cocina",
+      "_tgt": "departamento_ayb",
+      "source": "inventario_ayb_cocina",
+      "target": "departamento_ayb"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O 31f653cd415180eb800fed39dff7a8e0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "imo_documentos_inventario",
+      "_tgt": "inventario_asesor_legal",
+      "source": "inventario_asesor_legal",
+      "target": "imo_documentos_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor Legal 326653cd415180cd85e8ec4e9bd6137e.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_asesor_legal",
+      "_tgt": "departamento_adm_finanzas",
+      "source": "inventario_asesor_legal",
+      "target": "departamento_adm_finanzas"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Asesor Legal 326653cd415180cd85e8ec4e9bd6137e.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "inventario_asesor_legal",
+      "_tgt": "departamento_talento_humano",
+      "source": "inventario_asesor_legal",
+      "target": "departamento_talento_humano"
+    },
+    {
+      "id": "e043",
+      "relation": "elaborates_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "attributes": {
+        "rationale": "The AS-IS document provides operational-level detail for the same processes listed in the CCS Admin process inventory"
+      },
+      "_src": "asis_admin_ccs",
+      "_tgt": "inventario_admin_ccs",
+      "source": "inventario_admin_ccs",
+      "target": "asis_admin_ccs"
+    },
+    {
+      "id": "e044",
+      "relation": "elaborates_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "attributes": {
+        "rationale": "The AS-IS document provides operational-level detail for the same processes listed in the Compras & Almac\u00e9n process inventory"
+      },
+      "_src": "asis_compras_almacen",
+      "_tgt": "inventario_compras_almacen",
+      "source": "inventario_compras_almacen",
+      "target": "asis_compras_almacen"
+    },
+    {
+      "id": "e019",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "The comanda process is detailed across multiple tasks in AS-IS Caja covering order receipt, printing, and kitchen routing"
+      },
+      "_src": "proceso_comanda",
+      "_tgt": "asis_caja",
+      "source": "asis_caja",
+      "target": "proceso_comanda"
+    },
+    {
+      "id": "e048",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "attributes": {
+        "rationale": "Both AS-IS documents document the same F&B service operation (caja and bar/mesonero) from complementary perspectives; both identify the same core bottleneck (broken kitchen printer, network issues) and the same desired digitalization (tablet direct to kitchen)"
+      },
+      "_src": "asis_caja",
+      "_tgt": "asis_bar_servicio",
+      "source": "asis_caja",
+      "target": "asis_bar_servicio"
+    },
+    {
+      "id": "e009",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Rodrigo Gramcko is the sole executor of all 12 legal advisory tasks documented in AS-IS Asesor Legal"
+      },
+      "_src": "rodrigo_gramcko",
+      "_tgt": "asis_asesor_legal",
+      "source": "asis_asesor_legal",
+      "target": "rodrigo_gramcko"
+    },
+    {
+      "id": "e001",
+      "relation": "documents_process_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "KM-MIN-001 session with Juan Herrera directly documents the processes captured in AS-IS Administraci\u00f3n y Finanzas Hotel (Juan)"
+      },
+      "_src": "minuta_km_min_001_admin_juan",
+      "_tgt": "asis_admin_hotel_juan",
+      "source": "asis_admin_hotel_juan",
+      "target": "minuta_km_min_001_admin_juan"
+    },
+    {
+      "id": "e007",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Juan Herrera is explicitly named as the responsible party for all processes in the AS-IS Hotel Admin (Juan) document"
+      },
+      "_src": "juan_herrera",
+      "_tgt": "asis_admin_hotel_juan",
+      "source": "asis_admin_hotel_juan",
+      "target": "juan_herrera"
+    },
+    {
+      "id": "e026",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "The biweekly fiscal close is a key process documented in Juan's AS-IS document"
+      },
+      "_src": "cierre_quincenal",
+      "_tgt": "asis_admin_hotel_juan",
+      "source": "asis_admin_hotel_juan",
+      "target": "cierre_quincenal"
+    },
+    {
+      "id": "e034",
+      "relation": "referenced_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Sunagro guide validation is explicitly referenced as part of the purchase billing process in Juan's AS-IS and meeting minutes"
+      },
+      "_src": "guia_sunagro",
+      "_tgt": "asis_admin_hotel_juan",
+      "source": "asis_admin_hotel_juan",
+      "target": "guia_sunagro"
+    },
+    {
+      "id": "e049",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "attributes": {
+        "rationale": "Both documents cover hotel administration processes (billing vs. cash close/reconciliation) executed by two different assistants who share the same department. Both feed into the same biweekly close and banking reconciliation cycles."
+      },
+      "_src": "asis_admin_hotel_juan",
+      "_tgt": "asis_admin_hotel_libny",
+      "source": "asis_admin_hotel_juan",
+      "target": "asis_admin_hotel_libny"
+    },
+    {
+      "id": "e050",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.72,
+      "attributes": {
+        "rationale": "CCS Admin and Hotel Admin (Juan) both address the financial flow of supplier payments and invoice processing within the same company. CCS handles payment execution; Hotel handles invoice registration. Both use Odoo and require SENIAT compliance."
+      },
+      "_src": "asis_admin_ccs",
+      "_tgt": "asis_admin_hotel_juan",
+      "source": "asis_admin_hotel_juan",
+      "target": "asis_admin_ccs"
+    },
+    {
+      "id": "e054",
+      "relation": "supervises",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "attributes": {
+        "rationale": "Controller also supervises hotel administration financial processes as part of its departmental supervision scope"
+      },
+      "_src": "asis_controloria",
+      "_tgt": "asis_admin_hotel_juan",
+      "source": "asis_admin_hotel_juan",
+      "target": "asis_controloria"
+    },
+    {
+      "id": "e010",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Meche is named as the Controller manager responsible for all tasks in AS-IS Contralor\u00eda, though department is currently inactive"
+      },
+      "_src": "meche_controloria",
+      "_tgt": "asis_controloria",
+      "source": "asis_controloria",
+      "target": "meche_controloria"
+    },
+    {
+      "id": "e035",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Cyclic inventory is explicitly documented in Controller AS-IS tasks 3.1, 3.2, and 3.3 as a core Controller responsibility"
+      },
+      "_src": "inventario_ciclico",
+      "_tgt": "asis_controloria",
+      "source": "asis_controloria",
+      "target": "inventario_ciclico"
+    },
+    {
+      "id": "e053",
+      "relation": "supervises",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "attributes": {
+        "rationale": "Controller (Meche) supervises CCS Administration including banking operations and financial reporting as part of departmental supervision task 1.1"
+      },
+      "_src": "asis_controloria",
+      "_tgt": "asis_admin_ccs",
+      "source": "asis_controloria",
+      "target": "asis_admin_ccs"
+    },
+    {
+      "id": "e011",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Victor P\u00e9rez is explicitly named as warehouse manager central to all warehouse tasks in AS-IS Compras y Almac\u00e9n"
+      },
+      "_src": "victor_perez_almacen",
+      "_tgt": "asis_compras_almacen",
+      "source": "asis_compras_almacen",
+      "target": "victor_perez_almacen"
+    },
+    {
+      "id": "e023",
+      "relation": "triggers",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "attributes": {
+        "rationale": "When almac\u00e9n has no stock for a requisition, it triggers a purchase request through the Compras workflow documented in AS-IS Compras y Almac\u00e9n"
+      },
+      "_src": "proceso_requisicion",
+      "_tgt": "asis_compras_almacen",
+      "source": "asis_compras_almacen",
+      "target": "proceso_requisicion"
+    },
+    {
+      "id": "e036",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Cyclic inventory is also documented in Compras y Almac\u00e9n AS-IS as it involves Victor P\u00e9rez and the warehouse"
+      },
+      "_src": "inventario_ciclico",
+      "_tgt": "asis_compras_almacen",
+      "source": "asis_compras_almacen",
+      "target": "inventario_ciclico"
+    },
+    {
+      "id": "e004",
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "attributes": {
+        "rationale": "KM-MIN-002 covers F&B operations including kitchen interface (comanda delivery to cocina), making it indirectly reference kitchen processes"
+      },
+      "_src": "minuta_km_min_002_gerencia",
+      "_tgt": "asis_cocina",
+      "source": "asis_cocina",
+      "target": "minuta_km_min_002_gerencia"
+    },
+    {
+      "id": "e012",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Emil is named as kitchen head chef responsible for all kitchen phases in AS-IS Cocina"
+      },
+      "_src": "emil_jefe_cocina",
+      "_tgt": "asis_cocina",
+      "source": "asis_cocina",
+      "target": "emil_jefe_cocina"
+    },
+    {
+      "id": "e021",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Requisition process for insumos is detailed in Phase 4 (tasks 4.1-4.6) of AS-IS Cocina"
+      },
+      "_src": "proceso_requisicion",
+      "_tgt": "asis_cocina",
+      "source": "asis_cocina",
+      "target": "proceso_requisicion"
+    },
+    {
+      "id": "e052",
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "attributes": {
+        "rationale": "Kitchen receives comandas from Bar/Caja and sends prepared food back. Both documents describe two sides of the same service transaction. Kitchen also shares requisition data with Bar through the Almac\u00e9n."
+      },
+      "_src": "asis_cocina",
+      "_tgt": "asis_bar_servicio",
+      "source": "asis_cocina",
+      "target": "asis_bar_servicio"
+    },
+    {
+      "id": "e013",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Richard is named as operations manager responsible for all tasks in AS-IS Operaciones"
+      },
+      "_src": "richard_operaciones",
+      "_tgt": "asis_operaciones",
+      "source": "asis_operaciones",
+      "target": "richard_operaciones"
+    },
+    {
+      "id": "e058",
+      "relation": "absent_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Operations AS-IS explicitly notes Richard does not use Odoo, making Operations department a gap in the company's digital integration"
+      },
+      "_src": "asis_operaciones",
+      "_tgt": "odoo_erp",
+      "source": "asis_operaciones",
+      "target": "odoo_erp"
+    },
+    {
+      "id": "e017",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Andry Garc\u00eda is named as HR manager responsible for parafiscal documentation tasks in AS-IS Talento Humano"
+      },
+      "_src": "andry_garcia_rrhh",
+      "_tgt": "asis_talento_humano",
+      "source": "asis_talento_humano",
+      "target": "andry_garcia_rrhh"
+    },
+    {
+      "id": "e059",
+      "relation": "references",
+      "confidence": "AMBIGUOUS",
+      "confidence_score": 0.25,
+      "attributes": {
+        "rationale": "HR parafiscal documentation (IVSS, INCES, FAOV) may intersect with Venetur compliance requirements but direct connection is not confirmed in the partial read of the HR AS-IS document"
+      },
+      "_src": "asis_talento_humano",
+      "_tgt": "venetur_ente",
+      "source": "asis_talento_humano",
+      "target": "venetur_ente"
+    },
+    {
+      "id": "e003",
+      "relation": "documents_process_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "KM-MIN-002 session with Adriana and Douglas directly documents the bar/service processes in AS-IS Inventario A y B (Bar)"
+      },
+      "_src": "minuta_km_min_002_gerencia",
+      "_tgt": "asis_bar_servicio",
+      "source": "asis_bar_servicio",
+      "target": "minuta_km_min_002_gerencia"
+    },
+    {
+      "id": "e014",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Douglas is named as service captain responsible for bar/service operations in AS-IS Bar"
+      },
+      "_src": "douglas_capitan_fb",
+      "_tgt": "asis_bar_servicio",
+      "source": "asis_bar_servicio",
+      "target": "douglas_capitan_fb"
+    },
+    {
+      "id": "e020",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "The comanda process is also documented from the mesonero/bar perspective in AS-IS Bar, showing the manual paper workaround"
+      },
+      "_src": "proceso_comanda",
+      "_tgt": "asis_bar_servicio",
+      "source": "asis_bar_servicio",
+      "target": "proceso_comanda"
+    },
+    {
+      "id": "e022",
+      "relation": "documented_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Requisition process is also documented in Phase 4 (tasks 4.1-4.5) of AS-IS Bar/Servicio"
+      },
+      "_src": "proceso_requisicion",
+      "_tgt": "asis_bar_servicio",
+      "source": "asis_bar_servicio",
+      "target": "proceso_requisicion"
+    },
+    {
+      "id": "e002",
+      "relation": "documents_process_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "KM-MIN-001 session with Libny directly documents the processes captured in AS-IS Administraci\u00f3n y Finanzas Hotel (Libny)"
+      },
+      "_src": "minuta_km_min_001_admin_libny",
+      "_tgt": "asis_admin_hotel_libny",
+      "source": "asis_admin_hotel_libny",
+      "target": "minuta_km_min_001_admin_libny"
+    },
+    {
+      "id": "e008",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Libny is explicitly named as the sole responsible party for all tasks in AS-IS Hotel Admin (Libny)"
+      },
+      "_src": "libny_administracion",
+      "_tgt": "asis_admin_hotel_libny",
+      "source": "asis_admin_hotel_libny",
+      "target": "libny_administracion"
+    },
+    {
+      "id": "e041",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Libny exports daily activity reports from Cloudbeds as part of the cash close process"
+      },
+      "_src": "asis_admin_hotel_libny",
+      "_tgt": "cloudbeds_pms",
+      "source": "asis_admin_hotel_libny",
+      "target": "cloudbeds_pms"
+    },
+    {
+      "id": "e015",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Erika is named as finance manager responsible for CCS banking operations and supplier payments in AS-IS Admin CCS"
+      },
+      "_src": "erika_finanzas",
+      "_tgt": "asis_admin_ccs",
+      "source": "asis_admin_ccs",
+      "target": "erika_finanzas"
+    },
+    {
+      "id": "e016",
+      "relation": "responsible_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Adriana Montes is named as hotel management supervisor responsible for check-in and guest management processes"
+      },
+      "_src": "adriana_operaciones",
+      "_tgt": "asis_gerencia_hotelera",
+      "source": "asis_gerencia_hotelera",
+      "target": "adriana_operaciones"
+    },
+    {
+      "id": "e057",
+      "relation": "authored",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Rodrigo Gramcko conducted and authored the KM-MIN-002 session with Adriana and Douglas"
+      },
+      "_src": "rodrigo_gramcko",
+      "_tgt": "minuta_km_min_002_gerencia",
+      "source": "minuta_km_min_002_gerencia",
+      "target": "rodrigo_gramcko"
+    },
+    {
+      "id": "e055",
+      "relation": "authored",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Rodrigo Gramcko conducted and authored the KM-MIN-001 meeting minutes session with Juan Herrera"
+      },
+      "_src": "rodrigo_gramcko",
+      "_tgt": "minuta_km_min_001_admin_juan",
+      "source": "minuta_km_min_001_admin_juan",
+      "target": "rodrigo_gramcko"
+    },
+    {
+      "id": "e056",
+      "relation": "authored",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Rodrigo Gramcko conducted and authored the KM-MIN-001 session with Libny"
+      },
+      "_src": "rodrigo_gramcko",
+      "_tgt": "minuta_km_min_001_admin_libny",
+      "source": "minuta_km_min_001_admin_libny",
+      "target": "rodrigo_gramcko"
+    },
+    {
+      "id": "e027",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Bank reconciliation is performed and recorded in Odoo, with Excel as parallel control tool"
+      },
+      "_src": "proceso_conciliacion_bancaria",
+      "_tgt": "odoo_erp",
+      "source": "odoo_erp",
+      "target": "proceso_conciliacion_bancaria"
+    },
+    {
+      "id": "e030",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Odoo provides the P&L report (informe de ganancias y p\u00e9rdidas) used to build the daily income portion of the Venetur/Inatur report"
+      },
+      "_src": "reporte_venetur_inatur",
+      "_tgt": "odoo_erp",
+      "source": "odoo_erp",
+      "target": "reporte_venetur_inatur"
+    },
+    {
+      "id": "e038",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Victor validates and enters all warehouse receipts in Odoo as part of the procurement flow"
+      },
+      "_src": "proceso_compras_flujo",
+      "_tgt": "odoo_erp",
+      "source": "odoo_erp",
+      "target": "proceso_compras_flujo"
+    },
+    {
+      "id": "e039",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "SERAC (operating company) uses Odoo as its central ERP system across all departments"
+      },
+      "_src": "serac_empresa",
+      "_tgt": "odoo_erp",
+      "source": "odoo_erp",
+      "target": "serac_empresa"
+    },
+    {
+      "id": "e029",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Cloudbeds provides the guest occupancy report (informe de hospedados) used to build the daily Venetur/Inatur report"
+      },
+      "_src": "reporte_venetur_inatur",
+      "_tgt": "cloudbeds_pms",
+      "source": "cloudbeds_pms",
+      "target": "reporte_venetur_inatur"
+    },
+    {
+      "id": "e040",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Hotel check-in process requires guest data registration in Cloudbeds PMS"
+      },
+      "_src": "proceso_checkin",
+      "_tgt": "cloudbeds_pms",
+      "source": "cloudbeds_pms",
+      "target": "proceso_checkin"
+    },
+    {
+      "id": "e018",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "The comanda/order process uses Poster POS as the system through which orders are entered by Caja and sent to kitchen"
+      },
+      "_src": "proceso_comanda",
+      "_tgt": "poster_pos",
+      "source": "poster_pos",
+      "target": "proceso_comanda"
+    },
+    {
+      "id": "e060",
+      "relation": "administers",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Libny creates and manages products in Poster POS system alongside Odoo, as stated in KM-MIN-001 Admin Libny and AS-IS Hotel Libny"
+      },
+      "_src": "libny_administracion",
+      "_tgt": "poster_pos",
+      "source": "poster_pos",
+      "target": "libny_administracion"
+    },
+    {
+      "id": "e045",
+      "relation": "enables",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "WhatsApp is the channel through which GG (Sr. Alberto) communicates purchase approvals to Compras, making it essential to the procurement flow"
+      },
+      "_src": "whatsapp_comunicacion",
+      "_tgt": "proceso_compras_flujo",
+      "source": "whatsapp_comunicacion",
+      "target": "proceso_compras_flujo"
+    },
+    {
+      "id": "e046",
+      "relation": "enables",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "WhatsApp is used alongside email to ensure daily Venetur/Inatur report delivery confirmation"
+      },
+      "_src": "whatsapp_comunicacion",
+      "_tgt": "reporte_venetur_inatur",
+      "source": "whatsapp_comunicacion",
+      "target": "reporte_venetur_inatur"
+    },
+    {
+      "id": "e028",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Excel serves as parallel control for marking reconciled bank movements alongside Odoo"
+      },
+      "_src": "proceso_conciliacion_bancaria",
+      "_tgt": "excel_herramienta",
+      "source": "excel_herramienta",
+      "target": "proceso_conciliacion_bancaria"
+    },
+    {
+      "id": "e042",
+      "relation": "managed_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Libny receives the parking income report from security and processes the daily invoicing"
+      },
+      "_src": "registro_diario_estacionamiento",
+      "_tgt": "libny_administracion",
+      "source": "libny_administracion",
+      "target": "registro_diario_estacionamiento"
+    },
+    {
+      "id": "e037",
+      "relation": "involves",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Victor P\u00e9rez is the central actor in the procurement flow, performing initial count, receiving orders, and entering in Odoo"
+      },
+      "_src": "proceso_compras_flujo",
+      "_tgt": "victor_perez_almacen",
+      "source": "victor_perez_almacen",
+      "target": "proceso_compras_flujo"
+    },
+    {
+      "id": "e031",
+      "relation": "sent_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Daily occupancy and income report is sent to Venetur by email and WhatsApp between midnight and 1am"
+      },
+      "_src": "reporte_venetur_inatur",
+      "_tgt": "venetur_ente",
+      "source": "venetur_ente",
+      "target": "reporte_venetur_inatur"
+    },
+    {
+      "id": "e032",
+      "relation": "sent_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Daily occupancy and income report is also sent to Inatur alongside Venetur"
+      },
+      "_src": "reporte_venetur_inatur",
+      "_tgt": "inatur_ente",
+      "source": "inatur_ente",
+      "target": "reporte_venetur_inatur"
+    },
+    {
+      "id": "e033",
+      "relation": "regulated_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "All purchase invoices must comply with SENIAT requirements (RIC, fiscal address, invoice number, control number, date, letterhead, legibility)"
+      },
+      "_src": "proceso_facturacion_compras",
+      "_tgt": "seniat_ente",
+      "source": "seniat_ente",
+      "target": "proceso_facturacion_compras"
+    },
+    {
+      "id": "e024",
+      "relation": "consolidates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "The biweekly fiscal close consolidates all purchase billing activity from the 15-day period, including 56 invoices per close"
+      },
+      "_src": "cierre_quincenal",
+      "_tgt": "proceso_facturacion_compras",
+      "source": "cierre_quincenal",
+      "target": "proceso_facturacion_compras"
+    },
+    {
+      "id": "e025",
+      "relation": "consolidates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Bank reconciliation feeds into and is consolidated by the biweekly fiscal close process"
+      },
+      "_src": "cierre_quincenal",
+      "_tgt": "proceso_conciliacion_bancaria",
+      "source": "cierre_quincenal",
+      "target": "proceso_conciliacion_bancaria"
+    },
+    {
+      "id": "e051",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "attributes": {
+        "rationale": "Both processes solve the same problem of supply replenishment: the requisition process handles internal department-to-warehouse requests, while the procurement flow handles warehouse-to-supplier ordering. They are sequential phases of the same material flow."
+      },
+      "_src": "proceso_requisicion",
+      "_tgt": "proceso_compras_flujo",
+      "source": "proceso_requisicion",
+      "target": "proceso_compras_flujo"
+    },
+    {
+      "id": "e047",
+      "relation": "exception_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "attributes": {
+        "rationale": "Advance payments (10% of 2025 payments) represent the exception case in the purchase billing process where payment precedes invoice"
+      },
+      "_src": "pago_anticipado",
+      "_tgt": "proceso_facturacion_compras",
+      "source": "proceso_facturacion_compras",
+      "target": "pago_anticipado"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_gerencia_hotelera_002_s1",
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_adriana_montes",
+      "_tgt": "min_gerencia_hotelera_002_s1",
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "person_adriana_montes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_002_s1",
+      "_tgt": "concept_cloudbeds",
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "concept_cloudbeds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_002_s1",
+      "_tgt": "concept_checkin_process",
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "concept_checkin_process"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_002_s1",
+      "_tgt": "org_koral_hotel",
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "org_koral_hotel"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesi\u00f3n 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "min_gerencia_hotelera_002_s1",
+      "_tgt": "min_gerencia_hotelera_003_s2",
+      "source": "min_gerencia_hotelera_002_s1",
+      "target": "min_gerencia_hotelera_003_s2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_adm_finanzas_hotel_juan_001",
+      "source": "min_adm_finanzas_hotel_juan_001",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_juan_herrera",
+      "_tgt": "min_adm_finanzas_hotel_juan_001",
+      "source": "min_adm_finanzas_hotel_juan_001",
+      "target": "person_juan_herrera"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_finanzas_hotel_juan_001",
+      "_tgt": "concept_cuentas_pagar",
+      "source": "min_adm_finanzas_hotel_juan_001",
+      "target": "concept_cuentas_pagar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_gerencia_hotelera_ayb_001_s1",
+      "source": "min_gerencia_hotelera_ayb_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_adriana_montes",
+      "_tgt": "min_gerencia_hotelera_ayb_001_s1",
+      "source": "min_gerencia_hotelera_ayb_001_s1",
+      "target": "person_adriana_montes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 329653cd415180db862ad6fa84fe8e74.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_ayb_001_s1",
+      "_tgt": "org_koral_hotel",
+      "source": "min_gerencia_hotelera_ayb_001_s1",
+      "target": "org_koral_hotel"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesi\u00f3n 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_gerencia_hotelera_003_s2",
+      "source": "min_gerencia_hotelera_003_s2",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesi\u00f3n 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_003_s2",
+      "_tgt": "concept_visito_bot",
+      "source": "min_gerencia_hotelera_003_s2",
+      "target": "concept_visito_bot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera - Sesi\u00f3n 2 31f653cd415180a5b5fcc9b112936c98.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_003_s2",
+      "_tgt": "concept_cloudbeds",
+      "source": "min_gerencia_hotelera_003_s2",
+      "target": "concept_cloudbeds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_gerencia_hotelera_ayb_003_s1",
+      "source": "min_gerencia_hotelera_ayb_003_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_adriana_montes",
+      "_tgt": "min_gerencia_hotelera_ayb_003_s1",
+      "source": "min_gerencia_hotelera_ayb_003_s1",
+      "target": "person_adriana_montes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 1 32d653cd415180a488c6da4a035ab8fc.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_ayb_003_s1",
+      "_tgt": "concept_poster_sistema",
+      "source": "min_gerencia_hotelera_ayb_003_s1",
+      "target": "concept_poster_sistema"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "weight": 0.9,
+      "_src": "min_gerencia_hotelera_ayb_003_s1",
+      "_tgt": "min_gerencia_hotelera_ayb_003_s2",
+      "source": "min_gerencia_hotelera_ayb_003_s1",
+      "target": "min_gerencia_hotelera_ayb_003_s2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_asesoria_contraloria_001_s1",
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_maria_da_costa",
+      "_tgt": "min_asesoria_contraloria_001_s1",
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "person_maria_da_costa"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_asesoria_contraloria_001_s1",
+      "_tgt": "concept_contraloria_procesos",
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "concept_contraloria_procesos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_asesoria_contraloria_001_s1",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_asesoria_contraloria_001_s1",
+      "_tgt": "concept_control_inventario",
+      "source": "min_asesoria_contraloria_001_s1",
+      "target": "concept_control_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesi\u00f3n 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_talento_humano_001_s1",
+      "source": "min_talento_humano_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Talento Humano - Sesi\u00f3n 1 329653cd415180c2bf3ee0558a2a3535.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_talento_humano_001_s1",
+      "_tgt": "concept_nomina_gestion",
+      "source": "min_talento_humano_001_s1",
+      "target": "concept_nomina_gestion"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "min_talento_humano_001_s1",
+      "_tgt": "min_talento_humano_002_s1",
+      "source": "min_talento_humano_001_s1",
+      "target": "min_talento_humano_002_s1"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_gerencia_hotelera_001_s1",
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_001_s1",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_001_s1",
+      "_tgt": "concept_cloudbeds",
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "concept_cloudbeds"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_gerencia_hotelera_001_s1",
+      "_tgt": "concept_visito_bot",
+      "source": "min_gerencia_hotelera_001_s1",
+      "target": "concept_visito_bot"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_talento_humano_002_s1",
+      "source": "min_talento_humano_002_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_andry_garcia",
+      "_tgt": "min_talento_humano_002_s1",
+      "source": "min_talento_humano_002_s1",
+      "target": "person_andry_garcia"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_talento_humano_002_s1",
+      "_tgt": "concept_nomina_gestion",
+      "source": "min_talento_humano_002_s1",
+      "target": "concept_nomina_gestion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_talento_humano_002_s1",
+      "_tgt": "concept_gestion_declaraciones_fiscales",
+      "source": "min_talento_humano_002_s1",
+      "target": "concept_gestion_declaraciones_fiscales"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "min_talento_humano_002_s1",
+      "_tgt": "min_talento_humano_003_s2",
+      "source": "min_talento_humano_002_s1",
+      "target": "min_talento_humano_003_s2"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesi\u00f3n 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_operaciones_001_s1",
+      "source": "min_operaciones_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesi\u00f3n 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_operaciones_001_s1",
+      "_tgt": "concept_operaciones_mantenimiento",
+      "source": "min_operaciones_001_s1",
+      "target": "concept_operaciones_mantenimiento"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Operaciones - Sesi\u00f3n 1 329653cd4151804d8373d8df4d6de456.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_operaciones_001_s1",
+      "_tgt": "concept_proceso_compras",
+      "source": "min_operaciones_001_s1",
+      "target": "concept_proceso_compras"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_asesoria_legal_001_s1",
+      "source": "min_asesoria_legal_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_asesoria_legal_001_s1",
+      "_tgt": "concept_tramites_legales",
+      "source": "min_asesoria_legal_001_s1",
+      "target": "concept_tramites_legales"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_asesoria_legal_001_s1",
+      "_tgt": "concept_reactivacion_marina",
+      "source": "min_asesoria_legal_001_s1",
+      "target": "concept_reactivacion_marina"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_gerencia_hotelera_ayb_003_s2",
+      "source": "min_gerencia_hotelera_ayb_003_s2",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Gerencia Hotelera (A y B) - Sesi\u00f3n 2 32e653cd41518079861dc93421bd6a84.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_adriana_montes",
+      "_tgt": "min_gerencia_hotelera_ayb_003_s2",
+      "source": "min_gerencia_hotelera_ayb_003_s2",
+      "target": "person_adriana_montes"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_talento_humano_003_s2",
+      "source": "min_talento_humano_003_s2",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_andry_garcia",
+      "_tgt": "min_talento_humano_003_s2",
+      "source": "min_talento_humano_003_s2",
+      "target": "person_andry_garcia"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_talento_humano_003_s2",
+      "_tgt": "concept_reclutamiento_personal",
+      "source": "min_talento_humano_003_s2",
+      "target": "concept_reclutamiento_personal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_talento_humano_003_s2",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_talento_humano_003_s2",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_adm_fin_compras_almacen_001_s2",
+      "source": "min_adm_fin_compras_almacen_001_s2",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_victor_perez",
+      "_tgt": "min_adm_fin_compras_almacen_001_s2",
+      "source": "min_adm_fin_compras_almacen_001_s2",
+      "target": "person_victor_perez"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_compras_almacen_001_s2",
+      "_tgt": "concept_control_inventario",
+      "source": "min_adm_fin_compras_almacen_001_s2",
+      "target": "concept_control_inventario"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_compras_almacen_001_s2",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_adm_fin_compras_almacen_001_s2",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_adm_fin_ccs_001_s1",
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_ccs_001_s1",
+      "_tgt": "concept_conciliacion_pagos",
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "concept_conciliacion_pagos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_ccs_001_s1",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (CCS) - Sesi\u00f3 329653cd41518085a0d7ea475b7941db.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_ccs_001_s1",
+      "_tgt": "concept_gestion_declaraciones_fiscales",
+      "source": "min_adm_fin_ccs_001_s1",
+      "target": "concept_gestion_declaraciones_fiscales"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_adm_fin_compras_001_s1",
+      "source": "min_adm_fin_compras_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_compras_001_s1",
+      "_tgt": "concept_proceso_compras",
+      "source": "min_adm_fin_compras_001_s1",
+      "target": "concept_proceso_compras"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518004b1e7f06b2d8fec64.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_compras_001_s1",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_adm_fin_compras_001_s1",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "min_adm_fin_hotel_libny_001_s1",
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "person_rodrigo_gramcko"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_hotel_libny_001_s1",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_odoo_reimplementacion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_hotel_libny_001_s1",
+      "_tgt": "concept_conciliacion_pagos",
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_conciliacion_pagos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_hotel_libny_001_s1",
+      "_tgt": "concept_poster_sistema",
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_poster_sistema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-LIBNY) 329653cd415180d1a806eba96b714260.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "min_adm_fin_hotel_libny_001_s1",
+      "_tgt": "concept_cloudbeds",
+      "source": "min_adm_fin_hotel_libny_001_s1",
+      "target": "concept_cloudbeds"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 0.75,
+      "_src": "concept_cloudbeds",
+      "_tgt": "concept_odoo_reimplementacion",
+      "source": "concept_odoo_reimplementacion",
+      "target": "concept_cloudbeds"
+    },
+    {
+      "relation": "shares_data_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_poster_sistema",
+      "_tgt": "concept_cloudbeds",
+      "source": "concept_cloudbeds",
+      "target": "concept_poster_sistema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Gerencia Hotelera - Sesi\u00f3n 1 31f653cd4151806f8d31cde71e74a153.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_checkin_process",
+      "_tgt": "concept_cloudbeds",
+      "source": "concept_cloudbeds",
+      "target": "concept_checkin_process"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-002 Talento Humano - Sesi\u00f3n 1 329653cd41518047bee7d0879e6f7989.md",
+      "source_location": null,
+      "weight": 0.8,
+      "_src": "concept_nomina_gestion",
+      "_tgt": "concept_gestion_declaraciones_fiscales",
+      "source": "concept_nomina_gestion",
+      "target": "concept_gestion_declaraciones_fiscales"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-003 Talento Humano - Sesi\u00f3n 2 329653cd415180aea955e925d6c4c423.md",
+      "source_location": null,
+      "weight": 0.7,
+      "_src": "concept_reclutamiento_personal",
+      "_tgt": "concept_nomina_gestion",
+      "source": "concept_nomina_gestion",
+      "target": "concept_reclutamiento_personal"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (HOTEL-JUAN)  32f653cd415180768d83c4d647db9586.md",
+      "source_location": null,
+      "weight": 0.75,
+      "_src": "concept_cuentas_pagar",
+      "_tgt": "concept_conciliacion_pagos",
+      "source": "concept_cuentas_pagar",
+      "target": "concept_conciliacion_pagos"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Administraci\u00f3n y Finanzas (Dpto Compras 329653cd41518014bff5ee9965cdb511.md",
+      "source_location": null,
+      "weight": 0.85,
+      "_src": "concept_proceso_compras",
+      "_tgt": "concept_control_inventario",
+      "source": "concept_control_inventario",
+      "target": "concept_proceso_compras"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda de Contralor\u00eda - Sesi\u00f3n 1 329653cd4151808cb7fcc9526c215bb1.md",
+      "source_location": null,
+      "weight": 0.75,
+      "_src": "concept_contraloria_procesos",
+      "_tgt": "concept_conciliacion_pagos",
+      "source": "concept_contraloria_procesos",
+      "target": "concept_conciliacion_pagos"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Asesor\u00eda Legal - Sesi\u00f3n 1 329653cd4151805c9027e7bf8d5ecef5.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "concept_tramites_legales",
+      "_tgt": "concept_reactivacion_marina",
+      "source": "concept_tramites_legales",
+      "target": "concept_reactivacion_marina"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "person_rodrigo_gramcko",
+      "_tgt": "org_almus_dev",
+      "source": "person_rodrigo_gramcko",
+      "target": "org_almus_dev"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md",
+      "source_location": null,
+      "weight": 1.0,
+      "_src": "org_almus_dev",
+      "_tgt": "org_koral_hotel",
+      "source": "org_almus_dev",
+      "target": "org_koral_hotel"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "ayb_comanda_flow",
+      "label": "A&B Comanda Processing Flow (Caja, Bar, Cocina)",
+      "nodes": [
+        "inventario_ayb_caja",
+        "inventario_ayb_bar",
+        "inventario_ayb_cocina"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario A y B (Caja) 32d653cd415180daaf09dd83b2a88023.md"
+    },
+    {
+      "id": "odoo_adoption_project_nucleos",
+      "label": "Odoo Adoption Project Core Nuclei (IMO, Implementaci\u00f3n, Procesos, Desarrollos)",
+      "nodes": [
+        "imo",
+        "implementacion",
+        "procesos",
+        "desarrollos"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\u2699\ufe0f Implementaci\u00f3n 31f653cd41518081bebfe6b5d45a23e7.md"
+    },
+    {
+      "id": "adm_finanzas_cash_reconciliation",
+      "label": "Administration & Finance Cash Reconciliation Flow (Libny, Juan, Contralor\u00eda)",
+      "nodes": [
+        "inventario_adm_finanzas_libny",
+        "inventario_adm_finanzas_juan",
+        "inventario_asesor_contraloria"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\uddfa\ufe0f I M O/Documentos (Inventario)/Inventario Administraci\u00f3n y Finanzas (HOTEL-Libny) 327653cd415180b1a436dc507eb21037.md"
+    },
+    {
+      "id": "h001",
+      "label": "F&B Operations Triad",
+      "nodes": [
+        "asis_cocina",
+        "asis_bar_servicio",
+        "asis_caja"
+      ],
+      "relation": "jointly_constitute",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "attributes": {
+        "rationale": "Kitchen, Bar/Service, and Caja together constitute the complete F&B service operation at Koral Morrocoy. They share a single broken printer bottleneck, the same comanda flow, the same requisition path to Almac\u00e9n, and the same goal of digitalizing orders via Poster on tablets. No pairwise edge fully captures this three-way operational dependency."
+      }
+    },
+    {
+      "id": "h002",
+      "label": "Financial Close Cycle",
+      "nodes": [
+        "cierre_quincenal",
+        "proceso_facturacion_compras",
+        "proceso_conciliacion_bancaria",
+        "odoo_erp"
+      ],
+      "relation": "forms_closure_cycle",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.9,
+      "attributes": {
+        "rationale": "The biweekly fiscal close, purchase billing process, bank reconciliation, and Odoo together form a single compliance cycle that cannot be described pairwise: the close triggers reconciliation, reconciliation validates billing, billing is registered in Odoo, and Odoo feeds the close report. The four-way relationship adds information beyond any pairwise combination."
+      }
+    },
+    {
+      "id": "h003",
+      "label": "Hotel Admin Data Hub",
+      "nodes": [
+        "libny_administracion",
+        "cloudbeds_pms",
+        "odoo_erp",
+        "reporte_venetur_inatur"
+      ],
+      "relation": "forms_reporting_hub",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "attributes": {
+        "rationale": "Libny acts as the sole human integration point between Cloudbeds (guest data) and Odoo (financial data), combining both to produce the Venetur/Inatur daily report. This four-node hub is a single point of failure: if Libny is unavailable, the mandatory regulatory reporting chain breaks entirely. The group relationship adds risk context beyond pairwise edges."
+      }
+    },
+    {
+      "id": "odoo_reimplementacion_cross_departamental",
+      "label": "Reimplementaci\u00f3n de Odoo como eje transversal a todos los departamentos del hotel",
+      "nodes": [
+        "concept_odoo_reimplementacion",
+        "min_gerencia_hotelera_001_s1",
+        "min_asesoria_contraloria_001_s1",
+        "min_adm_fin_compras_001_s1",
+        "min_talento_humano_003_s2",
+        "min_adm_fin_ccs_001_s1",
+        "min_adm_fin_hotel_libny_001_s1"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+    },
+    {
+      "id": "rodrigo_gramcko_levantamiento_procesos",
+      "label": "Rodrigo Gramcko lidera sesiones de levantamiento de procesos en todos los departamentos",
+      "nodes": [
+        "person_rodrigo_gramcko",
+        "org_almus_dev",
+        "org_koral_hotel",
+        "min_gerencia_hotelera_001_s1",
+        "min_talento_humano_001_s1",
+        "min_asesoria_contraloria_001_s1",
+        "min_operaciones_001_s1"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+    },
+    {
+      "id": "sistemas_operativos_hotel_integracion",
+      "label": "Sistemas operativos del hotel (Cloudbeds, Poster, Visito) deben integrarse en Odoo",
+      "nodes": [
+        "concept_cloudbeds",
+        "concept_poster_sistema",
+        "concept_visito_bot",
+        "concept_odoo_reimplementacion"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "Privado y Compartido/N\u00facleos del Proyecto/\ud83d\udcc1 Gesti\u00f3n de Proyecto/Minutas Koral Morrocoy/KM-MIN-001 Gerencia Hotelera - Sesi\u00f3n 1 329653cd4151807f9627d392ddd8d5f0.md"
+    }
+  ]
+}
