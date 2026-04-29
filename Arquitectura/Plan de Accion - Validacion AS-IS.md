@@ -92,24 +92,26 @@ Un campo se considera validado cuando:
 
 ## Estado actual por area
 
-| # | Area | Inventario | Minuta | AS-IS previo | AS-IS reescrito | Estado |
-|---|---|---|---|---|---|---|
-| 1 | Adm y Finanzas CCS | Leido | 1 sesion leida | Leido | Completo | En revision |
-| 2 | Adm y Finanzas HOTEL-Juan | Pendiente | 2 sesiones leidas | Leido | Pendiente | — |
-| 3 | Adm y Finanzas HOTEL-Libny | Pendiente | 2 sesiones leidas | Leido | Pendiente | — |
-| 4 | Compras y Almacen | Pendiente | 1 sesion leida | Leido | Pendiente | — |
-| 5+ | Resto de areas | Por definir | Por definir | Por definir | No iniciado | — |
-
-*(Tabla se actualiza con la matriz de dimension)*
+| # | Area | Lider | Inventario | Minuta | AS-IS previo | AS-IS reescrito | Estado |
+|---|---|---|---|---|---|---|---|
+| 1 | Adm y Finanzas CCS | Ericka Antequera | Leido | 1 sesion leida | Leido | Completo | En revision |
+| 2 | Adm y Finanzas HOTEL-Juan | Juan Herrera Rangel | Pendiente | 2 sesiones leidas | Leido | Pendiente | — |
+| 3 | Adm y Finanzas HOTEL-Libny | Libny Tarazon | Pendiente | 2 sesiones leidas | Leido | Pendiente | — |
+| 4 | Compras y Almacen | Lourdes Sifontes | Pendiente | 1 sesion leida | Leido | Pendiente | — |
+| 5 | AABB | Emil Aguilar | Por definir | Por definir | Por definir | No iniciado | — |
+| 6 | Gerencia Hotelera | Adriana Montes | Por definir | Por definir | Por definir | No iniciado | — |
+| 7 | Talento Humano (RRHH) | Andry Garcia Flores | Por definir | Por definir | Por definir | No iniciado | — |
+| 8 | Operaciones | VACANTE | Por definir | Por definir | Por definir | No iniciado | — |
+| 9 | Contraloria Interna | Maria Da Costa | Por definir | Por definir | Por definir | No iniciado | — |
+| 10 | Consultoria Juridica (Legal) | Genesy Martinez | Por definir | Por definir | Por definir | No iniciado | — |
 
 ---
 
 ## Pendientes para cerrar Fase 0
 
-- [ ] Recibir e integrar la matriz de dimension
+- [x] Recibir e integrar la matriz de dimension
 - [ ] Confirmar orden de prioridad de areas
-- [ ] Confirmar quien valida y aprueba cada AS-IS
-- [ ] Completar tabla de estado con todas las areas del proyecto
+- [ ] Confirmar quien valida y aprueba cada AS-IS por area
 
 ---
 
@@ -118,3 +120,4 @@ Un campo se considera validado cuando:
 | Fecha | Cambio |
 |---|---|
 | 2026-04-29 | Version inicial creada |
+| 2026-04-29 | Tabla de areas completada con matriz de dimension (69 personas, 10 areas) |
