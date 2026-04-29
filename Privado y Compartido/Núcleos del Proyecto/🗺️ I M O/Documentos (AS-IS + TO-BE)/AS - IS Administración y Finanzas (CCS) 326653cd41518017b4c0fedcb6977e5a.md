@@ -1,0 +1,699 @@
+# AS - IS: Administración y Finanzas (CCS)
+
+Creado: 17 de marzo de 2026 11:54
+
+- TAREA 4.1.1: Disponibilidad Diaria (Antes De Las 10:30 Am)
+    - AS-IS 4.1.1: Disponibilidad Diaria (Antes De Las 10:30 Am)
+        - ¿Qué es esta tarea?
+            - Revisión matutina de saldos bancarios y descarga del extracto bancario antes de las 10:30 am, con posterior envío al asistente administrativo para su procesamiento en Odoo.
+        - ¿Para qué se hace?
+            - Para conocer la posición de caja disponible, verificar si el flujo es positivo o negativo, y proveer al asistente administrativo el insumo necesario para cargar el extracto en Odoo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta la revisión y descarga del extracto.
+            - Joseline (Asistente Administrativa): recibe el extracto, lo depura y lo carga en Odoo.
+        - ¿Cuándo se hace?
+            - Disparador: inicio de la jornada laboral.
+            - Frecuencia: diaria, antes de las 10:30 am.
+        - ¿Cómo se hace?
+            - Paso 1: Ingresar a todos los portales bancarios.
+            - Paso 2: Verificar saldos bancarios y reporte de capital.
+            - Paso 3: Revisar cuentas por pagar y evaluar si el flujo es positivo o negativo.
+            - Paso 4: Descargar el extracto bancario en formato Excel.
+            - Paso 5: Enviar el extracto a Joseline vía WhatsApp, a través del grupo de extractos bancarios (conformado por Finanzas, Talento Humano y los responsables del proceso de pago).
+            - Paso 6: Joseline depura el archivo adecuándolo al formato requerido por Odoo: ajusta la fecha contable, concatena referencia y concepto del movimiento, condiciona en texto los montos de ingreso y egreso, y sustituye puntos por comas.
+            - Paso 7: Joseline carga el extracto en Odoo, realiza la prueba de importación y confirma la carga.
+            - Paso 8: Se notifica en el grupo de extractos bancarios para que los responsables de compras, ventas y pagos procedan con la conciliación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a los portales bancarios de todas las entidades.
+            - Acceso al grupo de WhatsApp de extractos bancarios.
+            - Acceso a Odoo con permisos de importación de extracto bancario.
+        - ¿Qué se genera al terminar?
+            - Extracto bancario cargado en Odoo, disponible para conciliación.
+            - Notificación vía WhatsApp al grupo de extractos bancarios para que los responsables procedan a conciliar.
+        - ¿Qué sistemas o herramientas usan?
+            - Portales bancarios (banca en línea): para consulta de saldos y descarga del extracto.
+            - Excel: para depuración y adecuación del archivo al formato de Odoo.
+            - WhatsApp (grupo de extractos bancarios): para envío del extracto a Joseline y notificación al equipo.
+            - Odoo: para importación del extracto bancario.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.1: Disponibilidad Diaria
+        - Pendiente.
+
+---
+
+- TAREA 4.1.2: Planificación de Pagos (Proveedores, Gubernamental, Municipal)
+    - AS-IS 4.1.2: Planificación de Pagos
+        - ¿Qué es esta tarea?
+            - Elaboración semanal del plan de pagos a ejecutar, considerando disponibilidad bancaria, obligaciones fijas recurrentes y cuentas por pagar a proveedores vencidas.
+        - ¿Para qué se hace?
+            - Para determinar qué proveedores y obligaciones se pagarán en la semana, en función del flujo disponible y los vencimientos registrados.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): elabora la planificación.
+            - Juan (Asistente de Administración): recibe la planificación y ejecuta los pagos asignados.
+        - ¿Cuándo se hace?
+            - Disparador: disponibilidad bancaria revisada y CXP vencidas identificadas.
+            - Frecuencia: semanal. Los días de pago son lunes y martes, pero la planificación puede elaborarse cualquier día de la semana según la disponibilidad.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar la disponibilidad bancaria del momento.
+            - Paso 2: Identificar las obligaciones fijas del período (ej. SENIAT quincenal, Corpoelec, vigilancia externa, internet fijo).
+            - Paso 3: Consultar la plantilla manual de CXP en Excel para identificar proveedores con facturas vencidas y días de vencimiento.
+            - Paso 4: Determinar los proveedores y montos a pagar según disponibilidad.
+            - Paso 5: Comunicar a Juan el listado de pagos a ejecutar.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Plantilla manual de CXP elaborada en Excel por el área de Administración.
+            - Disponibilidad bancaria actualizada (resultado de la tarea 4.1.1).
+        - ¿Qué se genera al terminar?
+            - Listado de pagos autorizados comunicado a Juan (Asistente de Administración) para su ejecución.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: plantilla manual de CXP con fecha de vencimiento, días vencidos y montos, para identificar qué proveedores pagar.
+            - ⚠️ Pendiente validar en sesión próxima si se usa algún sistema adicional para comunicar la planificación a Juan.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.2: Planificación de Pagos
+        - Pendiente.
+
+---
+
+- TAREA 4.1.3: Seguimiento a las Tasas Bancarias
+    - AS-IS 4.1.3: Seguimiento a las Tasas Bancarias
+        - ¿Qué es esta tarea?
+            - Verificación aleatoria de que los porcentajes de comisión que cobra el banco (ej. pago móvil) correspondan a las tasas calificadas y pactadas con cada entidad bancaria.
+        - ¿Para qué se hace?
+            - Para detectar cobros incorrectos o no autorizados por parte del banco y, de ser el caso, gestionar el reembolso o actualizar el conocimiento sobre cambios de tarifa.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas).
+        - ¿Cuándo se hace?
+            - Disparador: revisión de movimientos bancarios durante la conciliación; se activa cuando se detecta una discrepancia en el porcentaje cobrado.
+            - Frecuencia: aleatoria, no tiene una periodicidad fija establecida.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar los movimientos bancarios y verificar el porcentaje de comisión cobrado por el banco (ej. 0,30% en pago móvil).
+            - Paso 2: Comparar el porcentaje cobrado contra la tasa calificada y pactada con el banco.
+            - Paso 3: Si hay discrepancia, contactar al banco para verificar si las tasas subieron o si hubo un cobro incorrecto.
+            - Paso 4: De corresponder, solicitar el reembolso del monto cobrado de más.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Registro de las tasas calificadas por cada banco.
+            - Acceso a los estados de cuenta o movimientos bancarios.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - Portales bancarios (banca en línea): para consulta de movimientos y comisiones cobradas.
+            - ⚠️ Pendiente validar si hay un registro interno donde se documentan las tasas calificadas por banco.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el banco cobró una tasa superior a la pactada: se contacta al banco, se verifica si hubo cambio de tarifa y se solicita reembolso si corresponde.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.3: Seguimiento a las Tasas Bancarias
+        - Pendiente.
+
+---
+
+- TAREA 4.1.4: Seguimiento y Actualización de Puntos de Venta Ubicados Físicamente en el Hotel
+    - AS-IS 4.1.4: Seguimiento y Actualización de Puntos de Venta
+        - ¿Qué es esta tarea?
+            - Monitoreo del estado operativo de los puntos de venta físicos en el hotel, gestión de su ubicación según conveniencia comercial con los bancos, y reporte de fallas técnicas cuando se presentan.
+        - ¿Para qué se hace?
+            - Para garantizar que los puntos de venta estén operativos y ubicados en las áreas que generen mayor ingreso, y para mantener una buena relación comercial con los bancos de modo que ofrezcan beneficios financieros (actualizaciones, subastas de dólares, APIs, etc.).
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): monitorea los ingresos por punto de venta, decide rotación y ubicación, gestiona ante el banco.
+            - Adriana / Lindy: notifican el estado operativo de los puntos de venta en el hotel.
+        - ¿Cuándo se hace?
+            - Disparador: notificación del personal del hotel sobre fallas, o detección propia de ausencia de ingresos por uno o varios puntos de venta durante una semana o más.
+            - Frecuencia: bajo demanda; no tiene una periodicidad fija, se activa al detectar anomalías en los ingresos o al recibir notificación de falla.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar los ingresos por banco en el portal bancario para detectar puntos sin movimiento.
+            - Paso 2: Si se detecta ausencia de ingresos por una semana o más, contactar a Adriana o Lindy para confirmar estado del punto de venta.
+            - Paso 3: Decidir si se rota el punto de venta a otro banco o área, o si se reporta la falla técnica al servicio técnico correspondiente.
+            - Paso 4: Gestionar ante la entidad bancaria la reubicación, sustitución o actualización del punto de venta según la estrategia comercial del período.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a los portales bancarios para consulta de ingresos por punto de venta.
+            - Comunicación con el personal del hotel (Adriana, Lindy) vía ⚠️ Pendiente validar medio de comunicación formal.
+            - Contacto con las entidades bancarias para gestiones de instalación o sustitución.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima si se genera un registro formal de la gestión realizada.
+        - ¿Qué sistemas o herramientas usan?
+            - Portales bancarios (banca en línea): para verificar ingresos por punto de venta y detectar ausencia de movimiento.
+            - ⚠️ Pendiente validar si se usa algún sistema adicional para registrar o comunicar el estado de los puntos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si hay falla técnica en un punto de venta: se reporta al técnico de la instalación bancaria correspondiente.
+            - Si un punto lleva más de una semana sin ingresos: se coordina con el personal del hotel para verificar uso y se decide rotación o retiro temporal.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.4: Seguimiento y Actualización de Puntos de Venta
+        - Pendiente.
+
+---
+
+- TAREA 4.1.5: Apertura de Cuentas Jurídicas
+    - AS-IS 4.1.5: Apertura de Cuentas Jurídicas
+        - ¿Qué es esta tarea?
+            - Gestión del proceso de apertura de cuentas bancarias jurídicas y personales (incluyendo cuentas nómina) ante las entidades bancarias, desde la recopilación de documentos hasta el envío físico del expediente.
+        - ¿Para qué se hace?
+            - Para formalizar la relación bancaria de la empresa o de personas jurídicas y naturales vinculadas, según instrucción de la gerencia general.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): arma el expediente, recopila documentos, gestiona ante el banco y coordina el envío de documentos físicos.
+        - ¿Cuándo se hace?
+            - Disparador: instrucción del señor Rafael (Presidencia) para cuentas jurídicas; para cuentas nómina, una vez que el personal nuevo cumple su período de prueba y es evaluado.
+            - Frecuencia: eventual, no tiene una periodicidad fija. Las cuentas jurídicas ocurren con poca frecuencia; las nóminas son más recurrentes al ritmo del ingreso de personal.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la instrucción de apertura por parte de la gerencia o de Talento Humano.
+            - Paso 2: Recopilar los documentos requeridos por la entidad bancaria: balances, estados de resultados, declaración de impuesto sobre la renta, planillas de firmantes, entre otros.
+            - Paso 3: Llenar las planillas correspondientes de los firmantes autorizados.
+            - Paso 4: Para cuentas nómina: gestionar la solicitud a través del portal de banca en línea.
+            - Paso 5: Garantizar el envío de los documentos físicos a La Noria (sede o punto de entrega designado).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Instrucción formal de Presidencia o Talento Humano.
+            - Documentos legales y financieros de la empresa: balances, estados de resultados, declaración de ISLR.
+            - Documentos de identidad y datos de los firmantes autorizados.
+            - Acceso al portal de banca en línea (para cuentas nómina).
+        - ¿Qué se genera al terminar?
+            - Expediente bancario completo entregado a la entidad bancaria.
+            - ⚠️ Pendiente validar si se genera algún registro interno o notificación formal al completar la apertura.
+        - ¿Qué sistemas o herramientas usan?
+            - Portal de banca en línea: para la solicitud de cuentas nómina.
+            - ⚠️ Pendiente validar si se usa algún sistema adicional para el registro o seguimiento del proceso de apertura.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.5: Apertura de Cuentas Jurídicas
+        - Pendiente.
+
+---
+
+- TAREA 4.1.6: Apertura de Cuentas Nóminas
+    - AS-IS 4.1.6: Apertura de Cuentas Nóminas
+        - ¿Qué es esta tarea?
+            - Según lo discutido en sesión, esta tarea forma parte del mismo proceso descrito en la tarea 4.1.5. El equipo indicó que la apertura de cuentas nómina es una operación con la misma entidad bancaria, diferenciada por el tipo de cuenta y por el disparador (ingreso de personal nuevo tras período de prueba).
+        - ¿Para qué se hace?
+            - Para habilitar el canal bancario de pago de nómina a los trabajadores que ingresan formalmente a la organización.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): gestiona la solicitud ante el banco y coordina el envío de documentos físicos.
+            - Talento Humano: informa el ingreso del personal apto para apertura de cuenta.
+        - ¿Cuándo se hace?
+            - Disparador: notificación de Talento Humano de que el trabajador cumplió el período de prueba y fue evaluado favorablemente.
+            - Frecuencia: bajo demanda, al ritmo del ingreso de personal nuevo.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir confirmación de Talento Humano sobre el trabajador a incorporar.
+            - Paso 2: Gestionar la solicitud de apertura a través del portal de banca en línea.
+            - Paso 3: Garantizar el envío de los documentos físicos requeridos a La Noria.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Notificación de Talento Humano con datos del trabajador.
+            - Acceso al portal de banca en línea.
+            - Documentos físicos del trabajador requeridos por el banco.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima si se genera notificación formal o registro interno al completar la apertura.
+        - ¿Qué sistemas o herramientas usan?
+            - Portal de banca en línea: para la solicitud formal de apertura de cuenta nómina.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.6: Apertura de Cuentas Nóminas
+        - Pendiente.
+
+---
+
+- TAREA 4.1.7: Carga de Extracto Bancario Luego de las 10:30 am
+    - AS-IS 4.1.7: Carga de Extracto Bancario Luego de las 10:30 am
+        - ¿Qué es esta tarea?
+            - Según la transcripción, el proceso de descarga, depuración y carga del extracto bancario en Odoo fue descrito de forma integrada con la tarea 4.1.1. El equipo señaló que la descarga ocurre antes de las 10:30 am y que la carga en Odoo la ejecuta Joseline como paso subsiguiente.
+        - ¿Para qué se hace?
+            - Para alimentar Odoo con los movimientos bancarios del día y habilitar la conciliación por parte de los responsables de compras, ventas y pagos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Joseline (Asistente Administrativa): depura el archivo Excel y realiza la carga en Odoo.
+            - Erika (Departamento de Finanzas): descarga el extracto y lo envía a Joseline.
+        - ¿Cuándo se hace?
+            - Disparador: recepción del extracto bancario enviado por Erika vía WhatsApp.
+            - Frecuencia: diaria, posterior a las 10:30 am.
+        - ¿Cómo se hace?
+            - Paso 1: Joseline recibe el extracto bancario en Excel a través del grupo de WhatsApp de extractos bancarios.
+            - Paso 2: Adecua el archivo al formato requerido por Odoo: fecha contable, concatenación de referencia y concepto, condicionamiento en texto de montos de ingreso y egreso, sustitución de puntos por comas.
+            - Paso 3: Importa el archivo en Odoo y realiza la prueba de carga.
+            - Paso 4: Confirma la carga exitosa.
+            - Paso 5: Notifica en el grupo de WhatsApp de extractos bancarios para que los responsables procedan con la conciliación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Extracto bancario en Excel enviado por Erika.
+            - Acceso a Odoo con permisos de importación de extracto bancario.
+            - Conocimiento del formato de columnas requerido por Odoo para la importación.
+        - ¿Qué se genera al terminar?
+            - Extracto bancario cargado en Odoo y disponible para conciliación.
+            - Notificación vía WhatsApp al grupo de extractos bancarios.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp (grupo de extractos bancarios): para recepción del archivo y notificación al equipo.
+            - Excel: para depuración y adecuación del formato.
+            - Odoo: para importación del extracto bancario.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.7: Carga de Extracto Bancario
+        - Pendiente.
+
+---
+
+- TAREA 4.1.8: Cargar EDC Bancario y Cotejar que Cuadre con el Saldo Final e Inicial, Mismo Tratamiento para la Caja
+    - AS-IS 4.1.8: Carga y Cotejo del Estado de Cuenta Bancario
+        - ¿Qué es esta tarea?
+            - Carga del estado de cuenta bancario en PDF en Odoo y en la carpeta virtual del departamento, para verificar que los saldos iniciales y finales registrados en el sistema coincidan con los reportados por el banco, incluyendo el mismo tratamiento para la caja.
+        - ¿Para qué se hace?
+            - Para detectar sobregiros, movimientos faltantes o diferencias entre el sistema y el banco, y mantener el histórico del estado de cuenta del departamento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta la carga y el cotejo.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima el evento exacto que dispara esta tarea (¿al cierre quincenal, al recibir el EDC del banco, o con otra periodicidad?).
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo se hace?
+            - Paso 1: Obtener el estado de cuenta bancario en formato PDF.
+            - Paso 2: Cargar el PDF en Odoo como soporte del período.
+            - Paso 3: Cargar el PDF en la carpeta virtual del departamento para el histórico.
+            - Paso 4: Cotejar que los saldos iniciales y finales del estado de cuenta coincidan con los registrados en Odoo.
+            - Paso 5: Si hay diferencias, identificar movimientos faltantes o sobrantes y gestionar la corrección.
+            - Paso 6: Aplicar el mismo procedimiento para la caja.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Estado de cuenta bancario en PDF emitido por el banco.
+            - Acceso a Odoo.
+            - Acceso a la carpeta virtual del departamento de Finanzas (Office 365).
+        - ¿Qué se genera al terminar?
+            - Estado de cuenta cargado en Odoo y archivado en la carpeta virtual como histórico.
+            - Detección y registro de diferencias entre sistema y banco, de existir.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: para carga del PDF y verificación de saldos.
+            - Office 365 (carpeta de Finanzas en la nube): para archivo del histórico del estado de cuenta.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el banco aparece sobregirado o con movimientos faltantes o sobrantes: Erika identifica las diferencias y gestiona la corrección.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.8: Carga y Cotejo del Estado de Cuenta Bancario
+        - Pendiente.
+
+---
+
+- TAREA 4.1.9: Transferencias por Propina, Vuelto o Error
+    - AS-IS 4.1.9: Transferencias por Propina, Vuelto o Error
+        - ¿Qué es esta tarea?
+            - Ejecución de pagos o transferencias puntuales no incluidos en la planificación semanal, originados por propinas, vueltos o errores en cobros, reportados desde el hotel.
+        - ¿Para qué se hace?
+            - Para resolver de forma oportuna pagos individuales no programados que surgen de la operación diaria del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): recibe el reporte y ejecuta o coordina la transferencia.
+            - Libni (Jefe de Administración en Tucaca): reporta el evento a Erika.
+            - Joseline (Asistente Administrativa): concilia el movimiento en Odoo.
+        - ¿Cuándo se hace?
+            - Disparador: reporte de Libni vía WhatsApp informando una propina, vuelto o error en cobro.
+            - Frecuencia: bajo demanda, cada vez que ocurre el evento.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir el reporte de Libni vía WhatsApp con el detalle del pago a realizar.
+            - Paso 2: Ejecutar la transferencia desde la plataforma bancaria.
+            - Paso 3: Pasar la información a Joseline para que concilie el movimiento en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Reporte de Libni con el detalle del pago (monto, destinatario, concepto).
+            - Acceso a la plataforma bancaria para ejecutar la transferencia.
+        - ¿Qué se genera al terminar?
+            - Transferencia ejecutada.
+            - Información enviada a Joseline para conciliación en Odoo.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp: para recepción del reporte de Libni.
+            - Plataforma bancaria (banca en línea): para ejecución de la transferencia.
+            - Odoo: para conciliación del movimiento (ejecutada por Joseline).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo expresó que la comunicación por WhatsApp personal es un riesgo operativo: si Erika se va o se daña el teléfono, se pierde el historial. La mejora propuesta es usar un canal corporativo, posiblemente Microsoft Teams, para centralizar estas solicitudes y mantener el historial institucional.
+    - Propuesta 4.1.9: Transferencias por Propina, Vuelto o Error
+        - Pendiente.
+
+---
+
+- TAREA 4.1.10: Recarga de Cobre TAG Sr. Racid a Nombre de SERAC
+    - AS-IS 4.1.10: Recarga de Cobre TAG Sr. Racid a Nombre de SERAC
+        - ¿Qué es esta tarea?
+            - Pago puntual para la recarga del TAG de Cobre del señor Rafael, registrado a nombre de SERAC.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta o coordina el pago.
+            - Joseline (Asistente Administrativa): concilia el movimiento en Odoo, según el mismo flujo descrito para pagos similares (combustible, Simple TV).
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima. En la sesión se mencionó junto a Simple TV y arrendamiento como pago recurrente de carácter puntual.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima.
+            - Paso 2: Pasar la información a Joseline para conciliación en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: para conciliación del movimiento (ejecutada por Joseline).
+            - ⚠️ Pendiente validar plataforma bancaria o medio de pago específico utilizado.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1.10: Recarga de Cobre TAG
+        - Pendiente.
+
+---
+
+- TAREA 4.2.1: Pago a Proveedores desde la Plataforma Bancaria Verificando Pedido contra Cantidad Autorizada por la GG
+    - AS-IS 4.2.1: Pago a Proveedores desde la Plataforma Bancaria
+        - ¿Qué es esta tarea?
+            - Ejecución de los pagos a proveedores desde la plataforma de banca en línea, verificando que cada pago corresponda a un pedido previamente autorizado por la Gerencia General, y posterior coordinación con el asistente para la conciliación en Odoo.
+        - ¿Para qué se hace?
+            - Para saldar las obligaciones con proveedores de acuerdo con la planificación de pagos aprobada y garantizar que todo pago tenga respaldo en un pedido autorizado.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): verifica la autorización y ejecuta el pago desde la plataforma bancaria.
+            - Juan (Asistente de Administración): recibe instrucción de pago y concilia en Odoo.
+            - Joseline (Asistente Administrativa): concilia en Odoo cuando aplica.
+        - ¿Cuándo se hace?
+            - Disparador: planificación de pagos elaborada (tarea 4.1.2) y autorización de la Gerencia General confirmada.
+            - Frecuencia: semanal, los lunes y martes preferentemente, sujeto a disponibilidad bancaria.
+        - ¿Cómo se hace?
+            - Paso 1: Tomar el listado de pagos autorizados de la planificación semanal.
+            - Paso 2: Verificar que cada pago corresponda a un pedido autorizado por la Gerencia General.
+            - Paso 3: Ejecutar los pagos desde la plataforma de banca en línea.
+            - Paso 4: Pasar los comprobantes y soportes al grupo de pagos a proveedores (WhatsApp) para que Juan o Joseline procedan con la conciliación en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Planificación de pagos aprobada.
+            - Autorización de la Gerencia General para cada pedido.
+            - Acceso a la plataforma de banca en línea.
+        - ¿Qué se genera al terminar?
+            - Pagos ejecutados en la plataforma bancaria.
+            - Comprobantes de pago enviados al grupo de WhatsApp de pagos a proveedores para conciliación en Odoo.
+        - ¿Qué sistemas o herramientas usan?
+            - Plataforma bancaria (banca en línea): para ejecución de los pagos.
+            - WhatsApp (grupo de pagos a proveedores): para envío de soportes al equipo de conciliación.
+            - Odoo: para conciliación (ejecutada por Juan o Joseline).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.1: Pago a Proveedores desde la Plataforma Bancaria
+        - Pendiente.
+
+---
+
+- TAREA 4.2.2: Solicitar Reembolso de Retenciones a Proveedores
+    - AS-IS 4.2.2: Solicitar Reembolso de Retenciones a Proveedores
+        - ¿Qué es esta tarea?
+            - Gestión formal ante proveedores que exigieron pago del 100% de la factura (incluyendo la porción del IVA que correspondía retener), para que devuelvan el monto de la retención de IVA que SERAC asumió y no debía pagar.
+        - ¿Para qué se hace?
+            - Porque SERAC es contribuyente especial y está obligada a retener IVA en sus compras. Cuando un proveedor exige pago total previo a la emisión de la factura, SERAC paga el 100% y luego debe recuperar la porción del IVA retenido que corresponde al proveedor devolver.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): prepara los documentos y envía la solicitud al proveedor.
+        - ¿Cuándo se hace?
+            - Disparador: cuando un proveedor exige pago del 100% para emitir la factura, sin aceptar que SERAC retenga la porción de IVA.
+            - Frecuencia: bajo demanda, cada vez que se presenta este caso.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar que el proveedor exigió pago total sin aceptar la retención de IVA.
+            - Paso 2: Preparar el paquete de documentos a enviar: factura fiscal, comprobante de retención de ISLR e IVA, datos bancarios de SERAC (cuenta institucional), correo electrónico y teléfono de contacto.
+            - Paso 3: Enviar la solicitud formal de reembolso al proveedor por correo electrónico.
+            - Paso 4: Hacer seguimiento hasta obtener el reembolso.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Factura fiscal del proveedor.
+            - Comprobante de retención de ISLR e IVA generado en Odoo.
+            - Datos bancarios institucionales de SERAC.
+            - Correo electrónico y teléfono de contacto del proveedor.
+        - ¿Qué se genera al terminar?
+            - Correo electrónico de solicitud de reembolso enviado al proveedor con los documentos adjuntos.
+            - ⚠️ Pendiente validar si existe un registro de seguimiento de reembolsos pendientes.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: para generación del comprobante de retención.
+            - Correo electrónico: para envío formal de la solicitud de reembolso.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima qué ocurre si el proveedor no responde o niega el reembolso.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.2: Solicitar Reembolso de Retenciones a Proveedores
+        - Pendiente.
+
+---
+
+- TAREA 4.2.3: Pago Mensual de 23 Tarjetas de Simple TV (Bancamiga o Banco Activo)
+    - AS-IS 4.2.3: Pago Mensual de 23 Tarjetas de Simple TV
+        - ¿Qué es esta tarea?
+            - Pago mensual del servicio de televisión por suscripción (Simple TV) para las 23 tarjetas del hotel, ejecutado a través de Bancamiga o Banco Activo.
+        - ¿Para qué se hace?
+            - Para mantener el servicio de televisión activo en las instalaciones del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta o coordina el pago.
+            - Joseline (Asistente Administrativa): concilia el movimiento en Odoo, según el flujo estándar de pagos puntuales.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima la fecha límite de pago mensual.
+            - Frecuencia: mensual.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima el detalle del proceso de pago (portal, referencia por tarjeta, monto, etc.).
+            - Paso 2: Ejecutar el pago a través de Bancamiga o Banco Activo.
+            - Paso 3: Pasar la información a Joseline para conciliación en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima (números de tarjeta, datos del servicio, credenciales del portal).
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima (comprobante de pago, notificación, registro en sistema).
+        - ¿Qué sistemas o herramientas usan?
+            - Bancamiga o Banco Activo (plataforma bancaria): para ejecución del pago.
+            - Odoo: para conciliación del movimiento (ejecutada por Joseline).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo mencionó en sesión que estaba evaluando si conviene migrar a un plan corporativo, pero determinaron que resultaría más costoso y que bajo las condiciones actuales los gastos deben llevarse a gasto no deducible. Quedó sin efecto la contratación de un plan corporativo.
+    - Propuesta 4.2.3: Pago Mensual de 23 Tarjetas de Simple TV
+        - Pendiente.
+
+---
+
+- TAREA 4.2.4: Retenciones Urgentes / Compras Urgentes
+    - AS-IS 4.2.4: Retenciones Urgentes / Compras Urgentes
+        - ¿Qué es esta tarea?
+            - Procesamiento en Odoo de facturas de compras urgentes solicitadas fuera de la planificación por Presidencia (señor Rafael) o Gerencia (doctor Alberto), incluyendo verificación documental, registro de la factura, aplicación de retenciones, emisión del comprobante y ejecución del pago.
+        - ¿Para qué se hace?
+            - Para atender compras o pagos que no pueden esperar al ciclo de planificación semanal y que son solicitados directamente por la alta dirección.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): verifica documentos, procesa la factura en Odoo, aplica retenciones, emite el comprobante y ejecuta el pago.
+            - Juan o Joseline: concilian el movimiento en Odoo tras la ejecución del pago.
+        - ¿Cuándo se hace?
+            - Disparador: solicitud directa del señor Rafael o del doctor Alberto requiriendo procesamiento inmediato de una factura o compra.
+            - Frecuencia: bajo demanda, cada vez que ocurre una solicitud urgente.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la solicitud del señor Rafael o doctor Alberto.
+            - Paso 2: Verificar que los documentos de la compra cumplan con el protocolo administrativo (factura fiscal válida, datos del proveedor, etc.).
+            - Paso 3: Si el proveedor no existe en Odoo, crearlo previo a continuar (ver tarea 4.5.1).
+            - Paso 4: Registrar la factura de compra en Odoo.
+            - Paso 5: Aplicar la retención correspondiente según el concepto: retención de IVA si es una compra gravada; retención de ISLR si es un servicio u otro concepto que lo amerite.
+            - Paso 6: Emitir y entregar el comprobante de retención a la persona solicitante.
+            - Paso 7: Ejecutar el pago desde la plataforma bancaria.
+            - Paso 8: Pasar todos los soportes al grupo de pagos a proveedores (WhatsApp) para que Juan o Joseline procedan con la conciliación en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Factura fiscal del proveedor (válida y con datos completos).
+            - Proveedor creado en Odoo con porcentaje de retención calificado en SENIAT.
+            - Acceso a Odoo para registro y retención.
+            - Acceso a la plataforma bancaria para ejecución del pago.
+        - ¿Qué se genera al terminar?
+            - Factura registrada en Odoo.
+            - Comprobante de retención emitido y entregado al solicitante.
+            - Pago ejecutado.
+            - Soportes enviados al equipo de conciliación vía WhatsApp.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: para registro de factura y generación del comprobante de retención.
+            - Plataforma bancaria (banca en línea): para ejecución del pago.
+            - WhatsApp (grupo de pagos a proveedores): para envío de soportes al equipo de conciliación.
+            - Portal SENIAT: para verificar el porcentaje de retención calificado del proveedor (en caso de creación de proveedor nuevo).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el proveedor no está creado en Odoo: se verifica en el portal del SENIAT, se registra el porcentaje de retención calificado y se crea el proveedor antes de continuar con el proceso.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.4: Retenciones Urgentes / Compras Urgentes
+        - Pendiente.
+
+---
+
+- TAREA 4.2.5: Recarga de Combustible Todos los Viernes a Escalona
+    - AS-IS 4.2.5: Recarga de Combustible Todos los Viernes a Escalona
+        - ¿Qué es esta tarea?
+            - Pago semanal de combustible al chofer del señor Rafael (Escalona), ejecutado todos los viernes.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima el destino y uso específico del vehículo asociado a este pago.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta o coordina el pago.
+            - Joseline (Asistente Administrativa): concilia el movimiento en Odoo, según el mismo flujo de pagos puntuales.
+        - ¿Cuándo se hace?
+            - Disparador: llegada del día viernes de cada semana.
+            - Frecuencia: semanal, todos los viernes.
+        - ¿Cómo se hace?
+            - Paso 1: Ejecutar la transferencia del monto de combustible a Escalona desde la plataforma bancaria.
+            - Paso 2: Pasar la información a Joseline para conciliación en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima el monto fijo o variable del pago y los datos bancarios de Escalona.
+        - ¿Qué se genera al terminar?
+            - Transferencia ejecutada.
+            - Información enviada a Joseline para conciliación en Odoo.
+        - ¿Qué sistemas o herramientas usan?
+            - Plataforma bancaria (banca en línea): para ejecución de la transferencia.
+            - Odoo: para conciliación del movimiento (ejecutada por Joseline).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.5: Recarga de Combustible Todos los Viernes a Escalona
+        - Pendiente.
+
+---
+
+- TAREA 4.2.6: Pago de Combustible para la Tiggo Pro8
+    - AS-IS 4.2.6: Pago de Combustible para la Tiggo Pro8
+        - ¿Qué es esta tarea?
+            - Pago puntual de combustible para el vehículo Tiggo Pro8, registrado a nombre de SERAC. En sesión el equipo indicó que este pago puede fusionarse con la tarea 4.2.5 por tratarse del mismo flujo operativo.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima el uso específico del vehículo y a quién corresponde.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta o coordina el pago.
+            - Joseline (Asistente Administrativa): concilia el movimiento en Odoo.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima. En sesión se mencionó en el mismo bloque que el combustible de Escalona, sugiriendo fusión de ambas tareas.
+        - ¿Cómo se hace?
+            - Paso 1: Ejecutar la transferencia del monto de combustible desde la plataforma bancaria.
+            - Paso 2: Pasar la información a Joseline para conciliación en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima el monto, datos bancarios del destinatario y criterio de autorización.
+        - ¿Qué se genera al terminar?
+            - Transferencia ejecutada.
+            - Información enviada a Joseline para conciliación en Odoo.
+        - ¿Qué sistemas o herramientas usan?
+            - Plataforma bancaria (banca en línea): para ejecución de la transferencia.
+            - Odoo: para conciliación del movimiento (ejecutada por Joseline).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.6: Pago de Combustible para la Tiggo Pro8
+        - Pendiente.
+
+---
+
+- TAREA 4.2.7: Pago de Arrendamiento Dr. Acid Margarita
+    - AS-IS 4.2.7: Pago de Arrendamiento Dr. Acid Margarita
+        - ¿Qué es esta tarea?
+            - Pago del canon de arrendamiento correspondiente al Dr. Alberto (Acid) por la sede de Margarita. En sesión el equipo lo clasificó como un pago de gerencia general, fuera de la operación directa del hotel pero dentro de las responsabilidades del departamento.
+        - ¿Para qué se hace?
+            - Para cumplir con la obligación contractual de arrendamiento del inmueble en Margarita a nombre del Dr. Alberto.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta o coordina el pago.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima la fecha límite de pago mensual.
+            - Frecuencia: mensual.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima el detalle del proceso (plataforma de pago, monto, destinatario, instrucción de pago).
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima si se genera comprobante, registro en Odoo o notificación formal.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.7: Pago de Arrendamiento Dr. Acid Margarita
+        - Pendiente.
+
+---
+
+- TAREA 4.2.8: Pago Corpoelec Dr. Acid Margarita + Prados del Este
+    - AS-IS 4.2.8: Pago Corpoelec Dr. Acid Margarita + Prados del Este
+        - ¿Qué es esta tarea?
+            - Pago del servicio eléctrico de Corpoelec correspondiente a dos inmuebles del Dr. Alberto: la sede de Margarita y Prados del Este. En sesión fue clasificado como pago de gerencia general, fuera de la operación directa del hotel pero dentro de las responsabilidades del departamento.
+        - ¿Para qué se hace?
+            - Para mantener el servicio eléctrico activo en los inmuebles del Dr. Alberto gestionados desde el departamento de Finanzas de SERAC.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta o coordina el pago.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima la fecha límite de pago y si hay factura emitida por Corpoelec que detone el proceso.
+            - Frecuencia: mensual.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima el detalle del proceso (portal, monto, referencias de los dos inmuebles).
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima (facturas o referencias de los contratos de Corpoelec para ambos inmuebles).
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima si se genera comprobante, registro en Odoo o notificación formal.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.8: Pago Corpoelec Dr. Acid Margarita + Prados del Este
+        - Pendiente.
+
+---
+
+- TAREA 4.2.9: Relación de CxP de Arrendamiento Piso 4 (Mensual)
+    - AS-IS 4.2.9: Relación de CxP de Arrendamiento Piso 4
+        - ¿Qué es esta tarea?
+            - Elaboración mensual del reporte del canon de arrendamiento de la oficina del piso 4 y dos discos (sede de Chacaíto), gestión del pago en efectivo coordinado con el señor Rafael, y formalización del estado de cuenta por correo electrónico al arrendador.
+        - ¿Para qué se hace?
+            - Para cumplir con la obligación mensual de arrendamiento del piso 4 y mantener evidencia formal del cumplimiento del compromiso, dado que el pago se realiza en efectivo y no tiene respaldo de factura fiscal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): reporta el monto al señor Rafael, coordina la entrega del efectivo, gestiona el recibo con el arrendador y formaliza por correo.
+            - Señor Rafael (Presidencia): provee el efectivo a través de un mensajero (Escalona, Daniel u otro designado).
+            - Arrendador (Royal Palace / representante del piso 4): emite el recibo de pago.
+        - ¿Cuándo se hace?
+            - Disparador: cierre del mes o vencimiento del canon de arrendamiento.
+            - Frecuencia: mensual.
+        - ¿Cómo se hace?
+            - Paso 1: Reportar al señor Rafael el monto del canon de arrendamiento del piso 4 vía WhatsApp.
+            - Paso 2: El señor Rafael envía el dinero en efectivo a través de un mensajero (Escalona, Daniel u otro designado).
+            - Paso 3: Coordinar con el arrendador para que emita el recibo de pago.
+            - Paso 4: Efectuar el pago en efectivo y recibir el recibo.
+            - Paso 5: Enviar un correo electrónico al arrendador actualizando el estado de cuenta como evidencia formal del cumplimiento del compromiso.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Monto del canon de arrendamiento vigente.
+            - Efectivo provisto por el señor Rafael.
+            - Datos de contacto del arrendador para coordinar el recibo y el correo.
+        - ¿Qué se genera al terminar?
+            - Recibo de pago emitido por el arrendador.
+            - Correo electrónico enviado al arrendador con el estado de cuenta actualizado, como respaldo formal del pago.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp: para reporte del monto al señor Rafael y coordinación logística.
+            - Correo electrónico: para formalización del estado de cuenta con el arrendador.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima qué ocurre si el mensajero no puede entregar el efectivo o si el arrendador no emite el recibo a tiempo.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima. Se infiere que la ausencia de factura fiscal es un punto de mejora, pero no fue expresado explícitamente en la sesión.
+    - Propuesta 4.2.9: Relación de CxP de Arrendamiento Piso 4
+        - Pendiente.
+
+---
+
+- TAREA 4.2.10: Pago del VACC y Relacionar en Sistema como una CxC Socios Racid antes de los 10 de Cada Mes
+    - AS-IS 4.2.10: Pago del VACC
+        - ¿Qué es esta tarea?
+            - Pago mensual del VACC antes del día 10 de cada mes y su registro en Odoo como una cuenta por cobrar a los socios Racid.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima la naturaleza del VACC y por qué se registra como CxC socios Racid.
+        - ¿Qué roles ejecutan esta tarea?
+            - Erika (Departamento de Finanzas): ejecuta el pago y registra en Odoo. En sesión fue mencionada junto al combustible y el Cobre TAG como pago de presidencia dentro de las responsabilidades del departamento.
+        - ¿Cuándo se hace?
+            - Disparador: inicio del mes.
+            - Frecuencia: mensual, antes del día 10.
+        - ¿Cómo se hace?
+            - Paso 1: Ejecutar el pago del VACC antes del día 10 del mes.
+            - Paso 2: Registrar el pago en Odoo como una cuenta por cobrar a los socios Racid.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima el monto, la plataforma o medio de pago, y los datos del ente receptor.
+        - ¿Qué se genera al terminar?
+            - Pago ejecutado.
+            - Registro en Odoo como CxC socios Racid.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: para registro del pago como CxC socios Racid.
+            - ⚠️ Pendiente validar en sesión próxima la plataforma o medio utilizado para ejecutar el pago.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2.10: Pago del VACC
+        - Pendiente.

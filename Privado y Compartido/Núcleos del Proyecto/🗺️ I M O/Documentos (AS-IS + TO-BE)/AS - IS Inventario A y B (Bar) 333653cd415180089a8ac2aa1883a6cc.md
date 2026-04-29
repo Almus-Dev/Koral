@@ -1,0 +1,977 @@
+# AS - IS: Inventario: A y B (Bar)
+
+Creado: 30 de marzo de 2026 9:45
+
+- TAREA 1.1: Recepción de lista de huéspedes desde Grupo de WhatsApp (Entregado por recepción)
+    - AS-IS 1.1: Recepción de lista de huéspedes desde Grupo de WhatsApp
+        - ¿Qué es esta tarea?
+            - Recepción por parte del equipo de servicio de salón de la lista de comensales del día, enviada por recepción a través de un grupo de WhatsApp, para conocer la cantidad de huéspedes a atender en el desayuno.
+        - ¿Para qué se hace?
+            - Para que el capitán de servicio y los mesoneros sepan con cuántos comensales van a trabajar y organicen el mise en place de productos y materiales en función de esa cantidad.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepción envía la lista al grupo de WhatsApp. El capitán de servicio (Douglas) y los mesoneros la reciben y verifican.
+        - ¿Cuándo se hace?
+            - Disparador: Envío de la lista de huéspedes por parte de recepción al grupo de WhatsApp del departamento.
+            - Frecuencia: Diaria, antes del inicio del servicio de desayuno.
+        - ¿Cómo se hace?
+            - Paso 1: Recepción envía la lista de huéspedes al grupo de WhatsApp del departamento.
+            - Paso 2: El capitán de servicio y los mesoneros revisan la lista en el grupo de WhatsApp para conocer la cantidad de comensales del día.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al grupo de WhatsApp donde recepción publica la lista.
+        - ¿Qué se genera al terminar?
+            - Conocimiento de la cantidad de huéspedes a atender, que sirve de base para el mise en place de la Tarea 1.2.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp (grupo): canal por el que recepción envía la lista de huéspedes al equipo de servicio.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.1: Recepción de lista de huéspedes desde Grupo de WhatsApp
+        - Pendiente.
+- TAREA 1.2: Mise en place de productos y materiales para la producción
+    - AS-IS 1.2: Mise en place de productos y materiales para la producción
+        - ¿Qué es esta tarea?
+            - Organización y preparación anticipada de todos los productos, suministros y materiales necesarios para atender la cantidad de huéspedes indicada en la lista recibida, dejando todo listo antes del inicio del servicio.
+        - ¿Para qué se hace?
+            - Para que cuando lleguen los comensales ya se tenga todo organizado y disponible para ejecutar el servicio de desayuno sin demoras.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas) y mesoneros del turno de la mañana.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de la lista de huéspedes (Tarea 1.1).
+            - Frecuencia: Diaria, al inicio del turno de la mañana antes del servicio de desayuno.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisa la lista de huéspedes para determinar la cantidad de comensales.
+            - Paso 2: Se verifica si el inventario estándar cubre la cantidad de comensales del día. El capitán maneja un estándar de inventario para hasta cincuenta personas; si la cantidad supera ese estándar, se saca del almacén lo adicional necesario.
+            - Paso 3: Se organiza y coloca todo lo necesario para atender esa cantidad de huéspedes.
+            - ⚠️ Pendiente validar en sesión próxima: detalle de qué materiales y productos específicos se alistan en el mise en place de servicio (vajilla, cubertería, cristalería, etc.).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Lista de huéspedes recibida de recepción. Stock disponible en el inventario estándar del área. Acceso al almacén para retirar producto adicional si la cantidad supera el estándar de cincuenta personas.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si la cantidad de huéspedes supera el estándar de cincuenta personas: se retira del almacén el volumen adicional necesario para completar el mise en place.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.2: Mise en place de productos y materiales para la producción
+        - Pendiente.
+- TAREA 1.3: Verificación de salón de restaurante (validar que esté en óptimas condiciones de higiene)
+    - AS-IS 1.3: Verificación de salón de restaurante
+        - ¿Qué es esta tarea?
+            - Inspección visual del salón del restaurante donde se atenderá a los comensales para verificar que esté limpio, con las sillas y mesas completas y en condiciones adecuadas de higiene antes de iniciar el servicio.
+        - ¿Para qué se hace?
+            - Para garantizar que el salón esté en condiciones óptimas de higiene y presentación antes de recibir a los huéspedes.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas).
+        - ¿Cuándo se hace?
+            - Disparador: Inicio del turno de la mañana, luego del mise en place.
+            - Frecuencia: Diaria, antes del inicio del servicio de desayuno.
+        - ¿Cómo se hace?
+            - Paso 1: El capitán recorre el salón del restaurante.
+            - Paso 2: Verifica que el salón esté limpio y en condiciones de higiene.
+            - Paso 3: Verifica que las sillas y mesas estén completas.
+            - Paso 4: Si el salón no está en condiciones, se procede a la limpieza del área (Tarea 1.4).
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Confirmación del estado del salón. Si no está en condiciones, se activa la Tarea 1.4 de limpieza.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el salón no está limpio o no está en condiciones de higiene: se procede a la limpieza del área (Tarea 1.4).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.3: Verificación de salón de restaurante
+        - Pendiente.
+- TAREA 1.4: Limpieza de área de restaurante
+    - AS-IS 1.4: Limpieza de área de restaurante
+        - ¿Qué es esta tarea?
+            - Limpieza del área del restaurante por parte del propio equipo de servicio cuando se detecta que el salón no está en condiciones adecuadas de higiene al inicio del turno.
+        - ¿Para qué se hace?
+            - Para dejar el salón en condiciones óptimas de higiene antes de recibir a los comensales.
+        - ¿Qué roles ejecutan esta tarea?
+            - El propio equipo de servicio (capitán y mesoneros). El capitán (Douglas) indica que son ellos mismos quienes realizan la limpieza, sin depender del departamento de mantenimiento.
+        - ¿Cuándo se hace?
+            - Disparador: Resultado de la verificación del salón (Tarea 1.3) que indica que el área no está en condiciones óptimas de higiene.
+            - Frecuencia: Bajo demanda, cada vez que la verificación detecta que el salón requiere limpieza antes del servicio.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima: procedimiento específico de limpieza del salón, áreas que cubre, insumos utilizados.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Salón del restaurante limpio y en condiciones para recibir comensales.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.4: Limpieza de área de restaurante
+        - Pendiente.
+- TAREA 1.5: Verificación de productos a servir (Inventario de lo que se vaya a ofrecer en el desayuno)
+    - AS-IS 1.5: Verificación de productos a servir
+        - ¿Qué es esta tarea?
+            - Revisión de los productos disponibles en cocina que se van a ofrecer durante el desayuno, verificando que haya suficiente cantidad de cada ítem del menú incluido: bebidas, café, jugos, empanadas, casones, carne mechada, carne molida y demás preparaciones del desayuno.
+        - ¿Para qué se hace?
+            - Para confirmar que cocina cuenta con todos los productos que se van a ofrecer en el servicio de desayuno y que la cantidad es suficiente para los comensales del día.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas) o mesonero asignado.
+        - ¿Cuándo se hace?
+            - Disparador: Salón del restaurante verificado y listo para el servicio.
+            - Frecuencia: Diaria, antes del inicio del servicio de desayuno.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisa cocina para verificar que tenga todos los productos a ofrecer en el desayuno.
+            - Paso 2: Se verifica que haya cantidad suficiente de cada ítem (café, jugos, empanadas, casones, mechada, molida y demás preparaciones del desayuno incluido).
+            - ⚠️ Pendiente validar en sesión próxima: qué ocurre si se detectan faltantes en esta verificación, si se activa algún proceso de requisición previo al servicio.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a cocina para verificar el estado de los productos disponibles.
+        - ¿Qué se genera al terminar?
+            - Confirmación de disponibilidad de todos los productos a servir en el desayuno.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.5: Verificación de productos a servir
+        - Pendiente.
+- TAREA 1.6: Toma de pedido de huéspedes (toma de comandas)
+    - AS-IS 1.6: Toma de pedido de huéspedes
+        - ¿Qué es esta tarea?
+            - Toma manual del pedido de desayuno de cada huésped por parte del mesonero, registrándolo en un papel (comanda manual) para luego entregarlo a caja.
+        - ¿Para qué se hace?
+            - Para registrar lo que cada comensal desea consumir en el desayuno y transmitirlo a caja para que sea procesado y enviado a cocina.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesoneros (y/o capitán de servicio Douglas).
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un huésped al restaurante para desayunar.
+            - Frecuencia: Bajo demanda, cada vez que llega un huésped a desayunar. Diaria durante el turno de la mañana.
+        - ¿Cómo se hace?
+            - Paso 1: El mesonero se acerca al huésped en su mesa.
+            - Paso 2: Toma el pedido del comensal.
+            - Paso 3: Anota el pedido manualmente en un papel (comanda manual), indicando los ítems solicitados (por ejemplo: dos empanadas, un jugo y otros).
+            - ⚠️ Pendiente validar en sesión próxima: si se anota también el número de habitación o número de mesa en la comanda manual.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Papel y bolígrafo para anotar la comanda manualmente. Conocimiento del menú disponible.
+        - ¿Qué se genera al terminar?
+            - Comanda manual con el pedido del huésped, lista para ser entregada a caja (Tarea 1.7).
+        - ¿Qué sistemas o herramientas usan?
+            - Comanda manual (papel): el mesonero anota el pedido a mano. Se menciona que existe una tablet disponible en el área, pero actualmente no se usa para la toma de pedidos por limitaciones de red.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Problemas de red o lentitud del sistema de la tablet: se usa la comanda manual como alternativa más rápida para evitar demoras al comensal.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El capitán expresa que cada mesonero debería poder tomar el pedido directamente desde su tablet y enviarlo a cocina sin necesidad de pasar por caja. Caja quedaría únicamente para el proceso de cobro y facturación. Esto requiere mejor conectividad de red y posiblemente una tablet adicional para cubrir el área de piscina y otras zonas donde hay dos o tres mesoneros. Anteriormente existía una impresora en cocina que recibía las comandas directamente desde las tablets, pero se dañó por el volumen de uso.
+    - Propuesta 1.6: Toma de pedido de huéspedes
+        - Pendiente.
+- TAREA 1.7: Entrega de comandas a Caja para enviar a Cocina (Procesamiento de la orden)
+    - AS-IS 1.7: Entrega de comandas a Caja para enviar a Cocina
+        - ¿Qué es esta tarea?
+            - Entrega de la comanda manual del pedido del huésped al cajero, quien la procesa en su sistema y la envía a cocina para que se prepare el pedido.
+        - ¿Para qué se hace?
+            - Para que caja procese la orden en el sistema y la transmita a cocina, dado que actualmente las tablets de los mesoneros no tienen conectividad suficiente para enviar pedidos directamente.
+        - ¿Qué roles ejecutan esta tarea?
+            - El mesonero entrega la comanda a caja. El cajero la procesa en el sistema y la envía a cocina.
+        - ¿Cuándo se hace?
+            - Disparador: Toma de pedido del huésped completada (Tarea 1.6).
+            - Frecuencia: Bajo demanda, cada vez que se toma un pedido de huésped.
+        - ¿Cómo se hace?
+            - Paso 1: El mesonero lleva la comanda manual a caja.
+            - Paso 2: El cajero recibe la comanda y la procesa en su sistema (computadora de caja).
+            - Paso 3: El cajero envía el pedido a cocina desde su sistema.
+            - ⚠️ Pendiente validar en sesión próxima: sistema o programa específico que usa caja para procesar y enviar las comandas a cocina.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda manual con el pedido del huésped. Sistema de caja operativo y con conectividad para enviar el pedido a cocina.
+        - ¿Qué se genera al terminar?
+            - Orden procesada y enviada a cocina para su preparación.
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema de caja (computadora): para procesar la comanda y enviarla a cocina. Se menciona que a veces el sistema se lentifica o tiene problemas de red, lo que genera demoras.
+            - Tablet de mesonero: actualmente solo se usa para escribir el pedido, pero no tiene capacidad de envío directo a cocina por limitaciones de red.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el sistema de caja está lento o con problemas de red: el proceso se demora, lo que genera tiempo de espera al comensal. Por eso el equipo prefiere la comanda manual, que es más rápida mientras caja procesa.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que cada mesonero pueda enviar el pedido directamente a cocina desde su tablet, sin necesidad de pasar por caja. Caja quedaría únicamente para el proceso de facturación y cobro. Esto requiere mejorar la conectividad de red del área y contar con una tablet adicional para las zonas de piscina.
+    - Propuesta 1.7: Entrega de comandas a Caja para enviar a Cocina
+        - Pendiente.
+- TAREA 1.8: Verificar que el pedido haya llegado completo a cocina
+    - AS-IS 1.8: Verificar que el pedido haya llegado completo a cocina
+        - ¿Qué es esta tarea?
+            - Confirmación de que todos los ítems del pedido enviado a cocina fueron recibidos correctamente y de forma completa, para evitar fallas en la preparación o entregas incompletas al comensal.
+        - ¿Para qué se hace?
+            - Para asegurar que lo que se le entregó a caja para enviar a cocina llegó completo, evitando que algún ítem se pierda en el proceso y generando una entrega deficiente al huésped.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero o capitán de servicio (Douglas).
+        - ¿Cuándo se hace?
+            - Disparador: Envío del pedido a cocina por parte de caja (Tarea 1.7).
+            - Frecuencia: Bajo demanda, cada vez que se procesa un pedido.
+        - ¿Cómo se hace?
+            - Paso 1: Luego de que caja envía el pedido a cocina, el mesonero o capitán verifica que el pedido haya llegado completo a cocina.
+            - ⚠️ Pendiente validar en sesión próxima: canal o mecanismo específico de verificación (se menciona WhatsApp en la transcripción como posible medio de verificación, pero no queda completamente confirmado su uso para esta tarea específica).
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Confirmación de que el pedido completo está en cocina y puede ser preparado.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima: se menciona WhatsApp como posible herramienta de verificación, pero no queda confirmado en la transcripción.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.8: Verificar que el pedido haya llegado completo a cocina
+        - Pendiente.
+- TAREA 1.9: Preparación del pedido
+    - AS-IS 1.9: Preparación del pedido
+        - ¿Qué es esta tarea?
+            - Preparación en cocina del pedido del huésped una vez confirmada la recepción completa de la orden.
+        - ¿Para qué se hace?
+            - Para tener el pedido listo para ser entregado al comensal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de cocina (según lo indicado en la transcripción, esta tarea la ejecuta cocina, no el equipo de servicio de salón).
+        - ¿Cuándo se hace?
+            - Disparador: Confirmación de que el pedido llegó completo a cocina (Tarea 1.8).
+            - Frecuencia: Bajo demanda, cada vez que se procesa un pedido de huésped.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima: procedimiento específico de preparación del pedido en cocina.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pedido recibido completo en cocina. Productos e insumos disponibles y mise en place de cocina realizado.
+        - ¿Qué se genera al terminar?
+            - Pedido preparado y listo para ser entregado al comensal (Tarea 1.10).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.9: Preparación del pedido
+        - Pendiente.
+- TAREA 1.10: Entrega al comensal
+    - AS-IS 1.10: Entrega al comensal
+        - ¿Qué es esta tarea?
+            - Servicio y entrega del pedido preparado directamente al huésped en su mesa.
+        - ¿Para qué se hace?
+            - Para completar el ciclo del servicio de desayuno, entregando al comensal lo que solicitó.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero del turno de la mañana.
+        - ¿Cuándo se hace?
+            - Disparador: Pedido preparado y listo en cocina (Tarea 1.9).
+            - Frecuencia: Bajo demanda, cada vez que un pedido está listo para ser servido.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima: protocolo de servicio al mesa.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pedido preparado por cocina.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.10: Entrega al comensal
+        - Pendiente.
+- TAREA 1.11: Limpieza de área
+    - AS-IS 1.11: Limpieza de área
+        - ¿Qué es esta tarea?
+            - Limpieza del área del restaurante al cierre del servicio de desayuno, como parte del proceso de entrega del turno.
+        - ¿Para qué se hace?
+            - Para dejar el área en condiciones adecuadas al finalizar el servicio de desayuno y preparar el espacio para la siguiente fase del turno.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de servicio del turno de la mañana (mesoneros y capitán).
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del servicio de desayuno.
+            - Frecuencia: Diaria, al cierre de cada servicio. El equipo indica que todas las fases se entregan con limpieza del área.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+        - ¿Qué se genera al terminar?
+            - Área limpia y lista para la siguiente fase (Fase 2: Organización, limpieza y preparación).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.11: Limpieza de área
+        - Pendiente.
+- TAREA 2.1: Limpieza de área de restaurante
+    - AS-IS 2.1: Limpieza de área de restaurante
+        - ¿Qué es esta tarea?
+            - Limpieza del área del restaurante al inicio del período de organización entre el servicio de desayuno y el posible servicio de almuerzo, dentro del turno de la mañana.
+        - ¿Para qué se hace?
+            - Para mantener el área limpia y en condiciones durante el período entre servicios, aprovechando el tiempo en que no hay comensales activos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de servicio del turno de la mañana (mesoneros y capitán).
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del servicio de desayuno e inicio del período de baja afluencia de comensales (mayoría de huéspedes se van a la playa).
+            - Frecuencia: Diaria, durante el período entre el desayuno y las actividades del mediodía (aproximadamente desde las 11:00 AM hasta las 3:00 PM / 4:00 PM).
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.1: Limpieza de área de restaurante
+        - Pendiente.
+- TAREA 2.2: Inventario de productos y mise en place de suministros y materiales
+    - AS-IS 2.2: Inventario de productos y mise en place de suministros y materiales
+        - ¿Qué es esta tarea?
+            - Realización del inventario de productos disponibles y organización (mise en place) de suministros, materiales, frutas y otros insumos durante el período de baja afluencia entre desayuno y almuerzo. Incluye el procesamiento de frutas (pesarlas, arreglarlas, empacarlas, guardarlas en nevera) y la organización del área de barra.
+        - ¿Para qué se hace?
+            - Para aprovechar el tiempo sin comensales en organizar, reabastecer y preparar todo lo necesario para los servicios del turno de la tarde (snack y cena), dejando el inventario actualizado y los insumos listos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas) y mesoneros del turno de la mañana.
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del servicio de desayuno y período de baja afluencia de comensales.
+            - Frecuencia: Diaria, entre aproximadamente las 11:00 AM y las 3:00 PM / 4:00 PM del turno de la mañana.
+        - ¿Cómo se hace?
+            - Paso 1: Se realiza el inventario de productos disponibles en el área.
+            - Paso 2: Se procesan las frutas: se pesan, arreglan, empacan y guardan en la nevera.
+            - Paso 3: Se organiza el área de barra y se completa el mise en place de suministros y materiales.
+            - ⚠️ Pendiente validar en sesión próxima: otros ítems específicos del mise en place, herramientas o formatos usados para el inventario.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al área de barra, neveras y almacén de productos.
+        - ¿Qué se genera al terminar?
+            - Inventario actualizado. Frutas procesadas y almacenadas. Área de barra y suministros organizados para el turno de la tarde.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si hay faltantes de productos: se activa el proceso de requisición a almacén (ver Fase 4).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.2: Inventario de productos y mise en place de suministros y materiales
+        - Pendiente.
+- TAREA 2.3: Prevención de cualquier pedido de huéspedes
+    - AS-IS 2.3: Prevención de cualquier pedido de huéspedes
+        - ¿Qué es esta tarea?
+            - Estado de disponibilidad y alerta del equipo de servicio durante el período entre desayuno y cena, para atender a cualquier huésped que regrese de la playa y solicite un almuerzo u otro pedido esporádico.
+        - ¿Para qué se hace?
+            - Para no dejar sin atención a huéspedes que, aunque son pocos, pueden solicitar servicio de almuerzo mientras el equipo realiza las tareas de organización y limpieza.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesoneros y capitán de servicio del turno de la mañana. El equipo espera activamente la llegada de comensales mientras realiza las actividades de organización.
+        - ¿Cuándo se hace?
+            - Disparador: Período de baja afluencia posterior al desayuno, cuando la mayoría de huéspedes están en la playa.
+            - Frecuencia: Diaria, durante el período entre las 11:00 AM y las 3:00 PM / 4:00 PM. Se menciona que normalmente el almuerzo tiene muy poca salida.
+        - ¿Cómo se hace?
+            - Paso 1: El equipo mantiene el área de servicio disponible y continúa con las tareas de organización y limpieza.
+            - Paso 2: Si llega un huésped para almorzar, se atiende el pedido siguiendo el mismo flujo que el desayuno (Tareas 2.4 a 2.8).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Área de servicio operativa. Personal disponible durante el turno.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.3: Prevención de cualquier pedido de huéspedes
+        - Pendiente.
+- TAREA 2.4: Toma de pedido de huéspedes (toma de comandas)
+    - AS-IS 2.4: Toma de pedido de huéspedes (toma de comandas)
+        - ¿Qué es esta tarea?
+            - Toma manual del pedido de almuerzo o pedido esporádico del huésped que llega al restaurante durante el período de organización, siguiendo el mismo proceso que en el desayuno.
+        - ¿Para qué se hace?
+            - Para registrar lo que el comensal desea y transmitirlo a caja para su procesamiento y envío a cocina.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesoneros del turno de la mañana.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un huésped al restaurante durante el período de organización solicitando almuerzo u otro pedido.
+            - Frecuencia: Bajo demanda, esporádica. Se menciona que el almuerzo tiene muy poca salida.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 1.6: se anota el pedido manualmente en papel (comanda manual) para entregarlo a caja.
+            - ⚠️ Pendiente validar en sesión próxima: si existe alguna diferencia en el proceso de toma de pedido para el almuerzo respecto al desayuno.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Papel y bolígrafo para anotar la comanda. Conocimiento del menú disponible para el almuerzo.
+        - ¿Qué se genera al terminar?
+            - Comanda manual lista para entregar a caja (Tarea 2.5).
+        - ¿Qué sistemas o herramientas usan?
+            - Comanda manual (papel). Tablet disponible pero con limitaciones de conectividad de red.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismo escenario que Tarea 1.6: si el sistema de la tablet tiene problemas de red, se usa la comanda manual.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Misma oportunidad de mejora que la Tarea 1.6: envío directo del pedido a cocina desde la tablet del mesonero, sin pasar por caja.
+    - Propuesta 2.4: Toma de pedido de huéspedes (toma de comandas)
+        - Pendiente.
+- TAREA 2.5: Entrega de comandas a Caja para enviar a Cocina (Procesamiento de la orden)
+    - AS-IS 2.5: Entrega de comandas a Caja para enviar a Cocina
+        - ¿Qué es esta tarea?
+            - Entrega de la comanda manual del pedido de almuerzo al cajero para que la procese en su sistema y la envíe a cocina. Mismo proceso que la Tarea 1.7.
+        - ¿Para qué se hace?
+            - Para que caja transmita el pedido a cocina dado que el sistema de las tablets no permite el envío directo.
+        - ¿Qué roles ejecutan esta tarea?
+            - El mesonero entrega la comanda a caja. El cajero la procesa y envía a cocina.
+        - ¿Cuándo se hace?
+            - Disparador: Toma de pedido del huésped completada (Tarea 2.4).
+            - Frecuencia: Bajo demanda, esporádica durante el período de organización.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 1.7.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda manual con el pedido. Sistema de caja operativo.
+        - ¿Qué se genera al terminar?
+            - Orden procesada y enviada a cocina.
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema de caja (computadora): para procesar y enviar la comanda a cocina.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismos escenarios que la Tarea 1.7: lentitud del sistema o problemas de red.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Misma oportunidad de mejora que la Tarea 1.7.
+    - Propuesta 2.5: Entrega de comandas a Caja para enviar a Cocina
+        - Pendiente.
+- TAREA 2.6: Verificar que el pedido haya llegado completo a cocina
+    - AS-IS 2.6: Verificar que el pedido haya llegado completo a cocina
+        - ¿Qué es esta tarea?
+            - Confirmación de que el pedido de almuerzo enviado a cocina llegó de forma completa. Mismo proceso que la Tarea 1.8.
+        - ¿Para qué se hace?
+            - Para evitar fallas o entregas incompletas al comensal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero o capitán de servicio.
+        - ¿Cuándo se hace?
+            - Disparador: Envío del pedido a cocina por parte de caja (Tarea 2.5).
+            - Frecuencia: Bajo demanda, esporádica.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 1.8.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Confirmación de que el pedido completo está en cocina.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.6: Verificar que el pedido haya llegado completo a cocina
+        - Pendiente.
+- TAREA 2.7: Preparación del pedido
+    - AS-IS 2.7: Preparación del pedido
+        - ¿Qué es esta tarea?
+            - Preparación en cocina del pedido de almuerzo u otro pedido esporádico del huésped, una vez confirmada la recepción completa de la orden. Mismo proceso que la Tarea 1.9.
+        - ¿Para qué se hace?
+            - Para tener el pedido listo para entregarlo al comensal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de cocina.
+        - ¿Cuándo se hace?
+            - Disparador: Confirmación de que el pedido llegó completo a cocina (Tarea 2.6).
+            - Frecuencia: Bajo demanda, esporádica.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pedido recibido completo en cocina. Productos e insumos disponibles.
+        - ¿Qué se genera al terminar?
+            - Pedido preparado y listo para ser entregado al comensal (Tarea 2.8).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.7: Preparación del pedido
+        - Pendiente.
+- TAREA 2.8: Entrega al comensal
+    - AS-IS 2.8: Entrega al comensal
+        - ¿Qué es esta tarea?
+            - Servicio y entrega del pedido al huésped en su mesa durante el período de organización. Mismo proceso que la Tarea 1.10.
+        - ¿Para qué se hace?
+            - Para completar el ciclo del servicio del pedido esporádico de almuerzo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero del turno de la mañana.
+        - ¿Cuándo se hace?
+            - Disparador: Pedido preparado y listo en cocina (Tarea 2.7).
+            - Frecuencia: Bajo demanda, esporádica.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pedido preparado por cocina.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.8: Entrega al comensal
+        - Pendiente.
+- TAREA 2.9: Limpieza de área
+    - AS-IS 2.9: Limpieza de área
+        - ¿Qué es esta tarea?
+            - Limpieza del área del restaurante al cierre del período de organización y previo a la entrega de guardia, como parte del proceso de cierre del turno de la mañana.
+        - ¿Para qué se hace?
+            - Para entregar el área en condiciones adecuadas al turno de la tarde, siguiendo la práctica de que todas las fases se entregan con limpieza del área.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de servicio del turno de la mañana (mesoneros y capitán).
+        - ¿Cuándo se hace?
+            - Disparador: Finalización de las actividades de organización del período entre servicios, previo a la entrega de guardia.
+            - Frecuencia: Diaria, al cierre del turno de la mañana (alrededor de las 3:00 PM – 4:00 PM). El equipo indica que todas las fases se cierran con limpieza.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+        - ¿Qué se genera al terminar?
+            - Área limpia y lista para la entrega de guardia al turno de la tarde.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.9: Limpieza de área
+        - Pendiente.
+- TAREA 2.10: Entrega de Guardia de Turno
+    - AS-IS 2.10: Entrega de Guardia de Turno
+        - ¿Qué es esta tarea?
+            - Traspaso formal del turno de la mañana al turno de la tarde, donde el capitán saliente informa al capitán entrante sobre el estado del área, lo que quedó pendiente (frutas por procesar, faltantes, tareas sin completar) y cualquier información relevante para el inicio del turno de la tarde.
+        - ¿Para qué se hace?
+            - Para garantizar continuidad operativa entre turnos, evitando que el turno de la tarde comience sin conocer el estado del área y las tareas pendientes del turno anterior.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio del turno de la mañana (entrega). Capitán de servicio del turno de la tarde (recibe). La entrega de turno ocurre entre las 3:00 PM y 4:00 PM.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada del personal del turno de la tarde y finalización del turno de la mañana.
+            - Frecuencia: Diaria, entre las 3:00 PM y 4:00 PM.
+        - ¿Cómo se hace?
+            - Paso 1: El capitán del turno de la mañana informa al del turno de la tarde sobre el estado general del área.
+            - Paso 2: Se comunican los pendientes: si hay frutas por procesar, faltantes de productos, tareas sin completar u otras situaciones relevantes.
+            - ⚠️ Pendiente validar en sesión próxima: si existe algún formato o registro escrito de la entrega de guardia, o si se hace de forma verbal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Área limpia y organizada (resultado de la Tarea 2.9). Inventario actualizado del turno de la mañana.
+        - ¿Qué se genera al terminar?
+            - Turno de la tarde informado y listo para iniciar la Fase 3 (Snacks/Cena).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.10: Entrega de Guardia de Turno
+        - Pendiente.
+- TAREA 3.1: Mise en place de productos y materiales para la producción
+    - AS-IS 3.1: Mise en place de productos y materiales para la producción
+        - ¿Qué es esta tarea?
+            - Organización y preparación anticipada de todos los productos, suministros y materiales necesarios para atender el servicio de snacks y cena del turno de la tarde, tomando como base lo informado en la entrega de guardia y verificando los pendientes del turno anterior.
+        - ¿Para qué se hace?
+            - Para que cuando lleguen los comensales en la noche todo esté organizado y disponible para ejecutar el servicio sin demoras.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio y mesoneros del turno de la tarde (3:00 PM – 11:00 PM).
+        - ¿Cuándo se hace?
+            - Disparador: Inicio del turno de la tarde luego de la entrega de guardia (Tarea 2.10).
+            - Frecuencia: Diaria, al inicio del turno de la tarde.
+        - ¿Cómo se hace?
+            - Paso 1: El turno de la tarde recibe la información de la entrega de guardia sobre pendientes y estado del área.
+            - Paso 2: Se verifica qué está pendiente de procesar o completar (frutas, mise en place, faltantes).
+            - Paso 3: Se organiza todo lo necesario para el servicio de snacks y cena.
+            - ⚠️ Pendiente validar en sesión próxima: detalle de qué materiales y productos específicos se alistan, si se hace algún recorrido por las mesas de la piscina u otras áreas externas al inicio del turno.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información de la entrega de guardia del turno de la mañana. Stock disponible en el área.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si hay faltantes de productos: se activa el proceso de requisición a almacén (ver Fase 4).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.1: Mise en place de productos y materiales para la producción
+        - Pendiente.
+- TAREA 3.2: Verificación de salón de restaurante (validar que esté en óptimas condiciones de higiene)
+    - AS-IS 3.2: Verificación de salón de restaurante
+        - ¿Qué es esta tarea?
+            - Inspección del salón del restaurante y otras áreas de servicio (mesas de la piscina y demás zonas externas) al inicio del turno de la tarde para verificar que estén limpios y en condiciones adecuadas antes del servicio de cena.
+        - ¿Para qué se hace?
+            - Para garantizar que todas las áreas de servicio estén en condiciones óptimas antes de recibir a los comensales en la noche.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio del turno de la tarde, luego del mise en place.
+            - Frecuencia: Diaria, al inicio del turno de la tarde. Se menciona que el capitán del turno de la tarde hace un recorrido por las mesas de la piscina y otras áreas.
+        - ¿Cómo se hace?
+            - Paso 1: El capitán realiza un recorrido por las mesas del salón del restaurante.
+            - Paso 2: Verifica el estado de las mesas de la piscina y otras áreas de servicio externas.
+            - Paso 3: Si detecta algún detalle o área que requiere limpieza, activa la Tarea 3.3.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Confirmación del estado del salón y áreas de servicio. Si hay detalle pendiente, se activa la Tarea 3.3.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si algún área no está en condiciones: se procede a la limpieza del área (Tarea 3.3).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.2: Verificación de salón de restaurante
+        - Pendiente.
+- TAREA 3.3: Limpieza de área de restaurante
+    - AS-IS 3.3: Limpieza de área de restaurante
+        - ¿Qué es esta tarea?
+            - Limpieza de las áreas del restaurante o zonas de servicio que se detecten en condiciones inadecuadas durante la verificación al inicio del turno de la tarde.
+        - ¿Para qué se hace?
+            - Para dejar todas las áreas de servicio en condiciones óptimas de higiene antes del inicio del servicio de snacks y cena.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de servicio del turno de la tarde (mesoneros y capitán).
+        - ¿Cuándo se hace?
+            - Disparador: Resultado de la verificación del salón (Tarea 3.2) que indica que algún área requiere limpieza.
+            - Frecuencia: Bajo demanda, cada vez que la verificación detecta la necesidad.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+        - ¿Qué se genera al terminar?
+            - Área de servicio limpia y lista para el servicio de snacks y cena.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.3: Limpieza de área de restaurante
+        - Pendiente.
+- TAREA 3.4: Verificación de productos a servir (Inventario de lo que se vaya a ofrecer en la Cena)
+    - AS-IS 3.4: Verificación de productos a servir
+        - ¿Qué es esta tarea?
+            - Revisión de los productos disponibles para el servicio de snacks y cena del turno de la tarde, verificando que haya suficiente stock de todo lo que se va a ofrecer.
+        - ¿Para qué se hace?
+            - Para confirmar que el área cuenta con todo lo necesario para atender el servicio de snacks y cena y, en caso de faltantes, gestionarlos antes del inicio del servicio.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Área verificada y limpia al inicio del turno de la tarde.
+            - Frecuencia: Diaria, al inicio del turno de la tarde.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al área de servicio y almacén de productos.
+        - ¿Qué se genera al terminar?
+            - Confirmación de disponibilidad de productos para el servicio de snacks y cena. Si hay faltantes, se activa el proceso de requisición (Fase 4).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si hay faltantes: se gestiona la requisición a almacén (ver Fase 4).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.4: Verificación de productos a servir
+        - Pendiente.
+- TAREA 3.5: Toma de pedido de huéspedes (toma de comandas)
+    - AS-IS 3.5: Toma de pedido de huéspedes
+        - ¿Qué es esta tarea?
+            - Toma manual del pedido de snack o cena del huésped por parte del mesonero, siguiendo el mismo proceso que en el desayuno y almuerzo.
+        - ¿Para qué se hace?
+            - Para registrar lo que el comensal desea consumir y transmitirlo a caja para su procesamiento y envío a cocina.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesoneros del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un huésped al restaurante o área de snacks solicitando un pedido de snack o cena.
+            - Frecuencia: Bajo demanda, durante el turno de la tarde (3:00 PM – 11:00 PM). La cena tiene mayor afluencia que el almuerzo.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 1.6: se anota el pedido manualmente en papel (comanda manual) para entregarlo a caja.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Papel y bolígrafo para anotar la comanda. Conocimiento del menú de snacks y cena disponible.
+        - ¿Qué se genera al terminar?
+            - Comanda manual lista para entregar a caja (Tarea 3.6).
+        - ¿Qué sistemas o herramientas usan?
+            - Comanda manual (papel). Tablet disponible pero con limitaciones de conectividad.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismos escenarios que la Tarea 1.6.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Misma oportunidad de mejora que la Tarea 1.6: envío directo del pedido a cocina desde la tablet del mesonero.
+    - Propuesta 3.5: Toma de pedido de huéspedes
+        - Pendiente.
+- TAREA 3.6: Entrega de comandas a Caja para enviar a Cocina (Procesamiento de la orden)
+    - AS-IS 3.6: Entrega de comandas a Caja para enviar a Cocina
+        - ¿Qué es esta tarea?
+            - Entrega de la comanda manual del pedido de snack o cena al cajero para que la procese y la envíe a cocina. Mismo proceso que las Tareas 1.7 y 2.5.
+        - ¿Para qué se hace?
+            - Para transmitir el pedido a cocina dado que las tablets no tienen conectividad suficiente para hacerlo directamente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero entrega la comanda. Cajero la procesa y envía a cocina.
+        - ¿Cuándo se hace?
+            - Disparador: Toma de pedido completada (Tarea 3.5).
+            - Frecuencia: Bajo demanda, durante el turno de la tarde.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 1.7.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda manual con el pedido. Sistema de caja operativo.
+        - ¿Qué se genera al terminar?
+            - Orden procesada y enviada a cocina.
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema de caja (computadora).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismos escenarios que la Tarea 1.7.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Misma oportunidad de mejora que la Tarea 1.7.
+    - Propuesta 3.6: Entrega de comandas a Caja para enviar a Cocina
+        - Pendiente.
+- TAREA 3.7: Verificar que el pedido haya llegado completo a cocina
+    - AS-IS 3.7: Verificar que el pedido haya llegado completo a cocina
+        - ¿Qué es esta tarea?
+            - Confirmación de que el pedido de snack o cena enviado a cocina llegó de forma completa. Mismo proceso que las Tareas 1.8 y 2.6.
+        - ¿Para qué se hace?
+            - Para evitar fallas o entregas incompletas al comensal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero o capitán de servicio del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Envío del pedido a cocina por parte de caja (Tarea 3.6).
+            - Frecuencia: Bajo demanda, durante el turno de la tarde.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 1.8.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Confirmación de que el pedido completo está en cocina.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.7: Verificar que el pedido haya llegado completo a cocina
+        - Pendiente.
+- TAREA 3.8: Preparación del pedido
+    - AS-IS 3.8: Preparación del pedido
+        - ¿Qué es esta tarea?
+            - Preparación en cocina del pedido de snack o cena una vez confirmada la recepción completa de la orden. Mismo proceso que las Tareas 1.9 y 2.7.
+        - ¿Para qué se hace?
+            - Para tener el pedido listo para entregarlo al comensal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de cocina del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Confirmación de que el pedido llegó completo a cocina (Tarea 3.7).
+            - Frecuencia: Bajo demanda, durante el turno de la tarde.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pedido recibido completo en cocina. Productos e insumos disponibles y mise en place realizado.
+        - ¿Qué se genera al terminar?
+            - Pedido preparado y listo para entregarlo al comensal (Tarea 3.9).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.8: Preparación del pedido
+        - Pendiente.
+- TAREA 3.9: Entrega al comensal
+    - AS-IS 3.9: Entrega al comensal
+        - ¿Qué es esta tarea?
+            - Servicio y entrega del pedido de snack o cena al huésped en su mesa. Mismo proceso que las Tareas 1.10 y 2.8.
+        - ¿Para qué se hace?
+            - Para completar el ciclo del servicio de snack o cena, entregando al comensal lo que solicitó.
+        - ¿Qué roles ejecutan esta tarea?
+            - Mesonero del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Pedido preparado y listo en cocina (Tarea 3.8).
+            - Frecuencia: Bajo demanda, durante el turno de la tarde.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pedido preparado por cocina.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.9: Entrega al comensal
+        - Pendiente.
+- TAREA 3.10: Limpieza de área
+    - AS-IS 3.10: Limpieza de área
+        - ¿Qué es esta tarea?
+            - Limpieza del área del restaurante y zonas de servicio al cierre del turno de la tarde/noche, como parte del proceso de cierre y entrega de guardia.
+        - ¿Para qué se hace?
+            - Para dejar el área en condiciones adecuadas al finalizar el turno de la noche, cumpliendo con la práctica de que todas las fases se cierran con limpieza. El área limpia facilita también que el turno de la mañana siguiente comience en condiciones óptimas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Personal de servicio del turno de la tarde/noche (mesoneros y capitán).
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del servicio de cena y cierre del turno de la noche.
+            - Frecuencia: Diaria, al cierre del turno de la tarde/noche (hasta las 11:00 PM).
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+        - ¿Qué se genera al terminar?
+            - Área limpia lista para la entrega de guardia y para que el turno de la mañana siguiente la reciba en condiciones.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.10: Limpieza de área
+        - Pendiente.
+- TAREA 3.11: Entrega de Guardia de Turno
+    - AS-IS 3.11: Entrega de Guardia de Turno
+        - ¿Qué es esta tarea?
+            - Cierre formal del turno de la tarde/noche que incluye la realización del inventario final y su registro, para que el turno de la mañana siguiente lo reciba ya hecho y pueda verificar el estado en que quedó el área.
+        - ¿Para qué se hace?
+            - Para garantizar continuidad operativa entre el turno de la noche y el turno de la mañana siguiente, dejando el inventario documentado y el área en condiciones para ser recibida.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio del turno de la tarde/noche (realiza y deja el inventario). Capitán del turno de la mañana siguiente (recibe el inventario).
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del servicio de cena y limpieza del área al cierre del turno de la noche.
+            - Frecuencia: Diaria, al cierre del turno de la tarde/noche (hasta las 11:00 PM).
+        - ¿Cómo se hace?
+            - Paso 1: Al final del turno de la noche, se realiza el inventario final del área.
+            - Paso 2: Se deja el inventario documentado para que el turno de la mañana siguiente lo reciba y verifique el estado en que quedó.
+            - ⚠️ Pendiente validar en sesión próxima: formato o herramienta usada para registrar el inventario de cierre, canal de comunicación entre turnos (verbal, escrito, sistema).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Área limpia (resultado de la Tarea 3.10). ⚠️ Pendiente validar en sesión próxima: formato de inventario de cierre.
+        - ¿Qué se genera al terminar?
+            - Inventario de cierre documentado y disponible para el turno de la mañana siguiente.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo indica que anteriormente contaban con un programa en computadora donde quedaban plasmados los inventarios, solicitudes de suministros y otros procesos operativos, y que les gustaría retomar ese nivel de digitalización para reducir el papeleo.
+    - Propuesta 3.11: Entrega de Guardia de Turno
+        - Pendiente.
+- TAREA 4.1: Inventario diario/manual en el almacén de cocina
+    - AS-IS 4.1: Inventario diario/manual en el almacén de cocina
+        - ¿Qué es esta tarea?
+            - Conteo manual y registro de los suministros y materiales disponibles en el inventario propio del área de bebidas/servicio para identificar faltantes y generar la requisición correspondiente.
+        - ¿Para qué se hace?
+            - Para conocer el estado real del stock disponible en el área y determinar qué debe solicitarse a almacén general antes de que se agoten los productos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas) o mesonero asignado del área de bebidas/servicio.
+        - ¿Cuándo se hace?
+            - Disparador: Detección de faltantes durante el mise en place o la verificación de productos a servir, o bien de forma rutinaria al identificar que el inventario no cubre la demanda del día.
+            - Frecuencia: Diaria. Se menciona que el capitán maneja un estándar de inventario para cincuenta personas; cuando la cantidad supera ese estándar o cuando hay faltantes, se activa el proceso de requisición.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisa el inventario disponible en el área.
+            - Paso 2: Se identifican los suministros y materiales faltantes o insuficientes para cubrir la demanda del servicio.
+            - ⚠️ Pendiente validar en sesión próxima: formato o herramienta para el registro del inventario del área de bebidas/servicio.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al área de almacenamiento de suministros del departamento de bebidas/servicio.
+        - ¿Qué se genera al terminar?
+            - Lista de suministros y materiales faltantes, base para rellenar el formato de requisiciones (Tarea 4.2).
+        - ¿Qué sistemas o herramientas usan?
+            - Manual: el inventario se realiza de forma manual. El equipo menciona que anteriormente existía un programa de computadora que registraba inventarios y solicitudes de suministros, pero que ya no está en uso.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo expresa que les gustaría retomar el nivel de digitalización que tenían anteriormente, donde los inventarios y solicitudes de suministros quedaban registrados en un programa de computadora, reduciendo el papeleo del proceso actual.
+    - Propuesta 4.1: Inventario diario/manual en el almacén de cocina
+        - Pendiente.
+- TAREA 4.2: Relleno de formato de requisiciones (lista de lo que falta)
+    - AS-IS 4.2: Relleno de formato de requisiciones (lista de lo que falta)
+        - ¿Qué es esta tarea?
+            - Llenado del formato de requisiciones con los suministros y materiales identificados como faltantes en el inventario, para formalizar la solicitud a almacén general.
+        - ¿Para qué se hace?
+            - Para documentar formalmente los productos que se necesitan y presentarlos a gerencia para su autorización antes de ir a almacén.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas) o el responsable del área que necesita el suministro.
+        - ¿Cuándo se hace?
+            - Disparador: Resultado del inventario que muestra faltantes (Tarea 4.1).
+            - Frecuencia: Bajo demanda, según el consumo y los faltantes detectados.
+        - ¿Cómo se hace?
+            - Mismo proceso que la Tarea 4.2 del área de cocina: se toma el formato físico de requisiciones y se anota cada suministro o material faltante con su cantidad requerida.
+            - ⚠️ Pendiente validar en sesión próxima: si el formato de bebidas/servicio es el mismo que el de cocina o si es distinto.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Lista de faltantes del inventario. Formato físico de requisiciones.
+        - ¿Qué se genera al terminar?
+            - Formato de requisiciones completado, listo para solicitar firma de autorización (Tarea 4.3).
+        - ¿Qué sistemas o herramientas usan?
+            - Formato físico de requisiciones: documento manual donde se registran los productos solicitados.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo indica que idealmente la solicitud de suministros debería hacerse directamente desde un sistema (computadora), sin necesidad de papeleo manual. Anteriormente contaban con un programa que permitía hacer el pedido en la computadora y este llegaba directamente a almacén con su respectivo inventario.
+    - Propuesta 4.2: Relleno de formato de requisiciones (lista de lo que falta)
+        - Pendiente.
+- TAREA 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de área (autorización)
+    - AS-IS 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de área
+        - ¿Qué es esta tarea?
+            - Presentación del formato de requisiciones completado a la Gerencia de Operaciones para obtener la firma de autorización antes de ir a almacén. Mismo proceso que la Tarea 4.3 del área de cocina.
+        - ¿Para qué se hace?
+            - Para obtener la autorización formal del pedido antes de que almacén proceda con la entrega.
+        - ¿Qué roles ejecutan esta tarea?
+            - El capitán de servicio o responsable del área presenta el formato. Gerencia de Operaciones (Adriana) lo firma como autorizador.
+        - ¿Cuándo se hace?
+            - Disparador: Formato de requisiciones completado (Tarea 4.2).
+            - Frecuencia: Bajo demanda, según el consumo y los faltantes detectados.
+        - ¿Cómo se hace?
+            - Paso 1: Se toma el formato de requisiciones completado.
+            - Paso 2: Se lleva a Gerencia de Operaciones para su revisión y firma.
+            - Paso 3: Gerencia de Operaciones firma autorizando el pedido.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formato de requisiciones completado.
+        - ¿Qué se genera al terminar?
+            - Formato de requisiciones con firma de autorización, listo para presentar en almacén (Tarea 4.4).
+        - ¿Qué sistemas o herramientas usan?
+            - Formato físico de requisiciones: documento que circula para recabar la firma de autorización.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Misma oportunidad de mejora que la Tarea 4.2: que el pedido pueda enviarse directamente desde el sistema al almacén, eliminando el proceso de búsqueda de firma física.
+    - Propuesta 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de área
+        - Pendiente.
+- TAREA 4.4: Entrega de productos desde almacén y firma de entrega de formato
+    - AS-IS 4.4: Entrega de productos desde almacén y firma de entrega de formato
+        - ¿Qué es esta tarea?
+            - Presentación del formato de requisiciones autorizado en almacén general para que este entregue los productos solicitados, con firma del encargado de almacén como constancia de entrega. Mismo proceso que la Tarea 4.4 del área de cocina.
+        - ¿Para qué se hace?
+            - Para retirar formalmente los suministros y materiales solicitados del almacén general y dejar constancia documentada de la entrega.
+        - ¿Qué roles ejecutan esta tarea?
+            - El responsable del área de bebidas/servicio lleva el formato a almacén. El encargado de almacén entrega los productos y firma el formato como constancia.
+        - ¿Cuándo se hace?
+            - Disparador: Formato de requisiciones con firma de autorización obtenida (Tarea 4.3).
+            - Frecuencia: Bajo demanda, según el consumo y los faltantes detectados.
+        - ¿Cómo se hace?
+            - Paso 1: Se lleva el formato de requisiciones autorizado a almacén general.
+            - Paso 2: Almacén verifica el formato y revisa si tiene los productos solicitados.
+            - Paso 3: Si hay existencia, almacén entrega los productos.
+            - Paso 4: El encargado de almacén firma el formato como constancia de entrega.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formato de requisiciones firmado por Gerencia de Operaciones.
+        - ¿Qué se genera al terminar?
+            - Formato de requisiciones con firma de entrega de almacén como constancia del despacho.
+        - ¿Qué sistemas o herramientas usan?
+            - Formato físico de requisiciones: documento con el que se formaliza la entrega y del que almacén firma como constancia.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si almacén no tiene los productos: el producto queda en lista de espera y almacén gestiona la solicitud de compra (Tarea 4.5).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Misma oportunidad de mejora que la Tarea 4.2: digitalizar el proceso para que el pedido llegue directamente a almacén desde el sistema, reduciendo el papeleo.
+    - Propuesta 4.4: Entrega de productos desde almacén y firma de entrega de formato
+        - Pendiente.
+- TAREA 4.5: Si no hay, se hace una solicitud de compra
+    - AS-IS 4.5: Solicitud de compra cuando almacén no tiene el producto
+        - ¿Qué es esta tarea?
+            - Gestión de la solicitud de compra por parte de almacén cuando no cuenta con los suministros o materiales solicitados por el área de bebidas/servicio en la requisición. Mismo proceso que la Tarea 4.5 del área de cocina.
+        - ¿Para qué se hace?
+            - Para reponer los productos faltantes en almacén que no pueden ser entregados de inmediato, garantizando el abastecimiento futuro del área.
+        - ¿Qué roles ejecutan esta tarea?
+            - Almacén general gestiona la solicitud de compra. Compras y/o administración/gerencia la atiende.
+        - ¿Cuándo se hace?
+            - Disparador: Almacén detecta que no tiene en existencia alguno de los productos solicitados en el formato de requisiciones.
+            - Frecuencia: Bajo demanda, cada vez que almacén detecta faltante al atender una requisición.
+        - ¿Cómo se hace?
+            - Paso 1: Almacén detecta que no tiene el producto solicitado.
+            - Paso 2: Almacén gestiona la solicitud de compra con el departamento de compras o administración.
+            - Paso 3: El producto queda en lista de espera hasta que llegue la compra.
+            - ⚠️ Pendiente validar en sesión próxima: canal específico de la solicitud de compra, quién la autoriza, tiempos de respuesta.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formato de requisiciones con los productos faltantes identificados.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.5: Solicitud de compra cuando almacén no tiene el producto
+        - Pendiente.

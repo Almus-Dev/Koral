@@ -1,0 +1,2124 @@
+# AS - IS: Talento Humano
+
+Creado: 17 de marzo de 2026 10:31
+
+**TAREA 1.1: Parafiscales**
+
+- **AS-IS 1.1.1: Revisión mensual de documentación de IVSS, INCES, FAOV y MPPPST**
+    - ¿Qué es esta tarea?
+        - Descarga y revisión de facturas, listados de personal activo, estados de cuenta y solvencias desde los portales estatales de cada ente parafiscal (IVSS, INCES, FAOV, MPPPST).
+    - ¿Para qué se hace?
+        - Para verificar que los trabajadores activos y los movimientos de ingresos y egresos registrados en los portales estatales estén en concordancia con la base de datos interna de la empresa, y así validar los montos a pagar.
+    - ¿Qué roles ejecutan esta tarea?
+        - Andry García (Licenciado de Talento Humano / quien posee las credenciales de acceso a los portales).
+    - ¿Cuándo se hace?
+        - Disparador: Inicio de cada mes.
+        - Frecuencia: Mensual, durante los primeros cinco días del mes.
+    - ¿Cómo se hace?
+        - Paso 1: Ingresar a cada portal estatal (IVSS, INCES, FAOV, MPPPST) con el usuario y clave del empleador.
+        - Paso 2: Descargar las facturas y listados de personal activo generados por cada ente.
+        - Paso 3: Verificar que los trabajadores activos y los movimientos de ingresos y egresos reflejados en los portales coincidan con la base de datos interna.
+        - Paso 4: Obtener el listado validado como resultado para proceder con la actualización de la cartelera fiscal.
+    - ¿Qué necesitan para hacer esta tarea?
+        - Acceso (usuario y clave del empleador) a los portales estatales de IVSS, INCES, FAOV y MPPPST.
+        - Base de datos interna actualizada de personal activo para comparación.
+    - ¿Qué se genera al terminar?
+        - Listado descargado y validado desde cada portal, que sirve como insumo para la actualización de la cartelera fiscal y para la solicitud de compromiso de pago.
+    - ¿Qué sistemas o herramientas usan?
+        - Portales web estatales (IVSS, INCES, FAOV, MPPPST): para acceso, descarga de facturas, listados y solvencias.
+    - ¿Qué pasa cuando las cosas no salen normal?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - ¿Cómo les gustaría que funcionara idealmente?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 1.1.1:**
+        - Pendiente.
+- **AS-IS 1.1.2: Listado de personal activo, estados de cuenta y solvencias**
+    - ¿Qué es esta tarea?
+        - Descarga de solvencias y listados oficiales de personal activo desde los portales parafiscales, posterior a la confirmación del pago realizado por el departamento de Administración y Finanzas.
+    - ¿Para qué se hace?
+        - Para mantener la documentación parafiscal actualizada y disponible tanto para la cartelera fiscal como para auditorías y visitas de entes reguladores.
+    - ¿Qué roles ejecutan esta tarea?
+        - Andry García.
+        - Marilyn (Analista de Talento Humano): recibe los documentos por correo y los publica físicamente en la cartelera.
+    - ¿Cuándo se hace?
+        - Disparador: Confirmación del pago mensual de parafiscales por parte de Administración y Finanzas.
+        - Frecuencia: Mensual. La actualización de solvencias se realiza posterior a las 28 horas del pago.
+    - ¿Cómo se hace?
+        - Paso 1: Una vez confirmado el pago, ingresar a cada portal parafiscal.
+        - Paso 2: Descargar las solvencias y listados actualizados.
+        - Paso 3: Andry envía la documentación descargada a Marilyn por correo electrónico.
+        - Paso 4: Marilyn imprime y publica los documentos en la cartelera fiscal.
+        - Paso 5: Archivar la documentación física en la carpeta correspondiente (carpeta Oslo) para disponibilidad ante requerimientos de entes reguladores.
+    - ¿Qué necesitan para hacer esta tarea?
+        - Confirmación del pago por parte de Administración y Finanzas.
+        - Acceso a los portales parafiscales.
+    - ¿Qué se genera al terminar?
+        - Solvencias y listados impresos publicados en la cartelera fiscal.
+        - Carpeta física actualizada con toda la documentación parafiscal.
+    - ¿Qué sistemas o herramientas usan?
+        - Portales web estatales: descarga de solvencias y listados.
+        - Correo electrónico: envío de Andry a Marilyn para publicación.
+    - ¿Qué pasa cuando las cosas no salen normal?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - ¿Cómo les gustaría que funcionara idealmente?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 1.1.2:**
+        - Pendiente.
+- **AS-IS 1.1.3: Reporte de compromisos y seguimiento de pagos a Administración y Finanzas**
+    - ¿Qué es esta tarea?
+        - Solicitud formal al departamento de Administración y Finanzas del compromiso de pago de los parafiscales correspondientes al mes, una vez verificados los montos descargados de los portales.
+    - ¿Para qué se hace?
+        - Para garantizar la disponibilidad de fondos y la ejecución oportuna del pago mensual de parafiscales (IVSS, INCES, FAOV, MPPPST).
+    - ¿Qué roles ejecutan esta tarea?
+        - Andry García: elabora y envía la solicitud.
+        - Departamento de Administración y Finanzas: recibe y gestiona el compromiso de pago.
+    - ¿Cuándo se hace?
+        - Disparador: Finalización de la revisión y validación de los montos descargados de los portales parafiscales.
+        - Frecuencia: Mensual, dentro de los primeros cinco días del mes.
+    - ¿Cómo se hace?
+        - Paso 1: Completar la revisión y validación de los listados y facturas descargadas de los portales.
+        - Paso 2: Solicitar al departamento de Administración y Finanzas el compromiso de pago vía forma electrónica.
+    - ¿Qué necesitan para hacer esta tarea?
+        - Listado validado y facturas descargadas de los portales parafiscales.
+    - ¿Qué se genera al terminar?
+        - Solicitud de compromiso de pago enviada a Administración y Finanzas por vía electrónica.
+    - ¿Qué sistemas o herramientas usan?
+        - Forma electrónica (canal no especificado en la transcripción de esta sesión): para envío de la solicitud de compromiso de pago. ⚠️ Pendiente validar canal exacto en sesión próxima.
+    - ¿Qué pasa cuando las cosas no salen normal?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - ¿Cómo les gustaría que funcionara idealmente?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 1.1.3:**
+        - Pendiente.
+- **AS-IS 1.1.4: Actualización mensual de la carpeta Oslo con toda la información parafiscal**
+    - ¿Qué es esta tarea?
+        - Mantenimiento y actualización de una carpeta física que consolida toda la documentación parafiscal del mes: facturas, solvencias, listados de personal y compromisos de pago.
+    - ¿Para qué se hace?
+        - Para tener disponible de manera ordenada toda la documentación parafiscal ante cualquier requerimiento de auditorías o visitas de entes reguladores.
+    - ¿Qué roles ejecutan esta tarea?
+        - ⚠️ Pendiente validar en sesión próxima. La transcripción menciona la carpeta Oslo pero no designa explícitamente a un responsable único de su actualización.
+    - ¿Cuándo se hace?
+        - Disparador: Recepción y validación mensual de toda la documentación parafiscal.
+        - Frecuencia: Mensual.
+    - ¿Cómo se hace?
+        - Paso 1: Reunir toda la documentación del mes: facturas, compromisos, solvencias y listados.
+        - Paso 2: Archivar físicamente en la carpeta Oslo.
+    - ¿Qué necesitan para hacer esta tarea?
+        - Documentación parafiscal completa del mes (facturas, solvencias, listados, compromisos de pago).
+    - ¿Qué se genera al terminar?
+        - Carpeta Oslo actualizada con la documentación parafiscal del mes.
+    - ¿Qué sistemas o herramientas usan?
+        - Carpeta física (archivo físico): para almacenamiento de la documentación parafiscal.
+    - ¿Qué pasa cuando las cosas no salen normal?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - ¿Cómo les gustaría que funcionara idealmente?
+        - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 1.1.4:**
+        - Pendiente.
+
+---
+
+- **TAREA 1.2: Fiscales**
+    - **AS-IS 1.2.1 / 1.2.2: Solicitud y revisión de documentación exigida por SENIAT, INATUR, Alcaldía, Bomberos, MINTUR, RUPDAE y LOCTI**
+        - ¿Qué es esta tarea?
+            - Solicitud a la Gerencia de Administración y Finanzas de la documentación requerida por los distintos entes públicos reguladores, y gestión de su impresión y publicación física.
+        - ¿Para qué se hace?
+            - Para mantener actualizada la cartera documental de la empresa y cumplir con las normativas vigentes exigidas por los entes reguladores (SENIAT, INATUR, Alcaldía, Bomberos, MINTUR, RUPDAE, LOCTI).
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: solicita la documentación a la gerencia.
+            - Gerencia de Administración y Finanzas: provee la documentación.
+            - Marilyn: imprime y publica físicamente. ⚠️ Pendiente confirmar si Marilyn ejecuta este paso o si lo hace Andry.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima. La transcripción no especifica el evento exacto que dispara esta tarea (vencimiento, visita programada, requerimiento puntual).
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar la documentación requerida por cada ente regulador.
+            - Paso 2: Solicitar a la Gerencia de Administración y Finanzas la documentación correspondiente.
+            - Paso 3: Imprimir la documentación recibida.
+            - Paso 4: Publicar físicamente en la cartelera o carpeta fiscal según corresponda.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentación vigente provista por la Gerencia de Administración y Finanzas.
+        - ¿Qué se genera al terminar?
+            - Documentación impresa y publicada físicamente en la cartelera fiscal o carpeta correspondiente.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción indica que se imprime y publica físicamente, sin mayor complejidad, pero no especifica sistema de gestión documental.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 1.2.1/1.2.2:**
+        - Pendiente.
+    - **AS-IS 1.2.3: Soporte administrativo en auditorías o requerimientos de entes públicos**
+        - ¿Qué es esta tarea?
+            - Atención a los entes gubernamentales cuando realizan inspecciones o visitas al hotel, presentando la documentación requerida y recepcionando notificaciones o nuevas instrucciones de cumplimiento.
+        - ¿Para qué se hace?
+            - Para garantizar que la documentación esté en orden durante las auditorías y para recibir instrucciones o notificaciones (incluidas posibles multas) que los entes emitan durante la visita.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: atiende a los entes y gestiona la documentación durante la inspección.
+        - ¿Cuándo se hace?
+            - Disparador: Visita o inspección de un ente gubernamental (IVSS, INCES, FAOV, MPPPST, Sanidad, u otros).
+            - Frecuencia: Bajo demanda, cada vez que un ente realiza una visita o inspección.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir al ente gubernamental durante la visita de inspección.
+            - Paso 2: Presentar la carpeta física con la documentación actualizada (parafiscal y fiscal).
+            - Paso 3: Atender la revisión que realiza el ente sobre la documentación.
+            - Paso 4: Recepcionar notificaciones, instrucciones de cumplimiento o notificaciones de multa que el ente emita.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Carpeta física con documentación parafiscal y fiscal completa y actualizada.
+        - ¿Qué se genera al terminar?
+            - Recepción de notificaciones o instrucciones del ente para su cumplimiento. ⚠️ Pendiente validar en sesión próxima si se genera un registro interno de estas notificaciones.
+        - ¿Qué sistemas o herramientas usan?
+            - Carpeta física de documentación: presentada durante la inspección.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el ente detecta algo fuera de orden o emite nueva normativa, se recibe la instrucción o notificación de multa y se gestiona el cumplimiento. ⚠️ Pendiente validar en sesión próxima el proceso interno posterior a una notificación de multa.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 1.2.3:**
+            - Pendiente.
+
+---
+
+- **TAREA 1.3: Alimentos y Bebidas**
+    - **AS-IS 1.3.1: Verificación mensual del Certificado de Manipulación de Alimentos del personal**
+        - ¿Qué es esta tarea?
+            - Control mensual de la vigencia de los certificados de manipulación de alimentos del personal del área de Alimentos y Bebidas.
+        - ¿Para qué se hace?
+            - Para cumplir con las normativas sanitarias vigentes y estar preparados ante visitas de los entes de Sanidad.
+        - ¿Qué roles ejecutan esta tarea?
+            - Manuel: responsable de actualizar estos certificados y la carpeta correspondiente. ⚠️ Pendiente confirmar cargo de Manuel en sesión próxima.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada mes o vencimiento inminente de algún certificado.
+            - Frecuencia: Mensual.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar las fechas de vencimiento de los certificados de manipulación de alimentos del personal de A&B.
+            - Paso 2: Identificar certificados vencidos o próximos a vencer.
+            - Paso 3: Gestionar la actualización de los certificados que lo requieran.
+            - Paso 4: Mantener la carpeta de documentación de A&B actualizada.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - Carpeta de certificados de manipulación de alimentos actualizada.
+        - ¿Qué sistemas o herramientas usan?
+            - Carpeta física: archivo de certificados del personal de A&B.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 1.3.1:**
+        - Pendiente.
+    - **AS-IS 1.3.2: Control mensual de fechas de vencimiento del Certificado de Salud**
+        - ¿Qué es esta tarea?
+            - Verificación mensual de la vigencia de los certificados de salud del personal del área de Alimentos y Bebidas.
+        - ¿Para qué se hace?
+            - Para mantener la vigencia documental requerida por las normativas sanitarias y garantizar el cumplimiento ante visitas de Sanidad.
+        - ¿Qué roles ejecutan esta tarea?
+            - Manuel: responsable del control y actualización de los certificados de salud y la carpeta correspondiente. ⚠️ Pendiente confirmar cargo de Manuel en sesión próxima.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada mes o vencimiento inminente de algún certificado.
+            - Frecuencia: Mensual.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar las fechas de vencimiento de los certificados de salud del personal de A&B.
+            - Paso 2: Identificar certificados vencidos o próximos a vencer.
+            - Paso 3: Gestionar la renovación de los certificados que lo requieran.
+            - Paso 4: Mantener la carpeta de certificados de salud actualizada.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - Carpeta de certificados de salud del personal de A&B actualizada.
+        - ¿Qué sistemas o herramientas usan?
+            - Carpeta física: archivo de certificados de salud del personal de A&B.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 1.3.2:**
+            - Pendiente.
+
+---
+
+- **TAREA 2.1: Planificación y Control**
+    - **AS-IS 2.1.2: Planificación mensual y quincenal de pagos: sueldos, cestatickets, bonificaciones, horas extras, vacaciones y otros**
+        - ¿Qué es esta tarea?
+            - Elaboración de un cuadro en Excel que detalla la previsión de fondos necesarios para cubrir todos los pagos del período: sueldos, cestatickets, bonificaciones, horas extras, vacaciones y otros conceptos. Incluye también el cálculo de utilidades y vacaciones cuando corresponde.
+        - ¿Para qué se hace?
+            - Para asegurar la disponibilidad de fondos oportunamente y permitir que el departamento de Administración y Finanzas planifique los recursos necesarios antes de cada fecha de pago.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el cuadro de previsión y lo envía a Administración y Finanzas.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada mes y de cada quincena. También cuando un trabajador solicita vacaciones o cuando corresponde el pago de utilidades.
+            - Frecuencia: Mensual y quincenal.
+        - ¿Cómo se hace?
+            - Paso 1: Consolidar en Excel los montos a pagar por cada concepto: sueldos, cestatickets, bonificaciones, horas extras, vacaciones y otros.
+            - Paso 2: Incluir el cálculo de utilidades y/o vacaciones cuando algún trabajador las haya solicitado o cuando corresponda su pago.
+            - Paso 3: Enviar el cuadro de previsión de fondos al departamento de Administración y Finanzas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información actualizada de nómina: sueldos vigentes, novedades del período, solicitudes de vacaciones aprobadas y horas extras calculadas.
+        - ¿Qué se genera al terminar?
+            - Cuadro Excel de previsión de fondos enviado al departamento de Administración y Finanzas.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración del cuadro de previsión de fondos con detalle de sueldos, descuentos y montos a pagar.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que todo el cálculo de nómina, incluyendo utilidades, vacaciones y cestatickets, se gestione directamente desde el módulo de nómina de Odoo, eliminando la necesidad de manejar una base paralela en Excel.
+        - **Propuesta 2.1.2:**
+            - Pendiente.
+    - **AS-IS 2.1.3: Envío de previsión de fondos al departamento Administración y Finanzas**
+        - ¿Qué es esta tarea?
+            - Remisión formal del cuadro de previsión de fondos elaborado en Excel al departamento de Administración y Finanzas para garantizar la disponibilidad de recursos antes de cada fecha de pago.
+        - ¿Para qué se hace?
+            - Para que Administración y Finanzas tenga el detalle de los montos requeridos y pueda gestionar los fondos con anticipación.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: envía la previsión.
+            - Departamento de Administración y Finanzas: recibe y gestiona los fondos.
+        - ¿Cuándo se hace?
+            - Disparador: Finalización de la elaboración del cuadro de previsión de fondos.
+            - Frecuencia: Mensual y quincenal, en línea con la planificación de pagos.
+        - ¿Cómo se hace?
+            - Paso 1: Completar el cuadro de previsión en Excel.
+            - Paso 2: Enviar el cuadro a Administración y Finanzas. ⚠️ Pendiente validar canal de envío exacto (correo, WhatsApp u otro) en sesión próxima.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuadro de previsión de fondos finalizado.
+        - ¿Qué se genera al terminar?
+            - Cuadro de previsión enviado y recibido por Administración y Finanzas como insumo para la gestión de fondos.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: soporte del cuadro de previsión.
+            - ⚠️ Pendiente validar canal de envío en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 2.1.3:**
+            - Pendiente.
+
+---
+
+- **TAREA 2.2: Asistencia y Novedades**
+    - **AS-IS 2.2.1: Registro diario de asistencia del personal**
+        - ¿Qué es esta tarea?
+            - Control diario de la asistencia del personal mediante un listado manual con nombre, apellido, sueldo, hora de entrada y hora de salida, que luego se consolida en un cuadro Excel.
+        - ¿Para qué se hace?
+            - Para tener un registro formal de la asistencia diaria que sirva de base para el cálculo de descuentos por ausencias y retardos, y para la elaboración del reporte quincenal de nómina.
+        - ¿Qué roles ejecutan esta tarea?
+            - Registro inicial: se realiza en Tango Uno (entrada del hotel).
+            - Control interno complementario: se lleva en la oficina de Talento Humano.
+            - Marilyn (Analista de Talento Humano): complementa y valida el registro interno en oficina.
+            - Jefes de departamento: confirman retardos, ausencias y novedades del personal a su cargo.
+        - ¿Cuándo se hace?
+            - Disparador: Cada jornada laboral.
+            - Frecuencia: Diaria. El reporte consolidado se genera quincenalmente.
+        - ¿Cómo se hace?
+            - Paso 1: Registrar la entrada del personal en el control de Tango Uno.
+            - Paso 2: Complementar el control en la oficina de Talento Humano con un listado manual que incluye nombre, apellido, sueldo, hora de entrada y salida.
+            - Paso 3: Validar con los jefes de departamento los retardos, ausencias y novedades del día.
+            - Paso 4: Plasmar la información validada en el cuadro Excel de control de asistencia.
+            - Paso 5: Generar el reporte consolidado de asistencia de forma quincenal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Listado manual de personal activo con datos de sueldo y horario.
+            - Confirmación de novedades por parte de los jefes de departamento.
+        - ¿Qué se genera al terminar?
+            - Cuadro Excel de control de asistencia actualizado diariamente.
+            - Reporte quincenal de asistencia y novedades.
+        - ¿Qué sistemas o herramientas usan?
+            - Tango Uno: control de entrada en la puerta del hotel.
+            - Listado manual (físico): registro de nombre, apellido, sueldo, hora entrada y salida.
+            - Excel: consolidación y control de asistencia.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Cuando hay cambios de horario entre empleados (coberturas), si no se comunica a Talento Humano se generan errores en el registro y posibles descuentos incorrectos en nómina. Los jefes de departamento deben notificar cualquier cambio para que se corrija el registro.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con un software o sistema de fichaje (carné u otro dispositivo) que registre automáticamente la entrada y salida desde que el empleado ingresa a las instalaciones, alimentando directamente el sistema de nómina sin necesidad de cálculo manual. Que las coberturas y cambios de horario queden formalizados en el sistema para evitar errores y reclamos.
+        - **Propuesta 2.2.1:**
+            - Pendiente.
+    - **AS-IS 2.2.2: Revisión diaria de retardos, ausencias justificadas e injustificadas**
+        - ¿Qué es esta tarea?
+            - Validación diaria de los retardos y ausencias del personal, clasificándolos como justificados o injustificados en coordinación con los jefes de departamento, para su aplicación posterior en nómina.
+        - ¿Para qué se hace?
+            - Para determinar con precisión los descuentos que corresponde aplicar en cada período de pago por concepto de retardos y ausencias.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn (Analista de Talento Humano): revisa y registra las novedades diarias.
+            - Jefes de departamento: informan y confirman retardos, ausencias y novedades de su personal.
+            - Andry García: supervisa y consolida la información para nómina.
+        - ¿Cuándo se hace?
+            - Disparador: Cada jornada laboral, al revisar el listado de asistencia del día.
+            - Frecuencia: Diaria.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar en el listado de asistencia los empleados con retardo o ausencia.
+            - Paso 2: Coordinar con el jefe de departamento correspondiente para confirmar si la ausencia o retardo es justificado o injustificado.
+            - Paso 3: Registrar la novedad en el cuadro Excel de control de asistencia con la clasificación correspondiente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Listado de asistencia del día.
+            - Comunicación con jefes de departamento para validación de novedades.
+        - ¿Qué se genera al terminar?
+            - Registro actualizado de retardos y ausencias justificadas e injustificadas en el cuadro Excel, listo para aplicar descuentos en nómina.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: registro y clasificación de retardos y ausencias.
+            - WhatsApp: canal utilizado para comunicación con jefes de departamento sobre novedades. ⚠️ Pendiente confirmar si es el canal formal en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Cuando los empleados cambian horarios entre sí sin notificar a Talento Humano, el registro manual puede reflejar una ausencia o retardo que en realidad fue una cobertura acordada, generando errores en los descuentos.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el sistema registre automáticamente la asistencia y que las novedades lleguen en tiempo real a Talento Humano, eliminando la dependencia del reporte manual de los jefes de departamento.
+        - **Propuesta 2.2.2:**
+            - Pendiente.
+    - **AS-IS 2.2.3: Recepción y validación de horas extras por departamento**
+        - ¿Qué es esta tarea?
+            - Recepción de los formatos físicos de horas extras completados por los jefes de departamento, con verificación de que la información esté correcta y completa antes de proceder al cálculo.
+        - ¿Para qué se hace?
+            - Para contar con la información validada y autorizada por cada jefe de departamento como insumo para el cálculo semanal de horas extras.
+        - ¿Qué roles ejecutan esta tarea?
+            - Jefes de departamento: llenan el formato con fechas, horas, tipo de jornada (redoble, jornada completa, día libre trabajado) y observaciones.
+            - Marilyn (Analista de Talento Humano): imprime los formatos en blanco y los distribuye a los departamentos que no tienen impresora.
+            - Malcolm: recibe los formatos completados y realiza el cálculo semanal.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre de la semana laboral.
+            - Frecuencia: Semanal.
+        - ¿Cómo se hace?
+            - Paso 1: Marilyn imprime los formatos en blanco de horas extras y los distribuye a los departamentos que no cuentan con impresora.
+            - Paso 2: Los jefes de departamento llenan el formato indicando fechas, horas trabajadas, tipo de jornada y observaciones.
+            - Paso 3: Los formatos completados son entregados a Malcolm para el cálculo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formatos en blanco de horas extras disponibles para distribución.
+            - Impresora en oficina de Talento Humano.
+        - ¿Qué se genera al terminar?
+            - Formatos físicos de horas extras completados y firmados por los jefes de departamento, listos para el cálculo semanal.
+        - ¿Qué sistemas o herramientas usan?
+            - Formato físico impreso: llenado manual por los jefes de departamento.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el sistema registre automáticamente las horas extras desde el fichaje, eliminando los formatos manuales y el proceso de distribución física.
+        - **Propuesta 2.2.3:**
+            - Pendiente.
+    - **TAREA 2.3: Cálculo y Ejecución de Pagos**
+        - **AS-IS 2.3.1: Cálculo semanal de horas extras**
+            - ¿Qué es esta tarea?
+                - Procesamiento en Excel de los formatos físicos de horas extras recibidos de los jefes de departamento, sumando los montos por departamento para determinar el total a pagar cada semana.
+            - ¿Para qué se hace?
+                - Para determinar el monto exacto de horas extras a pagar a cada trabajador y por departamento, como insumo para la elaboración del archivo de pago masivo y para la aprobación gerencial.
+            - ¿Qué roles ejecutan esta tarea?
+                - Malcolm: realiza el cálculo semanal en Excel.
+                - Gerencia: recibe el cuadro para aprobación.
+            - ¿Cuándo se hace?
+                - Disparador: Recepción de los formatos físicos de horas extras de todos los departamentos.
+                - Frecuencia: Semanal (día lunes).
+            - ¿Cómo se hace?
+                - Paso 1: Recibir los formatos físicos de horas extras completados por los jefes de departamento.
+                - Paso 2: Ingresar la información al cuadro Excel sumando horas y montos por departamento.
+                - Paso 3: Generar el cuadro consolidado de horas extras con el total por trabajador y por departamento.
+                - Paso 4: Enviar el cuadro a gerencia para autorización vía WhatsApp o de forma presencial.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Formatos físicos de horas extras completados por todos los jefes de departamento.
+                - Cuadro Excel de cálculo de horas extras.
+            - ¿Qué se genera al terminar?
+                - Cuadro Excel de horas extras por departamento enviado a gerencia para aprobación.
+            - ¿Qué sistemas o herramientas usan?
+                - Excel: cálculo y consolidación de horas extras por departamento.
+                - WhatsApp: envío a gerencia para aprobación.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Que el módulo de nómina de Odoo calcule automáticamente las horas extras a partir del registro de asistencia, eliminando el proceso manual en Excel.
+        - **Propuesta 2.3.1:**
+            - Pendiente.
+    - **AS-IS 2.3.2: Envío de reporte para aprobación a Administración y Finanzas**
+        - ¿Qué es esta tarea?
+            - Remisión del cuadro de horas extras calculado a gerencia para su autorización, previo a la ejecución del pago.
+        - ¿Para qué se hace?
+            - Para obtener la aprobación formal de gerencia antes de proceder con el pago de horas extras.
+        - ¿Qué roles ejecutan esta tarea?
+            - Malcolm / Andry García: envían el reporte.
+            - Gerencia General: autoriza el pago.
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del cálculo semanal de horas extras.
+            - Frecuencia: Semanal.
+        - ¿Cómo se hace?
+            - Paso 1: Completar el cuadro de horas extras en Excel.
+            - Paso 2: Enviar el cuadro a gerencia vía WhatsApp o presentarlo de forma presencial para su autorización.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuadro de horas extras calculado y consolidado.
+        - ¿Qué se genera al terminar?
+            - Aprobación de gerencia para proceder con el pago de horas extras.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp: envío del reporte a gerencia para aprobación.
+            - Excel: soporte del cuadro de horas extras.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 2.3.2:**
+            - Pendiente.
+    - **AS-IS 2.3.3: Elaboración de archivo masivo (TXT) para pago de horas extras y nómina**
+        - ¿Qué es esta tarea?
+            - Generación de un archivo TXT con los datos bancarios de cada trabajador (número de cuenta, cédula, nombre, monto y referencia) para su carga masiva en el banco y ejecución de las transferencias.
+        - ¿Para qué se hace?
+            - Para facilitar el pago simultáneo a múltiples trabajadores mediante carga masiva en el banco, evitando la realización de transferencias individuales una por una.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el archivo TXT.
+        - ¿Cuándo se hace?
+            - Disparador: Aprobación del cuadro de horas extras por gerencia.
+            - Frecuencia: Semanal, coincidiendo con el pago de horas extras. También se utiliza para la nómina general.
+        - ¿Cómo se hace?
+            - Paso 1: Tomar el cuadro aprobado de horas extras (y/o nómina).
+            - Paso 2: Elaborar el archivo TXT incluyendo para cada trabajador: número de cuenta bancaria, cédula, nombre, monto a pagar y referencia.
+            - Paso 3: Cargar el archivo TXT en el portal del banco para la ejecución de las transferencias masivas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuadro de horas extras (y/o nómina) aprobado por gerencia.
+            - Datos bancarios actualizados de cada trabajador.
+            - Acceso al portal bancario para carga masiva.
+        - ¿Qué se genera al terminar?
+            - Archivo TXT cargado en el banco.
+            - Transferencias masivas ejecutadas a los trabajadores.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: fuente de datos para construcción del TXT.
+            - Portal bancario: carga y ejecución del archivo TXT para pagos masivos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 2.3.3:**
+            - Pendiente.
+    - **AS-IS 2.3.4: Transferencias individuales a colaboradores con cuentas de otros bancos**
+        - ¿Qué es esta tarea?
+            - Ejecución de pagos individuales a trabajadores cuyas cuentas bancarias no pertenecen al banco principal utilizado por la empresa para el pago masivo.
+        - ¿Para qué se hace?
+            - Para garantizar que todos los trabajadores reciban su pago, independientemente del banco donde tengan su cuenta.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción menciona esta tarea pero no designa explícitamente al responsable de las transferencias individuales.
+        - ¿Cuándo se hace?
+            - Disparador: Identificación de trabajadores con cuentas en bancos distintos al banco principal.
+            - Frecuencia: Semanal y/o quincenal, en paralelo a la ejecución del pago masivo.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Datos bancarios actualizados de trabajadores con cuentas en otros bancos.
+            - Montos aprobados por gerencia.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 2.3.4:**
+            - Pendiente.
+
+---
+
+- **TAREA 2.5: Descuentos y Consumos**
+    - **AS-IS 2.5.1: Registro quincenal de consumos internos del personal**
+        - ¿Qué es esta tarea?
+            - Registro de los consumos realizados por el personal en los espacios internos del hotel (alimentos, bebidas, snacks, tienda de ropa) para su posterior aplicación como descuento en nómina.
+        - ¿Para qué se hace?
+            - Para controlar y descontar de manera correcta en nómina los consumos internos que el personal realiza durante el período, según los acuerdos establecidos con cada trabajador.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: consolida y registra los consumos para aplicación en nómina.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre de cada quincena o semana según el acuerdo con el trabajador.
+            - Frecuencia: Quincenal o semanal según acuerdo con el trabajador.
+        - ¿Cómo se hace?
+            - Paso 1: Recopilar las comandas físicas de consumo del personal.
+            - Paso 2: Comparar las comandas físicas con los estados de cuenta y el sistema Poster para validar los consumos.
+            - Paso 3: Registrar los consumos validados en el cuadro de nómina en las columnas específicas destinadas a descuentos por consumo.
+            - Paso 4: Aplicar el descuento en la nómina del período correspondiente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comandas físicas de consumo del personal.
+            - Acceso al sistema Poster para validación.
+            - Estados de cuenta de consumos.
+        - ¿Qué se genera al terminar?
+            - Descuentos por consumo registrados en el cuadro de nómina, listos para aplicar en el pago del período.
+        - ¿Qué sistemas o herramientas usan?
+            - Comandas físicas: fuente primaria de registro de consumos.
+            - Sistema Poster: validación de consumos registrados en el punto de venta.
+            - Excel (cuadro de nómina): registro de descuentos clasificados por concepto.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 2.5.1:**
+        - Pendiente.
+    - **AS-IS 2.5.2: Aplicación de descuentos por consumos, ausencias, retardos y abonos a CxC**
+        - ¿Qué es esta tarea?
+            - Incorporación en el cuadro de nómina de todos los descuentos del período: consumos internos, ausencias injustificadas, retardos y abonos a cuentas por cobrar, clasificados en columnas específicas.
+        - ¿Para qué se hace?
+            - Para que el pago final de cada trabajador refleje correctamente todos los descuentos que corresponden en el período, según los registros validados y los acuerdos establecidos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: aplica los descuentos en el cuadro de nómina.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre de cada quincena o semana, previo a la ejecución del pago.
+            - Frecuencia: Quincenal y semanal según el tipo de descuento y acuerdo con el trabajador.
+        - ¿Cómo se hace?
+            - Paso 1: Reunir la información de todos los descuentos del período: consumos validados, ausencias, retardos y abonos a CxC.
+            - Paso 2: Registrar cada descuento en la columna específica del cuadro de nómina en Excel (columnas separadas para consumo, ausencias, retardos y abonos).
+            - Paso 3: Calcular el neto a pagar a cada trabajador descontando todos los conceptos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuadro de asistencia con retardos y ausencias del período.
+            - Registro de consumos internos validados.
+            - Estados de cuenta de CxC por trabajador.
+        - ¿Qué se genera al terminar?
+            - Cuadro de nómina con todos los descuentos aplicados y neto a pagar por trabajador.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel (cuadro de nómina): columnas específicas para clasificar descuentos por consumo, ausencias, retardos y abonos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 2.5.2:**
+            - Pendiente.
+
+---
+
+- **TAREA 2.4: Conciliación y Registros Contables**
+    - **AS-IS 2.4.1: Conciliación en Odoo de todos los movimientos vinculados a pagos**
+        - ¿Qué es esta tarea?
+            - Validación en Odoo (sistema ADU mencionado en la transcripción) de que los pagos ejecutados —horas extras, préstamos, anticipos, bonificaciones, bonos de cumpleaños y nómina general— coincidan con los registros bancarios, y registro contable de las diferencias cuando las hay.
+        - ¿Para qué se hace?
+            - Para evitar inconsistencias entre los pagos ejecutados y los registros contables, y para mantener actualizadas las cuentas por cobrar de cada trabajador.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: realiza la conciliación en el sistema.
+        - ¿Cuándo se hace?
+            - Disparador: Ejecución de cada ciclo de pagos (horas extras, nómina, préstamos, etc.).
+            - Frecuencia: Semanal o quincenal según el tipo de pago. Revisión adicional en los primeros cinco días del mes.
+        - ¿Cómo se hace?
+            - Paso 1: Ingresar a Odoo (ADU) para revisar los movimientos registrados.
+            - Paso 2: Comparar los pagos ejecutados contra los registros bancarios.
+            - Paso 3: Si hay saldo a favor del trabajador, aplicar el descuento en el siguiente pago y registrar contablemente en la cuenta de préstamos o cuentas por cobrar.
+            - Paso 4: Si hay diferencia a favor de la empresa, ejecutar el pago del diferencial y registrarlo contablemente.
+            - Paso 5: Actualizar el estado de cuenta por cobrar de cada trabajador.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Odoo.
+            - Registros bancarios de los pagos ejecutados.
+            - Estados de cuenta actualizados por trabajador.
+        - ¿Qué se genera al terminar?
+            - Movimientos conciliados en Odoo.
+            - Cuentas por cobrar por trabajador actualizadas.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo (referenciado como ADU en la transcripción): conciliación de pagos y registro contable de préstamos y cuentas por cobrar.
+            - Excel: actualización manual paralela de estados de cuenta por cobrar por trabajador.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si hay saldo a favor del trabajador: se descuenta en el siguiente pago y se lleva la cuenta contable de préstamos o cuentas por cobrar.
+            - Si hay diferencia a favor de la empresa: se realiza un pago del diferencial y se registra contablemente.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que toda la conciliación y el manejo de cuentas por cobrar de empleados esté centralizado en Odoo, sin necesidad de un Excel paralelo.
+    - **Propuesta 2.4.1:**
+        - Pendiente.
+    - **AS-IS 2.4.2: Actualización de estados de CxC por trabajador**
+        - ¿Qué es esta tarea?
+            - Mantenimiento manual en Excel del estado de cuenta de cuentas por cobrar de cada trabajador, reflejando préstamos, anticipos, abonos y saldos pendientes.
+        - ¿Para qué se hace?
+            - Para llevar un control individual del saldo que cada trabajador adeuda a la empresa por concepto de préstamos, anticipos u otros descuentos, y aplicarlos correctamente en cada ciclo de pago.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: actualiza los estados de cuenta.
+        - ¿Cuándo se hace?
+            - Disparador: Ejecución de cada pago o descuento que afecte el saldo del trabajador.
+            - Frecuencia: Semanal o quincenal. Revisión en los primeros cinco días de cada mes.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar los movimientos del período (pagos de préstamos, abonos, nuevos anticipos) que afectan el saldo de cada trabajador.
+            - Paso 2: Actualizar manualmente en Excel el estado de cuenta de cada trabajador.
+            - Paso 3: Revisar el consolidado en los primeros cinco días del mes para validar saldos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Registros de pagos y descuentos ejecutados en el período.
+            - Archivo Excel de cuentas por cobrar por trabajador.
+        - ¿Qué se genera al terminar?
+            - Estado de cuenta por cobrar actualizado por trabajador en Excel.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: registro y seguimiento manual de cuentas por cobrar por trabajador.
+            - Odoo: referencia para validación de movimientos contables registrados.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que los estados de cuenta por cobrar de los trabajadores se gestionen directamente en Odoo, sin duplicación en Excel.
+        - **Propuesta 2.4.2:**
+            - Pendiente.
+
+---
+
+- **TAREA 2.6: Procesos Tributarios Laborales**
+    - **AS-IS 2.6.1: Elaboración de archivo XML para declaración de retenciones ISLR**
+        - ¿Qué es esta tarea?
+            - Preparación mensual del archivo XML requerido por el SENIAT para la declaración de retenciones de ISLR sobre salarios y otras remuneraciones, de acuerdo con la Forma 99074.
+        - ¿Para qué se hace?
+            - Para cumplir con el deber formal ante el SENIAT de declarar mensualmente las retenciones de ISLR aplicadas a los trabajadores activos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el archivo XML en Excel.
+            - Departamento de Administración y Finanzas: recibe el archivo para su declaración oficial ante el SENIAT.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre del mes.
+            - Frecuencia: Mensual.
+        - ¿Cómo se hace?
+            - Paso 1: Tomar como base la hoja de trabajo de declaración de pensiones (contribución DPP) elaborada en el mismo período.
+            - Paso 2: Realizar la sumatoria de todos los meses acumulados de enero a diciembre del año cerrado, identificando los conceptos que aplican para ISLR y los que no.
+            - Paso 3: Realizar la consulta correspondiente para determinar qué conceptos van y cuáles no, sometiéndolo a criterio y consideración.
+            - Paso 4: Elaborar el archivo XML reflejando los trabajadores activos y las deducciones a aplicar.
+            - Paso 5: Enviar el archivo al departamento de Administración y Finanzas para su declaración oficial.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Hoja de trabajo mensual de contribución DPP del período.
+            - Histórico mensual acumulado de remuneraciones de enero a diciembre.
+            - Criterio de clasificación de conceptos gravables y no gravables para ISLR.
+        - ¿Qué se genera al terminar?
+            - Archivo XML de retenciones ISLR enviado a Administración y Finanzas para declaración ante el SENIAT.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración de la hoja de trabajo y del archivo XML.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Existen conceptos cuya clasificación como gravables o no gravables genera dudas; en esos casos se realiza la consulta correspondiente y se decide a criterio antes de incluirlos en el XML.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 2.6.1:**
+        - Pendiente.
+    - **AS-IS 2.6.2: Elaboración mensual de hoja de trabajo para la contribución DPP**
+        - ¿Qué es esta tarea?
+            - Preparación mensual de la hoja de trabajo para el cálculo y declaración de la contribución de Protección de las Pensiones (DPP), equivalente al 9% sobre lo percibido por cada trabajador en el mes, según la Forma 19 del SENIAT.
+        - ¿Para qué se hace?
+            - Para cumplir con el deber formal de calcular y declarar mensualmente la contribución DPP ante el SENIAT, y para que sirva como insumo de apoyo en la elaboración del XML de retenciones ISLR.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora la hoja de trabajo en Excel.
+            - Departamento de Administración y Finanzas: recibe la hoja para su declaración oficial.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre del mes.
+            - Frecuencia: Mensual.
+        - ¿Cómo se hace?
+            - Paso 1: Consolidar en Excel las remuneraciones percibidas por cada trabajador activo en el mes.
+            - Paso 2: Calcular el 9% sobre lo percibido por cada trabajador para determinar el monto de la contribución DPP.
+            - Paso 3: Elaborar la hoja de trabajo completa con el detalle por trabajador.
+            - Paso 4: Enviar la hoja al departamento de Administración y Finanzas para su declaración oficial.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuadro de nómina del mes con las remuneraciones percibidas por cada trabajador.
+        - ¿Qué se genera al terminar?
+            - Hoja de trabajo de contribución DPP enviada a Administración y Finanzas.
+            - Insumo de apoyo para la elaboración del XML de retenciones ISLR del mismo período.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración de la hoja de trabajo de contribución DPP.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 2.6.2:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.1: Reclutamiento y Selección**
+    - **AS-IS 3.1.1: Elaboración de flyers de vacantes**
+        - ¿Qué es esta tarea?
+            - Diseño de una pieza gráfica (flyer) que comunica la existencia de una vacante disponible en la empresa, incluyendo los datos necesarios para que los interesados puedan postularse.
+        - ¿Para qué se hace?
+            - Para la publicación y difusión de ofertas de empleo en los canales de comunicación utilizados por la empresa.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el flyer.
+        - ¿Cuándo se hace?
+            - Disparador: Existencia de una vacante disponible en algún departamento.
+            - Frecuencia: Bajo demanda, cada vez que hay una vacante a cubrir.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar la vacante disponible y los requisitos del cargo.
+            - Paso 2: Diseñar el flyer en PowerPoint incluyendo: logo de la empresa, nombre de la vacante, características puntuales del cargo, ubicación de la oferta (Caracas o Tucacas), correo electrónico de contacto, número de teléfono e insignias de redes sociales (Instagram, Facebook).
+            - Paso 3: Finalizar el flyer listo para publicación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información sobre la vacante: nombre del cargo, requisitos y características del puesto.
+            - Definición de la ubicación de la oferta.
+            - Logo de la empresa e insignias de redes sociales.
+        - ¿Qué se genera al terminar?
+            - Flyer de vacante listo para su publicación en los canales de comunicación.
+        - ¿Qué sistemas o herramientas usan?
+            - PowerPoint: elaboración del diseño del flyer.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.1.1:**
+            - Pendiente.
+    - **AS-IS 3.1.2: Publicación de vacantes en WhatsApp, Telegram y otros grupos operativos**
+        - ¿Qué es esta tarea?
+            - Difusión del flyer de vacante elaborado a través de grupos de WhatsApp y Telegram para atraer candidatos a la oferta de empleo.
+        - ¿Para qué se hace?
+            - Para ampliar el alcance de la oferta laboral y recibir síntesis curriculares de candidatos interesados a través del correo electrónico indicado en el flyer.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: realiza la publicación en los grupos.
+        - ¿Cuándo se hace?
+            - Disparador: Flyer de vacante finalizado y listo para publicación.
+            - Frecuencia: Bajo demanda, cada vez que hay una vacante a publicar.
+        - ¿Cómo se hace?
+            - Paso 1: Publicar el flyer en los grupos de WhatsApp y Telegram utilizados para difusión de ofertas laborales.
+            - Paso 2: Esperar la recepción de síntesis curriculares al correo electrónico indicado en el flyer.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Flyer de vacante finalizado.
+            - Acceso a los grupos de WhatsApp y Telegram de difusión.
+        - ¿Qué se genera al terminar?
+            - Vacante publicada en los canales de comunicación.
+            - Recepción de síntesis curriculares de candidatos interesados al correo electrónico.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp: publicación del flyer en grupos operativos.
+            - Telegram: publicación del flyer en grupos operativos.
+            - Correo electrónico: recepción de síntesis curriculares de los postulantes.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Excepción: Candidatos que no aplican por correo electrónico sino que se presentan personalmente en el hotel y entregan su síntesis curricular en la recepción DCB de forma presencial.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.1.2:**
+            - Pendiente.
+    - **AS-IS 3.1.3: Preselección, filtros, entrevistas y aplicación de pruebas**
+        - ¿Qué es esta tarea?
+            - Revisión y comparación de las síntesis curriculares recibidas para identificar los perfiles más aptos para la vacante, seguida de un proceso de llamadas y entrevistas de preselección.
+        - ¿Para qué se hace?
+            - Para filtrar a los candidatos recibidos y presentar al departamento correspondiente y a gerencia únicamente aquellos perfiles que mejor cumplen con los requisitos del cargo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: realizan la preselección y el filtro inicial.
+            - Coordinador del departamento solicitante: realiza el filtro final entre los candidatos preseleccionados y da el primer visto bueno.
+            - Gerencia General (Dr. Alberto): entrevista final y aprobación definitiva del ingreso.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de síntesis curriculares de candidatos postulados (por correo o presencialmente).
+            - Frecuencia: Bajo demanda, cada vez que hay una vacante activa.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar las síntesis curriculares recibidas por correo y las entregadas presencialmente en recepción DCB.
+            - Paso 2: Comparar los perfiles de los candidatos con los requisitos del cargo para identificar los más aptos.
+            - Paso 3: Elaborar el listado de aspirantes a cargos vacantes con los candidatos preseleccionados.
+            - Paso 4: Entregar el listado al coordinador del departamento para el filtro final.
+            - Paso 5: El coordinador del departamento selecciona a los candidatos que le parecen adecuados y notifica a Talento Humano.
+            - Paso 6: Talento Humano presenta los candidatos aprobados por el departamento a Gerencia General.
+            - Paso 7: Gerencia General realiza una entrevista informal no estructurada y toma la decisión final de ingreso.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Síntesis curriculares recibidas por correo y/o entregadas presencialmente.
+            - Descripción del cargo y requisitos de la vacante.
+        - ¿Qué se genera al terminar?
+            - Listado de aspirantes a cargos vacantes entregado al departamento para filtro.
+            - Candidato aprobado por Gerencia General para proceder con el ingreso.
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: recepción de síntesis curriculares.
+            - ⚠️ Pendiente validar en sesión próxima si se utiliza algún sistema o formato para registrar la preselección.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Centralizar todo el proceso de reclutamiento y postulación desde Odoo, incluyendo la carga de cédula, foto tipo carnet y todos los datos del candidato desde el módulo de reclutamiento, eliminando la gestión paralela por correo y listados manuales.
+        - **Propuesta 3.1.3:**
+            - Pendiente.
+    - **AS-IS 3.1.4: Entrega y recepción de kit de reclutamiento**
+        - ¿Qué es esta tarea?
+            - Entrega al candidato seleccionado para entrevista presencial de un conjunto de formatos físicos que debe completar, proporcionando información detallada sobre su perfil personal, de salud y documentación requerida para el expediente.
+        - ¿Para qué se hace?
+            - Para recopilar información detallada del aspirante antes de su posible ingreso, dejando constancia firmada de los datos declarados (incluyendo condiciones de salud) y de los documentos requeridos para el expediente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn (Analista de Talento Humano): entrega, gestiona y recepciona los formatos completados.
+        - ¿Cuándo se hace?
+            - Disparador: Candidato convocado a entrevista presencial.
+            - Frecuencia: Bajo demanda, cada vez que se realiza una entrevista presencial.
+        - ¿Cómo se hace?
+            - Paso 1: Preparar el kit de reclutamiento con los formatos correspondientes: ficha médica (salud ocupacional), oferta de servicio, Rutagrama (ubicación geográfica del candidato) y solicitud de documentos para expediente.
+            - Paso 2: Entregar el kit al candidato para su llenado manual.
+            - Paso 3: El candidato completa los formatos con sus datos, coloca fecha y firma.
+            - Paso 4: Recepcionar los formatos completados y firmados por el aspirante.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formatos impresos del kit de reclutamiento disponibles.
+            - Impresora en la oficina de Talento Humano.
+        - ¿Qué se genera al terminar?
+            - Kit de reclutamiento completado, fechado y firmado por el aspirante, que queda como respaldo documental del proceso.
+        - ¿Qué sistemas o herramientas usan?
+            - Formatos PDF impresos: llenado manual por el aspirante.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - La firma del aspirante en el formulario de salud ocupacional sirve como respaldo en casos donde el trabajador declare condiciones de salud que se descubren después de ser contratado.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.1.4:**
+            - Pendiente.
+    - **AS-IS 3.1.5: Presentación final de candidatos a Gerencia General para aprobación**
+        - ¿Qué es esta tarea?
+            - Presentación por parte de Talento Humano del candidato aprobado por el coordinador del departamento a la Gerencia General, para la entrevista final y aprobación definitiva del ingreso.
+        - ¿Para qué se hace?
+            - Para obtener el visto bueno final de la Gerencia General antes de proceder con la contratación del candidato seleccionado.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: hacen el enlace y presentan al candidato ante la Gerencia General.
+            - Gerencia General (Dr. Alberto): realiza la entrevista final y toma la decisión definitiva.
+        - ¿Cuándo se hace?
+            - Disparador: Aprobación del candidato por el coordinador del departamento solicitante.
+            - Frecuencia: Bajo demanda, cada vez que un candidato supera el filtro departamental.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la confirmación del coordinador del departamento de que el candidato es apto.
+            - Paso 2: Notificar a Gerencia General para coordinar la entrevista final.
+            - Paso 3: Gerencia General realiza una entrevista informal no estructurada con el candidato.
+            - Paso 4: Gerencia General comunica su decisión de aprobación o rechazo del candidato.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Confirmación del coordinador del departamento.
+            - Disponibilidad de Gerencia General para la entrevista.
+        - ¿Qué se genera al terminar?
+            - Decisión final de Gerencia General sobre el ingreso del candidato.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción no menciona un sistema específico para registrar la decisión final de gerencia.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Formalizar la comunicación de aprobación o rechazo por correo electrónico, en lugar de la notificación informal actual.
+        - **Propuesta 3.1.5:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.2: Ingreso e Inducción**
+    - **AS-IS 3.2.1: Solicitud de contrato al Departamento Legal**
+        - ¿Qué es esta tarea?
+            - Envío al Departamento Legal de toda la información necesaria para la elaboración del contrato del nuevo empleado, incluyendo datos personales, condiciones laborales y funciones del cargo.
+        - ¿Para qué se hace?
+            - Para que el Departamento Legal elabore el contrato formal del trabajador con todos los términos acordados con la Gerencia General.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: recopila y envía la información al Departamento Legal.
+            - Departamento Legal: elabora el contrato.
+        - ¿Cuándo se hace?
+            - Disparador: Aprobación definitiva del candidato por Gerencia General.
+            - Frecuencia: Bajo demanda, cada vez que hay un nuevo ingreso aprobado.
+        - ¿Cómo se hace?
+            - Paso 1: Recopilar toda la información del nuevo empleado: RIF, cédula, funciones del cargo, forma de pago, modalidad de remuneración (sueldo, cestatickets, bonificaciones), beneficios, horario y días libres.
+            - Paso 2: Dirigir un correo al Departamento Legal con toda la información detallada para la elaboración del contrato.
+            - Paso 3: El Departamento Legal elabora el contrato en los primeros tres a cinco días del ingreso del trabajador en período de prueba.
+            - Paso 4: El trabajador recibe el contrato, lo firma y se envía copia con la firma de Gerencia.
+            - Paso 5: Se recepciona el contrato ya firmado por todas las partes y se guarda el original en el expediente físico del trabajador.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Datos personales del nuevo empleado (RIF, cédula).
+            - Condiciones laborales acordadas con Gerencia: funciones, remuneración, horario, días libres y beneficios.
+        - ¿Qué se genera al terminar?
+            - Contrato laboral firmado por el trabajador y por Gerencia, archivado en el expediente físico del empleado.
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: envío de la solicitud con la información al Departamento Legal.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si durante el período de prueba (25 días continuos) se realizan modificaciones a las condiciones del contrato por decisión de Gerencia General, se notifica al empleado del cambio de condición y se envía la modificación al Departamento Legal.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Formalizar la notificación al empleado de cambios en sus condiciones laborales por correo electrónico, en lugar de la comunicación informal actual. Implementar una bienvenida formal al empleado al momento del ingreso.
+        - **Propuesta 3.2.1:**
+            - Pendiente.
+    - **AS-IS 3.2.2: Creación de empleado en Odoo**
+        - ¿Qué es esta tarea?
+            - Registro del nuevo empleado en Odoo completando el formulario con todos los datos personales, laborales y de contacto requeridos por el sistema.
+        - ¿Para qué se hace?
+            - Para incorporar al trabajador en la base de datos oficial del sistema ERP y habilitarlo para los procesos de nómina, asistencia y demás módulos relacionados.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: crea el registro en Odoo. También gestiona la baja cuando hay un egreso.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de un nuevo empleado aprobado. Inversamente, se da de baja en Odoo cuando hay un egreso.
+            - Frecuencia: Bajo demanda, cada vez que hay un ingreso o egreso.
+        - ¿Cómo se hace?
+            - Paso 1: Ingresar al módulo de empleados en Odoo.
+            - Paso 2: Crear el nuevo registro de empleado completando el formulario con los campos requeridos (departamento, cargo y demás datos).
+            - Paso 3: Guardar el registro del empleado en el sistema.
+            - En caso de egreso: dar de baja al empleado en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al módulo de empleados en Odoo.
+            - Información completa del nuevo empleado: datos personales, cargo, departamento y condiciones laborales.
+        - ¿Qué se genera al terminar?
+            - Empleado registrado y activo en Odoo.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: registro y gestión del empleado en el sistema ERP.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que Odoo cuente con campos personalizados con mayor nivel de detalle del empleado (información de salud, carga familiar, estado civil, foto tipo carnet, entre otros), de modo que toda la información que actualmente se maneja en Excel pueda centralizarse en el sistema sin necesidad de bases de datos paralelas. Incluir también la carga de la nómina y recibos de pago directamente en Odoo.
+        - **Propuesta 3.2.2:**
+            - Pendiente.
+    - **AS-IS 3.2.3: Inducción general y recorrido por las instalaciones**
+        - ¿Qué es esta tarea?
+            - Coordinación y ejecución del proceso de bienvenida e inducción del nuevo empleado, que incluye la lectura y firma de la normativa interna, recorrido por las instalaciones, entrega de uniformes y presentación al líder del departamento.
+        - ¿Para qué se hace?
+            - Para que el nuevo empleado conozca las normas internas de la empresa, las instalaciones y a los responsables de su departamento desde el primer día, asegurando una incorporación ordenada y formal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn (Analista de Talento Humano): recibe al empleado, entrega la normativa, coordina la inducción y hace conocer el control de asistencia y el comedor.
+            - Líderes de departamento: ejecutan la inducción específica del área y reciben al nuevo empleado para iniciar sus actividades.
+            - Andry García: coordina el proceso general de ingreso.
+        - ¿Cuándo se hace?
+            - Disparador: Primer día de trabajo del nuevo empleado.
+            - Frecuencia: Bajo demanda, cada vez que hay un nuevo ingreso.
+        - ¿Cómo se hace?
+            - Paso 1: Marilyn recibe al nuevo empleado en la oficina de Talento Humano.
+            - Paso 2: Se entrega la normativa interna al empleado para su lectura.
+            - Paso 3: El empleado firma el documento de recepción de la normativa, comprometiéndose a cumplirla. Se le entrega una copia y se guarda otra en su expediente físico.
+            - Paso 4: Se hace conocer al empleado el control de asistencia (Tango Uno) y el comedor.
+            - Paso 5: Se hace entrega de los uniformes al nuevo empleado.
+            - Paso 6: El empleado es entregado al líder de su departamento para la inducción específica del área y el inicio de sus actividades.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Normativa interna impresa y disponible.
+            - Uniformes disponibles en el inventario para entrega.
+            - Coordinación previa con el líder del departamento para recibir al nuevo empleado.
+        - ¿Qué se genera al terminar?
+            - Firma de recepción y compromiso de la normativa interna archivada en el expediente del empleado.
+            - Empleado incorporado a su departamento con uniforme entregado.
+        - ¿Qué sistemas o herramientas usan?
+            - Documento físico impreso (normativa interna): entrega y firma por parte del empleado.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Implementar una bienvenida formal al empleado al momento del ingreso, que incluya comunicación oficial por correo electrónico informando a quién pertenece la empresa y los canales formales de comunicación interna.
+        - **Propuesta 3.2.3:**
+            - Pendiente.
+    - **AS-IS 3.2.4: Entrega de tarjeta bancaria y activación del kit nómina**
+        - ¿Qué es esta tarea?
+            - Gestión de la apertura de cuenta bancaria en el banco utilizado por la empresa para el pago de nómina, para los trabajadores que no tengan cuenta en dicho banco, y entrega del kit de nómina una vez disponible.
+        - ¿Para qué se hace?
+            - Para garantizar que todos los trabajadores cuenten con una cuenta en el banco principal de nómina de la empresa, facilitando los pagos masivos y evitando transferencias individuales.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: gestiona la solicitud de apertura de cuenta ante el banco.
+            - Marilyn: apoya en la recepción y firma del kit de nómina por parte del trabajador.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de un nuevo trabajador que no cuenta con cuenta en el banco principal de nómina.
+            - Frecuencia: Bajo demanda, cada vez que hay un nuevo ingreso sin cuenta en el banco principal.
+        - ¿Cómo se hace?
+            - Paso 1: Verificar si el nuevo trabajador tiene cuenta en el banco principal de nómina.
+            - Paso 2: Con la documentación que el trabajador entregó en el kit de reclutamiento, realizar la solicitud de apertura de cuenta al banco.
+            - Paso 3: El trabajador recibe el kit de nómina del banco, lo firma.
+            - Paso 4: Se entregan los documentos originales firmados al banco, llevándolos físicamente a la agencia.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentación del trabajador (ya recopilada durante el kit de reclutamiento).
+            - Acceso al proceso de solicitud de apertura de cuentas del banco principal.
+        - ¿Qué se genera al terminar?
+            - Solicitud de apertura de cuenta bancaria enviada al banco.
+            - Kit de nómina firmado por el trabajador y entregado físicamente en la agencia bancaria.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima el nombre del banco principal utilizado para nómina.
+            - Documentación física: formularios del banco completados y firmados por el trabajador.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Trabajadores que ya tienen cuenta en el banco principal: no requieren apertura, se registran directamente con sus datos bancarios existentes para el pago masivo.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.2.4:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.3: Administración de Información y Expedientes**
+    - **AS-IS 3.3.1: Actualización permanente de base de datos: activos, ingresos, egresos, RIF**
+        - ¿Qué es esta tarea?
+            - Mantenimiento de una base de datos en Excel con información detallada de todo el personal, organizada en dos pestañas: personal activo y personal egresado. Registra datos que van más allá de lo que actualmente está disponible en Odoo, incluyendo información personal, de salud, carga familiar y datos bancarios.
+        - ¿Para qué se hace?
+            - Para tener disponible información detallada de los empleados que el sistema Odoo no captura actualmente en sus campos estándar, y que es necesaria para procesos de apertura de cuentas bancarias, trámites de permisos, expedientes y otros requerimientos operativos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: actualiza la base de datos ante cada ingreso o egreso.
+            - Marilyn (Analista de Talento Humano): apoya con información de los formatos físicos completados por los empleados.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso o egreso de un empleado, o actualización de datos de un empleado activo.
+            - Frecuencia: Bajo demanda, cada vez que hay un movimiento de personal o cambio de datos.
+        - ¿Cómo se hace?
+            - Paso 1: Recopilar toda la información del empleado a partir de los formatos físicos completados durante el kit de reclutamiento e ingreso (ficha médica, oferta de servicio, Rutagrama, documentos de expediente).
+            - Paso 2: Ingresar la información en la pestaña correspondiente del archivo Excel: pestaña de personal activo para ingresos, pestaña de egresos para bajas.
+            - Paso 3: Registrar todos los campos disponibles: datos personales, alergias, condiciones de salud, medicamentos, carga familiar, estado civil, datos bancarios y RIF, entre otros.
+            - Paso 4: Actualizar la pestaña correspondiente cada vez que hay un movimiento de personal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formatos físicos completados por el empleado durante el ingreso.
+            - Archivo Excel de base de datos de personal activo y egresado.
+        - ¿Qué se genera al terminar?
+            - Base de datos Excel actualizada con la información completa del personal activo e historial de egresos.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: base de datos principal con pestañas de personal activo y egresado.
+            - Odoo: referencia paralela, aunque actualmente no captura todo el nivel de detalle requerido.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que Odoo cuente con campos personalizados suficientes para capturar toda la información que actualmente se maneja en Excel, eliminando la base de datos paralela. Que incluya foto tipo carnet, datos de salud, carga familiar, estado civil y cualquier otro detalle relevante del empleado, de modo que toda la información viaje en un solo sistema sin retrabajo.
+        - **Propuesta 3.3.1:**
+            - Pendiente.
+    - **AS-IS 3.3.2: Mantenimiento de expedientes físicos y digitales**
+        - ¿Qué es esta tarea?
+            - Conservación y actualización de los expedientes de cada empleado en dos formatos: físico (carpetas impresas archivadas en Caracas) y digital (documentos escaneados almacenados en Microsoft OneDrive/SharePoint de la empresa).
+        - ¿Para qué se hace?
+            - Para preservar la integridad de la documentación del personal a lo largo del tiempo, evitar la pérdida de información por deterioro físico (humedad u otros factores), y tener disponibles los documentos digitalmente para agilizar trámites como apertura de cuentas bancarias, permisos y requerimientos externos sin necesidad de buscar en el archivo físico.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: gestiona el archivo digital en la nube.
+            - Marilyn: apoya en el mantenimiento del archivo físico. ⚠️ Pendiente confirmar distribución de responsabilidades exacta en sesión próxima.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de un nuevo empleado, egreso, o actualización de documentos de un empleado activo.
+            - Frecuencia: Bajo demanda, cada vez que hay un movimiento de personal o se incorpora documentación nueva al expediente.
+        - ¿Cómo se hace?
+            - Paso 1: Para el expediente físico: imprimir o reimprimir los documentos que lo componen y archivarlos en la carpeta física del empleado, ubicada en Caracas.
+            - Paso 2: Para el expediente digital: escanear los documentos físicos y guardarlos en la carpeta del empleado en la nube (Microsoft OneDrive/SharePoint).
+            - Paso 3: Mantener ambos expedientes actualizados ante cualquier incorporación de documentos nuevos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentación física del empleado disponible para escanear y archivar.
+            - Acceso a Microsoft OneDrive/SharePoint.
+            - Espacio físico de archivo en Caracas.
+        - ¿Qué se genera al terminar?
+            - Expediente físico actualizado archivado en Caracas.
+            - Expediente digital actualizado en Microsoft OneDrive/SharePoint.
+        - ¿Qué sistemas o herramientas usan?
+            - Microsoft OneDrive/SharePoint: almacenamiento digital de los expedientes del personal.
+            - Archivo físico (carpetas): conservación de documentos originales en Caracas.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Deterioro de documentos físicos por humedad u otros factores: el expediente digital en la nube sirve como respaldo para recuperar la información sin necesidad de solicitarla nuevamente al empleado.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Centralizar la gestión documental directamente desde el módulo de reclutamiento y empleados de Odoo, de modo que toda la documentación del empleado se cargue y gestione desde el sistema sin necesidad de mantener carpetas paralelas en la nube ni archivos físicos como única fuente de verdad.
+        - **Propuesta 3.3.2:**
+            - Pendiente.
+    - **AS-IS 3.3.3: Levantamiento de información para descripciones de cargo y flujo actual de procesos**
+        - ¿Qué es esta tarea?
+            - Recopilación de información sobre las funciones reales que desempeña cada cargo en la empresa, especialmente cuando hay un nuevo ingreso o cuando se realizan modificaciones a las condiciones del contrato, para asegurar que el contrato refleje con precisión las responsabilidades del empleado.
+        - ¿Para qué se hace?
+            - Para que el Departamento Legal cuente con la descripción detallada y actualizada de las funciones de cada cargo al momento de elaborar o modificar un contrato, evitando ambigüedades o reclamos posteriores por funciones no especificadas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: recopila la información y la remite al Departamento Legal.
+            - Gerencia General: autoriza o realiza cambios en las funciones y condiciones del cargo.
+            - Departamento Legal: incorpora la descripción de funciones en el contrato.
+        - ¿Cuándo se hace?
+            - Disparador: Nuevo ingreso de un empleado o modificación de condiciones laborales autorizada por Gerencia General.
+            - Frecuencia: Bajo demanda, cada vez que hay un ingreso o modificación contractual.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar las funciones específicas del cargo a ocupar o modificar.
+            - Paso 2: Documentar el detalle de funciones, considerando que en el hotel muchos empleados son multifuncionales y pueden tener responsabilidades que van más allá de su cargo formal.
+            - Paso 3: Remitir la descripción de funciones al Departamento Legal para su incorporación en el contrato.
+            - Paso 4: En caso de modificación posterior autorizada por Gerencia, notificar al empleado del cambio de condición y enviar la actualización al Departamento Legal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información sobre las funciones reales del cargo, validada con el coordinador del departamento y con Gerencia General.
+        - ¿Qué se genera al terminar?
+            - Descripción de funciones del cargo enviada al Departamento Legal para su inclusión en el contrato.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción no especifica la herramienta utilizada para documentar las descripciones de cargo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Cuando Gerencia General autoriza modificaciones a las funciones o condiciones del cargo después del ingreso, se notifica al empleado del cambio y se actualiza la información enviada al Departamento Legal. La notificación actualmente se realiza de forma informal (verbal o personal), sin un formato o canal estandarizado.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.3.3:**
+            - Pendiente.
+    - **AS-IS 3.3.4: Actualización de organigrama**
+        - ¿Qué es esta tarea?
+            - Modificación del organigrama de la empresa para reflejar los cambios en la estructura de personal producidos por ingresos o egresos de empleados.
+        - ¿Para qué se hace?
+            - Para mantener el organigrama actualizado como referencia oficial de la estructura organizacional de la empresa ante cualquier requerimiento interno o externo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: actualiza el organigrama.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso o egreso de un empleado.
+            - Frecuencia: Bajo demanda, cada vez que hay un movimiento de personal.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar el cambio en la estructura de personal (ingreso o egreso).
+            - Paso 2: Actualizar el organigrama incorporando o removiendo al empleado en la posición correspondiente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información del cargo y departamento del empleado que ingresa o egresa.
+            - Archivo del organigrama vigente.
+        - ¿Qué se genera al terminar?
+            - Organigrama actualizado.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción no especifica la herramienta utilizada para elaborar y actualizar el organigrama.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.3.4:**
+            - Pendiente.
+    - **AS-IS 3.3.5: Registro fotográfico del personal**
+        - ¿Qué es esta tarea?
+            - Toma y edición de la foto tipo carnet de cada nuevo empleado para su carga en el sistema Odoo y uso en procesos administrativos que requieran identificación visual del trabajador.
+        - ¿Para qué se hace?
+            - Para completar el registro del empleado en Odoo con su foto oficial tipo carnet y contar con la imagen disponible para cualquier trámite administrativo que la requiera.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: toma la foto con el teléfono móvil, la edita y la carga en el sistema.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de un nuevo empleado. En muchos casos el empleado ya trae una foto al momento del ingreso, que se utiliza directamente.
+            - Frecuencia: Bajo demanda, cada vez que hay un nuevo ingreso.
+        - ¿Cómo se hace?
+            - Paso 1: Verificar si el empleado trajo foto al momento del ingreso.
+            - Paso 2: Si no trajo foto, tomarla con el teléfono móvil durante el proceso de ingreso.
+            - Paso 3: Editar la foto con la aplicación Phoom (P-H-O-O-M) desde el teléfono móvil para eliminar el fondo y obtener el formato tipo carnet.
+            - Paso 4: Cargar la foto editada en el registro del empleado en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Teléfono móvil con la aplicación Phoom instalada.
+            - Acceso al módulo de empleados en Odoo para carga de la foto.
+        - ¿Qué se genera al terminar?
+            - Foto tipo carnet del empleado cargada en su registro en Odoo.
+        - ¿Qué sistemas o herramientas usan?
+            - Phoom (aplicación móvil): edición de la foto para eliminar fondo y obtener formato tipo carnet.
+            - Odoo: carga y almacenamiento de la foto en el registro del empleado.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.3.5:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.4: Gestión Operativa del Personal**
+    - **AS-IS 3.4.1: Revisión semanal de horarios del personal**
+        - ¿Qué es esta tarea?
+            - Actualización y publicación semanal del cuadro de horarios del personal en Excel, incorporando cualquier modificación notificada por los jefes de departamento, y publicación del horario actualizado en la cartelera de la oficina de Recursos Humanos y en la cartelera general.
+        - ¿Para qué se hace?
+            - Para mantener el horario del personal actualizado ante ingresos, egresos y modificaciones, y para que todos los departamentos cuenten con la información de horarios vigente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: actualizan el cuadro de horarios en Excel y gestionan la publicación.
+            - Jefes de departamento: notifican a la oficina de Talento Humano cualquier modificación de horario.
+        - ¿Cuándo se hace?
+            - Disparador: Notificación de modificación de horario por parte de un jefe de departamento, o ingreso/egreso de un empleado.
+            - Frecuencia: Semanal.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la notificación del jefe de departamento sobre la modificación de horario.
+            - Paso 2: Actualizar el cuadro de horarios en Excel incorporando el cambio.
+            - Paso 3: Imprimir el horario actualizado.
+            - Paso 4: Publicar el horario en la cartelera de la oficina de Talento Humano y en la cartelera general del hotel.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Notificación de modificaciones por parte de los jefes de departamento.
+            - Archivo Excel de horarios vigente.
+            - Impresora disponible en la oficina.
+        - ¿Qué se genera al terminar?
+            - Cuadro de horarios actualizado en Excel.
+            - Horario impreso publicado en cartelera de Talento Humano y cartelera general.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración y actualización del cuadro de horarios.
+            - Cartelera física: publicación del horario para conocimiento del personal.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el módulo de nómina de Odoo gestione los horarios del personal de forma automatizada, eliminando el control manual en Excel y la publicación física.
+        - **Propuesta 3.4.1:**
+            - Pendiente.
+    - **AS-IS 3.4.2: Coordinación de días libres del personal administrativo que pernocta en Hotel Koral**
+        - ¿Qué es esta tarea?
+            - Planificación y coordinación de los días libres del personal administrativo que pernocta en el hotel, asegurando que siempre haya al menos un responsable presente en la oficina y que la operatividad no se vea afectada por ausencias simultáneas.
+        - ¿Para qué se hace?
+            - Para evitar que la oficina administrativa quede sin personal responsable, dado que algunos cargos no cuentan con auxiliares o suplentes que puedan cubrir las ausencias.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: planifica y coordina los días libres garantizando cobertura.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud de día libre por parte de algún miembro del personal administrativo que pernocta.
+            - Frecuencia: Bajo demanda, de manera continua según las solicitudes del personal.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la solicitud de día libre del empleado administrativo.
+            - Paso 2: Revisar en el cuadro Excel de planificación quién más está disponible ese día para garantizar cobertura en la oficina.
+            - Paso 3: Confirmar o coordinar el día libre asegurando que no quede la oficina sin responsable.
+            - Paso 4: Actualizar el cuadro Excel de planificación de días libres.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuadro Excel de planificación de días libres y horarios del personal administrativo.
+        - ¿Qué se genera al terminar?
+            - Planificación de días libres actualizada garantizando cobertura operativa en la oficina.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: planificación y control de días libres del personal administrativo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Cuando varios miembros del personal administrativo solicitan el mismo día libre sin coordinación previa, existe el riesgo de dejar la oficina sin cobertura. Actualmente se gestiona caso a caso para evitar este escenario.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.4.2:**
+            - Pendiente.
+    - **AS-IS 3.4.3: Publicación de horario requerido por el Ministerio del Trabajo**
+        - ¿Qué es esta tarea?
+            - Impresión y publicación física del horario general de trabajo de la empresa en la entrada del hotel o en la recepción, como requisito legal exigido por el Ministerio del Trabajo (Inspectoría del Trabajo).
+        - ¿Para qué se hace?
+            - Para cumplir con la normativa laboral vigente que exige la publicación permanente del horario general de trabajo en un lugar visible de la empresa.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: gestiona la actualización y publicación cuando hay modificaciones.
+        - ¿Cuándo se hace?
+            - Disparador: Modificación del horario general de trabajo de la empresa o requerimiento de actualización por parte de la Inspectoría del Trabajo.
+            - Frecuencia: Bajo demanda, cada vez que hay una modificación al horario general.
+        - ¿Cómo se hace?
+            - Paso 1: Cuando hay una modificación al horario general, actualizar el documento con las jornadas vigentes (diurna, nocturna, mixta) y los rangos horarios correspondientes.
+            - Paso 2: Imprimir el horario actualizado.
+            - Paso 3: Publicar físicamente en la entrada de la empresa o recepción en un lugar visible.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información actualizada del horario general aprobado por Gerencia.
+            - Impresora disponible.
+        - ¿Qué se genera al terminar?
+            - Horario general impreso y publicado físicamente en la entrada de la empresa, en cumplimiento de la normativa del Ministerio del Trabajo.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima la herramienta utilizada para elaborar el documento del horario (Word, Excel u otra).
+            - Cartelera física o punto de publicación en la entrada del hotel.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.4.3:**
+            - Pendiente.
+    - **AS-IS 3.4.4: Gestión de solicitudes del personal: préstamos, vacaciones, adelantos, constancias, prestaciones sociales**
+        - ¿Qué es esta tarea?
+            - Recepción, tramitación y seguimiento de todas las solicitudes formales del personal relacionadas con préstamos, anticipos de nómina, vacaciones, constancias de trabajo y prestaciones sociales.
+        - ¿Para qué se hace?
+            - Para canalizar y gestionar de manera ordenada todas las solicitudes del personal, asegurando la aprobación gerencial antes de su ejecución y el registro contable correspondiente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn (Analista de Talento Humano): recibe las solicitudes del personal presencialmente, llena el recibo correlativo y gestiona el proceso.
+            - Coordinador del departamento del solicitante: da el primer visto bueno según el desempeño y asistencia del empleado.
+            - Gerencia General: aprobación final de todas las solicitudes.
+            - Andry García (Licenciado): recibe la aprobación y ejecuta el pago.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud presencial del trabajador en la oficina de Talento Humano.
+            - Frecuencia: Bajo demanda. Se está intentando estandarizar para que las solicitudes se reciban una vez por semana, en lugar de diariamente.
+        - ¿Cómo se hace?
+            - Paso 1: El trabajador se presenta personalmente en la oficina de Talento Humano para realizar su solicitud.
+            - Paso 2: Marilyn llena un recibo manual correlativo (elaborado en Excel e impreso) con el monto, nombre del empleado, número de cuotas si aplica, forma de pago y fecha.
+            - Paso 3: El empleado firma el recibo.
+            - Paso 4: Se completa una planilla de solicitud formal con el detalle de la petición.
+            - Paso 5: El coordinador del departamento revisa y da el visto bueno según el historial de asistencia y desempeño del empleado.
+            - Paso 6: Se pasa a Gerencia General para aprobación final.
+            - Paso 7: Con la aprobación de Gerencia, Andry gestiona la ejecución del pago o trámite solicitado.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Recibos correlativos impresos disponibles.
+            - Planilla de solicitud disponible.
+            - Historial de asistencia y desempeño del empleado para evaluación del coordinador.
+        - ¿Qué se genera al terminar?
+            - Recibo firmado por el empleado como constancia de la solicitud.
+            - Aprobación de Gerencia para la ejecución del trámite.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: generación de recibos correlativos impresos.
+            - Formato físico impreso: planilla de solicitud completada manualmente.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Los empleados realizan solicitudes fuera del horario de oficina, incluyendo fines de semana y noches (hasta las 8-9 PM), lo que genera presión sobre el equipo de Talento Humano fuera de su jornada laboral. Se está intentando establecer un día fijo por semana para recibir solicitudes.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Estandarizar un formato digital de solicitud con normativas claras para su presentación, estableciendo un canal formal y un día fijo de recepción. Que el sistema gestione automáticamente el flujo de aprobación sin necesidad de recibos manuales.
+        - **Propuesta 3.4.4:**
+            - Pendiente.
+    - **AS-IS 3.4.5: Entrega y control de planillas de vacaciones**
+        - ¿Qué es esta tarea?
+            - Recepción de solicitudes de vacaciones del personal, organización y planificación de las mismas en un cronograma Excel para evitar afectaciones a la operatividad, y notificación a Gerencia para su aprobación.
+        - ¿Para qué se hace?
+            - Para gestionar de forma ordenada el disfrute de vacaciones del personal, asegurando que no haya ausencias simultáneas que comprometan la operación del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: recibe, organiza y planifica las solicitudes de vacaciones.
+            - Gerencia: aprueba la programación de vacaciones.
+            - Empleados: presentan su solicitud formal de vacaciones.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud formal de vacaciones por parte de un empleado.
+            - Frecuencia: Bajo demanda, de manera continua a lo largo del año.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la solicitud formal de vacaciones del empleado (presentada manualmente).
+            - Paso 2: Revisar el cronograma de personal en Excel para verificar disponibilidad y cobertura en las fechas solicitadas.
+            - Paso 3: Organizar y planificar las vacaciones solicitadas actualizando el cronograma.
+            - Paso 4: Notificar a Gerencia la programación para su aprobación.
+            - Paso 5: Confirmar al empleado la aprobación de sus vacaciones y actualizar los horarios publicados en cartelera.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Solicitud formal del empleado.
+            - Cronograma de personal en Excel actualizado.
+        - ¿Qué se genera al terminar?
+            - Cronograma de vacaciones actualizado en Excel.
+            - Aprobación de Gerencia sobre la programación de vacaciones.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: cronograma de personal y planificación de vacaciones.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Una parte significativa del personal operativo del hotel no toma vacaciones formalmente, trabajando los 365 días del año, lo que implica que muchos de ellos acumulan días de vacaciones que deben ser gestionados y calculados para su pago eventual.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el módulo de nómina de Odoo gestione el control y cálculo de vacaciones acumuladas automáticamente, eliminando el cronograma manual en Excel.
+        - **Propuesta 3.4.5:**
+            - Pendiente.
+    - **AS-IS 3.4.6: Actualización del listado de cumpleaños y reporte mensual a Gerencia**
+        - ¿Qué es esta tarea?
+            - Elaboración mensual de un listado de empleados que cumplen años en el mes, con el detalle de la bonificación correspondiente por ese concepto, y diseño de un flyer de felicitación para cada cumpleañero. Se incluye también el control de aniversarios laborales.
+        - ¿Para qué se hace?
+            - Para reconocer formalmente el cumpleaños de cada empleado con una bonificación y una comunicación de felicitación, y para prever los fondos necesarios para cubrir estas bonificaciones en el mes.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el listado mensual de cumpleaños, calcula las bonificaciones y elabora el flyer de felicitación.
+            - Gerencia: recibe el reporte mensual con el listado y la previsión de fondos.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada mes, al preparar la planificación mensual de nómina.
+            - Frecuencia: Mensual.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar la base de datos de personal activo para identificar los empleados que cumplen años en el mes.
+            - Paso 2: Elaborar el listado de cumpleañeros del mes con el detalle de la bonificación a otorgar a cada uno.
+            - Paso 3: Diseñar el flyer de felicitación utilizando una herramienta desde el teléfono móvil.
+            - Paso 4: Incluir el monto total de bonificaciones por cumpleaños en la previsión de fondos del mes.
+            - Paso 5: Enviar el reporte mensual a Gerencia con el listado y la previsión de fondos correspondiente.
+            - Paso 6: Repetir el mismo proceso para los aniversarios laborales del mes.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Base de datos de personal activo con fechas de nacimiento y fechas de ingreso.
+            - Herramienta de diseño en el teléfono móvil para el flyer.
+        - ¿Qué se genera al terminar?
+            - Listado mensual de cumpleañeros y aniversarios laborales con detalle de bonificaciones.
+            - Flyer de felicitación para cada cumpleañero.
+            - Reporte enviado a Gerencia con previsión de fondos para bonificaciones del mes.
+        - ¿Qué sistemas o herramientas usan?
+            - Herramienta de diseño móvil (no especificada en la transcripción): elaboración del flyer de felicitación.
+            - Excel: base de datos de personal con fechas de nacimiento y de ingreso.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el sistema envíe automáticamente un correo de felicitación al empleado el día de su cumpleaños, sin necesidad de elaborar el flyer manualmente cada vez. Andry menciona que existen herramientas que pueden automatizar este tipo de comunicaciones sin mayor complejidad. Aplicar el mismo criterio para los aniversarios laborales.
+        - **Propuesta 3.4.6:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.5: Relaciones Laborales**
+    - **AS-IS 3.5.1: Atención de solicitudes, permisos, reposos y certificados médicos (Forma 14-73)**
+        - ¿Qué es esta tarea?
+            - Recepción y gestión de solicitudes de permisos del personal, incluyendo la tramitación de reposos médicos ante el IVSS mediante la emisión de la constancia de activo (Forma 14-73) que el trabajador necesita para validar su reposo.
+        - ¿Para qué se hace?
+            - Para canalizar formalmente las ausencias del personal por permisos o reposos médicos, dejando constancia documental en el expediente del empleado y facilitando los trámites ante el IVSS cuando corresponde.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: reciben las solicitudes, emiten la Forma 14-73 y archivan la documentación.
+            - Coordinador del departamento: coordina y notifica el permiso del empleado a Talento Humano.
+            - Empleado: presenta la solicitud de permiso o el certificado de reposo.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud de permiso por parte del empleado, o presentación de un reposo médico.
+            - Frecuencia: Bajo demanda, cada vez que un empleado solicita permiso o presenta reposo.
+        - ¿Cómo se hace?
+            - Paso 1: El empleado coordina con su jefe de departamento el permiso o ausencia.
+            - Paso 2: El jefe de departamento notifica a la oficina de Talento Humano.
+            - Paso 3: Talento Humano recepciona la solicitud o el certificado de reposo.
+            - Paso 4: En caso de reposo médico: emitir la constancia de activo en el IVSS (Forma 14-73), firmarla y sellarla para que el trabajador pueda realizar el trámite de reposo ante el organismo.
+            - Paso 5: Sacar copia del certificado de reposo o del permiso y guardarlo en el expediente físico del empleado como constancia de la ausencia.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al portal del IVSS para emisión de la Forma 14-73.
+            - Sello y firma autorizados de la empresa.
+            - Expediente físico del empleado para archivo.
+        - ¿Qué se genera al terminar?
+            - Constancia de activo (Forma 14-73) firmada y sellada para trámite del empleado ante el IVSS.
+            - Copia del permiso o reposo archivada en el expediente físico del empleado.
+        - ¿Qué sistemas o herramientas usan?
+            - Portal del IVSS: emisión de la constancia de activo (Forma 14-73).
+            - Archivo físico: resguardo de la documentación de permisos y reposos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.5.1:**
+            - Pendiente.
+    - **AS-IS 3.5.2: Elaboración de llamados de atención y comunicaciones disciplinarias**
+        - ¿Qué es esta tarea?
+            - Redacción de documentos formales de llamado de atención o comunicaciones disciplinarias dirigidas a empleados específicos o de carácter general, según el caso que lo amerite.
+        - ¿Para qué se hace?
+            - Para aplicar correctivos formales al personal y dejar constancia documental de las situaciones disciplinarias, protegiendo a la empresa ante posibles reclamos laborales.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: redacta los documentos disciplinarios.
+            - Gerencia General: puede requerir o autorizar las comunicaciones.
+        - ¿Cuándo se hace?
+            - Disparador: Situación disciplinaria que amerite un correctivo formal, ya sea individual o general.
+            - Frecuencia: Bajo demanda, cada vez que se presenta una situación que requiere comunicación disciplinaria.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar la situación que amerita el llamado de atención o comunicación disciplinaria.
+            - Paso 2: Redactar el documento en Word, incluyendo el logotipo de la empresa, encabezado, dirección, teléfono y pie de página según las exigencias de Gerencia.
+            - Paso 3: Dirigir el documento al empleado específico (llamado de atención individual) o redactarlo como comunicado general según corresponda.
+            - Paso 4: Entregar el documento al empleado o publicarlo según el alcance de la comunicación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Plantilla de documento corporativo con logo, encabezado, dirección, teléfono y pie de página.
+            - Información sobre la situación disciplinaria a comunicar.
+        - ¿Qué se genera al terminar?
+            - Documento de llamado de atención o comunicación disciplinaria redactado y entregado al empleado o publicado.
+        - ¿Qué sistemas o herramientas usan?
+            - Word: redacción de los documentos disciplinarios con formato corporativo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción indica que no existe un formato estandarizado para los llamados de atención, ya que cada caso varía en su naturaleza.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.5.2:**
+            - Pendiente.
+    - **AS-IS 3.5.3: Atención a entes gubernamentales (IVSS, INCES, FAOV, MPPPST, Sanidad)**
+        - ¿Qué es esta tarea?
+            - Ver AS-IS 1.2.3. Esta tarea está descrita en detalle en la sección de Gestión Parafiscal, Fiscal y Regulatoria, dado que el contenido de la transcripción cubre ambas entradas del inventario con la misma información.
+        - ¿Qué es esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima si existen diferencias entre la atención a entes en el contexto de Relaciones Laborales (3.5.3) versus el soporte en auditorías fiscales y parafiscales (1.2.3), o si se trata del mismo proceso.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.5.3:**
+            - Pendiente.
+    - **AS-IS 3.5.4: Redacción de informes requeridos por la Gerencia General**
+        - ¿Qué es esta tarea?
+            - Elaboración de comunicados e informes formales dirigidos al personal o a la Gerencia General, transmitiendo información relevante sobre cambios, notificaciones o cualquier asunto que requiera comunicación oficial escrita.
+        - ¿Para qué se hace?
+            - Para formalizar la comunicación interna entre Talento Humano, la Gerencia General y el personal, dejando constancia documental de las instrucciones, notificaciones o información transmitida.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: redacta los informes y comunicados.
+            - Gerencia General: solicita o recibe los informes según el caso.
+        - ¿Cuándo se hace?
+            - Disparador: Requerimiento de Gerencia General de un informe, o necesidad de comunicar información relevante al personal.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar la información a comunicar o el informe solicitado por Gerencia.
+            - Paso 2: Redactar el documento en Word utilizando el formato corporativo con logo, encabezado, dirección, teléfono y pie de página.
+            - Paso 3: Distribuir el comunicado al personal o entregarlo a Gerencia según corresponda.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Plantilla corporativa en Word con logo, encabezado, dirección, teléfono y pie de página.
+            - Información o instrucciones a comunicar.
+        - ¿Qué se genera al terminar?
+            - Informe o comunicado formal redactado y distribuido al personal o a Gerencia.
+        - ¿Qué sistemas o herramientas usan?
+            - Word: redacción de informes y comunicados con formato corporativo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.5.4:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.6: Evaluación de Desempeño, Indicadores y Constancias de Trabajo**
+    - **AS-IS 3.6.1: Análisis de indicadores de personal**
+        - ¿Qué es esta tarea?
+            - Aplicación de una plantilla de evaluación con indicadores predeterminados por cargo, con una escala de valoración del 1 al 5, para medir el rendimiento del personal durante el período de prueba y, en el futuro, para el personal activo con antigüedad.
+        - ¿Para qué se hace?
+            - Para determinar si el empleado en período de prueba es apto para el cargo y para contar con un mecanismo formal de medición del rendimiento que soporte decisiones de continuidad o cambio de condición laboral.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: coordina y aplica el proceso de evaluación.
+            - ⚠️ Pendiente validar en sesión próxima si los coordinadores de departamento participan en el llenado de la plantilla de indicadores.
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del período de prueba de 25 días continuos del empleado.
+            - Frecuencia: Bajo demanda para empleados en período de prueba. Se desea implementar también de forma semestral o anual para personal activo con antigüedad.
+        - ¿Cómo se hace?
+            - Paso 1: Seleccionar la plantilla de evaluación predeterminada correspondiente al cargo del empleado evaluado.
+            - Paso 2: Aplicar la evaluación con los aproximadamente 20 a 25 indicadores definidos para ese cargo, calificando cada uno en una escala del 1 al 5 (satisfecho / no satisfecho).
+            - Paso 3: Totalizar la ponderación resultante de la evaluación.
+            - Paso 4: Notificar al trabajador o aspirante el resultado: si es apto o no para continuar en el cargo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Plantillas de evaluación predeterminadas por cargo con los indicadores definidos.
+        - ¿Qué se genera al terminar?
+            - Evaluación de desempeño completada con la ponderación total.
+            - Notificación al empleado del resultado de la evaluación.
+        - ¿Qué sistemas o herramientas usan?
+            - Formato de evaluación predeterminado por cargo (físico o digital): ⚠️ Pendiente validar en sesión próxima si es en Excel, Word u otro formato.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Implementar evaluaciones de desempeño también para el personal activo con antigüedad, con una frecuencia semestral o anual, para medir evolución de competencias y tomar decisiones sobre el desarrollo del personal.
+        - **Propuesta 3.6.1:**
+            - Pendiente.
+    - **AS-IS 3.6.2: Ejecución de evaluación de desempeño**
+        - ¿Qué es esta tarea?
+            - Ver AS-IS 3.6.1. La transcripción trata el análisis de indicadores y la ejecución de la evaluación de desempeño como un único proceso continuo. ⚠️ Pendiente validar en sesión próxima si existe alguna distinción operativa entre ambas tareas del inventario.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.6.2:**
+            - Pendiente.
+    - **AS-IS 3.6.3: Preparación de ARC (Comprobante de Agente de Retención)**
+        - ¿Qué es esta tarea?
+            - Elaboración del comprobante ARC que la empresa debe suministrar a cada trabajador con el detalle de todas las remuneraciones percibidas durante el año (sueldos, horas extras, bonos y otros conceptos), como insumo para que el trabajador realice su declaración de renta ante el SENIAT.
+        - ¿Para qué se hace?
+            - Para cumplir con el deber formal ante el SENIAT de informar a cada trabajador sobre las remuneraciones percibidas y las retenciones de ISLR aplicadas durante el año, habilitándolo para su declaración de renta.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el ARC en Excel.
+            - Departamento de Administración y Finanzas: recibe el ARC para su declaración oficial. ⚠️ Pendiente confirmar en sesión próxima si el ARC se entrega directamente al trabajador o pasa primero por Administración.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre del año fiscal (enero a diciembre).
+            - Frecuencia: Anual.
+        - ¿Cómo se hace?
+            - Paso 1: Tomar como base la hoja de trabajo de contribución DPP de cada mes del año.
+            - Paso 2: Realizar la sumatoria acumulada de enero a diciembre de todas las remuneraciones percibidas por cada trabajador: sueldos, horas extras, bonos y otros conceptos.
+            - Paso 3: Identificar los conceptos que aplican para ISLR y los que están excluidos, realizando la consulta correspondiente en caso de dudas.
+            - Paso 4: Elaborar el ARC con el detalle de remuneraciones y retenciones por trabajador.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Hojas de trabajo mensuales de contribución DPP de enero a diciembre.
+            - Criterio de clasificación de conceptos gravables y no gravables.
+        - ¿Qué se genera al terminar?
+            - ARC elaborado con el detalle de remuneraciones percibidas y retenciones aplicadas por trabajador durante el año.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración del ARC con la sumatoria acumulada anual por trabajador.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Existen conceptos cuya clasificación como gravables o no gravables para ISLR genera dudas; en esos casos se realiza la consulta correspondiente y se decide a criterio antes de incluirlos.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.6.3:**
+            - Pendiente.
+    - **AS-IS 3.6.4: Preparación de ARI (Ajuste de Retenciones de ISLR)**
+        - ¿Qué es esta tarea?
+            - Elaboración del ARI, que es el formulario de ajuste de retenciones de ISLR requerido por el SENIAT, el cual considera los ajustes de salario y modificaciones del año para determinar el impuesto a retener a cada trabajador sobre el concepto de sueldo y salario.
+        - ¿Para qué se hace?
+            - Para cumplir con el deber formal ante el SENIAT de calcular y ajustar las retenciones de ISLR aplicables a cada trabajador, tomando en cuenta los cambios salariales del período.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el ARI en coordinación con el proceso del ARC.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre del año fiscal. Se elabora en paralelo con el ARC.
+            - Frecuencia: Anual.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar los ajustes de salario o modificaciones ocurridas durante el año.
+            - Paso 2: Utilizar el ARI como factor de cálculo para determinar el impuesto a retener al trabajador en el XML mensual de retenciones ISLR.
+            - Paso 3: Elaborar el formulario ARI con el detalle de ajustes y retenciones correspondientes.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información de ajustes salariales del año.
+            - Datos de remuneraciones acumuladas del ARC.
+        - ¿Qué se genera al terminar?
+            - Formulario ARI elaborado como insumo para el cálculo del impuesto a retener en el XML mensual de ISLR.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración del ARI.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.6.4:**
+            - Pendiente.
+    - **AS-IS 3.6.5: Emisión de constancias de trabajo, 14-100, 14-02, certificados IVSS y FAOV**
+        - ¿Qué es esta tarea?
+            - Descarga y emisión de constancias y planillas oficiales desde los portales del IVSS y FAOV, principalmente para empleados egresados que regresan a solicitar documentos que certifiquen su condición laboral o su historial de cotizaciones.
+        - ¿Para qué se hace?
+            - Para proveer al empleado egresado con la documentación oficial que acredite que estuvo activo en la planilla de la empresa y que realizó sus cotizaciones correspondientes, necesaria para trámites personales o ante organismos públicos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: gestiona la descarga de planillas desde los portales y emite las constancias.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud de un empleado egresado que requiere constancias o planillas de su período trabajado en la empresa.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la solicitud del empleado egresado.
+            - Paso 2: Ingresar al portal del IVSS o FAOV según la constancia requerida.
+            - Paso 3: Descargar la planilla correspondiente (14-100, 14-02 u otra) que certifica el egreso y el historial de cotizaciones del trabajador.
+            - Paso 4: Imprimir y entregar la constancia al solicitante.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a los portales del IVSS y FAOV.
+            - Datos del empleado egresado (cédula, período trabajado).
+        - ¿Qué se genera al terminar?
+            - Constancias o planillas oficiales (14-100, 14-02, certificados IVSS y FAOV) impresas y entregadas al empleado egresado.
+        - ¿Qué sistemas o herramientas usan?
+            - Portal del IVSS: descarga de planillas y certificados de cotización.
+            - Portal del FAOV: descarga de constancias correspondientes.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.6.5:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.7: Egreso**
+    - **AS-IS 3.7.1: Pago de liquidación**
+        - ¿Qué es esta tarea?
+            - Cálculo manual en Excel del finiquito de liquidación y prestaciones sociales del empleado egresado, incluyendo todos los conceptos que corresponden según la causa del egreso (renuncia o terminación de contrato), seguido de la aprobación gerencial y ejecución del pago.
+        - ¿Para qué se hace?
+            - Para determinar y pagar correctamente el monto total que corresponde al trabajador al momento de su egreso, en cumplimiento de la normativa laboral vigente (LOTTT).
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: realiza el cálculo del finiquito y prestaciones sociales en Excel.
+            - Gerencia General: recibe el cálculo, lo revisa y aprueba.
+            - Marilyn: apoya en la impresión y gestión documental del proceso.
+            - Andry García: ejecuta el pago una vez aprobado.
+        - ¿Cuándo se hace?
+            - Disparador: Egreso de un empleado por renuncia o terminación de contrato.
+            - Frecuencia: Bajo demanda, cada vez que hay un egreso.
+        - ¿Cómo se hace?
+            - Paso 1: Elaborar en Excel el cálculo del finiquito de liquidación con todos los conceptos que corresponden al egreso.
+            - Paso 2: Calcular las prestaciones sociales e intereses sobre prestaciones en una pestaña separada dentro del mismo archivo.
+            - Paso 3: Enviar el cálculo a Gerencia General para su revisión y aprobación, notificando vía correo electrónico.
+            - Paso 4: Gerencia recibe, revisa y aprueba el cálculo.
+            - Paso 5: Imprimir el detalle del finiquito y prestaciones para entrega al empleado, dejando constancia por correo electrónico del contenido del kit de egreso.
+            - Paso 6: Ejecutar el pago del monto aprobado al trabajador.
+            - Paso 7: Adjuntar el soporte de pago al kit de egreso.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Datos del empleado: fecha de ingreso, fecha de egreso, causa del egreso, historial de remuneraciones.
+            - Archivo Excel de cálculo de liquidación y prestaciones.
+            - Aprobación de Gerencia General.
+        - ¿Qué se genera al terminar?
+            - Cálculo de liquidación y prestaciones sociales aprobado por Gerencia.
+            - Pago ejecutado al empleado egresado.
+            - Constancia por correo electrónico del detalle del kit de egreso con soporte de pago adjunto.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: cálculo manual de finiquito de liquidación y prestaciones sociales.
+            - Correo electrónico: notificación a Gerencia del cálculo y constancia del kit de egreso.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.7.1:**
+            - Pendiente.
+    - **AS-IS 3.7.2: Entrega de kit de egreso**
+        - ¿Qué es esta tarea?
+            - Preparación y entrega al empleado egresado de un kit de documentos que incluye constancias, planillas de egreso de los entes parafiscales, estado de cuenta de cuentas por cobrar e historial, junto con el soporte del pago de liquidación. Se imprimen dos juegos: uno para el empleado y otro que firma y queda archivado en el expediente.
+        - ¿Para qué se hace?
+            - Para formalizar documentalmente la salida del empleado, dejando constancia de que recibió toda su documentación y que la empresa cumplió con sus obligaciones al momento del egreso. Evita que el empleado egresado regrese tiempo después a solicitar documentación que podría estar traspapelada.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: prepara y coordina el kit de egreso.
+            - Marilyn: imprime, gestiona la firma y archiva el kit.
+            - Empleado egresado: firma el kit de egreso como constancia de recepción.
+        - ¿Cuándo se hace?
+            - Disparador: Egreso confirmado del empleado.
+            - Frecuencia: Bajo demanda, cada vez que hay un egreso.
+        - ¿Cómo se hace?
+            - Paso 1: Preparar el kit de egreso con los siguientes documentos: constancia de trabajo, recomendación laboral, planillas de egreso de IVSS y FAOV, estado de cuenta de cuentas por cobrar con historial de deudas y soporte del pago de liquidación.
+            - Paso 2: Imprimir dos juegos completos del kit.
+            - Paso 3: El empleado egresado recibe su juego, lo firma, coloca la hora, la fecha y las huellas dactilares en el juego que queda en la empresa.
+            - Paso 4: Archivar el juego firmado por el empleado en su expediente físico.
+            - Paso 5: Enviar constancia por correo electrónico con el detalle de lo entregado al empleado, adjuntando el soporte de pago.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Constancia de trabajo elaborada.
+            - Planillas de egreso descargadas de los portales del IVSS y FAOV.
+            - Estado de cuenta de CxC del empleado.
+            - Soporte de pago de la liquidación.
+            - Impresora disponible.
+        - ¿Qué se genera al terminar?
+            - Kit de egreso firmado, fechado y con huellas dactilares del empleado, archivado en su expediente físico.
+            - Correo electrónico enviado con constancia del kit de egreso y soporte de pago adjunto.
+        - ¿Qué sistemas o herramientas usan?
+            - Portales del IVSS y FAOV: descarga de planillas de egreso.
+            - Correo electrónico: envío de constancia del kit de egreso.
+            - Archivo físico: resguardo del kit firmado en el expediente del empleado.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.7.2:**
+            - Pendiente.
+    - **AS-IS 3.7.3: Recepción de uniformes**
+        - ¿Qué es esta tarea?
+            - Recepción de los uniformes y activos asignados al empleado egresado, verificados mediante un checklist de egreso que enumera todos los ítems entregados al inicio de la relación laboral.
+        - ¿Para qué se hace?
+            - Para recuperar los activos y uniformes de la empresa asignados al empleado y dejar constancia formal de su devolución al momento del egreso.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn / Andry García: reciben los activos y completan el checklist de egreso.
+            - Empleado egresado: entrega los uniformes y activos asignados.
+        - ¿Cuándo se hace?
+            - Disparador: Egreso del empleado.
+            - Frecuencia: Bajo demanda, cada vez que hay un egreso.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar el checklist de egreso con todos los ítems asignados al empleado: uniformes, equipos (laptops, teléfonos, walkie-talkies), llaves y cualquier otro activo mobiliario de la empresa.
+            - Paso 2: Verificar que el empleado devuelva cada ítem listado en el checklist.
+            - Paso 3: Completar y firmar el checklist de egreso como constancia de la devolución.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Checklist de egreso con el detalle de todos los activos asignados al empleado.
+            - Registro de dotación entregada al inicio de la relación laboral.
+        - ¿Qué se genera al terminar?
+            - Checklist de egreso completado y firmado, archivado como constancia de devolución de activos.
+        - ¿Qué sistemas o herramientas usan?
+            - Checklist físico impreso: verificación y constancia de devolución de uniformes y activos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción no menciona qué ocurre si el empleado no devuelve algún activo o lo devuelve en mal estado.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.7.3:**
+            - Pendiente.
+    - **AS-IS 3.7.4: Cierre de proceso por correo con documentación digital**
+        - ¿Qué es esta tarea?
+            - Notificación formal del egreso del empleado a todos los departamentos relevantes (jefes de departamento, seguridad, sistemas) y baja en todos los accesos y canales corporativos del empleado saliente, mediante correo electrónico como canal de constancia.
+        - ¿Para qué se hace?
+            - Para informar formalmente a toda la organización del egreso del empleado y revocar todos sus accesos a sistemas, canales corporativos y grupos de comunicación interna, protegiendo la información y los activos digitales de la empresa.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: coordina y ejecuta el cierre de proceso.
+            - Jefes de departamento: son notificados del egreso.
+            - Seguridad: es notificada para revocar accesos físicos.
+            - Rafael (responsable de sistemas/IT): es notificado para eliminar o cancelar accesos a correos corporativos y otros sistemas digitales.
+        - ¿Cuándo se hace?
+            - Disparador: Egreso confirmado del empleado, posterior a la entrega del kit de egreso y recepción de activos.
+            - Frecuencia: Bajo demanda, cada vez que hay un egreso.
+        - ¿Cómo se hace?
+            - Paso 1: Enviar correo electrónico a los jefes de departamento notificando el egreso del empleado.
+            - Paso 2: Notificar al departamento de seguridad del egreso para revocar accesos físicos.
+            - Paso 3: Notificar a Rafael (sistemas/IT) para que elimine o cancele el acceso del empleado a correos corporativos y demás plataformas digitales a las que tuviera acceso.
+            - Paso 4: Dar de baja al empleado en los grupos corporativos de WhatsApp u otros canales de comunicación interna.
+            - Paso 5: Dar de baja al empleado en Odoo.
+            - Nota: La información considerada sensible se maneja por WhatsApp en lugar de correo electrónico; el resto se formaliza por correo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Listado de accesos y canales del empleado egresado.
+            - Contacto de Rafael (sistemas/IT) para revocación de accesos digitales.
+        - ¿Qué se genera al terminar?
+            - Notificaciones de egreso enviadas por correo electrónico a todos los departamentos relevantes.
+            - Accesos físicos y digitales del empleado revocados.
+            - Empleado dado de baja en Odoo y en todos los grupos de comunicación interna.
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: notificación formal del egreso a departamentos y sistemas.
+            - WhatsApp: notificación de información sensible relacionada con el egreso.
+            - Odoo: baja del empleado en el sistema ERP.
+            - Grupos corporativos (WhatsApp u otros): baja del empleado de los canales de comunicación interna.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.7.4:**
+            - Pendiente.
+
+---
+
+- **TAREA 3.8: Activos, Uniformes y Equipos**
+    - **AS-IS 3.8.1: Inventario y control de uniformes**
+        - ¿Qué es esta tarea?
+            - Control en Excel del inventario de uniformes disponibles (chemises, delantales, gorros de cocina, gorras negras y otros según el área), registrando entradas, salidas y existencias actuales, con revisión previa a cada temporada alta para determinar si se requiere reposición.
+        - ¿Para qué se hace?
+            - Para garantizar disponibilidad suficiente de uniformes para todo el personal activo, especialmente antes de las temporadas altas (Carnaval, Semana Santa, julio y diciembre), y para solicitar a Gerencia la compra de uniformes con la anticipación necesaria.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn (Analista de Talento Humano): lleva el inventario y controla las existencias de uniformes.
+            - Gerencia General: autoriza la compra de uniformes cuando hay escasez.
+        - ¿Cuándo se hace?
+            - Disparador: Aproximación de una temporada alta o ingreso/egreso de personal que afecte las existencias.
+            - Frecuencia: Un mes previo a cada temporada alta: Carnaval, Semana Santa, julio (vacaciones escolares) y diciembre.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar el inventario Excel con el total de existencias disponibles de cada tipo de uniforme.
+            - Paso 2: Registrar las salidas de uniformes asignados al personal y actualizar las existencias.
+            - Paso 3: Imprimir el listado de uniformes asignados a cada empleado y actualizar en el expediente.
+            - Paso 4: Evaluar si las existencias son suficientes para cubrir la temporada próxima.
+            - Paso 5: Si las existencias son insuficientes, reportar a Gerencia General para solicitar la autorización de compra con al menos un mes de anticipación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Archivo Excel de inventario de uniformes actualizado.
+            - Información de personal activo para determinar necesidades de dotación.
+        - ¿Qué se genera al terminar?
+            - Inventario de uniformes actualizado.
+            - Solicitud de compra enviada a Gerencia cuando las existencias son insuficientes.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: control de inventario de uniformes con entradas, salidas y existencias.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción menciona que ocasionalmente se dotan artículos adicionales como zapatos o botas de seguridad por decisión de Gerencia, pero no indica el proceso en caso de escasez no prevista.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.8.1:**
+            - Pendiente.
+    - **AS-IS 3.8.2: Entrega de dotación de equipos (teléfonos, laptops, etc.)**
+        - ¿Qué es esta tarea?
+            - Asignación y entrega formal a los empleados de los equipos y activos de la empresa (laptops, teléfonos, walkie-talkies, llaves y otros) mediante una planilla de asignación que detalla las características del equipo y queda firmada por el receptor.
+        - ¿Para qué se hace?
+            - Para dejar constancia formal de qué activos fueron asignados a cada empleado, con el detalle del estado y características del equipo al momento de la entrega, facilitando el control y la recuperación de activos al momento del egreso.
+        - ¿Qué roles ejecutan esta tarea?
+            - Administración: gestiona la planilla de asignación de equipos.
+            - Gerencia General: autoriza la compra y asignación de equipos.
+            - Marilyn / Andry García: apoyan en la entrega y firma. ⚠️ Pendiente confirmar en sesión próxima la distribución exacta de responsabilidades.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de equipos adquiridos por Gerencia y asignación a un empleado específico.
+            - Frecuencia: Bajo demanda, cada vez que se asigna un equipo a un empleado.
+        - ¿Cómo se hace?
+            - Paso 1: Gerencia adquiere los equipos y delega en Recursos Humanos la responsabilidad de la asignación.
+            - Paso 2: Completar la planilla de asignación con el detalle del equipo: descripción, color, estado (buen estado o mal estado) y cualquier observación relevante.
+            - Paso 3: Identificar al empleado al que se le asigna el equipo.
+            - Paso 4: Entregar el equipo al empleado y hacer que firme la planilla de asignación como constancia de recepción.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Planilla de asignación de equipos disponible.
+            - Equipo o activo a asignar.
+        - ¿Qué se genera al terminar?
+            - Planilla de asignación completada y firmada por el empleado receptor, como constancia de entrega del activo.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: planilla de asignación de equipos y activos (elaborada y llevada por Administración).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción no menciona qué ocurre si un equipo se pierde, daña o no es devuelto al momento del egreso.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 3.8.2:**
+            - Pendiente.
+
+---
+
+- **TAREA 4.1: Gestión de Pasantes**
+    - **AS-IS 4.1.1 / 4.1 general: Entrevistas con universidades y solicitud de documentación**
+        - ¿Qué es esta tarea?
+            - Coordinación con la universidad asignada (actualmente Universidad Nacional del Turismo — Monatur / ANATO) para la recepción de la base de datos de pasantes postulados, seguida de contacto telefónico con cada postulado para confirmar su disponibilidad y proceder con la solicitud de documentación.
+        - ¿Para qué se hace?
+            - Para gestionar el proceso de ingreso de pasantes desde la recepción de los postulados hasta su incorporación al hotel, asegurando que cuenten con la documentación requerida y que confirmen su participación antes de iniciar.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: coordina con la universidad, contacta a los postulados y solicita documentación.
+            - Coordinadora de pasantías de la universidad (Monatur/ANATO): envía la base de datos de postulados por correo electrónico.
+            - Marilyn: apoya en la recepción y procesamiento de documentos.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada período de pasantías.
+            - Frecuencia: Dos veces al año: enero a mayo y agosto a noviembre (puede variar según la mención o carrera).
+        - ¿Cómo se hace?
+            - Paso 1: La coordinadora de pasantías de la universidad envía por correo electrónico la base de datos con los pasantes postulados (nombre, teléfono y datos de contacto).
+            - Paso 2: Contactar telefónicamente a cada postulado para confirmar si realizará las pasantías en el hotel o si hay algún cambio.
+            - Paso 3: Con los postulados confirmados, solicitar la documentación requerida para el expediente de pasante.
+            - Paso 4: El pasante presenta su solicitud formal de aceptación por correo electrónico.
+            - Paso 5: Elaborar y enviar la carta de aceptación de pasantías en Word al pasante por correo, para que la entregue a la universidad.
+            - Paso 6: El pasante entrega la carta a la universidad y se incorpora al hotel luego de la aceptación formal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Correo electrónico con base de datos de postulados enviado por la universidad.
+            - Plantilla de carta de aceptación de pasantías en Word.
+        - ¿Qué se genera al terminar?
+            - Lista de pasantes confirmados para el período.
+            - Cartas de aceptación de pasantías enviadas a cada pasante por correo electrónico.
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: recepción de postulados y envío de carta de aceptación.
+            - Teléfono: contacto directo con los postulados para confirmación.
+            - Word: elaboración de la carta de aceptación de pasantías.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Algunos postulados confirmados inicialmente pueden no presentarse al inicio del período o notificar cambios de último momento.⚠️ Pendiente validar en sesión próxima cómo se gestiona este caso.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 4.1/4.1.1:**
+            - Pendiente.
+    - **AS-IS 4.1.3: Elaboración de data y reporte a Gerencia General**
+        - ¿Qué es esta tarea?
+            - Elaboración de un reporte con la información de los pasantes confirmados para el período, incluyendo datos para la distribución de habitaciones de pernocta, y envío a la Gerencia de Servicio al Huésped y a la Gerencia General.
+        - ¿Para qué se hace?
+            - Para que la Gerencia de Servicio al Huésped pueda organizar la distribución de habitaciones de los pasantes que se alojarán en el hotel, y para que la Gerencia General tenga conocimiento de la cantidad y perfil de pasantes que se incorporan en el período.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: elabora el reporte y lo envía a las gerencias correspondientes.
+            - Gerencia de Servicio al Huésped: recibe el reporte para distribución de habitaciones.
+            - Gerencia General: recibe el reporte informativo.
+        - ¿Cuándo se hace?
+            - Disparador: Confirmación de la lista de pasantes para el período.
+            - Frecuencia: Al inicio de cada período de pasantías (enero-mayo y agosto-noviembre).
+        - ¿Cómo se hace?
+            - Paso 1: Consolidar la información de los pasantes confirmados: nombre, carrera, mención y datos relevantes.
+            - Paso 2: Incluir en el reporte la información necesaria para la distribución de habitaciones (considerando distribución por género).
+            - Paso 3: Enviar el reporte a la Gerencia de Servicio al Huésped para la asignación de habitaciones.
+            - Paso 4: Enviar el reporte a la Gerencia General para conocimiento.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Lista de pasantes confirmados con sus datos completos.
+        - ¿Qué se genera al terminar?
+            - Reporte de pasantes enviado a Gerencia de Servicio al Huésped y a Gerencia General.
+            - Distribución de habitaciones asignada a los pasantes para su pernocta.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima la herramienta utilizada para elaborar el reporte (Excel, Word u otra).
+            - Correo electrónico: envío del reporte a las gerencias. ⚠️ Pendiente confirmar canal en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 4.1.3:**
+            - Pendiente.
+    - **AS-IS 4.1.4 / 4.1.5: Coordinación de pernocta y recepción y bienvenida**
+        - ¿Qué es esta tarea?
+            - Recepción formal de los pasantes al inicio del período, entrega de normativa, asignación de departamentos y horarios, entrega de uniformes y presentación a los tutores de cada área, siguiendo un proceso similar al de inducción de nuevos empleados.
+        - ¿Para qué se hace?
+            - Para incorporar formalmente a los pasantes al hotel, asegurando que conozcan las normas internas, sus horarios, el área donde se desempeñarán y al tutor responsable de su formación.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn: recibe a los pasantes, coordina la bienvenida y el recorrido.
+            - Andry García: coordina la distribución por departamentos y horarios.
+            - Gerencia: participa en la reunión inicial con los pasantes para la distribución de departamentos.
+            - Líderes de departamento (tutores): reciben a los pasantes asignados a su área.
+        - ¿Cuándo se hace?
+            - Disparador: Primer día del período de pasantías.
+            - Frecuencia: Al inicio de cada período de pasantías.
+        - ¿Cómo se hace?
+            - Paso 1: Marilyn recibe a los pasantes en la oficina de Talento Humano.
+            - Paso 2: Los pasantes entregan la valija de documentos (carta de aprobación de la universidad, copia de cédula, certificado de salud, certificado de manipulación de alimentos si aplica, referencias personales y demás requisitos).
+            - Paso 3: Los pasantes llenan las planillas de ingreso con sus datos.
+            - Paso 4: Se realiza una reunión con Gerencia donde se distribuyen los pasantes por departamento (administrativos u operativos) y se asignan los horarios.
+            - Paso 5: Se entrega el uniforme a cada pasante.
+            - Paso 6: Se presenta a cada pasante con el tutor (líder) del departamento que le fue asignado.
+            - Paso 7: Los pasantes inician su recorrido por las instalaciones con sus tutores.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Planillas de ingreso impresas.
+            - Uniformes disponibles para pasantes.
+            - Coordinación previa con Gerencia para la distribución de departamentos y horarios.
+            - Listado de tutores por área disponible.
+        - ¿Qué se genera al terminar?
+            - Pasantes asignados a su departamento con tutor designado y horario establecido.
+            - Planillas de ingreso completadas y archivadas en el expediente de cada pasante.
+            - Uniformes entregados a los pasantes.
+        - ¿Qué sistemas o herramientas usan?
+            - Planillas físicas impresas: llenado de datos de ingreso del pasante.
+            - Archivo físico: resguardo de la documentación del pasante (valija de documentos).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 4.1.4/4.1.5:**
+            - Pendiente.
+    - **AS-IS 4.1.7: Elaboración de horarios semanales**
+        - ¿Qué es esta tarea?
+            - Elaboración y actualización semanal del horario de los pasantes en coordinación con los tutores de cada departamento, publicándolo en cartelera.
+        - ¿Para qué se hace?
+            - Para organizar la rotación de los pasantes por los distintos departamentos y turnos durante su período de pasantías, asegurando cobertura y aprendizaje en las distintas áreas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: elaboran y actualizan el horario semanal.
+            - Tutores de departamento: informan disponibilidad y necesidades de cobertura.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada semana del período de pasantías.
+            - Frecuencia: Semanal durante el período de pasantías.
+        - ¿Cómo se hace?
+            - Paso 1: Coordinar con los tutores de cada departamento la disponibilidad y necesidades de cobertura para la semana.
+            - Paso 2: Elaborar el horario semanal en Excel con la asignación de cada pasante por departamento y turno.
+            - Paso 3: Imprimir y publicar el horario en cartelera.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información de los tutores sobre necesidades de cobertura semanal.
+            - Archivo Excel de horarios de pasantes.
+        - ¿Qué se genera al terminar?
+            - Horario semanal de pasantes impreso y publicado en cartelera.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: elaboración del horario semanal de pasantes.
+            - Cartelera física: publicación del horario.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 4.1.7:**
+            - Pendiente.
+    - **AS-IS 4.1.8: Mantenimiento de expediente físico de pasantes**
+        - ¿Qué es esta tarea?
+            - Resguardo y organización de la documentación de cada pasante durante su período en el hotel, incluyendo la valija de documentos entregada al inicio, las planillas de ingreso completadas y los registros de evaluación.
+        - ¿Para qué se hace?
+            - Para controlar la documentación y el historial de cada pasante durante su período de prácticas, y para disponer de los registros necesarios para la evaluación final y la carta de culminación.
+        - ¿Qué roles ejecutan esta tarea?
+            - Marilyn / Andry García: organizan y mantienen el expediente físico de cada pasante.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso del pasante al inicio del período.
+            - Frecuencia: Se mantiene durante todo el período de pasantías y se cierra al egreso.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la valija de documentos del pasante al inicio del período (carta de aprobación de la universidad, copia de cédula, certificado de salud, certificado de manipulación de alimentos si aplica, referencias personales y demás requisitos).
+            - Paso 2: Archivar los documentos en el expediente físico del pasante.
+            - Paso 3: Incorporar al expediente las planillas de ingreso completadas.
+            - Paso 4: Mantener el expediente actualizado durante el período con cualquier novedad relevante.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Valija de documentos entregada por el pasante al inicio.
+            - Planillas de ingreso completadas.
+            - Carpetas físicas para archivo.
+        - ¿Qué se genera al terminar?
+            - Expediente físico completo del pasante, disponible para evaluación final y emisión de carta de culminación.
+        - ¿Qué sistemas o herramientas usan?
+            - Archivo físico (carpetas): resguardo de la documentación del pasante.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 4.1.8:**
+            - Pendiente.
+    - **AS-IS 4.1.9 / 4.1.10: Evaluación final, carta de culminación y reporte a la coordinación universitaria**
+        - ¿Qué es esta tarea?
+            - Totalización de la ponderación de evaluación de cada pasante, elaboración y firma de la carta de culminación de pasantías, y envío de un reporte final a la coordinación universitaria informando el rendimiento individual y el egreso de cada pasante.
+        - ¿Para qué se hace?
+            - Para formalizar el cierre del período de pasantías de cada estudiante, certificando ante la universidad que cumplió (o no cumplió) con sus funciones y horas de práctica, y reportando las novedades del período.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: totalizan la ponderación y elaboran la carta de culminación.
+            - Tutores de departamento: llenan el formato de evaluación predeterminado por la universidad en la bitácora del pasante.
+            - Coordinadora de pasantías de la universidad: recibe el reporte final de novedades.
+        - ¿Cuándo se hace?
+            - Disparador: Finalización del período de pasantías de cada estudiante.
+            - Frecuencia: Al cierre de cada período de pasantías (mayo y noviembre aproximadamente).
+        - ¿Cómo se hace?
+            - Paso 1: Los tutores de cada departamento completan el formato de evaluación de la bitácora del pasante, predeterminado por la universidad.
+            - Paso 2: Talento Humano totaliza la ponderación resultante de la evaluación de cada pasante.
+            - Paso 3: Elaborar la carta de culminación de pasantías en Word indicando que el pasante cumplió (o no) con el período y sus funciones.
+            - Paso 4: Firmar la carta de culminación.
+            - Paso 5: Enviar un correo a la coordinación universitaria con el reporte de novedades del período: rendimiento individual de cada pasante, fecha de egreso y cualquier observación relevante, reportando uno por uno.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formatos de evaluación completados por los tutores en la bitácora del pasante.
+            - Plantilla de carta de culminación de pasantías en Word.
+            - Contacto de la coordinadora de pasantías de la universidad.
+        - ¿Qué se genera al terminar?
+            - Carta de culminación de pasantías firmada y entregada a cada pasante.
+            - Correo enviado a la coordinación universitaria con el reporte de novedades y egreso del período.
+        - ¿Qué sistemas o herramientas usan?
+            - Word: elaboración de la carta de culminación de pasantías.
+            - Correo electrónico: envío del reporte de novedades a la coordinación universitaria.
+            - Bitácora del pasante (formato de la universidad): fuente de la evaluación del tutor.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si un pasante no cumple con los requisitos del período, se refleja en la ponderación de la evaluación y se comunica tanto al pasante como a la coordinación universitaria en el reporte final. ⚠️ Pendiente validar en sesión próxima el proceso interno ante un pasante que no aprueba.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 4.1.9/4.1.10:**
+            - Pendiente.
+
+---
+
+- **TAREA 5: Comunicación Interna y Agasajos**
+    - **AS-IS 5.1: Organización de agasajos y actividades corporativas**
+        - ¿Qué es esta tarea?
+            - Planificación y ejecución de actividades de reconocimiento y celebración para el personal en fechas especiales (Día del Trabajador, Día de la Madre, Día del Padre, Navidad, Día del Niño y otras fechas definidas por Gerencia), incluyendo organización de cenas, excursiones, entrega de obsequios y donaciones.
+        - ¿Para qué se hace?
+            - Para reconocer y motivar al personal mediante actividades de bienestar y celebración en fechas clave, fortaleciendo el sentido de pertenencia a la organización.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: coordinan y ejecutan la logística de los agasajos.
+            - Gerencia General: decide qué fechas y actividades se realizan y autoriza los fondos.
+        - ¿Cuándo se hace?
+            - Disparador: Decisión de Gerencia General de realizar un agasajo en una fecha especial.
+            - Frecuencia: Bajo demanda según las fechas definidas por Gerencia. Diciembre es fijo; otras fechas varían.
+        - ¿Cómo se hace?
+            - Paso 1: Gerencia General define las fechas y el tipo de actividad a realizar.
+            - Paso 2: Talento Humano levanta el listado de empleados y, cuando corresponde (ej. Día del Niño), el listado de hijos de empleados con edades para la dotación de obsequios.
+            - Paso 3: Coordinar la logística del agasajo según el tipo: cena en el hotel, excursión, entrega de obsequios o juguetes.
+            - Paso 4: Incluir los fondos requeridos en la previsión mensual enviada a Administración y Finanzas.
+            - Paso 5: Ejecutar la actividad en la fecha definida.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Autorización y definición de Gerencia General sobre el tipo de actividad.
+            - Listado actualizado de personal activo y, cuando aplica, de hijos de empleados.
+            - Fondos autorizados por Gerencia.
+        - ¿Qué se genera al terminar?
+            - Actividad corporativa ejecutada.
+            - ⚠️ Pendiente validar en sesión próxima si se genera algún registro o reporte posterior al agasajo.
+        - ¿Qué sistemas o herramientas usan?
+            - Excel: listado de empleados y previsión de fondos para agasajos.
+            - WhatsApp: coordinación interna de la logística.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - **Propuesta 5.1:**
+        - Pendiente.
+    - **AS-IS 5.2: Seguimiento de políticas de Seguridad y Salud en el Trabajo**
+        - ¿Qué es esta tarea?
+            - Implementación y seguimiento de las políticas de seguridad y prevención en el trabajo exigidas por el INPSASEL (Instituto Nacional de Prevención, Salud y Seguridad Laborales), incluyendo la conformación del comité de seguridad y prevención según los riesgos de la empresa.
+        - ¿Para qué se hace?
+            - Para cumplir con la normativa legal vigente en materia de seguridad y salud laboral y garantizar condiciones de trabajo seguras para el personal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: lidera el proceso de implementación y seguimiento.
+            - ⚠️ Pendiente validar en sesión próxima quiénes conforman el comité de seguridad y prevención.
+        - ¿Cuándo se hace?
+            - Disparador: Requerimiento del INPSASEL o necesidad interna de cumplimiento normativo.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima. La transcripción indica que está en proceso de implementación y no está al cien por ciento.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar los riesgos laborales específicos de la empresa según su actividad.
+            - Paso 2: Organizar el comité de seguridad y prevención de acuerdo con los riesgos identificados.
+            - Paso 3: Implementar las políticas de seguridad internas.
+            - Paso 4: Dar seguimiento al cumplimiento de las políticas establecidas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Conocimiento de la normativa del INPSASEL.
+            - Identificación de los riesgos laborales de la empresa.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima. La transcripción indica que el proceso está en implementación.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 5.2:**
+            - Pendiente.
+    - **AS-IS 5.3: Comunicación interna**
+        - ¿Qué es esta tarea?
+            - Gestión de la comunicación diaria entre la oficina de Talento Humano en Caracas y el hotel (Tucacas), y entre Talento Humano y los jefes de departamento, incluyendo el reporte de novedades, solicitudes, cálculos y cualquier información operativa relevante.
+        - ¿Para qué se hace?
+            - Para mantener una comunicación fluida y coordinada entre la sede de Caracas y el hotel, y para asegurar que todas las novedades del personal lleguen a Talento Humano en tiempo real.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García: coordina la comunicación con la sede y con los jefes de departamento.
+            - Marilyn: apoya la comunicación local con los jefes de departamento en el hotel.
+            - Jefes de departamento: reportan novedades del personal a Talento Humano.
+        - ¿Cuándo se hace?
+            - Disparador: Cualquier novedad, solicitud o información operativa que requiera comunicación.
+            - Frecuencia: Diaria.
+        - ¿Cómo se hace?
+            - Paso 1: Gestionar los pendientes operativos inicialmente por WhatsApp para mantener trazabilidad rápida.
+            - Paso 2: Formalizar por correo electrónico la información que requiera constancia documental (solicitudes, aprobaciones, reportes).
+            - Paso 3: Los jefes de departamento reportan novedades del personal a Talento Humano idealmente en tiempo real.
+            - Nota: La información sensible se maneja preferentemente por WhatsApp; el resto se formaliza por correo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a correo electrónico corporativo.
+            - Grupos de WhatsApp de comunicación interna activos.
+        - ¿Qué se genera al terminar?
+            - Novedades comunicadas y registradas en los canales correspondientes.
+            - Pendientes operativos gestionados y formalizados por correo cuando aplica.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp: comunicación inicial de pendientes y novedades, e información sensible.
+            - Correo electrónico: formalización de solicitudes, aprobaciones y reportes que requieren constancia.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que las novedades del personal lleguen en tiempo real a Talento Humano desde los jefes de departamento, con un canal formal y estandarizado que no dependa exclusivamente de WhatsApp.
+        - **Propuesta 5.3:**
+            - Pendiente.
+    - **AS-IS 5.4: Reporte inmediato de incidencias relacionadas con el personal**
+        - ¿Qué es esta tarea?
+            - Notificación inmediata a Gerencia General de cualquier situación fuera de lo habitual relacionada con el personal que requiera una decisión o acción gerencial urgente.
+        - ¿Para qué se hace?
+            - Para que Gerencia General esté informada en tiempo real de incidencias que impacten al personal o a la operación y pueda tomar decisiones oportunas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Andry García / Marilyn: detectan y reportan las incidencias a Gerencia.
+            - Gerencia General: recibe el reporte y toma decisiones.
+        - ¿Cuándo se hace?
+            - Disparador: Ocurrencia de una incidencia relacionada con el personal que requiera intervención gerencial.
+            - Frecuencia: Bajo demanda, de forma inmediata cuando ocurre la incidencia.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar la incidencia relacionada con el personal.
+            - Paso 2: Si la información no es sensible: notificar a Gerencia por correo electrónico para dejar constancia.
+            - Paso 3: Si la información es sensible: notificar a Gerencia por WhatsApp para mayor discreción.
+            - Paso 4: Dar seguimiento a la resolución de la incidencia según las instrucciones de Gerencia.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información verificada sobre la incidencia ocurrida.
+            - Acceso a correo electrónico y WhatsApp de Gerencia.
+        - ¿Qué se genera al terminar?
+            - Notificación enviada a Gerencia con el detalle de la incidencia.
+            - Seguimiento y resolución según instrucciones gerenciales.
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: reporte de incidencias no sensibles para constancia formal.
+            - WhatsApp: reporte de incidencias sensibles de forma discreta.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - **Propuesta 5.4:**
+            - Pendiente.
+
+---

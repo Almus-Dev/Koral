@@ -1,0 +1,822 @@
+# AS - IS: Operaciones
+
+Creado: 24 de marzo de 2026 13:20
+
+- TAREA 1.1: Medición de Cloro y PH (mañana/todos los días)
+    - AS-IS 1.1: Medición de Cloro y PH
+        - ¿Qué es esta tarea?
+            - Medición de los niveles de cloro y pH de la piscina para determinar si se requiere aplicar cloro ese día.
+        - ¿Para qué se hace?
+            - Para controlar la calidad del agua de la piscina y determinar si es necesario aplicar cloro en función del resultado de la medición.
+        - ¿Qué roles ejecutan esta tarea?
+            - Piscinero (mencionado como Luis).
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de la jornada diaria en la mañana.
+            - Frecuencia: Todos los días en la mañana, a primera hora del día.
+        - ¿Cómo se hace?
+            - Paso 1: Se toman las mediciones de cloro y pH de la piscina.
+            - Paso 2: Se evalúa el resultado de la medición para determinar si el cloro está alto o en niveles aceptables.
+            - Paso 3: Según el resultado, se decide si se aplica cloro ese día o no.
+            - ⚠️ Pendiente validar en sesión próxima: procedimiento detallado de cómo se realiza la medición (instrumentos, puntos de muestreo, rangos aceptables).
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el cloro está muy alto: no se aplica cloro ese día. La decisión de aplicar o no depende directamente del resultado de la medición.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.1: Medición de Cloro y PH
+        - Pendiente.
+- TAREA 1.2: Aspiración y Retrolavado de piscina (mañana/todos los días)
+    - AS-IS 1.2: Aspiración y Retrolavado de piscina
+        - ¿Qué es esta tarea?
+            - Limpieza de la piscina mediante aspiración del fondo y retrolavado del sistema de filtración.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué roles ejecutan esta tarea?
+            - Piscinero (mencionado como Luis).
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de la jornada diaria en la mañana.
+            - Frecuencia: Todos los días en la mañana, a primera hora del día.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.2: Aspiración y Retrolavado de piscina
+        - Pendiente.
+- TAREA 1.3: Activación de bombas de piscina (mañana/todos los días)
+    - AS-IS 1.3: Activación de bombas de piscina
+        - ¿Qué es esta tarea?
+            - Encendido de las bombas de la piscina al inicio de la jornada.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué roles ejecutan esta tarea?
+            - Piscinero (mencionado como Luis).
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de la jornada diaria en la mañana.
+            - Frecuencia: Todos los días en la mañana, a primera hora del día.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.3: Activación de bombas de piscina
+        - Pendiente.
+- TAREA 1.4: Mantenimiento nocturno de piscina — vertido de cloro (noche/todos los días)
+    - AS-IS 1.4: Mantenimiento nocturno de piscina — vertido de cloro
+        - ¿Qué es esta tarea?
+            - Aplicación nocturna de cloro a la piscina como parte del mantenimiento rutinario.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de la noche, luego de la medición de la mañana que determina si se requiere la aplicación.
+            - Frecuencia: Todas las noches (condicionado al resultado de la medición de la tarea 1.1).
+        - ¿Cómo se hace?
+            - Paso 1: Se vierte el cloro en la piscina.
+            - ⚠️ Pendiente validar en sesión próxima: procedimiento detallado, cantidades, puntos de aplicación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cloro (insumo). ⚠️ Pendiente validar en sesión próxima: cantidades, presentación del producto.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el cloro medido en la mañana (Tarea 1.1) está muy alto, no se vierte cloro esa noche.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.4: Mantenimiento nocturno de piscina — vertido de cloro
+        - Pendiente.
+- TAREA 2.1: Limpieza de áreas verdes (mañana/todos los días)
+    - AS-IS 2.1: Limpieza de áreas verdes
+        - ¿Qué es esta tarea?
+            - Limpieza de las áreas verdes externas del hotel.
+        - ¿Para qué se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué roles ejecutan esta tarea?
+            - Jardineros / Operadores de áreas externas.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de la jornada en la mañana.
+            - Frecuencia: Todos los días en la mañana.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.1: Limpieza de áreas verdes
+        - Pendiente.
+- TAREA 2.2: Recolección de potes de residuos (mañana/todos los días)
+    - AS-IS 2.2: Recolección de potes de residuos
+        - ¿Qué es esta tarea?
+            - Limpieza y vaciado de los potes de basura ubicados en las áreas del hotel.
+        - ¿Para qué se hace?
+            - Para mantener limpias las áreas del hotel retirando los residuos acumulados en los recipientes de basura.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de la jornada en la mañana.
+            - Frecuencia: Todos los días en la mañana.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.2: Recolección de potes de residuos
+        - Pendiente.
+- TAREA 2.3: Podar matas (mañana/todas las semanas)
+    - AS-IS 2.3: Podar matas
+        - ¿Qué es esta tarea?
+            - Poda y limpieza de la vegetación (matas) en las áreas externas del hotel.
+        - ¿Para qué se hace?
+            - Para mantener en buen estado las áreas verdes externas del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Jardineros / Operadores de áreas externas. Operadores palmeros (para el caso específico de palmas de enea y palma real utilizadas en techos, pasillos, churuatas y caneyes).
+        - ¿Cuándo se hace?
+            - Disparador: Necesidad de mantenimiento de áreas verdes según rotación semanal.
+            - Frecuencia: Todas las semanas en la mañana. No necesariamente todos los días, pero si no se hace en un sector, se hace en otro, de modo que durante la semana siempre hay actividad de poda en alguna área.
+        - ¿Cómo se hace?
+            - Paso 1: Se poda la vegetación (matas, palmas) en el sector asignado del día.
+            - ⚠️ Pendiente validar en sesión próxima: herramientas específicas utilizadas, criterios de priorización de sectores, manejo de residuos de poda.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Guarañas (mencionadas como herramienta). ⚠️ Pendiente validar en sesión próxima: otras herramientas requeridas.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Guarañas: para corte de vegetación.
+            - ⚠️ Pendiente validar en sesión próxima: otros equipos o maquinaria (se menciona retroexcavadora como equipo del dpto., pero no se vincula específicamente a esta tarea).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 2.3: Podar matas
+        - Pendiente.
+- TAREA 3.1: Recepción de solicitud de gerencia
+    - AS-IS 3.1: Recepción de solicitud de gerencia
+        - ¿Qué es esta tarea?
+            - Recepción por parte del encargado de operaciones (Richard) de los requerimientos de mantenimiento o actividades especiales enviados desde gerencia.
+        - ¿Para qué se hace?
+            - Para incorporar en la planificación del día las actividades solicitadas por gerencia y asignarlas al operador correspondiente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (encargado del departamento de operaciones), quien recepciona la solicitud y la incorpora a la planificación.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud generada por gerencia.
+            - Frecuencia: Todos los días (la planificación puede cambiar en cualquier momento del día).
+        - ¿Cómo se hace?
+            - Paso 1: Gerencia emite una solicitud de mantenimiento o actividad.
+            - Paso 2: Richard recepciona la solicitud.
+            - Paso 3: Richard incorpora la solicitud a la planificación del día y asigna al operador correspondiente.
+            - ⚠️ Pendiente validar en sesión próxima: canal por el que se recibe la solicitud (verbal, escrito, sistema, etc.).
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.1: Recepción de solicitud de gerencia
+        - Pendiente.
+- TAREA 3.2: Recepción de solicitud de Ama de llaves o diferentes departamentos
+    - AS-IS 3.2: Recepción de solicitud de Ama de llaves o diferentes departamentos
+        - ¿Qué es esta tarea?
+            - Recepción de requerimientos de mantenimiento provenientes del departamento de ama de llaves u otros departamentos del hotel (alimentos y bebidas, recepción, marina, entre otros).
+        - ¿Para qué se hace?
+            - Para atender necesidades de mantenimiento puntual dentro de las habitaciones u otras áreas del hotel (cambio de bombillos, manijas de puertas, pintura, etc.) solicitadas por los departamentos que las detectan.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (encargado de operaciones), quien recepciona la solicitud. Los departamentos que generan las solicitudes son: ama de llaves, alimentos y bebidas (restaurante), recepción, marina, y otros departamentos del hotel.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud generada por ama de llaves u otro departamento, ya sea por mantenimiento inmediato o a través del reporte semanal de ama de llaves (entregado los lunes en la mañana).
+            - Frecuencia: Diaria para casos de mantenimiento inmediato; semanal para el reporte regular de ama de llaves (los lunes en la mañana).
+        - ¿Cómo se hace?
+            - Paso 1: El departamento solicitante (ama de llaves u otro) identifica una necesidad de mantenimiento y genera la solicitud.
+            - Paso 2: Richard recepciona la solicitud.
+            - Paso 3: Richard incorpora la solicitud a la planificación del día y asigna la tarea al operador correspondiente.
+            - ⚠️ Pendiente validar en sesión próxima: canal por el que se recibe la solicitud (verbal, escrito, sistema, reporte físico, etc.) y si existe algún formato estándar.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Reporte de ama de llaves (en el caso del ciclo semanal).
+            - ⚠️ Pendiente validar en sesión próxima: formato o medio de las solicitudes de otros departamentos.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.2: Recepción de solicitud de Ama de llaves o diferentes departamentos
+        - Pendiente.
+- TAREA 3.3: Solicitud de insumos a Almacén
+    - AS-IS 3.3: Solicitud de insumos a Almacén
+        - ¿Qué es esta tarea?
+            - Gestión de la solicitud de insumos y materiales al almacén para ejecutar las actividades de mantenimiento requeridas.
+        - ¿Para qué se hace?
+            - Para contar con los materiales e insumos necesarios antes de ejecutar un trabajo de mantenimiento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (encargado de operaciones), quien realiza la solicitud al almacén.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de una solicitud de mantenimiento (de gerencia, ama de llaves u otro departamento) que requiere materiales o insumos específicos.
+            - Frecuencia: Bajo demanda, cada vez que se recepciona una solicitud de mantenimiento que requiere materiales.
+        - ¿Cómo se hace?
+            - Paso 1: Se recepciona la solicitud de mantenimiento.
+            - Paso 2: Se identifica qué insumos y materiales se requieren para ejecutarla.
+            - Paso 3: Se realiza la solicitud al almacén.
+            - ⚠️ Pendiente validar en sesión próxima: canal o formato de la solicitud a almacén, tiempos de respuesta, si existe algún documento de requisición formal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información sobre los materiales e insumos requeridos para el mantenimiento solicitado.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción para esta tarea. Se menciona que Richard no maneja Odoo. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el almacén no cuenta con los materiales requeridos, se genera una solicitud de compra (ver Tarea 3.6).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo señala que la solicitud debería hacerse directamente al departamento de compras, no a través de almacén, para que compras evalúe opciones, solicite autorización de gerencia y gestione la adquisición hasta que llegue al almacén.
+    - Propuesta 3.3: Solicitud de insumos a Almacén
+        - Pendiente.
+- TAREA 3.4: Encomiendas de actividades al equipo operativo (operador de habitación, electricistas, piscinero, plomeros, albañiles, operadores de máquinas, jardineros, operadores palmeros, operadores de mantenimiento de electrodomésticos, mecánico)
+    - AS-IS 3.4: Encomiendas de actividades al equipo operativo
+        - ¿Qué es esta tarea?
+            - Asignación por parte de Richard de las actividades de mantenimiento a cada operador según su especialidad, una vez recibida la solicitud y gestionados los materiales.
+        - ¿Para qué se hace?
+            - Para coordinar la ejecución de los trabajos de mantenimiento distribuyendo las tareas entre los operadores disponibles según su perfil.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (encargado de operaciones) asigna las actividades. Los roles que reciben las encomiendas son: operador de habitación, electricistas, piscinero, plomeros, albañiles, operadores de máquinas, jardineros, operadores palmeros, operadores de mantenimiento de electrodomésticos (aires acondicionados, neveras) y mecánicos (de guarañas y vehículos). Se indica que albañiles y plomeros son contratados externos.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de una solicitud de mantenimiento de cualquier fuente (gerencia, ama de llaves, departamentos) una vez identificados los materiales necesarios.
+            - Frecuencia: Todos los días.
+        - ¿Cómo se hace?
+            - Paso 1: Richard recepciona la solicitud de mantenimiento.
+            - Paso 2: Richard identifica al operador adecuado según la naturaleza del trabajo (eléctrico, plomería, carpintería, jardinería, etc.).
+            - Paso 3: Richard asigna (encomienda) la actividad al operador correspondiente.
+            - ⚠️ Pendiente validar en sesión próxima: medio o canal por el que se comunica la asignación (verbal, escrito, sistema, etc.).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información sobre la solicitud recibida y disponibilidad de los operadores.
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si no hay materiales disponibles en almacén, no se puede ejecutar el trabajo hasta que lleguen (ver Tarea 3.6).
+            - ⚠️ Pendiente validar en sesión próxima: qué ocurre si el operador especializado no está disponible.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo indica que la carga operativa de Richard no le permite atender simultáneamente la parte administrativa (solicitudes, requisiciones, informes, llamadas), por lo que se requiere un asistente administrativo dedicado al departamento de operaciones que gestione este proceso.
+    - Propuesta 3.4: Encomiendas de actividades al equipo operativo
+        - Pendiente.
+- TAREA 3.5: Entrega de herramientas y materiales desde el taller
+    - AS-IS 3.5: Entrega de herramientas y materiales desde el taller
+        - ¿Qué es esta tarea?
+            - Entrega física por parte de Richard al operador asignado de las herramientas y materiales necesarios para ejecutar el trabajo de mantenimiento, desde el área del taller.
+        - ¿Para qué se hace?
+            - Para que el operador cuente con los recursos físicos necesarios antes de iniciar la ejecución del mantenimiento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (encargado de operaciones) realiza la entrega desde el taller.
+        - ¿Cuándo se hace?
+            - Disparador: Asignación de la actividad al operador (Tarea 3.4).
+            - Frecuencia: Todos los días, cada vez que se asigna un trabajo.
+        - ¿Cómo se hace?
+            - Paso 1: Richard identifica las herramientas y materiales requeridos para el trabajo asignado.
+            - Paso 2: Richard hace entrega de las herramientas y materiales al operador desde el área del taller.
+            - ⚠️ Pendiente validar en sesión próxima: si existe algún registro o control de herramientas entregadas y devueltas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Disponibilidad de herramientas en el taller. El taller es un área distinta al almacén: el taller contiene herramientas, mientras que el almacén contiene insumos, suministros y materiales adquiridos por compras.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.5: Entrega de herramientas y materiales desde el taller
+        - Pendiente.
+- TAREA 3.6: Solicitud de compra de suministros y materiales a Almacén ⚠️ (OP): La solicitud debería ser directamente con el Dpto. de Compras
+    - AS-IS 3.6: Solicitud de compra de suministros y materiales a Almacén
+        - ¿Qué es esta tarea?
+            - Gestión de la solicitud de compra de suministros y materiales cuando el almacén no dispone de lo requerido para ejecutar un mantenimiento.
+        - ¿Para qué se hace?
+            - Para reponer los materiales e insumos faltantes en almacén que son necesarios para ejecutar las actividades de mantenimiento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Actualmente la solicitud se canaliza a través de almacén. Se indica que el proceso correcto debería ser que Richard (o el futuro asistente administrativo de operaciones) la realice directamente al departamento de compras.
+        - ¿Cuándo se hace?
+            - Disparador: Almacén no cuenta con los materiales o suministros requeridos para ejecutar un mantenimiento.
+            - Frecuencia: Bajo demanda, cada vez que se detecta faltante en almacén.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta que el almacén no tiene el material requerido.
+            - Paso 2: Se realiza la solicitud a almacén (proceso actual).
+            - Paso 3: Almacén gestiona la solicitud de compra con el departamento de compras.
+            - ⚠️ Pendiente validar en sesión próxima: formato o documento utilizado para la solicitud, tiempos de respuesta, quién autoriza.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Se menciona que Richard no maneja Odoo. ⚠️ Pendiente validar en sesión próxima: herramienta usada para la solicitud.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si los materiales no se consiguen localmente, hay que esperar que lleguen desde Caracas u otros lugares lejanos, lo que atrasa la ejecución de los mantenimientos y puede hacer que se olviden solicitudes pendientes.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - La solicitud debería ir directamente al departamento de compras (sin pasar por almacén), para que compras evalúe opciones en distintos proveedores, solicite autorización de gerencia, y gestione la compra hasta que el material llegue al almacén.
+            - El equipo señala la necesidad de contar con un analista de compras directamente en el hotel para atender de forma inmediata estas solicitudes, evitando demoras por distancia geográfica.
+            - Se requiere además un asistente administrativo para operaciones que gestione este proceso, ya que la carga operativa de Richard no le permite hacerlo.
+    - Propuesta 3.6: Solicitud de compra de suministros y materiales a Almacén
+        - Pendiente.
+- TAREA 4.1: Apagar luces de las áreas externas — Muelle, piscina, estacionamiento, pasillos (mañana/todos los días)
+    - AS-IS 4.1: Apagar luces de las áreas externas
+        - ¿Qué es esta tarea?
+            - Apagado de las luminarias de todas las áreas externas del hotel al inicio de la jornada, cuando la luz natural hace innecesaria la iluminación artificial.
+        - ¿Para qué se hace?
+            - Para evitar el consumo innecesario de electricidad durante el día en las áreas externas donde la luz natural es suficiente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Electricista del turno de la mañana.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de la jornada diaria en la mañana, cuando hay suficiente luz natural.
+            - Frecuencia: Todos los días en la mañana.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima: puntos de control, tableros o breakers utilizados para el apagado.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.1: Apagar luces de las áreas externas
+        - Pendiente.
+- TAREA 4.2: Planificación de actividades de electricidad (todos los días)
+    - AS-IS 4.2: Planificación de actividades de electricidad
+        - ¿Qué es esta tarea?
+            - Organización diaria de las actividades del área de electricidad en función de los reportes recibidos y los eventos que se presenten durante el día.
+        - ¿Para qué se hace?
+            - Para estructurar el trabajo del electricista y garantizar la atención oportuna de los requerimientos eléctricos del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima: si la planificación la hace Richard, el propio electricista, o ambos.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de reportes de ama de llaves u otras solicitudes; también puede ajustarse durante el día según los eventos que surjan.
+            - Frecuencia: Todos los días.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - Reporte de ama de llaves (semanal, entregado los lunes en la mañana) y solicitudes diarias de mantenimiento inmediato.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.2: Planificación de actividades de electricidad
+        - Pendiente.
+- TAREA 4.3: Recepción de reporte de Ama de Llaves (Mañana / Semanal / Diario)
+    - AS-IS 4.3: Recepción de reporte de Ama de Llaves
+        - ¿Qué es esta tarea?
+            - Recepción por parte del área de electricidad del reporte generado por ama de llaves, que contiene los mantenimientos eléctricos requeridos en habitaciones u otras áreas.
+        - ¿Para qué se hace?
+            - Para identificar y planificar los trabajos de mantenimiento eléctrico pendientes reportados por ama de llaves, tanto de forma semanal como ante emergencias inmediatas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Electricista (recibe el reporte). Ama de llaves (genera y entrega el reporte).
+        - ¿Cuándo se hace?
+            - Disparador: Entrega del reporte semanal por parte de ama de llaves, o surgimiento de una necesidad de mantenimiento eléctrico inmediato.
+            - Frecuencia: Semanal (los lunes en la mañana) para el reporte regular. Diaria cuando hay una necesidad de mantenimiento eléctrico inmediato.
+        - ¿Cómo se hace?
+            - Paso 1: Ama de llaves genera el reporte con los requerimientos de mantenimiento eléctrico.
+            - Paso 2: El electricista recepciona el reporte en la mañana.
+            - Paso 3: El electricista incorpora los trabajos reportados en su planificación de actividades del día o de la semana.
+            - ⚠️ Pendiente validar en sesión próxima: formato del reporte, canal de entrega (físico, digital, verbal).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Reporte de ama de llaves.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si no se puede ejecutar el mantenimiento el mismo día en que se recibe el reporte, se atiende al día siguiente.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - El equipo señala que el reporte debería recibirse en la mañana para que, si no puede atenderse ese día, pueda planificarse para el siguiente.
+    - Propuesta 4.3: Recepción de reporte de Ama de Llaves
+        - Pendiente.
+- TAREA 4.4: Solicitud de herramientas y materiales a Richard en el área taller (todos los días)
+    - AS-IS 4.4: Solicitud de herramientas y materiales a Richard en el área taller
+        - ¿Qué es esta tarea?
+            - Solicitud por parte del electricista a Richard de las herramientas y materiales necesarios para ejecutar los trabajos eléctricos del día, con entrega en el área del taller.
+        - ¿Para qué se hace?
+            - Para que el electricista cuente con los recursos físicos necesarios antes de iniciar la ejecución de sus actividades.
+        - ¿Qué roles ejecutan esta tarea?
+            - Electricista (solicita). Richard (entrega desde el taller).
+        - ¿Cuándo se hace?
+            - Disparador: Planificación de las actividades eléctricas del día (Tarea 4.2).
+            - Frecuencia: Todos los días.
+        - ¿Cómo se hace?
+            - Paso 1: El electricista identifica las herramientas y materiales que necesita para los trabajos del día.
+            - Paso 2: El electricista solicita los materiales a Richard.
+            - Paso 3: Richard hace entrega de las herramientas y materiales desde el área del taller.
+            - ⚠️ Pendiente validar en sesión próxima: si existe algún registro de entrega y devolución de herramientas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Disponibilidad de herramientas y materiales en el taller.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.4: Solicitud de herramientas y materiales a Richard en el área taller
+        - Pendiente.
+- TAREA 4.5: Ejecución de las actividades solicitadas (todos los días)
+    - AS-IS 4.5: Ejecución de las actividades solicitadas
+        - ¿Qué es esta tarea?
+            - Realización efectiva por parte del electricista de los trabajos de mantenimiento eléctrico asignados luego de haber recibido el reporte, planificado las actividades y obtenido los materiales.
+        - ¿Para qué se hace?
+            - Para atender y resolver los requerimientos de mantenimiento eléctrico del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Electricista del turno correspondiente (mañana o tarde).
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de materiales y asignación formal de actividades (Tareas 4.3 y 4.4 completadas).
+            - Frecuencia: Todos los días.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima: procedimientos específicos de ejecución según el tipo de trabajo eléctrico.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Herramientas y materiales entregados por Richard desde el taller (Tarea 4.4). Planificación de actividades del día (Tarea 4.2).
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.5: Ejecución de las actividades solicitadas
+        - Pendiente.
+- TAREA 4.6: Atención y recepción de solicitudes de emergencia/inmediatas — Transformadores, plantas eléctricas, fallas eléctricas, breakers, postes de luz, daño de fases, fusibles, instalaciones complejas (Esporádico / Cuando se requiere)
+    - AS-IS 4.6: Atención y recepción de solicitudes de emergencia/inmediatas
+        - ¿Qué es esta tarea?
+            - Atención por parte del electricista especializado de fallas o situaciones eléctricas críticas que requieren intervención inmediata y que por su complejidad técnica solo puede ejecutar el electricista, no otro operador.
+        - ¿Para qué se hace?
+            - Para restablecer el funcionamiento eléctrico del hotel ante fallas graves o situaciones de emergencia que afectan la operación.
+        - ¿Qué roles ejecutan esta tarea?
+            - Electricista especializado (el único habilitado para atender estos casos). Se menciona que hay personal nocturno de guardia (dos electricistas en total, uno por turno: mañana y tarde/noche) para atender emergencias fuera del horario regular.
+        - ¿Cuándo se hace?
+            - Disparador: Ocurrencia de una falla o emergencia eléctrica de cualquiera de las siguientes categorías: falla o arranque de planta eléctrica, problemas con transformadores, caída o falla de fases, daño de fusibles en postes, fallas en cuartos de breakers (breakers principales), necesidad de instalaciones complejas (cableado 220V o 110V, tomas de corriente, etc.).
+            - Frecuencia: Esporádico, cuando se presenta la emergencia.
+        - ¿Cómo se hace?
+            - Paso 1: Se presenta una falla o emergencia eléctrica.
+            - Paso 2: Se notifica al electricista (de guardia si es fuera de horario regular).
+            - Paso 3: El electricista atiende la situación de emergencia.
+            - ⚠️ Pendiente validar en sesión próxima: canal de notificación, procedimientos específicos por tipo de emergencia, protocolo de escalamiento.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.6: Atención y recepción de solicitudes de emergencia/inmediatas
+        - Pendiente.
+- TAREA 4.7: Encendido de luces externas — Muelle, piscina, estacionamiento, pasillos — a partir de las 6:30 pm (Todas las tardes)
+    - AS-IS 4.7: Encendido de luces externas
+        - ¿Qué es esta tarea?
+            - Encendido de las luminarias de todas las áreas externas del hotel al caer el sol, para garantizar iluminación nocturna.
+        - ¿Para qué se hace?
+            - Para proporcionar iluminación artificial en las áreas externas del hotel una vez que la luz natural es insuficiente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Electricista del turno de la tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Caída del sol / reducción de la luz natural.
+            - Frecuencia: Todas las tardes. El horario de encendido es entre las 6:00 pm y las 6:30 pm, dependiendo de las condiciones de luz del día.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima: puntos de control, tableros o breakers utilizados para el encendido.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.7: Encendido de luces externas
+        - Pendiente.
+- TAREA 5.1: Recepción de solicitud de llenado de tanque de Agua
+    - AS-IS 5.1: Recepción de solicitud de llenado de tanque de Agua
+        - ¿Qué es esta tarea?
+            - Recepción y tramitación de la solicitud para el llenado del tanque de agua potable del hotel mediante camión cisterna u otro proveedor externo.
+        - ¿Para qué se hace?
+            - Para garantizar el abastecimiento de agua potable en el hotel cuando el tanque requiere ser llenado.
+        - ¿Qué roles ejecutan esta tarea?
+            - Actualmente la solicitud la gestiona el área de calidad/seguimiento y control (Adriana). Se indica que en el futuro debería ser Richard o su asistente administrativo quien la gestione, canalizándola a través del departamento de compras.
+        - ¿Cuándo se hace?
+            - Disparador: Necesidad de llenado del tanque de agua potable según el nivel de consumo.
+            - Frecuencia: Esporádico, según consumo.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta la necesidad de llenado del tanque de agua potable.
+            - Paso 2: Se realiza la solicitud (actualmente la gestiona Adriana; el canal hacia el proveedor pasa por compras).
+            - Paso 3: Compras contacta al proveedor del servicio.
+            - Paso 4: Llega el camión cisterna o proveedor al hotel.
+            - Paso 5: Richard (u operador presente) recibe y supervisa el llenado del tanque.
+            - ⚠️ Pendiente validar en sesión próxima: formato de la solicitud, datos del proveedor, criterios para determinar cuándo se requiere el llenado.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Ninguno identificado en la transcripción. ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - La solicitud debería ser gestionada por el asistente administrativo de operaciones directamente con el departamento de compras, para que compras coordine con el proveedor y el servicio llegue al hotel.
+    - Propuesta 5.1: Recepción de solicitud de llenado de tanque de Agua
+        - Pendiente.
+- TAREA 5.2: Llenado de tanque de agua
+    - AS-IS 5.2: Llenado de tanque de agua
+        - ¿Qué es esta tarea?
+            - Recepción física del servicio de llenado del tanque de agua potable cuando llega el proveedor al hotel.
+        - ¿Para qué se hace?
+            - Para asegurar el abastecimiento de agua potable en el hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard debe estar presente durante la recepción del servicio. Si no está disponible, otro operador apoya en la supervisión del llenado.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada del proveedor al hotel luego de tramitada la solicitud (Tarea 5.1).
+            - Frecuencia: Esporádico, según consumo.
+        - ¿Cómo se hace?
+            - Paso 1: Llega el proveedor al hotel con el agua.
+            - Paso 2: Richard (o el operador designado) supervisa el llenado del tanque.
+            - ⚠️ Pendiente validar en sesión próxima: procedimiento detallado de recepción, verificación de cantidades, firma de remisión u otro documento de recepción.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 5.2: Llenado de tanque de agua
+        - Pendiente.
+- TAREA 5.3: Recepción de solicitud de llenado de tanque de Gasoil
+    - AS-IS 5.3: Recepción de solicitud de llenado de tanque de Gasoil
+        - ¿Qué es esta tarea?
+            - Recepción y tramitación de la solicitud para el llenado del tanque externo de gasoil del hotel.
+        - ¿Para qué se hace?
+            - Para garantizar el abastecimiento de gasoil necesario para la operación del hotel (planta eléctrica u otros equipos).
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima: actualmente no se especifica con claridad quién gestiona esta solicitud. Se indica que el proceso debería pasar por compras.
+        - ¿Cuándo se hace?
+            - Disparador: Nivel bajo del tanque de gasoil según consumo.
+            - Frecuencia: Esporádico, según consumo.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta la necesidad de llenado del tanque de gasoil.
+            - Paso 2: Se realiza la solicitud al departamento de compras.
+            - Paso 3: Compras coordina con el proveedor.
+            - Paso 4: Llega el proveedor al hotel.
+            - Paso 5: Se recibe y supervisa el llenado del tanque externo de gasoil.
+            - ⚠️ Pendiente validar en sesión próxima: quien gestiona actualmente la solicitud, criterios de nivel para solicitar el llenado.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - La solicitud debería ser gestionada directamente con el departamento de compras por el asistente administrativo de operaciones. Se menciona que cuando viene el gasoil, Richard debe estar presente obligatoriamente.
+    - Propuesta 5.3: Recepción de solicitud de llenado de tanque de Gasoil
+        - Pendiente.
+- TAREA 5.4: Llenado de tanque de gasoil
+    - AS-IS 5.4: Llenado de tanque de gasoil
+        - ¿Qué es esta tarea?
+            - Recepción física del servicio de llenado del tanque externo de gasoil cuando llega el proveedor al hotel.
+        - ¿Para qué se hace?
+            - Para asegurar el abastecimiento de gasoil para la operación continua del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard debe estar presente obligatoriamente durante la recepción de este servicio.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada del proveedor al hotel luego de tramitada la solicitud (Tarea 5.3).
+            - Frecuencia: Esporádico, según consumo.
+        - ¿Cómo se hace?
+            - Paso 1: Llega el proveedor con el gasoil al hotel.
+            - Paso 2: Richard supervisa y recibe el llenado del tanque externo de gasoil.
+            - ⚠️ Pendiente validar en sesión próxima: procedimiento de verificación de cantidades, documentos de recepción firmados.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Presencia obligatoria de Richard.
+            - ⚠️ Pendiente validar en sesión próxima: documentos requeridos al proveedor.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 5.4: Llenado de tanque de gasoil
+        - Pendiente.
+- TAREA 5.5: Recepción de solicitud de llenado de tanque de Gas
+    - AS-IS 5.5: Recepción de solicitud de llenado de tanque de Gas
+        - ¿Qué es esta tarea?
+            - Recepción y tramitación de la solicitud para el llenado del tanque de gas del hotel.
+        - ¿Para qué se hace?
+            - Para garantizar el abastecimiento de gas necesario para la operación del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima: actualmente no se especifica con claridad quién gestiona esta solicitud.
+        - ¿Cuándo se hace?
+            - Disparador: Nivel bajo del tanque de gas según consumo.
+            - Frecuencia: Esporádico, según consumo.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta la necesidad de llenado del tanque de gas.
+            - Paso 2: Se realiza la solicitud al departamento de compras.
+            - Paso 3: Compras coordina con el proveedor.
+            - Paso 4: Llega el proveedor (camión) al hotel.
+            - Paso 5: Se recibe y supervisa el llenado del tanque de gas.
+            - ⚠️ Pendiente validar en sesión próxima: quién gestiona actualmente la solicitud, criterios de nivel para solicitarla.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - La solicitud debería ser gestionada directamente con compras por el asistente administrativo de operaciones.
+    - Propuesta 5.5: Recepción de solicitud de llenado de tanque de Gas
+        - Pendiente.
+- TAREA 5.6: Llenado de tanque de gas
+    - AS-IS 5.6: Llenado de tanque de gas
+        - ¿Qué es esta tarea?
+            - Recepción física del servicio de llenado del tanque de gas cuando llega el proveedor (camión) al hotel.
+        - ¿Para qué se hace?
+            - Para asegurar el abastecimiento de gas para la operación continua del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima: no se especifica en la transcripción quién debe estar presente en este servicio (a diferencia del gasoil, donde se menciona explícitamente a Richard).
+        - ¿Cuándo se hace?
+            - Disparador: Llegada del proveedor al hotel luego de tramitada la solicitud (Tarea 5.5).
+            - Frecuencia: Esporádico, según consumo.
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 5.6: Llenado de tanque de gas
+        - Pendiente.
+- TAREA 6.1: Verificación del pozo de agua (Nivel de agua y estado)
+    - AS-IS 6.1: Verificación del pozo de agua
+        - ¿Qué es esta tarea?
+            - Verificación periódica del estado y nivel de agua del pozo subterráneo (Pozo 3) que abastece al hotel, incluyendo el encendido y apagado de la bomba principal.
+        - ¿Para qué se hace?
+            - Para mantener el tanque principal del hotel lleno y garantizar el suministro continuo de agua subterránea, que es la fuente principal de agua del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (quien va al pozo a verificar y activar/desactivar la bomba). El pozo está ubicado fuera del hotel, a una distancia no especificada.
+        - ¿Cuándo se hace?
+            - Disparador: Verificación rutinaria del nivel del tanque principal y estado de la bomba del Pozo 3.
+            - Frecuencia: Día de por medio (día sí, día no).
+        - ¿Cómo se hace?
+            - Paso 1: Richard se desplaza al pozo (ubicado fuera del hotel).
+            - Paso 2: Verifica el nivel de agua y el estado general del pozo y la bomba.
+            - Paso 3: Enciende o apaga la bomba según sea necesario para mantener el tanque principal lleno.
+            - ⚠️ Pendiente validar en sesión próxima: indicadores de nivel que determinan si se enciende o apaga la bomba, registro de las verificaciones.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si se detecta una tubería rota u otro daño, se ejecuta el mantenimiento del pozo (Tarea 6.2).
+            - Si hay un bote de agua, se atiende de inmediato.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 6.1: Verificación del pozo de agua
+        - Pendiente.
+- TAREA 6.2: Mantenimiento del pozo (Esporádico / Cuando se requiere)
+    - AS-IS 6.2: Mantenimiento del pozo
+        - ¿Qué es esta tarea?
+            - Intervención correctiva en el pozo de agua subterránea (Pozo 3) cuando se detecta un daño, falla en la bomba, rotura de tubería u otro problema que afecte el suministro de agua.
+        - ¿Para qué se hace?
+            - Para restablecer el funcionamiento normal del sistema de abastecimiento de agua subterránea del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard y su equipo. Se menciona que en casos de daños en la bomba se llama a un mecánico especializado externo.
+        - ¿Cuándo se hace?
+            - Disparador: Detección de una falla, daño o anomalía durante la verificación rutinaria del pozo (Tarea 6.1) o ante una emergencia de suministro de agua.
+            - Frecuencia: Esporádico, cuando se requiere.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta la falla o daño en el pozo (tubería rota, bomba dañada, bote de agua, etc.).
+            - Paso 2: Se evalúa el tipo de intervención requerida.
+            - Paso 3: Si es una falla de bomba, se contacta al mecánico especializado.
+            - Paso 4: Se ejecuta la reparación o mantenimiento necesario.
+            - ⚠️ Pendiente validar en sesión próxima: procedimientos específicos, materiales requeridos, tiempos de respuesta, escalamiento.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 6.2: Mantenimiento del pozo
+        - Pendiente.
+- TAREA 6.3: Verificación de bombas sumergibles de aguas negras — Módulo 7 y Módulo 4
+    - AS-IS 6.3: Verificación de bombas sumergibles de aguas negras
+        - ¿Qué es esta tarea?
+            - Verificación periódica del estado y funcionamiento de las bombas sumergibles de aguas negras ubicadas en el Módulo 7 y el Módulo 4 del hotel.
+        - ¿Para qué se hace?
+            - Para garantizar el correcto funcionamiento del sistema de aguas negras del hotel y prevenir fallas en las bombas sumergibles de cada módulo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Richard (encargado de operaciones).
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima: no se especifica la frecuencia exacta ni el criterio de verificación en la transcripción, más allá de que deben estar pendientes del funcionamiento de las bombas.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo se hace?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si la bomba empieza a emitir ruidos anómalos o falla, se ejecuta el mantenimiento (Tarea 6.4).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 6.3: Verificación de bombas sumergibles de aguas negras
+        - Pendiente.
+- TAREA 6.4: Mantenimiento de las bombas (Esporádico / Cuando se requiere)
+    - AS-IS 6.4: Mantenimiento de las bombas sumergibles de aguas negras
+        - ¿Qué es esta tarea?
+            - Intervención correctiva en las bombas sumergibles de aguas negras (Módulo 7 y Módulo 4) cuando se detecta una falla o anomalía en su funcionamiento.
+        - ¿Para qué se hace?
+            - Para restablecer el funcionamiento normal del sistema de aguas negras del hotel y evitar acumulación o colapso del sistema.
+        - ¿Qué roles ejecutan esta tarea?
+            - Se menciona que cuando la bomba se daña se llama al mecánico especializado de esas bombas.
+        - ¿Cuándo se hace?
+            - Disparador: Detección de falla, ruido anormal o avería en la bomba sumergible, identificada durante la verificación rutinaria (Tarea 6.3) o de forma espontánea.
+            - Frecuencia: Esporádico, cuando se requiere.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta la falla o anomalía en la bomba.
+            - Paso 2: Se contacta al mecánico especializado en bombas sumergibles.
+            - Paso 3: Se ejecuta la reparación o mantenimiento de la bomba.
+            - ⚠️ Pendiente validar en sesión próxima: procedimientos de contacto al mecánico, materiales requeridos, tiempos de respuesta.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 6.4: Mantenimiento de las bombas sumergibles de aguas negras
+        - Pendiente.

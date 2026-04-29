@@ -1,0 +1,1936 @@
+# AS - IS: Gerencia Hotelera
+
+Creado: 10 de marzo de 2026 10:32
+
+- TAREA 1.1.1: Check-in de los huéspedes
+    - AS-IS 1.1.1: Check-in de los huéspedes
+        - ¿Qué es esta tarea?
+            - Proceso de recepción y registro de un huésped al momento de su llegada al hotel, ya sea por puerta (sin reserva previa) o con reserva previa.
+        - ¿Para qué se hace?
+            - Para hospedar a los huéspedes en el hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+            - Adriana (supervisora/jefa de recepción) brinda soporte cuando es necesario.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un huésped al hotel.
+            - Frecuencia: Cada vez que llega un huésped.
+        - ¿Cómo se hace?
+            - **Check-in por puerta (sin reserva previa):**
+            - Paso 1: Se solicita el documento de identidad (cédula para venezolanos, pasaporte para extranjeros).
+            - Paso 2: Se pregunta la cantidad de personas y si hay niños de 4 a 12 años (tienen tarifa diferenciada).
+            - Paso 3: Se consulta en Cloudbeds la disponibilidad de habitaciones y las tarifas del día, incluyendo la tasa del Banco Central de Venezuela (BCV) para el euro.
+            - Paso 4: Se informa al huésped el monto total por habitación/es según número de personas.
+            - Paso 5: Se define el método de pago.
+            - Paso 6: Se registran los datos personales del huésped en Cloudbeds: nombre, dirección completa (municipio, parroquia), teléfono y correo electrónico.
+            - Paso 7: Se adjuntan en Cloudbeds los documentos de identidad (foto de la cédula) y los comprobantes de pago.
+            - Paso 8: Se comunican las normativas del hotel al huésped verbalmente (horario de piscina, desayuno, toallas, política de mascotas, no fumadores, descorche, llave de toalla, no delivery, entre otras).
+            - Paso 9: El huésped firma el documento de normativas.
+            - **Check-in con reserva previa:**
+            - Paso 1: Se solicita el documento de identidad.
+            - Paso 2: Se verifica en Cloudbeds la reserva del huésped: monto total, abono realizado y saldo pendiente.
+            - Paso 3: Se informa al huésped el monto restante a cancelar.
+            - Paso 4: Se define el método de pago para el saldo pendiente.
+            - Paso 5: Se adjuntan en Cloudbeds los documentos de identidad y los comprobantes del pago restante.
+            - Paso 6: Se comunican las normativas del hotel y el huésped firma.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Cloudbeds (para consultar disponibilidad, tarifas y registrar datos).
+            - Tasa del día del Banco Central de Venezuela (BCV) para el euro.
+            - Documento de identidad del huésped (cédula o pasaporte).
+            - Documento físico de normativas del hotel para firma.
+        - ¿Qué se genera al terminar?
+            - Registro del huésped en Cloudbeds con datos personales, documentos de identidad adjuntos y comprobante de pago.
+            - Habitación asignada y ocupada en el sistema.
+            - Documento de normativas firmado por el huésped (en físico).
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Consulta de disponibilidad, tarifas del día, registro de datos del huésped, adjunto de documentos e imagen de comprobantes de pago.
+            - **BCV (Banco Central de Venezuela)**: Consulta de la tasa del euro para calcular el monto en bolívares.
+            - **Documento físico de normativas**: Entregado al huésped para firma.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Reservas institucionales sin pago**: Huéspedes enviados por instituciones (ej. Parques, policía, CPC). No se les cobra hospedaje; se hace la reserva sin pago registrado.
+            - **Family & Friends**: Huéspedes referidos por el dueño (señor Rafael). No se les cobra o se aplica tarifa especial autorizada directamente por presidencia. No hay formato estandarizado; la instrucción llega por mensaje directo del señor Rafael.
+            - **Alianza Venetur**: Llega carta de Venetur indicando nombre del huésped y fecha. Se hace la reserva, se registran datos pero no se cobra hospedaje ni desayuno. El cruce de cuentas lo gestiona administración directamente con Venetur.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con un código QR que el huésped pueda escanear para acceder a las normativas del hotel desde su teléfono, en lugar de entregarlas solo en físico. Esto agilizaría el proceso y permitiría al huésped consultarlas cuando quiera.
+    - Propuesta 1.1.1: Check-in de los huéspedes
+        - Pendiente.
+- TAREA 1.1.2: Registro de datos de los huéspedes en sistema Cloudbeds
+    - AS-IS 1.1.2: Registro de datos de los huéspedes en sistema Cloudbeds
+        - ¿Qué es esta tarea?
+            - Ingreso manual de los datos personales del huésped en Cloudbeds, ya sea durante el proceso de reserva o durante el check-in presencial.
+        - ¿Para qué se hace?
+            - Para mantener un registro actualizado de los huéspedes en el sistema y evitar duplicados.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+            - Adriana (supervisora) cuando brinda soporte.
+        - ¿Cuándo se hace?
+            - Disparador: Al momento de crear una reserva o al realizar el check-in de un huésped.
+            - Frecuencia: Cada vez que ingresa un huésped nuevo o se crea una reserva.
+        - ¿Cómo se hace?
+            - Paso 1: Se solicitan los datos personales del huésped: nombre, dirección completa (municipio, parroquia), teléfono y correo electrónico.
+            - Paso 2: Se verifica en Cloudbeds si el huésped ya existe como contacto (para evitar duplicados).
+            - Paso 3: Si ya existe, se continúa con el flujo sin crear un registro nuevo.
+            - Paso 4: Si no existe, se crea un nuevo registro con todos los datos personales.
+            - Paso 5: Se adjuntan en Cloudbeds los documentos de identidad (foto de cédula o pasaporte) y los comprobantes de pago.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documento de identidad del huésped (cédula o pasaporte).
+            - Datos personales del huésped (dirección, teléfono, correo).
+            - Acceso a Cloudbeds.
+        - ¿Qué se genera al terminar?
+            - Registro del huésped en Cloudbeds con datos personales y documentos adjuntos.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Creación y actualización del perfil del huésped; adjunto de documentos de identidad y comprobantes de pago.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Se pueden generar duplicados si no se verifica previamente si el cliente ya existe en el sistema. Esto ocurre cuando no se realiza la validación antes de crear el registro.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.1.2: Registro de datos de los huéspedes en sistema Cloudbeds
+        - Pendiente.
+- TAREA 1.1.3: Gestión de cobros multimedia (PDV, Zelle, Pago Móvil, Transferencias, Efectivo, Binance)
+    - AS-IS 1.1.3: Gestión de cobros multimedia
+        - ¿Qué es esta tarea?
+            - Recepción y verificación de pagos realizados por los huéspedes a través de distintos métodos de pago, tanto en el momento del check-in como del check-out.
+        - ¿Para qué se hace?
+            - Para validar que los pagos de los huéspedes hayan sido recibidos correctamente antes de proceder con el registro o la salida.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+            - Administración (Libni o Erika): validan los pagos por pago móvil, transferencia, Zelle y Cachea. Son las únicas con acceso al banco.
+            - El equipo de recepción gestiona y verifica PDV y efectivo directamente.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de un pago por parte del huésped, ya sea en el check-in (reserva o ingreso por puerta) o en el check-out.
+            - Frecuencia: Cada vez que un huésped realiza un pago.
+        - ¿Cómo se hace?
+            - **Punto de venta (PDV):**
+            - Paso 1: Se procesa el pago directamente en el terminal de punto de venta.
+            - Paso 2: La recepcionista verifica que el pago haya pasado en el terminal.
+            - Paso 3: No requiere validación con administración.
+            - **Pago móvil y transferencia:**
+            - Paso 1: El huésped envía el capture (screenshot) del pago por correo electrónico o WhatsApp.
+            - Paso 2: La recepcionista reenvía el capture a administración (Libni o Erika) para validación.
+            - Paso 3: Administración confirma que el pago llegó a la cuenta, copiando la información de referencia, fecha y monto.
+            - Paso 4: Una vez confirmado, se registra el pago en Cloudbeds.
+            - **Zelle:**
+            - Paso 1: El huésped envía el capture del pago.
+            - Paso 2: Se reenvía a administración, quien lo pasa al dueño del Zelle para confirmación.
+            - Paso 3: Se verifica el número de verificación y el monto.
+            - Paso 4: Una vez confirmado, se registra el pago.
+            - **Efectivo:**
+            - Paso 1: Se recibe el dinero en físico.
+            - Paso 2: La recepcionista verifica el monto directamente.
+            - Paso 3: No requiere validación con administración.
+            - Nota: Los pagos en Zelle y efectivo son montados en sistema por administración, no por recepción.
+            - **Cachea:**
+            - Paso 1: El huésped realiza el pago en la plataforma Cachea.
+            - Paso 2: Se verifica el número de orden y el monto en dólares.
+            - Paso 3: Se registra el equivalente en dólares (no en euros, ya que Cachea cobra en dólar).
+            - **Binance:**
+            - Paso 1: El huésped realiza el pago en Binance.
+            - Paso 2: Se verifica el ID de origen y el monto.
+            - Paso 3: Se registra el ingreso con el detalle correspondiente.
+            - **Escenario de huésped sin comprobante:**
+            - Paso 1: Si el huésped afirma haber pagado pero no tiene ni envió comprobante, se verifica primero en Cloudbeds si el pago aparece registrado.
+            - Paso 2: Si no aparece en Cloudbeds, se solicita el comprobante al huésped.
+            - Paso 3: Si aún no se puede verificar, se pasa a administración para validación.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Capture (screenshot) del pago enviado por el huésped (para pago móvil, transferencia, Zelle, Cachea y Binance).
+            - Acceso a Cloudbeds para verificar si el pago ya está registrado.
+            - Contacto directo con administración (Libni o Erika) vía WhatsApp para validación.
+            - Terminal de punto de venta físico.
+        - ¿Qué se genera al terminar?
+            - Confirmación del pago validado por administración (en los casos que aplica).
+            - Pago registrado en Cloudbeds.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Verificación de pagos previos y registro del pago una vez validado.
+            - **WhatsApp**: Envío del capture a administración para validación.
+            - **Terminal PDV**: Procesamiento de pagos con tarjeta de crédito/débito.
+            - **Correo electrónico**: Canal alternativo para recepción de comprobantes de pago.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Huésped dice que pagó pero no envió comprobante**: Se verifica en Cloudbeds; si no está, se le solicita el comprobante.
+            - **Administración demora en confirmar el pago**: En temporada alta o momentos de alta ocupación, la validación puede tardar incluso un día. Recepción debe reenviar el mensaje o hacer seguimiento activo.
+            - **En check-out, el cliente ya se fue antes de validar**: El pago queda pendiente de validación y se monta en sistema después de que el cliente se ha ido, lo que genera incertidumbre sobre si fue confirmado.
+            - **Pago cobrado por punto de venta correspondiente a servicio (10%)**: Si el huésped paga el servicio por PDV en lugar de pago móvil a la cuenta de los mesoneros, se debe gestionar con administración la devolución del monto a los mesoneros.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que la validación de pagos por parte de administración sea más inmediata, especialmente en temporadas altas donde se acumulan múltiples transacciones simultáneas.
+            - Que los pagos de servicio (10% correspondiente a los mesoneros) sean cobrados directamente en el departamento de Alimentos y Bebidas, y no pasen por recepción, para simplificar el proceso de check-out.
+    - Propuesta 1.1.3: Gestión de cobros multimedia
+        - Pendiente.
+- TAREA 1.1.4: Carga y conciliación de pagos en sistema Cloudbeds
+    - AS-IS 1.1.4: Carga y conciliación de pagos en sistema Cloudbeds
+        - ¿Qué es esta tarea?
+            - Registro formal del pago del huésped en Cloudbeds, una vez que ha sido validado por administración, incluyendo los detalles específicos según el método de pago utilizado.
+        - ¿Para qué se hace?
+            - Para reflejar en el sistema el pago recibido, actualizar el saldo pendiente del huésped y generar la confirmación automática por correo electrónico.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal para la mayoría de métodos).
+            - Administración (Libni o Erika): montan en sistema los pagos realizados en Zelle y efectivo.
+        - ¿Cuándo se hace?
+            - Disparador: Pago del huésped validado por administración (o verificado directamente por recepción en caso de PDV y efectivo).
+            - Frecuencia: Cada vez que se recibe y valida un pago. En momentos de alta ocupación, puede realizarse después de que el huésped ya pasó por recepción.
+        - ¿Cómo se hace?
+            - Paso 1: Se accede a la reserva del huésped en Cloudbeds.
+            - Paso 2: Se registra el pago con los datos específicos según el método utilizado:
+                - **Punto de venta**: banco, lote, referencia, número de aprobado, fecha, monto en bolívares, equivalente en euros, tasa BCV del día, tipo de ingreso (hospedaje/consumo/reserva).
+                - **Pago móvil y transferencia**: banco, fecha, referencia (últimos 6 dígitos), monto en bolívares, equivalente en euros, tasa BCV del día, tipo de ingreso.
+                - **Zelle**: fecha, número de verificación, monto, tipo de ingreso.
+                - **Efectivo**: fecha, monto, equivalente en euros, tipo de ingreso. (Lo monta administración.)
+                - **Cachea**: fecha, número de orden, monto en bolívares, equivalente en dólares, tipo de ingreso.
+                - **Binance**: fecha, ID de origen, monto, tipo de ingreso.
+            - Paso 3: Se confirma el pago en Cloudbeds. El sistema envía automáticamente un correo electrónico al huésped con el monto abonado y el saldo restante.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Confirmación de administración de que el pago fue recibido en cuenta (para pago móvil, transferencia y Zelle).
+            - Capture del pago con los datos de referencia correspondientes.
+            - Tasa BCV del día para calcular equivalencia en euros.
+            - Acceso a Cloudbeds.
+        - ¿Qué se genera al terminar?
+            - Pago registrado en la reserva dentro de Cloudbeds.
+            - Correo electrónico automático enviado al huésped con el monto abonado y el saldo restante (generado automáticamente por Cloudbeds al confirmar el pago).
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Registro del pago en la reserva y envío automático de confirmación al huésped por correo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Zelle y efectivo**: No los monta recepción; los monta administración directamente.
+            - **Alta ocupación**: En momentos de mucho movimiento, los pagos se acumulan y se montan en sistema después de que el huésped ya se fue o pasó por recepción, para agilizar la atención en el momento.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.1.4: Carga y conciliación de pagos en sistema Cloudbeds
+        - Pendiente.
+
+---
+
+- TAREA 1.1.5: Carga de registros contables en sistema Odoo
+    - AS-IS 1.1.5: Carga de registros contables en sistema Odoo
+        - ¿Qué es esta tarea?
+            - Registro del pago del huésped en el módulo de Contabilidad de Odoo, a través de la función de recibo de cliente, una vez que el pago fue cargado en Cloudbeds.
+        - ¿Para qué se hace?
+            - Para registrar contablemente el pago recibido y adelantar la facturación del huésped.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+            - Adriana brinda soporte cuando hay dudas o errores en el registro.
+        - ¿Cuándo se hace?
+            - Disparador: Pago del huésped ya registrado en Cloudbeds.
+            - Frecuencia: Cada vez que se registra un pago en Cloudbeds.
+        - ¿Cómo se hace?
+            - Paso 1: Ingresar a Odoo, módulo de Contabilidad, sección Clientes → Recibo de cliente.
+            - Paso 2: Verificar si el cliente ya existe en el sistema para evitar duplicados.
+            - Paso 3: Si no existe, crear un nuevo cliente con sus datos: dirección, teléfono, correo y demás información disponible.
+            - Paso 4: Crear un nuevo recibo de cliente con los datos del pago:
+                - Banco receptor.
+                - Monto en bolívares.
+                - Método de pago (con prefijo según formato interno: "T Trans" para transferencia, "PM" para pago móvil, "PDV" para punto de venta, etc.).
+                - Referencia: para PDV se incluye lote y número de referencia; para pago móvil y transferencia se usan los últimos 6 dígitos.
+            - Paso 5: Guardar el registro.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pago previamente registrado en Cloudbeds.
+            - Datos del pago: banco, monto, método, referencia.
+            - Acceso a Odoo (módulo de Contabilidad).
+            - Formato interno de codificación de métodos de pago definido por administración.
+        - ¿Qué se genera al terminar?
+            - Recibo de cliente en Odoo con número de registro asignado por el sistema.
+        - ¿Qué sistemas o herramientas usan?
+            - **Odoo** (módulo Contabilidad → Clientes → Recibo de cliente): Creación del registro contable del pago.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Duplicación de clientes**: Ocurre cuando no se verifica si el cliente ya existe antes de crear uno nuevo. Se ha identificado como un error frecuente.
+            - **Errores de tipeo**: Monto incorrecto, cero de más, banco equivocado, método de pago mal clasificado. Adriana brinda soporte para corregirlos.
+            - **Transferencia inmediata vs. pago móvil**: A veces no es claro si una operación es transferencia o pago móvil. Se consulta con Adriana para definir la clasificación correcta.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.1.5: Carga de registros contables en sistema Odoo
+        - Pendiente.
+
+---
+
+- TAREA 1.1.6: Anexo y reporte de ingresos en plataforma Microsoft Teams
+    - AS-IS 1.1.6: Anexo y reporte de ingresos en plataforma Microsoft Teams
+        - ¿Qué es esta tarea?
+            - Publicación en una carpeta compartida de Microsoft Teams de la información del pago registrado en Cloudbeds y Odoo, acompañada de los comprobantes de pago correspondientes.
+        - ¿Para qué se hace?
+            - Para centralizar y hacer visible a todo el equipo (recepción, administración, finanzas) la información de los pagos de hospedaje registrados, de modo que cualquier persona pueda consultarla cuando lo requiera.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+        - ¿Cuándo se hace?
+            - Disparador: Pago registrado en Cloudbeds y en Odoo.
+            - Frecuencia: Cada vez que se registra un pago de hospedaje.
+        - ¿Cómo se hace?
+            - Paso 1: Copiar la información del pago registrado en Cloudbeds (nombre del cliente, ID de reserva, datos del pago).
+            - Paso 2: Pegar esa información en la carpeta correspondiente en Microsoft Teams ("Ingreso Recepción").
+            - Paso 3: Añadir el número de registro del recibo de cliente generado en Odoo.
+            - Paso 4: Adjuntar el comprobante de pago (imagen/foto): capture de pago móvil, transferencia, Zelle, foto del efectivo, según corresponda.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información del pago previamente registrada en Cloudbeds.
+            - Número de recibo de cliente generado en Odoo.
+            - Comprobante de pago (imagen/screenshot).
+            - Acceso a Microsoft Teams y a la carpeta "Ingreso Recepción".
+        - ¿Qué se genera al terminar?
+            - Entrada publicada en la carpeta "Ingreso Recepción" de Microsoft Teams con la información del pago y el comprobante adjunto, visible para recepción, administración y finanzas.
+        - ¿Qué sistemas o herramientas usan?
+            - **Microsoft Teams** (carpeta "Ingreso Recepción"): Publicación y centralización de la información de ingresos.
+            - **Cloudbeds**: Fuente de los datos del pago que se copian a Teams.
+            - **Odoo**: Fuente del número de recibo de cliente que se anexa en Teams.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.1.6: Anexo y reporte de ingresos en plataforma Microsoft Teams
+        - Pendiente.
+
+---
+
+- TAREA 1.1.7: Ejecución de cierres de turnos
+    - AS-IS 1.1.7: Ejecución de cierres de turnos
+        - ¿Qué es esta tarea?
+            - Elaboración de un reporte consolidado de todos los pagos recibidos durante el turno, incluyendo todos los métodos de pago, y su envío a través de Microsoft Teams al finalizar el turno.
+        - ¿Para qué se hace?
+            - Para registrar y resumir todo lo que ocurrió financieramente durante el turno (pagos recibidos por todos los métodos), dejar constancia para administración y facilitar la conciliación posterior.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista a cargo del turno (turno de mañana, tarde o jornada completa).
+        - ¿Cuándo se hace?
+            - Disparador: Fin del turno del recepcionista.
+            - Frecuencia: Al finalizar cada turno (turno mañana, turno tarde o jornada completa).
+        - ¿Cómo se hace?
+            - Paso 1: Completar el formato de cierre de turno en Excel, registrando todos los pagos recibidos durante el turno separados por método:
+                - Pagos móviles.
+                - Transferencias.
+                - Efectivo (incluyendo fondo de caja si aplica).
+                - Zelle.
+                - Punto de venta (cierre del terminal PDV).
+            - Paso 2: El formato suma automáticamente los montos y genera un total global en bolívares, dólares y el equivalente en efectivo (cash).
+            - Paso 3: Se adjuntan al reporte los cierres físicos del punto de venta (comprobantes de cierre del terminal PDV) y/o el cierre de caja en efectivo.
+            - Paso 4: Se publica en Microsoft Teams con un título que indica "Cierre de turno [nombre/fecha]", adjuntando el archivo Excel y los cierres físicos escaneados o fotografiados.
+            - Paso 5: Si hubo ingreso en efectivo, se registra también el fondo de caja correspondiente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Formato Excel de cierre de turno (formato interno del hotel).
+            - Comprobantes físicos de cierre del terminal de punto de venta.
+            - Acceso a Microsoft Teams.
+            - Registro de todos los pagos recibidos durante el turno.
+        - ¿Qué se genera al terminar?
+            - Reporte de cierre de turno en formato Excel.
+            - Publicación en Microsoft Teams con el reporte y los comprobantes adjuntos.
+        - ¿Qué sistemas o herramientas usan?
+            - **Excel**: Formato de registro y totalización de pagos por método.
+            - **Microsoft Teams**: Canal donde se publica el cierre de turno con todos los adjuntos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.1.7: Ejecución de cierres de turnos
+        - Pendiente.
+
+---
+
+- TAREA 1.1.8: Elaboración de llaves electrónicas de habitaciones
+    - AS-IS 1.1.8: Elaboración de llaves electrónicas de habitaciones
+        - ¿Qué es esta tarea?
+            - Programación de las tarjetas o llaves electrónicas que se entregan al huésped para acceder a su habitación, utilizando los sistemas TT Hotel o Time Locks (Lockia), según el tipo de cerradura de la habitación asignada.
+        - ¿Para qué se hace?
+            - Para dar acceso al huésped a su habitación durante el período autorizado de estadía.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (llaves de huéspedes).
+            - Adriana, el señor Rafael o Jesús (únicamente para llaves maestras, por requerir usuario administrador).
+        - ¿Cuándo se hace?
+            - Disparador: Completado el check-in del huésped.
+            - Frecuencia: Cada vez que se realiza un check-in.
+        - ¿Cómo se hace?
+            - **Con TT Hotel (cerraduras inteligentes — módulos 4, 2, 7-1 y 7-2):**
+            - Paso 1: Buscar la habitación asignada al huésped en la aplicación TT Hotel.
+            - Paso 2: Ingresar el nombre del huésped como referencia.
+            - Paso 3: Ingresar la fecha y hora de salida permitida (hasta cuándo funcionará la llave).
+            - Paso 4: Definir la cantidad de tarjetas a programar (puede ser más de una).
+            - Paso 5: Programar la(s) tarjeta(s) electrónica(s) y entregarlas al huésped.
+            - **Con Time Locks / Lockia (habitaciones con cerradura magnética anterior):**
+            - Paso 1: Seleccionar el número de habitación en el sistema Time Locks.
+            - Paso 2: Ingresar el número de noches (no fecha de salida).
+            - Paso 3: Definir la cantidad de tarjetas a programar.
+            - Paso 4: Programar la(s) tarjeta(s) magnética(s) y entregarlas al huésped.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Saber qué habitación fue asignada al huésped.
+            - Saber la fecha/hora de salida o cantidad de noches de la estadía.
+            - Acceso a TT Hotel o Time Locks según el tipo de habitación.
+            - Tarjeta física (electrónica o magnética) en blanco para programar.
+        - ¿Qué se genera al terminar?
+            - Tarjeta programada entregada al huésped con acceso válido hasta la hora/fecha de salida definida.
+        - ¿Qué sistemas o herramientas usan?
+            - **TT Hotel**: Programación de cerraduras inteligentes en los módulos 4, 2, 7-1 y 7-2.
+            - **Time Locks / Lockia**: Programación de cerraduras magnéticas en habitaciones que aún no tienen cerradura inteligente.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Llave bloqueada o que no funciona**: Se intenta reprogramar. Si la habitación requiere acceso de tipo "supervisora" o "maestra" (como el caso de Francis, supervisora de ama de llaves), la programación debe hacerse con usuario administrador. Con usuario de recepción no se puede crear ese tipo de llave.
+            - **No todas las habitaciones tienen el mismo sistema**: Según el tipo de habitación, se usa TT Hotel o Time Locks. El proceso está en transición hacia cerraduras inteligentes en todas las habitaciones.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que todas las habitaciones cuenten con cerradura inteligente (TT Hotel), eliminando la necesidad de usar dos sistemas distintos. Actualmente es un proceso en transición.
+    - Propuesta 1.1.8: Elaboración de llaves electrónicas de habitaciones
+        - Pendiente.
+
+---
+
+- TAREA 1.1.9: Realización de llaves maestras para ama de llaves, jefes y supervisores
+    - AS-IS 1.1.9: Realización de llaves maestras para ama de llaves, jefes y supervisores
+        - ¿Qué es esta tarea?
+            - Programación de tarjetas con acceso múltiple (maestras) para supervisores, jefes y personal de ama de llaves, utilizando los mismos sistemas que para las llaves de huéspedes, pero con permisos de acceso extendidos.
+        - ¿Para qué se hace?
+            - Para que el personal autorizado (supervisores, jefes, ama de llaves) pueda acceder a múltiples habitaciones según sus funciones operativas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana, el señor Rafael o Jesús (requiere usuario con perfil de administrador; no puede realizarse con usuario de recepción estándar).
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud de llave maestra para un nuevo supervisor, jefe o personal de ama de llaves, o cuando una llave maestra existente se bloquea o pierde.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Acceder al sistema TT Hotel o Time Locks con usuario administrador.
+            - Paso 2: Configurar la tarjeta con acceso a las habitaciones correspondientes al rol del solicitante.
+            - Paso 3: Programar la tarjeta maestra.
+            - Paso 4: Entregar la tarjeta al supervisor o jefe correspondiente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Usuario con perfil de administrador en TT Hotel o Time Locks.
+            - Definición del alcance de acceso según el rol del solicitante.
+        - ¿Qué se genera al terminar?
+            - Tarjeta maestra programada y entregada al personal autorizado.
+        - ¿Qué sistemas o herramientas usan?
+            - **TT Hotel**: Para habitaciones con cerradura inteligente.
+            - **Time Locks / Lockia**: Para habitaciones con cerradura magnética.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Llave bloqueada**: Si se intenta reprogramar con usuario de recepción (no administrador), el sistema no permite crear la llave maestra. Debe usarse el usuario administrador. Esto ocurrió con la llave de Francis (supervisora de ama de llaves).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.1.9: Realización de llaves maestras para ama de llaves, jefes y supervisores
+        - Pendiente.
+- TAREA 1.2.1: Gestión de cobros de consumos y servicios adicionales
+    - AS-IS 1.2.1: Gestión de cobros de consumos y servicios adicionales
+        - ¿Qué es esta tarea?
+            - Proceso de verificación, presentación y cobro al huésped de todos los consumos realizados durante su estadía (alimentos y bebidas), incluyendo el monto de consumo y el cargo de servicio (10%), al momento del check-out.
+        - ¿Para qué se hace?
+            - Para cobrar al huésped el total de sus consumos adicionales al hospedaje antes de que realice su salida del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal en check-out).
+            - Adriana brinda soporte ante disputas, reclamos o casos complejos.
+            - Departamento de Alimentos y Bebidas: entrega las comandas físicas diariamente a recepción y las carga previamente en Poster, que se sincroniza con Cloudbeds.
+        - ¿Cuándo se hace?
+            - Disparador: El huésped se presenta en recepción para realizar el check-out.
+            - Frecuencia: Cada vez que un huésped hace check-out con consumos registrados.
+        - ¿Cómo se hace?
+            - Paso 1: Reunir todas las comandas físicas del huésped que han sido entregadas diariamente por el departamento de Alimentos y Bebidas.
+            - Paso 2: Verificar en Cloudbeds que todos los consumos físicos estén registrados en el sistema (los datos migran automáticamente de Poster a Cloudbeds).
+            - Paso 3: Presentar las comandas físicas al huésped para su revisión.
+            - Paso 4: El huésped firma las comandas para confirmar los consumos.
+            - Paso 5: Calcular el monto total: consumo + 10% de servicio.
+            - Paso 6: Cobrar el consumo (va a las cuentas del hotel; acepta pago móvil, transferencia, PDV, etc.).
+            - Paso 7: Cobrar el servicio (10%) exclusivamente por pago móvil a la cuenta de los mesoneros.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comandas físicas acumuladas durante la estadía del huésped (entregadas por A&B).
+            - Acceso a Cloudbeds para verificar que los consumos estén registrados.
+        - ¿Qué se genera al terminar?
+            - Comandas firmadas por el huésped.
+            - Pago de consumo recibido.
+            - Pago de servicio (10%) recibido (si el huésped acepta pagarlo).
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Verificación de consumos registrados por el departamento de A&B (migrados desde Poster).
+            - **Poster**: Sistema de A&B que genera las comandas y las sincroniza automáticamente con Cloudbeds (recepción no accede directamente a Poster).
+            - **Comandas físicas**: Documento en papel que el huésped firma para confirmar consumos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **El huésped disputa un consumo**: Se verifica la comanda física y el registro en Cloudbeds. Si el huésped dice que la firma no es suya, que le cobraron un producto que no consumió, o que la cantidad es incorrecta, se investiga con el departamento de A&B.
+            - **Error en la carga de A&B**: Consumo cargado a la habitación equivocada, cantidad incorrecta (ej. 12 aguas en vez de 2). Se verifica y corrige coordinando con A&B.
+            - **El huésped no quiere pagar el servicio (10%)**: El servicio no es obligatorio. Si el huésped se niega, no se le cobra. El problema surge porque A&B lo carga automáticamente y a veces el huésped no fue informado previamente.
+            - **El huésped quiere pagar todo por PDV pero el servicio solo acepta pago móvil**: Se deben realizar dos pagos por separado. Si el huésped no tiene pago móvil, el servicio termina siendo cobrado por PDV, lo que obliga a gestionar con administración la devolución del monto correspondiente a los mesoneros.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el cobro del servicio (10%) sea gestionado directamente por el departamento de Alimentos y Bebidas en su propia caja, y no pase por recepción. Esto simplificaría el check-out a un único pago (consumo) y evitaría la confusión y los reclamos al momento de salida.
+            - Que A&B informe claramente al huésped sobre el cargo de servicio al momento de atenderlo, y no lo deje para el check-out.
+    - Propuesta 1.2.1: Gestión de cobros de consumos y servicios adicionales
+        - Pendiente.
+
+---
+
+- TAREA 1.2.2: Carga y conciliación de pagos de check-out en sistema Cloudbeds
+    - AS-IS 1.2.2: Carga y conciliación de pagos de check-out en sistema Cloudbeds
+        - ¿Qué es esta tarea?
+            - Registro en Cloudbeds de los pagos recibidos durante el check-out (consumo y/o servicio), siguiendo el mismo proceso que la carga de pagos del check-in, con la diferencia en el tipo de ingreso registrado.
+        - ¿Para qué se hace?
+            - Para reflejar en el sistema los pagos de check-out y dejar el saldo del huésped en cero antes de su salida.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+            - Administración: monta en sistema los pagos en Zelle y efectivo.
+        - ¿Cuándo se hace?
+            - Disparador: Cobro de consumos y/o servicios completado al momento del check-out.
+            - Frecuencia: Cada vez que se realiza un check-out con consumos.
+        - ¿Cómo se hace?
+            - El proceso es idéntico al de la tarea 1.1.4 (Carga y conciliación de pagos en Cloudbeds), con la única diferencia en el campo "ingreso por": en lugar de "hospedaje" o "reserva", se especifica "consumo" o "servicio" según corresponda.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Mismo que tarea 1.1.4: comprobante de pago, tasa BCV, acceso a Cloudbeds, confirmación de administración cuando aplica.
+        - ¿Qué se genera al terminar?
+            - Pago registrado en Cloudbeds. Saldo del huésped en cero.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Registro del pago de check-out.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismo esquema de excepciones que la tarea 1.1.4.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.2.2: Carga y conciliación de pagos de check-out en sistema Cloudbeds
+        - Pendiente.
+
+---
+
+- TAREA 1.2.3: Carga de registros contables de salida en sistema Odoo
+    - AS-IS 1.2.3: Carga de registros contables de salida en sistema Odoo
+        - ¿Qué es esta tarea?
+            - Registro en Odoo del pago recibido durante el check-out, siguiendo el mismo flujo que el registro de pagos del check-in (tarea 1.1.5).
+        - ¿Para qué se hace?
+            - Para registrar contablemente el pago del check-out y asociarlo al cliente en Odoo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+        - ¿Cuándo se hace?
+            - Disparador: Pago de check-out registrado en Cloudbeds.
+            - Frecuencia: Cada vez que se realiza un check-out con pago.
+        - ¿Cómo se hace?
+            - El proceso es idéntico al de la tarea 1.1.5 (Carga de registros contables en Odoo): módulo Contabilidad → Clientes → Recibo de cliente, con los mismos datos y formato interno de referencia.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Mismo que tarea 1.1.5.
+        - ¿Qué se genera al terminar?
+            - Recibo de cliente en Odoo con número de registro.
+        - ¿Qué sistemas o herramientas usan?
+            - **Odoo** (módulo Contabilidad → Clientes → Recibo de cliente).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismo esquema de excepciones que la tarea 1.1.5.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.2.3: Carga de registros contables de salida en sistema Odoo
+        - Pendiente.
+
+---
+
+- TAREA 1.2.4: Anexo y reporte de ingresos de check-out en plataforma Microsoft Teams
+    - AS-IS 1.2.4: Anexo y reporte de ingresos de check-out en plataforma Microsoft Teams
+        - ¿Qué es esta tarea?
+            - Publicación en Microsoft Teams de los pagos de check-out (consumo y servicio) registrados en Cloudbeds y Odoo, con sus respectivos comprobantes adjuntos.
+        - ¿Para qué se hace?
+            - Para centralizar en Teams todos los pagos realizados por el huésped durante su estadía, incluyendo los de check-out.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal).
+        - ¿Cuándo se hace?
+            - Disparador: Pago de check-out registrado en Cloudbeds y en Odoo.
+            - Frecuencia: Cada vez que se realiza un check-out con pago.
+        - ¿Cómo se hace?
+            - El proceso es idéntico al de la tarea 1.1.6, con la diferencia de que los pagos publicados corresponden a consumo y/o servicio, no a hospedaje.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Mismo que tarea 1.1.6.
+        - ¿Qué se genera al terminar?
+            - Entrada publicada en Teams con los pagos de check-out y comprobantes adjuntos.
+        - ¿Qué sistemas o herramientas usan?
+            - **Microsoft Teams** (carpeta "Ingreso Recepción").
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.2.4: Anexo y reporte de ingresos de check-out en plataforma Microsoft Teams
+        - Pendiente.
+
+---
+
+- TAREA 1.3.1: Envío de comprobantes de pagos (Transferencias y Pago Móvil) al Dpto. de Administración
+    - AS-IS 1.3.1: Envío de comprobantes de pagos al Dpto. de Administración
+        - ¿Qué es esta tarea?
+            - Envío por WhatsApp del capture del pago recibido (pago móvil o transferencia) a administración para que validen que el dinero llegó efectivamente a la cuenta bancaria del hotel.
+        - ¿Para qué se hace?
+            - Para obtener la confirmación de administración de que el pago fue acreditado en cuenta antes de registrarlo en los sistemas, dado que recepción no tiene acceso directo al banco.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (envío del comprobante).
+            - Administración — Libni o Erika (validación y confirmación).
+        - ¿Cuándo se hace?
+            - Disparador: Recepción de un pago por pago móvil o transferencia, tanto en check-in como en check-out.
+            - Frecuencia: Cada vez que se recibe un pago por estos métodos. No aplica para PDV ni efectivo.
+        - ¿Cómo se hace?
+            - Paso 1: El huésped envía el capture del pago por correo electrónico o WhatsApp.
+            - Paso 2: La recepcionista reenvía el capture a administración (Libni o Erika) vía WhatsApp.
+            - Paso 3: Administración verifica en la cuenta bancaria que el pago fue recibido.
+            - Paso 4: Administración responde con la confirmación, indicando fecha, referencia y monto del ingreso en cuenta.
+            - Paso 5: Con esa confirmación, recepción procede a registrar el pago en Cloudbeds y Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Capture del pago enviado por el huésped.
+            - Contacto de WhatsApp de Libni o Erika.
+        - ¿Qué se genera al terminar?
+            - Confirmación por WhatsApp de administración indicando que el pago fue recibido en cuenta.
+        - ¿Qué sistemas o herramientas usan?
+            - **WhatsApp**: Canal de comunicación entre recepción y administración para el envío y confirmación de comprobantes.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Administración no confirma de inmediato**: Puede pasar un día sin confirmación. Recepción debe hacer seguimiento activo reenviando el mensaje.
+            - **En check-out con mucha afluencia**: Los pagos se acumulan y se envían en bloque después de que los huéspedes ya se fueron, lo que genera incertidumbre sobre si fueron validados.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que la confirmación de pagos sea más inmediata, especialmente en temporada alta, para poder completar el registro antes de que el huésped se retire.
+    - Propuesta 1.3.1: Envío de comprobantes de pagos al Dpto. de Administración
+        - Pendiente.
+
+---
+
+- TAREA 1.3.2: Pasar la confirmación de los pagos a los huéspedes por correo electrónico
+    - AS-IS 1.3.2: Pasar la confirmación de los pagos a los huéspedes por correo electrónico
+        - ¿Qué es esta tarea?
+            - Envío automático (vía Cloudbeds) de la confirmación de pago al huésped una vez que el pago ha sido registrado en el sistema.
+        - ¿Para qué se hace?
+            - Para notificar al huésped que su pago fue recibido y reflejar el saldo actualizado (monto abonado y monto restante).
+        - ¿Qué roles ejecutan esta tarea?
+            - Sistema Cloudbeds (automático al confirmar el pago). La recepcionista activa el proceso al registrar y confirmar el pago en Cloudbeds.
+        - ¿Cuándo se hace?
+            - Disparador: Confirmación del registro de pago en Cloudbeds.
+            - Frecuencia: Cada vez que se registra y confirma un pago en Cloudbeds.
+        - ¿Cómo se hace?
+            - Paso 1: La recepcionista completa el registro del pago en Cloudbeds.
+            - Paso 2: Al dar confirmar en Cloudbeds, el sistema envía automáticamente un correo electrónico al huésped con el monto abonado y el saldo restante.
+            - No requiere acción manual adicional por parte de recepción.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Pago registrado en Cloudbeds.
+            - Correo electrónico del huésped ingresado correctamente en el sistema.
+        - ¿Qué se genera al terminar?
+            - Correo electrónico automático enviado al huésped desde Cloudbeds con confirmación de pago y saldo pendiente.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Generación y envío automático del correo de confirmación de pago.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.3.2: Pasar la confirmación de los pagos a los huéspedes por correo electrónico
+        - Pendiente.
+
+---
+
+- TAREA 1.4.1: Realización de inventario mensual de mercancía
+    - AS-IS 1.4.1: Realización de inventario mensual de mercancía (Tiendas Mambo y Playera)
+        - ¿Qué es esta tarea?
+            - Conteo físico de toda la mercancía disponible en las tiendas Mambo y Tienda Playera, seguido de la validación del conteo físico contra el inventario registrado en Cloudbeds.
+        - ¿Para qué se hace?
+            - Para verificar que el inventario físico coincida con el registrado en el sistema y detectar diferencias, mermas o salidas no registradas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Una ayudante/operadora (realiza el conteo físico manual).
+            - Adriana (valida el conteo físico contra Cloudbeds y gestiona las diferencias).
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima (se menciona que es mensual pero no se especifica el día exacto).
+            - Frecuencia: Mensual.
+        - ¿Cómo se hace?
+            - Paso 1: La ayudante se desplaza físicamente a las tiendas Mambo y Tienda Playera.
+            - Paso 2: Realiza el conteo manual de cada producto, anotando nombre del artículo y cantidad en un cuaderno.
+            - Paso 3: Adriana recibe el cuaderno y compara el conteo físico con el inventario registrado en Cloudbeds.
+            - Paso 4: Si hay diferencias, Adriana investiga el origen (salidas del dueño, ventas a visitantes no registradas, errores de carga) y realiza los ajustes necesarios en Cloudbeds.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso físico a las tiendas.
+            - Cuaderno para registro manual.
+            - Acceso a Cloudbeds para comparar con el inventario del sistema.
+        - ¿Qué se genera al terminar?
+            - Registro manual en cuaderno con el conteo físico.
+            - Ajustes en Cloudbeds si hay diferencias detectadas.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cuaderno físico**: Registro del conteo manual.
+            - **Cloudbeds**: Comparación del inventario físico con el registrado en sistema; ajustes de inventario.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Diferencias entre físico y sistema**: Pueden originarse en salidas del dueño (señor Alberto) sin registro, ventas a visitantes no huéspedes anotadas en papel pero no descontadas del sistema, u obsequios entregados por gerencia. Adriana gestiona los ajustes manuales en Cloudbeds.
+            - **Mercancía que entra al hotel sin factura**: El dueño compra productos con dinero propio sin que pasen por el proceso de compras/almacén. Esto genera descuadres en el inventario.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Crear en Cloudbeds un perfil de "cliente visitante genérico" para registrar las ventas a personas que no son huéspedes, de modo que el sistema descuente automáticamente el inventario.
+            - Que las salidas del dueño y los obsequios queden registrados en el sistema bajo alguna categoría, para que no generen diferencias en el inventario.
+            - Que toda la mercancía que ingrese a las tiendas pase por almacén con su respectiva factura o documento de entrada, para enlazar el flujo de compras con el inventario en Cloudbeds.
+    - Propuesta 1.4.1: Realización de inventario mensual de mercancía
+        - Pendiente.
+
+---
+
+- TAREA 1.4.2: Gestión y envío de pagos a los propietarios (cuentas externas)
+    - AS-IS 1.4.2: Gestión y envío de pagos a los propietarios (cuentas externas)
+        - ¿Qué es esta tarea?
+            - Recepción y registro de los pagos realizados por clientes en la Tienda Playera, cuyos ingresos van directamente a la cuenta del propietario (el doctor), mediante transferencia o punto de venta propio del propietario.
+        - ¿Para qué se hace?
+            - Para registrar la venta realizada en la Tienda Playera y llevar constancia de los productos vendidos y los pagos correspondientes al propietario.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista en turno (atiende la tienda y emite el recibo de venta).
+            - Adriana (supervisión general).
+        - ¿Cuándo se hace?
+            - Disparador: Un cliente (huésped o visitante) realiza una compra en la Tienda Playera.
+            - Frecuencia: Bajo demanda, cada vez que hay una venta.
+        - ¿Cómo se hace?
+            - Paso 1: El cliente selecciona el producto que desea comprar.
+            - Paso 2: Se completa un recibo físico con: nombre del cliente, número de habitación, cantidad, nombre del producto, costo y firma del huésped y del recepcionista en turno.
+            - Paso 3: El cliente realiza el pago directamente a la cuenta del dueño (el doctor): por transferencia a su cuenta o por punto de venta del doctor.
+            - Paso 4: Si el cliente es huésped y prefiere cargar la compra a su habitación, se acumula para cobrar en el check-out.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Recibo físico de venta (formato en papel).
+            - Terminal de punto de venta del doctor (para pagos con tarjeta).
+            - Datos del cliente: nombre y número de habitación (si es huésped).
+        - ¿Qué se genera al terminar?
+            - Recibo físico de venta firmado por el cliente y el recepcionista.
+            - Pago acreditado en la cuenta del propietario (si se pagó al momento).
+        - ¿Qué sistemas o herramientas usan?
+            - **Recibo físico en papel**: Registro de la venta.
+            - **Punto de venta del doctor**: Para pagos con tarjeta (los fondos van directo a la cuenta del propietario).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.4.2: Gestión y envío de pagos a los propietarios (cuentas externas)
+        - Pendiente.
+
+---
+
+- TAREA 1.4.3: Reporte a Talento Humano de ventas a empleados para descuentos por nómina
+    - AS-IS 1.4.3: Reporte a Talento Humano de ventas a empleados para descuentos por nómina
+        - ¿Qué es esta tarea?
+            - Registro de las compras realizadas por empleados en las tiendas del hotel, con el precio de descuento autorizado por el propietario, y envío del registro a Talento Humano para que gestione el descuento por nómina o el cobro directo.
+        - ¿Para qué se hace?
+            - Para controlar las compras de empleados en las tiendas y asegurar que el pago correspondiente llegue al propietario, ya sea por descuento de nómina o pago directo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista en turno (registro de la venta al empleado).
+            - Adriana (gestiona y envía el reporte a Talento Humano; valida el precio de descuento autorizado por el doctor).
+            - Talento Humano (Andrea): recibe el reporte y gestiona el descuento o cobro.
+        - ¿Cuándo se hace?
+            - Disparador: Un empleado realiza una compra en alguna de las tiendas del hotel.
+            - Frecuencia: Bajo demanda, cada vez que un empleado compra en la tienda.
+        - ¿Cómo se hace?
+            - Paso 1: El empleado solicita un producto de la tienda.
+            - Paso 2: El doctor autoriza el precio con descuento para empleados según el producto.
+            - Paso 3: Se emite un recibo en papel similar al de clientes, pero con nombre y apellido del empleado, número de cédula (en lugar de número de habitación), descripción del producto, precio con descuento y firma del empleado.
+            - Paso 4: El recibo se entrega o envía a Talento Humano para que gestione el pago (anteriormente por descuento de nómina; actualmente se está evaluando el cobro directo al empleado).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Autorización del precio de descuento por parte del doctor.
+            - Recibo físico de venta a empleados.
+            - Datos del empleado: nombre, apellido y cédula.
+        - ¿Qué se genera al terminar?
+            - Recibo físico de venta a empleado, firmado.
+            - Reporte enviado a Talento Humano (físicamente en oficina).
+        - ¿Qué sistemas o herramientas usan?
+            - **Recibo físico en papel**: Registro de la venta al empleado.
+            - **Comunicación directa/física con Talento Humano**: Entrega del recibo en oficina.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Empleados que no vienen a pagar**: Históricamente el cobro era por descuento de nómina. Se está evaluando pasar a cobro directo, pero hay empleados que prefieren el descuento de nómina y no se presentan a pagar directamente.
+            - **Cambio de política en curso**: Talento Humano (Andrea) ha indicado que ya no se puede descontar de nómina, pero no está claro cómo se va a gestionar el cobro directo de manera efectiva.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que administración maneje un fondo o mecanismo que permita descontar directamente de nómina y transferir el monto al propietario, para no depender del pago voluntario del empleado.
+    - Propuesta 1.4.3: Reporte a Talento Humano de ventas a empleados para descuentos por nómina
+        - Pendiente.
+
+---
+
+- TAREA 1.4.4: Registro de movimientos de inventario en Cloudbeds
+    - AS-IS 1.4.4: Registro de movimientos de inventario en Cloudbeds
+        - ¿Qué es esta tarea?
+            - Actualización manual del inventario en Cloudbeds para registrar entradas de nueva mercancía y salidas no generadas por ventas a huéspedes (salidas del dueño, ventas a visitantes externos, obsequios).
+        - ¿Para qué se hace?
+            - Para mantener el inventario de las tiendas actualizado en Cloudbeds, de modo que el sistema refleje con precisión el stock disponible y permita a recepción consultar precios, códigos y cantidades.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal y único para esta tarea).
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de nueva mercancía a las tiendas, o salida de productos no generada por venta a huésped (salida del dueño, venta a visitante, obsequio).
+            - Frecuencia: Bajo demanda, cada vez que hay un movimiento de inventario no registrado automáticamente.
+        - ¿Cómo se hace?
+            - **Para entradas de mercancía:**
+            - Paso 1: La proveedora o el dueño trae nueva mercancía a la tienda.
+            - Paso 2: Adriana registra los productos en Cloudbeds: nombre del producto, cantidad, precio/monto y código.
+            - Paso 3: El sistema queda actualizado para que recepción pueda consultar y vender desde allí.
+            - **Para salidas no generadas por ventas a huéspedes:**
+            - Paso 1: Se identifica la salida: venta a visitante externo anotada en papel, salida del dueño, obsequio.
+            - Paso 2: Adriana descuenta manualmente esa unidad del inventario en Cloudbeds.
+            - Nota: Las ventas a huéspedes registradas en Cloudbeds generan el descuento automático del inventario. Solo las salidas no estándar requieren ajuste manual.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información de la mercancía que ingresa (nombre, cantidad, precio).
+            - Registro físico o en papel de las salidas no estándar (ventas a visitantes, salidas del dueño).
+            - Acceso a Cloudbeds con perfil que permita editar inventario.
+        - ¿Qué se genera al terminar?
+            - Inventario actualizado en Cloudbeds con las entradas y/o salidas correspondientes.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Registro y actualización del inventario de las tiendas (entradas y ajustes manuales de salidas).
+            - **Papel/cuaderno**: Anotación temporal de ventas a visitantes hasta que se descuenten manualmente del sistema.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Salidas del dueño sin registro**: El propietario retira productos sin notificar, lo que genera diferencias entre el inventario físico y el del sistema.
+            - **Mercancía que entra sin factura**: El dueño compra productos con dinero propio sin pasar por almacén/compras, por lo que no existe un documento de entrada formal. Adriana los registra directamente en Cloudbeds al momento de recibirlos.
+            - **No existe un perfil de "visitante" en Cloudbeds**: Las ventas a personas que no son huéspedes no se pueden registrar directamente en el sistema como una transacción; se anotan en papel y se ajustan manualmente.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que exista en Cloudbeds un perfil de "cliente visitante genérico" para registrar ventas a no-huéspedes directamente, de modo que el sistema descuente el inventario automáticamente.
+            - Que toda la mercancía que ingrese a las tiendas pase por almacén con documento de entrada (con o sin factura), para que el flujo de inventario quede trazable desde la compra hasta la venta.
+    - Propuesta 1.4.4: Registro de movimientos de inventario en Cloudbeds
+        - Pendiente.
+
+---
+
+- TAREA 1.4.5: Actualización de lista de precios al público
+    - AS-IS 1.4.5: Actualización de lista de precios al público
+        - ¿Qué es esta tarea?
+            - Actualización manual en Cloudbeds de los precios de los productos de las tiendas, cuando el propietario o la proveedora informan de cambios en los precios.
+        - ¿Para qué se hace?
+            - Para que el sistema refleje los precios actuales de los productos de las tiendas y recepción pueda cobrar correctamente al momento de la venta.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal y único para esta tarea).
+        - ¿Cuándo se hace?
+            - Disparador: Instrucción del propietario (doctor) o de la proveedora de la tienda Mambo indicando un cambio de precio, o llegada de nueva mercancía con etiquetas de precio ya definidas.
+            - Frecuencia: Bajo demanda, cada vez que hay un cambio de precio.
+        - ¿Cómo se hace?
+            - Paso 1: El propietario o la proveedora de Mambo informa el nuevo precio del producto (en algunos casos, la proveedora trae la mercancía con etiquetas de precio ya colocadas).
+            - Paso 2: Adriana accede a Cloudbeds y localiza el producto correspondiente.
+            - Paso 3: Actualiza el precio, la cantidad y/o cualquier otro dato del producto en el sistema.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Instrucción o autorización del propietario o de la proveedora con el nuevo precio.
+            - Acceso a Cloudbeds con perfil que permita editar productos y precios.
+        - ¿Qué se genera al terminar?
+            - Producto actualizado en Cloudbeds con el nuevo precio disponible para la venta.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Edición de productos, precios y cantidades del inventario de las tiendas.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 1.4.5: Actualización de lista de precios al público
+        - Pendiente.
+
+---
+
+- TAREA 2.1.1: Gestión de mensajería a través de Visito
+    - AS-IS 2.1.1: Gestión de mensajería a través de Visito
+        - ¿Qué es esta tarea?
+            - Monitoreo y gestión de los mensajes entrantes de clientes a través de la plataforma Visito, que centraliza WhatsApp e Instagram, con respuestas automáticas vía inteligencia artificial y supervisión humana cuando es necesario.
+        - ¿Para qué se hace?
+            - Para atender de manera centralizada y eficiente las consultas, solicitudes de información y reservas que llegan por los canales digitales del hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (supervisión principal y atención en momentos de alta demanda).
+            - Recepcionista (atención en momentos de baja afluencia).
+            - Operadoras/ayudantes (apoyo cuando están disponibles, aunque con frecuencia se ausentan de la tarea por otras demandas).
+            - Visito (IA): responde automáticamente la mayoría de las consultas.
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un mensaje de cliente por WhatsApp o Instagram.
+            - Frecuencia: Revisión diaria y continua durante el turno.
+        - ¿Cómo se hace?
+            - Paso 1: Los mensajes de clientes llegan a través de WhatsApp e Instagram y son recibidos y respondidos automáticamente por la IA de Visito.
+            - Paso 2: La recepcionista (o Adriana) monitorea en tiempo real lo que responde la IA para verificar que las respuestas sean correctas.
+            - Paso 3: Si la IA comete un error o la respuesta es incorrecta, se cambia a modo manual y se responde directamente.
+            - Paso 4: Si el cliente solicita atención humana o el flujo se complica, un asesor humano toma la conversación.
+            - Paso 5: Si el cliente quiere hacer una reserva y no usa el link automático que la IA le envía, la recepcionista toma los datos y la registra manualmente en Cloudbeds.
+            - Paso 6: Una vez confirmada la reserva, Cloudbeds envía automáticamente el correo de confirmación al cliente con los datos y métodos de pago.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a la plataforma Visito.
+            - Acceso a Cloudbeds para registrar reservas cuando el cliente no usa el link automático.
+            - Conexión a internet estable.
+        - ¿Qué se genera al terminar?
+            - Consulta del cliente atendida (información entregada, reserva creada, duda resuelta).
+            - Reserva registrada en Cloudbeds si el cliente confirmó.
+            - Correo de confirmación automático enviado al cliente desde Cloudbeds.
+        - ¿Qué sistemas o herramientas usan?
+            - **Visito**: Centralización de mensajes de WhatsApp e Instagram; respuestas automáticas por IA; modo manual para atención humana.
+            - **Cloudbeds**: Registro manual de reservas cuando el cliente no completa el proceso por el link.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **La IA responde incorrectamente**: Se toma control manual y se corrige la respuesta directamente en Visito.
+            - **El cliente no confía en el link automático**: La recepcionista toma los datos directamente y registra la reserva en Cloudbeds.
+            - **Solicitudes de huéspedes ya hospedados gestionadas por Visito**: La IA puede responder automáticamente a solicitudes operativas (ej. "necesito agua") sin que recepción se entere a tiempo. Cuando recepción lee el mensaje, ya pasó tiempo y la solicitud puede haberse quedado sin atender realmente.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que exista una persona dedicada exclusivamente a gestionar Visito, especialmente en fines de semana y temporada alta, ya que en esos momentos la recepcionista no tiene tiempo de monitorear la mensajería.
+            - Que para los huéspedes ya hospedados, haya un canal de atención directa con respuesta humana (no automática), posiblemente vinculado al código QR de normativas que se les entrega en el check-in.
+    - Propuesta 2.1.1: Gestión de mensajería a través de Visito
+        - Pendiente.
+
+---
+
+- TAREA 2.1.2: Revisión y respuesta de correos electrónicos corporativos
+    - AS-IS 2.1.2: Revisión y respuesta de correos electrónicos corporativos
+        - ¿Qué es esta tarea?
+            - Revisión diaria de los correos electrónicos corporativos del hotel (recepción, reservas y correo de Adriana) para atender pagos recibidos, solicitudes de reserva y otras comunicaciones de clientes o proveedores.
+        - ¿Para qué se hace?
+            - Para atender solicitudes que llegan por correo electrónico, verificar comprobantes de pago recibidos y gestionar reservas solicitadas por este canal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (revisión principal; tiene los correos abiertos en su computadora personal todo el tiempo).
+            - Recepcionista (también debe revisar, aunque en momentos de alta afluencia Adriana asume esta tarea).
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un correo electrónico (comprobante de pago, solicitud de reserva, consulta).
+            - Frecuencia: Revisión diaria y continua.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisan los correos entrantes en las cuentas de recepción, reservas y de Adriana.
+            - Paso 2: Si hay comprobantes de pago, se reenvían a administración para validación y se continúa con el flujo de registro.
+            - Paso 3: Si hay solicitudes de reserva, se gestiona la reserva en Cloudbeds y se envía la confirmación al cliente.
+            - Paso 4: Si hay solicitudes de información, se responde directamente por correo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a las cuentas de correo corporativo (recepción, reservas, Adriana).
+            - Acceso a Cloudbeds para registrar reservas.
+            - Conexión a internet.
+        - ¿Qué se genera al terminar?
+            - Solicitudes del cliente atendidas (reserva creada, información enviada, pago validado).
+        - ¿Qué sistemas o herramientas usan?
+            - **Correo electrónico corporativo**: Canal de comunicación con clientes.
+            - **Cloudbeds**: Registro de reservas solicitadas por correo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Alta afluencia en recepción**: La recepcionista no tiene tiempo de revisar correos y Adriana asume la tarea completa.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.1.2: Revisión y respuesta de correos electrónicos corporativos
+        - Pendiente.
+
+---
+
+- TAREA 2.1.3: Atención de canales telefónicos
+    - AS-IS 2.1.3: Atención de canales telefónicos
+        - ¿Qué es esta tarea?
+            - Atención de llamadas entrantes al teléfono corporativo del hotel, provenientes de clientes potenciales, huéspedes o agencias, para resolver consultas, confirmar reservas, recibir solicitudes especiales o gestionar reservas por teléfono.
+        - ¿Para qué se hace?
+            - Para atender a personas que prefieren comunicarse por llamada en lugar de mensajería o correo, ofreciendo confirmación, información y atención personalizada.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (rol principal, atiende el teléfono corporativo del hotel).
+            - Adriana (disponible como respaldo; su número personal también es utilizado por algunos clientes y agencias).
+        - ¿Cuándo se hace?
+            - Disparador: Llamada entrante al teléfono corporativo.
+            - Frecuencia: Bajo demanda, durante el horario de operaciones.
+        - ¿Cómo se hace?
+            - Paso 1: Se recibe la llamada en el teléfono corporativo del hotel.
+            - Paso 2: Se atiende la solicitud del llamante, que puede ser:
+                - Confirmación de reserva existente.
+                - Solicitud de información general del hotel.
+                - Creación de una reserva (se toman los datos y se registra en Cloudbeds).
+                - Consulta sobre el estado de un pago.
+                - Solicitud especial (grupos, mascotas, comidas, requerimientos específicos).
+            - Paso 3: Si es una reserva, se registra en Cloudbeds y se envía confirmación por correo.
+            - Paso 4: Si es una consulta de pago, se verifica en Cloudbeds y se comunica el estado al cliente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Teléfono corporativo del hotel.
+            - Acceso a Cloudbeds para verificar reservas y registrar nuevas solicitudes.
+        - ¿Qué se genera al terminar?
+            - Solicitud del cliente atendida (información brindada, reserva creada, duda resuelta).
+        - ¿Qué sistemas o herramientas usan?
+            - **Teléfono corporativo**: Canal de atención.
+            - **Cloudbeds**: Verificación y registro de reservas.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Huéspedes que llaman desde dentro del hotel**: No hay teléfonos en las habitaciones. Los huéspedes utilizan Visito (WhatsApp) para comunicarse con recepción desde dentro del hotel, aunque la IA puede interceptar el mensaje y responder automáticamente sin que recepción lo vea a tiempo.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que para los huéspedes ya hospedados exista un canal de atención directa con respuesta humana garantizada (no mediada por la IA de Visito), vinculado posiblemente al código QR de normativas.
+    - Propuesta 2.1.3: Atención de canales telefónicos
+        - Pendiente.
+
+---
+
+- TAREA 2.1.4: Elaboración de cotizaciones y creación de reservas
+    - AS-IS 2.1.4: Elaboración de cotizaciones y creación de reservas
+        - ¿Qué es esta tarea?
+            - Envío de cotización al cliente (monto por habitación/noches) y registro formal de la reserva en Cloudbeds una vez que el cliente confirma su intención de hospedarse y se define la fecha.
+        - ¿Para qué se hace?
+            - Para comprometer la habitación al cliente, iniciar el proceso de cobro del abono del 50% y generar la confirmación automática de reserva.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal en reservas).
+            - Recepcionista (ejecuta cuando Adriana no está disponible).
+        - ¿Cuándo se hace?
+            - Disparador: El cliente confirma la fecha, cantidad de personas y desea realizar la reserva. No se crea la reserva hasta tener la información definitiva y la confirmación del cliente.
+            - Frecuencia: Bajo demanda, cada vez que un cliente confirma una reserva.
+        - ¿Cómo se hace?
+            - Paso 1: Se envía la cotización al cliente por el mismo canal por donde se comunicó (Visito/WhatsApp u otro).
+            - Paso 2: El cliente confirma que desea reservar.
+            - Paso 3: Se solicitan los datos del cliente: nombre, cédula, dirección, teléfono, correo.
+            - Paso 4: Se registra la reserva en Cloudbeds con todos los datos.
+            - Paso 5: Cloudbeds envía automáticamente al cliente un correo electrónico con la confirmación de la reserva y los métodos de pago.
+            - Paso 6: El cliente tiene 24 horas para cancelar el 50% de abono.
+            - Paso 7: Se gestiona la recepción y validación del abono (ver tarea 1.3.1).
+            - **Para excepciones (Venetur, institucionales, Family & Friends):**
+            - Se omite el paso de cotización y pago de abono.
+            - Para Venetur: llega una carta con los datos del huésped y las fechas. Se crea la reserva directamente.
+            - Para institucionales: el jefe envía un mensaje con los datos del huésped.
+            - Para Family & Friends: el señor Rafael informa directamente la tarifa especial, el módulo y los datos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Datos del cliente: nombre, cédula, dirección, teléfono, correo.
+            - Disponibilidad de habitaciones verificada en Cloudbeds.
+            - Tarifa del día (en Cloudbeds).
+            - Para excepciones: carta de Venetur, mensaje del jefe o instrucción directa del señor Rafael.
+        - ¿Qué se genera al terminar?
+            - Reserva registrada en Cloudbeds.
+            - Correo automático de confirmación enviado al cliente con datos de la reserva y métodos de pago.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Registro de la reserva y envío automático del correo de confirmación.
+            - **Visito / WhatsApp**: Canal por donde se envía la cotización y se comunica con el cliente.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **El cliente no puede pagar el abono en las próximas 24 horas**: Se puede colocar una nota en la reserva indicando la fecha comprometida de pago, con autorización de la supervisora.
+            - **Reservas institucionales, Venetur y Family & Friends**: No requieren pago. Se crean sin abono y se les informa al equipo.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.1.4: Elaboración de cotizaciones y creación de reservas
+        - Pendiente.
+
+---
+
+- TAREA 2.1.5: Informar al personal del departamento de recepción acerca de las características e informaciones de cada reserva
+    - AS-IS 2.1.5: Informar al personal de recepción sobre características de cada reserva
+        - ¿Qué es esta tarea?
+            - Comunicación de información relevante de una reserva al equipo de recepción, cuando hay detalles especiales que deben conocerse antes de la llegada del huésped (trato VIP, requerimientos especiales, grupo, etc.).
+        - ¿Para qué se hace?
+            - Para que el equipo de recepción esté preparado y brinde la atención adecuada a cada huésped según sus características o necesidades especiales.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (emite la información al equipo).
+            - Recepcionista / ayudante (reciben la información y la aplican en la atención).
+        - ¿Cuándo se hace?
+            - Disparador: Existe una reserva con información especial que el equipo debe conocer antes de la llegada del huésped.
+            - Frecuencia: Bajo demanda, cuando hay reservas con características particulares.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana identifica que una reserva tiene información relevante que debe compartirse con el equipo.
+            - Paso 2: Comunica la información al equipo de recepción por uno de estos medios:
+                - Directamente en persona.
+                - Por WhatsApp al grupo de recepción.
+                - Por radio/walkie-talkie.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información de la reserva en Cloudbeds.
+            - WhatsApp del grupo de recepción o walkie-talkie disponible.
+        - ¿Qué se genera al terminar?
+            - Equipo de recepción informado sobre las características de la reserva.
+        - ¿Qué sistemas o herramientas usan?
+            - **WhatsApp** (grupo de recepción): Medio principal de comunicación escrita.
+            - **Radio / walkie-talkie**: Medio alternativo de comunicación inmediata.
+            - **Comunicación directa en persona**: Cuando Adriana está presente en recepción.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.1.5: Informar al personal de recepción sobre características de cada reserva
+        - Pendiente.
+
+---
+
+- TAREA 2.1.6: Verificar y actualizar la disponibilidad de habitaciones para evitar overbooking
+    - AS-IS 2.1.6: Verificar y actualizar la disponibilidad de habitaciones
+        - ¿Qué es esta tarea?
+            - Revisión del calendario de reservas en Cloudbeds para asignar habitaciones a cada reserva, verificar que estén en condiciones físicas adecuadas, y evitar dobles asignaciones o sobrereservas.
+        - ¿Para qué se hace?
+            - Para garantizar que cada reserva tenga una habitación asignada en buen estado, y que no se venda una habitación que ya esté ocupada, bloqueada o en mal estado.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal).
+            - Recepcionista (apoya, especialmente al momento de crear reservas).
+        - ¿Cuándo se hace?
+            - Disparador: Al momento de crear una reserva, y especialmente antes de los fines de semana o llegadas grupales.
+            - Frecuencia: Antes de cada reserva confirmada; con mayor rigor antes de fines de semana y temporadas altas.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisa el calendario de Cloudbeds para ver disponibilidad de habitaciones.
+            - Paso 2: Se asigna una habitación específica a la reserva en el sistema.
+            - Paso 3: Se verifica físicamente (o a través del reporte de ama de llaves) que la habitación asignada esté en buen estado y lista para recibir al huésped.
+            - Paso 4: Si la habitación presenta algún problema (daño, mantenimiento pendiente), se reasigna a otra disponible.
+            - Paso 5: Para clientes con requerimientos especiales (VIP, discapacidad, mascotas), se asigna la habitación según el criterio correspondiente:
+                - VIP: mejores habitaciones.
+                - Discapacidad: módulo de piso bajo.
+                - Mascotas: módulo 6.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Cloudbeds (módulo calendario).
+            - Comunicación con ama de llaves para verificar estado físico de habitaciones.
+        - ¿Qué se genera al terminar?
+            - Habitación asignada en Cloudbeds para cada reserva confirmada.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds** (módulo calendario): Visualización de disponibilidad y asignación de habitaciones.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Habitación asignada que se daña entre la reserva y la llegada del huésped**: Se reasigna automáticamente a otra habitación disponible.
+            - **El sistema dice que la habitación está disponible pero físicamente no lo está**: El estado del sistema no siempre refleja la realidad porque ama de llaves no siempre actualiza en tiempo real. La recepcionista debe verificar físicamente o confirmar con ama de llaves antes de asignar.
+            - **Habitación vendida sin colchón**: Ha ocurrido que recepción asignó una habitación cuyo colchón fue retirado para mantenimiento sin notificación. Ahora ama de llaves tiene la obligación de comunicar cualquier cambio en el estado de habitaciones directamente a recepción.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que ama de llaves actualice el estado de las habitaciones en tiempo real en Cloudbeds, para poder confiar en el sistema sin necesidad de verificación física adicional.
+    - Propuesta 2.1.6: Verificar y actualizar la disponibilidad de habitaciones
+        - Pendiente.
+
+---
+
+- TAREA 2.1.7: Brindar soporte en la elaboración de ingresos y ocupación
+    - AS-IS 2.1.7: Brindar soporte en la elaboración de ingresos y ocupación
+        - ¿Qué es esta tarea?
+            - Apoyo y asesoría que brinda Adriana al equipo de recepción ante dudas, errores o situaciones especiales que se presentan durante el registro de pagos, carga en sistemas o atención al huésped; incluyendo la gestión de cancelaciones, reintegros y cambios de fecha.
+        - ¿Para qué se hace?
+            - Para garantizar que los registros de pagos, check-in y check-out se realicen correctamente, y para resolver situaciones que el recepcionista no puede manejar de forma autónoma.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal de soporte).
+            - Recepcionista (quien consulta o escala la situación).
+        - ¿Cuándo se hace?
+            - Disparador: El recepcionista tiene una duda, detecta un error en un registro, recibe una consulta compleja, o se presenta un caso especial (cancelación, reintegro, pago con tasa incorrecta, monto incorrecto, cambio de fecha de reserva).
+            - Frecuencia: Bajo demanda, durante cualquier momento de la operación.
+        - ¿Cómo se hace?
+            - Paso 1: La recepcionista consulta a Adriana por WhatsApp o directamente en persona (Adriana trabaja habitualmente en recepción).
+            - Paso 2: Adriana analiza el caso: error de pago, pago en tasa incorrecta (dólar en lugar de euro), monto diferente al esperado, duda sobre método de pago, solicitud de cancelación con posible reintegro, cambio de fecha de reserva.
+            - Paso 3: Adriana indica la acción correctiva o la ejecuta directamente.
+            - Paso 4: Si el caso requiere una devolución o reintegro, Adriana consulta con presidencia/gerencia general según la política aplicable.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comunicación directa (presencial o WhatsApp) con Adriana.
+            - Acceso a Cloudbeds y Odoo para verificar y corregir registros.
+        - ¿Qué se genera al terminar?
+            - Error corregido o situación especial resuelta.
+            - En casos de cancelación: definición de si aplica reintegro, cambio de fecha u otra solución.
+        - ¿Qué sistemas o herramientas usan?
+            - **WhatsApp**: Canal principal de consulta entre recepcionistas y Adriana.
+            - **Cloudbeds**: Verificación y corrección de registros de reservas y pagos.
+            - **Odoo**: Corrección de registros contables si aplica.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.1.7: Brindar soporte en la elaboración de ingresos y ocupación
+        - Pendiente.
+
+---
+
+- TAREA 2.1.8: Apoyar en el registro de huéspedes, si es necesario
+    - AS-IS 2.1.8: Apoyar en el registro de huéspedes
+        - ¿Qué es esta tarea?
+            - Soporte directo de Adriana en el proceso de registro y check-in de huéspedes cuando la recepcionista necesita asistencia, especialmente con pasantes, personal nuevo o en situaciones de alta demanda.
+        - ¿Para qué se hace?
+            - Para garantizar que el registro de huéspedes se realice correctamente cuando el personal en turno requiere orientación o apoyo adicional.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol de apoyo).
+            - Recepcionista/pasante (quien recibe el apoyo).
+        - ¿Cuándo se hace?
+            - Disparador: La recepcionista o pasante requiere ayuda durante el registro de un huésped.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: La recepcionista o pasante solicita apoyo a Adriana (en persona o por WhatsApp).
+            - Paso 2: Adriana brinda orientación o ejecuta directamente los pasos necesarios en el sistema o en la atención al huésped.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Presencia de Adriana en recepción o disponibilidad por WhatsApp.
+            - Acceso a Cloudbeds.
+        - ¿Qué se genera al terminar?
+            - Registro del huésped completado correctamente.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Registro del huésped.
+            - **WhatsApp**: Canal de consulta.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.1.8: Apoyar en el registro de huéspedes
+        - Pendiente.
+- TAREA 2.2.1: Gestión de cuentas de Agencias de Viajes y operadores de turismo
+    - AS-IS 2.2.1: Gestión de cuentas de Agencias de Viajes y operadores de turismo
+        - ¿Qué es esta tarea?
+            - Atención y gestión de la relación con agencias de viajes y operadores turísticos que desean vender el hotel, incluyendo la solicitud de documentación legal, la coordinación con presidencia para autorizaciones y el manejo de la estructura de comisiones.
+        - ¿Para qué se hace?
+            - Para establecer y mantener relaciones comerciales con agencias que puedan traer grupos o clientes al hotel, gestionando la comisión correspondiente sobre las ventas generadas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal; gestiona directamente con agencias y coordina con presidencia).
+            - Presidencia / señor Rafael (autoriza las comisiones y las condiciones para cada agencia).
+            - Departamento Legal (debería formalizar contratos; actualmente no los produce).
+        - ¿Cuándo se hace?
+            - Disparador: Una agencia de viajes o tour operador contacta al hotel para solicitar trabajar con ellos o para hacer una reserva grupal.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: La agencia contacta al hotel por correo electrónico, Instagram, Visito, WhatsApp o llamada.
+            - Paso 2: Adriana solicita a la agencia la documentación requerida por el departamento legal (RIF, registro mercantil, etc.).
+            - Paso 3: La agencia envía los documentos por correo electrónico.
+            - Paso 4: Adriana valida que los documentos estén completos y los reenvía al departamento legal.
+            - Paso 5: Adriana consulta con presidencia (señor Rafael) si autoriza trabajar con la agencia y bajo qué condiciones.
+            - Paso 6: Con la autorización de presidencia, se define la comisión aplicable:
+                - 10% para agencias minoristas (sobre la base imponible, no sobre el monto total).
+                - 20% para agencias mayoristas (sobre la base imponible).
+            - Paso 7: Se atienden las solicitudes de la agencia (tarifas, disponibilidad, promociones) por correo electrónico o WhatsApp.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Lista de documentos requeridos por departamento legal.
+            - Autorización de presidencia para cada agencia.
+            - Acceso a correo electrónico y Visito/WhatsApp.
+        - ¿Qué se genera al terminar?
+            - Agencia incorporada como canal de ventas con comisión definida (actualmente sin contrato formal).
+        - ¿Qué sistemas o herramientas usan?
+            - **Correo electrónico**: Solicitud y recepción de documentación; envío de información de tarifas.
+            - **WhatsApp / Visito**: Canal alternativo de comunicación con agencias.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **No existe contrato formal con ninguna agencia**: El departamento legal recibe la documentación pero no ha generado contratos. Las autorizaciones son verbales, a través de presidencia.
+            - **Agencias que piden información de tarifas periódicamente**: Adriana no siempre puede atender estas solicitudes de manera completa por falta de una guía de tarifas estandarizada que pueda compartirse sin necesidad de consultar a presidencia cada vez.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con una tabla o matriz de tarifas y condiciones que Adriana pueda compartir directamente con las agencias sin necesidad de consultar a presidencia para cada solicitud, incluyendo reglas claras por cantidad de habitaciones, temporada y método de pago.
+            - Que el departamento legal formalice los contratos con cada agencia para que la relación comercial quede correctamente respaldada.
+    - Propuesta 2.2.1: Gestión de cuentas de Agencias de Viajes y operadores de turismo
+        - Pendiente.
+
+---
+
+- TAREA 2.2.2: Coordinación de grupos y eventos (Bodas, cumpleaños, graduaciones)
+    - AS-IS 2.2.2: Coordinación de grupos y eventos
+        - ¿Qué es esta tarea?
+            - Atención y negociación con clientes que solicitan el hotel para eventos privados o grupales (bodas, cumpleaños, graduaciones, grupos de amigos), incluyendo la gestión de descuentos, servicios adicionales (salón, sonido, torta) y alquiler de espacios.
+        - ¿Para qué se hace?
+            - Para gestionar reservas de grupos y eventos que requieren condiciones especiales (tarifas, descuentos, servicios adicionales) y coordinar su atención con gerencia.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (gestiona y negocia directamente con el cliente).
+            - Presidencia/Gerencia general (autoriza descuentos y tarifas especiales).
+        - ¿Cuándo se hace?
+            - Disparador: Un cliente solicita el hotel para un grupo o evento privado.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: El cliente contacta al hotel por cualquier canal (Visito, WhatsApp, correo, llamada, Instagram, incluso el teléfono personal de Adriana).
+            - Paso 2: Adriana recibe la solicitud y recopila los requerimientos del grupo/evento: número de personas, fechas, servicios requeridos (salón, sonido, torta, alquiler de espacios, acceso a playa, parrilla, embarcadero).
+            - Paso 3: Adriana consulta con presidencia/gerencia general la tarifa especial o descuento aplicable.
+            - Paso 4: Una vez autorizada la tarifa, se comunica al cliente.
+            - Paso 5: Si el cliente confirma, se realiza la reserva en Cloudbeds.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Disponibilidad de habitaciones en Cloudbeds.
+            - Autorización de presidencia para tarifas especiales y descuentos.
+        - ¿Qué se genera al terminar?
+            - Reserva grupal registrada en Cloudbeds (si el cliente confirma).
+            - Términos acordados comunicados al cliente.
+        - ¿Qué sistemas o herramientas usan?
+            - **Visito / WhatsApp / correo / llamada**: Canales de comunicación con el cliente.
+            - **Cloudbeds**: Registro de la reserva grupal una vez confirmada.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Espera de autorización de presidencia**: En el tiempo que tarda Adriana en obtener la autorización y comunicarla al cliente, algunos grupos se pierden por la demora.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con una tabla de descuentos predefinida según cantidad de habitaciones, método de pago y temporada, de modo que Adriana pueda responder al cliente de forma inmediata sin necesitar autorización caso por caso.
+    - Propuesta 2.2.2: Coordinación de grupos y eventos
+        - Pendiente.
+
+---
+
+- TAREA 2.2.3: Protocolo de atención a Clientes VIP
+    - AS-IS 2.2.3: Protocolo de atención a Clientes VIP
+        - ¿Qué es esta tarea?
+            - Atención personalizada y diferenciada brindada a huéspedes VIP, que incluye acompañamiento físico a la habitación, comunicación previa al equipo sobre requerimientos especiales y posibles detalles de bienvenida.
+        - ¿Para qué se hace?
+            - Para ofrecer una experiencia de mayor calidad a huéspedes que lo requieren, como figuras públicas, autoridades o clientes frecuentes especiales.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (coordina y lidera la atención VIP).
+            - Recepcionista / ayudante (ejecuta el acompañamiento físico si Adriana no está disponible).
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un huésped identificado como VIP.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana informa al equipo de recepción previamente sobre la llegada del huésped VIP y los detalles especiales que deben atenderse (por WhatsApp al grupo de recepción o directamente).
+            - Paso 2: Al llegar el huésped, se le brinda una atención presencial más personalizada.
+            - Paso 3: Se le acompaña físicamente hasta la habitación.
+            - Paso 4: Si aplica, se coordinan detalles adicionales (cóctel de bienvenida, habitación especial, obsequio).
+            - Nota: No utiliza sistemas adicionales; es un proceso completamente presencial y de comunicación directa.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información previa sobre el huésped VIP (comunicada por Adriana o gerencia).
+            - Disponibilidad de personal para el acompañamiento.
+        - ¿Qué se genera al terminar?
+            - Huésped VIP atendido y acompañado a su habitación con atención diferenciada.
+        - ¿Qué sistemas o herramientas usan?
+            - **WhatsApp** (grupo de recepción): Comunicación previa de los detalles del huésped VIP al equipo.
+            - No se utilizan sistemas adicionales para la ejecución de esta tarea.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.2.3: Protocolo de atención a Clientes VIP
+        - Pendiente.
+
+---
+
+- TAREA 2.2.4: Atención a agentes gubernamentales
+    - AS-IS 2.2.4: Atención a agentes gubernamentales
+        - ¿Qué es esta tarea?
+            - Atención especial a huéspedes que son funcionarios gubernamentales (ministros, gobernadores u otras autoridades), que puede requerir el mismo tratamiento diferenciado que un cliente VIP.
+        - ¿Para qué se hace?
+            - Para atender adecuadamente a huéspedes con cargos o representaciones gubernamentales, que pueden requerir condiciones especiales de estadía o protocolo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal, según lo indicado en la sesión).
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de un agente o funcionario gubernamental al hotel.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Se aplica el mismo protocolo que para clientes VIP (tarea 2.2.3). No se especificó un proceso diferenciado en la sesión.
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.2.4: Atención a agentes gubernamentales
+        - Pendiente.
+
+---
+
+- TAREA 2.3.1: Acompañamiento a conocer las instalaciones del hotel
+    - AS-IS 2.3.1: Acompañamiento a conocer las instalaciones del hotel
+        - ¿Qué es esta tarea?
+            - Recorrido guiado por las instalaciones del hotel para posibles huéspedes (prospectos) que llegan por puerta y desean conocer el lugar antes de decidir si se hospedan o realizan una reserva.
+        - ¿Para qué se hace?
+            - Para mostrar las instalaciones a personas interesadas en hospedarse, facilitar su decisión de compra y aumentar la probabilidad de concretar una reserva o check-in directo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (cuando tiene tiempo disponible).
+            - Operadora/ayudante multifuncional (cuando Adriana no puede hacerlo; rol principal en práctica).
+            - Recepcionista (excepcionalmente, aunque Adriana prefiere que no se mueva de recepción para no perder el hilo de sus otras tareas).
+        - ¿Cuándo se hace?
+            - Disparador: Un posible huésped llega por puerta y solicita conocer las instalaciones antes de reservar o hacer check-in.
+            - Frecuencia: Bajo demanda; ocurre principalmente con clientes que llegan por puerta, no por reserva previa.
+        - ¿Cómo se hace?
+            - Paso 1: El posible huésped llega al hotel y expresa interés en conocer las instalaciones.
+            - Paso 2: Adriana o la operadora acompaña al prospecto en un recorrido por las áreas del hotel.
+            - Paso 3: Para clientes que contactaron previamente por WhatsApp o Visito, se atienden solicitudes de fotografías de las instalaciones por ese mismo canal.
+            - Nota: No se utilizan sistemas; es un proceso completamente presencial.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Disponibilidad de personal para realizar el recorrido.
+            - Acceso a las áreas del hotel para mostrar.
+        - ¿Qué se genera al terminar?
+            - Prospecto informado sobre las instalaciones; posible conversión a reserva o check-in.
+        - ¿Qué sistemas o herramientas usan?
+            - No se utilizan sistemas. Es un proceso completamente presencial.
+            - **Visito / WhatsApp**: Para envío de fotografías de las instalaciones a clientes que lo solicitan de forma remota.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.3.1: Acompañamiento a conocer las instalaciones del hotel
+        - Pendiente.
+
+---
+
+- TAREA 2.3.2: Resolución de conflictos (Quejas, sugerencias, cambios de habitación)
+    - AS-IS 2.3.2: Resolución de conflictos
+        - ¿Qué es esta tarea?
+            - Atención y resolución de quejas, sugerencias o solicitudes de cambio de habitación presentadas por huéspedes durante su estadía.
+        - ¿Para qué se hace?
+            - Para mantener la satisfacción del huésped y resolver situaciones problemáticas que puedan afectar su experiencia en el hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Recepcionista (primer nivel de atención para casos simples, como cambios de habitación, con autorización de Adriana).
+            - Adriana (segundo nivel; atiende casos complejos, conflictos con el huésped, o situaciones que requieren autorización o criterio gerencial).
+            - Gerencia General (tercer nivel; se llama cuando el conflicto es muy grave, cuando hay insultos, cuando se requiere la salida del huésped o una devolución de dinero significativa).
+        - ¿Cuándo se hace?
+            - Disparador: Un huésped presenta una queja, sugerencia o solicita un cambio de habitación.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: La recepcionista recibe la queja o solicitud del huésped.
+            - Paso 2: Si es un caso simple (cambio de habitación por razón menor), la recepcionista lo resuelve con autorización de Adriana (en persona o por WhatsApp).
+            - Paso 3: Si el caso es más complejo (huésped insatisfecho, reclamo sobre consumos, daños, etc.), Adriana se presenta en recepción para atenderlo directamente.
+            - Paso 4: Adriana evalúa el caso y determina la solución (cambio de habitación, descuento, compensación, extensión de estadía, etc.).
+            - Paso 5: Si requiere autorización de gerencia (devolución de dinero significativa, situación extrema), Adriana llama directamente a gerencia general.
+            - Paso 6: Si hay cambio de habitación, se actualiza en Cloudbeds.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Disponibilidad de Adriana para atender casos complejos.
+            - Acceso a Cloudbeds para gestionar cambios de habitación.
+            - Comunicación directa con gerencia general cuando el caso lo requiere.
+        - ¿Qué se genera al terminar?
+            - Queja o conflicto resuelto.
+            - Cambio de habitación registrado en Cloudbeds si aplica.
+            - Compensación o descuento autorizado si aplica.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Para gestionar cambios de habitación.
+            - **WhatsApp**: Comunicación entre recepcionista, Adriana y gerencia.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Caso muy grave (huésped agresivo, insultos)**: Se llama directamente a gerencia general.
+            - **Situación que requiere devolución de dinero**: Se escala a gerencia general para autorización.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que no sean estos casos los que escalen hasta Adriana; que el recepcionista tenga mayor autonomía para resolver situaciones cotidianas. (Expresado como frustración implícita: "La excepción sería que no tuviera que atenderlo yo, pero me toca".)
+    - Propuesta 2.3.2: Resolución de conflictos
+        - Pendiente.
+
+---
+
+- TAREA 2.3.3: Aplicación y autorización de descuentos especiales
+    - AS-IS 2.3.3: Aplicación y autorización de descuentos especiales
+        - ¿Qué es esta tarea?
+            - Gestión y autorización de descuentos aplicados a huéspedes en situaciones especiales: compensación por mala experiencia, descuento por grupo, pago en efectivo, u otros acuerdos puntuales.
+        - ¿Para qué se hace?
+            - Para compensar al huésped cuando vivió una mala experiencia o para cerrar una venta con condiciones especiales, manteniendo la satisfacción del cliente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (evalúa el caso y propone la compensación).
+            - Gerencia General / Presidencia (autoriza siempre el descuento; no hay descuentos que Adriana pueda aplicar de forma autónoma sin consultar).
+        - ¿Cuándo se hace?
+            - Disparador: Huésped con queja que requiere compensación, grupo o cliente que negocia condiciones especiales, o situación donde se decide ofrecer un beneficio adicional.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana identifica el caso que requiere descuento o compensación (queja justificada, negociación de grupo, etc.).
+            - Paso 2: Adriana contacta a gerencia general o presidencia (en persona o por WhatsApp) para informar el caso y solicitar autorización del descuento.
+            - Paso 3: Gerencia/presidencia define el tipo de descuento o compensación (descuento en consumo, una noche adicional, extensión de estadía, descuento en tarifa, etc.).
+            - Paso 4: Adriana comunica al huésped la compensación acordada.
+            - Paso 5: Se aplica el descuento o compensación en Cloudbeds.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Autorización de gerencia/presidencia.
+            - Acceso a Cloudbeds para aplicar el ajuste.
+        - ¿Qué se genera al terminar?
+            - Descuento o compensación comunicada al huésped.
+            - Ajuste registrado en Cloudbeds.
+        - ¿Qué sistemas o herramientas usan?
+            - **WhatsApp**: Comunicación con gerencia para autorización.
+            - **Cloudbeds**: Aplicación del descuento en la reserva.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con una tabla de descuentos predefinida (similar a la mencionada en tarea 2.2.2) que indique qué descuento aplica según el tipo de situación, sin necesidad de consultar a gerencia para cada caso.
+    - Propuesta 2.3.3: Aplicación y autorización de descuentos especiales
+        - Pendiente.
+
+---
+
+- TAREA 2.4.1: Elaboración de horarios del departamento
+    - AS-IS 2.4.1: Elaboración de horarios del departamento
+        - ¿Qué es esta tarea?
+            - Planificación y elaboración del horario de trabajo del personal de recepción, asegurando que no queden turnos sin cubrir, y envío del borrador a Talento Humano para su formalización.
+        - ¿Para qué se hace?
+            - Para garantizar que recepción tenga personal en todo momento, evitar huecos en los turnos y organizar la distribución del equipo disponible (recepcionistas, pasantes, ayudantes).
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (elabora el horario y lo envía a Talento Humano).
+            - Talento Humano (recibe el borrador, lo formaliza en su formato y lo gestiona).
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima (no se especificó la periodicidad exacta de elaboración).
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana evalúa la disponibilidad del personal y las necesidades de cobertura por turno.
+            - Paso 2: Elabora el horario en un formato propio (no se especifica si es Excel u otro).
+            - Paso 3: Envía el borrador a Talento Humano.
+            - Paso 4: Talento Humano lo convierte a su formato oficial y lo gestiona.
+            - Nota: En la práctica, cuando no hay personal suficiente, los huecos los cubre la recepcionista con horas extras o Adriana misma ejerce el rol de recepcionista.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información sobre disponibilidad del personal (recepcionistas, pasantes, operadoras).
+            - Formato de horario (propio de Adriana).
+        - ¿Qué se genera al terminar?
+            - Borrador de horario enviado a Talento Humano.
+            - Horario formal elaborado por Talento Humano.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima (no se mencionó si usa Excel u otro sistema para elaborar el horario).
+            - **Comunicación directa / entrega física**: Envío del borrador a la oficina de Talento Humano.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Falta de personal**: Los turnos sin cubrir los asume la recepcionista con horas extras o Adriana ejerce el rol de recepcionista directamente.
+            - **Pasantes disponibles**: Se les asigna a áreas y horarios específicos, siempre con apoyo de Adriana.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.4.1: Elaboración de horarios del departamento
+        - Pendiente.
+
+---
+
+- TAREA 2.4.2: Orientación a pasantes o personal de nuevo ingreso
+    - AS-IS 2.4.2: Orientación a pasantes o personal de nuevo ingreso
+        - ¿Qué es esta tarea?
+            - Capacitación integral del personal nuevo o pasantes del departamento de recepción, cubriendo sistemas (Cloudbeds, Odoo, Teams), atención al cliente, normas del hotel y procesos operativos, de manera presencial y práctica.
+        - ¿Para qué se hace?
+            - Para que el personal nuevo pueda ejecutar las tareas de recepción de manera autónoma y con los estándares de calidad definidos por el hotel.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (rol principal de capacitación).
+            - Recepcionista (apoya en la enseñanza de los sistemas cuando tiene disponibilidad).
+            - Operadoras/ayudantes (reciben capacitación en tareas operativas físicas: llaves, corte de papel, etiquetas, etc.).
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de un nuevo empleado o pasante al departamento de recepción.
+            - Frecuencia: Bajo demanda, cada vez que hay un nuevo ingreso.
+        - ¿Cómo se hace?
+            - Paso 1: Se entregan las normas del hotel impresas al nuevo personal para su lectura y estudio.
+            - Paso 2: Adriana explica el proceso de Cloudbeds completo: reservas, check-in, disponibilidad, tarifas, registro de pagos, inventario, llaves electrónicas.
+            - Paso 3: Adriana explica el proceso de Odoo: registro de clientes nuevos, registro de pagos en Contabilidad → Recibo de cliente.
+            - Paso 4: Adriana explica el proceso de Teams: cómo copiar y pegar la información de pagos, cómo adjuntar comprobantes.
+            - Paso 5: Se enseña el proceso de elaboración de llaves electrónicas (TT Hotel y Time Locks).
+            - Paso 6: Se enseña el proceso de atención al cliente: cómo hablar, cómo pararse, cómo atender una llamada, lenguaje apropiado, trato al huésped.
+            - Paso 7: Se hace una simulación práctica donde el nuevo personal expone las normativas del hotel como si Adriana fuera un cliente.
+            - Paso 8: Para operadoras, se enseñan tareas físicas: manejo de llaves, etiquetado, corte de materiales, entre otros.
+            - Nota: No existe un instructivo actualizado y disponible; la capacitación depende del conocimiento de Adriana. Existe referencia de un instructivo de check-in elaborado con Andrea (Talento Humano), pero no está disponible ni en físico ni en digital.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Normas del hotel impresas.
+            - Presencia de Adriana durante el proceso de capacitación.
+            - Acceso a Cloudbeds, Odoo y Teams para la demostración práctica.
+        - ¿Qué se genera al terminar?
+            - Personal nuevo o pasante capacitado para ejecutar las tareas de recepción.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Demostración práctica de reservas, check-in, cobros, llaves y disponibilidad.
+            - **Odoo**: Demostración de registro de clientes y pagos.
+            - **Microsoft Teams**: Demostración del proceso de reporte de ingresos.
+            - **Normas del hotel en físico (papel impreso)**: Material de estudio entregado al personal nuevo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con un instructivo actualizado y disponible (en digital) que sirva como guía de referencia para el personal nuevo, de modo que la capacitación no dependa exclusivamente de la disponibilidad y memoria de Adriana.
+    - Propuesta 2.4.2: Orientación a pasantes o personal de nuevo ingreso
+        - Pendiente.
+
+---
+
+- TAREA 2.4.3: Planificación estratégica de equipos para temporadas altas
+    - AS-IS 2.4.3: Planificación estratégica de equipos para temporadas altas
+        - ¿Qué es esta tarea?
+            - Planificación anticipada del equipo de recepción para periodos de alta demanda, asegurando que haya suficiente personal capacitado para cubrir el volumen de check-ins, check-outs y operaciones simultáneas.
+        - ¿Para qué se hace?
+            - Para evitar colapsos operativos durante temporada alta, garantizando que recepción cuente con personal suficiente y entrenado.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (planifica y coordina).
+        - ¿Cuándo se hace?
+            - Disparador: Anticipación a una temporada alta o periodo de alta ocupación.
+            - Frecuencia: Antes de cada temporada alta.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana identifica el periodo de alta demanda próximo.
+            - Paso 2: Define la cantidad de personas necesarias por turno: al menos dos personas que conozcan el sistema (recepcionistas) y una operadora por turno.
+            - Paso 3: Planifica capacitaciones previas a la temporada para el personal que ingresará o que necesita refuerzo.
+            - Paso 4: Elabora el horario ampliado y lo comunica a Talento Humano.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Conocimiento del calendario de ocupación (temporadas altas).
+            - Personal disponible o a incorporar para la temporada.
+        - ¿Qué se genera al terminar?
+            - Equipo de recepción ampliado y capacitado para la temporada alta.
+            - Horario especial de temporada enviado a Talento Humano.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Durante temporadas altas**: Nadie revisa la mensajería de Visito porque todo el personal está ocupado con check-ins y check-outs. La mensajería queda desatendida incluso cuando hay operadoras asignadas, porque estas son requeridas para otras tareas físicas.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que en temporada alta haya una persona dedicada exclusivamente a gestionar la mensajería (Visito), separada del equipo operativo de recepción.
+    - Propuesta 2.4.3: Planificación estratégica de equipos para temporadas altas
+        - Pendiente.
+
+---
+
+- TAREA 2.4.4: Control de redobles y gestión de días libres trabajados
+    - AS-IS 2.4.4: Control de redobles y gestión de días libres trabajados
+        - ¿Qué es esta tarea?
+            - Registro semanal de las horas extras, redobles y días libres trabajados por el personal de recepción, y envío de ese registro a Talento Humano para que procese el pago correspondiente.
+        - ¿Para qué se hace?
+            - Para que el personal reciba el pago correcto por las horas adicionales trabajadas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (lleva el registro y lo entrega a Talento Humano).
+            - Talento Humano (recibe, verifica y procesa el pago).
+        - ¿Cuándo se hace?
+            - Disparador: Fin de la semana de trabajo.
+            - Frecuencia: Semanal (los lunes se entrega el registro de la semana anterior).
+        - ¿Cómo se hace?
+            - Paso 1: Durante la semana, Adriana anota en su agenda física los redobles y días libres trabajados por cada persona del equipo.
+            - Paso 2: Al final de la semana, transcribe la información a una planilla (formato de Talento Humano u otro), indicando nombre de la persona, fecha y tipo de hora extra o redoble autorizado.
+            - Paso 3: Entrega la planilla físicamente en la oficina de Talento Humano.
+            - Paso 4: Talento Humano la escanea y la envía a la central en Caracas para procesamiento.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Agenda física de Adriana con los registros de la semana.
+            - Planilla de reporte de horas extras/redobles.
+            - Acceso físico a la oficina de Talento Humano.
+        - ¿Qué se genera al terminar?
+            - Planilla de redobles y horas extras entregada a Talento Humano.
+        - ¿Qué sistemas o herramientas usan?
+            - **Agenda física**: Registro borrador de redobles y horas extras durante la semana.
+            - **Planilla física (papel)**: Formato formal de reporte entregado a Talento Humano.
+            - No se utilizan sistemas digitales propios de este proceso.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Adriana no anota el redoble en el momento**: Si no lo registra en su agenda, puede olvidarlo. El control depende completamente de su registro manual.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.4.4: Control de redobles y gestión de días libres trabajados
+        - Pendiente.
+
+---
+
+- TAREA 2.4.5: Análisis de perfiles para reclutamiento de personal de recepción
+    - AS-IS 2.4.5: Análisis de perfiles para reclutamiento de personal de recepción
+        - ¿Qué es esta tarea?
+            - Evaluación inicial de candidatos para el departamento de recepción, valorando habilidades de comunicación, disposición para atender público y conocimientos básicos de computación, antes de pasar el perfil a Talento Humano para el proceso formal de contratación.
+        - ¿Para qué se hace?
+            - Para filtrar candidatos que cumplan con el perfil operativo y actitudinal requerido en recepción, antes de que Talento Humano gestione las condiciones laborales y contratación formal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (evaluación inicial del candidato).
+            - Talento Humano (proceso formal de contratación, condiciones laborales, documentos).
+            - Gerencia General / Presidencia (reunión final de convencimiento/presentación del candidato seleccionado, cuando el jefe lo requiere).
+        - ¿Cuándo se hace?
+            - Disparador: Necesidad de nuevo personal en recepción, identificada por Adriana o solicitada por Talento Humano.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Talento Humano remite candidatos a Adriana para evaluación inicial.
+            - Paso 2: Adriana evalúa al candidato considerando: experiencia previa, habilidades de comunicación oral, manejo básico de computadora, actitud de servicio, disposición para hablar con público.
+            - Paso 3: Si el candidato cumple el perfil, Adriana lo pasa a Talento Humano con su recomendación.
+            - Paso 4: Talento Humano gestiona las normativas laborales, condiciones de pago, quincenas, bonos, firma de contrato y demás procesos formales.
+            - Paso 5: Si el jefe (señor Rafael) quiere conocer al candidato, se coordina una reunión con gerencia/presidencia.
+            - Paso 6: Una vez aceptado, Adriana inicia el proceso de orientación (tarea 2.4.2).
+            - Nota: Los candidatos considerados aptos para recepción deben hablar bien, no tener miedo escénico y tener disposición para aprender sistemas. Los que no cumplen el perfil de recepción pueden asignarse a roles operativos (operadores/botones).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Candidatos referidos por Talento Humano.
+            - Criterios de perfil definidos por Adriana (no formalizados en un documento).
+        - ¿Qué se genera al terminar?
+            - Candidato aprobado o rechazado para el perfil de recepción.
+            - Si aprobado: pasa a Talento Humano para proceso formal de contratación.
+        - ¿Qué sistemas o herramientas usan?
+            - No se mencionan sistemas para esta tarea. Es un proceso presencial de evaluación.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.4.5: Análisis de perfiles para reclutamiento de personal de recepción
+        - Pendiente.
+- TAREA 3.1: Gestión y solicitud de suministro de Agua Potable
+    - AS-IS 3.1: Gestión y solicitud de suministro de Agua Potable
+        - ¿Qué es esta tarea?
+            - Coordinación con el proveedor de agua potable (cisternas) para el llenado de los tanques del hotel, y recepción formal del pedido en Odoo una vez que el suministro llega.
+        - ¿Para qué se hace?
+            - Para garantizar el suministro continuo de agua potable en el hotel, especialmente cuando se requiere lavado o llenado de tanques.
+        - ¿Qué roles ejecutan esta tarea?
+            - Jefe de cocina / personal de A&B (solicita a Adriana cuando se necesita agua).
+            - Adriana (coordina con el proveedor y recepciona el pedido en Odoo).
+            - Lourdes (departamento de compras): monta el pedido formal en sistema después de que Adriana notifica la fecha de llegada.
+        - ¿Cuándo se hace?
+            - Disparador: El departamento de A&B notifica a Adriana que los tanques necesitan llenado o que se va a realizar el lavado de tanques.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: El jefe de cocina informa a Adriana que se necesita agua (indicando fecha requerida).
+            - Paso 2: Adriana contacta directamente al proveedor de cisterna para coordinar la entrega.
+            - Paso 3: Adriana notifica a Lourdes (compras) la fecha de llegada del agua para que monte el pedido en el sistema.
+            - Paso 4: Cuando llega el proveedor con el agua, Adriana recepciona el pedido en Odoo con su usuario.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Contacto del proveedor de cisterna.
+            - Acceso a Odoo para recepcionar el pedido.
+            - Coordinación con Lourdes (compras).
+        - ¿Qué se genera al terminar?
+            - Pedido de agua recepcionado en Odoo.
+            - Tanques del hotel llenos.
+        - ¿Qué sistemas o herramientas usan?
+            - **Odoo**: Recepción del pedido de agua al momento de la entrega del proveedor.
+            - **Teléfono / WhatsApp**: Coordinación con proveedor y con Lourdes.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Adriana no está disponible cuando llega el proveedor**: El proveedor puede entregar el agua, pero Adriana no lo da por recibido en Odoo de inmediato. Se entera días después por facturas o por compras, generando retrasos en el registro.
+            - **Proceso no estandarizado**: Adriana actúa como intermediaria porque no hay gerente de A&B; el flujo ideal sería que A&B (con apoyo de los cajeros) manejara directamente la recepción de estos suministros.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el departamento de A&B, apoyado por sus cajeros, gestione directamente tanto la solicitud como la recepción del suministro de agua en Odoo, sin que recepción deba intervenir en este proceso.
+    - Propuesta 3.1: Gestión y solicitud de suministro de Agua Potable
+        - Pendiente.
+
+---
+
+- TAREA 3.2: Solicitud de llenado de tanques de gas
+    - AS-IS 3.2: Solicitud de llenado de tanques de gas
+        - ¿Qué es esta tarea?
+            - Proceso idéntico al de suministro de agua potable (tarea 3.1), aplicado al gas. Adriana coordina con el proveedor, notifica a compras y recepciona el pedido en Odoo.
+        - ¿Para qué se hace?
+            - Para garantizar el suministro de gas necesario para la operación del hotel (cocina, calentadores, etc.).
+        - ¿Qué roles ejecutan esta tarea?
+            - Los mismos que la tarea 3.1: A&B solicita, Adriana coordina, Lourdes monta el pedido, Adriana recepciona en Odoo.
+        - ¿Cuándo se hace?
+            - Disparador: El departamento de A&B notifica a Adriana que se necesita gas.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - El proceso es idéntico al de la tarea 3.1, sustituyendo "agua" por "gas".
+        - ¿Qué necesitan para hacer esta tarea?
+            - Mismo que tarea 3.1.
+        - ¿Qué se genera al terminar?
+            - Pedido de gas recepcionado en Odoo. Tanques llenos.
+        - ¿Qué sistemas o herramientas usan?
+            - **Odoo**: Recepción del pedido.
+            - **Teléfono / WhatsApp**: Coordinación con proveedor y compras.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Mismo esquema de excepciones que la tarea 3.1.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Mismo que tarea 3.1: que A&B gestione directamente sin intermediación de recepción.
+    - Propuesta 3.2: Solicitud de llenado de tanques de gas
+        - Pendiente.
+
+---
+
+- TAREA 3.3: Coordinación de reparaciones técnicas (Neveras/Aires acondicionados) con personal externo
+    - AS-IS 3.3: Coordinación de reparaciones técnicas con personal externo
+        - ¿Qué es esta tarea?
+            - Coordinación con técnicos externos (refrigeración, aires acondicionados) para la reparación o mantenimiento de equipos del hotel, incluyendo la gestión de compra de repuestos, apertura de habitaciones y recepción del servicio.
+        - ¿Para qué se hace?
+            - Para mantener los equipos del hotel en buen funcionamiento, atendiendo tanto emergencias como mantenimientos programados.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (coordina con el técnico, gestiona la compra de repuestos y recepciona el servicio).
+            - Técnico externo (realiza la reparación o mantenimiento).
+            - Compras / Lourdes (procesa la compra del repuesto cuando es requerido).
+            - Ama de llaves (abre las habitaciones cuando el técnico necesita acceso).
+        - ¿Cuándo se hace?
+            - Disparador: Se detecta un equipo dañado (nevera, aire acondicionado) o llega la fecha de un mantenimiento programado.
+            - Frecuencia: Bajo demanda para emergencias; programada para mantenimientos.
+        - ¿Cómo se hace?
+            - **Reparación de emergencia:**
+            - Paso 1: Se detecta el daño (reportado por A&B, ama de llaves o el propio técnico).
+            - Paso 2: Adriana contacta al técnico externo (ej. señor Francisco, de refrigeración).
+            - Paso 3: El técnico revisa el equipo e informa qué repuesto se necesita.
+            - Paso 4: Adriana contacta a compras (Lourdes) para solicitar la compra del repuesto, o llama directamente al doctor para aprobación si la compra es urgente.
+            - Paso 5: El técnico busca el repuesto en el proveedor (a veces de forma autónoma por urgencia).
+            - Paso 6: El técnico realiza la reparación. Ama de llaves abre la habitación si es necesario.
+            - Paso 7: El técnico entrega a Adriana un comprobante escrito de los trabajos realizados; Adriana lo firma.
+            - Paso 8: El técnico lleva el comprobante firmado a administración para el pago.
+            - Paso 9: Adriana recepciona el servicio en Odoo (cuando tiene tiempo; a veces se retrasa).
+            - **Mantenimiento programado:**
+            - El técnico agenda la visita con anticipación. Adriana lo espera, coordina el acceso a las habitaciones y valida la ejecución del mantenimiento.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Contacto del técnico externo.
+            - Autorización del doctor para la compra del repuesto (cuando Adriana no puede aprobar).
+            - Acceso de ama de llaves para abrir habitaciones.
+            - Acceso a Odoo para recepcionar el servicio.
+        - ¿Qué se genera al terminar?
+            - Comprobante físico firmado por Adriana que el técnico lleva a administración.
+            - Servicio recepcionado en Odoo (cuando se realiza).
+        - ¿Qué sistemas o herramientas usan?
+            - **Odoo**: Recepción del servicio de reparación.
+            - **WhatsApp / Teléfono**: Coordinación con el técnico, con compras y con el doctor.
+            - **Comprobante físico en papel**: Registro firmado de los trabajos realizados.
+            - **Agenda física de Adriana**: Registro personal de los mantenimientos realizados.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **El técnico actúa de forma autónoma sin notificar**: Busca el repuesto, lo instala y no le avisa a Adriana. Adriana se entera días después, lo que genera retrasos en la recepción en Odoo y en el proceso de pago.
+            - **Adriana no puede aprobar compras en ausencia del doctor**: En situaciones de urgencia donde el doctor no está disponible, Adriana firma la autorización de compra bajo su criterio, asumiendo la responsabilidad.
+            - **Proceso sin estandarización**: No hay un flujo definido; cada reparación se gestiona de forma ad hoc según la urgencia del momento.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el proceso esté sistematizado con algún registro (en Odoo u otra herramienta) que permita hacer seguimiento a cada solicitud de mantenimiento, desde la detección del daño hasta la recepción del servicio y el pago al técnico.
+    - Propuesta 3.3: Coordinación de reparaciones técnicas con personal externo
+        - Pendiente.
+
+---
+
+- TAREA 3.4: Firma de pedidos extraordinarios (en ausencia de Gerencia General)
+    - AS-IS 3.4: Firma de pedidos extraordinarios en ausencia de Gerencia General
+        - ¿Qué es esta tarea?
+            - Autorización excepcional y firmada por Adriana de compras urgentes de insumos o repuestos, cuando la gerencia general no está disponible para aprobarlas y la situación no permite esperar.
+        - ¿Para qué se hace?
+            - Para no detener la operación del hotel ante una necesidad urgente de compra cuando el doctor no está presente para autorizarla.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (firma y autoriza en ausencia del doctor).
+            - Proveedor o personal interno (ejecuta la compra una vez autorizada).
+            - Compras / Lourdes (gestiona la compra formal).
+        - ¿Cuándo se hace?
+            - Disparador: Se presenta una necesidad urgente de compra (repuesto, insumo crítico) y el doctor no está disponible para autorizar.
+            - Frecuencia: Bajo demanda, casos puntuales de emergencia.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta la necesidad urgente (ej. nevera dañada, falta de queso para desayunos del día siguiente).
+            - Paso 2: Adriana evalúa si la situación justifica proceder sin la aprobación del doctor.
+            - Paso 3: Adriana firma la solicitud de compra en papel, autorizando la adquisición.
+            - Paso 4: Se ejecuta la compra (Lourdes llama al proveedor, o el técnico/personal va a buscarlo).
+            - Paso 5: Al día siguiente o cuando el doctor esté disponible, Adriana le informa lo ocurrido y la compra realizada.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Solicitud de compra en papel para firmar.
+            - Criterio propio de Adriana para evaluar urgencia.
+        - ¿Qué se genera al terminar?
+            - Solicitud de compra firmada por Adriana.
+            - Compra ejecutada y comunicada al doctor a posteriori.
+        - ¿Qué sistemas o herramientas usan?
+            - **Papel físico (solicitud de compra)**: Documento que Adriana firma para autorizar.
+            - **Teléfono / WhatsApp**: Comunicación con Lourdes y con el proveedor.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Adriana no se siente cómoda firmando sin autorización**: Lo hace solo en casos muy puntuales y de extrema urgencia, por lo que en situaciones ambiguas puede optar por esperar al doctor aunque eso afecte la operación.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 3.4: Firma de pedidos extraordinarios en ausencia de Gerencia General
+        - Pendiente.
+
+---
+
+- TAREA 3.5: Firma y validación semanal de requisiciones para Almacén (A&B)
+    - AS-IS 3.5: Firma y validación semanal de requisiciones para Almacén (A&B)
+        - ¿Qué es esta tarea?
+            - Revisión y firma por parte de Adriana de las solicitudes semanales de insumos que hace el departamento de cocina/A&B para su abastecimiento desde almacén.
+        - ¿Para qué se hace?
+            - Para controlar y autorizar las solicitudes de insumos de A&B antes de que almacén los entregue, evitando pedidos excesivos o fuera de lo habitual.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cocina/A&B (elabora la lista de requisición).
+            - Adriana (revisa, valida y firma la requisición).
+            - Almacén (recibe la requisición firmada y entrega los insumos o los solicita a compras si no los tiene).
+        - ¿Cuándo se hace?
+            - Disparador: El departamento de cocina elabora su lista de necesidades semanales y se la entrega a Adriana para aprobación.
+            - Frecuencia: Semanal (aunque en la práctica puede ocurrir dos o tres veces por semana porque cocina no planifica con suficiente anticipación).
+        - ¿Cómo se hace?
+            - Paso 1: Cocina entrega a Adriana una lista en papel con los insumos requeridos para la semana (harina, arroz, huevos, leche, etc.).
+            - Paso 2: Adriana revisa la lista visualmente: verifica que los productos y cantidades sean razonables para el volumen de operación actual.
+            - Paso 3: Si todo está en orden, Adriana firma la requisición.
+            - Paso 4: Cocina lleva la requisición firmada a almacén.
+            - Paso 5: Almacén entrega los insumos disponibles y, si algo no está en stock, lo solicita a compras.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Lista de requisición en papel elaborada por cocina.
+            - Criterio de Adriana para validar cantidades.
+        - ¿Qué se genera al terminar?
+            - Requisición firmada que cocina lleva a almacén.
+        - ¿Qué sistemas o herramientas usan?
+            - **Papel físico**: La requisición es completamente manual.
+            - No se utilizan sistemas por parte de Adriana en este proceso.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Cocina hace múltiples requisiciones por semana**: En lugar de planificar una sola vez por semana, cocina entrega dos o tres listas diferentes porque se les olvidan productos o no calcularon bien las cantidades.
+            - **Pedidos que exceden lo razonable**: Adriana lo detecta visualmente y pregunta la razón antes de firmar (ej. piden más queso del habitual en temporada alta).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 3.5: Firma y validación semanal de requisiciones para Almacén (A&B)
+        - Pendiente.
+
+---
+
+- TAREA 3.6: Chequeo y supervisión del personal general de Alimentos y Bebidas
+    - AS-IS 3.6: Chequeo y supervisión del personal general de Alimentos y Bebidas
+        - ¿Qué es esta tarea?
+            - Supervisión física del personal de A&B durante su turno, verificando vestimenta, comportamiento, atención al cliente, manejo de comandas y ventas, y atendiendo reclamos o situaciones especiales que escalen desde el departamento.
+        - ¿Para qué se hace?
+            - Para garantizar que el personal de A&B cumpla con los estándares de atención, presentación y operación establecidos, en ausencia de un gerente de A&B propio del departamento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (supervisión directa).
+        - ¿Cuándo se hace?
+            - Disparador: Durante la operación diaria; también cuando se presenta una situación especial (reclamo de cliente, cobro de servicio en disputa, error en comanda).
+            - Frecuencia: Diaria, de forma continua durante la operación.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana se desplaza físicamente al área de A&B o las observa en el transcurso de su trabajo en recepción.
+            - Paso 2: Verifica vestimenta, presencia, que estén trabajando y no distraídos.
+            - Paso 3: Si hay un reclamo de cliente (ej. huésped que disputa el cobro del servicio), Adriana interviene directamente.
+            - Paso 4: Si el reclamo es grave (huésped que no quiere pagar el servicio), Adriana evalúa si exonerar el cobro o escalar a gerencia.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Presencia física de Adriana en las áreas de A&B.
+        - ¿Qué se genera al terminar?
+            - Correcciones en el comportamiento o presentación del personal (cuando aplica).
+            - Reclamos de clientes resueltos.
+        - ¿Qué sistemas o herramientas usan?
+            - No se utilizan sistemas para esta tarea. Es completamente presencial.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Mesonero que cobra el servicio sin informar al cliente**: Se presenta al check-out y el cliente no quiere pagar. Adriana interviene para resolver.
+            - **Mesonero que carga a la habitación equivocada**: Genera discrepancias al momento del check-out que deben ser investigadas con A&B.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el cobro del servicio (10%) sea gestionado directamente por los mesoneros en el área de A&B, y no pase por recepción ni se cargue a la habitación. Esto eliminaría la mayoría de los conflictos en el check-out relacionados con este concepto.
+    - Propuesta 3.6: Chequeo y supervisión del personal general de Alimentos y Bebidas
+        - Pendiente.
+
+---
+
+- TAREA 4.1: Firma y control de requisiciones semanales de insumos para Almacén (Ama de Llaves)
+    - AS-IS 4.1: Firma y control de requisiciones semanales de insumos para Almacén (Ama de Llaves)
+        - ¿Qué es esta tarea?
+            - Proceso idéntico al de A&B (tarea 3.5), aplicado al departamento de Ama de Llaves: revisión y firma de Adriana sobre las solicitudes semanales de insumos de limpieza y habitaciones.
+        - ¿Para qué se hace?
+            - Para controlar y autorizar el abastecimiento semanal de productos e insumos del departamento de Ama de Llaves.
+        - ¿Qué roles ejecutan esta tarea?
+            - Ama de Llaves (elabora la solicitud).
+            - Adriana (revisa y firma).
+            - Almacén (entrega los insumos o los solicita a compras).
+        - ¿Cuándo se hace?
+            - Disparador: El departamento de Ama de Llaves entrega su requisición semanal a Adriana.
+            - Frecuencia: Semanal.
+        - ¿Cómo se hace?
+            - El proceso es idéntico al de la tarea 3.5: ama de llaves entrega lista en papel → Adriana revisa y firma → va a almacén.
+            - La única diferencia es que en este caso no hay contacto de Adriana con proveedores externos; almacén ya debe tener los insumos (jabón, cloro, productos de limpieza, papel higiénico, etc.).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Mismo que tarea 3.5.
+        - ¿Qué se genera al terminar?
+            - Requisición firmada entregada a almacén.
+        - ¿Qué sistemas o herramientas usan?
+            - **Papel físico**: Requisición completamente manual.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.1: Firma y control de requisiciones semanales de insumos para Almacén (Ama de Llaves)
+        - Pendiente.
+
+---
+
+- TAREA 4.2: Verificación y actualización de la disponibilidad de habitaciones
+    - AS-IS 4.2: Verificación y actualización de la disponibilidad de habitaciones
+        - ¿Qué es esta tarea?
+            - Verificación del estado físico real de las habitaciones para determinar si están disponibles para la venta, complementando (y en muchos casos sustituyendo) la información del sistema Cloudbeds, que no siempre está actualizada.
+        - ¿Para qué se hace?
+            - Para evitar vender habitaciones que no estén en condiciones, dado que el sistema no refleja con confiabilidad el estado real de las habitaciones porque ama de llaves no siempre actualiza Cloudbeds en tiempo real.
+        - ¿Qué roles ejecutan esta tarea?
+            - Ama de Llaves (debería actualizar Cloudbeds; está en proceso de adopción del sistema).
+            - Recepcionista (verifica físicamente antes de asignar una habitación).
+            - Adriana (verifica cuando la recepcionista no puede).
+        - ¿Cuándo se hace?
+            - Disparador: Antes de asignar una habitación a una reserva o check-in.
+            - Frecuencia: Cada vez que se va a asignar una habitación.
+        - ¿Cómo se hace?
+            - Paso 1: La recepcionista revisa en Cloudbeds el estado de la habitación.
+            - Paso 2: Dado que el sistema no es confiable al 100%, la recepcionista verifica físicamente la habitación (va hasta ella) o confirma con ama de llaves su estado real.
+            - Paso 3: Ama de llaves tiene la obligación de notificar a recepción por WhatsApp cuando hay algún cambio en el estado de una habitación (ej. colchón retirado para mantenimiento, habitación bloqueada).
+            - Paso 4: Si la habitación está disponible y en buen estado, se asigna en Cloudbeds.
+            - Paso 5: Si hay un problema, se busca una habitación alternativa.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Cloudbeds.
+            - Comunicación con ama de llaves (WhatsApp o presencial).
+            - Acceso físico a las habitaciones para verificación.
+        - ¿Qué se genera al terminar?
+            - Habitación verificada y asignada en Cloudbeds.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Estado de habitaciones (aunque no es completamente confiable en la actualidad).
+            - **WhatsApp**: Comunicación entre ama de llaves y recepción para reportar cambios en habitaciones.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Habitación vendida sin colchón**: Ocurrió porque ama de llaves retiró el colchón para mantenimiento sin notificar a recepción. Como resultado, se le asignó esa habitación a un huésped.
+            - **Sistema desactualizado**: Ama de llaves está en proceso de adoptar Cloudbeds pero no lo usa con regularidad. Recepción no puede confiar en el sistema y debe verificar físicamente.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que ama de llaves actualice el estado de las habitaciones en Cloudbeds en tiempo real, de modo que recepción pueda confiar en el sistema sin necesidad de verificación física adicional.
+    - Propuesta 4.2: Verificación y actualización de la disponibilidad de habitaciones
+        - Pendiente.
+
+---
+
+- TAREA 4.3: Chequeo de habitaciones en mantenimiento para el bloqueo o desbloqueo
+    - AS-IS 4.3: Chequeo de habitaciones en mantenimiento para bloqueo o desbloqueo
+        - ¿Qué es esta tarea?
+            - Verificación del estado de habitaciones que están o estuvieron en mantenimiento, para determinar si deben bloquearse en Cloudbeds (no disponibles para la venta) o desbloquearse una vez listas.
+        - ¿Para qué se hace?
+            - Para que el estado de las habitaciones en Cloudbeds refleje con precisión cuáles están disponibles para la venta y cuáles no, evitando asignar habitaciones que no estén en condiciones.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (verifica y decide bloqueo o desbloqueo).
+            - Ama de Llaves (debería notificar y eventualmente actualizar en sistema).
+        - ¿Cuándo se hace?
+            - Disparador: Una habitación entra o sale de un proceso de mantenimiento, o se detecta que una habitación tiene un problema que impide su uso.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Se detecta que una habitación tiene un problema (mantenimiento de equipo, daño estructural, colchón retirado, etc.).
+            - Paso 2: Adriana o la recepcionista verifica físicamente el estado de la habitación.
+            - Paso 3: Si la habitación no está en condiciones de ser vendida, se bloquea en Cloudbeds.
+            - Paso 4: Cuando el mantenimiento es completado y la habitación está lista, se desbloquea en Cloudbeds.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información sobre el estado de la habitación (de ama de llaves, mantenimiento o verificación física propia).
+            - Acceso a Cloudbeds para bloquear o desbloquear.
+        - ¿Qué se genera al terminar?
+            - Habitación bloqueada o desbloqueada en Cloudbeds según su estado real.
+        - ¿Qué sistemas o herramientas usan?
+            - **Cloudbeds**: Bloqueo y desbloqueo de habitaciones.
+            - **WhatsApp**: Notificación de ama de llaves a recepción sobre el estado de habitaciones.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Ama de llaves no notifica a recepción**: Recepción no se entera de que una habitación tiene un problema hasta que ya fue vendida o el huésped llega a ella.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que ama de llaves actualice directamente en Cloudbeds el estado de cada habitación al momento de detectar un problema o al terminar su preparación, eliminando la dependencia de notificaciones manuales.
+    
+    - Propuesta 4.3: Chequeo de habitaciones en mantenimiento para bloqueo o desbloqueo
+        - Pendiente.
+
+---
+
+- TAREA 4.4: Supervisión del personal de ama de llaves (vestimenta, áreas, habitaciones, pasillos, limpieza, atenciones, sugerencias)
+    - AS-IS 4.4: Supervisión del personal de ama de llaves
+        - ¿Qué es esta tarea?
+            - Supervisión física del personal de ama de llaves durante su turno, verificando presentación, cumplimiento de funciones, limpieza de áreas y comportamiento con los huéspedes.
+        - ¿Para qué se hace?
+            - Para garantizar que el personal de ama de llaves cumpla con los estándares de calidad, presentación y atención definidos por el hotel, en ausencia de una jefatura propia del departamento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (supervisión directa).
+        - ¿Cuándo se hace?
+            - Disparador: Rondas durante la operación diaria, o cuando se reporta una situación específica con algún miembro del personal.
+            - Frecuencia: Diaria.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana realiza rondas de supervisión por las áreas del hotel donde trabaja ama de llaves (pasillos, habitaciones, áreas comunes).
+            - Paso 2: Verifica vestimenta (uniforme adecuado, no pantalones rotos, no ropa inapropiada), comportamiento (no usar el teléfono, no hablar con confianza excesiva con los huéspedes) y limpieza de las áreas a su cargo.
+            - Paso 3: Si detecta algún problema, corrige directamente en el momento (le indica a la persona lo que debe ajustar).
+            - Nota: Aunque hay normativas sobre uniforme, no siempre hay uniformes disponibles para entregar al personal. Adriana orienta sobre la vestimenta apropiada cuando no hay uniforme formal.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Presencia física de Adriana en las áreas del hotel.
+        - ¿Qué se genera al terminar?
+            - Correcciones en el comportamiento, presentación o trabajo del personal (cuando aplica).
+        - ¿Qué sistemas o herramientas usan?
+            - No se utilizan sistemas. Es un proceso completamente presencial.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Personal que habla confianzudamente con huéspedes**: Adriana interviene para recordar el protocolo de trato.
+            - **Falta de uniformes disponibles**: Adriana orienta sobre vestimenta apropiada en su ausencia.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.4: Supervisión del personal de ama de llaves
+        - Pendiente.
+
+---
+
+- TAREA 5.1: Firma y control de requisiciones semanales de productos químicos e insumos para Almacén (Lavandería)
+    - AS-IS 5.1: Firma y control de requisiciones semanales de productos químicos e insumos (Lavandería)
+        - ¿Qué es esta tarea?
+            - Revisión y firma de Adriana sobre las solicitudes semanales de productos químicos e insumos del departamento de Lavandería, siguiendo el mismo proceso que las tareas 3.5 y 4.1.
+        - ¿Para qué se hace?
+            - Para controlar y autorizar el abastecimiento semanal de productos de lavandería (jabón, químicos, insumos de limpieza de lencería), evitando pedidos excesivos o irregulares.
+        - ¿Qué roles ejecutan esta tarea?
+            - Lavandería (elabora la solicitud).
+            - Adriana (revisa y firma).
+            - Almacén (entrega los productos o los solicita a compras).
+        - ¿Cuándo se hace?
+            - Disparador: El departamento de Lavandería entrega su requisición semanal a Adriana.
+            - Frecuencia: Semanal (aunque puede haber solicitudes adicionales a mitad de semana por procesos de desmanche u otras necesidades puntuales).
+        - ¿Cómo se hace?
+            - El proceso es idéntico al de las tareas 3.5 y 4.1: lavandería entrega lista en papel → Adriana revisa y firma → va a almacén.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Mismo que tareas 3.5 y 4.1.
+        - ¿Qué se genera al terminar?
+            - Requisición firmada entregada a almacén.
+        - ¿Qué sistemas o herramientas usan?
+            - **Papel físico**: Requisición completamente manual.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Solicitudes adicionales a mitad de semana**: Cuando hay procesos de desmanche u otras necesidades no previstas, lavandería puede pedir más productos antes de que termine la semana.
+            - **Lavandería no lleva control de consumo**: No hay un registro estandarizado de cuánto jabón o químico se usa por ciclo de lavado, lo que dificulta validar si los pedidos son razonables.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Estandarizar el consumo de productos de lavandería (jabón, químicos) por ciclo o por tipo de proceso (lavado normal, desmanche), para poder validar con datos si los pedidos son adecuados al volumen de trabajo y evitar el desperdicio o el exceso de solicitudes.
+    - Propuesta 5.1: Firma y control de requisiciones semanales de productos químicos e insumos (Lavandería)
+        - Pendiente.
+
+---
+
+- TAREA 5.2: Supervisión del área en general (personal, lavados, secados, equipos, lencería, otros)
+    - AS-IS 5.2: Supervisión del área de lavandería en general
+        - ¿Qué es esta tarea?
+            - Supervisión física del área de lavandería: verificación del trabajo del personal (que estén realizando sus funciones y no perdiendo tiempo), estado de los equipos y control del proceso de lavado y secado de lencería.
+        - ¿Para qué se hace?
+            - Para garantizar que el personal de lavandería esté trabajando correctamente y que el proceso de limpieza de lencería se realice con los estándares requeridos, en ausencia de una jefatura propia del departamento.
+        - ¿Qué roles ejecutan esta tarea?
+            - Adriana (supervisión directa).
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima (no se especificó si hay una ronda fija o si es bajo demanda).
+            - Frecuencia: Periódica durante la jornada; no se especificó frecuencia exacta.
+        - ¿Cómo se hace?
+            - Paso 1: Adriana se desplaza físicamente al área de lavandería (ubicada en un sector separado del hotel, alejado de recepción y ama de llaves).
+            - Paso 2: Verifica que el personal esté trabajando y no perdiendo tiempo.
+            - Paso 3: Revisa el estado de los equipos (lavadoras, secadoras).
+            - Paso 4: Verifica el volumen de lencería sucia pendiente de lavar y el avance del trabajo.
+            - Nota: El área está físicamente separada y el personal trabaja sin supervisión directa continua, lo que hace necesaria esta visita periódica.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Presencia física de Adriana en el área de lavandería.
+        - ¿Qué se genera al terminar?
+            - Correcciones en el trabajo del personal o en el uso de equipos (cuando aplica).
+        - ¿Qué sistemas o herramientas usan?
+            - No se utilizan sistemas. Es un proceso completamente presencial.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - **Personal que no cumple con sus tareas**: Adriana los corrige directamente en el momento.
+            - **Solicitudes excesivas de productos**: Se detectan durante la supervisión cuando hay discrepancia entre el volumen de trabajo visible y los productos solicitados.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Contar con algún tipo de matriz o control estándar de consumo de productos por tipo de proceso (lavado normal, desmanche), para poder controlar mejor las requisiciones y detectar desviaciones con mayor facilidad.
+    - Propuesta 5.2: Supervisión del área de lavandería en general
+        - Pendiente.
