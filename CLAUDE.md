@@ -69,6 +69,51 @@ Output: AS-IS reescrito en `Input/[Area]/` + actualizacion de `Arquitectura/Pend
 
 ---
 
+## Llenado de archivos de contexto
+
+Los archivos en `Arquitectura/Contexto Departamental/` y `Arquitectura/Contexto Proyecto/` se llenan de forma progresiva a medida que se avanza en el proyecto. No se completan en una sola sesion.
+
+**Regla:** cuando durante el trabajo de un area se identifica informacion util para el contexto (un sistema nuevo, una entidad relacionada, un termino del glosario, un dato operativo relevante de un departamento), se agrega al archivo correspondiente en ese momento, sin esperar a que el area este completamente procesada.
+
+Archivos de contexto y su contenido esperado:
+- `Contexto Departamental/[Departamento].md` — miembros, roles, sistemas que usan, alias, notas operativas
+- `Contexto Proyecto/Empresas y Entidades.md` — SERAC, Koral Ohs, Eracon Salud, Eracon Alimentos y cualquier entidad relacionada que aparezca en documentos
+- `Contexto Proyecto/Sistemas.md` — Odoo, Cloudbeds, Poster, Credicard, Office 365, portales bancarios y cualquier sistema mencionado en minutas o AS-IS
+- `Contexto Proyecto/Marco Regulatorio.md` — SENIAT, SUNAGRO, INATUR, FONACIT, INPARQUES, Alcaldia, contribuyente especial, y cualquier obligacion fiscal o parafiscal identificada
+- `Contexto Proyecto/Glosario.md` — siglas, terminos venezolanos, terminos operativos del proyecto que requieran definicion
+
+---
+
+## Log de sesion
+
+El log de sesion se escribe en `Arquitectura/Log-Sesiones/YYYY-MM-DD.md` cuando el trabajo acumulado en la sesion es significativo y no se ha generado un log reciente. Tambien se genera cuando el usuario lo solicita explicitamente.
+
+**Formato del log:**
+
+```
+# Log de Sesion — YYYY-MM-DD
+
+## Areas trabajadas
+[lista de areas o documentos tocados]
+
+## Cambios realizados
+[lista de cambios concretos con referencia al archivo]
+
+## Propuestas pendientes de aprobacion
+[lista de propuestas presentadas que aun no tienen respuesta]
+
+## Decisiones tomadas
+[decisiones del usuario que afectan el proyecto]
+
+## Pendientes generados en esta sesion
+[items nuevos que se agregaron a Pendientes.md]
+
+## Bloqueos o discrepancias escaladas
+[items marcados para validacion con usuario o informante]
+```
+
+---
+
 ## Formato de documentos
 
 - Tono: ejecutivo-formal, directo, sin redundancia ni frases de presentacion.
