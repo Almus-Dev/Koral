@@ -1,0 +1,599 @@
+# AS - IS: Asesor Contraloria
+
+Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos.
+
+Creado: 17 de marzo de 2026 12:51
+
+- TAREA.1.1 — Supervisión general de ejecución de procesos por departamento
+    - AS-IS 1.1: Supervisión general de ejecución de procesos por departamento
+        - ¿Qué es esta tarea?
+            - Velar porque todos los departamentos ejecuten sus trabajos y cumplan sus procesos y obligaciones.
+        - ¿Para qué se hace?
+            - Para garantizar que la información financiera esté bien registrada y que los departamentos estén cumpliendo con sus obligaciones operativas, administrativas y fiscales.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+            - Nota: el departamento de Contraloría no está activo actualmente; la responsable está ejecutando actividades de soporte al área administrativa en lugar de esta tarea.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima
+            - Frecuencia: Debería hacerse con frecuencia, atada a un plan de trabajo. Actualmente no se ejecuta.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima (no hay flujo definido actualmente; el proceso no se lleva).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Plan de trabajo del departamento (no existe actualmente).
+            - Cierres mensuales contables, administrativos y operativos de todos los departamentos (no se realizan actualmente).
+            - Reportes sincerados del sistema (actualmente los reportes no son confiables por parametrización incorrecta en Odoo y por registros que se modifican retroactivamente).
+        - ¿Qué se genera al terminar?
+            - Informe de resultados elaborado en Word, enviado a gerencia. Actualmente no se genera porque el proceso no está activo.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: descarga de reportes de saldos, movimientos y cuentas contables y de almacén.
+            - Word: elaboración del informe de resultados.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que exista un plan de trabajo que defina la frecuencia y metodología de supervisión.
+            - Que se ejecuten cierres mensuales en todos los departamentos para que los reportes descargados sean confiables.
+            - Que el sistema bloquee modificaciones a períodos ya cerrados.
+            - Que se use el módulo de encuestas de Odoo 19 para enviar cuestionarios periódicos a cada departamento y validar si ejecutaron sus cierres, declaraciones y obligaciones.
+    
+    - Propuesta 1.1: Supervisión general de ejecución de procesos por departamento
+        - Pendiente.
+
+---
+
+- TAREA.1.2 — Monitoreo y seguimiento de operaciones (verificación de saldos, movimientos y cuentas contables y de almacén)
+    - AS-IS 1.2: Monitoreo y seguimiento de operaciones
+        - ¿Qué es esta tarea?
+            - Verificación de alto nivel sobre saldos, movimientos contables, cuentas y estado del almacén, para detectar si los registros están correctos y si los departamentos están cumpliendo con sus operaciones.
+        - ¿Para qué se hace?
+            - Para identificar a tiempo errores en los registros, fallas en los cierres departamentales y riesgos que puedan derivar en sanciones o multas (por ejemplo, parafiscales no pagados).
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+            - Nota: actualmente no se ejecuta; la responsable está absorbida por actividades de soporte administrativo.
+        - ¿Cuándo se hace?
+            - Disparador: Disponibilidad de cierres mensuales de todos los departamentos (condición que actualmente no se cumple).
+            - Frecuencia: Debería ser mensual. Actualmente no se ejecuta.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima (no hay flujo definido; el proceso no se lleva actualmente).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cierres mensuales contables, administrativos y operativos de todos los departamentos.
+            - Reportes de saldos y movimientos descargados desde Odoo (actualmente no son confiables).
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: descarga de reportes de saldos, movimientos y cuentas contables y de almacén.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Los reportes descargados no son confiables porque los períodos anteriores siguen siendo modificados. Se han llegado a hacer registros de un año atrás, lo que altera las cifras de reportes ya emitidos.
+            - La parametrización incorrecta en Odoo genera asientos contables errados que distorsionan los saldos.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que los períodos contables estén bloqueados una vez cerrados, impidiendo modificaciones retroactivas.
+            - Que todos los departamentos ejecuten sus cierres mensuales para que esta tarea pueda ejecutarse con datos confiables.
+            - Que la parametrización de Odoo esté corregida antes de la migración a la versión 19.
+    - Propuesta 1.2: Monitoreo y seguimiento de operaciones
+        - Pendiente.
+
+---
+
+- TAREA.1.3 — Análisis mensual de información financiera mediante descarga de estados financieros
+    - AS-IS 1.3: Análisis mensual de información financiera
+        - ¿Qué es esta tarea?
+            - Descarga y revisión de los estados financieros de la empresa para verificar que los saldos sean correctos e identificar problemas en los registros contables.
+        - ¿Para qué se hace?
+            - Para determinar si los saldos están correctos, si las cuentas y movimientos están bien registrados, y para poder emitir recomendaciones a gerencia.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+            - Nota: actualmente no se ejecuta.
+        - ¿Cuándo se hace?
+            - Disparador: Disponibilidad de cierres mensuales contables, administrativos y operativos.
+            - Frecuencia: Debería ser mensual. Actualmente no se ejecuta por ausencia de cierres.
+        - ¿Cómo se hace?
+            - Paso 1: Descargar los estados financieros desde Odoo.
+            - Paso 2: Revisar saldos e identificar problemas o inconsistencias.
+            - Paso 3: Elaborar análisis con hallazgos y recomendaciones de corrección para presentar a gerencia (fuente: transcript sesión 1).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cierres mensuales realizados por todos los departamentos.
+            - Acceso a Odoo para descarga de estados financieros.
+            - Períodos contables bloqueados (actualmente no lo están).
+        - ¿Qué se genera al terminar?
+            - Análisis mensual con resultados para presentar a gerencia, incluyendo recomendaciones de corrección. Actualmente no se genera porque el proceso no está activo.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: descarga de estados financieros (balance de comprobación, estado de situación, estado de resultados, libro mayor).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si se descarga un estado financiero sin que el período esté cerrado, las cifras pueden ser alteradas posteriormente por registros retroactivos, invalidando el análisis ya realizado.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que los períodos estén cerrados y bloqueados antes de descargar los estados financieros, de modo que las cifras sean estables y confiables.
+            - Que la parametrización de Odoo esté correcta para que los asientos contables generados sean válidos.
+    - Propuesta 1.3: Análisis mensual de información financiera
+        - Pendiente.
+
+---
+
+- TAREA.1.4 — Elaboración de informe de resultados para gerencia
+    - AS-IS 1.4: Elaboración de informe de resultados para gerencia
+        - ¿Qué es esta tarea?
+            - Elaboración de un informe escrito con los resultados del análisis mensual, que incluye hallazgos y recomendaciones para la gerencia.
+        - ¿Para qué se hace?
+            - Para comunicar a la gerencia el estado de los procesos, identificar desviaciones y proponer correcciones.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+            - Nota: actualmente no se ejecuta.
+        - ¿Cuándo se hace?
+            - Disparador: Conclusión del análisis mensual de información financiera (TAREA.1.3).
+            - Frecuencia: Debería ser mensual. Actualmente no se ejecuta.
+        - ¿Cómo se hace?
+            - Paso 1: Con base en el análisis mensual, redactar el informe de resultados en Word.
+            - Paso 2: ⚠️ Pendiente validar en sesión próxima (canal y destinatario de entrega no fueron confirmados en la sesión más allá de "gerencia").
+        - ¿Qué necesitan para hacer esta tarea?
+            - Resultados del análisis mensual de estados financieros (TAREA.1.3).
+        - ¿Qué se genera al terminar?
+            - Informe de resultados en Word. Destinatario: gerencia. Canal de entrega: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - Word: redacción del informe.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - La responsable mencionó que los informes "no los leen igual, pero igual los hago", lo que indica que el informe se elabora pero no siempre tiene el impacto esperado a nivel gerencial.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 1.4: Elaboración de informe de resultados para gerencia
+        - Pendiente.
+
+---
+
+- TAREA.2.1 — Elaboración del plan de trabajo del departamento de Contraloría ⚠️ Pendiente validar en sesión próxima
+    - AS-IS 2.1: Elaboración del plan de trabajo del departamento de Contraloría
+        - ¿Qué es esta tarea?
+            - Elaboración del plan de trabajo formal del departamento de Contraloría, que defina las actividades, frecuencias y responsables de las funciones del área.
+        - ¿Para qué se hace?
+            - Para activar el departamento de Contraloría y poder ejecutar las funciones de supervisión, monitoreo y control que actualmente no se están llevando a cabo.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+        - ¿Cuándo se hace?
+            - Disparador: Iniciativa propia de la responsable; trabajo en construcción al momento de la sesión.
+            - Frecuencia: Tarea única de arranque; no recurrente en su fase inicial.
+        - ¿Cómo se hace?
+            - Paso 1: La responsable está documentando las actividades en papel como punto de partida.
+            - Paso 2: ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué necesitan para hacer esta tarea?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Qué se genera al terminar?
+            - Plan de trabajo documentado del departamento. Formato y canal de distribución: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - Actualmente: papel. Sistema o herramienta definitiva: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el plan de trabajo esté formalizado y permita arrancar con las entrevistas mensuales a departamentos y la ejecución de las funciones propias de Contraloría.
+    - Propuesta 2.1: Elaboración del plan de trabajo del departamento de Contraloría
+        - Pendiente.
+
+---
+
+- TAREA.2.2 — Identificación de riesgos y definición del ambiente de control
+    - AS-IS 2.2: Identificación de riesgos y definición del ambiente de control
+        - ¿Qué es esta tarea?
+            - Identificar los riesgos que puede tener la empresa y definir y ejecutar las medidas de control necesarias para mitigarlos de forma preventiva.
+        - ¿Para qué se hace?
+            - Para evitar que los riesgos se materialicen en multas, errores no corregidos o pérdidas. La responsable lo describe como "un tema preventivo": detectar las cosas a tiempo antes de que generen consecuencias.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+            - Nota: actualmente no se ejecuta; el departamento no está activo.
+        - ¿Cuándo se hace?
+            - Disparador: Disponibilidad del análisis mensual de estados financieros (TAREA.1.3) y de los resultados de las entrevistas a departamentos (TAREA.2.3) (fuente: transcript sesión 1 — "al hacer eso, en el análisis mensual, voy a tener un resultado").
+            - Frecuencia: Debería ser mensual, vinculada al análisis de resultados. Actualmente no se ejecuta.
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima (no hay flujo definido actualmente; el proceso no está activo).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Resultados de las entrevistas a departamentos (TAREA.2.3).
+            - Análisis mensual de estados financieros (TAREA.1.3).
+        - ¿Qué se genera al terminar?
+            - Recomendaciones a gerencia sobre correcciones necesarias. Incluidas en el informe mensual de resultados (TAREA.1.4).
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima (no se especificó herramienta; el proceso no está activo).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Ejemplo mencionado: si se detecta que no se pagaron los parafiscales (IVSS), se evalúa si aún se está en fecha para corregirlo sin multa; si no, se asume la consecuencia y se hacen las correcciones.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que sea un proceso preventivo y sistemático, ejecutado mensualmente, con capacidad de emitir alertas tempranas a gerencia antes de que los riesgos se conviertan en sanciones.
+    - Propuesta 2.2: Identificación de riesgos y definición del ambiente de control
+        - Pendiente.
+
+---
+
+- TAREA.2.3 — Ejecución de entrevistas/cuestionarios periódicos a departamentos para validación de resultados de gestión ⚠️ Pendiente validar en sesión próxima
+    - AS-IS 2.3: Ejecución de entrevistas/cuestionarios periódicos a departamentos
+        - ¿Qué es esta tarea?
+            - Aplicación de cuestionarios o entrevistas periódicas a cada departamento para validar si ejecutaron sus cierres, cumplieron sus obligaciones y están generando los resultados esperados.
+        - ¿Para qué se hace?
+            - Para que Contraloría pueda verificar el estado de gestión de cada área sin depender exclusivamente de los reportes del sistema, y detectar fallas antes de que escalen.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+            - Nota: proceso no activo; metodología no definida al momento de la sesión.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio del ciclo mensual de revisión, una vez que el plan de trabajo del departamento esté activo (fuente: transcript sesión 1 — "hacer una especie de cuestionario a cada departamento... saber qué están haciendo los departamentos").
+            - Frecuencia: Debería ser mensual. Actualmente no se ejecuta.
+        - ¿Cómo se hace?
+            - Paso 1: La responsable contacta a cada departamento para preguntar sobre el estado de sus obligaciones (ejemplo: ¿está listo el cierre? ¿La cartelera fiscal está al día? ¿Se pagó el seguro social?).
+            - Paso 2: Registra las respuestas. Actualmente lo tiene planteado en Word.
+            - Paso 3: ⚠️ Pendiente validar en sesión próxima (qué se hace con las respuestas registradas antes de alimentar el análisis mensual).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Cuestionario o checklist definido por departamento (en construcción).
+            - Plan de trabajo aprobado (TAREA.2.1).
+        - ¿Qué se genera al terminar?
+            - Registro de respuestas por departamento que alimenta el análisis mensual (TAREA.1.3) y el informe de resultados (TAREA.1.4).
+        - ¿Qué sistemas o herramientas usan?
+            - Actualmente: Word para el cuestionario; comunicación por llamada, WhatsApp o en persona.
+            - Herramienta ideal mencionada: módulo de Encuestas de Odoo 19, que permitiría armar cuestionarios personalizados por departamento y obtener resultados en tiempo real.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que los cuestionarios se gestionen desde el módulo de Encuestas de Odoo 19, personalizados por departamento, con resultados en tiempo real y trazabilidad de las respuestas.
+    - Propuesta 2.3: Ejecución de entrevistas/cuestionarios periódicos a departamentos
+        - Pendiente.
+
+---
+
+- TAREA.3.1 — Coordinación de inventario cíclico diario con encargado de almacén
+    - AS-IS 3.1: Coordinación de inventario cíclico diario con encargado de almacén
+        - ¿Qué es esta tarea?
+            - Selección diaria de un subconjunto de productos y coordinación con el encargado de almacén para que realice el conteo físico de esos productos.
+        - ¿Para qué se hace?
+            - Para mantener el inventario actualizado de forma progresiva, verificando periódicamente que la existencia física coincida con lo registrado en el sistema.
+        - ¿Qué roles ejecutan esta tarea?
+            - Ejecuta actualmente: Gerente de Contraloría (Meche), de forma temporal por ausencia de responsable en el área.
+            - Ejecuta el conteo físico: Victor Manuel Perez Carrizalez (encargado de almacén).
+            - Responsable futuro previsto: Libny Carina Tarazon Gallegos (área administrativa del hotel), una vez que el inventario esté depurado.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio de cada jornada operativa.
+            - Frecuencia: Diaria.
+        - ¿Cómo se hace?
+            - Paso 1: La responsable selecciona los productos a contar ese día y se los pasa a Victor Manuel Perez Carrizalez.
+            - Paso 2: Victor Manuel Perez Carrizalez realiza el conteo físico manual en el almacén.
+            - Paso 3: La responsable verifica en Odoo si la existencia registrada en sistema coincide con el conteo físico reportado por Victor Manuel Perez Carrizalez.
+            - Paso 4: ⚠️ Pendiente validar en sesión próxima (qué ocurre cuando hay diferencia entre conteo físico y sistema).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Odoo para consulta de existencias.
+            - Disponibilidad de Victor Manuel Perez Carrizalez en almacén para realizar el conteo físico.
+        - ¿Qué se genera al terminar?
+            - Registro actualizado de existencias por producto. Formato y destino del registro: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: consulta y verificación de existencias en sistema.
+            - Conteo manual: realizado por Victor Manuel Perez Carrizalez en almacén, sin sistema especificado.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que esta tarea sea asumida por Libny Carina Tarazon Gallegos (área administrativa del hotel) una vez que el inventario esté completamente depurado, liberando a Contraloría de esta responsabilidad operativa.
+    - Propuesta 3.1: Coordinación de inventario cíclico diario con encargado de almacén
+        - Pendiente.
+
+---
+
+- TAREA.3.2 — Verificación en sistema (Odoo) de existencias, movimientos, entradas, salidas, características y estado de productos
+    - AS-IS 3.2: Verificación en sistema de existencias y movimientos de productos
+        - ¿Qué es esta tarea?
+            - Revisión en Odoo de la información de cada producto: existencia actual, costo, ubicación, historial de movimientos (entradas y salidas), características y estado.
+        - ¿Para qué se hace?
+            - Para detectar errores en los registros de inventario y asegurar que la información del sistema refleje la realidad del almacén.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche), de forma temporal.
+        - ¿Cuándo se hace?
+            - Disparador: Como parte del proceso de inventario cíclico diario (TAREA.3.1) o al detectar una inconsistencia.
+            - Frecuencia: Diaria, en el marco del inventario cíclico.
+        - ¿Cómo se hace?
+            - Paso 1: Acceder a Odoo y consultar el reporte de stock del producto.
+            - Paso 2: Verificar la existencia actual (cuánto tiene), el costo (cuánto cuesta) y la ubicación (dónde está).
+            - Paso 3: Revisar el historial de movimientos: entradas, salidas, cantidades, características y estado del producto.
+            - Paso 4: Identificar si hay errores o inconsistencias en los registros.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Odoo con permisos para consultar reportes de inventario (stock, ubicaciones, historial).
+        - ¿Qué se genera al terminar?
+            - Identificación de inconsistencias entre existencia física y sistema, que alimenta directamente el proceso de depuración (TAREA.3.3). No existe un reporte formal separado para esta tarea aislada (fuente: transcript sesión 1 — "verifico el movimiento del producto, todas las entradas y las salidas").
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: reportes de stock, ubicaciones e historial de movimientos de productos.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si se detecta un error en los registros, se verifica con más profundidad el movimiento del producto para identificar la causa raíz.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 3.2: Verificación en sistema de existencias y movimientos de productos
+        - Pendiente.
+
+---
+
+- TAREA.3.3 — Depuración integral del inventario para entrega a responsable administrativo ⚠️ Pendiente validar en sesión próxima
+    - AS-IS 3.3: Depuración integral del inventario para entrega a responsable administrativo
+        - ¿Qué es esta tarea?
+            - Revisión del cien por ciento de los productos del inventario para sincronizar la existencia física con lo registrado en Odoo, dejando el sistema depurado y confiable para ser transferido al área administrativa.
+        - ¿Para qué se hace?
+            - Para dejar una base de inventario limpia y verificada que pueda ser administrada correctamente por el área administrativa (Libny Carina Tarazon Gallegos), sin heredar errores acumulados del período anterior.
+        - ¿Qué roles ejecutan esta tarea?
+            - Ejecuta actualmente: Gerente de Contraloría (Meche), de forma extraordinaria y temporal.
+            - Destinataria del resultado: Libny Carina Tarazon Gallegos (área administrativa del hotel).
+            - Receptor del reporte de cierre: Presidencia (Enrique Rafael Cid).
+        - ¿Cuándo se hace?
+            - Disparador: Tarea iniciada por decisión de presidencia ante la ausencia de un responsable de inventario.
+            - Frecuencia: Tarea única y no recurrente. Una vez completada, se transfiere la responsabilidad del inventario cíclico a Libny Carina Tarazon Gallegos.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar el cien por ciento de los productos, verificando existencia física contra sistema mediante el inventario cíclico diario (TAREA.3.1 y TAREA.3.2).
+            - Paso 2: Corregir las inconsistencias encontradas entre físico y sistema.
+            - Paso 3: Al completar la revisión total, generar el reporte de inventario depurado.
+            - Paso 4: Entregar el reporte a presidencia (Enrique Rafael Cid).
+            - Paso 5: Transferir la responsabilidad del inventario cíclico a Libny Carina Tarazon Gallegos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Odoo para verificación y corrección de existencias.
+            - Disponibilidad de Victor Manuel Perez Carrizalez para los conteos físicos diarios.
+        - ¿Qué se genera al terminar?
+            - Reporte de inventario depurado, entregado a presidencia. Formato: ⚠️ Pendiente validar en sesión próxima.
+            - Transferencia formal de la tarea de inventario cíclico a Libny Carina Tarazon Gallegos.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: verificación y corrección de existencias.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que una vez transferida a Libny Carina Tarazon Gallegos, la actividad de inventario cíclico sea ejecutada de forma autónoma por el área administrativa del hotel, sin intervención de Contraloría.
+    - Propuesta 3.3: Depuración integral del inventario para entrega a responsable administrativo
+        - Pendiente.
+
+---
+
+- TAREA.4.1 — Asesoría estratégica a administración y talento humano (resolución de consultas generales)
+    - AS-IS 4.1: Asesoría estratégica a administración y talento humano
+        - ¿Qué es esta tarea?
+            - Atención de consultas, aclaración de dudas y resolución de problemas planteados por otros departamentos, principalmente administración y talento humano.
+        - ¿Para qué se hace?
+            - Para apoyar a los departamentos que tienen dudas o necesidades de orientación en temas que requieren el expertise de Contraloría.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud del departamento que necesita orientación.
+            - Frecuencia: Con frecuencia; principalmente hacia administración y talento humano. Esporádicamente hacia otros departamentos del hotel y la oficina.
+        - ¿Cómo se hace?
+            - Paso 1: El departamento contacta a la responsable por llamada, WhatsApp o en persona.
+            - Paso 2: La responsable atiende la consulta, aclara la duda o resuelve el problema.
+            - Paso 3: No queda registro formal de la asesoría brindada; la interacción concluye con la aclaración de la duda o resolución del problema de forma verbal o por mensajería (fuente: transcript sesión 1).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Conocimiento y expertise de la responsable en las materias consultadas (contabilidad, administración, talento humano). No se mencionaron insumos adicionales en el transcript.
+        - ¿Qué se genera al terminar?
+            - No se genera output formal. La asesoría se da de forma verbal o por mensajería sin dejar registro (fuente: transcript sesión 1).
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp: comunicación con los departamentos.
+            - Llamada telefónica o atención presencial.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 4.1: Asesoría estratégica a administración y talento humano
+        - Pendiente.
+
+---
+
+- TAREA.5.1 — Coordinación de auditorías: detección de errores de registro y envío de información a asesor contable externo
+    - AS-IS 5.1: Coordinación de auditorías y envío de información a asesor contable externo
+        - ¿Qué es esta tarea?
+            - Revisión de documentos y papeles de trabajo para detectar errores en los registros contables, identificar su causa raíz y enviar la información al asesor contable externo para que ejecute las correcciones.
+        - ¿Para qué se hace?
+            - Para identificar por qué se generaron registros errados, corregirlos en origen y evitar que se repitan.
+        - ¿Qué roles ejecutan esta tarea?
+            - Detecta y coordina: Gerente de Contraloría (Meche).
+            - Ejecuta las correcciones: Asesor contable externo (Urbaneja).
+        - ¿Cuándo se hace?
+            - Disparador: Detección de inconsistencias o errores en los registros contables durante la revisión de reportes.
+            - Frecuencia: Debería ser mensual. Actualmente se ha hecho de forma esporádica e informal.
+        - ¿Cómo se hace?
+            - Paso 1: Revisar documentos y papeles de trabajo para detectar registros errados.
+            - Paso 2: Analizar la causa raíz del error ("irse a la raíz del problema").
+            - Paso 3: Enviar la información al asesor contable externo (Urbaneja) vía WhatsApp.
+            - Paso 4: ⚠️ Pendiente validar en sesión próxima (confirmación de corrección y seguimiento).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Reportes y documentos contables descargados de Odoo.
+            - Contacto activo con el asesor contable externo (Urbaneja).
+        - ¿Qué se genera al terminar?
+            - Envío de información de errores al asesor contable para corrección. No se mencionó un reporte formal de cierre de la auditoría.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: obtención de reportes y documentos contables para revisión.
+            - WhatsApp: comunicación informal con el asesor contable externo.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que la coordinación con el asesor contable sea mensual y formal, con un canal de comunicación más estructurado que WhatsApp y con trazabilidad de los errores detectados y corregidos.
+    - Propuesta 5.1: Coordinación de auditorías y envío de información a asesor contable externo
+        - Pendiente.
+
+---
+
+- TAREA.5.2 — Auditoría de movimientos fiscales (revisión de documentos y papeles de trabajo)
+    - AS-IS 5.2: Auditoría de movimientos fiscales
+        - ¿Qué es esta tarea?
+            - Revisión de documentos y papeles de trabajo relacionados con movimientos fiscales para verificar su corrección y detectar inconsistencias.
+        - ¿Para qué se hace?
+            - Para asegurar el cumplimiento fiscal y detectar errores en los registros de movimientos fiscales antes de que generen sanciones.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+        - ¿Cuándo se hace?
+            - Disparador: Detección de inconsistencias en los movimientos fiscales durante la revisión de reportes (se ejecuta en el marco de TAREA.5.1) (fuente: transcript sesión 1 — "entra en la anterior").
+            - Frecuencia: Debería ser mensual; actualmente se hace de forma esporádica e informal, subsumida dentro de TAREA.5.1 (fuente: transcript sesión 1).
+        - ¿Cómo se hace?
+            - Paso 1: La revisión de documentos y papeles de trabajo de movimientos fiscales se realiza como parte del flujo de auditoría de TAREA.5.1. No se describió un flujo propio separado en la sesión (fuente: transcript sesión 1).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentos y papeles de trabajo de movimientos fiscales.
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima (el transcript no describió un output específico para esta tarea separada de TAREA.5.1).
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: obtención de reportes de movimientos fiscales (libros de IVA compras y ventas) para revisión (fuente: transcript sesión 1 — mismos sistemas que TAREA.5.1).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Se mencionó que mensualmente hay problemas porque los IVA no cuadran.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que el paquete de localización venezolana de Odoo 19 resuelva los problemas de cuadre de IVA que se presentan actualmente.
+    - Propuesta 5.2: Auditoría de movimientos fiscales
+        - Pendiente.
+
+---
+
+- TAREA.5.3 — Organización preventiva de documentación física y digital para fiscalizaciones
+    - AS-IS 5.3: Organización preventiva de documentación para fiscalizaciones
+        - ¿Qué es esta tarea?
+            - Organización y mantenimiento de la documentación física y digital de la empresa para que esté disponible y ordenada ante una fiscalización del SENIAT u otro ente.
+        - ¿Para qué se hace?
+            - Para evitar la situación reactiva y caótica que se ha vivido desde 2023, cuando llegan fiscalizaciones y no se encuentra la información de forma ordenada porque los departamentos no envían la documentación completa ni la archivan correctamente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable coordinadora: Gerente de Contraloría (Meche).
+            - Ejecutores por área: cada departamento debería organizar y archivar sus propios papeles de trabajo al cierre mensual, tanto en físico como en digital.
+            - Nota: actualmente no hay un proceso formal ni personal suficiente para ejecutarlo.
+        - ¿Cuándo se hace?
+            - Disparador: Idealmente, al cierre mensual de cada departamento, de forma preventiva. En la práctica actual, se activa cuando llega una fiscalización.
+            - Frecuencia: Debería ser mensual (preventiva). Actualmente es reactiva y esporádica.
+        - ¿Cómo se hace?
+            - Paso 1 (deber ser): Cada departamento organiza sus papeles de trabajo al cierre mensual y los archiva en físico y digital.
+            - Paso 2 (deber ser): Contraloría verifica que la documentación esté completa y correctamente archivada.
+            - Paso 3 (situación actual): Cuando llega una fiscalización, todos los departamentos corren a buscar papeles, organizar y escanear de manera reactiva.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Que todos los departamentos ejecuten sus cierres mensuales y archiven su documentación.
+            - Que el hotel envíe la información completa a la oficina para su procesamiento y archivo.
+            - Personal suficiente en cada área para ejecutar el archivo correctamente.
+        - ¿Qué se genera al terminar?
+            - Archivo físico y digital actualizado por departamento y por período. Actualmente no existe de forma organizada.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima (no se especificó herramienta de archivo digital).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Cuando llega una fiscalización sin que la documentación esté organizada, todos los departamentos deben reaccionar de urgencia para localizar, ordenar y escanear papeles, con el riesgo de no encontrar información o presentarla incompleta.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que cada área tenga definido qué documentos debe archivar, en qué formato y con qué frecuencia, como parte de su proceso de cierre mensual.
+            - Que exista tanto archivo físico como digital actualizado en todo momento, sin depender de una fiscalización para organizarlo.
+    - Propuesta 5.3: Organización preventiva de documentación para fiscalizaciones
+        - Pendiente.
+
+---
+
+- TAREA.6.1 — Administración de usuarios de cuentas bancarias corporativas (perfiles de consulta y transaccionales) ⚠️ Pendiente validar en sesión próxima
+    - AS-IS 6.1: Administración de usuarios de cuentas bancarias corporativas
+        - ¿Qué es esta tarea?
+            - Gestión de los accesos a las cuentas bancarias corporativas: creación de usuarios con perfil de consulta o perfil transaccional, asignación a las personas correspondientes y control del usuario máster.
+        - ¿Para qué se hace?
+            - Para controlar quién tiene acceso a las cuentas bancarias de la empresa y a qué nivel (solo consulta o también transacciones), garantizando seguridad en el manejo de los fondos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Ejecuta actualmente (usuario máster en algunos bancos): Gerente de Contraloría (Meche).
+            - Ejecuta también (usuario máster en bancos que ella misma abrió): Ericka Milagro Antequera (administración).
+            - Nota: la tarea está dividida entre dos personas sin un responsable único; debería consolidarse en un área de Tesorería que actualmente no existe.
+        - ¿Cuándo se hace?
+            - Disparador: Ingreso de nuevo personal que requiere acceso bancario, o cambio en los niveles de acceso existentes.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Determinar el nivel de acceso requerido: consulta (analista) o transaccional.
+            - Paso 2: Crear el usuario en la plataforma bancaria correspondiente con el perfil definido.
+            - Paso 3: Asignar el usuario a la persona indicada.
+            - Paso 4: ⚠️ Pendiente validar en sesión próxima (no se mencionó proceso de baja o modificación de usuarios).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso de usuario máster a las plataformas bancarias.
+        - ¿Qué se genera al terminar?
+            - Usuario bancario creado y asignado. No se mencionó registro formal del proceso.
+        - ¿Qué sistemas o herramientas usan?
+            - Plataformas bancarias en línea de los bancos corporativos (nombres específicos: ⚠️ Pendiente validar en sesión próxima).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que toda la administración de usuarios bancarios esté centralizada en un único responsable del área de Tesorería, con niveles de aprobación definidos, en lugar de estar repartida entre Contraloría y Administración.
+    - Propuesta 6.1: Administración de usuarios de cuentas bancarias corporativas
+        - Pendiente.
+
+---
+
+- TAREA.6.2 — Ejecución de pagos en plataformas bancarias ⚠️ Pendiente validar en sesión próxima
+    - AS-IS 6.2: Ejecución de pagos en plataformas bancarias
+        - ¿Qué es esta tarea?
+            - Realización de pagos y transferencias a través de las plataformas bancarias en línea de la empresa.
+        - ¿Para qué se hace?
+            - Para cumplir con las obligaciones de pago de la empresa (proveedores, nómina, parafiscales, etc.) ante la ausencia de un área de Tesorería formal.
+        - ¿Qué roles ejecutan esta tarea?
+            - Ejecuta actualmente: Gerente de Contraloría (Meche), de forma temporal por solicitud expresa ante la ausencia de tesorero.
+            - Nota: esta actividad debería corresponder a Tesorería o Administración; actualmente no hay un responsable formal.
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud de pago recibida.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo se hace?
+            - Paso 1: ⚠️ Pendiente validar en sesión próxima (el flujo completo de autorización y ejecución del pago no fue descrito en la sesión).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso transaccional a las plataformas bancarias.
+            - ⚠️ Pendiente validar en sesión próxima (documentos de soporte del pago, aprobaciones previas).
+        - ¿Qué se genera al terminar?
+            - ⚠️ Pendiente validar en sesión próxima (comprobante de pago, registro en Odoo — no fue confirmado en la sesión).
+        - ¿Qué sistemas o herramientas usan?
+            - Plataformas bancarias en línea (nombres específicos: ⚠️ Pendiente validar en sesión próxima).
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que esta tarea sea asumida por un área de Tesorería formal, con niveles de aprobación definidos, y que deje de recaer sobre Contraloría.
+    - Propuesta 6.2: Ejecución de pagos en plataformas bancarias
+        - Pendiente.
+- TAREA.7.1 — Descarga de reportes de inventario (stock, ubicaciones, historial de movimientos)
+    - AS-IS 7.1: Descarga de reportes de inventario desde Odoo
+        - ¿Qué es esta tarea?
+            - Descarga desde Odoo de los reportes de inventario que usa Contraloría para sus revisiones: reporte de stock, reporte de ubicaciones y reporte de historial de movimientos.
+        - ¿Para qué se hace?
+            - Para analizar el estado del inventario: cuánto hay en existencia, cuánto cuesta, dónde está ubicado y cuál ha sido su movimiento (entradas y salidas).
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+        - ¿Cuándo se hace?
+            - Disparador: Necesidad de verificar el estado del inventario, como parte del inventario cíclico o de la supervisión general.
+            - Frecuencia: Diaria, confirmado en transcript sesión 1 — "eso es diario... con esta metodología de los inventarios cíclicos".
+        - ¿Cómo se hace?
+            - Paso 1: Acceder a Odoo.
+            - Paso 2: Descargar el reporte de stock.
+            - Paso 3: Descargar el reporte de ubicaciones.
+            - Paso 4: Descargar el reporte de historial de movimientos.
+            - Paso 5: Usar los reportes descargados como insumo para la verificación de existencias (TAREA.3.2) y la coordinación del inventario cíclico (TAREA.3.1). El reporte de valoración de inventario no se descarga (fuente: transcript sesión 1).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Odoo con permisos para los módulos de inventario y sus reportes.
+        - ¿Qué se genera al terminar?
+            - Reportes descargados (stock, ubicaciones, historial) que alimentan las tareas de verificación y análisis de inventario.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: módulo de inventario, reportes de stock, ubicaciones e historial de movimientos.
+            - Nota: la responsable indicó que no utiliza el reporte de valoración de inventario.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima
+    - Propuesta 7.1: Descarga de reportes de inventario desde Odoo
+        - Pendiente.
+
+---
+
+- TAREA.7.2 — Descarga de libros contables (IVA compras, IVA ventas, balance de comprobación, estado de situación, estado de resultados, libro mayor) ⚠️ Pendiente validar en sesión próxima
+    - AS-IS 7.2: Descarga de libros contables desde Odoo
+        - ¿Qué es esta tarea?
+            - Descarga desde Odoo de los libros y reportes contables utilizados por Contraloría: libro de IVA compras, libro de IVA ventas, balance de comprobación, estado de situación financiera, estado de resultados y libro mayor.
+        - ¿Para qué se hace?
+            - Para revisar la información contable de la empresa, verificar saldos, analizar movimientos y cumplir con las obligaciones legales de tener los libros contables actualizados (Código de Comercio).
+        - ¿Qué roles ejecutan esta tarea?
+            - Responsable: Gerente de Contraloría (Meche).
+        - ¿Cuándo se hace?
+            - Disparador: Necesidad de revisión contable mensual o requerimiento de auditoría/fiscalización.
+            - Frecuencia: Debería ser mensual. Actualmente se hace de forma irregular por ausencia de cierres.
+        - ¿Cómo se hace?
+            - Paso 1: Acceder a Odoo.
+            - Paso 2: Descargar los reportes disponibles: libro de IVA compras, libro de IVA ventas, balance de comprobación, estado de situación, estado de resultados y libro mayor.
+            - Paso 3: ⚠️ Pendiente validar en sesión próxima (el libro diario fue mencionado como requerido por el Código de Comercio pero la responsable indicó que no sabe cómo descargarlo desde Odoo).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a Odoo con permisos para el módulo de contabilidad y sus reportes.
+            - Cierres mensuales realizados para que los reportes descargados sean confiables y estables.
+        - ¿Qué se genera al terminar?
+            - Libros y reportes contables descargados, usados como insumo para el análisis financiero (TAREA.1.3), auditorías (TAREA.5.1) y cumplimiento legal.
+            - Nota: el Código de Comercio exige que los libros diario, mayor e inventario estén impresos mensualmente. Actualmente no se han impreso por falta de cierres contables desde 2023.
+        - ¿Qué sistemas o herramientas usan?
+            - Odoo: módulo de contabilidad, reportes de IVA, estados financieros y libro mayor.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si los períodos no están cerrados, los reportes descargados pueden ser alterados retroactivamente por nuevos registros, invalidando los libros ya emitidos.
+            - Los IVA no cuadran mensualmente, lo que genera inconsistencias en los libros fiscales.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que los períodos estén bloqueados antes de descargar los libros, para que las cifras sean estables e imprimibles.
+            - Que el paquete de localización venezolana de Odoo 19 resuelva los problemas de cuadre de IVA.
+            - Que se pueda identificar y descargar el libro diario desde Odoo para cumplir con el Código de Comercio.
+            - Que se retome la impresión mensual de los libros obligatorios (diario, mayor, inventario) una vez que los cierres estén al día.
+    - Propuesta 7.2: Descarga de libros contables desde Odoo
+        - Pendiente.
+
+---
+
+## Propuestas de Adición
+
+Existen 1 tarea documentada en el transcript de sesión 1 que no aparece en el Inventario ni en el AS-IS original. Propongo agregar:
+
+**TAREA PROPUESTA — Corrección y devolución de pedidos de compras en Odoo (actividad temporal)**
+- Fuente: transcript sesión 1, minuto 1h20:45 — "me pidieron el favor de hacer los pedidos, de hacer la devolución de los pedidos... Compras se equivoca registrando un pedido y luego se da cuenta que lo hizo mal y pide la devolución de ese pedido. Entonces, ahí intervengo yo".
+- Descripción: la responsable interviene para corregir pedidos mal registrados por el área de Compras en Odoo, ejecutando la devolución de los mismos. Se ejecuta de forma temporal e informal ante la ausencia de un proceso definido en el área de Compras.
+- Nota: el entrevistador lo calificó como oportunidad de mejora (proceso que debería corresponder a Compras con flujo documentado). No está en el inventario porque es una actividad que debería reasignarse, no institucionalizar en Contraloría.
+- Pendiente aprobación para incluir como tarea en el AS-IS.

@@ -1,0 +1,1599 @@
+# AS - IS: Administración y Finanzas (HOTEL-Juan)
+
+Creado: 26 de marzo de 2026 16:04
+Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Frecuencia de TAREA 1.13 completada desde transcripción.
+
+- FASE 1: **FACTURACION EN COMPRAS**
+    - TAREA 1.1: Verificación y Validación del documento antes de procesarlo
+        - AS-IS 1.1: Verificación y Validación del documento antes de procesarlo
+            - ¿Qué es esta tarea?
+                - Revisión exhaustiva de los documentos fiscales recibidos de proveedores antes de registrarlos en el sistema, verificando que cumplan con todos los requisitos exigidos por el SENIAT.
+            - ¿Para qué se hace?
+                - Para garantizar que los documentos sean aceptables para el fisco y puedan procesarse válidamente en el sistema. El cumplimiento de la norma es estricto y no puede haber desvíos.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras) es quien ejecuta esta tarea como responsable del cierre del proceso de compra.
+            - ¿Cuándo se hace?
+                - Disparador: Recepción de un documento fiscal de proveedor, acompañado de un pedido recepcionado.
+                - Frecuencia: Cada vez que llega un documento a procesar.
+            - ¿Cómo se hace?
+                - Paso 1: Verificar que el documento contenga RIF del proveedor.
+                - Paso 2: Verificar que el documento contenga dirección fiscal.
+                - Paso 3: Verificar que contenga número de factura.
+                - Paso 4: Verificar que contenga número de control.
+                - Paso 5: Verificar que contenga fecha.
+                - Paso 6: Verificar que contenga membrete.
+                - Paso 7: Verificar la legibilidad del documento.
+                - Paso 8: Verificar que los costos de los productos coincidan con lo acordado en el pedido, incluyendo la moneda y la tasa de cambio aplicada.
+                - Paso 9: Si la factura está en bolívares pero el pedido fue cotizado en dólares, verificar que la conversión monetaria se haya realizado a la tasa del día correspondiente.
+                - Paso 10: Si la diferencia en la conversión es significativa, hacer una objeción al proveedor antes de procesar.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Documento fiscal del proveedor (factura física o digital).
+                - Pedido previamente montado y recepcionado por el departamento de Compras.
+                - Tasa de cambio del día para verificar conversiones monetarias.
+            - ¿Qué se genera al terminar?
+                - Si el documento es válido: se procede al registro de la factura en el sistema.
+                - Si el documento no es válido: se genera una objeción al proveedor y se detiene el proceso hasta corrección.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para importar la factura a partir del pedido recepcionado y registrarla.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Factura con tasa de cambio incorrecta: se objeta al proveedor preguntando a qué tasa está facturando; no se procesa hasta que se aclare y se corrija.
+                - Documento con información incompleta o ilegible: ⚠️ Pendiente validar en sesión próxima (no se describe el procedimiento específico en la transcripción más allá de que no puede procesarse).
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.1: Verificación y Validación del documento antes de procesarlo
+            - Pendiente.
+    - TAREA 1.2: Solicitud de pedidos de compras excepcionales
+        - AS-IS 1.2: Solicitud de pedidos de compras excepcionales
+            - ¿Qué es esta tarea?
+                - Solicitud de pedidos de compras que se realizan sin haber seguido el proceso formal de compra (sin orden de compra previa emitida por el departamento de Compras).
+            - ¿Para qué se hace?
+                - Para dar cobertura contable a compras que ya ocurrieron saltándose el proceso formal, permitiendo cerrar el pedido con una factura. Juan indica que esta tarea no debería corresponderle a él y que desea eliminarla de sus funciones.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel la ejecuta actualmente, aunque señala explícitamente que no debería hacerlo.
+            - ¿Cuándo se hace?
+                - Disparador: Cuando se detecta una compra realizada sin pedido formal previo (por ejemplo, alguien fue directamente a un proveedor usando el RIF de la empresa sin pasar por Compras).
+                - Frecuencia: ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (en la transcripción Juan señala que realiza esta tarea pero que quiere eliminarla; no se describe el procedimiento paso a paso).
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan expresa que esta tarea debería eliminarse de sus responsabilidades. Señala que cuando alguien compra sin seguir el proceso, Compras no debería montar el pedido a posteriori dándole validez a algo que no pasó por el canal correcto.
+        - Propuesta 1.2: Solicitud de pedidos de compras excepcionales
+            - Pendiente.
+    - TAREA 1.3: Verificación y Validación del Pedido antes de importarlo a la factura
+        - AS-IS 1.3: Verificación y Validación del Pedido antes de importarlo a la factura
+            - ¿Qué es esta tarea?
+                - Revisión del pedido registrado en Odoo por el departamento de Compras, verificando que esté correctamente configurado antes de usarlo como base para crear la factura.
+            - ¿Para qué se hace?
+                - Porque aunque Compras filtra los pedidos, Juan debe hacer un segundo filtro propio al ser la etapa final del proceso. Los errores en el pedido frenan el proceso de pago, retrasan la conciliación y pueden requerir correcciones que involucren a otros departamentos, demorando el proceso días o incluso meses.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+                - Compras hace un primer filtro, pero Juan hace un segundo filtro independiente.
+                - Ericka Milagro Antequera (Gerencia de Administración y Finanzas) indica a Compras que valide los pedidos al momento de aprobar los pagos.
+            - ¿Cuándo se hace?
+                - Disparador: Pedido recepcionado y aprobación de pago emitida por gerencia.
+                - Frecuencia: Cada vez que se va a procesar una factura.
+            - ¿Cómo se hace?
+                - Paso 1: Esperar indicación de Ericka Milagro Antequera a Compras para validar que los pedidos estén correctos antes de iniciar el proceso de pago.
+                - Paso 2: Transcurrido un tiempo prudencial (aproximadamente 30 minutos, aunque a veces se hace de inmediato), acceder al módulo de Compras en Odoo.
+                - Paso 3: Revisar los detalles del pedido: productos, cantidades, precios, condiciones pactadas.
+                - Paso 4: Si se detecta un error, registrarlo como incidencia y reportarlo.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Acceso al módulo de Compras en Odoo.
+                - Pedido previamente montado y recepcionado.
+                - Aprobación de pago de gerencia como señal de inicio.
+            - ¿Qué se genera al terminar?
+                - Si el pedido está correcto: se procede a importar el pedido a la factura.
+                - Si hay error: se genera un reporte de incidencia que se escala a niveles superiores de gerencia para corrección.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo (módulo de Compras): para revisar y verificar el pedido antes de importarlo.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Error en el pedido: se reporta a niveles superiores de gerencia. Dependiendo de quién cometió el error, puede requerir corrección del pedido, devolución del pedido o elaboración de un nuevo pedido. El proceso puede retrasarse de horas a meses.
+                - El error no puede ser corregido por quien lo cometió: Juan debe levantar un informe detallado para que otro nivel jerárquico gestione la corrección, lo que puede implicar contacto con el proveedor y otros departamentos.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.3: Verificación y Validación del Pedido antes de importarlo a la factura
+            - Pendiente.
+    - TAREA 1.4: Solicitud de facturas a proveedores, chat directo con el proveedor
+        - AS-IS 1.4: Solicitud de facturas a proveedores, chat directo con el proveedor
+            - ¿Qué es esta tarea?
+                - Comunicación directa con el proveedor para solicitarle la emisión y envío de la factura fiscal correspondiente a un despacho o servicio prestado a crédito.
+            - ¿Para qué se hace?
+                - Para iniciar el proceso de pago en las compras a crédito, donde el proveedor despachó la mercancía o prestó el servicio pero aún no ha emitido la factura fiscal. Sin la factura, no se puede registrar ni pagar.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Aprobación del pago de cuentas a crédito por parte de gerencia.
+                - Frecuencia: Cada vez que gerencia aprueba el pago de una cuenta por pagar a crédito pendiente de factura.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir confirmación de gerencia de que el pago de la cuenta por pagar ha sido aprobado.
+                - Paso 2: Verificar que los pedidos asociados a ese proveedor estén correctamente registrados en Odoo.
+                - Paso 3: Contactar directamente al proveedor vía WhatsApp.
+                - Paso 4: Indicar al proveedor el pedido o despacho específico del que se solicita la factura, con la fecha correspondiente.
+                - Paso 5: Solicitar que el proveedor envíe la factura fiscal.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Aprobación de pago de gerencia.
+                - Identificación del pedido o despacho pendiente de factura.
+                - Número de WhatsApp del proveedor.
+            - ¿Qué se genera al terminar?
+                - Recepción de la factura fiscal del proveedor (foto o PDF) vía WhatsApp, lo que habilita el inicio del registro de la factura.
+            - ¿Qué sistemas o herramientas usan?
+                - WhatsApp: canal principal de comunicación directa con proveedores para esta gestión.
+                - Correo electrónico: se menciona como canal formal pero señala que solo se usa con proveedores en la confirmación de la compra; esa parte la gestiona Compras.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que no ha sido posible establecer una línea directa de comunicación con los proveedores por correo electrónico para estas gestiones. La comunicación se centraliza en WhatsApp por practicidad.
+        - Propuesta 1.4: Solicitud de facturas a proveedores, chat directo con el proveedor
+            - Pendiente.
+    - TAREA 1.5: Registro de facturas
+        - AS-IS 1.5: Registro de facturas
+            - ¿Qué es esta tarea?
+                - Creación y confirmación de la factura de compra en Odoo, importando el pedido recepcionado como base y cerrando así el ciclo de la compra con un documento fiscal válido.
+            - ¿Para qué se hace?
+                - Para formalizar contablemente la compra en el sistema, cerrar el pedido abierto y habilitar el proceso de pago. Es el paso final del flujo de compra antes del pago.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Documento fiscal validado (TAREA 1.1) y pedido verificado (TAREA 1.3).
+                - Frecuencia: Cada vez que se recibe y valida un documento fiscal de proveedor.
+            - ¿Cómo se hace?
+                - Paso 1: Confirmar que el documento fiscal cumple todos los requisitos (resultado de TAREA 1.1).
+                - Paso 2: Confirmar que el pedido en Odoo está correctamente registrado (resultado de TAREA 1.3).
+                - Paso 3: Importar el pedido recepcionado a la factura en Odoo.
+                - Paso 4: Registrar la factura en el sistema con los datos del documento fiscal.
+                - Paso 5: Verificar que las retenciones de IVA e ISLR estén correctamente aplicadas y al día.
+                - Paso 6: Una vez registrada la factura, notificar a Finanzas para proceder con el pago (TAREA 1.7).
+            - ¿Qué necesitan para hacer esta tarea?
+                - Documento fiscal del proveedor validado.
+                - Pedido recepcionado y verificado en Odoo.
+                - No requiere autorización adicional de gerencia para registrar la factura; el proceso es fluido en esta etapa.
+            - ¿Qué se genera al terminar?
+                - Factura de compra registrada y confirmada en Odoo.
+                - Notificación a Finanzas de que la factura está lista para pago.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para importar el pedido, crear y confirmar la factura de compra.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.5: Registro de facturas
+            - Pendiente.
+    - TAREA 1.6: Recepción de Guías SUNAGRO SICA
+        - AS-IS 1.6: Recepción de Guías SUNAGRO SICA
+            - ¿Qué es esta tarea?
+                - Validación y recepción formal en el portal de SUNAGRO de las guías de traslado emitidas por proveedores externos que transportan mercancía (principalmente alimentos) desde sus instalaciones hasta el hotel.
+            - ¿Para qué se hace?
+                - Para cumplir con la obligación legal impuesta por SUNAGRO, que exige registrar la recepción de la guía dentro de su plazo de vencimiento. El incumplimiento genera multas sancionables por parte del ente regulador.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+                - Se menciona que otros usuarios también tienen autorización de acceso al portal de SUNAGRO.
+            - ¿Cuándo se hace?
+                - Disparador: Recepción física de la guía SUNAGRO traída por el proveedor junto con la factura, entregada por Almacén a Administración.
+                - Frecuencia: Cada vez que llega una guía; debe hacerse de forma inmediata el mismo día de recepción, ya que la guía tiene fecha de vencimiento para su recepción en el portal.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir la guía SUNAGRO y la factura del proveedor, entregadas por Almacén (Almacén recibe directamente la descarga de mercancía y luego trae los documentos a Administración).
+                - Paso 2: Verificar que los datos de la guía coincidan con lo indicado en la factura y con lo recibido por Almacén.
+                - Paso 3: Ingresar al portal de SUNAGRO.
+                - Paso 4: Verificar que la guía esté disponible para recepción en el portal.
+                - Paso 5: Recepcionar la guía en el portal.
+                - Paso 6: Cerrar el proceso de recepción de la guía.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Guía SUNAGRO física entregada por Almacén.
+                - Factura del proveedor asociada al despacho.
+                - Acceso al portal de SUNAGRO.
+            - ¿Qué se genera al terminar?
+                - Guía recepcionada formalmente en el portal de SUNAGRO, evitando la multa por omisión.
+            - ¿Qué sistemas o herramientas usan?
+                - Portal de SUNAGRO: para validar y recepcionar la guía de traslado.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Guía no disponible para recepción en el portal: se reporta la situación. Juan señala que esto ocurrió una sola vez y no volvió a repetirse. ⚠️ Pendiente validar procedimiento específico de reporte en sesión próxima.
+                - No recepcionar a tiempo: genera una multa de SUNAGRO. Juan señala que el Enrique Rafael Cid (gerencia) puede tomar medidas disciplinarias ante esta omisión.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.6: Recepción de Guías SUNAGRO SICA
+            - Pendiente.
+    - TAREA 1.7: Solicitud de pago a Finanzas
+        - AS-IS 1.7: Solicitud de pago a Finanzas
+            - ¿Qué es esta tarea?
+                - Comunicación formal a Finanzas (Ericka Milagro Antequera) de que la factura ha sido registrada correctamente en el sistema y está lista para ser pagada, acompañada de los avales que respaldan la autorización de pago.
+            - ¿Para qué se hace?
+                - Porque Finanzas no puede proceder con el pago si no tiene certeza de que la factura fue registrada en el sistema. La solicitud de Juan es la señal que habilita a Ericka Milagro Antequera para ejecutar el pago. Además, el pago requiere respaldo de autorización de gerencia, no puede ejecutarse sobre la afirmación verbal de un trabajador.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras) realiza la solicitud.
+                - Ericka Milagro Antequera (Gerencia de Administración y Finanzas) recibe la solicitud y verifica la autorización con gerencia antes de aprobar.
+                - Enrique Rafael Cid o Alberto Cid Navarro (Gerencia General) otorgan la autorización del pago.
+            - ¿Cuándo se hace?
+                - Disparador: Factura registrada correctamente en Odoo con retenciones al día.
+                - Frecuencia: Cada vez que se registra una factura lista para pago.
+            - ¿Cómo se hace?
+                - Paso 1: Verificar que la factura esté registrada en Odoo con las retenciones de IVA e ISLR correctas y al día.
+                - Paso 2: Notificar a Ericka Milagro Antequera (Finanzas) que la factura está lista e indicar que el pago está autorizado por gerencia, nombrando al autorizante.
+                - Paso 3: Proveer a Ericka Milagro Antequera los avales que respaldan la autorización (confirmación directa de gerencia, correo, u otro soporte).
+                - Paso 4: Ericka Milagro Antequera verifica directamente con la gerencia la autorización antes de proceder.
+                - Paso 5: Una vez Ericka Milagro Antequera confirma, procede con la emisión del pago.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Factura registrada y confirmada en Odoo.
+                - Autorización de pago de gerencia (Enrique Rafael Cid o Alberto Cid Navarro).
+                - Soporte del aval de autorización para trasladar a Ericka Milagro Antequera.
+            - ¿Qué se genera al terminar?
+                - Confirmación de Ericka Milagro Antequera de que procede con el pago.
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima (no se especifica el canal por el que Juan notifica a Ericka Milagro Antequera en esta tarea específica).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.7: Solicitud de pago a Finanzas
+            - Pendiente.
+    - TAREA 1.8: Emisión de pagos de facturas a proveedores
+        - AS-IS 1.8: Emisión de pagos de facturas a proveedores
+            - ¿Qué es esta tarea?
+                - Envío al proveedor del comprobante de pago emitido por Finanzas, notificándole formalmente que su factura fue pagada y dejando soporte documental del acto de pago en el canal de comunicación.
+            - ¿Para qué se hace?
+                - Para que el proveedor tenga constancia formal del pago realizado y no pueda alegar que no le fue cancelado. También protege a la empresa ante reclamos futuros, ya que el soporte queda registrado en el chat con el proveedor.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras) gestiona la comunicación con el proveedor.
+                - Ericka Milagro Antequera (Finanzas) emite el comprobante de pago y se lo envía a Juan.
+            - ¿Cuándo se hace?
+                - Disparador: Recepción del comprobante de pago emitido por Ericka Milagro Antequera (Finanzas).
+                - Frecuencia: Cada vez que Finanzas ejecuta un pago a proveedor.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir el comprobante de pago de Ericka Milagro Antequera en formato PDF.
+                - Paso 2: Si Ericka Milagro Antequera no envía el comprobante espontáneamente, insistir en solicitárselo, ya que es indispensable.
+                - Paso 3: Contactar al proveedor vía WhatsApp.
+                - Paso 4: Enviar el PDF del comprobante al proveedor con un mensaje formal que indique: número de factura pagada, concepto y período correspondiente.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Comprobante de pago en PDF emitido por Ericka Milagro Antequera (Finanzas).
+                - Número de WhatsApp del proveedor.
+            - ¿Qué se genera al terminar?
+                - Soporte de pago enviado al proveedor vía WhatsApp, con registro en el historial del chat.
+            - ¿Qué sistemas o herramientas usan?
+                - WhatsApp: canal de comunicación con el proveedor para envío del comprobante.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Proveedores de servicios estatales (ej. luz, aseo urbano, gas comunal): sus trabajadores no reportan el pago a sus superiores, lo que genera cobros duplicados o reclamos. Juan resuelve mostrando el soporte del comprobante enviado en el historial del chat.
+                - Ericka Milagro Antequera no envía el comprobante de forma espontánea: Juan insiste hasta obtenerlo, ya que no puede comunicarse con el proveedor sin ese soporte.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.8: Emisión de pagos de facturas a proveedores
+            - Pendiente.
+    - TAREA 1.9: Aplicación de pago a la factura
+        - AS-IS 1.9: Aplicación de pago a la factura
+            - ¿Qué es esta tarea?
+                - Registro del pago en Odoo vinculándolo directamente a la factura correspondiente, lo que se denomina en el sistema "aplicar el pago".
+            - ¿Para qué se hace?
+                - Para cerrar formalmente la factura en el sistema una vez que el pago fue ejecutado, reflejando el estado real de la deuda con el proveedor.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Pago ejecutado por Finanzas y comprobante recibido.
+                - Frecuencia: Cada vez que se procesa un pago a proveedor.
+            - ¿Cómo se hace?
+                - Paso 1: Ingresar a la factura en Odoo.
+                - Paso 2: Aplicar el pago directamente sobre la factura en el sistema.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Pago ejecutado por Finanzas.
+                - Comprobante de pago.
+                - Acceso a la factura en Odoo.
+            - ¿Qué se genera al terminar?
+                - Pago registrado y aplicado en la factura dentro de Odoo.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para aplicar el pago sobre la factura.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.9: Aplicación de pago a la factura
+            - Pendiente.
+    - TAREA 1.10: Conciliación de pagos y cierre de factura
+        - AS-IS 1.10: Conciliación de pagos y cierre de factura
+            - ¿Qué es esta tarea?
+                - Cruce entre los movimientos de pago registrados en Odoo y los movimientos reflejados en el extracto bancario, para confirmar que los pagos efectivamente se debitaron de las cuentas de la empresa.
+            - ¿Para qué se hace?
+                - Para garantizar que los pagos registrados en el sistema correspondan a movimientos bancarios reales. Sin conciliación no se puede tener certeza de que el proveedor recibió el pago ni de que la empresa fue debitada correctamente.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+                - También concilian: Yoselyn Sojo Fernandez (principalmente comisiones bancarias) y Ericka Milagro Antequera (Finanzas). La conciliación total es una responsabilidad compartida.
+            - ¿Cuándo se hace?
+                - Disparador: Pago aplicado en la factura y extracto bancario actualizado con ese movimiento.
+                - Frecuencia: Diaria (al momento de cada pago).
+            - ¿Cómo se hace?
+                - Paso 1: Verificar que el extracto bancario esté actualizado y refleje el movimiento de pago correspondiente.
+                - Paso 2: Conciliar el pago contra el extracto bancario en el sistema.
+                - Nota: La conciliación puede hacerse directamente contra el pago en el extracto, independientemente de si la factura está o no registrada. Si la factura llega después, el sistema traslada automáticamente el pago a la factura del proveedor correspondiente.
+                - Paso 3: Si el monto pagado es mayor a la factura, queda como anticipo. Si es menor, la factura queda parcialmente abierta.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Extracto bancario actualizado con el movimiento de pago.
+                - Pago registrado en Odoo.
+            - ¿Qué se genera al terminar?
+                - Pago conciliado contra el extracto bancario.
+                - Factura cerrada (si el pago cubre el total) o con saldo parcial pendiente.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para ejecutar la conciliación bancaria.
+                - Extracto bancario: insumo necesario para la conciliación.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Pago no aparece en el extracto bancario: se reporta a Finanzas. Puede deberse a un pago devuelto (ni la empresa fue debitada ni el proveedor recibió el dinero). Se debe rehacer el pago. Este proceso puede tomar de un día hasta una semana.
+                - Pago devuelto en viernes: el proceso de corrección se extiende hasta el lunes siguiente inevitablemente.
+                - Pago devuelto no detectado a tiempo: puede generar notas de débito del proveedor, cambios en el monto original y disputas que toman semanas en resolverse.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.10: Conciliación de pagos y cierre de factura
+            - Pendiente.
+    - TAREA 1.11: Archivo de los pagos por origen bancario con su respectivo comprobante, haciéndolos visibles en la nube (correo) de Finanzas
+        - AS-IS 1.11: Archivo de los pagos por origen bancario con su respectivo comprobante, haciéndolos visibles en la nube (correo) de Finanzas
+            - ¿Qué es esta tarea?
+                - Creación de una carpeta por cada conciliación realizada, donde se archivan capturas de pantalla de la conciliación y los comprobantes de los movimientos de pago asociados, luego enlazada a la carpeta compartida en la nube corporativa para que Finanzas pueda acceder y verificar.
+            - ¿Para qué se hace?
+                - Para mantener un registro documental que permita a Ericka Milagro Antequera (Finanzas) totalizar y verificar mensualmente que el número de conciliaciones archivadas coincide con el número de movimientos bancarios generados en el mes. Sirve también como respaldo ante auditorías o dudas sobre pagos realizados.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): archiva las conciliaciones que él realiza.
+                - Yoselyn Sojo Fernandez: archiva las comisiones bancarias que concilia.
+                - Ericka Milagro Antequera (Finanzas): archiva las conciliaciones que ella realiza; además totaliza mensualmente el registro consolidado.
+                - Libny Carina Tarazon Gallegos: también archiva conciliaciones propias.
+                - Regla: quien concilia un pago es responsable de archivarlo.
+            - ¿Cuándo se hace?
+                - Disparador: Conciliación bancaria realizada.
+                - Frecuencia: Diaria (al momento de cada conciliación). La verificación total y cruce contra movimientos bancarios se hace mensualmente por Ericka Milagro Antequera.
+            - ¿Cómo se hace?
+                - Paso 1: Al conciliar un pago, tomar captura de pantalla de la conciliación en el sistema.
+                - Paso 2: Crear una carpeta específica para ese pago/conciliación.
+                - Paso 3: Incluir en esa carpeta: la captura de pantalla de la conciliación y los comprobantes de los movimientos de pago (uno, dos o tres según corresponda).
+                - Paso 4: En casos de anticipos (pago sin factura asociada), incluir adicionalmente: captura de la conversación de autorización, captura de la aprobación de gerencia y captura del registro del recibo.
+                - Paso 5: Enlazar la carpeta a la nube del correo corporativo para que quede visible y accesible para Ericka Milagro Antequera y el equipo.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Acceso a la carpeta compartida en la nube del correo corporativo (Microsoft Outlook / correo corporativo).
+                - Captura de pantalla de la conciliación realizada en Odoo.
+                - Comprobantes de pago en PDF o imagen.
+                - En casos de anticipos: soportes de autorización de gerencia.
+            - ¿Qué se genera al terminar?
+                - Carpeta con toda la documentación del pago y su conciliación, visible en la nube corporativa para Finanzas.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para tomar captura de pantalla de la conciliación.
+                - Correo corporativo (Microsoft / nube compartida): carpeta en la nube donde se archiva y comparte la documentación.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Al totalizar mensualmente, Ericka Milagro Antequera detecta diferencia entre número de conciliaciones archivadas y movimientos bancarios del mes: el equipo identifica y evalúa la diferencia para determinar si hay conciliaciones faltantes o movimientos duplicados.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.11: Archivo de los pagos por origen bancario con su respectivo comprobante, haciéndolos visibles en la nube (correo) de Finanzas
+            - Pendiente.
+    - TAREA 1.12: Escaneo e identificación de los documentos preparados para el cierre fiscal, elevándolos y haciendo la información visible en la nube (correo)
+        - AS-IS 1.12: Escaneo e identificación de los documentos preparados para el cierre fiscal, elevándolos y haciendo la información visible en la nube (correo)
+            - ¿Qué es esta tarea?
+                - Escaneo de las facturas físicas procesadas en la quincena, identificación de cada documento con el correlativo generado por Odoo, verificación de la calidad del escaneo, y carga en la carpeta compartida de la nube corporativa para que Ericka Milagro Antequera pueda verificarlas en el cierre fiscal quincenal.
+            - ¿Para qué se hace?
+                - Porque la empresa es contribuyente especial y debe declarar el IVA de forma quincenal. Ericka Milagro Antequera necesita tener acceso digital a todas las facturas del período para verificar el cierre fiscal. El número de facturas en la carpeta debe coincidir exactamente con las declaradas: ni una más ni una menos.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Cierre de la quincena (al 15 o al último día de cada mes).
+                - Frecuencia: Quincenal.
+            - ¿Cómo se hace?
+                - Paso 1: Escanear cada factura física procesada en la quincena.
+                - Paso 2: Verificar que cada escaneo sea legible, bien centrado y con la calidad visual necesaria; corregir los que no cumplan la condición.
+                - Paso 3: Identificar cada documento escaneado con el correlativo único generado por Odoo para ese documento.
+                - Paso 4: Cargar los documentos escaneados en la carpeta digital correspondiente en la nube del correo corporativo, identificada por quincena, libro y fecha.
+                - Paso 5: Reportar a Ericka Milagro Antequera el cierre quincenal, indicando la cantidad exacta de facturas procesadas y cargadas en la carpeta.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Facturas físicas de la quincena.
+                - Escáner.
+                - Correlativo de Odoo por cada documento.
+                - Acceso a la carpeta compartida en la nube del correo corporativo.
+            - ¿Qué se genera al terminar?
+                - Carpeta digital en la nube con todas las facturas escaneadas e identificadas de la quincena.
+                - Reporte de cierre quincenal enviado a Ericka Milagro Antequera con el total de facturas procesadas.
+            - ¿Qué sistemas o herramientas usan?
+                - Escáner físico: para digitalizar los documentos.
+                - Odoo: como fuente del correlativo único de identificación de cada documento.
+                - Correo corporativo (Microsoft / nube compartida): para alojar y compartir los documentos escaneados.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Escaneo de mala calidad (descentrado, ilegible, mal enfocado): se corrige el escaneo documento por documento antes de cargarlo.
+                - Número de facturas en carpeta no coincide con las declaradas: se identifica la diferencia con Ericka Milagro Antequera y se resuelve antes del cierre.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.12: Escaneo e identificación de los documentos preparados para el cierre fiscal, elevándolos y haciendo la información visible en la nube (correo)
+            - Pendiente.
+    - TAREA 1.13: Archivo y resguardo de los documentos físicos procesados
+        - AS-IS 1.13: Archivo y resguardo de los documentos físicos procesados
+            - ¿Qué es esta tarea?
+                - Organización, identificación y resguardo físico de las facturas y documentos procesados en el período, acomodándolos en carpetas físicas identificadas que quedan disponibles para consulta o envío posterior a Caracas.
+            - ¿Para qué se hace?
+                - Para mantener el respaldo físico de los documentos procesados, disponible ante fiscalizaciones, auditorías o consultas. Los documentos físicos terminan siendo enviados a la administración central en Caracas.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras). En ocasiones cuenta con apoyo de pasantes para el archivo, pero son esporádicos.
+            - ¿Cuándo se hace?
+                - Disparador: Documentos escaneados, identificados y declarados en el cierre fiscal (posterior a TAREA 1.12).
+                - Frecuencia: Quincenal, al cierre del período fiscal. El archivo físico se realiza luego de completar el escaneo e identificación de documentos (posterior a TAREA 1.12).
+            - ¿Cómo se hace?
+                - Paso 1: Tomar los documentos físicos ya escaneados y procesados.
+                - Paso 2: Acomodarlos e identificarlos por orden.
+                - Paso 3: Resguardarlos en una carpeta física específica identificada para ese período.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Documentos físicos procesados y escaneados.
+                - Carpetas físicas de archivo (carpetas grandes).
+            - ¿Qué se genera al terminar?
+                - Carpeta física con los documentos del período, identificada y lista para resguardo o envío a Caracas.
+            - ¿Qué sistemas o herramientas usan?
+                - No aplica (proceso físico/manual).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.13: Archivo y resguardo de los documentos físicos procesados
+            - Pendiente.
+    - TAREA 1.14: Organizar, embalar y enviar Valija a administración Caracas
+        - AS-IS 1.14: Organizar, embalar y enviar Valija a administración Caracas
+            - ¿Qué es esta tarea?
+                - Consolidación, embalaje y envío físico de las carpetas de documentos acumulados en Tucacas hacia la administración central en Caracas, a través de un mensajero o persona que viaje a Caracas.
+            - ¿Para qué se hace?
+                - Porque los documentos físicos procesados en Tucacas deben reposar en la administración central en Caracas. La gerencia (Enrique Rafael Cid) indica que los documentos no deben acumularse en Tucacas.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Acumulación de documentos por un trimestre (normalmente), o antes si hay disponibilidad de transporte hacia Caracas.
+                - Frecuencia: Trimestral normalmente; mensual en casos en que se disponga de alguien que viaje a Caracas. Enrique Rafael Cid preferiría que se hiciera mensual.
+            - ¿Cómo se hace?
+                - Paso 1: Acumular las carpetas físicas de documentos del período.
+                - Paso 2: Organizar y embalar las carpetas formando una valija.
+                - Paso 3: Informar por correo electrónico sobre el envío.
+                - Paso 4: Enviar la valija con la primera persona disponible que viaje a Caracas.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Carpetas físicas de documentos archivados (resultado de TAREA 1.13).
+                - Persona disponible que viaje a Caracas para llevar la valija.
+            - ¿Qué se genera al terminar?
+                - Valija enviada a administración Caracas.
+                - Correo enviado informando el envío.
+            - ¿Qué sistemas o herramientas usan?
+                - Correo electrónico: para notificar el envío de la valija.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - No hay disponibilidad de transporte mensual: los documentos se acumulan hasta el trimestre.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.14: Organizar, embalar y enviar Valija a administración Caracas
+            - Pendiente.
+    - TAREA 1.15: Reportar novedades de facturas y/o pedidos que ameriten corrección
+        - AS-IS 1.15: Reportar novedades de facturas y/o pedidos que ameriten corrección
+            - ¿Qué es esta tarea?
+                - Reporte formal de errores o inconsistencias detectadas en facturas o pedidos durante el proceso de verificación y facturación, dirigido a los niveles superiores que correspondan.
+            - ¿Para qué se hace?
+                - Para que los errores sean corregidos por quien tiene autoridad para hacerlo y no queden sin atención, ya que impactan directamente el proceso de pago y conciliación.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): detecta y reporta.
+                - Según el tipo de error, el reporte se dirige a Compras, a gerencia o a quien corresponda corregirlo.
+            - ¿Cuándo se hace?
+                - Disparador: Detección de un error en factura o pedido durante los procesos de verificación (TAREA 1.1 o TAREA 1.3).
+                - Frecuencia: Cada vez que se detecta un error.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar y documentar el error detectado.
+                - Paso 2: Levantar un informe detallado describiendo la situación: qué debía hacerse, qué se hizo y cuál es el impacto.
+                - Paso 3: Escalar el reporte al nivel que corresponda según la naturaleza del error (Compras, gerencia, Talento Humano en casos extremos).
+                - Paso 4: En Odoo, asignar una actividad a quien deba corregir el error para activar el reporte formal en el sistema.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Evidencia del error (diferencia entre pedido y factura, entre lo recibido y lo facturado, u otros).
+            - ¿Qué se genera al terminar?
+                - Informe de novedad enviado a los responsables.
+                - Actividad asignada en Odoo al usuario que debe corregir.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para asignar actividades a los usuarios responsables de la corrección.
+                - WhatsApp / correo electrónico: para escalar el reporte según el caso. ⚠️ Pendiente validar canal específico por tipo de error en sesión próxima.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - El error involucra a quien no puede corregirlo: Juan debe escalar a otro nivel jerárquico, lo que genera incomodidad interpersonal ya que Juan queda en el rol de "el que reporta".
+                - Error grave que involucra a varios departamentos: puede extenderse hasta reportes a Talento Humano vía correo formal.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan expresa frustración porque aunque su rol es facturación, por llevar las cuentas por pagar se ve obligado a revisar constantemente lo que hacen otros usuarios y reportar sus errores, lo que genera tensiones interpersonales. Señala que no es su rol supervisar a otros departamentos, pero las circunstancias lo obligan a hacerlo.
+        - Propuesta 1.15: Reportar novedades de facturas y/o pedidos que ameriten corrección
+            - Pendiente.
+    - TAREA 1.16: Asignación de actividades por información concerniente a otro usuario, además asignar actividad sobre errores detectados
+        - AS-IS 1.16: Asignación de actividades por información concerniente a otro usuario, además asignar actividad sobre errores detectados
+            - ¿Qué es esta tarea?
+                - Uso de la funcionalidad de actividades de Odoo para notificar formalmente a otro usuario sobre información que le concierne o para asignarle una tarea de corrección sobre un error detectado, activando así el reporte dentro del sistema.
+            - ¿Para qué se hace?
+                - Porque en Odoo el reporte no se activa simplemente enviando un mensaje; es necesario asignar una actividad al usuario responsable para que el sistema genere la notificación formal y quede el registro del seguimiento. Sin actividad asignada, el reporte no tiene trazabilidad en Odoo.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Detección de un error o identificación de información que concierne a otro usuario en Odoo (puede ser en un pedido, una factura, una conciliación u otro registro).
+                - Frecuencia: Cada vez que se detecta un error o hay información que debe trasladarse a otro usuario.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar el registro en Odoo donde se detectó el error o la información relevante (pedido, factura, pago, etc.).
+                - Paso 2: Desde ese registro, usar la función "asignar actividad" de Odoo.
+                - Paso 3: Designar al usuario que debe atender la actividad.
+                - Paso 4: Documentar en la actividad la descripción del error o la información a atender.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Acceso al registro correspondiente en Odoo.
+                - Identificación del usuario responsable de atender la actividad.
+            - ¿Qué se genera al terminar?
+                - Actividad creada y asignada en Odoo al usuario responsable, activando la notificación formal y dejando trazabilidad del reporte.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: funcionalidad de actividades (enviar mensaje / registrar nota / asignar actividad).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 1.16: Asignación de actividades por información concerniente a otro usuario, además asignar actividad sobre errores detectados
+            - Pendiente.
+    - TAREA 1.17: Seguimiento y cierre de facturas y/o pedidos registrados con error, reportados y pendientes, instruido por Gerencia General, Gerencia de administración y finanzas
+        - AS-IS 1.17: Seguimiento y cierre de facturas y/o pedidos registrados con error, reportados y pendientes, instruido por Gerencia General, Gerencia de administración y finanzas
+            - ¿Qué es esta tarea?
+                - Gestión activa del seguimiento de errores previamente reportados en facturas o pedidos, coordinando con el usuario que debe corregir, con el proveedor si corresponde, y con gerencia, hasta lograr el cierre correcto del registro en el sistema.
+            - ¿Para qué se hace?
+                - Para que los errores reportados no queden sin resolución indefinidamente, ya que impactan el proceso de pago, la conciliación y el balance financiero. La instrucción viene de Gerencia General o de Gerencia de Administración y Finanzas.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): gestiona el seguimiento.
+                - Ericka Milagro Antequera (Gerencia de Administración y Finanzas): instruye e interviene.
+                - Enrique Rafael Cid o Alberto Cid Navarro (Gerencia General): instruyen e intervienen.
+                - María Mercedes: rol mencionado como destinataria frecuente de correcciones; Juan señala que su gestión de corrección genera demoras y múltiples preguntas.
+                - Talento Humano: interviene en casos extremos donde el error involucra a trabajadores.
+            - ¿Cuándo se hace?
+                - Disparador: Error reportado (TAREA 1.15 / TAREA 1.16) pendiente de corrección, e instrucción de gerencia para gestionar el cierre.
+                - Frecuencia: Bajo demanda; cada vez que hay un error activo sin resolver.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar el error reportado y pendiente de cierre.
+                - Paso 2: Levantar un informe detallado de la situación: qué debía hacerse, qué se hizo, cuál es el impacto y qué se necesita para corregirlo.
+                - Paso 3: Contactar al usuario responsable de la corrección (no necesariamente quien cometió el error).
+                - Paso 4: En casos que involucren al proveedor, contactarlo para validar que la corrección esté alineada con lo que él aceptó despachar o facturar.
+                - Paso 5: Escalar a Talento Humano a través de correo formal si la situación lo amerita.
+                - Paso 6: Hacer seguimiento hasta que el error sea corregido y el registro en Odoo quede cerrado correctamente.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Informe del error previamente levantado.
+                - Acceso al registro en Odoo donde se produjo el error.
+                - Contacto con el proveedor si el error involucra discrepancias en mercancía o factura.
+            - ¿Qué se genera al terminar?
+                - Registro en Odoo corregido y cerrado correctamente.
+                - En casos extremos: correo formal a Talento Humano como soporte.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para verificar y confirmar la corrección del registro.
+                - WhatsApp: para contactar al proveedor si corresponde.
+                - Correo electrónico: para comunicaciones formales a Talento Humano u otros niveles.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - El usuario que debe corregir genera demoras o resistencia: el proceso se extiende significativamente. Juan menciona el caso de María Mercedes como ejemplo de gestión que genera múltiples preguntas y demoras.
+                - Error que involucra discrepancia de producto entre lo despachado y lo facturado: requiere negociación con el proveedor para alinear la corrección (ejemplo: azúcar confit vs. azúcar nevada; carne molida vs. carne mechada).
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan expresa que este seguimiento no debería ser parte de sus funciones, ya que su rol es facturación y no supervisión de otros departamentos. Sin embargo, la necesidad operativa lo obliga a asumirlo.
+        - Propuesta 1.17: Seguimiento y cierre de facturas y/o pedidos registrados con error, reportados y pendientes, instruido por Gerencia General, Gerencia de administración y finanzas
+            - Pendiente.
+    - TAREA 1.18: Facturación de los proveedores nuevos a quienes se les paga sin factura en espera de las facturas fiscales, una vez llegan, sobre estas facturas encuadrar los pagos anticipados
+        - AS-IS 1.18: Facturación de los proveedores nuevos a quienes se les paga sin factura en espera de las facturas fiscales, una vez llegan, sobre estas facturas encuadrar los pagos anticipados
+            - ¿Qué es esta tarea?
+                - Registro del pago como anticipo en el sistema cuando aún no existe factura fiscal, seguimiento activo al proveedor para obtener la factura pendiente, y posterior aplicación del pago anticipado sobre la factura cuando ésta llega.
+            - ¿Para qué se hace?
+                - Para mantener control contable de pagos realizados sin factura y asegurar que, cuando la factura llegue, el anticipo quede correctamente encuadrado y no genere descuadres en el balance financiero. Este escenario fue muy frecuente en 2023 y parte de 2024; en 2025 se está llevando a niveles mínimos.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): gestiona y controla este proceso de forma exclusiva.
+                - Ericka Milagro Antequera (Finanzas): hace seguimiento conjunto y consulta a Juan sobre el estado de anticipos pendientes.
+            - ¿Cuándo se hace?
+                - Disparador: Pago realizado a un proveedor sin factura fiscal emitida (anticipo).
+                - Frecuencia: Bajo demanda; cada vez que se paga sin factura disponible.
+            - ¿Cómo se hace?
+                - Paso 1: Registrar el pago en Odoo como anticipo (cuenta de anticipo de proveedor).
+                - Paso 2: Archivar el pago en una carpeta de pendientes en el computador.
+                - Paso 3: Contactar periódicamente al proveedor para solicitar la factura fiscal pendiente.
+                - Paso 4: Mantener actividades o recordatorios en Odoo para no perder el seguimiento del anticipo.
+                - Paso 5: Cuando llega la factura del proveedor, registrarla en Odoo.
+                - Paso 6: Aplicar el pago anticipado sobre la factura, ajustando según el monto: si el anticipo cubre exactamente, se cierra; si sobra, queda saldo a favor; si falta, queda saldo pendiente por pagar.
+                - Paso 7: Verificar que la tasa de cambio aplicada en la factura corresponda a la del momento del pago original, y objetar al proveedor si intenta aplicar una tasa diferente.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Aprobación y autorización del pago anticipado de gerencia.
+                - Acceso a Odoo para registrar anticipo y aplicarlo a factura cuando llegue.
+                - Carpeta de pendientes en el computador.
+            - ¿Qué se genera al terminar?
+                - Anticipo registrado en Odoo y archivado en carpeta de pendientes hasta recibir la factura.
+                - Al recibir la factura: factura registrada con el anticipo encuadrado y cuenta de anticipo cerrada o con saldo ajustado.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para registrar el anticipo y aplicarlo a la factura cuando llegue.
+                - Carpeta local en el computador: carpeta de pendientes donde se controla el seguimiento de anticipos.
+                - WhatsApp: para dar seguimiento al proveedor y solicitar la factura pendiente.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - El proveedor emite la factura con la tasa de cambio del día de emisión (diferente a la del pago): Juan objeta y negocia con el proveedor para que la factura refleje la tasa original del pago.
+                - El proveedor nunca emite la factura: el anticipo queda abierto indefinidamente en la cuenta, afectando el balance. Ericka Milagro Antequera hace seguimiento periódico junto con Juan.
+                - Caso particular de músicos en temporada: varios proveedores de entretenimiento reciben el 50 % de anticipo antes de presentarse; al llegar, ninguno tiene factura lista por diversas razones (se olvidó, no la entregaron, se dañó). Juan gestiona el seguimiento para obtener cada factura y cerrar los anticipos.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que el señor Enrique Rafael Cid ha combatido activamente esta práctica y que se está llevando a nivel cero a partir de 2025. El objetivo es que todo pago tenga factura fiscal antes de ejecutarse.
+        - Propuesta 1.18: Facturación de los proveedores nuevos a quienes se les paga sin factura en espera de las facturas fiscales, una vez llegan, sobre estas facturas encuadrar los pagos anticipados
+            - Pendiente.
+    - TAREA 1.19: Validar los anticipos de los proveedores y reportar los casos en los que no sean procedentes y en casos de serlo, aplicar a facturas para que no afecte el balance financiero
+        - AS-IS 1.19: Validar los anticipos de los proveedores y reportar los casos en los que no sean procedentes y en casos de serlo, aplicar a facturas para que no afecte el balance financiero
+            - ¿Qué es esta tarea?
+                - Análisis de los saldos de anticipo que aparecen registrados en el sistema para los proveedores, determinando si cada anticipo corresponde a un pago real aplicable a una factura futura o si es producto de un error contable (ej. asientos duplicados), y actuando en consecuencia.
+            - ¿Para qué se hace?
+                - Para depurar la contabilidad de cuentas de anticipo de proveedores, evitar que saldos fantasma o incorrectos distorsionen el balance financiero, y cerrar correctamente los anticipos procedentes aplicándolos a facturas.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): realiza el análisis y determina la procedencia.
+                - Ericka Milagro Antequera (Finanzas): recibe el reporte de Juan y ejecuta el asiento contable de cierre cuando el anticipo no es procedente, o aprueba la aplicación cuando sí lo es.
+                - Proveedores: participan en la validación y negociación cuando el anticipo es procedente.
+            - ¿Cuándo se hace?
+                - Disparador: Identificación de un saldo de anticipo activo en la cuenta de un proveedor; puede detectarse al revisar estados financieros o durante el proceso de cuentas por pagar.
+                - Frecuencia: Bajo demanda; Juan realiza estos análisis cuando se detectan saldos activos. En la sesión menciona haber realizado dos análisis complejos en días consecutivos.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar el saldo de anticipo activo en la cuenta del proveedor.
+                - Paso 2: Analizar el origen del saldo: revisar el historial de pagos, facturas y asientos contables asociados.
+                - Paso 3: Determinar si el anticipo es procedente (corresponde a un pago real aún no aplicado a factura) o no procedente (resultado de un error contable, como un asiento duplicado).
+                - Paso 4a — Si NO es procedente: informar a Finanzas con detalle del origen del error y del asiento contable necesario para cerrarlo. Ericka Milagro Antequera ejecuta el asiento.
+                - Paso 4b — Si SÍ es procedente: contactar al proveedor para informarle del saldo a su favor y negociar su aplicación en la próxima factura.
+                - Paso 5: Una vez acordada la aplicación con el proveedor, aplicar el anticipo sobre la factura correspondiente, ajustando el monto (puede aplicarse total o parcialmente según lo acordado).
+                - Paso 6: Informar a Finanzas del resultado para que quede reflejado correctamente en la contabilidad.
+                - Nota: Existe un caso especial de anticipos que funcionan como préstamos a proveedores (ej. compra de un teléfono que el proveedor pagará con descuentos parciales en futuras facturas). En estos casos, Juan coordina con Ericka Milagro Antequera el descuento por cuotas en cada factura y hace el seguimiento hasta cerrar la cuenta de anticipo.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Acceso al estado financiero de la cuenta del proveedor en Odoo.
+                - Historial de pagos y facturas del proveedor.
+                - Comunicación con el proveedor (para los casos procedentes).
+            - ¿Qué se genera al terminar?
+                - Si no procedente: reporte a Finanzas con instrucción del asiento de cierre; asiento contable ejecutado por Ericka Milagro Antequera.
+                - Si procedente: anticipo aplicado a factura del proveedor; cuenta de anticipo reducida o cerrada.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para revisar estados financieros del proveedor, aplicar anticipos a facturas.
+                - WhatsApp: para comunicarse con el proveedor en los casos procedentes.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Proveedor no reconoce el saldo a su favor o no responde: ⚠️ Pendiente validar en sesión próxima.
+                - Caso de anticipo-préstamo (ej. teléfono): el descuento parcial por cuotas genera un seguimiento prolongado que involucra a Juan, Ericka Milagro Antequera y la contabilidad, ya que cada factura debe ajustarse manualmente.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que esta tarea le está siendo asignada de forma creciente y que aunque la ha cuestionado, Ericka Milagro Antequera confirma que debe ser él quien la gestione. Expresa que la depuración de saldos de años anteriores (2023-2024) es compleja y voluminosa.
+        - Propuesta 1.19: Validar los anticipos de los proveedores y reportar los casos en los que no sean procedentes y en casos de serlo, aplicar a facturas para que no afecte el balance financiero
+            - Pendiente.
+    
+
+---
+
+- FASE 2: **CIERRE FISCAL QUINCENAL**
+    - TAREA 2.1: Al 15 y/o último de cada mes, informar el cese de registros de facturas de compras para dar inicio al descargue del libro de compras a declarar
+        - AS-IS 2.1: Informar el cese de registros de facturas de compras para dar inicio al descargue del libro de compras a declarar
+            - ¿Qué es esta tarea?
+                - Comunicación formal al equipo de que se cierra el período de registro de facturas de compras de la quincena, dando inicio al proceso de preparación del libro de compras para la declaración fiscal.
+            - ¿Para qué se hace?
+                - Para delimitar el corte del período fiscal quincenal. Como la empresa es contribuyente especial, debe declarar el IVA de forma quincenal; detener el registro de nuevas facturas es condición necesaria para generar el libro de compras correcto del período.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): emite la notificación de cese.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada del día 15 o del último día de cada mes.
+                - Frecuencia: Quincenal (dos veces por mes).
+            - ¿Cómo se hace?
+                - Paso 1: Al llegar el día 15 o el último día del mes, notificar el cese de registro de facturas de compras del período.
+                - Paso 2: Iniciar el proceso de descargue del libro de compras para la declaración.
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima (no se especifica el canal ni los destinatarios de la notificación de cese).
+            - ¿Qué se genera al terminar?
+                - Notificación de cese emitida; inicio formal del proceso de cierre fiscal quincenal.
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.1: Informar el cese de registros de facturas de compras para dar inicio al descargue del libro de compras a declarar
+            - Pendiente.
+    - TAREA 2.2: Verificación en 1era revisión de los documentos a declarar procedentes al cierre fiscal
+        - AS-IS 2.2: Verificación en 1era revisión de los documentos a declarar procedentes al cierre fiscal
+            - ¿Qué es esta tarea?
+                - Primera revisión de la totalidad de documentos (facturas) que serán incluidos en la declaración del período quincenal, verificando que sean correctos y procedentes para declarar.
+            - ¿Para qué se hace?
+                - Para garantizar la integridad del libro de compras antes de declararlo, identificando documentos incorrectos, incompletos o no procedentes que deban corregirse antes del cierre.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Cese de registro de facturas declarado (TAREA 2.1).
+                - Frecuencia: Quincenal.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (en la transcripción se menciona la existencia de esta primera revisión pero no se detallan los pasos específicos).
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.2: Verificación en 1era revisión de los documentos a declarar procedentes al cierre fiscal
+            - Pendiente.
+    - TAREA 2.3: Verificación de estatus y conteo de los documentos asegurados y archivados en administración Tucacas y administración Caracas
+        - AS-IS 2.3: Verificación de estatus y conteo de los documentos asegurados y archivados en administración Tucacas y administración Caracas
+            - ¿Qué es esta tarea?
+                - Revisión y conteo de los documentos físicos que están archivados tanto en Tucacas como en Caracas, verificando que el total coincida con los documentos del período a declarar.
+            - ¿Para qué se hace?
+                - Para asegurar que todos los documentos del período estén físicamente resguardados y localizables, como parte de la preparación del cierre fiscal.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Inicio del proceso de cierre fiscal quincenal (posterior a TAREA 2.1).
+                - Frecuencia: Quincenal.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (se menciona la tarea en el inventario y Juan la confirma como parte del cierre, pero no se detalla el procedimiento en la transcripción).
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.3: Verificación de estatus y conteo de los documentos asegurados y archivados en administración Tucacas y administración Caracas
+            - Pendiente.
+    - TAREA 2.4: Seguimiento de los documentos en tránsito en manos de proveedores, identificando para exigir antes de reportar el cierre fiscal
+        - AS-IS 2.4: Seguimiento de los documentos en tránsito en manos de proveedores, identificando para exigir antes de reportar el cierre fiscal
+            - ¿Qué es esta tarea?
+                - Identificación y seguimiento activo de las facturas fiscales que aún no han llegado a Administración por estar pendientes de emisión o entrega por parte de los proveedores, gestionando su cobro antes del cierre fiscal.
+            - ¿Para qué se hace?
+                - Para que el libro de compras esté completo al momento de declararlo. Las facturas en tránsito que no lleguen antes del cierre quedan fuera del período y pueden generar problemas en la declaración.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Inicio del proceso de cierre fiscal quincenal; Juan identifica facturas pendientes de recibir.
+                - Frecuencia: Quincenal, como parte del cierre.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar las facturas que aún no han llegado (despachos realizados sin factura o facturas solicitadas pero no recibidas).
+                - Paso 2: Contactar a los proveedores correspondientes para exigir la emisión o entrega de la factura antes del cierre.
+                - Paso 3: Si la factura no llega antes del cierre, se reporta en el desglose quincenal como factura en la calle pendiente de recibir.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Identificación de pedidos o despachos sin factura asociada.
+                - Contacto con los proveedores.
+            - ¿Qué se genera al terminar?
+                - Facturas recibidas a tiempo incluidas en el período a declarar; o bien, registro en el reporte quincenal de las facturas que no llegaron.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para identificar pedidos sin factura o facturas abiertas del período.
+                - WhatsApp: para contactar a los proveedores.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - La factura no llega antes del cierre: se reporta en el desglose quincenal como pendiente.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.4: Seguimiento de los documentos en tránsito en manos de proveedores, identificando para exigir antes de reportar el cierre fiscal
+            - Pendiente.
+    - TAREA 2.5: Validar el cierre total de las facturas a declarar. Se exceptúan en este caso los documentos que han de estar abiertos procedentes al cierre fiscal por asiento contable
+        - AS-IS 2.5: Validar el cierre total de las facturas a declarar
+            - ¿Qué es esta tarea?
+                - Verificación de que todas las facturas del período estén correctamente cerradas en Odoo antes de declarar el libro de compras, con excepción de aquellas que deben permanecer abiertas por razones de asiento contable.
+            - ¿Para qué se hace?
+                - Para garantizar que el libro de compras a declarar refleje únicamente facturas válidamente cerradas, sin facturas abiertas que distorsionen la declaración fiscal.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Previo al reporte del cierre fiscal quincenal.
+                - Frecuencia: Quincenal.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (Juan confirma la existencia de esta validación pero no detalla los pasos en la transcripción).
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para verificar el estatus de cierre de las facturas del período.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.5: Validar el cierre total de las facturas a declarar
+            - Pendiente.
+    - TAREA 2.6: Revisión, validación de las retenciones de IVA e ISLR que sean correctas y estar incluidas en el período a declarar
+        - AS-IS 2.6: Revisión, validación de las retenciones de IVA e ISLR que sean correctas y estar incluidas en el período a declarar
+            - ¿Qué es esta tarea?
+                - Verificación de que las retenciones de IVA e ISLR aplicadas a las facturas del período sean correctas y estén incluidas dentro del cierre fiscal que se va a declarar.
+            - ¿Para qué se hace?
+                - Para asegurar la correcta declaración de retenciones ante el SENIAT. Las retenciones incorrectas o fuera del período pueden generar problemas en la declaración fiscal quincenal.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Proceso de cierre fiscal quincenal, previo al descargue del libro de compras.
+                - Frecuencia: Quincenal.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (Juan confirma que realiza esta revisión, mencionada en la TAREA 1.5 como paso previo al registro, pero el proceso detallado de validación en el cierre no se describe en la transcripción).
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para revisar y validar las retenciones aplicadas a las facturas del período.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.6: Revisión, validación de las retenciones de IVA e ISLR que sean correctas y estar incluidas en el período a declarar
+            - Pendiente.
+    - TAREA 2.7: Enumeración del Libro de compras en la nube
+        - AS-IS 2.7: Enumeración del Libro de compras en la nube
+            - ¿Qué es esta tarea?
+                - Descargue del libro de compras del período desde el sistema, enumeración del mismo y carga en la nube para disponibilizarlo al equipo de finanzas y contabilidad para la declaración.
+            - ¿Para qué se hace?
+                - Para completar el proceso de cierre fiscal quincenal, poniendo el libro de compras del período debidamente numerado y accesible en la nube para que pueda ser utilizado en la declaración ante el SENIAT.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Validación completa de las facturas y retenciones del período (resultado de TAREAS 2.2 a 2.6).
+                - Frecuencia: Quincenal.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (Juan confirma que se enumera el libro y se carga en la nube, mencionándolo al final de la descripción del cierre quincenal, pero no detalla los pasos en la transcripción).
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - Libro de compras del período enumerado y disponible en la nube.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para descargar el libro de compras.
+                - Nube del correo corporativo (Microsoft): para cargar y compartir el libro.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 2.7: Enumeración del Libro de compras en la nube
+            - Pendiente.
+
+---
+
+- FASE 3: **CUENTAS POR PAGAR**
+    - TAREA 3.1: Verificación de los pedidos de proveedores con ventas a crédito
+        - AS-IS 3.1: Verificación de los pedidos de proveedores con ventas a crédito
+            - ¿Qué es esta tarea?
+                - Revisión manual y diaria de los pedidos recibidos en el módulo de Compras de Odoo para identificar cuáles corresponden a cuentas por pagar reales (crédito activo), filtrando los pedidos abiertos y actualizando el registro en el Excel de cuentas por pagar.
+            - ¿Para qué se hace?
+                - Porque el módulo de Odoo tiene "basura": pedidos abiertos que no son cuentas por pagar reales, por lo que no es posible extraer la información directamente del sistema sin revisión manual. La actualización se hace tres veces al día para mantener el registro vigente.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras). En el pasado contó con apoyo de otro compañero; actualmente lo hace solo.
+            - ¿Cuándo se hace?
+                - Disparador: Rutina diaria.
+                - Frecuencia: Diaria, tres veces al día.
+            - ¿Cómo se hace?
+                - Paso 1: Ingresar al módulo de Compras en Odoo.
+                - Paso 2: Filtrar los pedidos abiertos para facturar.
+                - Paso 3: Revisar uno a uno los pedidos abiertos.
+                - Paso 4: Identificar cuáles son cuentas por pagar reales (crédito activo) y cuáles no.
+                - Paso 5: Incorporar al Excel de cuentas por pagar (en la nube) los pedidos nuevos que sí corresponden a cuentas por pagar.
+                - Paso 6: Marcar o dejar sin efecto en el Excel los pedidos que ya estaban incluidos y que se han cerrado o no corresponden.
+                - Paso 7: Incluir adicionalmente en el Excel las mensualidades de servicios fijos (ej. Internet) que no generan pedido pero son cuentas por pagar recurrentes.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Acceso al módulo de Compras en Odoo.
+                - Acceso al archivo Excel de cuentas por pagar en la nube.
+            - ¿Qué se genera al terminar?
+                - Excel de cuentas por pagar actualizado con los pedidos vigentes de crédito.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo (módulo de Compras): para filtrar y revisar pedidos abiertos.
+                - Excel en la nube (Microsoft / correo corporativo): para registrar y totalizar las cuentas por pagar. Juan señala que Enrique Rafael Cid no está satisfecho con este método pero que por los momentos no hay otra alternativa.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que Enrique Rafael Cid preferiría no usar el Excel y que debería poder hacerse directamente desde el sistema, pero que actualmente el volumen de pedidos sucios en Odoo hace inviable prescindir del archivo manual.
+        - Propuesta 3.1: Verificación de los pedidos de proveedores con ventas a crédito
+            - Pendiente.
+    - TAREA 3.2: Organizar manualmente los pedidos para totalizar en archivo
+        - AS-IS 3.2: Organizar manualmente los pedidos para totalizar en archivo
+            - ¿Qué es esta tarea?
+                - Organización y consolidación manual de los pedidos identificados como cuentas por pagar en el archivo Excel de la nube, totalizando el monto adeudado por proveedor y por período.
+            - ¿Para qué se hace?
+                - Para tener una visión consolidada y actualizada del total de cuentas por pagar, que sirva de base para la toma de decisiones de pago por parte de gerencia y finanzas.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Verificación de pedidos completada (posterior a TAREA 3.1).
+                - Frecuencia: Diaria (ligada a la frecuencia de TAREA 3.1).
+            - ¿Cómo se hace?
+                - Paso 1: En el Excel de cuentas por pagar, organizar los pedidos identificados.
+                - Paso 2: Totalizar los montos por proveedor o período según corresponda.
+                - Paso 3: Asegurar que el archivo en la nube quede actualizado y accesible.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Excel de cuentas por pagar en la nube (Microsoft / correo corporativo).
+                - Pedidos verificados de TAREA 3.1.
+            - ¿Qué se genera al terminar?
+                - Excel de cuentas por pagar con totales actualizados, disponible en la nube del correo corporativo.
+            - ¿Qué sistemas o herramientas usan?
+                - Excel en la nube (Microsoft / correo corporativo): para organizar y totalizar.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 3.2: Organizar manualmente los pedidos para totalizar en archivo
+            - Pendiente.
+    - TAREA 3.3: Reporte diario de actualización de las cuentas por pagar
+        - AS-IS 3.3: Reporte diario de actualización de las cuentas por pagar
+            - ¿Qué es esta tarea?
+                - Notificación a Finanzas de que el Excel de cuentas por pagar ha sido actualizado, informándolo a través del grupo de pago de WhatsApp.
+            - ¿Para qué se hace?
+                - Para que Finanzas (Ericka Milagro Antequera) sepa que el archivo de cuentas por pagar está vigente y pueda consultarlo para las decisiones de pago del día.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): emite el reporte.
+                - Ericka Milagro Antequera (Finanzas): destinataria del reporte.
+            - ¿Cuándo se hace?
+                - Disparador: Actualización del Excel de cuentas por pagar completada (posterior a TAREA 3.2).
+                - Frecuencia: Diaria.
+            - ¿Cómo se hace?
+                - Paso 1: Una vez actualizado el Excel, enviar mensaje al grupo de pago de WhatsApp informando que las cuentas por pagar están actualizadas.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Excel de cuentas por pagar actualizado.
+                - Acceso al grupo de pago de WhatsApp.
+            - ¿Qué se genera al terminar?
+                - Mensaje enviado al grupo de pago de WhatsApp notificando la actualización.
+            - ¿Qué sistemas o herramientas usan?
+                - WhatsApp (grupo de pago): canal de reporte a Finanzas.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 3.3: Reporte diario de actualización de las cuentas por pagar
+            - Pendiente.
+    - TAREA 3.4: Marcar en los archivos las facturas pagadas de proveedores y las pendientes por pagar, enlazado con la tutoría de Gerencia de Finanzas
+        - AS-IS 3.4: Marcar en los archivos las facturas pagadas de proveedores y las pendientes por pagar, enlazado con la tutoría de Gerencia de Finanzas
+            - ¿Qué es esta tarea?
+                - Reunión de trabajo entre Juan y Ericka Milagro Antequera para revisar conjuntamente el Excel de cuentas por pagar, marcando las facturas que se autorizan para pago inmediato y determinando el orden de ejecución según disponibilidad y compromisos.
+            - ¿Para qué se hace?
+                - Para priorizar el pago de proveedores cuando la disponibilidad es limitada, asegurando que los compromisos más urgentes o estratégicos se paguen primero. Siempre que Ericka Milagro Antequera va a aprobar cuentas por pagar, llama a Juan para esta revisión conjunta.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+                - Ericka Milagro Antequera (Gerencia de Administración y Finanzas): lidera la aprobación y priorización.
+            - ¿Cuándo se hace?
+                - Disparador: Ericka Milagro Antequera va a aprobar cuentas por pagar y convoca a Juan.
+                - Frecuencia: Bajo demanda; cada vez que Ericka Milagro Antequera va a ejecutar una ronda de pagos, especialmente cuando hay limitaciones de disponibilidad.
+            - ¿Cómo se hace?
+                - Paso 1: Ericka Milagro Antequera convoca a Juan para la revisión del Excel.
+                - Paso 2: Revisar conjuntamente el Excel de cuentas por pagar.
+                - Paso 3: Juan identifica proveedores con compromisos urgentes o acuerdos especiales (ej. proveedor con plazo vencido, acuerdo de pago pactado).
+                - Paso 4: Ericka Milagro Antequera identifica compromisos propios y proveedores que ella ha comprometido a pagar.
+                - Paso 5: Determinar conjuntamente el orden de ejecución de pagos según disponibilidad.
+                - Paso 6: Marcar en el Excel las facturas autorizadas para pago y las que quedan pendientes.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Excel de cuentas por pagar actualizado.
+                - Disponibilidad financiera actual (manejada por Ericka Milagro Antequera).
+            - ¿Qué se genera al terminar?
+                - Excel de cuentas por pagar con marcas de facturas autorizadas para pago y facturas pendientes.
+                - Orden de ejecución de pagos determinado.
+            - ¿Qué sistemas o herramientas usan?
+                - Excel en la nube (Microsoft / correo corporativo): para marcar y gestionar el estado de las facturas.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Proveedor exige pago fuera de la planificación: aunque el proveedor tiene derecho a exigir su pago dentro del plazo de crédito, la empresa puede no tener disponibilidad en ese momento. Juan y Ericka Milagro Antequera evalúan el caso y toman la decisión de pago extraordinario si corresponde.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 3.4: Marcar en los archivos las facturas pagadas de proveedores y las pendientes por pagar, enlazado con la tutoría de Gerencia de Finanzas
+            - Pendiente.
+    - TAREA 3.5: Validación de cuentas por pagar vencidas en plazos de crédito
+        - AS-IS 3.5: Validación de cuentas por pagar vencidas en plazos de crédito
+            - ¿Qué es esta tarea?
+                - Identificación de las facturas cuyo plazo de crédito otorgado por el proveedor ha vencido o está próximo a vencer, y gestión activa con los proveedores para manejar prórrogas o pagos urgentes.
+            - ¿Para qué se hace?
+                - Para evitar conflictos con proveedores por incumplimiento de plazos de crédito y para gestionar la expectativa del proveedor cuando la empresa no puede pagar en el plazo acordado.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): identifica las vencidas y gestiona la comunicación con proveedores.
+                - Ericka Milagro Antequera (Finanzas): toma las decisiones de pago urgente cuando el proveedor es inflexible.
+                - Enrique Rafael Cid (Gerencia General): puede bloquear pagos o instruir sobre disponibilidad.
+            - ¿Cuándo se hace?
+                - Disparador: Identificación de una factura con plazo de crédito vencido o próximo a vencer.
+                - Frecuencia: Diaria (parte de la revisión de cuentas por pagar).
+            - ¿Cómo se hace?
+                - Paso 1: Identificar en el Excel de cuentas por pagar las facturas con plazo de crédito vencido.
+                - Paso 2: Verificar si gerencia ha aprobado el pago. Si no lo ha aprobado, iniciar la gestión con el proveedor.
+                - Paso 3: Contactar al proveedor para informarle la situación y solicitar prórroga si es necesario.
+                - Paso 4: Si el proveedor es flexible: acordar una fecha alternativa de pago.
+                - Paso 5: Si el proveedor es inflexible y exige el pago: escalar a Ericka Milagro Antequera para evaluar un pago urgente fuera de la planificación.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Excel de cuentas por pagar con fechas de vencimiento de crédito.
+                - Contacto con el proveedor (WhatsApp).
+                - Información de disponibilidad financiera de Ericka Milagro Antequera.
+            - ¿Qué se genera al terminar?
+                - Acuerdo de prórroga con el proveedor (cuando aplica) o pago urgente ejecutado.
+            - ¿Qué sistemas o herramientas usan?
+                - Excel en la nube: para identificar vencimientos.
+                - WhatsApp: para la comunicación con proveedores.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Proveedor inflexible que exige pago inmediato: Juan escala a Ericka Milagro Antequera, quien evalúa si existe disponibilidad para el pago urgente, aunque esté fuera de toda planificación.
+                - Gerencia instruye no pagar ese día aunque haya vencimientos: Juan gestiona la prórroga con los proveedores afectados.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 3.5: Validación de cuentas por pagar vencidas en plazos de crédito
+            - Pendiente.
+    - TAREA 3.6: Registro y archivo de Notas de despacho de cuentas por pagar
+        - AS-IS 3.6: Registro y archivo de Notas de despacho de cuentas por pagar
+            - ¿Qué es esta tarea?
+                - Recepción, resguardo físico y digital de las notas de despacho (documentos de entrega de mercancía sin factura) de proveedores que despachan a crédito, para mantener control y evidencia de lo recibido mientras llega la factura fiscal.
+            - ¿Para qué se hace?
+                - Porque las notas de despacho son el respaldo de lo que se recibió cuando el proveedor no emite factura inmediata. Sin su resguardo, no hay forma de verificar discrepancias o disputas futuras sobre montos, cantidades o fechas.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): recibe y archiva. Cuenta esporádicamente con apoyo de pasantes para el archivo físico.
+            - ¿Cuándo se hace?
+                - Disparador: Recepción de una nota de despacho de un proveedor que no despacha con factura inmediata.
+                - Frecuencia: Cada vez que llega una nota de despacho.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir la nota de despacho (Juan la recibe porque Almacén no la almacena si no es un producto a almacenar).
+                - Paso 2: Si la nota viene acompañada de factura, escanear ambos documentos juntos.
+                - Paso 3: Archivar la nota en la carpeta digital en la nube del correo corporativo.
+                - Paso 4: Archivar la nota en carpeta física para tenerla como respaldo ante disputas o verificaciones futuras.
+                - Paso 5: Acumular notas hasta que haya tiempo disponible para archivar en lote (cuando hay pasante disponible, se asigna esta tarea).
+            - ¿Qué necesitan para hacer esta tarea?
+                - Nota de despacho física del proveedor.
+                - Escáner (cuando viene con factura).
+                - Acceso a la carpeta en la nube del correo corporativo.
+                - Carpetas físicas de archivo.
+            - ¿Qué se genera al terminar?
+                - Nota de despacho archivada en formato digital (nube) y físico.
+            - ¿Qué sistemas o herramientas usan?
+                - Correo corporativo (Microsoft / nube compartida): para archivo digital.
+                - Escáner: para digitalizar cuando viene con factura.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Disputa con proveedor sobre lo despachado o la fecha: Juan recurre a la nota archivada como evidencia.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que no tiene apoyo permanente para el archivo físico, que los pasantes son esporádicos y que él debe acumular y archivar en lote cuando puede.
+        - Propuesta 3.6: Registro y archivo de Notas de despacho de cuentas por pagar
+            - Pendiente.
+    - TAREA 3.7: Supervisión de pedidos recibidos en almacén, para que tengan respaldo con documento de entrega y recepción
+        - AS-IS 3.7: Supervisión de pedidos recibidos en almacén, para que tengan respaldo con documento de entrega y recepción
+            - ¿Qué es esta tarea?
+                - Verificación de que cada pedido recibido en Almacén esté acompañado de la documentación correcta (nota de despacho / factura), correctamente cargado en el pedido de Odoo, y que el proceso de recepción física cumpla con las firmas, sellos y validaciones requeridas.
+            - ¿Para qué se hace?
+                - Para crear una cadena de custodia documentada desde que el proveedor entrega hasta que la mercancía queda registrada. Garantiza que cada obligación de pago esté respaldada con firmas y sellos, y que la mercancía viaje contablemente en la cuenta correcta. Además, establece una cultura de proceso lineal que evita que se salten pasos.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): supervisa el proceso de recepción.
+                - Personal de Almacén: recibe, pesa, verifica y firma.
+                - Personal de Cocina u otro departamento receptor: firma la recepción.
+                - Proveedor: entrega y espera confirmación de recepción.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada de un pedido a Almacén.
+                - Frecuencia: Cada vez que llega un pedido; actualmente Almacén ya lo hace de forma más efectiva y autónoma, por lo que Juan interviene con menor frecuencia que antes.
+            - ¿Cómo se hace?
+                - Paso 1: Al llegar el pedido, verificar que la documentación que acompaña la entrega sea la correcta.
+                - Paso 2: Verificar que el pedido esté correctamente cargado en Odoo (cuenta contable correcta: alimentos y bebidas, suministros, etc.).
+                - Paso 3: Confirmar que Almacén pese, cuente y verifique la mercancía.
+                - Paso 4: Confirmar que el documento de entrega sea firmado por el receptor de Almacén y por el representante del área que solicitó la mercancía (ej. cocina).
+                - Paso 5: Confirmar que el documento lleve sello de la empresa.
+                - Paso 6: El proveedor puede retirarse una vez completado el proceso de firma y validación.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Pedido en Odoo previamente cargado.
+                - Documento de entrega del proveedor (nota de despacho o factura).
+                - Firmas y sellos de los responsables de recepción.
+            - ¿Qué se genera al terminar?
+                - Documento de entrega firmado y sellado como respaldo de la recepción.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para verificar que el pedido esté correctamente cargado en la cuenta contable correspondiente.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Proveedor entregaba directamente en administración, con el doctor o con el jefe de operaciones, saltándose Almacén: el documento quedaba extraviado o desvinculado de la mercancía. Juan implementó la norma de que todo pasa primero por Almacén.
+                - Jefe de operaciones u otro responsable recibía la factura y se olvidaba de pasarla a Almacén: la mercancía pasaba por Almacén pero la factura quedaba en otra área. Juan resolvió centralizando el flujo a través de Almacén.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que este proceso ha mejorado significativamente desde que él estableció la norma de que todo debe pasar por Almacén primero, y que actualmente Almacén lo ejecuta de forma más autónoma.
+        - Propuesta 3.7: Supervisión de pedidos recibidos en almacén, para que tengan respaldo con documento de entrega y recepción
+            - Pendiente.
+    - TAREA 3.8: Comunicación con los proveedores sobre los pedidos pendientes de pago, así como las solvencias en pagos al día, emisión de comprobantes, certificados de retención de impuestos y cualquier otro particular
+        - AS-IS 3.8: Comunicación con los proveedores sobre los pedidos pendientes de pago, así como las solvencias en pagos al día, emisión de comprobantes, certificados de retención de impuestos y cualquier otro particular
+            - ¿Qué es esta tarea?
+                - Gestión integral de la comunicación con los proveedores sobre todo lo relacionado con el estado de sus cuentas: verificación de saldos, confirmación de pagos, envío de comprobantes, emisión de certificados de retención, y coordinación para el cierre correcto de cada deuda.
+            - ¿Para qué se hace?
+                - Para garantizar que los proveedores tengan toda la información necesaria sobre el estado de sus pagos, que las cuentas anteriores estén cerradas antes de abrir nuevas, y que no queden saldos pendientes no gestionados que impacten el balance financiero.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): gestiona toda la comunicación con proveedores.
+                - Ericka Milagro Antequera (Finanzas): instruye a Juan sobre asegurar el cierre de cuentas anteriores antes de procesar nuevas.
+            - ¿Cuándo se hace?
+                - Disparador: Necesidad de pagar una cuenta, solicitar una factura, enviar un comprobante, o cualquier gestión que involucre comunicación con el proveedor.
+                - Frecuencia: Bajo demanda; continua a lo largo del día.
+            - ¿Cómo se hace?
+                - Paso 1: Antes de contactar al proveedor por una cuenta nueva, verificar que la cuenta anterior de ese proveedor esté cerrada.
+                - Paso 2: Preguntar al proveedor directamente: "¿Qué te debo?" y contrastar con el registro propio.
+                - Paso 3: Enviar al proveedor notas o soportes de los despachos para confirmar lo que se adeuda.
+                - Paso 4: Acordar con el proveedor los montos y condiciones (incluyendo descuentos si aplican).
+                - Paso 5: Solicitarle que emita la factura una vez alineados los montos.
+                - Paso 6: Procesar el pago y enviar el comprobante al proveedor.
+                - Paso 7: En casos de retención de IVA o ISLR, emitir el certificado de retención y enviarlo al proveedor según su preferencia (correo, WhatsApp o impreso con copia firmada; ver TAREA 3.11).
+            - ¿Qué necesitan para hacer esta tarea?
+                - Estado de cuenta del proveedor en Odoo.
+                - Notas de despacho archivadas como respaldo.
+                - Comprobantes de pago emitidos por Finanzas.
+                - Certificados de retención cuando aplique.
+            - ¿Qué se genera al terminar?
+                - Cuenta de proveedor cerrada correctamente o en proceso de cierre con información compartida.
+                - Soporte de comunicación en el historial del chat de WhatsApp.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para verificar el estado de cuenta del proveedor.
+                - WhatsApp: canal principal de comunicación con proveedores.
+                - Correo electrónico: para proveedores que tienen correo corporativo y para envíos formales.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Devolución de pago no detectada por el proveedor a tiempo: ha generado casos donde el proveedor alegaba no haber recibido el pago aunque tenía el comprobante; Juan tuvo que elaborar un informe legal para re-ejecutar el pago, con verificación bancaria de que el débito y el crédito nunca se realizaron.
+                - Cuenta anterior sin cerrar cuando se intenta gestionar una nueva: si la cuenta anterior no está cerrada, la cuenta nueva queda atrapada en medio, sin poder avanzar ni retroceder. Esto puede pasar desapercibido durante meses hasta que un contador lo detecta.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Ericka Milagro Antequera le ha instruido a Juan que siempre asegure el cierre de la cuenta anterior antes de procesar la siguiente, para evitar que queden cuentas "en el limbo".
+        - Propuesta 3.8: Comunicación con los proveedores sobre los pedidos pendientes de pago, así como las solvencias en pagos al día, emisión de comprobantes, certificados de retención de impuestos y cualquier otro particular
+            - Pendiente.
+    - TAREA 3.9: Actualización manual de cuentas pendientes de pago en proveedores que despachen con facturas fiscal. (estos casos no dejan pedidos abiertos)
+        - AS-IS 3.9: Actualización manual de cuentas pendientes de pago en proveedores que despachen con facturas fiscal
+            - ¿Qué es esta tarea?
+                - Inclusión manual en el Excel de cuentas por pagar de las facturas de proveedores que despachan directamente con factura fiscal (sin dejar pedido abierto en Odoo), para que queden contempladas en la planificación de pagos.
+            - ¿Para qué se hace?
+                - Porque estos proveedores cierran el pedido al momento del despacho y emiten factura de inmediato, por lo que no quedan como pedidos abiertos en Odoo. Si no se incluyen manualmente en el Excel de cuentas por pagar, sus facturas quedan fuera de la planificación de pagos y corren el riesgo de no pagarse.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras). Señala que hay tres o cuatro proveedores con este esquema.
+                - Nota: en el pasado, cuando había otro compañero, esta tarea se omitía con frecuencia; actualmente Juan la gestiona solo y dice que ya no se le escapa.
+            - ¿Cuándo se hace?
+                - Disparador: Registro de una factura de un proveedor que despacha con factura fiscal directa (sin pedido abierto residual).
+                - Frecuencia: Cada vez que llega una factura de este tipo de proveedor; integrado en la rutina diaria de actualización de cuentas por pagar.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar que la factura corresponde a un proveedor que despacha con factura fiscal directa.
+                - Paso 2: Registrar la factura en Odoo normalmente.
+                - Paso 3: Incluir manualmente esta factura en el Excel de cuentas por pagar como cuenta pendiente de pago.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Factura fiscal del proveedor.
+                - Acceso a Odoo para registrar la factura.
+                - Acceso al Excel de cuentas por pagar en la nube.
+            - ¿Qué se genera al terminar?
+                - Factura registrada en Odoo y reflejada en el Excel de cuentas por pagar.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para registrar la factura.
+                - Excel en la nube (Microsoft / correo corporativo): para incluir manualmente la factura como cuenta por pagar.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Ericka Milagro Antequera ha instruido a Juan que cuando llegue una factura de cuenta por pagar de este tipo, la lleve directamente al Excel de cuentas por pagar como factura, sin esperar a descargarla del módulo de compras.
+        - Propuesta 3.9: Actualización manual de cuentas pendientes de pago en proveedores que despachen con facturas fiscal
+            - Pendiente.
+    - TAREA 3.10: Actualización e inclusión manual en las cuentas por pagar de los proveedores de servicios mensuales (CORPOELEC / TELMACA / SEGURIDAD)
+        - AS-IS 3.10: Actualización e inclusión manual en las cuentas por pagar de los proveedores de servicios mensuales (CORPOELEC / TELMACA / SEGURIDAD)
+            - ¿Qué es esta tarea?
+                - Inclusión manual a principios de cada mes de los montos correspondientes a servicios fijos mensuales (electricidad, telecomunicaciones, seguridad) en el Excel de cuentas por pagar, antes de que el proveedor emita la factura o realice el cobro.
+            - ¿Para qué se hace?
+                - Para que la gerencia aparte la disponibilidad para estos pagos antes de comprometer los fondos en otros pagos. Si no se incluyen anticipadamente, cuando el proveedor cobre puede no haber disponibilidad, y estos servicios no pueden dejar de pagarse.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: Inicio de cada mes.
+                - Frecuencia: Mensual (a principios de mes).
+            - ¿Cómo se hace?
+                - Paso 1: A principios de mes, identificar los servicios fijos mensuales cuyos montos ya se conocen.
+                - Paso 2: Incluir cada servicio en el Excel de cuentas por pagar con su monto estimado o conocido.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Montos históricos o conocidos de cada servicio mensual (CORPOELEC, TELMACA, Seguridad).
+                - Acceso al Excel de cuentas por pagar en la nube.
+            - ¿Qué se genera al terminar?
+                - Servicios fijos del mes incluidos en el Excel de cuentas por pagar, visibles para la planificación de pagos de gerencia.
+            - ¿Qué sistemas o herramientas usan?
+                - Excel en la nube (Microsoft / correo corporativo).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Si no se aparta: cuando el proveedor cobra, puede no haber disponibilidad para pagar. Juan argumentó este riesgo ante Enrique Rafael Cid para que aprobara incluir estos servicios anticipadamente en las cuentas por pagar aunque aún no hayan facturado.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 3.10: Actualización e inclusión manual en las cuentas por pagar de los proveedores de servicios mensuales (CORPOELEC / TELMACA / SEGURIDAD)
+            - Pendiente.
+    - TAREA 3.11: En caso de certificados de retención, se envía Digital con PDF vía correo, WhatsApp impreso, en este último se recibe copia firmada y se archiva
+        - AS-IS 3.11: Emisión y archivo de certificados de retención
+            - ¿Qué es esta tarea?
+                - Emisión del certificado de retención (IVA o ISLR) al proveedor, enviado según el canal de preferencia del proveedor, y archivo de la copia firmada cuando se entrega impresa.
+            - ¿Para qué se hace?
+                - Para cumplir con la obligación de informar al proveedor sobre las retenciones practicadas en sus pagos, y para proteger a la empresa ante posibles reclamos, contando con evidencia de que el proveedor recibió y firmó la copia del certificado.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): emite y archiva.
+            - ¿Cuándo se hace?
+                - Disparador: Pago a proveedor con retención de IVA o ISLR aplicada.
+                - Frecuencia: Cada vez que se practica una retención en un pago a proveedor.
+            - ¿Cómo se hace?
+                - Paso 1: Generar el certificado de retención correspondiente.
+                - Paso 2: Según la preferencia del proveedor, enviarlo por uno de estos canales:
+                    - Canal A — Correo electrónico: enviar el PDF del certificado al correo de la empresa del proveedor.
+                    - Canal B — WhatsApp: enviar el PDF del certificado vía WhatsApp.
+                    - Canal C — Impreso: imprimir el certificado, entregarlo al proveedor y solicitar que firme la copia de Juan.
+                - Paso 3: Si se entregó impreso, recibir la copia firmada del proveedor.
+                - Paso 4: Archivar la copia firmada en una carpeta de comprobantes de retención.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Datos del pago y de la retención practicada.
+                - Preferencia de canal del proveedor.
+                - Impresora (para envío impreso).
+                - Carpeta física de comprobantes de retención.
+            - ¿Qué se genera al terminar?
+                - Certificado de retención enviado al proveedor por el canal correspondiente.
+                - Copia firmada archivada en carpeta de comprobantes de retención (cuando aplica el canal impreso).
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima (no se especifica el sistema desde el cual se genera el certificado de retención).
+                - WhatsApp: para envío digital al proveedor.
+                - Correo electrónico: para envío digital formal.
+                - Impresora: para emisión en físico.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Proveedor alega no haber recibido el certificado: si fue entregado impreso y firmado, Juan presenta la copia firmada como evidencia.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 3.11: Emisión y archivo de certificados de retención
+            - Pendiente.
+
+---
+
+- FASE 7: **FUNCIONES OPERATIVAS**
+    - TAREA 7.1: Atención a proveedores directamente en los despachos de pedidos como servicios de agua en cisterna, gas a granel, Internet
+        - AS-IS 7.1: Atención a proveedores directamente en los despachos de pedidos como servicios de agua en cisterna, gas a granel, Internet
+            - ¿Qué es esta tarea?
+                - Recepción directa del proveedor en el momento del despacho de servicios específicos (agua en cisterna, gas a granel, Internet), verificando lo despachado contra el pedido, y procediendo con el registro y solicitud de pago.
+            - ¿Para qué se hace?
+                - Para garantizar que el despacho recibido coincida con el pedido y la factura, y para que quede registro documentado del servicio prestado antes de procesar el pago.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): atiende directamente al proveedor.
+                - Responsable del área que recibió el servicio (ej. quien recibió el agua, el gas, etc.): confirma la cantidad despachada.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada del proveedor de servicio (agua, gas, Internet) para realizar el despacho.
+                - Frecuencia: Cada vez que uno de estos proveedores realiza un despacho.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir al proveedor.
+                - Paso 2: Confirmar con el responsable del área que recibió el servicio la cantidad efectivamente despachada (litros de agua, porcentaje de llenado de bombonas de gas, etc.).
+                - Paso 3: Cruzar la información confirmada con lo indicado en la factura del proveedor.
+                - Paso 4: Certificar el despacho.
+                - Paso 5: Registrar la factura en Odoo y solicitar el pago.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Factura del proveedor.
+                - Confirmación del área receptora del servicio sobre las cantidades recibidas.
+                - Pedido previo en Odoo.
+            - ¿Qué se genera al terminar?
+                - Despacho certificado y factura registrada en Odoo.
+                - Solicitud de pago emitida a Finanzas.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para registrar la factura.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.1: Atención a proveedores directamente en los despachos de pedidos como servicios de agua en cisterna, gas a granel, Internet
+            - Pendiente.
+    - TAREA 7.2: Supervisión en la recepción de pedidos de gran envergadura, ej. Víveres, verduras, bebidas, químicos, ferretería
+        - AS-IS 7.2: Supervisión en la recepción de pedidos de gran envergadura
+            - ¿Qué es esta tarea?
+                - Presencia y apoyo de Juan en Almacén durante la recepción de pedidos de gran volumen o variedad, para apoyar al personal de Almacén y prevenir errores en la recepción y registro.
+            - ¿Para qué se hace?
+                - Porque el volumen de estos despachos puede generar errores de conteo, confusión sobre qué se pidió, o discrepancias que causen problemas en la facturación posterior. La presencia de Juan sirve como control adicional y apoyo operativo.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): supervisa y apoya.
+                - Personal de Almacén: ejecuta la recepción.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada de un pedido de gran envergadura (víveres, bebidas, químicos, ferretería, etc.), especialmente en temporadas donde los volúmenes son más altos.
+                - Frecuencia: Bajo demanda; ocurre pocas veces pero se hace cuando es necesario.
+            - ¿Cómo se hace?
+                - Paso 1: Trasladarse a Almacén cuando llega el pedido de gran envergadura.
+                - Paso 2: Apoyar al personal de Almacén en la verificación de cantidades y productos recibidos.
+                - Paso 3: Resolver dudas que surjan sobre lo pedido (quién lo pidió, cuánto se pidió, para qué área).
+                - Paso 4: Asegurar que el proceso de recepción siga el flujo correcto para evitar errores en la facturación.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Pedido en Odoo como referencia.
+                - Documento de entrega del proveedor.
+            - ¿Qué se genera al terminar?
+                - Recepción del pedido verificada y correctamente respaldada con documentación.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: como referencia para verificar lo pedido.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Confusión en Almacén sobre qué se pidió o para quién: Juan interviene para resolver y evitar que se genere un problema que frene la facturación.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.2: Supervisión en la recepción de pedidos de gran envergadura
+            - Pendiente.
+    - TAREA 7.3: Órdenes de entrada y salida de productos, mercancía, artículos que por obsequio, compra, donación, propina, entre otros, ameriten documento que avale entrada o salida de la empresa
+        - AS-IS 7.3: Órdenes de entrada y salida de productos, mercancía, artículos
+            - ¿Qué es esta tarea?
+                - Elaboración de órdenes de salida (y entrada cuando aplica) para cualquier artículo o mercancía que salga o entre al hotel por motivos distintos a una compra formal: obsequios de gerencia, propinas de huéspedes, materiales en desuso cedidos a trabajadores, equipos enviados a reparación, desperdicios autorizados, entre otros.
+            - ¿Para qué se hace?
+                - Para que cualquier entrada o salida de artículos del hotel quede documentada con una autorización formal, evitando sospechas de sustracción ilegal y creando un registro de lo que sale y entra. Los artículos sin orden de salida pueden ser confiscados por seguridad en la puerta del hotel.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): elabora la orden.
+                - Gerencia General (Enrique Rafael Cid, Alberto Cid Navarro): autoriza la salida.
+                - Persona que retira el artículo: presenta la orden en la puerta.
+            - ¿Cuándo se hace?
+                - Disparador: Necesidad de sacar o ingresar un artículo que no forma parte de una compra o venta formal y que requiere autorización documentada.
+                - Frecuencia: Bajo demanda; ocurre con frecuencia variable.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir la solicitud de orden de salida (de la persona que va a retirar el artículo o del jefe que autorizó).
+                - Paso 2: Verificar que exista una autorización de gerencia para la salida (puede ser verbal confirmada con audio, correo o instrucción directa del jefe).
+                - Paso 3: Completar el formato de orden de salida con: nombre del hotel, título "Orden de Salida", instrucciones de gerencia, nombre del ciudadano autorizado, artículo que se lleva y cualquier otra información relevante.
+                - Paso 4: Entregar la orden de salida a la persona que retira el artículo para que la presente en la puerta del hotel.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Autorización de gerencia (verbal con audio, correo o instrucción directa).
+                - Formato de orden de salida.
+                - Descripción del artículo a retirar.
+            - ¿Qué se genera al terminar?
+                - Orden de salida firmada y entregada a la persona que retira el artículo.
+            - ¿Qué sistemas o herramientas usan?
+                - Formato físico o digital de orden de salida: ⚠️ Pendiente validar en sesión próxima si es impreso o hay plantilla digital.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Persona intenta salir sin orden de salida: seguridad la detiene en la puerta. Juan debe gestionar la emisión urgente de la orden.
+                - Persona dice tener autorización verbal del jefe sin soporte: Juan verifica directamente con el jefe antes de emitir la orden. Puede ser un audio del jefe como soporte mínimo.
+                - Artículo entregado a reparación sin orden de salida: riesgo de no poder verificar qué salió ni en qué condiciones (ejemplo mencionado: motor vs. bomba de agua).
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que el proceso ha mejorado desde que se estableció la norma, pero que hay personal que constantemente debe ser recordado de los requisitos. La capacitación continua al personal nuevo y a los proveedores es parte de la tarea.
+        - Propuesta 7.3: Órdenes de entrada y salida de productos, mercancía, artículos
+            - Pendiente.
+    - TAREA 7.4: Atención y asesoramiento al personal de la empresa y/o terceros, en el cumplimiento de los procesos de solicitud de documentos, mercancía, inventarios
+        - AS-IS 7.4: Atención y asesoramiento al personal de la empresa y/o terceros en cumplimiento de procesos
+            - ¿Qué es esta tarea?
+                - Orientación y asesoramiento continuo al personal interno y a terceros (proveedores, contratistas) sobre los procesos correctos para solicitar documentos, mercancías, inventarios u órdenes de salida; asegurando que se cumplan los requisitos formales establecidos.
+            - ¿Para qué se hace?
+                - Porque hay rotación constante de personal y muchos trabajadores nuevos o proveedores no conocen los procedimientos. Sin esta orientación, los procesos se saltan generando problemas en documentación, control de inventarios y seguridad.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): atiende y asesora.
+                - Jefes de departamento: también participan en la orientación de sus equipos; Juan coordina con ellos.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada de personal nuevo, proveedor que desconoce el proceso, o situación donde alguien intenta saltarse un procedimiento.
+                - Frecuencia: Continua y recurrente dado el nivel de rotación del personal.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar que una persona no está cumpliendo o no conoce el proceso correcto.
+                - Paso 2: Explicar directamente a la persona los requisitos del proceso (qué documentos necesita, cómo tramitarlos, quién autoriza).
+                - Paso 3: En casos de mayor complejidad, coordinar con los jefes de departamento para que refuercen la orientación a sus equipos.
+                - Paso 4: Para proveedores recurrentes con incumplimientos, explicar cada vez que vienen hasta que internalicen el proceso (ejemplo: proveedor de electrónica que recoge motores para reparación).
+            - ¿Qué necesitan para hacer esta tarea?
+                - Conocimiento de todos los procesos administrativos del hotel.
+                - ⚠️ Pendiente validar en sesión próxima si existe material de orientación documentado (manual, formato, flyer, etc.).
+            - ¿Qué se genera al terminar?
+                - Personal o proveedor orientado que cumple el proceso en esa instancia.
+            - ¿Qué sistemas o herramientas usan?
+                - No aplica (comunicación directa / verbal).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Personal que no internaliza el proceso a pesar de la orientación repetida: Juan continúa explicando cada vez. No se menciona en la transcripción un mecanismo de escalamiento para estos casos.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.4: Atención y asesoramiento al personal de la empresa y/o terceros en cumplimiento de procesos
+            - Pendiente.
+    - TAREA 7.5: Recepción de mercancías, materiales, equipos y otros que por no ser productos a almacenar, se ordenan recibir en administración
+        - AS-IS 7.5: Recepción de mercancías, materiales, equipos y otros que por no ser productos a almacenar, se ordenan recibir en administración
+            - ¿Qué es esta tarea?
+                - Recepción física en la oficina de administración de artículos que no son productos de almacén (papelería, botellones, baterías, equipos de uso inmediato u otros activos), registrando su ingreso y asegurando que queden afectados a la cuenta contable correcta en el sistema.
+            - ¿Para qué se hace?
+                - Para que artículos que no pasan por Almacén queden igualmente documentados, registrados en el sistema en la cuenta contable correspondiente (activo, suministro, etc.) y bajo la responsabilidad de administración.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): realiza el trabajo operativo de recepción.
+                - Libny Carina Tarazon Gallegos (Administración): tiene la autorización y privilegio en Odoo para realizar la recepción formal en el sistema; Juan trabaja como su adjunto en esta tarea.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada de un artículo o material no almacenable que se ordena recibir en administración.
+                - Frecuencia: Bajo demanda.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir físicamente el artículo en la oficina de administración.
+                - Paso 2: Verificar que el artículo coincide con lo solicitado.
+                - Paso 3: Solicitar a Libny Carina Tarazon Gallegos que realice la recepción formal en Odoo, indicando la cuenta contable correcta (activo, inventario, suministros, etc.).
+                - Paso 4: Si el artículo no genera afectación de inventario en el sistema pero sí existe en la oficina, registrarlo en el inventario interno de la oficina.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Documento de entrega del proveedor.
+                - Instrucción de gerencia sobre la cuenta contable a afectar.
+                - Autorización de Libny Carina Tarazon Gallegos para la recepción en Odoo.
+            - ¿Qué se genera al terminar?
+                - Artículo recibido físicamente y registrado en el sistema en la cuenta correspondiente.
+                - Registro en el inventario interno de la oficina si aplica.
+            - ¿Qué sistemas o herramientas usan?
+                - Odoo: para registrar la recepción y afectar la cuenta contable; esta operación la ejecuta Libny Carina Tarazon Gallegos.
+                - Inventario interno de la oficina: ⚠️ Pendiente validar en sesión próxima el formato o sistema que se usa para este inventario.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.5: Recepción de mercancías, materiales, equipos y otros que por no ser productos a almacenar, se ordenan recibir en administración
+            - Pendiente.
+    - TAREA 7.6: En la oficina de administración responsabilidad en resguardo de llaves, Originales y copias de vehículos, depósitos, puertas de acceso a diferentes módulos, áreas de cocina
+        - AS-IS 7.6: Resguardo de llaves en la oficina de administración
+            - ¿Qué es esta tarea?
+                - Custodia y control de todas las llaves originales y copias del hotel (habitaciones, depósitos, vehículos, puertas de acceso de todos los módulos y áreas) desde la oficina de administración, disponibles para préstamo ante extravíos o ausencias del responsable habitual.
+            - ¿Para qué se hace?
+                - Para que siempre exista una copia accesible de cualquier llave del hotel en caso de extravío o de que el responsable no esté disponible, evitando bloqueos operativos.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): responsable del resguardo.
+            - ¿Cuándo se hace?
+                - Disparador: Solicitud de llave por parte de algún miembro del personal o situación de extravío.
+                - Frecuencia: Continua (resguardo permanente); atención de solicitudes bajo demanda y con alta frecuencia diaria.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (Juan describe el alcance pero no detalla el procedimiento de préstamo, registro o control de llaves).
+            - ¿Qué necesitan para hacer esta tarea?
+                - Juego de llaves originales y copias de todos los ambientes del hotel (aprox. 80 habitaciones, 25-30 depósitos, puertas de acceso de todos los módulos, cocinas, vehículos).
+                - ⚠️ Pendiente validar en sesión próxima si hay un registro formal de control de llaves (tabla, planilla, etc.).
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima (se menciona una tabla o agenda de llaves pero no se precisa el formato).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.6: Resguardo de llaves en la oficina de administración
+            - Pendiente.
+    - TAREA 7.7: En la oficina de administración responsabilidad en resguardo de material y equipo asignado por Gerencia General
+        - AS-IS 7.7: Resguardo de material y equipo asignado por Gerencia General
+            - ¿Qué es esta tarea?
+                - Custodia en la oficina de administración de materiales y equipos que la Gerencia General asigna bajo la responsabilidad de ese departamento.
+            - ¿Qué es esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima (Juan confirma que esta tarea es similar a la anterior 7.6 y la agrupa, sin detallar qué tipos de materiales y equipos están bajo esta responsabilidad más allá del resguardo general).
+            - ¿Para qué se hace?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+            - ¿Cuándo se hace?
+                - Disparador: ⚠️ Pendiente validar en sesión próxima
+                - Frecuencia: ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.7: Resguardo de material y equipo asignado por Gerencia General
+            - Pendiente.
+    - TAREA 7.8: Entrega de equipos dañados al Dtto Electrónica / Tecnología por instrucciones de Gerencia General
+        - AS-IS 7.8: Entrega de equipos dañados al Departamento de Electrónica / Tecnología
+            - ¿Qué es esta tarea?
+                - Coordinación y registro de la entrega de equipos dañados al responsable del Departamento de Tecnología, documentando el estado del equipo al momento de entregarlo, el proceso de reparación y la devolución, en un cuaderno de minutas que lleva el departamento.
+            - ¿Para qué se hace?
+                - Para mantener trazabilidad de qué equipos están dañados, en qué estado se entregaron para reparación, qué se reparó y cuál es la vida útil restante de cada equipo. Esto le fue asignado directamente a Juan por la Gerencia General dado que el responsable de Tecnología trabaja solo y es de mayor edad.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): coordina y documenta.
+                - Responsable del Departamento de Tecnología: recibe, repara y devuelve.
+                - Persona que entrega el equipo dañado: aporta la información del equipo.
+            - ¿Cuándo se hace?
+                - Disparador: Instrucción de Gerencia General de entregar un equipo dañado al Departamento de Tecnología.
+                - Frecuencia: Bajo demanda; cada vez que un equipo se daña y se ordena su reparación.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir la instrucción de gerencia de gestionar la entrega del equipo dañado.
+                - Paso 2: Solicitar a la persona que entrega el equipo: foto del equipo, descripción del daño y demás información relevante.
+                - Paso 3: Documentar la entrega en el cuaderno de minutas del Departamento de Tecnología.
+                - Paso 4: Una vez reparado el equipo: documentar en el cuaderno la devolución, el estado final y la aprobación de que quedó en condiciones.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Equipo dañado con información sobre el daño.
+                - Cuaderno de minutas del Departamento de Tecnología.
+                - Instrucción de Gerencia General.
+            - ¿Qué se genera al terminar?
+                - Registro en el cuaderno de minutas de la entrega, reparación y devolución del equipo.
+            - ¿Qué sistemas o herramientas usan?
+                - Cuaderno físico de minutas del Departamento de Tecnología.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que intentó que esta tarea le fuera asignada a otra persona, pero que gerencia se la mantuvo a él.
+        - Propuesta 7.8: Entrega de equipos dañados al Departamento de Electrónica / Tecnología
+            - Pendiente.
+    - TAREA 7.9: Apoyo en la realización de inventarios generales o departamentales
+        - AS-IS 7.9: Apoyo en la realización de inventarios generales o departamentales
+            - ¿Qué es esta tarea?
+                - Participación de Juan como apoyo en la toma física de inventarios generales o de departamentos específicos cuando esta actividad se lleva a cabo.
+            - ¿Para qué se hace?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): rol de apoyo.
+            - ¿Cuándo se hace?
+                - Disparador: Convocatoria a toma física de inventario general o departamental.
+                - Frecuencia: Esta tarea está actualmente frenada; Juan señala que los inventarios no se han realizado más y que la toma física está detenida.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué necesitan para hacer esta tarea?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué se genera al terminar?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.9: Apoyo en la realización de inventarios generales o departamentales
+            - Pendiente.
+    - TAREA 7.10: Distribución enlistada de uniformes, material de trabajo, equipos de trabajo, material de oficina, radio de comunicación
+        - AS-IS 7.10: Distribución enlistada de uniformes, material de trabajo, equipos de trabajo, material de oficina, radio de comunicación
+            - ¿Qué es esta tarea?
+                - Entrega controlada y registrada de artículos de dotación (uniformes, botas, radios, material de oficina, equipos de trabajo) al personal, llevando una lista de quién recibió qué, cuándo, y cuántas unidades quedan disponibles; luego compartiendo el registro con Talento Humano.
+            - ¿Para qué se hace?
+                - Para mantener control de lo entregado y evitar que el personal solicite artículos que ya recibieron, alegando no haberlos recibido. También para coordinación con Talento Humano sobre el estado de dotaciones.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): realiza la distribución y lleva el registro.
+                - Talento Humano: recibe el registro de las entregas realizadas.
+            - ¿Cuándo se hace?
+                - Disparador: Llegada de artículos de dotación (uniformes, equipos, material de oficina, radios) o solicitud de entrega de los mismos.
+                - Frecuencia: Bajo demanda; recurrente pero no diaria.
+            - ¿Cómo se hace?
+                - Paso 1: Recibir o identificar los artículos de dotación disponibles para distribución.
+                - Paso 2: Probar o verificar el estado de los equipos antes de entregar (especialmente radios: frecuencia, carga, funcionamiento).
+                - Paso 3: Entregar el artículo al personal correspondiente.
+                - Paso 4: Registrar en la lista: quién recibió, qué recibió y cuántos quedan disponibles.
+                - Paso 5: Pasar el registro a Talento Humano.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Artículos de dotación disponibles.
+                - Lista de control de distribución.
+            - ¿Qué se genera al terminar?
+                - Lista de distribución actualizada, enviada a Talento Humano.
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima (no se especifica si la lista es en papel, Excel u otro formato).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Personal que solicita un artículo que ya recibió: Juan consulta la lista y muestra el registro como evidencia de que ya fue entregado.
+                - Personal que pide el mismo artículo a Talento Humano y a Juan para recibir duplicado: el cruce entre el registro de Juan y el de Talento Humano permite detectar el duplicado.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 7.10: Distribución enlistada de uniformes, material de trabajo, equipos de trabajo, material de oficina, radio de comunicación
+            - Pendiente.
+
+---
+
+- FASE 8: **FUNCIONES ADMINISTRATIVAS**
+    - TAREA 8.1: Realizar oficios, formatos de requisiciones, inventarios, lista de personal, entre otros
+        - AS-IS 8.1: Realizar oficios, formatos de requisiciones, inventarios, lista de personal, entre otros
+            - ¿Qué es esta tarea?
+                - Elaboración de documentos administrativos formales (oficios, requisiciones, inventarios, listas de personal, contratos, habladores y cualquier otro formato que solicite la gerencia) como parte del soporte administrativo del departamento.
+            - ¿Para qué se hace?
+                - Para dar respuesta a requerimientos documentales de los jefes y de la operación, generando los instrumentos formales necesarios para la gestión interna del hotel.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras).
+                - También apoya a Libny Carina Tarazon Gallegos (Administración) en este tipo de documentos.
+            - ¿Cuándo se hace?
+                - Disparador: Solicitud de un jefe o de la operación de un documento administrativo específico.
+                - Frecuencia: Bajo demanda.
+            - ¿Cómo se hace?
+                - ⚠️ Pendiente validar en sesión próxima (Juan confirma que elabora estos documentos pero no detalla el procedimiento en la transcripción).
+            - ¿Qué necesitan para hacer esta tarea?
+                - Instrucción o solicitud del jefe.
+                - Información necesaria para completar el documento.
+                - ⚠️ Pendiente validar en sesión próxima si hay plantillas o formatos estandarizados.
+            - ¿Qué se genera al terminar?
+                - Documento administrativo elaborado y entregado a quien lo solicitó.
+            - ¿Qué sistemas o herramientas usan?
+                - ⚠️ Pendiente validar en sesión próxima (procesador de texto, plantillas, etc.).
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - ⚠️ Pendiente validar en sesión próxima
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 8.1: Realizar oficios, formatos de requisiciones, inventarios, lista de personal, entre otros
+            - Pendiente.
+    - TAREA 8.2: Sacar copias, hacer impresiones, supervisar el uso del sello, escaneo de documentos, actualizar los puntos de venta, verificar que los equipos administrativos estén operativos
+        - AS-IS 8.2: Operaciones de soporte administrativo
+            - ¿Qué es esta tarea?
+                - Conjunto de actividades de soporte físico y operativo de la oficina: fotocopias, impresiones, escaneos, supervisión del uso del sello de la empresa, actualizaciones de los terminales de punto de venta y verificación de que los equipos de administración estén funcionando correctamente.
+            - ¿Para qué se hace?
+                - Para mantener la operatividad de la oficina de administración y asegurar que los documentos se procesen, los equipos funcionen y los procesos no se detengan por falta de soporte básico.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras). También puede realizarlo Libny Carina Tarazon Gallegos.
+            - ¿Cuándo se hace?
+                - Disparador: Necesidad operativa del día (impresión, copia, escaneo) o instrucción del banco para actualización de punto de venta.
+                - Frecuencia: Diaria para copias/impresiones/escaneos; la actualización de puntos de venta es esporádica y a solicitud del banco.
+            - ¿Cómo se hace?
+                - Para copias, impresiones y escaneos: ⚠️ Pendiente validar en sesión próxima.
+                - Para actualización de punto de venta:
+                    - Paso 1: El banco se comunica con Juan (o con Ericka Milagro Antequera quien redirige a Juan) indicando que hay una actualización del sistema operativo del terminal.
+                    - Paso 2: Juan sigue el proceso de actualización del terminal con el banco.
+                - Para supervisión del sello: ⚠️ Pendiente validar en sesión próxima.
+                - Para verificación de equipos: ⚠️ Pendiente validar en sesión próxima.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Acceso a impresora, fotocopiadora y escáner.
+                - Sello de la empresa.
+                - Terminal de punto de venta y enlace/comunicación con el banco para actualizaciones.
+            - ¿Qué se genera al terminar?
+                - Documentos impresos, copiados o escaneados según se requiera.
+                - Terminal de punto de venta actualizado.
+            - ¿Qué sistemas o herramientas usan?
+                - Terminal de punto de venta bancario: para actualizaciones del sistema operativo del equipo.
+                - Impresora / fotocopiadora / escáner: para las tareas de soporte documental.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Terminal de punto de venta lento o con errores por falta de actualización: el banco contacta a Juan para programar la actualización. Juan lo compara con no actualizar WhatsApp: el sistema se va poniendo lento.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - ⚠️ Pendiente validar en sesión próxima
+        - Propuesta 8.2: Operaciones de soporte administrativo
+            - Pendiente.
+    - TAREA 8.3: Informar a través de los diferentes medios sobre las eventualidades suscitadas a través de informes escritos, reportes en los grupos de trabajo, correo electrónico, con alcance para alta gerencia
+        - AS-IS 8.3: Informar sobre eventualidades a través de los diferentes medios
+            - ¿Qué es esta tarea?
+                - Redacción y envío de informes formales sobre eventualidades ocurridas en el hotel (incidentes, situaciones con trabajadores o huéspedes, novedades operativas relevantes), a través de los canales y destinatarios que correspondan según la naturaleza del evento.
+            - ¿Para qué se hace?
+                - Para que los jefes y la alta gerencia estén informados formalmente de lo que ocurre en el hotel a través de documentos estructurados, y no solo por referencias verbales o de terceros. Administración es el departamento responsable de "montar la guardia" informativa.
+            - ¿Qué roles ejecutan esta tarea?
+                - Juan Jose Herrera Rangel (Administración / Facturación de Compras): redacta y envía el informe.
+                - Ericka Milagro Antequera (Gerencia de Administración y Finanzas): puede recibir y elevar el informe a gerencia cuando es a través de gerencia de administración.
+                - Talento Humano: destinatario en casos que involucren a trabajadores.
+                - Jefes de departamento: destinatarios directos cuando el incidente es propio de un departamento.
+                - Alta Gerencia (Enrique Rafael Cid, Alberto Cid Navarro): destinatarios finales en casos de mayor relevancia.
+            - ¿Cuándo se hace?
+                - Disparador: Ocurrencia de una eventualidad relevante (robo, pelea, accidente, incidente con huésped, situación entre jefes, novedad operativa importante).
+                - Frecuencia: Bajo demanda; cada vez que ocurre una eventualidad que amerite registro formal.
+            - ¿Cómo se hace?
+                - Paso 1: Identificar que la eventualidad amerita un informe formal (no todos los eventos requieren informe escrito; los más delicados sí).
+                - Paso 2: Redactar un informe bien elaborado y estructurado describiendo la eventualidad.
+                - Paso 3: Determinar el canal y destinatario según la naturaleza del evento:
+                    - Evento que involucra a un trabajador: informar a Talento Humano.
+                    - Evento propio de un departamento: informar directamente al jefe del departamento.
+                    - Evento que involucra a un huésped o es de mayor relevancia: enviar a través de Gerencia de Administración y Finanzas (Ericka Milagro Antequera), quien eleva a gerencia.
+                - Paso 4: En situaciones muy delicadas (robo, pelea grave), enviar por correo electrónico para que quede registro formal e inmutable.
+                - Paso 5: Para novedades menores, puede reportarse a través de los grupos de trabajo de WhatsApp.
+            - ¿Qué necesitan para hacer esta tarea?
+                - Información clara y verificada sobre la eventualidad.
+                - Acceso a correo electrónico y grupos de WhatsApp.
+            - ¿Qué se genera al terminar?
+                - Informe escrito enviado por el canal correspondiente, con registro formal de la eventualidad.
+            - ¿Qué sistemas o herramientas usan?
+                - Correo electrónico: para novedades delicadas que requieren registro formal.
+                - WhatsApp (grupos de trabajo): para novedades menores o de circulación rápida.
+            - ¿Qué pasa cuando las cosas no salen normal?
+                - Otro trabajador o jefe reporta la eventualidad antes que Administración: Juan señaló esto como problema y fue resuelto cuando gerencia estableció que Administración es el canal oficial de reporte de novedades y que el informe debe venir de ese departamento.
+                - Jefes que intentan manejar el incidente sin elevarlo a gerencia de administración: Juan escala igualmente cuando considera que el evento lo amerita.
+            - ¿Cómo les gustaría que funcionara idealmente?
+                - Juan señala que la norma ya está establecida: Administración monta la guardia y reporta formalmente. El proceso mejoró después de que gerencia lo instruyó explícitamente.
+        - Propuesta 8.3: Informar sobre eventualidades a través de los diferentes medios
+            - Pendiente.

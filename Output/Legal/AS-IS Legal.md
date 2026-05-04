@@ -1,0 +1,502 @@
+# AS - IS: Asesor Legal
+
+Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos.
+
+Creado: 17 de marzo de 2026 12:51
+
+- TAREA 1.1.1: Actualización de estatutos sociales por empresa
+    - AS-IS D1.1.1: Actualización de estatutos sociales por empresa
+        - ¿Qué es esta tarea?
+            - Proceso de modificación formal de los estatutos sociales de cada empresa del grupo, que puede implicar cambios de domicilio, renovación de junta directiva u otras modificaciones legales requeridas.
+        - ¿Para qué se hace?
+            - Para cumplir requisitos legales ante cambios internos de la empresa o exigencias de entes externos que requieren estatutos actualizados.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko ejecuta el proceso de forma integral, incluyendo la redacción, gestión de aprobaciones y trámite presencial en el registro mercantil.
+            - No se identificó rol alternativo en ausencia de Rodrigo Gramcko. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Cambio de domicilio, renovación de junta directiva, ampliación societaria u otro evento que exija modificación estatutaria; también puede ser requerido por un ente externo.
+            - Frecuencia: Idealmente cada 5 años, pero puede ser más frecuente según cambios o ampliaciones del grupo.
+        - ¿Cómo se hace?
+            - Paso 1: Identificar el cambio o motivo que origina la necesidad de actualización.
+            - Paso 2: Redactar el acta de asamblea que recoge la modificación estatutaria.
+            - Paso 3: Gestionar la aprobación del acta vía correo electrónico y WhatsApp.
+            - Paso 4: Realizar el pago de planillas, aranceles y tasas administrativas correspondientes.
+            - Paso 5: Presentar la documentación en el registro mercantil y realizar el seguimiento presencial con múltiples visitas hasta la inscripción.
+            - Paso 6: El trámite ante el registro mercantil es presencial con múltiples visitas. Puede durar hasta tres meses desde la presentación hasta la firma final de los documentos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información actualizada sobre el cambio a registrar (nuevo domicilio, nuevos directivos, etc.).
+            - Aprobación de presidencia o junta directiva (vía correo y WhatsApp).
+            - Disponibilidad de fondos para pago de planillas, aranceles y tasas administrativas.
+            - En caso de aumento de capital o venta de acciones: estados financieros vigentes del departamento de Administración y Finanzas.
+            - Firma notarial previa al registro mercantil: no se especificó explícitamente si aplica en todos los casos. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Acta de asamblea aprobada e inscrita en el registro mercantil.
+            - Generación de copia certificada y destinatario de entrega: no especificado en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: para envío y aprobación del acta de asamblea.
+            - WhatsApp: para gestión de aprobaciones con presidencia o junta.
+            - Llamada telefónica: canal adicional de coordinación con presidencia.
+            - No se menciona sistema de gestión documental interno. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - El trámite de inscripción ante el registro mercantil puede extenderse hasta tres meses, con múltiples visitas presenciales requeridas.
+            - No se describieron otras contingencias específicas para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas sobre esta tarea en la sesión. [Pendiente validar]
+    - Propuesta D1.1.1: Actualización de estatutos sociales por empresa
+        - Pendiente.
+
+---
+
+- TAREA 1.1.2: Redacción de acta de asamblea para cambios societarios
+    - AS-IS D1.1.2: Redacción de acta de asamblea para cambios societarios
+        - ¿Qué es esta tarea?
+            - Elaboración del documento formal que registra las decisiones tomadas en asamblea de accionistas o junta directiva, necesario para formalizar cambios societarios ante el registro mercantil.
+        - ¿Para qué se hace?
+            - Para sustentar legalmente cualquier modificación estatutaria o decisión societaria que deba inscribirse en el registro mercantil.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko redacta el acta.
+            - Intervención de abogado externo en redacción o revisión: no mencionada en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Necesidad de formalizar un cambio societario (domicilio, junta directiva, ampliación, etc.).
+            - Frecuencia: Bajo demanda, asociada a la frecuencia de la tarea D1.1.1.
+        - ¿Cómo se hace?
+            - Paso 1: Redactar el acta de asamblea conforme al cambio requerido.
+            - Paso 2: Enviar el acta para aprobación vía correo electrónico y WhatsApp.
+            - Paso 3: Recibir confirmación de aprobación.
+            - Paso 4: El trámite ante la notaría es presencial (retiro físico del documento); puede durar aproximadamente tres días, a diferencia del registro mercantil que puede durar hasta tres meses. Si el acta requiere notarización previa al registro en todos los casos: no se especificó. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información precisa sobre el cambio a documentar.
+            - Acceso a modelos o actas anteriores como referencia.
+            - Existencia de plantilla estándar de acta: no mencionada en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Acta de asamblea redactada y aprobada, lista para gestión ante el registro mercantil.
+            - Formato de entrega y destino del documento aprobado: no especificados en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: para envío y aprobación del documento.
+            - WhatsApp: para confirmación de aprobaciones.
+            - Llamada telefónica: canal adicional de coordinación con presidencia.
+            - Procesador de texto y sistema de gestión documental: no mencionados en sesión. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones específicas para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.1.2: Redacción de acta de asamblea para cambios societarios
+        - Pendiente.
+
+---
+
+- TAREA 1.1.3: Gestión integral de registro mercantil (pagos de planillas, aranceles y tasas)
+    - AS-IS D1.1.3: Gestión integral de registro mercantil (pagos de planillas, aranceles y tasas)
+        - ¿Qué es esta tarea?
+            - Gestión presencial y administrativa de todos los pagos y trámites requeridos para inscribir documentos en el registro mercantil, incluyendo planillas, aranceles y tasas administrativas.
+        - ¿Para qué se hace?
+            - Para completar la inscripción formal de cambios societarios o documentos legales ante el registro mercantil, cumpliendo con los requisitos de pago establecidos por el ente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko gestiona el trámite de forma presencial con múltiples visitas al registro mercantil.
+            - Rodrigo Gramcko actúa como asistente, abogado y gerente del trámite por ausencia de asistente dedicado.
+            - Gestor externo de apoyo para este trámite: no mencionado en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Una vez aprobada el acta de asamblea u otro documento que requiera inscripción en el registro mercantil.
+            - Frecuencia: Bajo demanda, vinculada a los eventos que generan cambios societarios.
+        - ¿Cómo se hace?
+            - Paso 1: Preparar y reunir la documentación requerida para la presentación en el registro mercantil.
+            - Paso 2: Realizar los pagos de planillas, aranceles y tasas administrativas.
+            - Paso 3: Presentar el expediente en el registro mercantil.
+            - Paso 4: Realizar seguimiento presencial con múltiples visitas hasta la inscripción definitiva.
+            - Paso 5: Retiro del documento inscrito: se acude presencialmente al registro. Rodrigo Gramcko realiza visitas hasta la firma final de los documentos.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acta de asamblea u documento societario aprobado.
+            - Fondos disponibles para pago de planillas, aranceles y tasas.
+            - Si se requiere poder notarial u otro documento habilitante para representar a la empresa en el trámite: no especificado en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Documento inscrito en el registro mercantil, retirado presencialmente. Tipo específico de documento resultante (certificado, nota marginal, etc.): no especificado en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Duración extendida: El trámite puede tardar hasta 3 meses, lo que implica múltiples visitas presenciales y seguimiento continuo.
+            - El costo del trámite puede ser significativo: en casos de aumento de capital, se aplica aproximadamente un 4% sobre el monto aumentado.
+            - No se describieron otras contingencias específicas. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.1.3: Gestión integral de registro mercantil (pagos de planillas, aranceles y tasas)
+        - Pendiente.
+
+---
+
+- TAREA 1.1.4: Redacción y formalización de contratos (trabajo, muelle, proveedores, clientes)
+    - AS-IS D1.1.4: Redacción y formalización de contratos (trabajo, muelle, proveedores, clientes)
+        - ¿Qué es esta tarea?
+            - Elaboración y formalización de contratos de distinta naturaleza según la necesidad del grupo empresarial: contratos de trabajo, de muelle, con proveedores y con clientes.
+        - ¿Para qué se hace?
+            - Para establecer formalmente las condiciones y obligaciones entre el grupo empresarial y sus contrapartes, conforme a la normativa legal vigente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko redacta y gestiona los contratos.
+            - Revisión legal externa e identidad del firmante en representación de la empresa: no mencionados en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Solicitud de presidencia u otra área que requiera la formalización de una relación contractual.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir la solicitud con la información mercantil y personal requerida según el tipo de contrato.
+            - Paso 2: Redactar el contrato conforme al tipo (trabajo, muelle, proveedor o cliente).
+            - Paso 3: Proceso de revisión, aprobación y firma del contrato: no detallado en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Información mercantil de las partes (RIF, registro mercantil, representante legal, cédula, entre otros según el caso).
+            - Información personal según el caso (para contratos de trabajo: datos del trabajador).
+            - Uso de plantillas base por tipo de contrato: no especificado en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Contrato redactado y formalizado.
+            - Notarización, número de copias y distribución: no especificados en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.1.4: Redacción y formalización de contratos (trabajo, muelle, proveedores, clientes)
+        - Pendiente.
+
+---
+
+- TAREA 1.1.5: Solicitud de calificación de despido ante Inspectoría del Trabajo
+    - AS-IS D1.1.5: Solicitud de calificación de despido ante Inspectoría del Trabajo
+        - ¿Qué es esta tarea?
+            - Gestión formal ante la Inspectoría del Trabajo para obtener autorización de despido de un trabajador, conforme a la normativa laboral venezolana vigente.
+        - ¿Para qué se hace?
+            - Para cumplir con el procedimiento legal requerido antes de proceder a un despido justificado, evitando contingencias laborales para el grupo empresarial.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko gestiona la solicitud y el seguimiento.
+            - Intervención de abogado laboral externo: no mencionada en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Decisión de presidencia o área de recursos humanos de proceder a un despido justificado.
+            - Frecuencia: Bajo demanda.
+        - ¿Cómo se hace?
+            - Paso 1: Presentar la solicitud de calificación de despido ante la Inspectoría del Trabajo.
+            - Paso 2: Realizar seguimiento del proceso, que se lleva de forma no presencial.
+            - Paso 3: El seguimiento es no presencial. Rodrigo Gramcko se mantiene pendiente de la causa. El proceso no tiene plazo definido por parte del ente; su duración es incierta, como es habitual en trámites venezolanos.
+            - Pasos intermedios del procedimiento y tratamiento de causales específicas: no detallados en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Decisión de presidencia o del área de recursos humanos de proceder al despido justificado.
+            - Documentos o información específica requerida para iniciar la solicitud: no especificados en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Documento resultante del proceso (autorización de despido u otro acto administrativo): no mencionado en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Tiempos indefinidos: El seguimiento del proceso tiene duración incierta, sin plazos definidos por parte del ente.
+            - No se describieron otras contingencias específicas. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.1.5: Solicitud de calificación de despido ante Inspectoría del Trabajo
+        - Pendiente.
+
+---
+
+- TAREA 1.1.6: Presentación de escritos ante entes regulatorios (SENIA, Venetur, Natur)
+    - AS-IS D1.1.6: Presentación de escritos ante entes regulatorios (SENIA, Venetur, Natur)
+        - ¿Qué es esta tarea?
+            - Elaboración y presentación formal de escritos, respuestas o comunicaciones ante entes regulatorios como SENIA, Venetur y Natur, en el marco de inspecciones, fiscalizaciones o requerimientos institucionales.
+        - ¿Para qué se hace?
+            - Para dar respuesta formal a requerimientos de entes regulatorios y cumplir con las obligaciones legales del grupo empresarial ante dichas instituciones.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko gestiona la presentación de escritos y coordina equipos para la distribución de responsabilidades en el cumplimiento de los requerimientos.
+            - En caso de inspección o fiscalización: arma la carpeta en la nube con la documentación, distribuye responsabilidades a cada área para cargar lo que le corresponde, y se presenta el expediente al ente.
+            - Apoyo de asesoría legal externa para la redacción de escritos: no mencionado en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Requerimiento, inspección o fiscalización por parte de SENIA, Venetur, Natur u otro ente regulatorio; también por solicitud de presidencia.
+            - Frecuencia: Bajo demanda; la comunicación con presidencia para atender estos requerimientos es diaria o semanal.
+        - ¿Cómo se hace?
+            - Paso 1: Recibir el requerimiento del ente regulatorio o la instrucción de presidencia.
+            - Paso 2: Coordinar con el equipo la distribución de responsabilidades para reunir la información o documentación necesaria.
+            - Paso 3: Redactar el escrito o comunicación formal.
+            - Paso 4: Presentar el escrito ante el ente regulatorio correspondiente.
+            - Paso 5: Seguimiento posterior a la presentación: no especificado en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Requerimiento formal o instrucción del ente regulatorio o presidencia.
+            - Información y documentación interna que sustente el escrito; cada área aporta la documentación que le corresponde.
+            - Aprobaciones internas requeridas antes de presentar el escrito: no especificadas en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Escrito formal presentado ante el ente regulatorio correspondiente.
+            - Generación de acuse de recibo y método de archivo: no mencionados en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: para comunicación con presidencia y coordinación interna.
+            - WhatsApp: para coordinación con presidencia y seguimiento de solicitudes.
+            - Nube (carpeta compartida): para armar y distribuir documentación entre áreas ante inspecciones o fiscalizaciones.
+            - Modalidad de presentación de escritos (físico, en línea o ambas): no especificada en sesión. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones o contingencias específicas para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.1.6: Presentación de escritos ante entes regulatorios (SENIA, Venetur, Natur)
+        - Pendiente.
+
+---
+
+- TAREA 1.2.1: Renovación de licencias de embarcaciones ante Capitanía del Puerto
+    - AS-IS D1.2.1: Renovación de licencias de embarcaciones ante Capitanía del Puerto
+        - ¿Qué es esta tarea?
+            - Gestión presencial y documental para renovar las licencias de operación de las embarcaciones del grupo ante la Capitanía del Puerto, cumpliendo con la normativa vigente.
+        - ¿Para qué se hace?
+            - Para mantener la habilitación legal de las embarcaciones y garantizar su operación conforme a la normativa marítima venezolana.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko gestiona el trámite y realiza el seguimiento presencial ante la Capitanía del Puerto.
+            - Gestor externo de apoyo para este trámite: no mencionado en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Vencimiento de la licencia de la embarcación o proximidad de su fecha de expiración.
+            - Frecuencia: Cada 2 años por embarcación (vigencia de la licencia renovada).
+        - ¿Cómo se hace?
+            - Paso 1: Armar el expediente con todos los documentos requeridos (ver tarea D1.2.2).
+            - Paso 2: Presentar el expediente ante la Capitanía del Puerto.
+            - Paso 3: Realizar seguimiento presencial hasta la emisión de la nueva licencia.
+            - Paso 4: Una vez emitida la licencia, se retira presencialmente. Rodrigo Gramcko acude a la Capitanía del Puerto cuando es necesario para seguimiento hasta la emisión. Método de resguardo de la licencia nueva: no especificado en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Expediente completo armado (ver D1.2.2).
+            - Pagos adicionales en ventanilla: no especificados en sesión, aunque el expediente incluye comprobantes de pago de tasas administrativas (ver D1.2.2). [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Nueva licencia de operación de la embarcación, con vigencia de 2 años.
+            - Resguardo y destinatario de entrega de la licencia: no especificados en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.2.1: Renovación de licencias de embarcaciones ante Capitanía del Puerto
+        - Pendiente.
+
+---
+
+- TAREA 1.2.2: Armado de expediente para renovación de licencias de embarcaciones
+    - AS-IS D1.2.2: Armado de expediente para renovación de licencias de embarcaciones
+        - ¿Qué es esta tarea?
+            - Recopilación y organización de todos los documentos requeridos para armar el expediente que habilita la renovación de la licencia de cada embarcación ante la Capitanía del Puerto.
+        - ¿Para qué se hace?
+            - Para contar con el expediente completo que exige la Capitanía del Puerto como requisito previo a la renovación de la licencia.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko recopila y organiza la documentación del expediente.
+            - Participación de otros departamentos en el aporte de documentos: no mencionada en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Inicio del proceso de renovación de licencia de una embarcación.
+            - Frecuencia: Cada 2 años por embarcación, vinculada a la tarea D1.2.1.
+        - ¿Cómo se hace?
+            - Paso 1: Reunir la copia de rematriculación de la embarcación.
+            - Paso 2: Obtener copia del registro mercantil vigente.
+            - Paso 3: Incluir identificación del representante legal.
+            - Paso 4: Incorporar la póliza de responsabilidad civil vigente.
+            - Paso 5: Obtener y anexar poder notarial.
+            - Paso 6: Reunir comprobantes de pago y multas (si aplica).
+            - Paso 7: Organizar el expediente completo para su presentación.
+            - Paso 8: Lista de chequeo oficial y documentos adicionales según tipo de embarcación: no especificados en sesión. Los documentos listados son "lo principal" según Rodrigo Gramcko. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a los documentos vigentes de la embarcación, la empresa y el representante legal.
+            - Póliza de responsabilidad civil activa.
+            - Poder notarial vigente.
+            - Comprobantes de pago y, si aplica, comprobantes de cancelación de multas.
+        - ¿Qué se genera al terminar?
+            - Expediente completo listo para presentar ante la Capitanía del Puerto.
+            - Generación de copia del expediente para archivo interno: no mencionada en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.2.2: Armado de expediente para renovación de licencias de embarcaciones
+        - Pendiente.
+
+---
+
+- TAREA 1.2.3: Solicitud y renovación de permisos de bomberos
+    - AS-IS D1.2.3: Solicitud y renovación de permisos de bomberos
+        - ¿Qué es esta tarea?
+            - Gestión de la renovación periódica de los permisos de bomberos requeridos por las instalaciones del grupo empresarial, incluyendo la coordinación del mantenimiento de extintores y señalizaciones de seguridad.
+        - ¿Para qué se hace?
+            - Para mantener las habilitaciones de seguridad contra incendios vigentes y cumplir con las exigencias normativas de los entes competentes.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko coordina el trámite a través de un gestor interno.
+            - Identidad y rol formal del gestor interno: no especificados en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Vencimiento del permiso de bomberos o necesidad de renovación.
+            - Frecuencia: No especificada en sesión. [Pendiente validar]
+        - ¿Cómo se hace?
+            - Paso 1: Coordinar con el gestor interno la gestión del trámite de renovación.
+            - Paso 2: Comunicarse con el gestor vía correo electrónico, WhatsApp y llamada telefónica para seguimiento.
+            - Paso 3: Coordinar el mantenimiento de extintores y señalizaciones de seguridad como requisito del permiso.
+            - Paso 4: Preparar el expediente con los documentos requeridos y presentar la solicitud formal ante los bomberos. Proceso de presentación formal y documentos requeridos: no detallados en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentos o requisitos específicos para iniciar la renovación: no especificados en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Permiso de bomberos renovado.
+            - Destino y resguardo del permiso renovado: no mencionados en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: para coordinación con el gestor interno.
+            - WhatsApp: para seguimiento con el gestor interno.
+            - Llamada telefónica: para comunicación directa con el gestor interno.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.2.3: Solicitud y renovación de permisos de bomberos
+        - Pendiente.
+
+---
+
+- TAREA 1.2.4: Solicitud de permiso de bomberos marinos para la marina
+    - AS-IS D1.2.4: Solicitud de permiso de bomberos marinos para la marina
+        - ¿Qué es esta tarea?
+            - Gestión de la solicitud del permiso de bomberos marinos, requerimiento específico para la operación legal de la marina del grupo empresarial.
+        - ¿Para qué se hace?
+            - Para cumplir con las exigencias normativas específicas de seguridad marítima y habilitar la operación de la marina.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko gestiona la solicitud.
+            - Si interviene el gestor interno de D1.2.3 o es un trámite independiente: no especificado en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Proceso de reactivación de la marina o requisito de cumplimiento normativo para su operación.
+            - Frecuencia: Es la primera vez que se solicita, vinculado directamente al proceso de reactivación de la marina. Si es periódico luego de obtenido: no especificado en sesión. [Pendiente validar]
+        - ¿Cómo se hace?
+            - Paso 1: Gestionar la solicitud del permiso de bomberos marinos cumpliendo con las exigencias normativas específicas.
+            - Paso 2: Cumplir con las exigencias normativas específicas de seguridad marítima para la marina. Pasos intermedios del proceso y documentos requeridos para este permiso específico: no detallados en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Requisitos documentales para este permiso: no especificados en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Permiso de bomberos marinos emitido para la marina.
+            - Vigencia y resguardo del permiso: no mencionados en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - No se describieron excepciones para esta tarea. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.2.4: Solicitud de permiso de bomberos marinos para la marina
+        - Pendiente.
+
+---
+
+- TAREA 1.2.5: Registro INSASEL (armado de expediente y presentación)
+    - AS-IS D1.2.5: Registro INSASEL (armado de expediente y presentación)
+        - ¿Qué es esta tarea?
+            - Armado del expediente requerido y presentación formal de la solicitud de registro ante el INSASEL (Instituto Nacional de Salud y Seguridad Laboral).
+        - ¿Para qué se hace?
+            - Para cumplir con la normativa en materia de salud y seguridad laboral, habilitando al grupo empresarial ante el ente competente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko gestiona el armado del expediente y la presentación, con apoyo de una gestora externa identificada como "Mariglori" (apellido y cargo formal no confirmados).
+            - El apoyo externo consiste en que Rodrigo Gramcko asiste a firmar cuando se hace entrega de algo, evitando largas esperas en cola. La gestora gestiona el proceso y paga los servicios de un tercero para agilizar el trámite.
+        - ¿Cuándo se hace?
+            - Disparador: No especificado en sesión. [Pendiente validar]
+            - Frecuencia: No especificada en sesión. [Pendiente validar]
+        - ¿Cómo se hace?
+            - Paso 1: Armar el expediente con la documentación requerida por INSASEL.
+            - Paso 2: Presentar la solicitud ante el ente.
+            - Paso 3: Gestionar el trámite con apoyo externo para agilizar el proceso y evitar largas esperas.
+            - Paso 4: Rodrigo Gramcko asiste presencialmente a firmar cuando se hace entrega de documentos durante el proceso. Documentos que componen el expediente y pasos intermedios del trámite: Rodrigo Gramcko reconoce que el proceso es complejo y no lo ha realizado por su cuenta; se apoya en la gestora externa. [Pendiente validar en sesión próxima con Rodrigo Gramcko o la gestora externa]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentos y requisitos para armar el expediente INSASEL: no especificados en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Documento resultante del registro (certificado, número de registro, etc.): no mencionado en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - No se menciona ningún sistema específico para esta tarea. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Esperas prolongadas: El trámite es complejo y puede implicar largas esperas (colas de aproximadamente cinco horas reportadas), por lo que se recurre a apoyo externo para agilizarlo.
+            - No se describieron otras contingencias. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.2.5: Registro INSASEL (armado de expediente y presentación)
+        - Pendiente.
+
+---
+
+- TAREA 1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos) ⚠️ Pendiente validar en sesión próxima — proceso de múltiples fases; considerar si debe descomponerse en tareas independientes
+    - AS-IS D1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos)
+        - ¿Qué es esta tarea?
+            - Proceso integral para obtener la figura legal de la marina, que abarca la elaboración de un expediente voluminoso, la presentación de un proyecto con plan maestro, la gestión de permisos específicos, el cumplimiento de requisitos ambientales y de seguridad, y la coordinación de actividades formativas para el personal.
+        - ¿Para qué se hace?
+            - Para habilitar legalmente la operación de la marina del grupo empresarial, cumpliendo con todas las exigencias legales, ambientales y de seguridad requeridas por los entes competentes.
+        - ¿Qué roles ejecutan esta tarea?
+            - Rodrigo Gramcko coordina el proceso de forma integral, involucrando a los departamentos de compras, asesores de seguridad (incluyendo una asesora externa que coordina las charlas de seguridad) y gestores externos.
+            - Elaborador del proyecto y el plan maestro (Rodrigo Gramcko o un tercero): no especificado en sesión. [Pendiente validar]
+        - ¿Cuándo se hace?
+            - Disparador: Decisión del grupo empresarial de reactivar la operación legal de la marina.
+            - Frecuencia: Trámite de carácter único (no periódico), vinculado al proceso de reactivación.
+        - ¿Cómo se hace?
+            - Paso 1: Armar el expediente con los documentos requeridos: reseña histórica, documentos estatutarios, patente de industria y comercio, póliza de responsabilidad civil, registro fiscal, solvencias, permisos, certificados, balances, entre otros.
+            - Paso 2: Elaborar y presentar el proyecto y plan maestro de la marina.
+            - Paso 3: Coordinar y gestionar el análisis ambiental requerido.
+            - Paso 4: Gestionar el permiso de bomberos marinos (ver D1.2.4).
+            - Paso 5: Coordinar la designación del comodor de la marina.
+            - Paso 6: Coordinar con UNTRACEN los requisitos aplicables.
+            - Paso 7: Coordinar con el departamento de compras la adquisición de equipos de protección personal, señalizaciones de seguridad, equipos de recolección de residuos y materiales de prevención de emergencias.
+            - Paso 8: Coordinar la realización de al menos seis charlas de seguridad para el personal, con elaboración de actas de evidencia.
+            - Paso 9: Gestionar la adquisición y colocación de señalizaciones de vías de escape y prevención de emergencias.
+            - Paso 10: Paso final de obtención de la figura legal y resolución o acto administrativo que cierra el proceso: no descritos en sesión. [Pendiente validar]
+        - ¿Qué necesitan para hacer esta tarea?
+            - Documentos estatutarios, fiscales y legales de la empresa vigentes.
+            - Póliza de responsabilidad civil activa.
+            - Presupuesto aprobado para adquisición de equipos y materiales (coordinado con departamento de compras).
+            - Coordinación activa con departamento de compras, asesores de seguridad y gestores externos.
+            - Aprobación previa de presidencia para iniciar el proceso: no especificada en sesión. [Pendiente validar]
+        - ¿Qué se genera al terminar?
+            - Expediente completo presentado ante el ente competente.
+            - Permisos de bomberos marinos obtenidos.
+            - Actas levantadas por cada charla de seguridad realizada (mínimo seis charlas).
+            - Señalizaciones instaladas en las instalaciones de la marina (vías de escape, prevención de emergencias, cartel de números de emergencia).
+            - Dique de contención instalado en el tanque de combustible.
+            - Equipo de recolección de residuos adquirido.
+            - Aros salvavidas colocados en los muelles.
+            - Acto administrativo o resolución que otorga la figura legal de la marina: no mencionado en sesión. [Pendiente validar]
+        - ¿Qué sistemas o herramientas usan?
+            - Correo electrónico: para coordinación con departamentos internos y gestores externos.
+            - WhatsApp: para seguimiento y coordinación operativa.
+            - No se menciona ningún sistema de gestión documental o de proyectos. [Pendiente validar]
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - El proceso de reactivación de marina fue pospuesto de diciembre a fecha posterior por ser temporada alta y no poder ocupar al personal para las charlas de seguridad.
+            - No se describieron otras excepciones o contingencias específicas para este proceso. [Pendiente validar]
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - No se expresaron mejoras ni frustraciones específicas en la sesión. [Pendiente validar]
+    - Propuesta D1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos)
+        - Pendiente.
+
+---
+
+## Propuestas de Adición
+
+Existen 16 tareas documentadas en el Inventario que no estaban en el AS-IS original, más 4 tareas identificadas en transcript que no figuran en el Inventario. Propongo agregar:
+
+### Tareas del Inventario sin AS-IS correspondiente
+
+**Área 3: Gestión de Vehículos y Flota**
+
+- D1.3.1 — Solicitud de duplicado de certificado de registro de vehículos: Rodrigo Gramcko solicitó el duplicado del certificado de registro (trámite en proceso al momento de la sesión). Incluye redacción de documento, trámite notarial presencial (retiro físico), registro ante el portal del INSS, y recepción del título vía correo. Frecuencia: bajo demanda.
+- D1.3.2 — Actualización del inventario de vehículos y conductores: Se actualiza el cuadro de flota de vehículos y conductores, necesario para gestionar las pólizas de responsabilidad civil. Se incluyen documentos de vehículos y conductores. Frecuencia: anual.
+- D1.3.3 — Renovación de pólizas de responsabilidad civil para flota de vehículos: Se arma expediente con título de propiedad y documentos de vehículos y conductores; el departamento de finanzas procesa el comprobante de pago. Se hace en conjunto con Administración y Finanzas. Frecuencia: anual.
+- D1.3.4 — Gestión de registro de vehículos ante INSS: Registro de vehículos en el portal del INSS; trámite previo incluye acto notarial y redacción de documentos. Gestión también a través del IGMI (administración y finanzas). Frecuencia: anual; realizado a través de la Alcaldía de Tucacas.
+
+**Área 4: Declaraciones y Reportes de Cumplimiento**
+
+- D1.4.1 — Declaración mensual FONASIT: Declaración en línea. Requiere del departamento de Administración y Finanzas las declaraciones de IVA y el comprobante de pago. Si la plataforma presenta errores: se canaliza vía telefónica y correo electrónico con el ente. Frecuencia: mensual.
+- D1.4.2 — Declaración mensual INATUR: Declaración en línea (1% INATUR). Aplica solo para el hotel. Requiere soportes contables del departamento de Administración y Finanzas. Frecuencia: mensual.
+- D1.4.3 — Declaración mensual FUNASID: Declaración en línea. Aplica para todas las empresas del grupo. Requiere soportes contables del departamento de Administración y Finanzas. Frecuencia: mensual.
+- D1.4.4 — Declaración mensual FONA: Declaración de cumplimiento. Requiere la utilidad contable del departamento de Administración y Finanzas. Frecuencia: mensual.
+- D1.4.5 — Reporte mensual Venetur (con soportes contables): Se realiza vía correo electrónico. Requiere del departamento de Administración y Finanzas: comprobante de pago, facturas, autorizaciones, libro de ventas mensual, modelo de determinación, declaración de IVA y detalles de cuenta de ingresos. Frecuencia: mensual.
+- D1.4.6 — Actualización mensual IVSS (hasta día 15): Se arma expediente, se redacta carta de solicitud y se presenta formalmente ante el ente. Plazo límite: día 15 de cada mes. Frecuencia: mensual.
+
+**Área 5: Seguridad y Cumplimiento Operativo**
+
+- D1.5.1 — Coordinación de charlas de seguridad para personal de marina (mínimo 6): Rodrigo Gramcko coordina con una asesora de seguridad externa la realización de al menos seis charlas: riesgos existentes, uso de EPP, alcohol y drogas, basura marina y contaminación ambiental, normas y prevención de incendios, extintores y tipos, y simulacro de evacuación. Se levanta acta por cada charla. Programadas inicialmente para diciembre, postpuestas por temporada alta.
+- D1.5.2 — Coordinación de mantenimiento de extintores y señalizaciones de seguridad: Rodrigo Gramcko coordina el mantenimiento de extintores y la colocación de señalizaciones como parte del proceso de renovación de permiso de bomberos.
+- D1.5.3 — Adquisición y colocación de señalizaciones de vías de escape: Rodrigo Gramcko coordina con el departamento de compras la cotización y adquisición de señalizaciones de vías de escape y prevención de emergencias, incluyendo cartel de números de emergencia y señalizaciones de muelles. Vinculado a la reactivación de marina.
+- D1.5.4 — Coordinación de análisis ambiental para reactivación de marina: Se coordina la realización del análisis ambiental (análisis de aguas) requerido para la reactivación de la marina. No queda claro si Rodrigo Gramcko elabora el análisis o solo lo coordina con terceros. [Pendiente validar]
+
+**Área 6: Coordinación Interdepartamental y con Gestores Externos**
+
+- D1.6.1 — Coordinación con departamento de compras para cotización y adquisición de equipos y materiales: Rodrigo Gramcko solicita a compras cotizar y adquirir equipos para la marina (equipo de recolección de residuos, EPP, señalizaciones, aros salvavidas, dique de contención, entre otros). Frecuencia: cuando se requiere.
+- D1.6.2 — Coordinación con departamento de finanzas para pagos y documentación contable: Para múltiples tareas (pólizas, FONASIT, INATUR, FONA, Venetur, IVSS, vehículos), Rodrigo Gramcko requiere del departamento de Administración y Finanzas comprobantes de pago, declaraciones de IVA, estados financieros u otros soportes contables.
+- D1.6.3 — Gestión de inspecciones y fiscalizaciones ante entes regulatorios: Ante inspecciones o fiscalizaciones de SENIA, Venetur o Natur, Rodrigo Gramcko dirige o coordina la atención: arma carpeta en la nube, distribuye responsabilidades a cada área, y presenta el expediente al ente. Frecuencia: bajo demanda.
+- D1.6.4 — Coordinación con gestores externos para trámites presenciales (bomberos, registros, INSASEL): Rodrigo Gramcko se apoya en gestores externos (gestor interno para bomberos; gestora externa "Mariglori" para INSASEL) para agilizar trámites presenciales con largas esperas.
+
+### Tareas identificadas en transcript no presentes en Inventario
+
+- RAPDA — Obtención de RAPDA: Rodrigo Gramcko mencionó este trámite durante la enumeración de tareas. Implica armar expediente y presentar solicitud; se requiere cuando el ente migra el portal u otra circunstancia lo exige (no periódico). No se detalló el proceso completo. [Pendiente identificar si corresponde a un registro regulatorio específico]
+- Cédula catastral — Actualización de cédula catastral (Colina Palas): Trámite que aplica cuando se requiere (venta o compra de inmueble). Requiere asignación de fondos de presidencia. Gestión parcialmente en línea con retiro presencial. [Pendiente confirmar si es tarea corporativa o personal de Rodrigo Gramcko]
+- Hermitage — Pago de impuestos Hermitage: Pago anual de impuestos sobre un inmueble. Requiere asignación de fondos. [Pendiente confirmar si es tarea corporativa o personal de Rodrigo Gramcko]
+- Sellado de libros de servicios — Sellado de libros ante ente competente: Obligación legal pendiente desde hace años. Rodrigo Gramcko reconoció que se ha postergado sistemáticamente. [Pendiente validar ente ante el que se tramita y documentación requerida]
+- Asesoría legal a departamentos — Atención de consultas legales (y no legales) de todos los departamentos: Rodrigo Gramcko recibe consultas legales y de otra naturaleza de todos los departamentos de forma continua. Frecuencia: diaria o semanal.
+- Gestión de solicitudes de presidencia — Atención de requerimientos ad hoc de presidencia: Rodrigo Gramcko atiende requerimientos directos de presidencia de forma regular (semanal o con varios días seguidos de comunicación). Canal: WhatsApp.

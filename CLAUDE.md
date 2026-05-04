@@ -137,3 +137,7 @@ El log de sesion se escribe en `Arquitectura/Log-Sesiones/YYYY-MM-DD.md` cuando 
 | Sr. Rafael / Sr. Racid | Enrique Rafael Cid | Presidente |
 | Dr. Alberto / Dr. Acid | Alberto Cid Navarro | Gerencia General |
 | Escalona | Alexis Enrique Escalona Figueroa | Contralor de Riesgo / Chofer (uso operativo) |
+| Francis | Francis (apellido pendiente) | Supervisora Ama de Llaves (Gerencia Hotelera) |
+| Jesus / Jesus Gonzalez | Jesus Gonzalez (apellido completo pendiente) | Admin Sistemas TT Hotel |
+| Sr. Francisco | Francisco (apellido pendiente) | Tecnico externo refrigeracion |
+| Lindy | Libny Carina Tarazon Gallegos | Variante adicional de Libny (ya en tabla) |
