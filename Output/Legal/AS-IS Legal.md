@@ -1,6 +1,6 @@
 # AS - IS: Asesor Legal
 
-Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos.
+Procesado: 2026-06-08 — Corrección de atribuciones de roles: Genesy Nazareth Martinez Romero confirmada como ejecutora de todos los procesos del departamento. Rodrigo Gramcko: rol de entrevistador de campo únicamente.
 
 Creado: 17 de marzo de 2026 12:51
 
@@ -11,8 +11,8 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para cumplir requisitos legales ante cambios internos de la empresa o exigencias de entes externos que requieren estatutos actualizados.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko ejecuta el proceso de forma integral, incluyendo la redacción, gestión de aprobaciones y trámite presencial en el registro mercantil.
-            - No se identificó rol alternativo en ausencia de Rodrigo Gramcko. [Pendiente validar]
+            - Genesy Nazareth Martinez Romero (Asesora Legal) ejecuta el proceso de forma integral, incluyendo la redacción, gestión de aprobaciones y trámite presencial en el registro mercantil.
+            - No se identificó rol alternativo en ausencia de Genesy Nazareth Martinez Romero (Asesora Legal). [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Cambio de domicilio, renovación de junta directiva, ampliación societaria u otro evento que exija modificación estatutaria; también puede ser requerido por un ente externo.
             - Frecuencia: Idealmente cada 5 años, pero puede ser más frecuente según cambios o ampliaciones del grupo.
@@ -54,7 +54,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para sustentar legalmente cualquier modificación estatutaria o decisión societaria que deba inscribirse en el registro mercantil.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko redacta el acta.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) redacta el acta.
             - Intervención de abogado externo en redacción o revisión: no mencionada en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Necesidad de formalizar un cambio societario (domicilio, junta directiva, ampliación, etc.).
@@ -92,8 +92,8 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para completar la inscripción formal de cambios societarios o documentos legales ante el registro mercantil, cumpliendo con los requisitos de pago establecidos por el ente.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko gestiona el trámite de forma presencial con múltiples visitas al registro mercantil.
-            - Rodrigo Gramcko actúa como asistente, abogado y gerente del trámite por ausencia de asistente dedicado.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) gestiona el trámite de forma presencial con múltiples visitas al registro mercantil.
+            - Genesy Nazareth Martinez Romero actúa de forma integral (redacción, gestión y seguimiento) por ausencia de asistente dedicado.
             - Gestor externo de apoyo para este trámite: no mencionado en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Una vez aprobada el acta de asamblea u otro documento que requiera inscripción en el registro mercantil.
@@ -103,7 +103,7 @@ Creado: 17 de marzo de 2026 12:51
             - Paso 2: Realizar los pagos de planillas, aranceles y tasas administrativas.
             - Paso 3: Presentar el expediente en el registro mercantil.
             - Paso 4: Realizar seguimiento presencial con múltiples visitas hasta la inscripción definitiva.
-            - Paso 5: Retiro del documento inscrito: se acude presencialmente al registro. Rodrigo Gramcko realiza visitas hasta la firma final de los documentos.
+            - Paso 5: Retiro del documento inscrito: se acude presencialmente al registro. Genesy Nazareth Martinez Romero (Asesora Legal) realiza visitas hasta la firma final de los documentos.
         - ¿Qué necesitan para hacer esta tarea?
             - Acta de asamblea u documento societario aprobado.
             - Fondos disponibles para pago de planillas, aranceles y tasas.
@@ -130,7 +130,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para establecer formalmente las condiciones y obligaciones entre el grupo empresarial y sus contrapartes, conforme a la normativa legal vigente.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko redacta y gestiona los contratos.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) redacta y gestiona los contratos.
             - Revisión legal externa e identidad del firmante en representación de la empresa: no mencionados en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Solicitud de presidencia u otra área que requiera la formalización de una relación contractual.
@@ -164,7 +164,8 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para cumplir con el procedimiento legal requerido antes de proceder a un despido justificado, evitando contingencias laborales para el grupo empresarial.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko gestiona la solicitud y el seguimiento.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) gestiona la solicitud y el seguimiento.
+            - Rol alternativo en ausencia de Genesy Nazareth Martinez Romero: Dra. Mary Clory Zambrano actúa como respaldo legal.
             - Intervención de abogado laboral externo: no mencionada en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Decisión de presidencia o área de recursos humanos de proceder a un despido justificado.
@@ -172,7 +173,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Cómo se hace?
             - Paso 1: Presentar la solicitud de calificación de despido ante la Inspectoría del Trabajo.
             - Paso 2: Realizar seguimiento del proceso, que se lleva de forma no presencial.
-            - Paso 3: El seguimiento es no presencial. Rodrigo Gramcko se mantiene pendiente de la causa. El proceso no tiene plazo definido por parte del ente; su duración es incierta, como es habitual en trámites venezolanos.
+            - Paso 3: El seguimiento es no presencial. Genesy Nazareth Martinez Romero (Asesora Legal) se mantiene pendiente de la causa. El proceso no tiene plazo definido por parte del ente; su duración es incierta, como es habitual en trámites venezolanos.
             - Pasos intermedios del procedimiento y tratamiento de causales específicas: no detallados en sesión. [Pendiente validar]
         - ¿Qué necesitan para hacer esta tarea?
             - Decisión de presidencia o del área de recursos humanos de proceder al despido justificado.
@@ -198,7 +199,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para dar respuesta formal a requerimientos de entes regulatorios y cumplir con las obligaciones legales del grupo empresarial ante dichas instituciones.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko gestiona la presentación de escritos y coordina equipos para la distribución de responsabilidades en el cumplimiento de los requerimientos.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) gestiona la presentación de escritos y coordina equipos para la distribución de responsabilidades en el cumplimiento de los requerimientos.
             - En caso de inspección o fiscalización: arma la carpeta en la nube con la documentación, distribuye responsabilidades a cada área para cargar lo que le corresponde, y se presenta el expediente al ente.
             - Apoyo de asesoría legal externa para la redacción de escritos: no mencionado en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
@@ -238,7 +239,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para mantener la habilitación legal de las embarcaciones y garantizar su operación conforme a la normativa marítima venezolana.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko gestiona el trámite y realiza el seguimiento presencial ante la Capitanía del Puerto.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) gestiona el trámite y realiza el seguimiento presencial ante la Capitanía del Puerto.
             - Gestor externo de apoyo para este trámite: no mencionado en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Vencimiento de la licencia de la embarcación o proximidad de su fecha de expiración.
@@ -247,7 +248,7 @@ Creado: 17 de marzo de 2026 12:51
             - Paso 1: Armar el expediente con todos los documentos requeridos (ver tarea D1.2.2).
             - Paso 2: Presentar el expediente ante la Capitanía del Puerto.
             - Paso 3: Realizar seguimiento presencial hasta la emisión de la nueva licencia.
-            - Paso 4: Una vez emitida la licencia, se retira presencialmente. Rodrigo Gramcko acude a la Capitanía del Puerto cuando es necesario para seguimiento hasta la emisión. Método de resguardo de la licencia nueva: no especificado en sesión. [Pendiente validar]
+            - Paso 4: Una vez emitida la licencia, se retira presencialmente. Genesy Nazareth Martinez Romero (Asesora Legal) acude a la Capitanía del Puerto cuando es necesario para seguimiento hasta la emisión. Método de resguardo de la licencia nueva: no especificado en sesión. [Pendiente validar]
         - ¿Qué necesitan para hacer esta tarea?
             - Expediente completo armado (ver D1.2.2).
             - Pagos adicionales en ventanilla: no especificados en sesión, aunque el expediente incluye comprobantes de pago de tasas administrativas (ver D1.2.2). [Pendiente validar]
@@ -272,7 +273,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para contar con el expediente completo que exige la Capitanía del Puerto como requisito previo a la renovación de la licencia.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko recopila y organiza la documentación del expediente.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) recopila y organiza la documentación del expediente.
             - Participación de otros departamentos en el aporte de documentos: no mencionada en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Inicio del proceso de renovación de licencia de una embarcación.
@@ -285,7 +286,7 @@ Creado: 17 de marzo de 2026 12:51
             - Paso 5: Obtener y anexar poder notarial.
             - Paso 6: Reunir comprobantes de pago y multas (si aplica).
             - Paso 7: Organizar el expediente completo para su presentación.
-            - Paso 8: Lista de chequeo oficial y documentos adicionales según tipo de embarcación: no especificados en sesión. Los documentos listados son "lo principal" según Rodrigo Gramcko. [Pendiente validar]
+            - Paso 8: Lista de chequeo oficial y documentos adicionales según tipo de embarcación: no especificados en sesión. Los documentos listados son "lo principal" según lo referido en sesión. [Pendiente validar]
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso a los documentos vigentes de la embarcación, la empresa y el representante legal.
             - Póliza de responsabilidad civil activa.
@@ -312,7 +313,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para mantener las habilitaciones de seguridad contra incendios vigentes y cumplir con las exigencias normativas de los entes competentes.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko coordina el trámite a través de un gestor interno.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) coordina el trámite a través de un gestor interno.
             - Identidad y rol formal del gestor interno: no especificados en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Vencimiento del permiso de bomberos o necesidad de renovación.
@@ -347,7 +348,7 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para cumplir con las exigencias normativas específicas de seguridad marítima y habilitar la operación de la marina.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko gestiona la solicitud.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) gestiona la solicitud.
             - Si interviene el gestor interno de D1.2.3 o es un trámite independiente: no especificado en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Proceso de reactivación de la marina o requisito de cumplimiento normativo para su operación.
@@ -378,8 +379,8 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para cumplir con la normativa en materia de salud y seguridad laboral, habilitando al grupo empresarial ante el ente competente.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko gestiona el armado del expediente y la presentación, con apoyo de una gestora externa identificada como "Mariglori" (apellido y cargo formal no confirmados).
-            - El apoyo externo consiste en que Rodrigo Gramcko asiste a firmar cuando se hace entrega de algo, evitando largas esperas en cola. La gestora gestiona el proceso y paga los servicios de un tercero para agilizar el trámite.
+            - Genesy Nazareth Martinez Romero (Asesora Legal) gestiona el armado del expediente y la presentación, con apoyo de una gestora externa identificada como "Mariglori" (apellido y cargo formal no confirmados).
+            - El apoyo externo consiste en que Genesy Nazareth Martinez Romero (Asesora Legal) asiste a firmar cuando se hace entrega de algo, evitando largas esperas en cola. La gestora externa Mariglori gestiona el proceso y paga los servicios de un tercero para agilizar el trámite.
         - ¿Cuándo se hace?
             - Disparador: No especificado en sesión. [Pendiente validar]
             - Frecuencia: No especificada en sesión. [Pendiente validar]
@@ -387,7 +388,7 @@ Creado: 17 de marzo de 2026 12:51
             - Paso 1: Armar el expediente con la documentación requerida por INSASEL.
             - Paso 2: Presentar la solicitud ante el ente.
             - Paso 3: Gestionar el trámite con apoyo externo para agilizar el proceso y evitar largas esperas.
-            - Paso 4: Rodrigo Gramcko asiste presencialmente a firmar cuando se hace entrega de documentos durante el proceso. Documentos que componen el expediente y pasos intermedios del trámite: Rodrigo Gramcko reconoce que el proceso es complejo y no lo ha realizado por su cuenta; se apoya en la gestora externa. [Pendiente validar en sesión próxima con Rodrigo Gramcko o la gestora externa]
+            - Paso 4: Genesy Nazareth Martinez Romero (Asesora Legal) asiste presencialmente a firmar cuando se hace entrega de documentos durante el proceso. Documentos que componen el expediente y pasos intermedios del trámite: el proceso es complejo y se ejecuta con apoyo de la gestora externa Mariglori. [Pendiente validar en sesión próxima con Genesy Nazareth Martinez Romero o la gestora externa]
         - ¿Qué necesitan para hacer esta tarea?
             - Documentos y requisitos para armar el expediente INSASEL: no especificados en sesión. [Pendiente validar]
         - ¿Qué se genera al terminar?
@@ -411,8 +412,8 @@ Creado: 17 de marzo de 2026 12:51
         - ¿Para qué se hace?
             - Para habilitar legalmente la operación de la marina del grupo empresarial, cumpliendo con todas las exigencias legales, ambientales y de seguridad requeridas por los entes competentes.
         - ¿Qué roles ejecutan esta tarea?
-            - Rodrigo Gramcko coordina el proceso de forma integral, involucrando a los departamentos de compras, asesores de seguridad (incluyendo una asesora externa que coordina las charlas de seguridad) y gestores externos.
-            - Elaborador del proyecto y el plan maestro (Rodrigo Gramcko o un tercero): no especificado en sesión. [Pendiente validar]
+            - Genesy Nazareth Martinez Romero (Asesora Legal) coordina el proceso de forma integral, involucrando a los departamentos de compras, asesores de seguridad (incluyendo una asesora externa que coordina las charlas de seguridad) y gestores externos.
+            - Elaborador del proyecto y el plan maestro (Genesy Nazareth Martinez Romero o un tercero): no especificado en sesión. [Pendiente validar]
         - ¿Cuándo se hace?
             - Disparador: Decisión del grupo empresarial de reactivar la operación legal de la marina.
             - Frecuencia: Trámite de carácter único (no periódico), vinculado al proceso de reactivación.
@@ -464,7 +465,7 @@ Existen 16 tareas documentadas en el Inventario que no estaban en el AS-IS origi
 
 **Área 3: Gestión de Vehículos y Flota**
 
-- D1.3.1 — Solicitud de duplicado de certificado de registro de vehículos: Rodrigo Gramcko solicitó el duplicado del certificado de registro (trámite en proceso al momento de la sesión). Incluye redacción de documento, trámite notarial presencial (retiro físico), registro ante el portal del INSS, y recepción del título vía correo. Frecuencia: bajo demanda.
+- D1.3.1 — Solicitud de duplicado de certificado de registro de vehículos: Genesy Nazareth Martinez Romero (Asesora Legal) solicitó el duplicado del certificado de registro (trámite en proceso al momento de la sesión). Incluye redacción de documento, trámite notarial presencial (retiro físico), registro ante el portal del INSS, y recepción del título vía correo. Frecuencia: bajo demanda.
 - D1.3.2 — Actualización del inventario de vehículos y conductores: Se actualiza el cuadro de flota de vehículos y conductores, necesario para gestionar las pólizas de responsabilidad civil. Se incluyen documentos de vehículos y conductores. Frecuencia: anual.
 - D1.3.3 — Renovación de pólizas de responsabilidad civil para flota de vehículos: Se arma expediente con título de propiedad y documentos de vehículos y conductores; el departamento de finanzas procesa el comprobante de pago. Se hace en conjunto con Administración y Finanzas. Frecuencia: anual.
 - D1.3.4 — Gestión de registro de vehículos ante INSS: Registro de vehículos en el portal del INSS; trámite previo incluye acto notarial y redacción de documentos. Gestión también a través del IGMI (administración y finanzas). Frecuencia: anual; realizado a través de la Alcaldía de Tucacas.
@@ -480,23 +481,23 @@ Existen 16 tareas documentadas en el Inventario que no estaban en el AS-IS origi
 
 **Área 5: Seguridad y Cumplimiento Operativo**
 
-- D1.5.1 — Coordinación de charlas de seguridad para personal de marina (mínimo 6): Rodrigo Gramcko coordina con una asesora de seguridad externa la realización de al menos seis charlas: riesgos existentes, uso de EPP, alcohol y drogas, basura marina y contaminación ambiental, normas y prevención de incendios, extintores y tipos, y simulacro de evacuación. Se levanta acta por cada charla. Programadas inicialmente para diciembre, postpuestas por temporada alta.
-- D1.5.2 — Coordinación de mantenimiento de extintores y señalizaciones de seguridad: Rodrigo Gramcko coordina el mantenimiento de extintores y la colocación de señalizaciones como parte del proceso de renovación de permiso de bomberos.
-- D1.5.3 — Adquisición y colocación de señalizaciones de vías de escape: Rodrigo Gramcko coordina con el departamento de compras la cotización y adquisición de señalizaciones de vías de escape y prevención de emergencias, incluyendo cartel de números de emergencia y señalizaciones de muelles. Vinculado a la reactivación de marina.
-- D1.5.4 — Coordinación de análisis ambiental para reactivación de marina: Se coordina la realización del análisis ambiental (análisis de aguas) requerido para la reactivación de la marina. No queda claro si Rodrigo Gramcko elabora el análisis o solo lo coordina con terceros. [Pendiente validar]
+- D1.5.1 — Coordinación de charlas de seguridad para personal de marina (mínimo 6): Genesy Nazareth Martinez Romero (Asesora Legal) coordina con una asesora de seguridad externa la realización de al menos seis charlas: riesgos existentes, uso de EPP, alcohol y drogas, basura marina y contaminación ambiental, normas y prevención de incendios, extintores y tipos, y simulacro de evacuación. Se levanta acta por cada charla. Programadas inicialmente para diciembre, postpuestas por temporada alta.
+- D1.5.2 — Coordinación de mantenimiento de extintores y señalizaciones de seguridad: Genesy Nazareth Martinez Romero (Asesora Legal) coordina el mantenimiento de extintores y la colocación de señalizaciones como parte del proceso de renovación de permiso de bomberos.
+- D1.5.3 — Adquisición y colocación de señalizaciones de vías de escape: Genesy Nazareth Martinez Romero (Asesora Legal) coordina con el departamento de compras la cotización y adquisición de señalizaciones de vías de escape y prevención de emergencias, incluyendo cartel de números de emergencia y señalizaciones de muelles. Vinculado a la reactivación de marina.
+- D1.5.4 — Coordinación de análisis ambiental para reactivación de marina: Se coordina la realización del análisis ambiental (análisis de aguas) requerido para la reactivación de la marina. No queda claro si Genesy Nazareth Martinez Romero (Asesora Legal) elabora el análisis o solo lo coordina con terceros. [Pendiente validar]
 
 **Área 6: Coordinación Interdepartamental y con Gestores Externos**
 
-- D1.6.1 — Coordinación con departamento de compras para cotización y adquisición de equipos y materiales: Rodrigo Gramcko solicita a compras cotizar y adquirir equipos para la marina (equipo de recolección de residuos, EPP, señalizaciones, aros salvavidas, dique de contención, entre otros). Frecuencia: cuando se requiere.
-- D1.6.2 — Coordinación con departamento de finanzas para pagos y documentación contable: Para múltiples tareas (pólizas, FONASIT, INATUR, FONA, Venetur, IVSS, vehículos), Rodrigo Gramcko requiere del departamento de Administración y Finanzas comprobantes de pago, declaraciones de IVA, estados financieros u otros soportes contables.
-- D1.6.3 — Gestión de inspecciones y fiscalizaciones ante entes regulatorios: Ante inspecciones o fiscalizaciones de SENIA, Venetur o Natur, Rodrigo Gramcko dirige o coordina la atención: arma carpeta en la nube, distribuye responsabilidades a cada área, y presenta el expediente al ente. Frecuencia: bajo demanda.
-- D1.6.4 — Coordinación con gestores externos para trámites presenciales (bomberos, registros, INSASEL): Rodrigo Gramcko se apoya en gestores externos (gestor interno para bomberos; gestora externa "Mariglori" para INSASEL) para agilizar trámites presenciales con largas esperas.
+- D1.6.1 — Coordinación con departamento de compras para cotización y adquisición de equipos y materiales: Genesy Nazareth Martinez Romero (Asesora Legal) solicita a compras cotizar y adquirir equipos para la marina (equipo de recolección de residuos, EPP, señalizaciones, aros salvavidas, dique de contención, entre otros). Frecuencia: cuando se requiere.
+- D1.6.2 — Coordinación con departamento de finanzas para pagos y documentación contable: Para múltiples tareas (pólizas, FONASIT, INATUR, FONA, Venetur, IVSS, vehículos), Genesy Nazareth Martinez Romero (Asesora Legal) requiere del departamento de Administración y Finanzas comprobantes de pago, declaraciones de IVA, estados financieros u otros soportes contables.
+- D1.6.3 — Gestión de inspecciones y fiscalizaciones ante entes regulatorios: Ante inspecciones o fiscalizaciones de SENIA, Venetur o Natur, Genesy Nazareth Martinez Romero (Asesora Legal) dirige o coordina la atención: arma carpeta en la nube, distribuye responsabilidades a cada área, y presenta el expediente al ente. Frecuencia: bajo demanda.
+- D1.6.4 — Coordinación con gestores externos para trámites presenciales (bomberos, registros, INSASEL): Genesy Nazareth Martinez Romero (Asesora Legal) se apoya en gestores externos (gestor interno para bomberos; gestora externa "Mariglori" para INSASEL) para agilizar trámites presenciales con largas esperas.
 
 ### Tareas identificadas en transcript no presentes en Inventario
 
-- RAPDA — Obtención de RAPDA: Rodrigo Gramcko mencionó este trámite durante la enumeración de tareas. Implica armar expediente y presentar solicitud; se requiere cuando el ente migra el portal u otra circunstancia lo exige (no periódico). No se detalló el proceso completo. [Pendiente identificar si corresponde a un registro regulatorio específico]
-- Cédula catastral — Actualización de cédula catastral (Colina Palas): Trámite que aplica cuando se requiere (venta o compra de inmueble). Requiere asignación de fondos de presidencia. Gestión parcialmente en línea con retiro presencial. [Pendiente confirmar si es tarea corporativa o personal de Rodrigo Gramcko]
-- Hermitage — Pago de impuestos Hermitage: Pago anual de impuestos sobre un inmueble. Requiere asignación de fondos. [Pendiente confirmar si es tarea corporativa o personal de Rodrigo Gramcko]
-- Sellado de libros de servicios — Sellado de libros ante ente competente: Obligación legal pendiente desde hace años. Rodrigo Gramcko reconoció que se ha postergado sistemáticamente. [Pendiente validar ente ante el que se tramita y documentación requerida]
-- Asesoría legal a departamentos — Atención de consultas legales (y no legales) de todos los departamentos: Rodrigo Gramcko recibe consultas legales y de otra naturaleza de todos los departamentos de forma continua. Frecuencia: diaria o semanal.
-- Gestión de solicitudes de presidencia — Atención de requerimientos ad hoc de presidencia: Rodrigo Gramcko atiende requerimientos directos de presidencia de forma regular (semanal o con varios días seguidos de comunicación). Canal: WhatsApp.
+- RAPDA — Obtención de RAPDA: Genesy Nazareth Martinez Romero (Asesora Legal) mencionó este trámite durante la enumeración de tareas. Implica armar expediente y presentar solicitud; se requiere cuando el ente migra el portal u otra circunstancia lo exige (no periódico). No se detalló el proceso completo. [Pendiente identificar si corresponde a un registro regulatorio específico]
+- Cédula catastral — Actualización de cédula catastral (Colina Palas): Trámite que aplica cuando se requiere (venta o compra de inmueble). Requiere asignación de fondos de presidencia. Gestión parcialmente en línea con retiro presencial. [Pendiente confirmar si es tarea corporativa o personal de Genesy Nazareth Martinez Romero]
+- Hermitage — Pago de impuestos Hermitage: Pago anual de impuestos sobre un inmueble. Requiere asignación de fondos. [Pendiente confirmar si es tarea corporativa o personal de Genesy Nazareth Martinez Romero]
+- Sellado de libros de servicios — Sellado de libros ante ente competente: Obligación legal pendiente desde hace años. Genesy Nazareth Martinez Romero (Asesora Legal) reconoció que se ha postergado sistemáticamente. [Pendiente validar ente ante el que se tramita y documentación requerida]
+- Asesoría legal a departamentos — Atención de consultas legales (y no legales) de todos los departamentos: Genesy Nazareth Martinez Romero (Asesora Legal) recibe consultas legales y de otra naturaleza de todos los departamentos de forma continua. Frecuencia: diaria o semanal.
+- Gestión de solicitudes de presidencia — Atención de requerimientos ad hoc de presidencia: Genesy Nazareth Martinez Romero (Asesora Legal) atiende requerimientos directos de presidencia de forma regular (semanal o con varios días seguidos de comunicación). Canal: WhatsApp.
