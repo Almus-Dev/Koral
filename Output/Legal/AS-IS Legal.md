@@ -4,6 +4,8 @@ Creado: 17 de marzo de 2026 12:51
 
 Procesado: 2026-06-08 — Corrección de atribuciones de roles: Genesy Nazareth Martinez Romero confirmada como ejecutora de todos los procesos del departamento. Rodrigo Gramcko: rol de entrevistador de campo únicamente. Normalizado contra plantilla 2026-06-12. Propuestas de adición aplicadas 2026-06-12. Correcciones del correo de Genesy aplicadas 2026-06-15 (atribuciones de mando y flujos macro).
 
+> **Alcance:** El área de Consultoría Jurídica y Asuntos Corporativos NO forma parte de la implementación en Odoo. Los campos sin levantamiento detallado quedan marcados como "Fuera de alcance" y no requieren validación en sesión. El documento se conserva como registro funcional del área.
+
 ---
 
 ## Atribución de mando del departamento
@@ -40,20 +42,20 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Aprobación de presidencia o junta directiva (vía correo y WhatsApp).
             - Disponibilidad de fondos para pago de planillas, aranceles y tasas administrativas.
             - En caso de aumento de capital o venta de acciones: estados financieros vigentes del departamento de Administración y Finanzas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si se requiere firma notarial previa al registro mercantil en todos los casos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Acta de asamblea aprobada e inscrita en el registro mercantil.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si se genera copia certificada y a quién se entrega.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para envío y aprobación del acta de asamblea.
             - WhatsApp: para gestión de aprobaciones con presidencia o junta.
             - Llamada telefónica: canal adicional de coordinación con presidencia.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si existe un sistema de gestión documental interno.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - El trámite de inscripción ante el registro mercantil puede extenderse hasta tres meses, con múltiples visitas presenciales requeridas.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.1.1: Actualización de estatutos sociales por empresa
         - Pendiente.
 
@@ -75,23 +77,23 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 2: Enviar el acta para aprobación vía correo electrónico y WhatsApp.
             - Paso 3: Recibir confirmación de aprobación.
             - Paso 4: Retirar físicamente el documento ante la notaría (trámite presencial, con duración aproximada de tres días, a diferencia del registro mercantil que puede durar hasta tres meses).
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si el acta requiere notarización previa al registro en todos los casos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Información precisa sobre el cambio a documentar.
             - Acceso a modelos o actas anteriores como referencia.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si existe una plantilla estándar de acta.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Acta de asamblea redactada y aprobada, lista para gestión ante el registro mercantil.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): formato de entrega y destino del documento aprobado.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para envío y aprobación del documento.
             - WhatsApp: para confirmación de aprobaciones.
             - Llamada telefónica: canal adicional de coordinación con presidencia.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): procesador de texto y sistema de gestión documental utilizados.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.1.2: Redacción de acta de asamblea para cambios societarios
         - Pendiente.
 
@@ -106,7 +108,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): gestiona el trámite de forma presencial con múltiples visitas al registro mercantil.
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): actúa de forma integral (redacción, gestión y seguimiento) por ausencia de asistente dedicado.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si existe un gestor externo de apoyo para este trámite.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Una vez aprobada el acta de asamblea u otro documento que requiera inscripción en el registro mercantil.
             - Frecuencia: Bajo demanda, vinculada a los eventos que generan cambios societarios.
@@ -119,18 +121,18 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué necesitan para hacer esta tarea?
             - Acta de asamblea u otro documento societario aprobado.
             - Fondos disponibles para pago de planillas, aranceles y tasas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si se requiere poder notarial u otro documento habilitante para representar a la empresa en el trámite.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Documento inscrito en el registro mercantil, retirado presencialmente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): tipo específico de documento resultante (certificado, nota marginal, etc.).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Duración extendida: El trámite puede tardar hasta 3 meses, lo que implica múltiples visitas presenciales y seguimiento continuo.
             - El costo del trámite puede ser significativo: en casos de aumento de capital, se aplica aproximadamente un 4% sobre el monto aumentado.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.1.3: Gestión integral de registro mercantil (pagos de planillas, aranceles y tasas)
         - Pendiente.
 
@@ -144,7 +146,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para establecer formalmente las condiciones y obligaciones entre el grupo empresarial y sus contrapartes, conforme a la normativa legal vigente.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): centraliza, redacta y aprueba de manera única toda la arquitectura contractual del grupo (contratos de servicios, acuerdos intercompañías, alianzas comerciales y poderes, además de los contratos de trabajo, muelle, proveedores y clientes). No existen terceras personas ni consultores externos que coordinen la aprobación técnica de estos instrumentos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): identidad del firmante en representación de la empresa.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Solicitud de presidencia u otra área que requiera la formalización de una relación contractual.
             - Frecuencia: Bajo demanda.
@@ -152,20 +154,20 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Recibir la solicitud con la información mercantil y personal requerida según el tipo de contrato.
             - Paso 2: Redactar el contrato conforme al tipo (trabajo, muelle, proveedor o cliente).
             - Paso 3: Aprobar técnicamente el instrumento de forma centralizada en la Consultoría Jurídica, sin intervención de terceros ni consultores externos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): proceso y responsable de la firma del contrato.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Información mercantil de las partes (RIF, registro mercantil, representante legal, cédula, entre otros según el caso).
             - Información personal según el caso (para contratos de trabajo: datos del trabajador).
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): uso de plantillas base por tipo de contrato.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Contrato redactado y formalizado.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): notarización, número de copias y distribución.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.1.4: Redacción y formalización de contratos (trabajo, muelle, proveedores, clientes)
         - Pendiente.
 
@@ -191,20 +193,20 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 4: Conducir, cuando aplique, las mesas de negociación, con asistencia administrativa de Talento Humano.
             - Paso 5: Validar las transacciones y visar los convenios ante la Inspectoría del Trabajo (competencia exclusiva de la Consultoría Jurídica).
             - Paso 6: Realizar seguimiento no presencial de la causa hasta su resolución (el ente no define plazos; la duración es incierta).
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios del procedimiento y tratamiento de causales específicas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Decisión de presidencia o del área de recursos humanos de proceder al despido justificado.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documentos o información requeridos para iniciar la solicitud.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documento resultante del proceso (autorización de despido u otro acto administrativo).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Tiempos indefinidos: El seguimiento del proceso tiene duración incierta, sin plazos definidos por parte del ente.
             - Delimitación de competencias: la interacción con Talento Humano (Andry García) se mantiene en el plano administrativo (data de nómina, cálculo bajo la LOTTT, asistencia en negociación); la decisión sobre estrategia judicial, transacciones y visado de convenios permanece en la Consultoría Jurídica para evitar contingencias.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.1.5: Solicitud de calificación de despido ante Inspectoría del Trabajo
         - Pendiente.
 
@@ -228,24 +230,24 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 2: Coordinar con el equipo la distribución de responsabilidades para reunir la información o documentación necesaria.
             - Paso 3: Redactar el escrito o comunicación formal.
             - Paso 4: Presentar el escrito ante el ente regulatorio correspondiente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): seguimiento posterior a la presentación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Requerimiento formal o instrucción del ente regulatorio o presidencia.
             - Información y documentación interna que sustente el escrito; cada área aporta la documentación que le corresponde.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): aprobaciones internas requeridas antes de presentar el escrito.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Escrito formal presentado ante el ente regulatorio correspondiente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): generación de acuse de recibo y método de archivo.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para comunicación con presidencia y coordinación interna.
             - WhatsApp: para coordinación con presidencia y seguimiento de solicitudes.
             - Nube (carpeta compartida): para armar y distribuir documentación entre áreas ante inspecciones o fiscalizaciones.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): modalidad de presentación de escritos (físico, en línea o ambas).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Ante requerimiento o sanción del ente, la Consultoría Jurídica diseña y ejerce la estrategia de defensa (recursos jerárquicos o contenciosos) y redacta los escritos de descargos. La relación con Administración y Finanzas es de recepción de soportes fiscales; la dirección del proceso legal permanece 100% en la Consultoría Jurídica.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.1.6: Presentación de escritos ante entes regulatorios (SENIA, Venetur, Natur)
         - Pendiente.
 
@@ -261,7 +263,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para mantener la habilitación legal de las embarcaciones y garantizar su operación conforme a la normativa marítima venezolana.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina directamente desde su despacho el control, seguimiento y renovación de esta licencia operativa crítica (registro naval), validando el cumplimiento normativo antes de la presentación ante los órganos del Estado; realiza el seguimiento presencial ante la Capitanía del Puerto cuando es necesario, hasta la emisión de la licencia.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si existe un gestor externo de apoyo para este trámite.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Vencimiento de la licencia de la embarcación o proximidad de su fecha de expiración.
             - Frecuencia: Cada 2 años por embarcación (vigencia de la licencia renovada).
@@ -270,19 +272,19 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 2: Presentar el expediente ante la Capitanía del Puerto.
             - Paso 3: Realizar seguimiento presencial hasta la emisión de la nueva licencia.
             - Paso 4: Retirar presencialmente la licencia una vez emitida.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): método de resguardo de la licencia nueva.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Expediente completo armado (ver D1.2.2).
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pagos adicionales en ventanilla (el expediente ya incluye comprobantes de pago de tasas administrativas, ver D1.2.2).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Nueva licencia de operación de la embarcación, con vigencia de 2 años.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): resguardo y destinatario de entrega de la licencia.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.2.1: Renovación de licencias de embarcaciones ante Capitanía del Puerto
         - Pendiente.
 
@@ -296,7 +298,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para contar con el expediente completo que exige la Capitanía del Puerto como requisito previo a la renovación de la licencia.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): recopila y organiza la documentación del expediente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): participación de otros departamentos en el aporte de documentos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Inicio del proceso de renovación de licencia de una embarcación.
             - Frecuencia: Cada 2 años por embarcación, vinculada a la tarea D1.2.1.
@@ -308,7 +310,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 5: Obtener y anexar poder notarial.
             - Paso 6: Reunir comprobantes de pago y multas (si aplica).
             - Paso 7: Organizar el expediente completo para su presentación.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): existencia de lista de chequeo oficial y documentos adicionales según tipo de embarcación (los documentos listados son "lo principal" según lo referido en sesión).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso a los documentos vigentes de la embarcación, la empresa y el representante legal.
             - Póliza de responsabilidad civil activa.
@@ -316,13 +318,13 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Comprobantes de pago y, si aplica, comprobantes de cancelación de multas.
         - ¿Qué se genera al terminar?
             - Expediente completo listo para presentar ante la Capitanía del Puerto.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): generación de copia del expediente para archivo interno.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.2.2: Armado de expediente para renovación de licencias de embarcaciones
         - Pendiente.
 
@@ -336,30 +338,30 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para mantener las habilitaciones de seguridad contra incendios vigentes y cumplir con las exigencias normativas de los entes competentes.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina directamente desde su despacho el control, seguimiento y renovación de esta licencia operativa crítica, validando el cumplimiento normativo antes de la presentación ante el ente; ejecuta el trámite con apoyo de un gestor interno.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): identidad y rol formal del gestor interno.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Vencimiento del permiso de bomberos o necesidad de renovación.
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo se hace?
             - Paso 1: Coordinar con el gestor interno la gestión del trámite de renovación.
             - Paso 2: Comunicarse con el gestor vía correo electrónico, WhatsApp y llamada telefónica para seguimiento.
             - Paso 3: Coordinar el mantenimiento de extintores y señalizaciones de seguridad como requisito del permiso.
             - Paso 4: Preparar el expediente con los documentos requeridos.
             - Paso 5: Presentar la solicitud formal ante los bomberos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): detalle del proceso de presentación formal y documentos requeridos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documentos o requisitos específicos para iniciar la renovación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Permiso de bomberos renovado.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): destino y resguardo del permiso renovado.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para coordinación con el gestor interno.
             - WhatsApp: para seguimiento con el gestor interno.
             - Llamada telefónica: para comunicación directa con el gestor interno.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.2.3: Solicitud y renovación de permisos de bomberos
         - Pendiente.
 
@@ -373,24 +375,24 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para cumplir con las exigencias normativas específicas de seguridad marítima y habilitar la operación de la marina.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): gestiona la solicitud.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si interviene el gestor interno de D1.2.3 o es un trámite independiente.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Proceso de reactivación de la marina o requisito de cumplimiento normativo para su operación.
-            - Frecuencia: Es la primera vez que se solicita, vinculado directamente al proceso de reactivación de la marina. ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si el permiso es periódico una vez obtenido.
+            - Frecuencia: Es la primera vez que se solicita, vinculado directamente al proceso de reactivación de la marina. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo se hace?
             - Paso 1: Gestionar la solicitud del permiso de bomberos marinos conforme a las exigencias normativas específicas de seguridad marítima.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios del proceso y documentos requeridos para este permiso específico.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): requisitos documentales para este permiso.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Permiso de bomberos marinos emitido para la marina.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): vigencia y resguardo del permiso.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.2.4: Solicitud de permiso de bomberos marinos para la marina
         - Pendiente.
 
@@ -406,31 +408,31 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): gestiona el armado del expediente y la presentación; asiste presencialmente a firmar cuando se hace entrega de documentos, evitando largas esperas en cola.
             - Mariglori (gestora externa; apellido y cargo formal no confirmados): gestiona el proceso y paga los servicios de un tercero para agilizar el trámite.
         - ¿Cuándo se hace?
-            - Disparador: ⚠️ Pendiente validar en sesión próxima.
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+            - Disparador: Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
+            - Frecuencia: Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo se hace?
             - Paso 1: Armar el expediente con la documentación requerida por INSASEL.
             - Paso 2: Presentar la solicitud ante el ente.
             - Paso 3: Gestionar el trámite con apoyo de la gestora externa para agilizar el proceso y evitar largas esperas.
             - Paso 4: Asistir presencialmente a firmar cuando se hace entrega de documentos durante el proceso.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) o la gestora externa Mariglori: documentos que componen el expediente y pasos intermedios del trámite (proceso complejo ejecutado con apoyo externo).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documentos y requisitos para armar el expediente INSASEL.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documento resultante del registro (certificado, número de registro, etc.).
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Esperas prolongadas: El trámite es complejo y puede implicar largas esperas (colas de aproximadamente cinco horas reportadas), por lo que se recurre a apoyo externo para agilizarlo.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.2.5: Registro INSASEL (armado de expediente y presentación)
         - Pendiente.
 
 ---
 
-- TAREA 1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos) ⚠️ Pendiente validar en sesión próxima: proceso de múltiples fases; considerar si debe descomponerse en tareas independientes.
+- TAREA 1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos)
     - AS-IS D1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos)
         - ¿Qué es esta tarea?
             - Proceso integral para obtener la figura legal de la marina, que abarca la elaboración de un expediente voluminoso, la presentación de un proyecto con plan maestro, la gestión de permisos específicos, el cumplimiento de requisitos ambientales y de seguridad, y la coordinación de actividades formativas para el personal.
@@ -438,7 +440,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para habilitar legalmente la operación de la marina del grupo empresarial, cumpliendo con todas las exigencias legales, ambientales y de seguridad requeridas por los entes competentes.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina el proceso de forma integral, involucrando a los departamentos de compras, asesores de seguridad (incluyendo una asesora externa que coordina las charlas de seguridad) y gestores externos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si el proyecto y el plan maestro los elabora ella o un tercero.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Decisión del grupo empresarial de reactivar la operación legal de la marina.
             - Frecuencia: Trámite de carácter único (no periódico), vinculado al proceso de reactivación.
@@ -452,13 +454,13 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 7: Coordinar con el departamento de compras la adquisición de equipos de protección personal, señalizaciones de seguridad, equipos de recolección de residuos y materiales de prevención de emergencias.
             - Paso 8: Coordinar la realización de al menos seis charlas de seguridad para el personal, con elaboración de actas de evidencia.
             - Paso 9: Gestionar la adquisición y colocación de señalizaciones de vías de escape y prevención de emergencias.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): paso final de obtención de la figura legal y resolución o acto administrativo que cierra el proceso.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Documentos estatutarios, fiscales y legales de la empresa vigentes.
             - Póliza de responsabilidad civil activa.
             - Presupuesto aprobado para adquisición de equipos y materiales (coordinado con departamento de compras).
             - Coordinación activa con departamento de compras, asesores de seguridad y gestores externos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si se requiere aprobación previa de presidencia para iniciar el proceso.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Expediente completo presentado ante el ente competente.
             - Permisos de bomberos marinos obtenidos.
@@ -467,16 +469,16 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Dique de contención instalado en el tanque de combustible.
             - Equipo de recolección de residuos adquirido.
             - Aros salvavidas colocados en los muelles.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): acto administrativo o resolución que otorga la figura legal de la marina.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para coordinación con departamentos internos y gestores externos.
             - WhatsApp: para seguimiento y coordinación operativa.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): uso de sistema de gestión documental o de proyectos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - El proceso de reactivación de marina fue pospuesto de diciembre a fecha posterior por ser temporada alta y no poder ocupar al personal para las charlas de seguridad.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.2.6: Reactivación de marina (expediente, proyecto, plan maestro y permisos)
         - Pendiente.
 
@@ -502,22 +504,22 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 3: Registrar la solicitud ante el portal del INSS (paso posterior al trámite notarial).
             - Paso 4: Realizar el pago de tasas administrativas.
             - Paso 5: Esperar la emisión y recibir el título por correo.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): si el documento se emite a nombre de persona o de empresa y los requisitos documentales completos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Documento de compra redactado (uno o dos según el caso).
             - Fondos para el pago de tasas administrativas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): requisitos documentales adicionales para iniciar la solicitud de duplicado.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Certificado de registro del vehículo (título) recibido por correo.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): resguardo y destinatario del título.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Portal del INSS: para el registro del trámite.
             - Correo electrónico: para la recepción del título.
         - ¿Qué pasa cuando las cosas no salen normal?
             - El trámite combina gestión digital y presencial: aunque parte se canaliza en línea, se debe acudir presencialmente a la notaría a retirar el documento y al registro a presentar la carpeta.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.3.1: Solicitud de duplicado de certificado de registro de vehículos
         - Pendiente.
 
@@ -531,26 +533,26 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para mantener el inventario de flota al día, insumo necesario para la gestión de las pólizas de responsabilidad civil.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): actualiza el cuadro de flota de vehículos y conductores.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): participación de otras áreas en el aporte de documentos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Renovación de pólizas de responsabilidad civil o cambios en la flota o en los conductores.
             - Frecuencia: Anual.
         - ¿Cómo se hace?
             - Paso 1: Reunir los documentos de los vehículos y de los conductores.
             - Paso 2: Actualizar el cuadro de flota con la información vigente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios y formato del cuadro de flota.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Documentos vigentes de los vehículos y de los conductores.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): listado completo de documentos requeridos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Cuadro de flota de vehículos y conductores actualizado.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): destino y resguardo del cuadro actualizado.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.3.2: Actualización del inventario de vehículos y conductores
         - Pendiente.
 
@@ -565,27 +567,27 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): arma el expediente con el título de propiedad y los documentos de vehículos y conductores.
             - Departamento de Administración y Finanzas: procesa el comprobante de pago de la póliza.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que procesa el pago.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Vencimiento de las pólizas de responsabilidad civil de la flota.
             - Frecuencia: Anual.
         - ¿Cómo se hace?
             - Paso 1: Armar el expediente con el título de propiedad y los documentos de vehículos y conductores.
             - Paso 2: Coordinar con el departamento de Administración y Finanzas el procesamiento del comprobante de pago.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos de presentación ante la aseguradora y emisión de la póliza renovada.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Título de propiedad y documentos de vehículos y conductores (ver D1.3.2).
             - Comprobante de pago procesado por el departamento de Administración y Finanzas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): requisitos adicionales de la aseguradora.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Pólizas de responsabilidad civil de la flota renovadas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): resguardo y destinatario de las pólizas renovadas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.3.3: Renovación de pólizas de responsabilidad civil para flota de vehículos
         - Pendiente.
 
@@ -600,7 +602,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): redacta los documentos, realiza el acto notarial previo y gestiona el registro ante el portal del INSS.
             - Departamento de Administración y Finanzas: participa en la gestión a través del IGMI.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): alcance de la participación de Administración y Finanzas y del IGMI.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Necesidad de registro o actualización del registro de vehículos ante el INSS.
             - Frecuencia: Anual; realizado a través de la Alcaldía de Tucacas.
@@ -611,23 +613,23 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 4: Realizar la solicitud a través del IGMI (canalizado por el departamento de Administración y Finanzas), por medio de la Alcaldía de Tucacas.
             - Paso 5: Realizar el pago correspondiente.
             - Paso 6: Recibir la supervisión respectiva emitida por el ente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): nombre exacto del ente municipal y detalle del trámite ante el IGMI.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Documentos redactados y acto notarial previo.
             - Expediente armado y cuadro de flota de vehículos actualizado.
             - Coordinación con el departamento de Administración y Finanzas (IGMI) y la Alcaldía de Tucacas.
             - Fondos para el pago correspondiente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): listado completo de documentos del expediente.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Vehículos registrados ante el INSS, con la supervisión respectiva emitida.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): tipo de constancia o documento físico resultante.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Portal del INSS: para el registro de los vehículos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): rol del IGMI como sistema o como vía administrativa.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.3.4: Gestión de registro de vehículos ante INSS
         - Pendiente.
 
@@ -644,7 +646,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): realiza la declaración en línea.
             - Departamento de Administración y Finanzas: suministra las declaraciones de IVA y el comprobante de pago.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que suministra los soportes.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Apertura del período de declaración mensual del FONASIT.
             - Frecuencia: Mensual.
@@ -652,21 +654,21 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Recibir del departamento de Administración y Finanzas las declaraciones de IVA y el comprobante de pago.
             - Paso 2: Realizar la declaración en línea en la plataforma del FONASIT.
             - Paso 3: Si la plataforma presenta errores, canalizar el trámite vía telefónica y correo electrónico con el ente.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios de la declaración en línea.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Declaraciones de IVA y comprobante de pago del departamento de Administración y Finanzas.
             - Acceso a la plataforma en línea del FONASIT.
         - ¿Qué se genera al terminar?
             - Declaración mensual FONASIT presentada.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): comprobante o acuse de la declaración.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Plataforma en línea del FONASIT: para la presentación de la declaración.
             - Correo electrónico y llamada telefónica: para canalizar el trámite con el ente cuando la plataforma presenta errores.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Cuando la plataforma presenta errores, el trámite se canaliza vía telefónica y correo electrónico directamente con el ente.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.4.1: Declaración mensual FONASIT
         - Pendiente.
 
@@ -681,27 +683,27 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): realiza la declaración en línea.
             - Departamento de Administración y Finanzas: suministra los soportes contables.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que suministra los soportes.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Apertura del período de declaración mensual del INATUR.
             - Frecuencia: Mensual. Aplica solo para el hotel.
         - ¿Cómo se hace?
             - Paso 1: Recibir del departamento de Administración y Finanzas los soportes contables.
             - Paso 2: Realizar la declaración en línea del 1% INATUR.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios de la declaración en línea.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Soportes contables del departamento de Administración y Finanzas.
             - Acceso a la plataforma en línea del INATUR.
         - ¿Qué se genera al terminar?
             - Declaración mensual INATUR presentada.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): comprobante o acuse de la declaración.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Plataforma en línea del INATUR: para la presentación de la declaración.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.4.2: Declaración mensual INATUR
         - Pendiente.
 
@@ -716,27 +718,27 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): realiza la declaración en línea.
             - Departamento de Administración y Finanzas: suministra los soportes contables.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que suministra los soportes.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Apertura del período de declaración mensual del FUNASID.
             - Frecuencia: Mensual. Aplica para todas las empresas del grupo.
         - ¿Cómo se hace?
             - Paso 1: Recibir del departamento de Administración y Finanzas los soportes contables.
             - Paso 2: Realizar la declaración en línea ante el FUNASID por cada empresa del grupo.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios de la declaración en línea.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Soportes contables del departamento de Administración y Finanzas.
             - Acceso a la plataforma en línea del FUNASID.
         - ¿Qué se genera al terminar?
             - Declaración mensual FUNASID presentada por cada empresa del grupo.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): comprobante o acuse de la declaración.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Plataforma en línea del FUNASID: para la presentación de la declaración.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.4.3: Declaración mensual FUNASID
         - Pendiente.
 
@@ -751,26 +753,26 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): realiza la declaración de cumplimiento.
             - Departamento de Administración y Finanzas: suministra la utilidad contable.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que suministra la utilidad contable.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Apertura del período de declaración mensual del FONA.
             - Frecuencia: Mensual.
         - ¿Cómo se hace?
             - Paso 1: Recibir del departamento de Administración y Finanzas la utilidad contable.
             - Paso 2: Realizar la declaración de cumplimiento ante el FONA.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): modalidad de presentación y pasos intermedios.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Utilidad contable del departamento de Administración y Finanzas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): acceso a plataforma o vía de presentación del FONA.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Declaración mensual de cumplimiento FONA presentada.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): comprobante o acuse de la declaración.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.4.4: Declaración mensual FONA
         - Pendiente.
 
@@ -785,7 +787,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): elabora y envía el reporte por correo electrónico.
             - Departamento de Administración y Finanzas: suministra los soportes contables.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que suministra los soportes.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Cierre del período mensual a reportar ante Venetur.
             - Frecuencia: Mensual.
@@ -793,19 +795,19 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Recibir del departamento de Administración y Finanzas los soportes contables: comprobante de pago, facturas, autorizaciones, libro de ventas mensual, modelo de determinación, declaración de IVA y detalles de cuenta de ingresos.
             - Paso 2: Elaborar el reporte mensual con los soportes.
             - Paso 3: Enviar el reporte vía correo electrónico a Venetur.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): formato del reporte y destinatario específico en Venetur.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Soportes contables del departamento de Administración y Finanzas: comprobante de pago, facturas, autorizaciones, libro de ventas mensual, modelo de determinación, declaración de IVA y detalles de cuenta de ingresos.
         - ¿Qué se genera al terminar?
             - Reporte mensual Venetur enviado por correo electrónico con sus soportes contables.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): acuse de recibo del reporte.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para el envío del reporte y sus soportes.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.4.5: Reporte mensual Venetur (con soportes contables)
         - Pendiente.
 
@@ -819,7 +821,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para cumplir con la obligación de actualización periódica ante el IVSS dentro del plazo establecido.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): arma el expediente, redacta la carta de solicitud y presenta el trámite ante el IVSS.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): apoyo de otras áreas en el armado del expediente.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Inicio del período mensual de actualización ante el IVSS.
             - Frecuencia: Mensual, con plazo límite el día 15 de cada mes.
@@ -827,19 +829,19 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Armar el expediente con la documentación requerida.
             - Paso 2: Redactar la carta de solicitud.
             - Paso 3: Presentar formalmente el trámite ante el IVSS antes del día 15 del mes.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documentos que componen el expediente y modalidad de presentación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documentos y requisitos para armar el expediente.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Actualización mensual presentada ante el IVSS con su carta de solicitud.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): acuse de recibo de la presentación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Plazo crítico: el trámite debe completarse antes del día 15 de cada mes.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.4.6: Actualización mensual IVSS (hasta día 15)
         - Pendiente.
 
@@ -856,7 +858,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina la programación y realización de las charlas y el levantamiento de las actas.
             - Asesora de seguridad externa (identidad no confirmada): dicta las charlas de seguridad.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): identidad de la asesora de seguridad externa.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Proceso de reactivación de la marina y requisito de formación del personal.
             - Frecuencia: Mínimo seis charlas en el marco de la reactivación. Programadas inicialmente para diciembre, pospuestas por temporada alta.
@@ -864,21 +866,21 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Coordinar con la asesora de seguridad externa la programación de las charlas.
             - Paso 2: Realizar al menos seis charlas sobre los temas definidos (riesgos existentes, uso de EPP, alcohol y drogas, basura marina y contaminación ambiental, normas y prevención de incendios, extintores y tipos, y simulacro de evacuación).
             - Paso 3: Levantar un acta de evidencia por cada charla realizada.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): logística de convocatoria del personal y custodia de las actas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Disponibilidad de la asesora de seguridad externa.
             - Disponibilidad del personal de la marina para asistir a las charlas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): materiales o insumos requeridos para las charlas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Actas de evidencia levantadas por cada charla de seguridad realizada (mínimo seis).
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): destino y resguardo de las actas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Las charlas, programadas inicialmente para diciembre, fueron pospuestas por coincidir con temporada alta, al no poder ocupar al personal en la formación.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.5.1: Coordinación de charlas de seguridad para personal de marina (mínimo 6)
         - Pendiente.
 
@@ -892,25 +894,25 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para cumplir con los requisitos de seguridad contra incendios exigidos por los bomberos como condición para la renovación del permiso.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina el mantenimiento de extintores y la colocación de señalizaciones.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): proveedor o gestor que ejecuta el mantenimiento de extintores.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Proceso de renovación del permiso de bomberos (ver D1.2.3).
-            - Frecuencia: Vinculada a la renovación del permiso de bomberos. ⚠️ Pendiente validar en sesión próxima: periodicidad específica.
+            - Frecuencia: Vinculada a la renovación del permiso de bomberos. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo se hace?
             - Paso 1: Coordinar el mantenimiento de los extintores.
             - Paso 2: Coordinar la colocación de las señalizaciones de seguridad.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios y verificación de cumplimiento.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): proveedor de mantenimiento de extintores y especificaciones de señalizaciones requeridas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Extintores con mantenimiento al día y señalizaciones de seguridad colocadas.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): constancia o certificado de mantenimiento.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.5.2: Coordinación de mantenimiento de extintores y señalizaciones de seguridad
         - Pendiente.
 
@@ -925,27 +927,27 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina con compras la cotización, adquisición y colocación de las señalizaciones.
             - Departamento de Compras: cotiza y adquiere las señalizaciones.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Compras y responsable de la colocación física.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Proceso de reactivación de la marina (ver D1.2.6).
-            - Frecuencia: Vinculada a la reactivación de la marina. ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: Vinculada a la reactivación de la marina. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo se hace?
             - Paso 1: Coordinar con el departamento de compras la cotización de las señalizaciones de vías de escape y prevención de emergencias, el cartel de números de emergencia y las señalizaciones de muelles.
             - Paso 2: Gestionar la adquisición de las señalizaciones.
             - Paso 3: Coordinar la colocación de las señalizaciones en las instalaciones.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios y verificación de la colocación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Coordinación activa con el departamento de compras.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): especificaciones y listado de señalizaciones requeridas.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Señalizaciones de vías de escape y prevención de emergencias adquiridas y colocadas, incluyendo cartel de números de emergencia y señalizaciones de muelles.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): constancia de colocación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.5.3: Adquisición y colocación de señalizaciones de vías de escape
         - Pendiente.
 
@@ -959,24 +961,24 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Para cumplir con el requisito ambiental exigido para la reactivación de la marina.
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina la realización del análisis ambiental.
-            - ⚠️ Pendiente validar en sesión próxima: si Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) elabora el análisis o solo lo coordina con un tercero, y la identidad de dicho tercero.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Proceso de reactivación de la marina (ver D1.2.6).
-            - Frecuencia: Vinculada a la reactivación de la marina. ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: Vinculada a la reactivación de la marina. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo se hace?
             - Paso 1: Coordinar la realización del análisis ambiental (análisis de aguas) requerido.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): pasos intermedios, laboratorio o ente que ejecuta el análisis y entrega de resultados.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): requisitos y tercero que ejecuta el análisis ambiental.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Análisis ambiental (análisis de aguas) realizado.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): informe o certificado resultante del análisis.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.5.4: Coordinación de análisis ambiental para reactivación de marina
         - Pendiente.
 
@@ -993,7 +995,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): identifica y solicita a compras la cotización y adquisición de los equipos y materiales (al momento de la sesión ya había solicitado la cotización del equipo de recolección de residuos).
             - Departamento de Compras: cotiza y adquiere los equipos y materiales.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Compras involucrada.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Necesidad de equipos o materiales para la marina, principalmente en el marco de su reactivación (ver D1.2.6).
             - Frecuencia: Cuando se requiere.
@@ -1001,21 +1003,21 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Identificar los equipos y materiales requeridos (equipo de recolección de residuos, EPP, señalizaciones, aros salvavidas, dique de contención, entre otros).
             - Paso 2: Solicitar al departamento de compras la cotización de los equipos y materiales.
             - Paso 3: Coordinar la adquisición una vez aprobada la cotización.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): proceso de aprobación de la compra y recepción de los materiales.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Listado de equipos y materiales requeridos.
             - Coordinación activa con el departamento de compras.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): aprobación presupuestaria requerida.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Equipos y materiales cotizados y adquiridos para la marina.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): constancia de recepción de los materiales.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para coordinación con el departamento de compras.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.6.1: Coordinación con departamento de compras para cotización y adquisición de equipos y materiales
         - Pendiente.
 
@@ -1030,7 +1032,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
         - ¿Qué roles ejecutan esta tarea?
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): solicita y coordina la obtención de los soportes contables.
             - Departamento de Administración y Finanzas: suministra los comprobantes de pago, declaraciones de IVA, estados financieros y demás soportes contables.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): persona específica de Administración y Finanzas que atiende las solicitudes.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Necesidad de soportes contables para un trámite, declaración o reporte legal (pólizas, FONASIT, INATUR, FONA, Venetur, IVSS, vehículos).
             - Frecuencia: Transversal a los trámites mensuales y bajo demanda.
@@ -1038,20 +1040,20 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 1: Identificar los soportes contables requeridos para el trámite específico.
             - Paso 2: Solicitar al departamento de Administración y Finanzas los soportes correspondientes.
             - Paso 3: Recibir y verificar los soportes para su uso en el trámite legal.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): canal y plazos de la coordinación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Identificación clara del trámite y de los soportes requeridos.
             - Coordinación activa con el departamento de Administración y Finanzas.
         - ¿Qué se genera al terminar?
             - Soportes contables obtenidos (comprobantes de pago, declaraciones de IVA, estados financieros u otros) disponibles para el trámite legal.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): método de resguardo de los soportes.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: para coordinación con el departamento de Administración y Finanzas.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.6.2: Coordinación con departamento de finanzas para pagos y documentación contable
         - Pendiente.
 
@@ -1078,23 +1080,23 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 5: Distribuir responsabilidades a cada área para que cargue la documentación que le corresponde.
             - Paso 6: Redactar los escritos de descargos correspondientes.
             - Paso 7: Consolidar el expediente y presentarlo ante el ente, en ejercicio de la representación legal directa.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): seguimiento posterior a la presentación.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Notificación o requerimiento del ente regulatorio.
             - Carpeta compartida en la nube y colaboración de las áreas para aportar documentación.
         - ¿Qué se genera al terminar?
             - Expediente consolidado y presentado ante el ente regulador.
             - Escritos de descargos redactados y, cuando aplique, recursos jerárquicos o contenciosos interpuestos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): acuse de recibo y archivo del expediente.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Nube (carpeta compartida): para armar y distribuir la documentación entre áreas.
             - Correo electrónico y WhatsApp: para coordinación interna y distribución de responsabilidades.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Delimitación de competencias: la relación con Administración y Finanzas es de recepción de soportes fiscales; la dirección del proceso legal (representación, estrategia de defensa y descargos) es 100% de la Consultoría Jurídica.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.6.3: Gestión de inspecciones y fiscalizaciones ante entes regulatorios
         - Pendiente.
 
@@ -1110,7 +1112,7 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): coordina y supervisa a los gestores externos y se presenta a firmar cuando el trámite lo requiere.
             - Gestor interno (identidad no confirmada): gestiona el trámite del permiso de bomberos.
             - Mariglori (gestora externa; apellido y cargo formal no confirmados): tiene una empresa propia, gestiona el registro INSASEL y paga a un tercero para ejecutar el trámite; es ella quien hace las largas colas presenciales (de aproximadamente cinco horas).
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): identidad del gestor interno y datos completos (apellido, nombre de la empresa) de la gestora externa Mariglori.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cuándo se hace?
             - Disparador: Trámite presencial complejo o con largas esperas (bomberos, registros, INSASEL).
             - Frecuencia: Bajo demanda, vinculada a los trámites correspondientes.
@@ -1119,21 +1121,21 @@ Rodrigo Gramcko no pertenece al departamento, no coordina, no dirige y no valida
             - Paso 2: Coordinar con el gestor interno (bomberos) o la gestora externa (INSASEL) la ejecución del trámite.
             - Paso 3: Realizar seguimiento del avance vía correo electrónico, WhatsApp y llamada telefónica.
             - Paso 4: Presentarse a firmar de forma presencial cuando el trámite lo requiere, evitando largas esperas en cola.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): condiciones de contratación y pago de los gestores externos.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué necesitan para hacer esta tarea?
             - Disponibilidad de los gestores externos.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documentación que se entrega al gestor para cada trámite.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué se genera al terminar?
             - Trámite presencial gestionado y agilizado mediante apoyo externo.
-            - ⚠️ Pendiente validar con Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos): documento resultante de cada trámite.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico, WhatsApp y llamada telefónica: para coordinación y seguimiento con los gestores externos.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Los trámites presenciales pueden implicar largas esperas (colas de aproximadamente cinco horas reportadas para INSASEL), por lo que se recurre a apoyo externo para agilizarlos.
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
     - Propuesta D1.6.4: Coordinación con gestores externos para trámites presenciales (bomberos, registros, INSASEL)
         - Pendiente.
 
@@ -1147,9 +1149,9 @@ Ninguna pendiente. Las 16 tareas del Inventario (D1.3.1–D1.6.4) fueron convert
 
 ### Tareas identificadas en transcript no presentes en Inventario
 
-- RAPDA — Obtención de RAPDA: Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) mencionó este trámite durante la enumeración de tareas. Implica armar expediente y presentar solicitud; se requiere cuando el ente migra el portal u otra circunstancia lo exige (no periódico). No se detalló el proceso completo. ⚠️ Pendiente validar en sesión próxima: si corresponde a un registro regulatorio específico.
-- Cédula catastral — Actualización de cédula catastral (Colina Palas): Trámite que aplica cuando se requiere (venta o compra de inmueble). Requiere asignación de fondos de presidencia. Gestión parcialmente en línea con retiro presencial. ⚠️ Pendiente validar en sesión próxima: si es tarea corporativa o personal de Genesy Nazareth Martinez Romero.
-- Hermitage — Pago de impuestos Hermitage: Pago anual de impuestos sobre un inmueble. Requiere asignación de fondos. ⚠️ Pendiente validar en sesión próxima: si es tarea corporativa o personal de Genesy Nazareth Martinez Romero.
-- Sellado de libros de servicios — Sellado de libros ante ente competente: Obligación legal pendiente desde hace años. Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) reconoció que se ha postergado sistemáticamente. ⚠️ Pendiente validar en sesión próxima: ente ante el que se tramita y documentación requerida.
+- RAPDA — Obtención de RAPDA: Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) mencionó este trámite durante la enumeración de tareas. Implica armar expediente y presentar solicitud; se requiere cuando el ente migra el portal u otra circunstancia lo exige (no periódico). No se detalló el proceso completo. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
+- Cédula catastral — Actualización de cédula catastral (Colina Palas): Trámite que aplica cuando se requiere (venta o compra de inmueble). Requiere asignación de fondos de presidencia. Gestión parcialmente en línea con retiro presencial. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
+- Hermitage — Pago de impuestos Hermitage: Pago anual de impuestos sobre un inmueble. Requiere asignación de fondos. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
+- Sellado de libros de servicios — Sellado de libros ante ente competente: Obligación legal pendiente desde hace años. Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) reconoció que se ha postergado sistemáticamente. Fuera de alcance: el área de Consultoría Jurídica no se implementa en Odoo; campo no requiere validación.
 - Asesoría legal a departamentos — Atención de consultas legales (y no legales) de todos los departamentos: Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) recibe consultas legales y de otra naturaleza de todos los departamentos de forma continua. Frecuencia: diaria o semanal.
 - Gestión de solicitudes de presidencia — Atención de requerimientos ad hoc de presidencia: Genesy Nazareth Martinez Romero (Directora de Consultoría Jurídica y Asuntos Corporativos) atiende requerimientos directos de presidencia de forma regular (semanal o con varios días seguidos de comunicación). Canal: WhatsApp.

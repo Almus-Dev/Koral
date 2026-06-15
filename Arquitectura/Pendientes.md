@@ -20,8 +20,10 @@ Ultima actualizacion: 2026-06-15 (sesion normalizacion + propuestas + correo Gen
 - [x] TAREA 3.8 HOTEL-Libny reconstruida (estaba truncada)
 - [x] Contexto Legal actualizado (cargo Genesy + nota Odoo)
 
-**Pendiente de decision del usuario:**
-- [ ] 6 tareas Legal mencionadas en transcript fuera de Inventario (RAPDA, cedula catastral Colina Palas, impuestos Hermitage, sellado de libros, asesoria a deptos, solicitudes de presidencia) — siguen como propuestas sin aplicar; las 1-3 con duda corporativo/personal.
+**Decision 2026-06-15 — Legal fuera de alcance:**
+- El area de Consultoria Juridica NO se implementa en Odoo. Los 203 pendientes de validacion de Legal se marcaron como "Fuera de alcance" y NO requieren sesion de validacion. El AS-IS Legal queda como registro funcional.
+- En consecuencia, las 6 tareas de transcript fuera de Inventario (RAPDA, cedula catastral, Hermitage, sellado de libros, asesoria a deptos, solicitudes de presidencia) NO se agregan (decision previa del usuario) y ya no aplican.
+- Total ⚠️ del proyecto baja de 529 a 326.
 
 **Apellidos/nombres aun pendientes:** Francis (Ama de Llaves), Francisco (refrigeracion), Luis (piscinero), Isaias (bombas), Meche (Contraloria), Mariglori (gestora Legal).
 

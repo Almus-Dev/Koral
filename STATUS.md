@@ -15,9 +15,9 @@
 | Operaciones | — | Normalizado | 16 | Sesion de validacion 2 (detalle tecnico) |
 | Talento Humano | — | Normalizado + bono camareras + 2 fusiones | 4 | Confirmar detalle bono (2.3.5) |
 | Contraloria | — | Normalizado (parte rellenada por usuario) | 3 | Confirmar 3.1/3.3/6.2 |
-| Legal | — | Normalizado + 16 tareas agregadas + correo Genesy aplicado | 203 | Sesion de validacion 2 (Areas 3-6 granular) |
+| Legal | — | FUERA DE ALCANCE (no se implementa en Odoo) | 0 | Ninguno — documento de registro funcional |
 
-**Total ⚠️ pendientes:** 529 | **Areas:** 12 sub-areas, todas normalizadas
+**Total ⚠️ pendientes:** 326 | **Areas:** 12 sub-areas, todas normalizadas (Legal fuera del alcance Odoo)
 
 ---
 
