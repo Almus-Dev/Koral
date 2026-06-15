@@ -1,8 +1,12 @@
-<!-- Procesado: 2026-05-25 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. -->
+<!-- Procesado: 2026-05-25 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Normalizado contra plantilla 2026-06-12. Propuestas de adición aplicadas 2026-06-12. -->
 
 # AS - IS: Inventario: A y B (CAJA)
 
 Creado: 30 de marzo de 2026 9:50
+
+---
+
+# Área 1: Desayunos
 
 - TAREA 1.0: Verificación de lista de huéspedes (día anterior)
     - AS-IS 1.0: Verificación de lista de huéspedes
@@ -18,20 +22,22 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Cómo se hace?
             - Paso 1: Se revisa la lista de huéspedes para el día siguiente.
             - Paso 2: Si la lista es larga, se imprime para usarla durante el servicio como herramienta de control.
-            - El equipo de bar/servicio (Douglas, kmmin002) confirma que la lista llega por grupo de WhatsApp del departamento. Para caja, Michelle Montenegro (kmmin003) indica que se verifica la lista el día anterior pero no especificó el canal de recepción. ⚠️ Pendiente confirmar si caja recibe la lista por el mismo grupo de WhatsApp o por otro canal.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de huéspedes generada por recepción. Impresora disponible si la lista requiere impresión.
         - ¿Qué se genera al terminar?
             - Lista de huéspedes verificada y, si aplica, impresa, lista para usarse durante el servicio de desayuno del día siguiente.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima: sistema desde el que se obtiene o recibe la lista.
+            - Grupo de WhatsApp: canal por el que se recibe la lista de huéspedes.
             - Impresora: para imprimir la lista cuando la cantidad de huéspedes lo requiere.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El WhatsApp indica una cantidad de huéspedes y el sistema de recepción indica otra. Esto obliga al cajero a ir a recepción para confirmar el dato real.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Sincronización en tiempo real entre recepción y restaurante: una pantalla conectada al sistema del hotel en la que cualquier cambio hecho por recepción se refleje al instante en la tablet del restaurante, eliminando el uso de papel y asegurando que la lista esté actualizada al segundo.
     - Propuesta 1.0: Verificación de lista de huéspedes
         - Pendiente.
+
+---
+
 - TAREA 1.1: Encendido de cornetas
     - AS-IS 1.1: Encendido de cornetas
         - ¿Qué es esta tarea?
@@ -53,11 +59,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Cornetas / sistema de sonido del área.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - No se puede colocar música para los huéspedes y se debe esperar a mantenimiento.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el sistema se encienda automáticamente junto con la computadora, con un volumen preestablecido de mañana (bajo/suave) que aumente gradualmente hacia el mediodía.
     - Propuesta 1.1: Encendido de cornetas
         - Pendiente.
+
+---
+
 - TAREA 1.2: Encendido de PC, verificación de funcionamiento de Internet, encendido de impresora
     - AS-IS 1.2: Encendido de PC, verificación de Internet e impresora
         - ¿Qué es esta tarea?
@@ -88,6 +97,9 @@ Creado: 30 de marzo de 2026 9:50
             - El equipo menciona que el Internet es intermitente y que esto afecta directamente la operación. Anteriormente las comandas llegaban directamente a cocina con solo dar enviar; ahora, por los problemas de conectividad, el proceso es más manual y engorroso.
     - Propuesta 1.2: Encendido de PC, verificación de Internet e impresora
         - Pendiente.
+
+---
+
 - TAREA 1.3: Inventario cíclico para verificar la reposición de productos en la Nevera
     - AS-IS 1.3: Inventario cíclico para verificar la reposición de productos en la Nevera
         - ¿Qué es esta tarea?
@@ -112,9 +124,12 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si hay faltantes en el almacén de caja: se activa el proceso de requisición a almacén general (ver Fase 3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Sustituir la hoja manual por un registro en el sistema (Odoo/Cloudbeds) donde el cajero solo ingrese las cantidades actuales y el sistema calcule automáticamente la reposición necesaria.
     - Propuesta 1.3: Inventario cíclico para verificar la reposición de productos en la Nevera
         - Pendiente.
+
+---
+
 - TAREA 1.4: Inventario cíclico para verificar la reposición de productos en la Vitrina
     - AS-IS 1.4: Inventario cíclico para verificar la reposición de productos en la Vitrina
         - ¿Qué es esta tarea?
@@ -139,9 +154,12 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si hay faltantes en el almacén de caja: se activa el proceso de requisición a almacén general (ver Fase 3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Integración con el sistema Odoo de un escáner para el snack en la venta, de modo que el sistema descuente del inventario automáticamente.
     - Propuesta 1.4: Inventario cíclico para verificar la reposición de productos en la Vitrina
         - Pendiente.
+
+---
+
 - TAREA 1.5: Reposición de productos para Nevera y Vitrina en el Almacén de Caja
     - AS-IS 1.5: Reposición de productos para Nevera y Vitrina en el Almacén de Caja
         - ¿Qué es esta tarea?
@@ -167,9 +185,12 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si el almacén de caja no tiene los productos necesarios: se activa el proceso de requisición a almacén general (ver Fase 3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el almacén de caja tenga un código QR o de barras para que el cajero escanee lo que retira, actualizando el inventario del sub-almacén de forma digital y automática.
     - Propuesta 1.5: Reposición de productos para Nevera y Vitrina en el Almacén de Caja
         - Pendiente.
+
+---
+
 - TAREA 1.6: Firma de ficha de reposición de productos (Fecha, Hora, Productos)
     - AS-IS 1.6: Firma de ficha de reposición de productos
         - ¿Qué es esta tarea?
@@ -194,11 +215,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Ficha de reposición de productos: formato manual físico estandarizado, creado por Libny Carina Tarazon Gallegos.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si no quedan formatos físicos impresos, se improvisa el registro en un cuaderno sellado y se reporta de inmediato al asistente administrativo para la reposición de papelería.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que cada estante del almacén de caja tenga un código QR: el cajero escanea, indica la cantidad y el sistema genera la firma digital automáticamente, ahorrando tiempo de escritura manual.
     - Propuesta 1.6: Firma de ficha de reposición de productos
         - Pendiente.
+
+---
+
 - TAREA 1.7: Conteo de desayuno x Habitación
     - AS-IS 1.7: Conteo de desayuno x Habitación
         - ¿Qué es esta tarea?
@@ -221,11 +245,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Lista impresa de huéspedes: usada como instrumento de control manual durante el servicio.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - No se puede visualizar cuántas personas hay por habitación y no se puede llevar el conteo del desayuno.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que la lista se pase de forma digital desde recepción a caja y se actualice instantáneamente con todas las personas que hay por habitación, incluyendo niños.
     - Propuesta 1.7: Conteo de desayuno x Habitación
         - Pendiente.
+
+---
+
 - TAREA 1.8: Asignación de número de mesa al huésped
     - AS-IS 1.8: Asignación de número de mesa al huésped
         - ¿Qué es esta tarea?
@@ -249,11 +276,14 @@ Creado: 30 de marzo de 2026 9:50
             - Cartelitos numerados de mesa: instrumento físico para identificar la mesa del huésped.
             - Sistema Poster: el número de mesa también se registra en la comanda junto con la habitación (Tarea 1.9).
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - En días de alta ocupación (100%) se acaban los números físicos. El personal improvisa anotando el número en hojas, usando directamente el número de habitación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Mantener el método de los carteles para cada mesa para no tener equivocaciones con los huéspedes.
     - Propuesta 1.8: Asignación de número de mesa al huésped
         - Pendiente.
+
+---
+
 - TAREA 1.9: En sistema Poster crean comanda, asignan habitación y mesa, y agregan pedidos
     - AS-IS 1.9: Creación de comanda en Poster con asignación de habitación, mesa y pedido
         - ¿Qué es esta tarea?
@@ -285,6 +315,9 @@ Creado: 30 de marzo de 2026 9:50
             - Que cada mesonero pueda crear y enviar la comanda directamente desde su tablet a cocina sin necesidad de pasar por caja. Anteriormente existía una impresora en cocina que recibía las comandas directamente desde las tablets, pero se dañó. El equipo señala que esto requiere una solución de Internet más estable en todas las áreas del hotel, así como tablets adicionales para los mesoneros que atienden la piscina.
     - Propuesta 1.9: Creación de comanda en Poster con asignación de habitación, mesa y pedido
         - Pendiente.
+
+---
+
 - TAREA 1.10: Impresión de las comandas tanto para cocina como barra (tanto comandas generadas desde caja como las tomadas por mesoneros)
     - AS-IS 1.10: Impresión de comandas para cocina y barra
         - ¿Qué es esta tarea?
@@ -299,8 +332,7 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Cómo se hace?
             - Paso 1: La comanda queda registrada en Poster (desde caja o desde tablet del mesonero).
             - Paso 2: Se imprime la comanda desde la impresora de caja.
-            - Paso 3: La comanda impresa se hace llegar a cocina y/o barra según corresponda.
-            - El mesonero hace llegar la comanda impresa a cocina y/o barra según corresponda. Caja imprime y el mesonero la transporta al área de preparación. Confirmado en sesión kmmin003 (Michelle Montenegro).
+            - Paso 3: El mesonero hace llegar la comanda impresa a cocina y/o barra según corresponda.
         - ¿Qué necesitan para hacer esta tarea?
             - Comanda creada en Poster. Impresora de caja operativa. Conexión a Internet funcionando.
         - ¿Qué se genera al terminar?
@@ -310,11 +342,14 @@ Creado: 30 de marzo de 2026 9:50
             - Impresora de caja: imprime las comandas tanto para cocina como para barra dado que la impresora de cocina está fuera de servicio.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si el Internet falla: las impresiones de las comandas dejan de procesarse, lo que interrumpe el flujo completo de pedidos a cocina y barra.
-            - Si la impresora de caja falla: ⚠️ Pendiente validar en sesión próxima.
+            - Si la impresora de caja falla: se realizan las comandas de forma manual.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que la impresora de cocina vuelva a funcionar para que las comandas lleguen directamente desde las tablets de los mesoneros sin necesidad de pasar por caja. El equipo indica que anteriormente bastaba con dar "enviar" en la tablet y la comanda llegaba automáticamente a la impresora de cocina.
     - Propuesta 1.10: Impresión de comandas para cocina y barra
         - Pendiente.
+
+---
+
 - TAREA 1.11: Impresión de comanda general por habitación
     - AS-IS 1.11: Impresión de comanda general por habitación
         - ¿Qué es esta tarea?
@@ -339,11 +374,14 @@ Creado: 30 de marzo de 2026 9:50
             - Sistema Poster: para generar e imprimir la comanda general de consumo por habitación.
             - Impresora de caja: para imprimir el comprobante.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El papel se atasca o se acaba el rollo en el pico del servicio. El cajero debe tener rollos de repuesto a la mano o, en su defecto, anotar el consumo manualmente en una nota de consumo de contingencia para no retrasar la salida del huésped.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que al cerrar la comanda en Poster, el cargo se refleje de inmediato en el estado de cuenta de la habitación en el sistema administrativo principal, evitando olvidos en la facturación final.
     - Propuesta 1.11: Impresión de comanda general por habitación
         - Pendiente.
+
+---
+
 - TAREA 1.12: Recolección de firma de huésped
     - AS-IS 1.12: Recolección de firma de huésped
         - ¿Qué es esta tarea?
@@ -366,11 +404,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Comanda impresa: documento físico que el huésped firma.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El huésped argumenta que no debería firmar porque el desayuno ya está pagado. El personal debe explicar cortésmente que es un control interno de consumos y bioseguridad.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Implementar un sistema donde el huésped valide su consumo mediante huella dactilar o firma en una pantalla táctil sincronizada con el folio de su habitación, eliminando el riesgo de pérdida de papeles físicos.
     - Propuesta 1.12: Recolección de firma de huésped
         - Pendiente.
+
+---
+
 - TAREA 1.13: Envío de comandas a recepción desde Poster
     - AS-IS 1.13: Envío de comandas a recepción desde Poster
         - ¿Qué es esta tarea?
@@ -394,11 +435,14 @@ Creado: 30 de marzo de 2026 9:50
             - Sistema Poster: desde donde se genera y envía la comanda a recepción.
             - Sistema Clover: sistema de recepción que recibe la comanda enviada desde Poster. Se menciona que Clover está relacionado con Poster y que hay un botón de asignación de habitación para hacer el envío.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si falla el envío, el cajero anota el número de comanda y habitación en una lista de contingencia y notifica a recepción por WhatsApp o radio de inmediato para que carguen el monto manualmente en Clover.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que al seleccionar el número de habitación en Poster, el sistema muestre el nombre del titular, como capa extra de seguridad para asegurar que el consumo se envía a la persona correcta.
     - Propuesta 1.13: Envío de comandas a recepción desde Poster
         - Pendiente.
+
+---
+
 - TAREA 1.14: Envío de comanda firmada por huésped a recepción
     - AS-IS 1.14: Envío de comanda firmada por huésped a recepción
         - ¿Qué es esta tarea?
@@ -413,7 +457,7 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Cómo se hace?
             - Paso 1: Se recolecta la comanda firmada por el huésped.
             - Paso 2: Se hace llegar físicamente a recepción.
-            - ⚠️ Pendiente validar en sesión próxima: quién realiza físicamente el traslado del documento a recepción.
+            - Paso 3: El cajero lleva las comandas personalmente a recepción.
         - ¿Qué necesitan para hacer esta tarea?
             - Comanda firmada por el huésped (resultado de la Tarea 1.12).
         - ¿Qué se genera al terminar?
@@ -423,9 +467,12 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si un huésped hace check out sin que se haya enviado su comanda a recepción: el equipo de caja está alerta a los check outs para evitar que esto ocurra. Se menciona que a veces recepción no avisa del check out con anticipación, lo que puede generar que alguna comanda quede pendiente.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que se lleve de manera digitalizada y física, para llevar un registro y un soporte en el sistema.
     - Propuesta 1.14: Envío de comanda firmada por huésped a recepción
         - Pendiente.
+
+---
+
 - TAREA 1.15: Determinar huéspedes faltantes por comer
     - AS-IS 1.15: Determinar huéspedes faltantes por comer
         - ¿Qué es esta tarea?
@@ -447,11 +494,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Lista impresa de huéspedes usada como control manual.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Se acerca el cierre y el huésped no baja porque sigue durmiendo. Si el restaurante cierra a las 10:30 AM, el huésped se siente desatendido, pero debe pagar el consumo del desayuno, dado que recepción notifica hasta qué hora es el desayuno.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que al faltar 30 minutos para el cierre, el sistema (Odoo/Clover) genere una alerta visual de las habitaciones pendientes, para que recepción pueda dar un aviso de cortesía si el huésped pasa por el lobby.
     - Propuesta 1.15: Determinar huéspedes faltantes por comer
         - Pendiente.
+
+---
+
 - TAREA 1.16: Verificación de inventario, nevera y vitrina
     - AS-IS 1.16: Verificación de inventario, nevera y vitrina
         - ¿Qué es esta tarea?
@@ -477,9 +527,12 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si hay faltantes: se activa el proceso de reposición desde el almacén de caja (Tarea 1.5) o, si el almacén de caja tampoco tiene, se activa el proceso de requisición a almacén general (Fase 3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Realizar el inventario de forma digital y manual para poder llevar el control de los dos turnos, dado que el inventario se realiza a diario.
     - Propuesta 1.16: Verificación de inventario, nevera y vitrina
         - Pendiente.
+
+---
+
 - TAREA 1.17: Limpieza de área de Caja
     - AS-IS 1.17: Limpieza de área de Caja
         - ¿Qué es esta tarea?
@@ -492,19 +545,24 @@ Creado: 30 de marzo de 2026 9:50
             - Disparador: Cierre del servicio de desayuno.
             - Frecuencia: Diaria, al cierre del servicio de desayuno.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: procedimiento específico de limpieza del área de caja.
+            - Paso 1: Se realiza la limpieza del piso.
+            - Paso 2: Se pasa un lito a las neveras y a sus partes inferiores.
+            - Paso 3: Se realiza la limpieza de las vitrinas.
         - ¿Qué necesitan para hacer esta tarea?
             - Insumos de limpieza disponibles en el área.
         - ¿Qué se genera al terminar?
             - Área de caja limpia y lista para el siguiente turno o proceso.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Insumos de limpieza.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - No se mantiene la higiene sanitaria del área.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que se realice una limpieza diaria del área de caja.
     - Propuesta 1.17: Limpieza de área de Caja
         - Pendiente.
+
+---
+
 - TAREA 1.18: Verificación de día de check-out de huésped
     - AS-IS 1.18: Verificación de día de check-out de huésped
         - ¿Qué es esta tarea?
@@ -520,20 +578,24 @@ Creado: 30 de marzo de 2026 9:50
             - Paso 1: El cajero está atento a los check outs de los huéspedes.
             - Paso 2: Cuando detecta un check out próximo o en curso, verifica si tiene alguna comanda pendiente de ese huésped sin enviar a recepción.
             - Paso 3: Si hay comanda pendiente, prioriza su envío a recepción (Tareas 1.13 y 1.14) antes de que el huésped se vaya.
-            - ⚠️ Pendiente validar en sesión próxima: mecanismo concreto por el que caja se entera de los check outs (si recepción notifica, si hay una lista, etc.).
+            - Paso 4: Recepción cierra automáticamente la comanda de la habitación.
         - ¿Qué necesitan para hacer esta tarea?
-            - Información de los check outs del día.
-            - ⚠️ Pendiente validar en sesión próxima: canal por el que caja recibe la información de check outs.
+            - Información de los check outs del día, que caja recibe a través de la radio.
         - ¿Qué se genera al terminar?
             - Garantía de que todas las comandas de los huéspedes en check out fueron enviadas a recepción antes de su salida.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Radio: comunicación de recepción a caja y de caja a recepción.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si recepción no avisa del check out con anticipación: el cajero puede no darse cuenta a tiempo y una comanda puede quedar sin enviar. El equipo menciona que esto ocurre a veces.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que al intentar hacer el check out en recepción, el sistema Clover arroje una alerta de consumos pendientes en restaurante, obligando a una validación rápida antes de cerrar la factura final.
     - Propuesta 1.18: Verificación de día de check-out de huésped
         - Pendiente.
+
+---
+
+# Área 2: Cava
+
 - TAREA 2.1: Asignación de cava para el huésped (si es solicitado por el huésped)
     - AS-IS 2.1: Asignación de cava para el huésped
         - ¿Qué es esta tarea?
@@ -554,13 +616,16 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué se genera al terminar?
             - Cava asignada al huésped, lista para ser identificada y entregada.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Formato físico: registro de la asignación de cavas.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - No se lleva un orden ni un conteo de las cavas.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que exista un formato digital donde automáticamente se coloquen los datos del huésped.
     - Propuesta 2.1: Asignación de cava para el huésped
         - Pendiente.
+
+---
+
 - TAREA 2.2: Solicitud de firma de huésped para cava
     - AS-IS 2.2: Solicitud de firma de huésped para cava
         - ¿Qué es esta tarea?
@@ -577,17 +642,20 @@ Creado: 30 de marzo de 2026 9:50
             - Paso 2: En el momento de la entrega de la cava, se solicita la firma del huésped.
             - Paso 3: El huésped firma como constancia de recepción.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima: formato específico donde firma el huésped la recepción de la cava.
+            - Formato específico para las cavas con nombre, número de habitación y firma.
         - ¿Qué se genera al terminar?
             - Firma del huésped como constancia de haber recibido la cava.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Formato manual de cavas.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El huésped se niega a firmar el formato argumentando que el servicio de cava es parte del paquete.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el control de cavas esté integrado a un código QR: al escanearlo, el huésped genera una responsabilidad digital abierta que solo se cierra cuando la cava vuelve a su lugar.
     - Propuesta 2.2: Solicitud de firma de huésped para cava
         - Pendiente.
+
+---
+
 - TAREA 2.3: Identificación de huésped para la cava (número de habitación, nombre, cantidad y descripción)
     - AS-IS 2.3: Identificación de huésped para la cava
         - ¿Qué es esta tarea?
@@ -614,11 +682,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Listado manual de cavas: registro escrito a mano, de uso interno de caja (no se envía a recepción). Es distinto de la comanda del pedido de productos para la cava.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el hotel tiene cavas de diferentes tamaños o marcas y no se especifica en el registro, el huésped podría devolver una más pequeña o deteriorada sin que el cajero lo note.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que cada cava tenga un número grabado: en el listado manual solo se anota el ID de la cava, facilitando la identificación visual inmediata cuando el huésped la devuelve.
     - Propuesta 2.3: Identificación de huésped para la cava
         - Pendiente.
+
+---
+
 - TAREA 2.4: Recepción de pedido para cava en sistema Poster (si es solicitado por el huésped)
     - AS-IS 2.4: Recepción de pedido para cava en sistema Poster
         - ¿Qué es esta tarea?
@@ -642,11 +713,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Sistema Poster: para registrar el pedido de productos para la cava y generar la comanda.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - No se puede abrir Poster para marcar el pedido del huésped. Se usa una nota de consumo manual provisional y se registra en el sistema apenas se restablece el servicio, asegurando que el huésped firme el papel físico.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que Poster tenga botones específicos de combo cava para que el cajero no tenga que marcar ítem por ítem, agilizando la atención en horas pico.
     - Propuesta 2.4: Recepción de pedido para cava en sistema Poster
         - Pendiente.
+
+---
+
 - TAREA 2.5: Recolección de firma de huésped para la comanda de cava
     - AS-IS 2.5: Recolección de firma de huésped para la comanda de cava
         - ¿Qué es esta tarea?
@@ -669,11 +743,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Comanda impresa desde Poster: documento físico firmado por el huésped.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El huésped firma por seis cervezas pero, al momento de armar la cava, solo quedan cuatro frías. Se debe anular la comanda en Poster, corregir la cantidad y volver a imprimir antes de solicitar la firma definitiva.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Eliminar el papel físico mediante una validación digital: el huésped acerca su brazalete o digita un PIN en la tablet de caja, autorizando el cargo de forma inmediata.
     - Propuesta 2.5: Recolección de firma de huésped para la comanda de cava
         - Pendiente.
+
+---
+
 - TAREA 2.6: Envío de comanda firmada por huésped a recepción
     - AS-IS 2.6: Envío de comanda firmada por huésped a recepción
         - ¿Qué es esta tarea?
@@ -689,7 +766,6 @@ Creado: 30 de marzo de 2026 9:50
             - Paso 1: Se toma la comanda firmada del pedido de la cava.
             - Paso 2: Se envía digitalmente desde Poster a recepción (asignando habitación y dando enviar, igual que en Tarea 1.13).
             - Paso 3: Se hace llegar físicamente a recepción la comanda firmada por el huésped.
-            - ⚠️ Pendiente validar en sesión próxima: si para el pedido de cava también se hace el envío digital desde Poster o si solo se envía el físico.
         - ¿Qué necesitan para hacer esta tarea?
             - Comanda del pedido de la cava firmada por el huésped. Acceso a Poster para el envío digital. Conexión a Internet operativa.
         - ¿Qué se genera al terminar?
@@ -698,11 +774,14 @@ Creado: 30 de marzo de 2026 9:50
             - Sistema Poster: para el envío digital a recepción.
             - Comanda impresa firmada: documento físico entregado a recepción.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El envío digital falla por intermitencia del WiFi en el área de piscina. El cajero debe marcar la comanda física con un sello o nota de que se realizó manualmente, para que recepción sepa que debe ingresarla desde cero en el sistema Clover.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que al dar enviar en Poster, el cajero reciba un mensaje de confirmación de que el cargo fue recibido en la habitación en Clover.
     - Propuesta 2.6: Envío de comanda firmada por huésped a recepción
         - Pendiente.
+
+---
+
 - TAREA 2.7: Crear el listado de Cavas x Huésped, listado manual por escrito
     - AS-IS 2.7: Crear el listado de Cavas x Huésped
         - ¿Qué es esta tarea?
@@ -717,7 +796,6 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Cómo se hace?
             - Paso 1: Cada vez que se asigna una cava, se agrega el registro al listado con: número de habitación, nombre del huésped, cantidad de cavas, descripción de la cava, fecha y hora de salida.
             - Paso 2: En la tarde se verifica el listado para confirmar que las cavas asignadas han sido devueltas por los huéspedes.
-            - ⚠️ Pendiente validar en sesión próxima: qué se hace cuando una cava no ha sido devuelta al momento esperado, y si hay algún campo de devolución en el listado.
         - ¿Qué necesitan para hacer esta tarea?
             - Listado manual de cavas disponible (hoja escrita a mano).
         - ¿Qué se genera al terminar?
@@ -725,11 +803,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Listado manual escrito: registro a mano de uso interno de caja. No se envía a recepción ni se registra en Poster.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Llega la hora de la cena y el listado muestra cavas fuera. El cajero debe notificar a seguridad o al capitán de mesoneros para que realicen un barrido en el área de piscina/muelle. Si no se encuentran, se informa a recepción para contactar a la habitación.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el listado se lleve en una tablet (Google Sheets o Excel Online) para que gerencia de operaciones o administración puedan ver en tiempo real cuántas cavas hay disponibles sin tener que ir a caja.
     - Propuesta 2.7: Crear el listado de Cavas x Huésped
         - Pendiente.
+
+---
+
 - TAREA 2.8: Impresión de recibo de hielo para huésped (huésped retira el hielo en el muelle) desde sistema Poster
     - AS-IS 2.8: Impresión de recibo de hielo para huésped
         - ¿Qué es esta tarea?
@@ -737,7 +818,7 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Para qué se hace?
             - Para que el huésped pueda retirar el hielo en el muelle presentando el recibo impreso, sin necesidad de que alguien de caja lo acompañe. El recibo es el instrumento que autoriza la entrega del hielo en el muelle.
         - ¿Qué roles ejecutan esta tarea?
-            - Cajero/a. Se menciona que Alberto Cid Navarro (gerencia general) normalmente solicita que se entregue el hielo por el muelle.
+            - Cajero/a. Se menciona que Alberto Cid Navarro (Gerencia General) normalmente solicita que se entregue el hielo por el muelle.
         - ¿Cuándo se hace?
             - Disparador: Solicitud del huésped o de gerencia de hielo para ser retirado en el muelle.
             - Frecuencia: Bajo demanda, esporádica.
@@ -755,11 +836,16 @@ Creado: 30 de marzo de 2026 9:50
             - Sistema Poster: para generar e imprimir el recibo de hielo.
             - Impresora de caja: para imprimir el recibo.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El recibo indica dos bolsas pero solo se entrega una por falta de stock. El personal del muelle anota la novedad en el ticket y el huésped lo lleva de vuelta a caja para el ajuste de la cuenta.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Un sistema de validación simple donde el cajero da un número al huésped y este lo dicta al encargado del muelle, quien lo marca como entregado en una tablet.
     - Propuesta 2.8: Impresión de recibo de hielo para huésped
         - Pendiente.
+
+---
+
+# Área 3: Requisiciones
+
 - TAREA 3.1: Inventario general
     - AS-IS 3.1: Inventario general
         - ¿Qué es esta tarea?
@@ -787,6 +873,9 @@ Creado: 30 de marzo de 2026 9:50
             - Que el cajero pueda ingresar las cantidades directamente en el software administrativo desde el almacén, generando la requisición de forma instantánea.
     - Propuesta 3.1: Inventario general
         - Pendiente.
+
+---
+
 - TAREA 3.2: Solicitud de requisición de productos a almacén general
     - AS-IS 3.2: Solicitud de requisición de productos a almacén general
         - ¿Qué es esta tarea?
@@ -813,6 +902,9 @@ Creado: 30 de marzo de 2026 9:50
             - Que el cajero cargue la solicitud de requisición digitalmente en el sistema; al darle "Enviar", el almacenista recibe una alerta en su pantalla, prepara el pedido y avisa a caja para que pasen a retirar, ahorrando múltiples viajes.
     - Propuesta 3.2: Solicitud de requisición de productos a almacén general
         - Pendiente.
+
+---
+
 - TAREA 3.3: Llenado de formato de requisición
     - AS-IS 3.3: Llenado de formato de requisición
         - ¿Qué es esta tarea?
@@ -828,7 +920,6 @@ Creado: 30 de marzo de 2026 9:50
             - Paso 1: Se toma el formato de requisición.
             - Paso 2: Se registran los productos solicitados con sus cantidades.
             - Paso 3: Se lleva el formato a solicitar firma de autorización (Tarea 3.4).
-            - Paso 3: Se lleva el formato a solicitar firma de autorización (Tarea 3.4).
         - ¿Qué necesitan para hacer esta tarea?
             - Formato de requisición disponible. Lista de productos a solicitar (resultado de la Tarea 3.1).
         - ¿Qué se genera al terminar?
@@ -841,6 +932,9 @@ Creado: 30 de marzo de 2026 9:50
             - Tener un archivo Excel con los ítems fijos del hotel donde el cajero solo coloca las cantidades, imprime y firma, evitando errores de letra ilegible que confundan al almacenista.
     - Propuesta 3.3: Llenado de formato de requisición
         - Pendiente.
+
+---
+
 - TAREA 3.4: Solicitud de firma a Gerencia (Adriana Montes Caceres o Libny Carina Tarazon Gallegos)
     - AS-IS 3.4: Solicitud de firma a Gerencia
         - ¿Qué es esta tarea?
@@ -848,7 +942,7 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Para qué se hace?
             - Para obtener la aprobación formal de la gerencia antes de que caja retire productos del almacén general.
         - ¿Qué roles ejecutan esta tarea?
-            - Cajero/a presenta el formato. Quien firma es Adriana Montes Caceres (Gerencia de Operaciones) o Libny Carina Tarazon Gallegos (administración/finanzas).
+            - Cajero/a presenta el formato. Quien firma es Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento) o Libny Carina Tarazon Gallegos (Coordinadora de Administración, Hotel).
         - ¿Cuándo se hace?
             - Disparador: Formato de requisición completado (Tarea 3.3).
             - Frecuencia: Bajo demanda, cada vez que se genera una requisición.
@@ -863,11 +957,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Formato físico de requisición: documento que circula para recabar la firma de autorización.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Si ni Adriana ni Libny se encuentran disponibles en el momento de la urgencia, se debe establecer quién queda como firma por delegación o si se permite un aviso por radio o WhatsApp para proceder y firmar el documento a posteriori.
+            - Si ni Adriana Montes Caceres ni Libny Carina Tarazon Gallegos se encuentran disponibles en el momento de la urgencia, se debe establecer quién queda como firma por delegación o si se permite un aviso por radio o WhatsApp para proceder y firmar el documento a posteriori.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el cajero cargue la requisición en el sistema y las gerentes reciban una notificación en sus computadoras; con un clic o firma digital, la orden llegaría directamente a almacén, eliminando los traslados físicos del personal.
     - Propuesta 3.4: Solicitud de firma a Gerencia
         - Pendiente.
+
+---
+
 - TAREA 3.5: Retiro de productos solicitados y almacenamiento de los mismos en el almacén de Caja
     - AS-IS 3.5: Retiro de productos solicitados y almacenamiento en el almacén de Caja
         - ¿Qué es esta tarea?
@@ -896,6 +993,11 @@ Creado: 30 de marzo de 2026 9:50
             - Que el personal de almacén general sea el encargado de trasladar el pedido hasta el almacén de caja en períodos de alta ocupación, permitiendo que el cajero no abandone su puesto y mantenga la operatividad de caja al 100%.
     - Propuesta 3.5: Retiro de productos solicitados y almacenamiento en el almacén de Caja
         - Pendiente.
+
+---
+
+# Área 4: Almuerzos/Snacks/Cenas
+
 - TAREA 4.0: Entrega de Guardia de Turno (A partir de las 3pm)
     - AS-IS 4.0: Entrega de Guardia de Turno
         - ¿Qué es esta tarea?
@@ -908,7 +1010,8 @@ Creado: 30 de marzo de 2026 9:50
             - Disparador: Llegada del personal del turno de la tarde.
             - Frecuencia: Diaria, a las 3:00 PM.
         - ¿Cómo se hace?
-            - Las novedades del día se escriben en el cuaderno de novedades y se notifica verbalmente a la persona que recibe el turno sobre las actividades pendientes.
+            - Paso 1: Se escriben las novedades del día en el cuaderno de novedades.
+            - Paso 2: Se notifican verbalmente a la persona que recibe el turno las novedades y actividades pendientes.
         - ¿Qué necesitan para hacer esta tarea?
             - Área limpia y organizada. Inventario actualizado del almacén de caja, neveras y vitrina.
         - ¿Qué se genera al terminar?
@@ -916,11 +1019,14 @@ Creado: 30 de marzo de 2026 9:50
         - ¿Qué sistemas o herramientas usan?
             - Cuaderno de novedades (escrito) y comunicación verbal.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Si el cajero del turno de la tarde no llega a las 3:00 PM, el cajero de la mañana no puede abandonar el puesto. Debe notificar a Gerencia (Adriana o Libny) y esperar el relevo o instrucciones para asegurar que la caja nunca quede sola.
+            - Si el cajero del turno de la tarde no llega a las 3:00 PM, el cajero de la mañana no puede abandonar el puesto. Debe notificar a Gerencia (Adriana Montes Caceres o Libny Carina Tarazon Gallegos) y esperar el relevo o instrucciones para asegurar que la caja nunca quede sola.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Un formulario rápido en una tablet con checklist de puntos clave (área limpia, neveras llenas, fondo de caja verificado, pendientes anotados) que genere un reporte automático a Administración al completarse.
     - Propuesta 4.0: Entrega de Guardia de Turno
         - Pendiente.
+
+---
+
 - TAREA 4.1: Recepción del pedido de huésped
     - AS-IS 4.1: Recepción del pedido de huésped
         - ¿Qué es esta tarea?
@@ -934,9 +1040,8 @@ Creado: 30 de marzo de 2026 9:50
             - Frecuencia: Bajo demanda, durante el turno de la tarde (3:00 PM – 11:00 PM), cada vez que un huésped realiza un pedido.
         - ¿Cómo se hace?
             - Paso 1: El mesonero se acerca al huésped en la mesa y toma el pedido.
-            - Paso 2: El mesonero transmite el pedido a caja.
+            - Paso 2: El mesonero transmite el pedido a caja de forma manual mediante la comandera física que tiene cada mesonero.
             - Paso 3: El cajero recibe el pedido y procede a crearlo en Poster (Tarea 4.2).
-            - El pedido se transmite de forma manual a través de la comandera física que tiene cada mesonero.
         - ¿Qué necesitan para hacer esta tarea?
             - Pedido del huésped transmitido por el mesonero.
         - ¿Qué se genera al terminar?
@@ -952,29 +1057,285 @@ Creado: 30 de marzo de 2026 9:50
 
 ---
 
+- TAREA 4.2: Creación de comanda en sistema Poster (habitación, nombre, pedido)
+    - AS-IS 4.2: Creación de comanda en Poster con habitación, nombre y pedido
+        - ¿Qué es esta tarea?
+            - Registro en el sistema Poster del pedido recibido del mesonero durante el turno de tarde, asignando el número de habitación, el nombre del huésped y los ítems solicitados. Equivale a la Tarea 1.9 de la fase de desayuno, aplicada al servicio de almuerzo, snacks y cena.
+        - ¿Para qué se hace?
+            - Para registrar formalmente el pedido del huésped en el sistema y generar la comanda que se imprimirá y enviará al área de preparación correspondiente (cocina, barra o snacks).
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde (Michelle Montenegro): crea la comanda en Poster a partir del pedido transmitido por el mesonero.
+        - ¿Cuándo se hace?
+            - Disparador: Recepción del pedido del huésped transmitido por el mesonero (Tarea 4.1).
+            - Frecuencia: Bajo demanda, durante el turno de la tarde (3:00 PM – 11:00 PM), cada vez que se recibe un pedido.
+        - ¿Cómo se hace?
+            - Paso 1: Se abre el sistema Poster.
+            - Paso 2: Se crea una nueva comanda.
+            - Paso 3: Se asigna el número de habitación del huésped a la comanda.
+            - Paso 4: Se registra el nombre del huésped.
+            - Paso 5: Se agregan los ítems del pedido a la comanda.
+        - ¿Qué necesitan para hacer esta tarea?
+            - PC de caja operativa con acceso a sistema Poster y conexión a Internet. Pedido del huésped transmitido por el mesonero mediante la comandera física (Tarea 4.1).
+        - ¿Qué se genera al terminar?
+            - Comanda creada en Poster con habitación, nombre y pedido registrados, lista para ser confirmada con el mesonero (Tarea 4.3) e impresa (Tarea 4.4).
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema Poster: sistema de punto de venta donde se crea y gestiona la comanda.
+            - PC de caja: equipo desde el que el cajero opera Poster.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el cajero no comprende lo escrito en la comandera física, no debe suponer; llama al mesonero para aclarar el pedido antes de marcarlo en Poster.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.2: Creación de comanda en Poster con habitación, nombre y pedido
+        - Pendiente.
+
+---
+
+- TAREA 4.3: Confirmación con el mesero
+    - AS-IS 4.3: Confirmación con el mesero
+        - ¿Qué es esta tarea?
+            - Verificación con el mesonero de que el pedido registrado en Poster coincide con lo que el huésped solicitó, antes de imprimir la comanda y enviarla al área de preparación.
+        - ¿Para qué se hace?
+            - Para evitar errores en el pedido procesado y asegurar que lo que se envía a cocina, barra o snacks corresponde exactamente a lo solicitado por el huésped.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde: confirma con el mesonero los ítems registrados.
+            - Mesonero del turno de tarde: valida que el pedido en Poster coincide con el que tomó en la mesa.
+        - ¿Cuándo se hace?
+            - Disparador: Creación de la comanda en Poster (Tarea 4.2).
+            - Frecuencia: Bajo demanda, cada vez que se crea una comanda durante el turno de tarde.
+        - ¿Cómo se hace?
+            - Paso 1: El cajero revisa con el mesonero los ítems registrados en la comanda de Poster.
+            - Paso 2: El mesonero confirma que el pedido coincide con lo solicitado por el huésped.
+            - Paso 3: Si hay discrepancia, se corrige la comanda en Poster antes de imprimir.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda creada en Poster (Tarea 4.2). Mesonero disponible para confirmar el pedido.
+        - ¿Qué se genera al terminar?
+            - Comanda confirmada como correcta, lista para ser impresa (Tarea 4.4).
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema Poster: para revisar y, de ser necesario, corregir los ítems de la comanda.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.3: Confirmación con el mesero
+        - Pendiente.
+
+---
+
+- TAREA 4.4: Impresión de comanda para cocina/bar/snacks
+    - AS-IS 4.4: Impresión de comanda para cocina, barra o snacks
+        - ¿Qué es esta tarea?
+            - Impresión desde la impresora de caja de la comanda dirigida al área de preparación correspondiente (cocina, barra o área de snacks), una vez confirmada con el mesonero. Equivale a la Tarea 1.10 de la fase de desayuno.
+        - ¿Para qué se hace?
+            - Para que el área de preparación correspondiente reciba físicamente el pedido del huésped, dado que la impresora de cocina no está en funcionamiento actualmente y caja centraliza todas las impresiones.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde: imprime la comanda desde la impresora de caja.
+        - ¿Cuándo se hace?
+            - Disparador: Confirmación del pedido con el mesonero (Tarea 4.3).
+            - Frecuencia: Bajo demanda, cada vez que se confirma una comanda durante el turno de tarde.
+        - ¿Cómo se hace?
+            - Paso 1: La comanda queda confirmada en Poster.
+            - Paso 2: Se imprime la comanda desde la impresora de caja, dirigida a cocina, barra o snacks según corresponda.
+            - Paso 3: El mesonero hace llegar la comanda impresa al área de preparación correspondiente.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda confirmada en Poster. Impresora de caja operativa. Conexión a Internet funcionando.
+        - ¿Qué se genera al terminar?
+            - Comanda impresa para cocina, barra o snacks, lista para que el área correspondiente prepare el pedido.
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema Poster: desde donde se genera la impresión.
+            - Impresora de caja: imprime las comandas para cocina, barra y snacks dado que la impresora de cocina está fuera de servicio.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si el Internet falla: las impresiones de las comandas dejan de procesarse. Si la impresora de caja falla: se realizan las comandas de forma manual.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.4: Impresión de comanda para cocina, barra o snacks
+        - Pendiente.
+
+---
+
+- TAREA 4.5: Verificación del pedido
+    - AS-IS 4.5: Verificación del pedido
+        - ¿Qué es esta tarea?
+            - Verificación de que el pedido esté completo y correcto antes de su entrega al huésped.
+        - ¿Para qué se hace?
+            - Para asegurar que el huésped reciba exactamente lo que solicitó, evitando entregas incompletas o erróneas.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde y/o mesonero del turno de tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Pedido preparado por el área correspondiente y listo para entregar.
+            - Frecuencia: Bajo demanda, cada vez que un pedido está listo para ser entregado al huésped.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisa que el pedido preparado coincida con los ítems registrados en la comanda.
+            - Paso 2: Se confirma que el pedido esté completo antes de su entrega al huésped.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda del pedido como referencia. Pedido preparado por el área correspondiente.
+        - ¿Qué se genera al terminar?
+            - Pedido verificado como completo y correcto, listo para ser entregado al huésped.
+        - ¿Qué sistemas o herramientas usan?
+            - Comanda impresa: usada como referencia para verificar el pedido.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.5: Verificación del pedido
+        - Pendiente.
+
+---
+
+- TAREA 4.6: Recolección de firma de huésped para la comanda
+    - AS-IS 4.6: Recolección de firma de huésped para la comanda
+        - ¿Qué es esta tarea?
+            - Recolección de la firma del huésped en la comanda correspondiente a su consumo de almuerzo, snack o cena, como constancia del servicio recibido. ⚠️ Pendiente confirmar si aplica a todas las comandas del turno de tarde o únicamente a las de cava (el Inventario nombra esta tarea como "comanda de cava", pero por su posición en el flujo del turno de tarde podría aplicar a todas las comandas del servicio).
+        - ¿Para qué se hace?
+            - Para dejar constancia formal de que el huésped recibió y consumió el servicio, sirviendo como respaldo del cargo correspondiente.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a o mesonero del turno de tarde: presenta la comanda al huésped y recolecta su firma.
+        - ¿Cuándo se hace?
+            - Disparador: Entrega del pedido al huésped y cierre de su consumo.
+            - Frecuencia: Bajo demanda, durante el turno de tarde, una vez por comanda al finalizar el consumo del huésped.
+        - ¿Cómo se hace?
+            - Paso 1: Se imprime o presenta la comanda del consumo del huésped.
+            - Paso 2: Se presenta la comanda al huésped.
+            - Paso 3: El huésped firma la comanda como constancia de su consumo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda impresa del consumo del huésped.
+        - ¿Qué se genera al terminar?
+            - Comanda firmada por el huésped, lista para ser enviada a recepción (Tarea 4.7).
+        - ¿Qué sistemas o herramientas usan?
+            - Comanda impresa: documento físico que el huésped firma.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.6: Recolección de firma de huésped para la comanda
+        - Pendiente.
+
+---
+
+- TAREA 4.7: Envío de comandas a recepción desde Poster
+    - AS-IS 4.7: Envío de comandas a recepción desde Poster
+        - ¿Qué es esta tarea?
+            - Envío digital de las comandas del turno de tarde a recepción desde el sistema Poster, usando la función de asignación de habitación vinculada con el sistema de recepción. Equivale a la Tarea 1.13 de la fase de desayuno.
+        - ¿Para qué se hace?
+            - Para que recepción reciba en su sistema el registro digital del consumo del turno de tarde por habitación, que le sirve para el control de cuenta de los huéspedes.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde (Michelle Montenegro): envía la comanda a recepción desde Poster.
+        - ¿Cuándo se hace?
+            - Disparador: Firma de la comanda por el huésped (Tarea 4.6).
+            - Frecuencia: Bajo demanda, una por habitación al finalizar el consumo del huésped en el turno de tarde.
+        - ¿Cómo se hace?
+            - Paso 1: En Poster se accede a la comanda de la habitación.
+            - Paso 2: Se asigna la habitación usando el botón de asignación en Poster (vinculado con el sistema de recepción).
+            - Paso 3: Se da enviar. El registro llega al sistema de recepción.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Comanda de la habitación en Poster. Conexión a Internet operativa para la sincronización entre Poster y el sistema de recepción.
+        - ¿Qué se genera al terminar?
+            - Registro digital del consumo de la habitación enviado y recibido en el sistema de recepción.
+        - ¿Qué sistemas o herramientas usan?
+            - Sistema Poster: desde donde se genera y envía la comanda a recepción.
+            - Sistema de recepción (Clover): recibe la comanda enviada desde Poster.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si falla el envío, el cajero anota el número de comanda y habitación en una lista de contingencia y notifica a recepción por WhatsApp o radio para que carguen el monto manualmente.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.7: Envío de comandas a recepción desde Poster
+        - Pendiente.
+
+---
+
+- TAREA 4.8: Inventario de productos
+    - AS-IS 4.8: Inventario de productos
+        - ¿Qué es esta tarea?
+            - Revisión del inventario de productos del área de caja durante el turno de tarde o al cierre del servicio de cena, para determinar el estado del stock y la necesidad de reposición. Equivale al proceso de inventario cíclico de la fase de desayuno (Tareas 1.3, 1.4 y 1.16).
+        - ¿Para qué se hace?
+            - Para mantener actualizado el inventario del área de caja durante el turno de tarde y determinar si se requiere reposición de nevera, vitrina u otros productos.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Inicio o cierre del turno de tarde, o de forma cíclica durante el servicio.
+            - Frecuencia: Diaria, durante el turno de tarde. ⚠️ Pendiente validar periodicidad exacta en sesión próxima.
+        - ¿Cómo se hace?
+            - Paso 1: Se revisa el nivel de stock de neveras, vitrina y demás productos del área de caja.
+            - Paso 2: Se actualiza el inventario y se determina si se requiere reposición.
+            - Paso 3: Si se requiere reposición, se activa el proceso desde el almacén de caja o la requisición a almacén general (Área 3).
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso a neveras, vitrina y almacén de caja. Hoja de inventario.
+        - ¿Qué se genera al terminar?
+            - Inventario actualizado del área de caja en el turno de tarde.
+        - ¿Qué sistemas o herramientas usan?
+            - Hoja de inventario: documento manual donde se registra el estado del stock.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si hay faltantes: se activa el proceso de reposición desde el almacén de caja o, si este tampoco tiene, la requisición a almacén general (Área 3).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.8: Inventario de productos
+        - Pendiente.
+
+---
+
+- TAREA 4.9: Limpieza de área
+    - AS-IS 4.9: Limpieza de área
+        - ¿Qué es esta tarea?
+            - Limpieza del área de caja al cierre del turno de tarde o al cierre del servicio de cena. Equivale a la Tarea 1.17 de la fase de desayuno.
+        - ¿Para qué se hace?
+            - Para mantener el área de caja en condiciones adecuadas al finalizar el turno de tarde y dejarla lista para el siguiente turno o jornada.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde.
+        - ¿Cuándo se hace?
+            - Disparador: Cierre del turno de tarde o del servicio de cena.
+            - Frecuencia: Diaria, al cierre del turno de tarde.
+        - ¿Cómo se hace?
+            - Paso 1: Se realiza la limpieza del piso del área de caja.
+            - Paso 2: Se pasa un lito a las neveras y a sus partes inferiores.
+            - Paso 3: Se realiza la limpieza de las vitrinas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Insumos de limpieza disponibles en el área.
+        - ¿Qué se genera al terminar?
+            - Área de caja limpia y lista para el siguiente turno o proceso.
+        - ¿Qué sistemas o herramientas usan?
+            - Insumos de limpieza.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.9: Limpieza de área
+        - Pendiente.
+
+---
+
+- TAREA 4.10: Alimentar a las guacamayas
+    - AS-IS 4.10: Alimentar a las guacamayas
+        - ¿Qué es esta tarea?
+            - Alimentación de las guacamayas del hotel a las 4:30 PM, responsabilidad asignada al cajero del turno de tarde.
+        - ¿Para qué se hace?
+            - Para garantizar la alimentación diaria de las guacamayas del hotel en el horario establecido.
+        - ¿Qué roles ejecutan esta tarea?
+            - Cajero/a del turno de tarde (Michelle Montenegro): tiene una alarma programada para recordar esta tarea (confirmado en sesión kmmin003).
+        - ¿Cuándo se hace?
+            - Disparador: Llegada de la hora establecida (4:30 PM), avisada por alarma programada.
+            - Frecuencia: Diaria, a las 4:30 PM.
+        - ¿Cómo se hace?
+            - Paso 1: A las 4:30 PM, avisada por la alarma programada, el cajero del turno de tarde acude a alimentar a las guacamayas.
+            - Paso 2: Se realiza la alimentación de las guacamayas.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Alimento para las guacamayas. Alarma programada como recordatorio.
+        - ¿Qué se genera al terminar?
+            - Guacamayas alimentadas en el horario establecido.
+        - ¿Qué sistemas o herramientas usan?
+            - Alarma programada: recordatorio para ejecutar la tarea a las 4:30 PM.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - Si la cajera no puede atender la tarea en el momento (por estar atendiendo a un huésped u otra gestión), delega la alimentación de las guacamayas a un compañero disponible (confirmado en sesión kmmin003, donde se solicita a "Fran" o "Ángel" que la realicen).
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.10: Alimentar a las guacamayas
+        - Pendiente.
+
+---
+
 ## Propuestas de Adición — AABB Caja
 
 **Fuente:** CHECK 1 — Inventario A y B (Caja) vs AS-IS.
 
-Existen 9 tareas documentadas en el Inventario que no estaban en el AS-IS original. La Fase 4 (Almuerzos/Snacks/Cenas) solo contiene las tareas 4.0 y 4.1 en el AS-IS; el Inventario documenta además las tareas 4.2 a 4.10, que cubren el ciclo completo de procesamiento de comandas en el turno de tarde, incluyendo confirmación con mesonero, impresión, verificación, firma del huésped, envío a recepción, inventario de cierre, limpieza y alimentación de guacamayas. Propongo agregar:
-
-1. **Tarea 4.2 — Creación de comanda en sistema Poster (habitación, nombre, pedido):** Registro del pedido del mesonero en Poster con habitación, nombre del huésped y ítems solicitados. Equivalente a Tarea 1.9 en la fase de desayuno pero para el turno de tarde. Fuente: Inventario Caja Tarea 4.2; confirmado en kmmin003 (Michelle Montenegro).
-
-2. **Tarea 4.3 — Confirmación con el mesero:** Verificación con el mesonero de que el pedido registrado en Poster es correcto antes de imprimir la comanda. Fuente: Inventario Caja Tarea 4.3.
-
-3. **Tarea 4.4 — Impresión de comanda para cocina/bar/snacks:** Impresión desde la impresora de caja de la comanda dirigida al área de preparación correspondiente (cocina, barra o área de snacks). Equivalente a Tarea 1.10 en la fase de desayuno. Fuente: Inventario Caja Tarea 4.4; confirmado en kmmin003.
-
-4. **Tarea 4.5 — Verificación del pedido:** Verificación de que el pedido esté completo y correcto antes de su entrega al huésped. Fuente: Inventario Caja Tarea 4.5.
-
-5. **Tarea 4.6 — Recolección de firma de huésped para la comanda de cava:** Recolección de firma del huésped en la comanda correspondiente al consumo de almuerzo, snack o cena. Nota: el nombre en el Inventario hace referencia a "cava" pero por contexto y posición en el flujo corresponde a la firma de la comanda del servicio de tarde en general. Fuente: Inventario Caja Tarea 4.6. ⚠️ Pendiente confirmar si aplica a todas las comandas del turno de tarde o solo a las de cava.
-
-6. **Tarea 4.7 — Envío de comandas a recepción desde Poster:** Envío digital de las comandas del turno de tarde a recepción desde Poster, equivalente a Tarea 1.13 de la fase de desayuno. Fuente: Inventario Caja Tarea 4.7; confirmado en kmmin003.
-
-7. **Tarea 4.8 — Inventario de productos:** Revisión del inventario de productos al cierre o durante el turno de tarde, equivalente al proceso de inventario cíclico de la fase de desayuno. Fuente: Inventario Caja Tarea 4.8.
-
-8. **Tarea 4.9 — Limpieza de área:** Limpieza del área de caja al cierre del turno de tarde o al cierre del servicio de cena. Fuente: Inventario Caja Tarea 4.9.
-
-9. **Tarea 4.10 — Alimentar a las guacamayas:** Alimentación de las guacamayas del hotel a las 4:30 PM. Responsabilidad del cajero del turno de tarde. Michelle Montenegro (kmmin003) confirma que tiene alarma programada para esta tarea. Fuente: Inventario Caja Tarea 4.10; confirmado en kmmin003.
+Propuestas de adición de tareas: ninguna pendiente. Las 9 tareas de Fase 4 (4.2 a 4.10) documentadas en el Inventario fueron aprobadas e incorporadas como bloques AS-IS en el Área 4 (Almuerzos/Snacks/Cenas) el 2026-06-12.
 
 **Nuevos alias identificados durante el procesamiento de este área:**
 - Michelle Montenegro: cajera (turno mañana/tarde). No está en la tabla de alias del proyecto.

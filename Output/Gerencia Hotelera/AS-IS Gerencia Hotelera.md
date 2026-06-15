@@ -3,11 +3,13 @@
 Creado: 10 de marzo de 2026 10:32
 
 ---
-**Procesado:** 2026-05-04
+**Procesado:** 2026-05-04. Normalizado contra plantilla 2026-06-12.
 **Fuentes:** Inventario (326653cd), Minuta kmmin001 (20260213), Minuta kmmin002 (20260309 sesion 1), Minuta kmmin003 (20260309 sesion 2)
 **Pipeline:** CHECK 1 Cobertura OK — CHECK 2 Completitud aplicado — CHECK 3 Coherencia aplicado
-**Aliases corregidos:** Erika → Ericka Milagro Antequera; Libny/Libni/Linny → Libny Carina Tarazon Gallegos; Juan → Juan Jose Herrera Rangel; Lourdes → Lourdes Concepcion Sifontes Guerrero; Victor → Victor Manuel Perez Carrizalez; Adriana → Adriana Montes Caceres
+**Aliases corregidos:** Erika → Ericka Milagro Antequera; Libny/Libni/Linny → Libny Carina Tarazon Gallegos; Juan → Juan Jose Herrera Rangel; Lourdes → Lourdes Concepcion Sifontes Guerrero; Victor → Victor Manuel Perez Carrizalez; Adriana → Adriana Montes Caceres; Sr. Rafael → Enrique Rafael Cid; señor Alberto / el doctor → Alberto Cid Navarro; Jesús → Jesus Gonzalez; Francis → Francis (apellido pendiente); Sr. Francisco → Francisco (apellido pendiente)
 ---
+
+# Área 1: Operaciones de Recepción y Administración
 
 - TAREA 1.1.1: Check-in de los huéspedes
     - AS-IS 1.1.1: Check-in de los huéspedes
@@ -17,7 +19,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para hospedar a los huéspedes en el hotel.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal).
-            - Adriana (supervisora/jefa de recepción) brinda soporte cuando es necesario.
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): brinda soporte cuando es necesario.
         - ¿Cuándo se hace?
             - Disparador: Llegada de un huésped al hotel.
             - Frecuencia: Cada vez que llega un huésped.
@@ -54,12 +56,15 @@ Creado: 10 de marzo de 2026 10:32
             - **Documento físico de normativas**: Entregado al huésped para firma.
         - ¿Qué pasa cuando las cosas no salen normal?
             - **Reservas institucionales sin pago**: Huéspedes enviados por instituciones (ej. Parques, policía, CPC). No se les cobra hospedaje; se hace la reserva sin pago registrado.
-            - **Family & Friends**: Huéspedes referidos por el dueño (señor Rafael). No se les cobra o se aplica tarifa especial autorizada directamente por presidencia. No hay formato estandarizado; la instrucción llega por mensaje directo del señor Rafael.
+            - **Family & Friends**: Huéspedes referidos por el dueño, Enrique Rafael Cid (Presidente). No se les cobra o se aplica tarifa especial autorizada directamente por presidencia. No hay formato estandarizado; la instrucción llega por mensaje directo de Enrique Rafael Cid (Presidente).
             - **Alianza Venetur**: Llega carta de Venetur indicando nombre del huésped y fecha. Se hace la reserva, se registran datos pero no se cobra hospedaje ni desayuno. El cruce de cuentas lo gestiona administración directamente con Venetur.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Contar con un código QR que el huésped pueda escanear para acceder a las normativas del hotel desde su teléfono, en lugar de entregarlas solo en físico. Esto agilizaría el proceso y permitiría al huésped consultarlas cuando quiera.
     - Propuesta 1.1.1: Check-in de los huéspedes
         - Pendiente.
+
+---
+
 - TAREA 1.1.2: Registro de datos de los huéspedes en sistema Cloudbeds
     - AS-IS 1.1.2: Registro de datos de los huéspedes en sistema Cloudbeds
         - ¿Qué es esta tarea?
@@ -68,7 +73,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para mantener un registro actualizado de los huéspedes en el sistema y evitar duplicados.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal).
-            - Adriana (supervisora) cuando brinda soporte.
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): cuando brinda soporte.
         - ¿Cuándo se hace?
             - Disparador: Al momento de crear una reserva o al realizar el check-in de un huésped.
             - Frecuencia: Cada vez que ingresa un huésped nuevo o se crea una reserva.
@@ -92,6 +97,9 @@ Creado: 10 de marzo de 2026 10:32
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.1.2: Registro de datos de los huéspedes en sistema Cloudbeds
         - Pendiente.
+
+---
+
 - TAREA 1.1.3: Gestión de cobros multimedia (PDV, Zelle, Pago Móvil, Transferencias, Efectivo, Binance)
     - AS-IS 1.1.3: Gestión de cobros multimedia
         - ¿Qué es esta tarea?
@@ -100,7 +108,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para validar que los pagos de los huéspedes hayan sido recibidos correctamente antes de proceder con el registro o la salida.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal).
-            - Administración (Libni o Erika): validan los pagos por pago móvil, transferencia, Zelle y Cachea. Son las únicas con acceso al banco.
+            - Administración: Libny Carina Tarazon Gallegos (Coordinadora de Administración, Hotel) o Ericka Milagro Antequera (Gerente de Administración y Finanzas). Validan los pagos por pago móvil, transferencia, Zelle y Cachea. Son las únicas con acceso al banco.
             - El equipo de recepción gestiona y verifica PDV y efectivo directamente.
         - ¿Cuándo se hace?
             - Disparador: Recepción de un pago por parte del huésped, ya sea en el check-in (reserva o ingreso por puerta) o en el check-out.
@@ -112,7 +120,7 @@ Creado: 10 de marzo de 2026 10:32
             - Paso 3: No requiere validación con administración.
             - **Pago móvil y transferencia:**
             - Paso 1: El huésped envía el capture (screenshot) del pago por correo electrónico o WhatsApp.
-            - Paso 2: La recepcionista reenvía el capture a administración (Libni o Erika) para validación.
+            - Paso 2: La recepcionista reenvía el capture a administración (Libny Carina Tarazon Gallegos o Ericka Milagro Antequera) para validación.
             - Paso 3: Administración confirma que el pago llegó a la cuenta, copiando la información de referencia, fecha y monto.
             - Paso 4: Una vez confirmado, se registra el pago en Cloudbeds.
             - **Zelle:**
@@ -140,7 +148,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Qué necesitan para hacer esta tarea?
             - Capture (screenshot) del pago enviado por el huésped (para pago móvil, transferencia, Zelle, Cachea y Binance).
             - Acceso a Cloudbeds para verificar si el pago ya está registrado.
-            - Contacto directo con administración (Libni o Erika) vía WhatsApp para validación.
+            - Contacto directo con administración (Libny Carina Tarazon Gallegos o Ericka Milagro Antequera) vía WhatsApp para validación.
             - Terminal de punto de venta físico.
         - ¿Qué se genera al terminar?
             - Confirmación del pago validado por administración (en los casos que aplica).
@@ -160,6 +168,9 @@ Creado: 10 de marzo de 2026 10:32
             - Que los pagos de servicio (10% correspondiente a los mesoneros) sean cobrados directamente en el departamento de Alimentos y Bebidas, y no pasen por recepción, para simplificar el proceso de check-out.
     - Propuesta 1.1.3: Gestión de cobros multimedia
         - Pendiente.
+
+---
+
 - TAREA 1.1.4: Carga y conciliación de pagos en sistema Cloudbeds
     - AS-IS 1.1.4: Carga y conciliación de pagos en sistema Cloudbeds
         - ¿Qué es esta tarea?
@@ -168,7 +179,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para reflejar en el sistema el pago recibido, actualizar el saldo pendiente del huésped y generar la confirmación automática por correo electrónico.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal para la mayoría de métodos).
-            - Administración (Libni o Erika): montan en sistema los pagos realizados en Zelle y efectivo.
+            - Administración: Libny Carina Tarazon Gallegos (Coordinadora de Administración, Hotel) o Ericka Milagro Antequera (Gerente de Administración y Finanzas). Montan en sistema los pagos realizados en Zelle y efectivo.
         - ¿Cuándo se hace?
             - Disparador: Pago del huésped validado por administración (o verificado directamente por recepción en caso de PDV y efectivo).
             - Frecuencia: Cada vez que se recibe y valida un pago. En momentos de alta ocupación, puede realizarse después de que el huésped ya pasó por recepción.
@@ -210,7 +221,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para registrar contablemente el pago recibido y adelantar la facturación del huésped.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal).
-            - Adriana brinda soporte cuando hay dudas o errores en el registro.
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): brinda soporte cuando hay dudas o errores en el registro.
         - ¿Cuándo se hace?
             - Disparador: Pago del huésped ya registrado en Cloudbeds.
             - Frecuencia: Cada vez que se registra un pago en Cloudbeds.
@@ -235,8 +246,8 @@ Creado: 10 de marzo de 2026 10:32
             - **Odoo** (módulo Contabilidad → Clientes → Recibo de cliente): Creación del registro contable del pago.
         - ¿Qué pasa cuando las cosas no salen normal?
             - **Duplicación de clientes**: Ocurre cuando no se verifica si el cliente ya existe antes de crear uno nuevo. Se ha identificado como un error frecuente.
-            - **Errores de tipeo**: Monto incorrecto, cero de más, banco equivocado, método de pago mal clasificado. Adriana brinda soporte para corregirlos.
-            - **Transferencia inmediata vs. pago móvil**: A veces no es claro si una operación es transferencia o pago móvil. Se consulta con Adriana para definir la clasificación correcta.
+            - **Errores de tipeo**: Monto incorrecto, cero de más, banco equivocado, método de pago mal clasificado. Adriana Montes Caceres brinda soporte para corregirlos.
+            - **Transferencia inmediata vs. pago móvil**: A veces no es claro si una operación es transferencia o pago móvil. Se consulta con Adriana Montes Caceres para definir la clasificación correcta.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.1.5: Carga de registros contables en sistema Odoo
@@ -272,7 +283,7 @@ Creado: 10 de marzo de 2026 10:32
             - **Cloudbeds**: Fuente de los datos del pago que se copian a Teams.
             - **Odoo**: Fuente del número de recibo de cliente que se anexa en Teams.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - No se identificaron excepciones para esta tarea. Adriana Montes Caceres indicó que en Teams se publica todo (todos los pagos del huésped: hospedaje, consumo, servicio) sin condiciones especiales; es un proceso de copiar y pegar la información de Cloudbeds y adjuntar el comprobante.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.1.6: Anexo y reporte de ingresos en plataforma Microsoft Teams
@@ -330,7 +341,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para dar acceso al huésped a su habitación durante el período autorizado de estadía.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (llaves de huéspedes).
-            - Adriana, el señor Rafael o Jesús (únicamente para llaves maestras, por requerir usuario administrador).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento), Enrique Rafael Cid (Presidente) o Jesus Gonzalez (Admin Sistemas TT Hotel): únicamente para llaves maestras, por requerir usuario administrador.
         - ¿Cuándo se hace?
             - Disparador: Completado el check-in del huésped.
             - Frecuencia: Cada vez que se realiza un check-in.
@@ -357,7 +368,7 @@ Creado: 10 de marzo de 2026 10:32
             - **TT Hotel**: Programación de cerraduras inteligentes en los módulos 4, 2, 7-1 y 7-2.
             - **Time Locks / Lockia**: Programación de cerraduras magnéticas en habitaciones que aún no tienen cerradura inteligente.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Llave bloqueada o que no funciona**: Se intenta reprogramar. Si la habitación requiere acceso de tipo "supervisora" o "maestra" (como el caso de Francis, supervisora de ama de llaves), la programación debe hacerse con usuario administrador. Con usuario de recepción no se puede crear ese tipo de llave.
+            - **Llave bloqueada o que no funciona**: Se intenta reprogramar. Si la habitación requiere acceso de tipo "supervisora" o "maestra" (como el caso de Francis, apellido pendiente (Supervisora Ama de Llaves)), la programación debe hacerse con usuario administrador. Con usuario de recepción no se puede crear ese tipo de llave.
             - **No todas las habitaciones tienen el mismo sistema**: Según el tipo de habitación, se usa TT Hotel o Time Locks. El proceso está en transición hacia cerraduras inteligentes en todas las habitaciones.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que todas las habitaciones cuenten con cerradura inteligente (TT Hotel), eliminando la necesidad de usar dos sistemas distintos. Actualmente es un proceso en transición.
@@ -373,7 +384,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para que el personal autorizado (supervisores, jefes, ama de llaves) pueda acceder a múltiples habitaciones según sus funciones operativas.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana, el señor Rafael o Jesús (requiere usuario con perfil de administrador; no puede realizarse con usuario de recepción estándar).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento), Enrique Rafael Cid (Presidente) o Jesus Gonzalez (Admin Sistemas TT Hotel): requiere usuario con perfil de administrador; no puede realizarse con usuario de recepción estándar.
         - ¿Cuándo se hace?
             - Disparador: Solicitud de llave maestra para un nuevo supervisor, jefe o personal de ama de llaves, o cuando una llave maestra existente se bloquea o pierde.
             - Frecuencia: Bajo demanda.
@@ -391,11 +402,14 @@ Creado: 10 de marzo de 2026 10:32
             - **TT Hotel**: Para habitaciones con cerradura inteligente.
             - **Time Locks / Lockia**: Para habitaciones con cerradura magnética.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Llave bloqueada**: Si se intenta reprogramar con usuario de recepción (no administrador), el sistema no permite crear la llave maestra. Debe usarse el usuario administrador. Esto ocurrió con la llave de Francis (supervisora de ama de llaves).
+            - **Llave bloqueada**: Si se intenta reprogramar con usuario de recepción (no administrador), el sistema no permite crear la llave maestra. Debe usarse el usuario administrador. Esto ocurrió con la llave de Francis, apellido pendiente (Supervisora Ama de Llaves).
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.1.9: Realización de llaves maestras para ama de llaves, jefes y supervisores
         - Pendiente.
+
+---
+
 - TAREA 1.2.1: Gestión de cobros de consumos y servicios adicionales
     - AS-IS 1.2.1: Gestión de cobros de consumos y servicios adicionales
         - ¿Qué es esta tarea?
@@ -404,7 +418,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para cobrar al huésped el total de sus consumos adicionales al hospedaje antes de que realice su salida del hotel.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal en check-out).
-            - Adriana brinda soporte ante disputas, reclamos o casos complejos.
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): brinda soporte ante disputas, reclamos o casos complejos.
             - Departamento de Alimentos y Bebidas: entrega las comandas físicas diariamente a recepción y las carga previamente en Poster, que se sincroniza con Cloudbeds.
         - ¿Cuándo se hace?
             - Disparador: El huésped se presenta en recepción para realizar el check-out.
@@ -454,7 +468,8 @@ Creado: 10 de marzo de 2026 10:32
             - Disparador: Cobro de consumos y/o servicios completado al momento del check-out.
             - Frecuencia: Cada vez que se realiza un check-out con consumos.
         - ¿Cómo se hace?
-            - El proceso es idéntico al de la tarea 1.1.4 (Carga y conciliación de pagos en Cloudbeds), con la única diferencia en el campo "ingreso por": en lugar de "hospedaje" o "reserva", se especifica "consumo" o "servicio" según corresponda.
+            - Paso 1: Ejecutar el mismo procedimiento de la tarea 1.1.4 (Carga y conciliación de pagos en Cloudbeds).
+            - Paso 2: Registrar en el campo "ingreso por" el valor "consumo" o "servicio" según corresponda, en lugar de "hospedaje" o "reserva".
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tarea 1.1.4: comprobante de pago, tasa BCV, acceso a Cloudbeds, confirmación de administración cuando aplica.
         - ¿Qué se genera al terminar?
@@ -482,7 +497,7 @@ Creado: 10 de marzo de 2026 10:32
             - Disparador: Pago de check-out registrado en Cloudbeds.
             - Frecuencia: Cada vez que se realiza un check-out con pago.
         - ¿Cómo se hace?
-            - El proceso es idéntico al de la tarea 1.1.5 (Carga de registros contables en Odoo): módulo Contabilidad → Clientes → Recibo de cliente, con los mismos datos y formato interno de referencia.
+            - Paso 1: Ejecutar el mismo procedimiento de la tarea 1.1.5 (módulo Contabilidad → Clientes → Recibo de cliente), con los mismos datos y formato interno de referencia.
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tarea 1.1.5.
         - ¿Qué se genera al terminar?
@@ -510,7 +525,7 @@ Creado: 10 de marzo de 2026 10:32
             - Disparador: Pago de check-out registrado en Cloudbeds y en Odoo.
             - Frecuencia: Cada vez que se realiza un check-out con pago.
         - ¿Cómo se hace?
-            - El proceso es idéntico al de la tarea 1.1.6, con la diferencia de que los pagos publicados corresponden a consumo y/o servicio, no a hospedaje.
+            - Paso 1: Ejecutar el mismo procedimiento de la tarea 1.1.6, publicando los pagos de consumo y/o servicio en lugar de hospedaje.
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tarea 1.1.6.
         - ¿Qué se genera al terminar?
@@ -518,7 +533,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Qué sistemas o herramientas usan?
             - **Microsoft Teams** (carpeta "Ingreso Recepción").
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Mismo esquema que la tarea 1.1.6: no se identificaron excepciones. Se publican en Teams todos los pagos de check-out (consumo y servicio) por copiar y pegar de Cloudbeds, con el comprobante adjunto.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.2.4: Anexo y reporte de ingresos de check-out en plataforma Microsoft Teams
@@ -534,19 +549,19 @@ Creado: 10 de marzo de 2026 10:32
             - Para obtener la confirmación de administración de que el pago fue acreditado en cuenta antes de registrarlo en los sistemas, dado que recepción no tiene acceso directo al banco.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (envío del comprobante).
-            - Administración — Libni o Erika (validación y confirmación).
+            - Administración: Libny Carina Tarazon Gallegos (Coordinadora de Administración, Hotel) o Ericka Milagro Antequera (Gerente de Administración y Finanzas). Validación y confirmación del pago.
         - ¿Cuándo se hace?
             - Disparador: Recepción de un pago por pago móvil o transferencia, tanto en check-in como en check-out.
             - Frecuencia: Cada vez que se recibe un pago por estos métodos. No aplica para PDV ni efectivo.
         - ¿Cómo se hace?
             - Paso 1: El huésped envía el capture del pago por correo electrónico o WhatsApp.
-            - Paso 2: La recepcionista reenvía el capture a administración (Libni o Erika) vía WhatsApp.
+            - Paso 2: La recepcionista reenvía el capture a administración (Libny Carina Tarazon Gallegos o Ericka Milagro Antequera) vía WhatsApp.
             - Paso 3: Administración verifica en la cuenta bancaria que el pago fue recibido.
             - Paso 4: Administración responde con la confirmación, indicando fecha, referencia y monto del ingreso en cuenta.
             - Paso 5: Con esa confirmación, recepción procede a registrar el pago en Cloudbeds y Odoo.
         - ¿Qué necesitan para hacer esta tarea?
             - Capture del pago enviado por el huésped.
-            - Contacto de WhatsApp de Libni o Erika.
+            - Contacto de WhatsApp de Libny Carina Tarazon Gallegos o Ericka Milagro Antequera.
         - ¿Qué se genera al terminar?
             - Confirmación por WhatsApp de administración indicando que el pago fue recibido en cuenta.
         - ¿Qué sistemas o herramientas usan?
@@ -600,15 +615,15 @@ Creado: 10 de marzo de 2026 10:32
             - Para verificar que el inventario físico coincida con el registrado en el sistema y detectar diferencias, mermas o salidas no registradas.
         - ¿Qué roles ejecutan esta tarea?
             - Una ayudante/operadora (realiza el conteo físico manual).
-            - Adriana (valida el conteo físico contra Cloudbeds y gestiona las diferencias).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): valida el conteo físico contra Cloudbeds y gestiona las diferencias.
         - ¿Cuándo se hace?
-            - Disparador: ⚠️ Pendiente validar en sesión próxima (se menciona que es mensual pero no se especifica el día exacto).
+            - Disparador: ⚠️ Pendiente validar con Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): día exacto del mes en que se realiza el inventario.
             - Frecuencia: Mensual.
         - ¿Cómo se hace?
             - Paso 1: La ayudante se desplaza físicamente a las tiendas Mambo y Tienda Playera.
             - Paso 2: Realiza el conteo manual de cada producto, anotando nombre del artículo y cantidad en un cuaderno.
-            - Paso 3: Adriana recibe el cuaderno y compara el conteo físico con el inventario registrado en Cloudbeds.
-            - Paso 4: Si hay diferencias, Adriana investiga el origen (salidas del dueño, ventas a visitantes no registradas, errores de carga) y realiza los ajustes necesarios en Cloudbeds.
+            - Paso 3: Adriana Montes Caceres recibe el cuaderno y compara el conteo físico con el inventario registrado en Cloudbeds.
+            - Paso 4: Si hay diferencias, Adriana Montes Caceres investiga el origen (salidas del dueño, ventas a visitantes no registradas, errores de carga) y realiza los ajustes necesarios en Cloudbeds.
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso físico a las tiendas.
             - Cuaderno para registro manual.
@@ -620,7 +635,7 @@ Creado: 10 de marzo de 2026 10:32
             - **Cuaderno físico**: Registro del conteo manual.
             - **Cloudbeds**: Comparación del inventario físico con el registrado en sistema; ajustes de inventario.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Diferencias entre físico y sistema**: Pueden originarse en salidas del dueño (señor Alberto) sin registro, ventas a visitantes no huéspedes anotadas en papel pero no descontadas del sistema, u obsequios entregados por gerencia. Adriana gestiona los ajustes manuales en Cloudbeds.
+            - **Diferencias entre físico y sistema**: Pueden originarse en salidas del dueño (Alberto Cid Navarro, Gerencia General) sin registro, ventas a visitantes no huéspedes anotadas en papel pero no descontadas del sistema, u obsequios entregados por gerencia. Adriana Montes Caceres gestiona los ajustes manuales en Cloudbeds.
             - **Mercancía que entra al hotel sin factura**: El dueño compra productos con dinero propio sin que pasen por el proceso de compras/almacén. Esto genera descuadres en el inventario.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Crear en Cloudbeds un perfil de "cliente visitante genérico" para registrar las ventas a personas que no son huéspedes, de modo que el sistema descuente automáticamente el inventario.
@@ -634,30 +649,30 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 1.4.2: Gestión y envío de pagos a los propietarios (cuentas externas)
     - AS-IS 1.4.2: Gestión y envío de pagos a los propietarios (cuentas externas)
         - ¿Qué es esta tarea?
-            - Recepción y registro de los pagos realizados por clientes en la Tienda Playera, cuyos ingresos van directamente a la cuenta del propietario (el doctor), mediante transferencia o punto de venta propio del propietario.
+            - Recepción y registro de los pagos realizados por clientes en la Tienda Playera, cuyos ingresos van directamente a la cuenta del propietario, Alberto Cid Navarro (Gerencia General), mediante transferencia o punto de venta propio del propietario.
         - ¿Para qué se hace?
             - Para registrar la venta realizada en la Tienda Playera y llevar constancia de los productos vendidos y los pagos correspondientes al propietario.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista en turno (atiende la tienda y emite el recibo de venta).
-            - Adriana (supervisión general).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): supervisión general.
         - ¿Cuándo se hace?
             - Disparador: Un cliente (huésped o visitante) realiza una compra en la Tienda Playera.
             - Frecuencia: Bajo demanda, cada vez que hay una venta.
         - ¿Cómo se hace?
             - Paso 1: El cliente selecciona el producto que desea comprar.
             - Paso 2: Se completa un recibo físico con: nombre del cliente, número de habitación, cantidad, nombre del producto, costo y firma del huésped y del recepcionista en turno.
-            - Paso 3: El cliente realiza el pago directamente a la cuenta del dueño (el doctor): por transferencia a su cuenta o por punto de venta del doctor.
+            - Paso 3: El cliente realiza el pago directamente a la cuenta del propietario, Alberto Cid Navarro (Gerencia General): por transferencia a su cuenta o por punto de venta del propietario.
             - Paso 4: Si el cliente es huésped y prefiere cargar la compra a su habitación, se acumula para cobrar en el check-out.
         - ¿Qué necesitan para hacer esta tarea?
             - Recibo físico de venta (formato en papel).
-            - Terminal de punto de venta del doctor (para pagos con tarjeta).
+            - Terminal de punto de venta del propietario (para pagos con tarjeta).
             - Datos del cliente: nombre y número de habitación (si es huésped).
         - ¿Qué se genera al terminar?
             - Recibo físico de venta firmado por el cliente y el recepcionista.
             - Pago acreditado en la cuenta del propietario (si se pagó al momento).
         - ¿Qué sistemas o herramientas usan?
             - **Recibo físico en papel**: Registro de la venta.
-            - **Punto de venta del doctor**: Para pagos con tarjeta (los fondos van directo a la cuenta del propietario).
+            - **Punto de venta del propietario**: Para pagos con tarjeta (los fondos van directo a la cuenta del propietario).
         - ¿Qué pasa cuando las cosas no salen normal?
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
@@ -675,18 +690,18 @@ Creado: 10 de marzo de 2026 10:32
             - Para controlar las compras de empleados en las tiendas y asegurar que el pago correspondiente llegue al propietario, ya sea por descuento de nómina o pago directo.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista en turno (registro de la venta al empleado).
-            - Adriana (gestiona y envía el reporte a Talento Humano; valida el precio de descuento autorizado por el doctor).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): gestiona y envía el reporte a Talento Humano; valida el precio de descuento autorizado por Alberto Cid Navarro (Gerencia General).
             - Talento Humano (Andrea): recibe el reporte y gestiona el descuento o cobro.
         - ¿Cuándo se hace?
             - Disparador: Un empleado realiza una compra en alguna de las tiendas del hotel.
             - Frecuencia: Bajo demanda, cada vez que un empleado compra en la tienda.
         - ¿Cómo se hace?
             - Paso 1: El empleado solicita un producto de la tienda.
-            - Paso 2: El doctor autoriza el precio con descuento para empleados según el producto.
+            - Paso 2: Alberto Cid Navarro (Gerencia General) autoriza el precio con descuento para empleados según el producto.
             - Paso 3: Se emite un recibo en papel similar al de clientes, pero con nombre y apellido del empleado, número de cédula (en lugar de número de habitación), descripción del producto, precio con descuento y firma del empleado.
             - Paso 4: El recibo se entrega o envía a Talento Humano para que gestione el pago (anteriormente por descuento de nómina; actualmente se está evaluando el cobro directo al empleado).
         - ¿Qué necesitan para hacer esta tarea?
-            - Autorización del precio de descuento por parte del doctor.
+            - Autorización del precio de descuento por parte de Alberto Cid Navarro (Gerencia General).
             - Recibo físico de venta a empleados.
             - Datos del empleado: nombre, apellido y cédula.
         - ¿Qué se genera al terminar?
@@ -708,22 +723,22 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 1.4.4: Registro de movimientos de inventario en Cloudbeds
     - AS-IS 1.4.4: Registro de movimientos de inventario en Cloudbeds
         - ¿Qué es esta tarea?
-            - Actualización manual del inventario en Cloudbeds para registrar entradas de nueva mercancía y salidas no generadas por ventas a huéspedes (salidas del dueño, ventas a visitantes externos, obsequios).
+            - Actualización manual del inventario en Cloudbeds para registrar entradas de nueva mercancía y salidas no generadas por ventas a huéspedes (salidas del dueño, Alberto Cid Navarro (Gerencia General), ventas a visitantes externos, obsequios).
         - ¿Para qué se hace?
             - Para mantener el inventario de las tiendas actualizado en Cloudbeds, de modo que el sistema refleje con precisión el stock disponible y permita a recepción consultar precios, códigos y cantidades.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal y único para esta tarea).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal y único para esta tarea.
         - ¿Cuándo se hace?
             - Disparador: Ingreso de nueva mercancía a las tiendas, o salida de productos no generada por venta a huésped (salida del dueño, venta a visitante, obsequio).
             - Frecuencia: Bajo demanda, cada vez que hay un movimiento de inventario no registrado automáticamente.
         - ¿Cómo se hace?
             - **Para entradas de mercancía:**
             - Paso 1: La proveedora o el dueño trae nueva mercancía a la tienda.
-            - Paso 2: Adriana registra los productos en Cloudbeds: nombre del producto, cantidad, precio/monto y código.
+            - Paso 2: Adriana Montes Caceres registra los productos en Cloudbeds: nombre del producto, cantidad, precio/monto y código.
             - Paso 3: El sistema queda actualizado para que recepción pueda consultar y vender desde allí.
             - **Para salidas no generadas por ventas a huéspedes:**
             - Paso 1: Se identifica la salida: venta a visitante externo anotada en papel, salida del dueño, obsequio.
-            - Paso 2: Adriana descuenta manualmente esa unidad del inventario en Cloudbeds.
+            - Paso 2: Adriana Montes Caceres descuenta manualmente esa unidad del inventario en Cloudbeds.
             - Nota: Las ventas a huéspedes registradas en Cloudbeds generan el descuento automático del inventario. Solo las salidas no estándar requieren ajuste manual.
         - ¿Qué necesitan para hacer esta tarea?
             - Información de la mercancía que ingresa (nombre, cantidad, precio).
@@ -736,7 +751,7 @@ Creado: 10 de marzo de 2026 10:32
             - **Papel/cuaderno**: Anotación temporal de ventas a visitantes hasta que se descuenten manualmente del sistema.
         - ¿Qué pasa cuando las cosas no salen normal?
             - **Salidas del dueño sin registro**: El propietario retira productos sin notificar, lo que genera diferencias entre el inventario físico y el del sistema.
-            - **Mercancía que entra sin factura**: El dueño compra productos con dinero propio sin pasar por almacén/compras, por lo que no existe un documento de entrada formal. Adriana los registra directamente en Cloudbeds al momento de recibirlos.
+            - **Mercancía que entra sin factura**: El dueño compra productos con dinero propio sin pasar por almacén/compras, por lo que no existe un documento de entrada formal. Adriana Montes Caceres los registra directamente en Cloudbeds al momento de recibirlos.
             - **No existe un perfil de "visitante" en Cloudbeds**: Las ventas a personas que no son huéspedes no se pueden registrar directamente en el sistema como una transacción; se anotan en papel y se ajustan manualmente.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que exista en Cloudbeds un perfil de "cliente visitante genérico" para registrar ventas a no-huéspedes directamente, de modo que el sistema descuente el inventario automáticamente.
@@ -753,13 +768,13 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para que el sistema refleje los precios actuales de los productos de las tiendas y recepción pueda cobrar correctamente al momento de la venta.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal y único para esta tarea).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal y único para esta tarea.
         - ¿Cuándo se hace?
-            - Disparador: Instrucción del propietario (doctor) o de la proveedora de la tienda Mambo indicando un cambio de precio, o llegada de nueva mercancía con etiquetas de precio ya definidas.
+            - Disparador: Instrucción del propietario, Alberto Cid Navarro (Gerencia General), o de la proveedora de la tienda Mambo indicando un cambio de precio, o llegada de nueva mercancía con etiquetas de precio ya definidas.
             - Frecuencia: Bajo demanda, cada vez que hay un cambio de precio.
         - ¿Cómo se hace?
             - Paso 1: El propietario o la proveedora de Mambo informa el nuevo precio del producto (en algunos casos, la proveedora trae la mercancía con etiquetas de precio ya colocadas).
-            - Paso 2: Adriana accede a Cloudbeds y localiza el producto correspondiente.
+            - Paso 2: Adriana Montes Caceres accede a Cloudbeds y localiza el producto correspondiente.
             - Paso 3: Actualiza el precio, la cantidad y/o cualquier otro dato del producto en el sistema.
         - ¿Qué necesitan para hacer esta tarea?
             - Instrucción o autorización del propietario o de la proveedora con el nuevo precio.
@@ -777,6 +792,8 @@ Creado: 10 de marzo de 2026 10:32
 
 ---
 
+# Área 2: Ventas, Atención y Gestión de Talento
+
 - TAREA 2.1.1: Gestión de mensajería a través de Visito
     - AS-IS 2.1.1: Gestión de mensajería a través de Visito
         - ¿Qué es esta tarea?
@@ -784,7 +801,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para atender de manera centralizada y eficiente las consultas, solicitudes de información y reservas que llegan por los canales digitales del hotel.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (supervisión principal y atención en momentos de alta demanda).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): supervisión principal y atención en momentos de alta demanda.
             - Recepcionista (atención en momentos de baja afluencia).
             - Operadoras/ayudantes (apoyo cuando están disponibles, aunque con frecuencia se ausentan de la tarea por otras demandas).
             - Visito (IA): responde automáticamente la mayoría de las consultas.
@@ -793,7 +810,7 @@ Creado: 10 de marzo de 2026 10:32
             - Frecuencia: Revisión diaria y continua durante el turno.
         - ¿Cómo se hace?
             - Paso 1: Los mensajes de clientes llegan a través de WhatsApp e Instagram y son recibidos y respondidos automáticamente por la IA de Visito.
-            - Paso 2: La recepcionista (o Adriana) monitorea en tiempo real lo que responde la IA para verificar que las respuestas sean correctas.
+            - Paso 2: La recepcionista (o Adriana Montes Caceres) monitorea en tiempo real lo que responde la IA para verificar que las respuestas sean correctas.
             - Paso 3: Si la IA comete un error o la respuesta es incorrecta, se cambia a modo manual y se responde directamente.
             - Paso 4: Si el cliente solicita atención humana o el flujo se complica, un asesor humano toma la conversación.
             - Paso 5: Si el cliente quiere hacer una reserva y no usa el link automático que la IA le envía, la recepcionista toma los datos y la registra manualmente en Cloudbeds.
@@ -824,22 +841,22 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 2.1.2: Revisión y respuesta de correos electrónicos corporativos
     - AS-IS 2.1.2: Revisión y respuesta de correos electrónicos corporativos
         - ¿Qué es esta tarea?
-            - Revisión diaria de los correos electrónicos corporativos del hotel (recepción, reservas y correo de Adriana) para atender pagos recibidos, solicitudes de reserva y otras comunicaciones de clientes o proveedores.
+            - Revisión diaria de los correos electrónicos corporativos del hotel (recepción, reservas y correo de Adriana Montes Caceres) para atender pagos recibidos, solicitudes de reserva y otras comunicaciones de clientes o proveedores.
         - ¿Para qué se hace?
             - Para atender solicitudes que llegan por correo electrónico, verificar comprobantes de pago recibidos y gestionar reservas solicitadas por este canal.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (revisión principal; tiene los correos abiertos en su computadora personal todo el tiempo).
-            - Recepcionista (también debe revisar, aunque en momentos de alta afluencia Adriana asume esta tarea).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): revisión principal; tiene los correos abiertos en su computadora personal todo el tiempo.
+            - Recepcionista (también debe revisar, aunque en momentos de alta afluencia Adriana Montes Caceres asume esta tarea).
         - ¿Cuándo se hace?
             - Disparador: Llegada de un correo electrónico (comprobante de pago, solicitud de reserva, consulta).
             - Frecuencia: Revisión diaria y continua.
         - ¿Cómo se hace?
-            - Paso 1: Se revisan los correos entrantes en las cuentas de recepción, reservas y de Adriana.
+            - Paso 1: Se revisan los correos entrantes en las cuentas de recepción, reservas y de Adriana Montes Caceres.
             - Paso 2: Si hay comprobantes de pago, se reenvían a administración para validación y se continúa con el flujo de registro.
             - Paso 3: Si hay solicitudes de reserva, se gestiona la reserva en Cloudbeds y se envía la confirmación al cliente.
             - Paso 4: Si hay solicitudes de información, se responde directamente por correo.
         - ¿Qué necesitan para hacer esta tarea?
-            - Acceso a las cuentas de correo corporativo (recepción, reservas, Adriana).
+            - Acceso a las cuentas de correo corporativo (recepción, reservas, Adriana Montes Caceres).
             - Acceso a Cloudbeds para registrar reservas.
             - Conexión a internet.
         - ¿Qué se genera al terminar?
@@ -848,7 +865,7 @@ Creado: 10 de marzo de 2026 10:32
             - **Correo electrónico corporativo**: Canal de comunicación con clientes.
             - **Cloudbeds**: Registro de reservas solicitadas por correo.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Alta afluencia en recepción**: La recepcionista no tiene tiempo de revisar correos y Adriana asume la tarea completa.
+            - **Alta afluencia en recepción**: La recepcionista no tiene tiempo de revisar correos y Adriana Montes Caceres asume la tarea completa.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.1.2: Revisión y respuesta de correos electrónicos corporativos
@@ -864,7 +881,7 @@ Creado: 10 de marzo de 2026 10:32
             - Para atender a personas que prefieren comunicarse por llamada en lugar de mensajería o correo, ofreciendo confirmación, información y atención personalizada.
         - ¿Qué roles ejecutan esta tarea?
             - Recepcionista (rol principal, atiende el teléfono corporativo del hotel).
-            - Adriana (disponible como respaldo; su número personal también es utilizado por algunos clientes y agencias).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): disponible como respaldo; su número personal también es utilizado por algunos clientes y agencias.
         - ¿Cuándo se hace?
             - Disparador: Llamada entrante al teléfono corporativo.
             - Frecuencia: Bajo demanda, durante el horario de operaciones.
@@ -902,8 +919,8 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para comprometer la habitación al cliente, iniciar el proceso de cobro del abono del 50% y generar la confirmación automática de reserva.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal en reservas).
-            - Recepcionista (ejecuta cuando Adriana no está disponible).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal en reservas.
+            - Recepcionista (ejecuta cuando Adriana Montes Caceres no está disponible).
         - ¿Cuándo se hace?
             - Disparador: El cliente confirma la fecha, cantidad de personas y desea realizar la reserva. No se crea la reserva hasta tener la información definitiva y la confirmación del cliente.
             - Frecuencia: Bajo demanda, cada vez que un cliente confirma una reserva.
@@ -919,12 +936,12 @@ Creado: 10 de marzo de 2026 10:32
             - Se omite el paso de cotización y pago de abono.
             - Para Venetur: llega una carta con los datos del huésped y las fechas. Se crea la reserva directamente.
             - Para institucionales: el jefe envía un mensaje con los datos del huésped.
-            - Para Family & Friends: el señor Rafael informa directamente la tarifa especial, el módulo y los datos.
+            - Para Family & Friends: Enrique Rafael Cid (Presidente) informa directamente la tarifa especial, el módulo y los datos.
         - ¿Qué necesitan para hacer esta tarea?
             - Datos del cliente: nombre, cédula, dirección, teléfono, correo.
             - Disponibilidad de habitaciones verificada en Cloudbeds.
             - Tarifa del día (en Cloudbeds).
-            - Para excepciones: carta de Venetur, mensaje del jefe o instrucción directa del señor Rafael.
+            - Para excepciones: carta de Venetur, mensaje del jefe o instrucción directa de Enrique Rafael Cid (Presidente).
         - ¿Qué se genera al terminar?
             - Reserva registrada en Cloudbeds.
             - Correo automático de confirmación enviado al cliente con datos de la reserva y métodos de pago.
@@ -948,13 +965,13 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para que el equipo de recepción esté preparado y brinde la atención adecuada a cada huésped según sus características o necesidades especiales.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (emite la información al equipo).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): emite la información al equipo.
             - Recepcionista / ayudante (reciben la información y la aplican en la atención).
         - ¿Cuándo se hace?
             - Disparador: Existe una reserva con información especial que el equipo debe conocer antes de la llegada del huésped.
             - Frecuencia: Bajo demanda, cuando hay reservas con características particulares.
         - ¿Cómo se hace?
-            - Paso 1: Adriana identifica que una reserva tiene información relevante que debe compartirse con el equipo.
+            - Paso 1: Adriana Montes Caceres identifica que una reserva tiene información relevante que debe compartirse con el equipo.
             - Paso 2: Comunica la información al equipo de recepción por uno de estos medios:
                 - Directamente en persona.
                 - Por WhatsApp al grupo de recepción.
@@ -967,7 +984,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Qué sistemas o herramientas usan?
             - **WhatsApp** (grupo de recepción): Medio principal de comunicación escrita.
             - **Radio / walkie-talkie**: Medio alternativo de comunicación inmediata.
-            - **Comunicación directa en persona**: Cuando Adriana está presente en recepción.
+            - **Comunicación directa en persona**: Cuando Adriana Montes Caceres está presente en recepción.
         - ¿Qué pasa cuando las cosas no salen normal?
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
@@ -984,7 +1001,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para garantizar que cada reserva tenga una habitación asignada en buen estado, y que no se venda una habitación que ya esté ocupada, bloqueada o en mal estado.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal.
             - Recepcionista (apoya, especialmente al momento de crear reservas).
         - ¿Cuándo se hace?
             - Disparador: Al momento de crear una reserva, y especialmente antes de los fines de semana o llegadas grupales.
@@ -1019,32 +1036,36 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 2.1.7: Brindar soporte en la elaboración de ingresos y ocupación
     - AS-IS 2.1.7: Brindar soporte en la elaboración de ingresos y ocupación
         - ¿Qué es esta tarea?
-            - Apoyo y asesoría que brinda Adriana al equipo de recepción ante dudas, errores o situaciones especiales que se presentan durante el registro de pagos, carga en sistemas o atención al huésped; incluyendo la gestión de cancelaciones, reintegros y cambios de fecha.
+            - Apoyo y asesoría que brinda Adriana Montes Caceres al equipo de recepción ante dudas, errores o situaciones especiales que se presentan durante el registro de pagos, carga en sistemas o atención al huésped; incluyendo la gestión de cancelaciones, reintegros y cambios de fecha.
         - ¿Para qué se hace?
             - Para garantizar que los registros de pagos, check-in y check-out se realicen correctamente, y para resolver situaciones que el recepcionista no puede manejar de forma autónoma.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal de soporte).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal de soporte.
             - Recepcionista (quien consulta o escala la situación).
         - ¿Cuándo se hace?
             - Disparador: El recepcionista tiene una duda, detecta un error en un registro, recibe una consulta compleja, o se presenta un caso especial (cancelación, reintegro, pago con tasa incorrecta, monto incorrecto, cambio de fecha de reserva).
             - Frecuencia: Bajo demanda, durante cualquier momento de la operación.
         - ¿Cómo se hace?
-            - Paso 1: La recepcionista consulta a Adriana por WhatsApp o directamente en persona (Adriana trabaja habitualmente en recepción).
-            - Paso 2: Adriana analiza el caso: error de pago, pago en tasa incorrecta (dólar en lugar de euro), monto diferente al esperado, duda sobre método de pago, solicitud de cancelación con posible reintegro, cambio de fecha de reserva.
-            - Paso 3: Adriana indica la acción correctiva o la ejecuta directamente.
-            - Paso 4: Si el caso requiere una devolución o reintegro, Adriana consulta con presidencia/gerencia general según la política aplicable.
+            - Paso 1: La recepcionista consulta a Adriana Montes Caceres por WhatsApp o directamente en persona (Adriana Montes Caceres trabaja habitualmente en recepción).
+            - Paso 2: Adriana Montes Caceres analiza el caso: error de pago, pago en tasa incorrecta (dólar en lugar de euro), monto diferente al esperado, duda sobre método de pago, solicitud de cancelación con posible reintegro, cambio de fecha de reserva.
+            - Paso 3: Adriana Montes Caceres indica la acción correctiva o la ejecuta directamente.
+            - Paso 4: Si el caso requiere una devolución o reintegro, Adriana Montes Caceres consulta con presidencia/gerencia general según la política aplicable.
         - ¿Qué necesitan para hacer esta tarea?
-            - Comunicación directa (presencial o WhatsApp) con Adriana.
+            - Comunicación directa (presencial o WhatsApp) con Adriana Montes Caceres.
             - Acceso a Cloudbeds y Odoo para verificar y corregir registros.
         - ¿Qué se genera al terminar?
             - Error corregido o situación especial resuelta.
             - En casos de cancelación: definición de si aplica reintegro, cambio de fecha u otra solución.
         - ¿Qué sistemas o herramientas usan?
-            - **WhatsApp**: Canal principal de consulta entre recepcionistas y Adriana.
+            - **WhatsApp**: Canal principal de consulta entre recepcionistas y Adriana Montes Caceres.
             - **Cloudbeds**: Verificación y corrección de registros de reservas y pagos.
             - **Odoo**: Corrección de registros contables si aplica.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **Pago por monto incorrecto**: El huésped pagó de más o de menos respecto al monto esperado (ej. debía 200 dólares y pagó 400). Adriana Montes Caceres llama al huésped para explicar la diferencia y corregir.
+            - **Pago a tasa equivocada**: El huésped pagó usando la tasa del dólar en lugar de la tasa del euro que corresponde. Se identifica la diferencia y se ajusta.
+            - **Confusión transferencia vs. pago móvil**: Con la transferencia inmediata no siempre es claro si una operación es transferencia o pago móvil. La recepcionista consulta a Adriana Montes Caceres para clasificarla correctamente.
+            - **Errores de tipeo al conciliar**: Cero de más, falta de coma, banco equivocado, duplicación del nombre del cliente, o referencia con todos los dígitos cuando administración solo pide los últimos seis. Adriana Montes Caceres los detecta y corrige.
+            - **Cancelaciones con reintegro**: Cuando un huésped que hizo un abono cancela la reserva, Adriana Montes Caceres verifica según la política si corresponde devolución, reembolso o cambio de fecha.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.1.7: Brindar soporte en la elaboración de ingresos y ocupación
@@ -1055,20 +1076,20 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 2.1.8: Apoyar en el registro de huéspedes, si es necesario
     - AS-IS 2.1.8: Apoyar en el registro de huéspedes
         - ¿Qué es esta tarea?
-            - Soporte directo de Adriana en el proceso de registro y check-in de huéspedes cuando la recepcionista necesita asistencia, especialmente con pasantes, personal nuevo o en situaciones de alta demanda.
+            - Soporte directo de Adriana Montes Caceres en el proceso de registro y check-in de huéspedes cuando la recepcionista necesita asistencia, especialmente con pasantes, personal nuevo o en situaciones de alta demanda.
         - ¿Para qué se hace?
             - Para garantizar que el registro de huéspedes se realice correctamente cuando el personal en turno requiere orientación o apoyo adicional.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol de apoyo).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol de apoyo.
             - Recepcionista/pasante (quien recibe el apoyo).
         - ¿Cuándo se hace?
             - Disparador: La recepcionista o pasante requiere ayuda durante el registro de un huésped.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: La recepcionista o pasante solicita apoyo a Adriana (en persona o por WhatsApp).
-            - Paso 2: Adriana brinda orientación o ejecuta directamente los pasos necesarios en el sistema o en la atención al huésped.
+            - Paso 1: La recepcionista o pasante solicita apoyo a Adriana Montes Caceres (en persona o por WhatsApp).
+            - Paso 2: Adriana Montes Caceres brinda orientación o ejecuta directamente los pasos necesarios en el sistema o en la atención al huésped.
         - ¿Qué necesitan para hacer esta tarea?
-            - Presencia de Adriana en recepción o disponibilidad por WhatsApp.
+            - Presencia de Adriana Montes Caceres en recepción o disponibilidad por WhatsApp.
             - Acceso a Cloudbeds.
         - ¿Qué se genera al terminar?
             - Registro del huésped completado correctamente.
@@ -1076,11 +1097,14 @@ Creado: 10 de marzo de 2026 10:32
             - **Cloudbeds**: Registro del huésped.
             - **WhatsApp**: Canal de consulta.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **Personal nuevo, pasantes o ayudantes con dudas**: Quienes acaban de llegar requieren asesoría constante durante el registro. Adriana Montes Caceres brinda el acompañamiento; en la práctica es la misma dinámica de soporte que la tarea 2.1.7 (atiende dudas y errores de pago y de registro).
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.1.8: Apoyar en el registro de huéspedes
         - Pendiente.
+
+---
+
 - TAREA 2.2.1: Gestión de cuentas de Agencias de Viajes y operadores de turismo
     - AS-IS 2.2.1: Gestión de cuentas de Agencias de Viajes y operadores de turismo
         - ¿Qué es esta tarea?
@@ -1088,18 +1112,18 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para establecer y mantener relaciones comerciales con agencias que puedan traer grupos o clientes al hotel, gestionando la comisión correspondiente sobre las ventas generadas.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal; gestiona directamente con agencias y coordina con presidencia).
-            - Presidencia / señor Rafael (autoriza las comisiones y las condiciones para cada agencia).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal; gestiona directamente con agencias y coordina con presidencia.
+            - Enrique Rafael Cid (Presidente): autoriza las comisiones y las condiciones para cada agencia.
             - Departamento Legal (debería formalizar contratos; actualmente no los produce).
         - ¿Cuándo se hace?
             - Disparador: Una agencia de viajes o tour operador contacta al hotel para solicitar trabajar con ellos o para hacer una reserva grupal.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
             - Paso 1: La agencia contacta al hotel por correo electrónico, Instagram, Visito, WhatsApp o llamada.
-            - Paso 2: Adriana solicita a la agencia la documentación requerida por el departamento legal (RIF, registro mercantil, etc.).
+            - Paso 2: Adriana Montes Caceres solicita a la agencia la documentación requerida por el departamento legal (RIF, registro mercantil, etc.).
             - Paso 3: La agencia envía los documentos por correo electrónico.
-            - Paso 4: Adriana valida que los documentos estén completos y los reenvía al departamento legal.
-            - Paso 5: Adriana consulta con presidencia (señor Rafael) si autoriza trabajar con la agencia y bajo qué condiciones.
+            - Paso 4: Adriana Montes Caceres valida que los documentos estén completos y los reenvía al departamento legal.
+            - Paso 5: Adriana Montes Caceres consulta con presidencia (Enrique Rafael Cid) si autoriza trabajar con la agencia y bajo qué condiciones.
             - Paso 6: Con la autorización de presidencia, se define la comisión aplicable:
                 - 10% para agencias minoristas (sobre la base imponible, no sobre el monto total).
                 - 20% para agencias mayoristas (sobre la base imponible).
@@ -1115,9 +1139,9 @@ Creado: 10 de marzo de 2026 10:32
             - **WhatsApp / Visito**: Canal alternativo de comunicación con agencias.
         - ¿Qué pasa cuando las cosas no salen normal?
             - **No existe contrato formal con ninguna agencia**: El departamento legal recibe la documentación pero no ha generado contratos. Las autorizaciones son verbales, a través de presidencia.
-            - **Agencias que piden información de tarifas periódicamente**: Adriana no siempre puede atender estas solicitudes de manera completa por falta de una guía de tarifas estandarizada que pueda compartirse sin necesidad de consultar a presidencia cada vez.
+            - **Agencias que piden información de tarifas periódicamente**: Adriana Montes Caceres no siempre puede atender estas solicitudes de manera completa por falta de una guía de tarifas estandarizada que pueda compartirse sin necesidad de consultar a presidencia cada vez.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Contar con una tabla o matriz de tarifas y condiciones que Adriana pueda compartir directamente con las agencias sin necesidad de consultar a presidencia para cada solicitud, incluyendo reglas claras por cantidad de habitaciones, temporada y método de pago.
+            - Contar con una tabla o matriz de tarifas y condiciones que Adriana Montes Caceres pueda compartir directamente con las agencias sin necesidad de consultar a presidencia para cada solicitud, incluyendo reglas claras por cantidad de habitaciones, temporada y método de pago.
             - Que el departamento legal formalice los contratos con cada agencia para que la relación comercial quede correctamente respaldada.
     - Propuesta 2.2.1: Gestión de cuentas de Agencias de Viajes y operadores de turismo
         - Pendiente.
@@ -1131,15 +1155,15 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para gestionar reservas de grupos y eventos que requieren condiciones especiales (tarifas, descuentos, servicios adicionales) y coordinar su atención con gerencia.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (gestiona y negocia directamente con el cliente).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): gestiona y negocia directamente con el cliente.
             - Presidencia/Gerencia general (autoriza descuentos y tarifas especiales).
         - ¿Cuándo se hace?
             - Disparador: Un cliente solicita el hotel para un grupo o evento privado.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: El cliente contacta al hotel por cualquier canal (Visito, WhatsApp, correo, llamada, Instagram, incluso el teléfono personal de Adriana).
-            - Paso 2: Adriana recibe la solicitud y recopila los requerimientos del grupo/evento: número de personas, fechas, servicios requeridos (salón, sonido, torta, alquiler de espacios, acceso a playa, parrilla, embarcadero).
-            - Paso 3: Adriana consulta con presidencia/gerencia general la tarifa especial o descuento aplicable.
+            - Paso 1: El cliente contacta al hotel por cualquier canal (Visito, WhatsApp, correo, llamada, Instagram, incluso el teléfono personal de Adriana Montes Caceres).
+            - Paso 2: Adriana Montes Caceres recibe la solicitud y recopila los requerimientos del grupo/evento: número de personas, fechas, servicios requeridos (salón, sonido, torta, alquiler de espacios, acceso a playa, parrilla, embarcadero).
+            - Paso 3: Adriana Montes Caceres consulta con presidencia/gerencia general la tarifa especial o descuento aplicable.
             - Paso 4: Una vez autorizada la tarifa, se comunica al cliente.
             - Paso 5: Si el cliente confirma, se realiza la reserva en Cloudbeds.
         - ¿Qué necesitan para hacer esta tarea?
@@ -1152,9 +1176,9 @@ Creado: 10 de marzo de 2026 10:32
             - **Visito / WhatsApp / correo / llamada**: Canales de comunicación con el cliente.
             - **Cloudbeds**: Registro de la reserva grupal una vez confirmada.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Espera de autorización de presidencia**: En el tiempo que tarda Adriana en obtener la autorización y comunicarla al cliente, algunos grupos se pierden por la demora.
+            - **Espera de autorización de presidencia**: En el tiempo que tarda Adriana Montes Caceres en obtener la autorización y comunicarla al cliente, algunos grupos se pierden por la demora.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Contar con una tabla de descuentos predefinida según cantidad de habitaciones, método de pago y temporada, de modo que Adriana pueda responder al cliente de forma inmediata sin necesitar autorización caso por caso.
+            - Contar con una tabla de descuentos predefinida según cantidad de habitaciones, método de pago y temporada, de modo que Adriana Montes Caceres pueda responder al cliente de forma inmediata sin necesitar autorización caso por caso.
     - Propuesta 2.2.2: Coordinación de grupos y eventos
         - Pendiente.
 
@@ -1167,19 +1191,19 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para ofrecer una experiencia de mayor calidad a huéspedes que lo requieren, como figuras públicas, autoridades o clientes frecuentes especiales.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (coordina y lidera la atención VIP).
-            - Recepcionista / ayudante (ejecuta el acompañamiento físico si Adriana no está disponible).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): coordina y lidera la atención VIP.
+            - Recepcionista / ayudante (ejecuta el acompañamiento físico si Adriana Montes Caceres no está disponible).
         - ¿Cuándo se hace?
             - Disparador: Llegada de un huésped identificado como VIP.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: Adriana informa al equipo de recepción previamente sobre la llegada del huésped VIP y los detalles especiales que deben atenderse (por WhatsApp al grupo de recepción o directamente).
+            - Paso 1: Adriana Montes Caceres informa al equipo de recepción previamente sobre la llegada del huésped VIP y los detalles especiales que deben atenderse (por WhatsApp al grupo de recepción o directamente).
             - Paso 2: Al llegar el huésped, se le brinda una atención presencial más personalizada.
             - Paso 3: Se le acompaña físicamente hasta la habitación.
             - Paso 4: Si aplica, se coordinan detalles adicionales (cóctel de bienvenida, habitación especial, obsequio).
             - Nota: No utiliza sistemas adicionales; es un proceso completamente presencial y de comunicación directa.
         - ¿Qué necesitan para hacer esta tarea?
-            - Información previa sobre el huésped VIP (comunicada por Adriana o gerencia).
+            - Información previa sobre el huésped VIP (comunicada por Adriana Montes Caceres o gerencia).
             - Disponibilidad de personal para el acompañamiento.
         - ¿Qué se genera al terminar?
             - Huésped VIP atendido y acompañado a su habitación con atención diferenciada.
@@ -1202,12 +1226,12 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para atender adecuadamente a huéspedes con cargos o representaciones gubernamentales, que pueden requerir condiciones especiales de estadía o protocolo.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal, según lo indicado en la sesión).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal, según lo indicado en la sesión.
         - ¿Cuándo se hace?
             - Disparador: Llegada de un agente o funcionario gubernamental al hotel.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Se aplica el mismo protocolo que para clientes VIP (tarea 2.2.3). No se especificó un proceso diferenciado en la sesión.
+            - Paso 1: Aplicar el mismo protocolo que para clientes VIP (tarea 2.2.3). No se especificó un proceso diferenciado en la sesión.
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tarea 2.2.3: información previa sobre el funcionario y disponibilidad de personal para el acompañamiento.
         - ¿Qué se genera al terminar?
@@ -1215,10 +1239,10 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Qué sistemas o herramientas usan?
             - Mismo que tarea 2.2.3: WhatsApp (grupo de recepción) para comunicación previa; no se utilizan sistemas adicionales.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - No se especificó un caso de excepción diferenciado del protocolo VIP. Se aplica el mismo esquema de escalamiento: recepcionista → Adriana → Gerencia General.
+            - No se especificó un caso de excepción diferenciado del protocolo VIP. Se aplica el mismo esquema de escalamiento: recepcionista → Adriana Montes Caceres → Gerencia General.
         - ¿Cómo les gustaría que funcionara idealmente?
             - No se expresó un ideal diferenciado. Se aplica el mismo criterio que el protocolo VIP (tarea 2.2.3).
-            - Fuente: kmmin003 (20260309 sesion 2) — Adriana confirmó explícitamente que no existe un proceso separado para funcionarios gubernamentales; se aplica el mismo protocolo que para clientes VIP.
+            - Fuente: kmmin003 (20260309 sesion 2) — Adriana Montes Caceres confirmó explícitamente que no existe un proceso separado para funcionarios gubernamentales; se aplica el mismo protocolo que para clientes VIP.
     - Propuesta 2.2.4: Atención a agentes gubernamentales
         - Pendiente.
 
@@ -1231,15 +1255,15 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para mostrar las instalaciones a personas interesadas en hospedarse, facilitar su decisión de compra y aumentar la probabilidad de concretar una reserva o check-in directo.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (cuando tiene tiempo disponible).
-            - Operadora/ayudante multifuncional (cuando Adriana no puede hacerlo; rol principal en práctica).
-            - Recepcionista (excepcionalmente, aunque Adriana prefiere que no se mueva de recepción para no perder el hilo de sus otras tareas).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): cuando tiene tiempo disponible.
+            - Operadora/ayudante multifuncional (cuando Adriana Montes Caceres no puede hacerlo; rol principal en práctica).
+            - Recepcionista (excepcionalmente, aunque Adriana Montes Caceres prefiere que no se mueva de recepción para no perder el hilo de sus otras tareas).
         - ¿Cuándo se hace?
             - Disparador: Un posible huésped llega por puerta y solicita conocer las instalaciones antes de reservar o hacer check-in.
             - Frecuencia: Bajo demanda; ocurre principalmente con clientes que llegan por puerta, no por reserva previa.
         - ¿Cómo se hace?
             - Paso 1: El posible huésped llega al hotel y expresa interés en conocer las instalaciones.
-            - Paso 2: Adriana o la operadora acompaña al prospecto en un recorrido por las áreas del hotel.
+            - Paso 2: Adriana Montes Caceres o la operadora acompaña al prospecto en un recorrido por las áreas del hotel.
             - Paso 3: Para clientes que contactaron previamente por WhatsApp o Visito, se atienden solicitudes de fotografías de las instalaciones por ese mismo canal.
             - Nota: No se utilizan sistemas; es un proceso completamente presencial.
         - ¿Qué necesitan para hacer esta tarea?
@@ -1251,7 +1275,7 @@ Creado: 10 de marzo de 2026 10:32
             - No se utilizan sistemas. Es un proceso completamente presencial.
             - **Visito / WhatsApp**: Para envío de fotografías de las instalaciones a clientes que lo solicitan de forma remota.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **La recepcionista no debe moverse de recepción**: Adriana Montes Caceres prefiere que la recepcionista no realice el recorrido para no perder el hilo de sus tareas (atención de otro huésped, llamadas, mensajería de Visito). Cuando Adriana Montes Caceres no puede hacerlo, lo asume la operadora multifuncional, que tiene más disponibilidad que las recepcionistas.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.3.1: Acompañamiento a conocer las instalaciones del hotel
@@ -1266,21 +1290,21 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para mantener la satisfacción del huésped y resolver situaciones problemáticas que puedan afectar su experiencia en el hotel.
         - ¿Qué roles ejecutan esta tarea?
-            - Recepcionista (primer nivel de atención para casos simples, como cambios de habitación, con autorización de Adriana).
-            - Adriana (segundo nivel; atiende casos complejos, conflictos con el huésped, o situaciones que requieren autorización o criterio gerencial).
+            - Recepcionista (primer nivel de atención para casos simples, como cambios de habitación, con autorización de Adriana Montes Caceres).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): segundo nivel; atiende casos complejos, conflictos con el huésped, o situaciones que requieren autorización o criterio gerencial.
             - Gerencia General (tercer nivel; se llama cuando el conflicto es muy grave, cuando hay insultos, cuando se requiere la salida del huésped o una devolución de dinero significativa).
         - ¿Cuándo se hace?
             - Disparador: Un huésped presenta una queja, sugerencia o solicita un cambio de habitación.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
             - Paso 1: La recepcionista recibe la queja o solicitud del huésped.
-            - Paso 2: Si es un caso simple (cambio de habitación por razón menor), la recepcionista lo resuelve con autorización de Adriana (en persona o por WhatsApp).
-            - Paso 3: Si el caso es más complejo (huésped insatisfecho, reclamo sobre consumos, daños, etc.), Adriana se presenta en recepción para atenderlo directamente.
-            - Paso 4: Adriana evalúa el caso y determina la solución (cambio de habitación, descuento, compensación, extensión de estadía, etc.).
-            - Paso 5: Si requiere autorización de gerencia (devolución de dinero significativa, situación extrema), Adriana llama directamente a gerencia general.
+            - Paso 2: Si es un caso simple (cambio de habitación por razón menor), la recepcionista lo resuelve con autorización de Adriana Montes Caceres (en persona o por WhatsApp).
+            - Paso 3: Si el caso es más complejo (huésped insatisfecho, reclamo sobre consumos, daños, etc.), Adriana Montes Caceres se presenta en recepción para atenderlo directamente.
+            - Paso 4: Adriana Montes Caceres evalúa el caso y determina la solución (cambio de habitación, descuento, compensación, extensión de estadía, etc.).
+            - Paso 5: Si requiere autorización de gerencia (devolución de dinero significativa, situación extrema), Adriana Montes Caceres llama directamente a gerencia general.
             - Paso 6: Si hay cambio de habitación, se actualiza en Cloudbeds.
         - ¿Qué necesitan para hacer esta tarea?
-            - Disponibilidad de Adriana para atender casos complejos.
+            - Disponibilidad de Adriana Montes Caceres para atender casos complejos.
             - Acceso a Cloudbeds para gestionar cambios de habitación.
             - Comunicación directa con gerencia general cuando el caso lo requiere.
         - ¿Qué se genera al terminar?
@@ -1289,12 +1313,12 @@ Creado: 10 de marzo de 2026 10:32
             - Compensación o descuento autorizado si aplica.
         - ¿Qué sistemas o herramientas usan?
             - **Cloudbeds**: Para gestionar cambios de habitación.
-            - **WhatsApp**: Comunicación entre recepcionista, Adriana y gerencia.
+            - **WhatsApp**: Comunicación entre recepcionista, Adriana Montes Caceres y gerencia.
         - ¿Qué pasa cuando las cosas no salen normal?
             - **Caso muy grave (huésped agresivo, insultos)**: Se llama directamente a gerencia general.
             - **Situación que requiere devolución de dinero**: Se escala a gerencia general para autorización.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Que no sean estos casos los que escalen hasta Adriana; que el recepcionista tenga mayor autonomía para resolver situaciones cotidianas. (Expresado como frustración implícita: "La excepción sería que no tuviera que atenderlo yo, pero me toca".)
+            - Que no sean estos casos los que escalen hasta Adriana Montes Caceres; que el recepcionista tenga mayor autonomía para resolver situaciones cotidianas. (Expresado como frustración implícita: "La excepción sería que no tuviera que atenderlo yo, pero me toca".)
     - Propuesta 2.3.2: Resolución de conflictos
         - Pendiente.
 
@@ -1307,16 +1331,16 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para compensar al huésped cuando vivió una mala experiencia o para cerrar una venta con condiciones especiales, manteniendo la satisfacción del cliente.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (evalúa el caso y propone la compensación).
-            - Gerencia General / Presidencia (autoriza siempre el descuento; no hay descuentos que Adriana pueda aplicar de forma autónoma sin consultar).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): evalúa el caso y propone la compensación.
+            - Gerencia General / Presidencia (autoriza siempre el descuento; no hay descuentos que Adriana Montes Caceres pueda aplicar de forma autónoma sin consultar).
         - ¿Cuándo se hace?
             - Disparador: Huésped con queja que requiere compensación, grupo o cliente que negocia condiciones especiales, o situación donde se decide ofrecer un beneficio adicional.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: Adriana identifica el caso que requiere descuento o compensación (queja justificada, negociación de grupo, etc.).
-            - Paso 2: Adriana contacta a gerencia general o presidencia (en persona o por WhatsApp) para informar el caso y solicitar autorización del descuento.
+            - Paso 1: Adriana Montes Caceres identifica el caso que requiere descuento o compensación (queja justificada, negociación de grupo, etc.).
+            - Paso 2: Adriana Montes Caceres contacta a gerencia general o presidencia (en persona o por WhatsApp) para informar el caso y solicitar autorización del descuento.
             - Paso 3: Gerencia/presidencia define el tipo de descuento o compensación (descuento en consumo, una noche adicional, extensión de estadía, descuento en tarifa, etc.).
-            - Paso 4: Adriana comunica al huésped la compensación acordada.
+            - Paso 4: Adriana Montes Caceres comunica al huésped la compensación acordada.
             - Paso 5: Se aplica el descuento o compensación en Cloudbeds.
         - ¿Qué necesitan para hacer esta tarea?
             - Autorización de gerencia/presidencia.
@@ -1328,7 +1352,8 @@ Creado: 10 de marzo de 2026 10:32
             - **WhatsApp**: Comunicación con gerencia para autorización.
             - **Cloudbeds**: Aplicación del descuento en la reserva.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **Compensación por mala experiencia acumulada**: Cuando a un huésped le ocurrieron varios problemas en la habitación (ej. botó agua el aire acondicionado, se tapó la poceta, almohadas manchadas), Adriana Montes Caceres propone a gerencia una compensación: descuento en consumos, descuento en la habitación, una noche adicional o extensión de estadía, según el caso, para que el huésped quede satisfecho pese a lo ocurrido.
+            - **Demora en la autorización**: Como cada descuento debe consultarse caso por caso con gerencia/presidencia, la espera de la autorización puede hacer que se pierdan clientes (especialmente en negociación de grupos).
         - ¿Cómo les gustaría que funcionara idealmente?
             - Contar con una tabla de descuentos predefinida (similar a la mencionada en tarea 2.2.2) que indique qué descuento aplica según el tipo de situación, sin necesidad de consultar a gerencia para cada caso.
     - Propuesta 2.3.3: Aplicación y autorización de descuentos especiales
@@ -1343,30 +1368,30 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para garantizar que recepción tenga personal en todo momento, evitar huecos en los turnos y organizar la distribución del equipo disponible (recepcionistas, pasantes, ayudantes).
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (elabora el horario y lo envía a Talento Humano).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): elabora el horario y lo envía a Talento Humano.
             - Talento Humano (recibe el borrador, lo formaliza en su formato y lo gestiona).
         - ¿Cuándo se hace?
-            - Disparador: ⚠️ Pendiente validar en sesión próxima (no se especificó la periodicidad exacta de elaboración).
+            - Disparador: ⚠️ Pendiente validar con Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): periodicidad y momento exacto de elaboración del horario.
             - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo se hace?
-            - Paso 1: Adriana evalúa la disponibilidad del personal y las necesidades de cobertura por turno.
+            - Paso 1: Adriana Montes Caceres evalúa la disponibilidad del personal y las necesidades de cobertura por turno.
             - Paso 2: Elabora el horario en un formato propio (no se especifica si es Excel u otro).
             - Paso 3: Envía el borrador a Talento Humano.
             - Paso 4: Talento Humano lo convierte a su formato oficial y lo gestiona.
-            - Nota: En la práctica, cuando no hay personal suficiente, los huecos los cubre la recepcionista con horas extras o Adriana misma ejerce el rol de recepcionista.
+            - Nota: En la práctica, cuando no hay personal suficiente, los huecos los cubre la recepcionista con horas extras o Adriana Montes Caceres misma ejerce el rol de recepcionista.
         - ¿Qué necesitan para hacer esta tarea?
             - Información sobre disponibilidad del personal (recepcionistas, pasantes, operadoras).
-            - Formato de horario (propio de Adriana).
+            - Formato de horario (propio de Adriana Montes Caceres).
         - ¿Qué se genera al terminar?
             - Borrador de horario enviado a Talento Humano.
             - Horario formal elaborado por Talento Humano.
         - ¿Qué sistemas o herramientas usan?
-            - **Agenda física / borrador en papel**: Adriana elabora el horario en un formato propio (borrador manual); no se confirmó el uso de Excel u otro sistema digital.
+            - **Agenda física / borrador en papel**: Adriana Montes Caceres elabora el horario en un formato propio (borrador manual); no se confirmó el uso de Excel u otro sistema digital.
             - **Comunicación directa / entrega física**: Envío del borrador a la oficina de Talento Humano.
             - Fuente: kmmin003 (20260309 sesion 2).
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Falta de personal**: Los turnos sin cubrir los asume la recepcionista con horas extras o Adriana ejerce el rol de recepcionista directamente.
-            - **Pasantes disponibles**: Se les asigna a áreas y horarios específicos, siempre con apoyo de Adriana.
+            - **Falta de personal**: Los turnos sin cubrir los asume la recepcionista con horas extras o Adriana Montes Caceres ejerce el rol de recepcionista directamente.
+            - **Pasantes disponibles**: Se les asigna a áreas y horarios específicos, siempre con apoyo de Adriana Montes Caceres.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.4.1: Elaboración de horarios del departamento
@@ -1381,7 +1406,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para que el personal nuevo pueda ejecutar las tareas de recepción de manera autónoma y con los estándares de calidad definidos por el hotel.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (rol principal de capacitación).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): rol principal de capacitación.
             - Recepcionista (apoya en la enseñanza de los sistemas cuando tiene disponibilidad).
             - Operadoras/ayudantes (reciben capacitación en tareas operativas físicas: llaves, corte de papel, etiquetas, etc.).
         - ¿Cuándo se hace?
@@ -1389,17 +1414,17 @@ Creado: 10 de marzo de 2026 10:32
             - Frecuencia: Bajo demanda, cada vez que hay un nuevo ingreso.
         - ¿Cómo se hace?
             - Paso 1: Se entregan las normas del hotel impresas al nuevo personal para su lectura y estudio.
-            - Paso 2: Adriana explica el proceso de Cloudbeds completo: reservas, check-in, disponibilidad, tarifas, registro de pagos, inventario, llaves electrónicas.
-            - Paso 3: Adriana explica el proceso de Odoo: registro de clientes nuevos, registro de pagos en Contabilidad → Recibo de cliente.
-            - Paso 4: Adriana explica el proceso de Teams: cómo copiar y pegar la información de pagos, cómo adjuntar comprobantes.
+            - Paso 2: Adriana Montes Caceres explica el proceso de Cloudbeds completo: reservas, check-in, disponibilidad, tarifas, registro de pagos, inventario, llaves electrónicas.
+            - Paso 3: Adriana Montes Caceres explica el proceso de Odoo: registro de clientes nuevos, registro de pagos en Contabilidad → Recibo de cliente.
+            - Paso 4: Adriana Montes Caceres explica el proceso de Teams: cómo copiar y pegar la información de pagos, cómo adjuntar comprobantes.
             - Paso 5: Se enseña el proceso de elaboración de llaves electrónicas (TT Hotel y Time Locks).
             - Paso 6: Se enseña el proceso de atención al cliente: cómo hablar, cómo pararse, cómo atender una llamada, lenguaje apropiado, trato al huésped.
-            - Paso 7: Se hace una simulación práctica donde el nuevo personal expone las normativas del hotel como si Adriana fuera un cliente.
+            - Paso 7: Se hace una simulación práctica donde el nuevo personal expone las normativas del hotel como si Adriana Montes Caceres fuera un cliente.
             - Paso 8: Para operadoras, se enseñan tareas físicas: manejo de llaves, etiquetado, corte de materiales, entre otros.
-            - Nota: No existe un instructivo actualizado y disponible; la capacitación depende del conocimiento de Adriana. Existe referencia de un instructivo de check-in elaborado con Andrea (Talento Humano), pero no está disponible ni en físico ni en digital.
+            - Nota: No existe un instructivo actualizado y disponible; la capacitación depende del conocimiento de Adriana Montes Caceres. Existe referencia de un instructivo de check-in elaborado con Andrea (Talento Humano), pero no está disponible ni en físico ni en digital.
         - ¿Qué necesitan para hacer esta tarea?
             - Normas del hotel impresas.
-            - Presencia de Adriana durante el proceso de capacitación.
+            - Presencia de Adriana Montes Caceres durante el proceso de capacitación.
             - Acceso a Cloudbeds, Odoo y Teams para la demostración práctica.
         - ¿Qué se genera al terminar?
             - Personal nuevo o pasante capacitado para ejecutar las tareas de recepción.
@@ -1409,9 +1434,11 @@ Creado: 10 de marzo de 2026 10:32
             - **Microsoft Teams**: Demostración del proceso de reporte de ingresos.
             - **Normas del hotel en físico (papel impreso)**: Material de estudio entregado al personal nuevo.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **No existe instructivo actualizado**: La capacitación depende de la memoria y disponibilidad de Adriana Montes Caceres. Existió un instructivo de check-in elaborado con Andrea (Talento Humano), pero no se sabe si está actualizado y no está disponible ni en físico ni en digital.
+            - **Personal nuevo que trata con exceso de confianza al huésped**: Especialmente en ama de llaves, Adriana Montes Caceres interviene para corregir el protocolo de trato (saludar y atender sin entablar conversación informal con el huésped).
+            - **Falta de uniformes**: No siempre hay uniformes disponibles para entregar al personal nuevo. Adriana Montes Caceres orienta verbalmente sobre vestimenta apropiada (no pantalones rotos, no shorts) mientras no haya uniforme.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Contar con un instructivo actualizado y disponible (en digital) que sirva como guía de referencia para el personal nuevo, de modo que la capacitación no dependa exclusivamente de la disponibilidad y memoria de Adriana.
+            - Contar con un instructivo actualizado y disponible (en digital) que sirva como guía de referencia para el personal nuevo, de modo que la capacitación no dependa exclusivamente de la disponibilidad y memoria de Adriana Montes Caceres.
     - Propuesta 2.4.2: Orientación a pasantes o personal de nuevo ingreso
         - Pendiente.
 
@@ -1424,12 +1451,12 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para evitar colapsos operativos durante temporada alta, garantizando que recepción cuente con personal suficiente y entrenado.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (planifica y coordina).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): planifica y coordina.
         - ¿Cuándo se hace?
             - Disparador: Anticipación a una temporada alta o periodo de alta ocupación.
             - Frecuencia: Antes de cada temporada alta.
         - ¿Cómo se hace?
-            - Paso 1: Adriana identifica el periodo de alta demanda próximo.
+            - Paso 1: Adriana Montes Caceres identifica el periodo de alta demanda próximo.
             - Paso 2: Define la cantidad de personas necesarias por turno: al menos dos personas que conozcan el sistema (recepcionistas) y una operadora por turno.
             - Paso 3: Planifica capacitaciones previas a la temporada para el personal que ingresará o que necesita refuerzo.
             - Paso 4: Elabora el horario ampliado y lo comunica a Talento Humano.
@@ -1458,18 +1485,18 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para que el personal reciba el pago correcto por las horas adicionales trabajadas.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (lleva el registro y lo entrega a Talento Humano).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): lleva el registro y lo entrega a Talento Humano.
             - Talento Humano (recibe, verifica y procesa el pago).
         - ¿Cuándo se hace?
             - Disparador: Fin de la semana de trabajo.
             - Frecuencia: Semanal (los lunes se entrega el registro de la semana anterior).
         - ¿Cómo se hace?
-            - Paso 1: Durante la semana, Adriana anota en su agenda física los redobles y días libres trabajados por cada persona del equipo.
+            - Paso 1: Durante la semana, Adriana Montes Caceres anota en su agenda física los redobles y días libres trabajados por cada persona del equipo.
             - Paso 2: Al final de la semana, transcribe la información a una planilla (formato de Talento Humano u otro), indicando nombre de la persona, fecha y tipo de hora extra o redoble autorizado.
             - Paso 3: Entrega la planilla físicamente en la oficina de Talento Humano.
             - Paso 4: Talento Humano la escanea y la envía a la central en Caracas para procesamiento.
         - ¿Qué necesitan para hacer esta tarea?
-            - Agenda física de Adriana con los registros de la semana.
+            - Agenda física de Adriana Montes Caceres con los registros de la semana.
             - Planilla de reporte de horas extras/redobles.
             - Acceso físico a la oficina de Talento Humano.
         - ¿Qué se genera al terminar?
@@ -1479,7 +1506,7 @@ Creado: 10 de marzo de 2026 10:32
             - **Planilla física (papel)**: Formato formal de reporte entregado a Talento Humano.
             - No se utilizan sistemas digitales propios de este proceso.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Adriana no anota el redoble en el momento**: Si no lo registra en su agenda, puede olvidarlo. El control depende completamente de su registro manual.
+            - **Adriana Montes Caceres no anota el redoble en el momento**: Si no lo registra en su agenda, puede olvidarlo. El control depende completamente de su registro manual.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.4.4: Control de redobles y gestión de días libres trabajados
@@ -1494,34 +1521,40 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para filtrar candidatos que cumplan con el perfil operativo y actitudinal requerido en recepción, antes de que Talento Humano gestione las condiciones laborales y contratación formal.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (evaluación inicial del candidato).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): evaluación inicial del candidato.
             - Talento Humano (proceso formal de contratación, condiciones laborales, documentos).
             - Gerencia General / Presidencia (reunión final de convencimiento/presentación del candidato seleccionado, cuando el jefe lo requiere).
         - ¿Cuándo se hace?
-            - Disparador: Necesidad de nuevo personal en recepción, identificada por Adriana o solicitada por Talento Humano.
+            - Disparador: Necesidad de nuevo personal en recepción, identificada por Adriana Montes Caceres o solicitada por Talento Humano.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: Talento Humano remite candidatos a Adriana para evaluación inicial.
-            - Paso 2: Adriana evalúa al candidato considerando: experiencia previa, habilidades de comunicación oral, manejo básico de computadora, actitud de servicio, disposición para hablar con público.
-            - Paso 3: Si el candidato cumple el perfil, Adriana lo pasa a Talento Humano con su recomendación.
+            - Paso 1: Talento Humano remite candidatos a Adriana Montes Caceres para evaluación inicial.
+            - Paso 2: Adriana Montes Caceres evalúa al candidato considerando: experiencia previa, habilidades de comunicación oral, manejo básico de computadora, actitud de servicio, disposición para hablar con público.
+            - Paso 3: Si el candidato cumple el perfil, Adriana Montes Caceres lo pasa a Talento Humano con su recomendación.
             - Paso 4: Talento Humano gestiona las normativas laborales, condiciones de pago, quincenas, bonos, firma de contrato y demás procesos formales.
-            - Paso 5: Si el jefe (señor Rafael) quiere conocer al candidato, se coordina una reunión con gerencia/presidencia.
-            - Paso 6: Una vez aceptado, Adriana inicia el proceso de orientación (tarea 2.4.2).
+            - Paso 5: Si el jefe, Enrique Rafael Cid (Presidente), quiere conocer al candidato, se coordina una reunión con gerencia/presidencia.
+            - Paso 6: Una vez aceptado, Adriana Montes Caceres inicia el proceso de orientación (tarea 2.4.2).
             - Nota: Los candidatos considerados aptos para recepción deben hablar bien, no tener miedo escénico y tener disposición para aprender sistemas. Los que no cumplen el perfil de recepción pueden asignarse a roles operativos (operadores/botones).
         - ¿Qué necesitan para hacer esta tarea?
             - Candidatos referidos por Talento Humano.
-            - Criterios de perfil definidos por Adriana (no formalizados en un documento).
+            - Criterios de perfil definidos por Adriana Montes Caceres (no formalizados en un documento).
         - ¿Qué se genera al terminar?
             - Candidato aprobado o rechazado para el perfil de recepción.
             - Si aprobado: pasa a Talento Humano para proceso formal de contratación.
         - ¿Qué sistemas o herramientas usan?
             - No se mencionan sistemas para esta tarea. Es un proceso presencial de evaluación.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **Candidato que no cumple el perfil de recepción**: Si la persona tiene miedo escénico, no habla bien con el público o no maneja lo básico de computación, no sirve para recepción. En ese caso se le asigna a un rol operativo (operador/botones) en lugar de descartarlo.
+            - **Tarea percibida como carga**: Adriana Montes Caceres expresó que la evaluación de perfiles, que solicita Talento Humano, le resulta estresante porque desvía su atención de la operación de recepción.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.4.5: Análisis de perfiles para reclutamiento de personal de recepción
         - Pendiente.
+
+---
+
+# Área 3: Alimentos y Bebidas (A&B) - Soporte Operativo
+
 - TAREA 3.1: Gestión y solicitud de suministro de Agua Potable
     - AS-IS 3.1: Gestión y solicitud de suministro de Agua Potable
         - ¿Qué es esta tarea?
@@ -1529,30 +1562,30 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para garantizar el suministro continuo de agua potable en el hotel, especialmente cuando se requiere lavado o llenado de tanques.
         - ¿Qué roles ejecutan esta tarea?
-            - Jefe de cocina / personal de A&B (solicita a Adriana cuando se necesita agua).
-            - Adriana (coordina con el proveedor y recepciona el pedido en Odoo).
-            - Lourdes (departamento de compras): monta el pedido formal en sistema después de que Adriana notifica la fecha de llegada.
+            - Jefe de cocina / personal de A&B (solicita a Adriana Montes Caceres cuando se necesita agua).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): coordina con el proveedor y recepciona el pedido en Odoo.
+            - Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras): monta el pedido formal en sistema después de que Adriana Montes Caceres notifica la fecha de llegada.
         - ¿Cuándo se hace?
-            - Disparador: El departamento de A&B notifica a Adriana que los tanques necesitan llenado o que se va a realizar el lavado de tanques.
+            - Disparador: El departamento de A&B notifica a Adriana Montes Caceres que los tanques necesitan llenado o que se va a realizar el lavado de tanques.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: El jefe de cocina informa a Adriana que se necesita agua (indicando fecha requerida).
-            - Paso 2: Adriana contacta directamente al proveedor de cisterna para coordinar la entrega.
-            - Paso 3: Adriana notifica a Lourdes (compras) la fecha de llegada del agua para que monte el pedido en el sistema.
-            - Paso 4: Cuando llega el proveedor con el agua, Adriana recepciona el pedido en Odoo con su usuario.
+            - Paso 1: El jefe de cocina informa a Adriana Montes Caceres que se necesita agua (indicando fecha requerida).
+            - Paso 2: Adriana Montes Caceres contacta directamente al proveedor de cisterna para coordinar la entrega.
+            - Paso 3: Adriana Montes Caceres notifica a Lourdes Concepcion Sifontes Guerrero (compras) la fecha de llegada del agua para que monte el pedido en el sistema.
+            - Paso 4: Cuando llega el proveedor con el agua, Adriana Montes Caceres recepciona el pedido en Odoo con su usuario.
         - ¿Qué necesitan para hacer esta tarea?
             - Contacto del proveedor de cisterna.
             - Acceso a Odoo para recepcionar el pedido.
-            - Coordinación con Lourdes (compras).
+            - Coordinación con Lourdes Concepcion Sifontes Guerrero (compras).
         - ¿Qué se genera al terminar?
             - Pedido de agua recepcionado en Odoo.
             - Tanques del hotel llenos.
         - ¿Qué sistemas o herramientas usan?
             - **Odoo**: Recepción del pedido de agua al momento de la entrega del proveedor.
-            - **Teléfono / WhatsApp**: Coordinación con proveedor y con Lourdes.
+            - **Teléfono / WhatsApp**: Coordinación con proveedor y con Lourdes Concepcion Sifontes Guerrero.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Adriana no está disponible cuando llega el proveedor**: El proveedor puede entregar el agua, pero Adriana no lo da por recibido en Odoo de inmediato. Se entera días después por facturas o por compras, generando retrasos en el registro.
-            - **Proceso no estandarizado**: Adriana actúa como intermediaria porque no hay gerente de A&B; el flujo ideal sería que A&B (con apoyo de los cajeros) manejara directamente la recepción de estos suministros.
+            - **Adriana Montes Caceres no está disponible cuando llega el proveedor**: El proveedor puede entregar el agua, pero Adriana Montes Caceres no lo da por recibido en Odoo de inmediato. Se entera días después por facturas o por compras, generando retrasos en el registro.
+            - **Proceso no estandarizado**: Adriana Montes Caceres actúa como intermediaria porque no hay gerente de A&B; el flujo ideal sería que A&B (con apoyo de los cajeros) manejara directamente la recepción de estos suministros.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el departamento de A&B, apoyado por sus cajeros, gestione directamente tanto la solicitud como la recepción del suministro de agua en Odoo, sin que recepción deba intervenir en este proceso.
     - Propuesta 3.1: Gestión y solicitud de suministro de Agua Potable
@@ -1563,16 +1596,16 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 3.2: Solicitud de llenado de tanques de gas
     - AS-IS 3.2: Solicitud de llenado de tanques de gas
         - ¿Qué es esta tarea?
-            - Proceso idéntico al de suministro de agua potable (tarea 3.1), aplicado al gas. Adriana coordina con el proveedor, notifica a compras y recepciona el pedido en Odoo.
+            - Proceso idéntico al de suministro de agua potable (tarea 3.1), aplicado al gas. Adriana Montes Caceres coordina con el proveedor, notifica a compras y recepciona el pedido en Odoo.
         - ¿Para qué se hace?
             - Para garantizar el suministro de gas necesario para la operación del hotel (cocina, calentadores, etc.).
         - ¿Qué roles ejecutan esta tarea?
-            - Los mismos que la tarea 3.1: A&B solicita, Adriana coordina, Lourdes monta el pedido, Adriana recepciona en Odoo.
+            - Los mismos que la tarea 3.1: A&B solicita, Adriana Montes Caceres coordina, Lourdes Concepcion Sifontes Guerrero monta el pedido, Adriana Montes Caceres recepciona en Odoo.
         - ¿Cuándo se hace?
-            - Disparador: El departamento de A&B notifica a Adriana que se necesita gas.
+            - Disparador: El departamento de A&B notifica a Adriana Montes Caceres que se necesita gas.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - El proceso es idéntico al de la tarea 3.1, sustituyendo "agua" por "gas".
+            - Paso 1: Ejecutar el mismo procedimiento de la tarea 3.1, sustituyendo "agua" por "gas".
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tarea 3.1.
         - ¿Qué se genera al terminar?
@@ -1596,9 +1629,9 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para mantener los equipos del hotel en buen funcionamiento, atendiendo tanto emergencias como mantenimientos programados.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (coordina con el técnico, gestiona la compra de repuestos y recepciona el servicio).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): coordina con el técnico, gestiona la compra de repuestos y recepciona el servicio.
             - Técnico externo (realiza la reparación o mantenimiento).
-            - Compras / Lourdes (procesa la compra del repuesto cuando es requerido).
+            - Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras): procesa la compra del repuesto cuando es requerido.
             - Ama de llaves (abre las habitaciones cuando el técnico necesita acceso).
         - ¿Cuándo se hace?
             - Disparador: Se detecta un equipo dañado (nevera, aire acondicionado) o llega la fecha de un mantenimiento programado.
@@ -1606,32 +1639,32 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Cómo se hace?
             - **Reparación de emergencia:**
             - Paso 1: Se detecta el daño (reportado por A&B, ama de llaves o el propio técnico).
-            - Paso 2: Adriana contacta al técnico externo (ej. señor Francisco, de refrigeración).
+            - Paso 2: Adriana Montes Caceres contacta al técnico externo (ej. Francisco, apellido pendiente, técnico externo de refrigeración).
             - Paso 3: El técnico revisa el equipo e informa qué repuesto se necesita.
-            - Paso 4: Adriana contacta a compras (Lourdes) para solicitar la compra del repuesto, o llama directamente al doctor para aprobación si la compra es urgente.
+            - Paso 4: Adriana Montes Caceres contacta a compras (Lourdes Concepcion Sifontes Guerrero) para solicitar la compra del repuesto, o llama directamente a Alberto Cid Navarro (Gerencia General) para aprobación si la compra es urgente.
             - Paso 5: El técnico busca el repuesto en el proveedor (a veces de forma autónoma por urgencia).
             - Paso 6: El técnico realiza la reparación. Ama de llaves abre la habitación si es necesario.
-            - Paso 7: El técnico entrega a Adriana un comprobante escrito de los trabajos realizados; Adriana lo firma.
+            - Paso 7: El técnico entrega a Adriana Montes Caceres un comprobante escrito de los trabajos realizados; Adriana Montes Caceres lo firma.
             - Paso 8: El técnico lleva el comprobante firmado a administración para el pago.
-            - Paso 9: Adriana recepciona el servicio en Odoo (cuando tiene tiempo; a veces se retrasa).
+            - Paso 9: Adriana Montes Caceres recepciona el servicio en Odoo (cuando tiene tiempo; a veces se retrasa).
             - **Mantenimiento programado:**
-            - El técnico agenda la visita con anticipación. Adriana lo espera, coordina el acceso a las habitaciones y valida la ejecución del mantenimiento.
+            - El técnico agenda la visita con anticipación. Adriana Montes Caceres lo espera, coordina el acceso a las habitaciones y valida la ejecución del mantenimiento.
         - ¿Qué necesitan para hacer esta tarea?
             - Contacto del técnico externo.
-            - Autorización del doctor para la compra del repuesto (cuando Adriana no puede aprobar).
+            - Autorización de Alberto Cid Navarro (Gerencia General) para la compra del repuesto (cuando Adriana Montes Caceres no puede aprobar).
             - Acceso de ama de llaves para abrir habitaciones.
             - Acceso a Odoo para recepcionar el servicio.
         - ¿Qué se genera al terminar?
-            - Comprobante físico firmado por Adriana que el técnico lleva a administración.
+            - Comprobante físico firmado por Adriana Montes Caceres que el técnico lleva a administración.
             - Servicio recepcionado en Odoo (cuando se realiza).
         - ¿Qué sistemas o herramientas usan?
             - **Odoo**: Recepción del servicio de reparación.
-            - **WhatsApp / Teléfono**: Coordinación con el técnico, con compras y con el doctor.
+            - **WhatsApp / Teléfono**: Coordinación con el técnico, con compras y con Alberto Cid Navarro (Gerencia General).
             - **Comprobante físico en papel**: Registro firmado de los trabajos realizados.
-            - **Agenda física de Adriana**: Registro personal de los mantenimientos realizados.
+            - **Agenda física de Adriana Montes Caceres**: Registro personal de los mantenimientos realizados.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **El técnico actúa de forma autónoma sin notificar**: Busca el repuesto, lo instala y no le avisa a Adriana. Adriana se entera días después, lo que genera retrasos en la recepción en Odoo y en el proceso de pago.
-            - **Adriana no puede aprobar compras en ausencia del doctor**: En situaciones de urgencia donde el doctor no está disponible, Adriana firma la autorización de compra bajo su criterio, asumiendo la responsabilidad.
+            - **El técnico actúa de forma autónoma sin notificar**: Busca el repuesto, lo instala y no le avisa a Adriana Montes Caceres. Adriana Montes Caceres se entera días después, lo que genera retrasos en la recepción en Odoo y en el proceso de pago.
+            - **Adriana Montes Caceres no puede aprobar compras en ausencia de Alberto Cid Navarro (Gerencia General)**: En situaciones de urgencia donde este no está disponible, Adriana Montes Caceres firma la autorización de compra bajo su criterio, asumiendo la responsabilidad.
             - **Proceso sin estandarización**: No hay un flujo definido; cada reparación se gestiona de forma ad hoc según la urgencia del momento.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el proceso esté sistematizado con algún registro (en Odoo u otra herramienta) que permita hacer seguimiento a cada solicitud de mantenimiento, desde la detección del daño hasta la recepción del servicio y el pago al técnico.
@@ -1643,33 +1676,33 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 3.4: Firma de pedidos extraordinarios (en ausencia de Gerencia General)
     - AS-IS 3.4: Firma de pedidos extraordinarios en ausencia de Gerencia General
         - ¿Qué es esta tarea?
-            - Autorización excepcional y firmada por Adriana de compras urgentes de insumos o repuestos, cuando la gerencia general no está disponible para aprobarlas y la situación no permite esperar.
+            - Autorización excepcional y firmada por Adriana Montes Caceres de compras urgentes de insumos o repuestos, cuando la gerencia general no está disponible para aprobarlas y la situación no permite esperar.
         - ¿Para qué se hace?
-            - Para no detener la operación del hotel ante una necesidad urgente de compra cuando el doctor no está presente para autorizarla.
+            - Para no detener la operación del hotel ante una necesidad urgente de compra cuando Alberto Cid Navarro (Gerencia General) no está presente para autorizarla.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (firma y autoriza en ausencia del doctor).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): firma y autoriza en ausencia de Alberto Cid Navarro (Gerencia General).
             - Proveedor o personal interno (ejecuta la compra una vez autorizada).
-            - Compras / Lourdes (gestiona la compra formal).
+            - Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras): gestiona la compra formal.
         - ¿Cuándo se hace?
-            - Disparador: Se presenta una necesidad urgente de compra (repuesto, insumo crítico) y el doctor no está disponible para autorizar.
+            - Disparador: Se presenta una necesidad urgente de compra (repuesto, insumo crítico) y Alberto Cid Navarro (Gerencia General) no está disponible para autorizar.
             - Frecuencia: Bajo demanda, casos puntuales de emergencia.
         - ¿Cómo se hace?
             - Paso 1: Se detecta la necesidad urgente (ej. nevera dañada, falta de queso para desayunos del día siguiente).
-            - Paso 2: Adriana evalúa si la situación justifica proceder sin la aprobación del doctor.
-            - Paso 3: Adriana firma la solicitud de compra en papel, autorizando la adquisición.
-            - Paso 4: Se ejecuta la compra (Lourdes llama al proveedor, o el técnico/personal va a buscarlo).
-            - Paso 5: Al día siguiente o cuando el doctor esté disponible, Adriana le informa lo ocurrido y la compra realizada.
+            - Paso 2: Adriana Montes Caceres evalúa si la situación justifica proceder sin la aprobación de Alberto Cid Navarro (Gerencia General).
+            - Paso 3: Adriana Montes Caceres firma la solicitud de compra en papel, autorizando la adquisición.
+            - Paso 4: Se ejecuta la compra (Lourdes Concepcion Sifontes Guerrero llama al proveedor, o el técnico/personal va a buscarlo).
+            - Paso 5: Al día siguiente o cuando Alberto Cid Navarro (Gerencia General) esté disponible, Adriana Montes Caceres le informa lo ocurrido y la compra realizada.
         - ¿Qué necesitan para hacer esta tarea?
             - Solicitud de compra en papel para firmar.
-            - Criterio propio de Adriana para evaluar urgencia.
+            - Criterio propio de Adriana Montes Caceres para evaluar urgencia.
         - ¿Qué se genera al terminar?
-            - Solicitud de compra firmada por Adriana.
-            - Compra ejecutada y comunicada al doctor a posteriori.
+            - Solicitud de compra firmada por Adriana Montes Caceres.
+            - Compra ejecutada y comunicada a Alberto Cid Navarro (Gerencia General) a posteriori.
         - ¿Qué sistemas o herramientas usan?
-            - **Papel físico (solicitud de compra)**: Documento que Adriana firma para autorizar.
-            - **Teléfono / WhatsApp**: Comunicación con Lourdes y con el proveedor.
+            - **Papel físico (solicitud de compra)**: Documento que Adriana Montes Caceres firma para autorizar.
+            - **Teléfono / WhatsApp**: Comunicación con Lourdes Concepcion Sifontes Guerrero y con el proveedor.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Adriana no se siente cómoda firmando sin autorización**: Lo hace solo en casos muy puntuales y de extrema urgencia, por lo que en situaciones ambiguas puede optar por esperar al doctor aunque eso afecte la operación.
+            - **Adriana Montes Caceres no se siente cómoda firmando sin autorización**: Lo hace solo en casos muy puntuales y de extrema urgencia, por lo que en situaciones ambiguas puede optar por esperar a Alberto Cid Navarro (Gerencia General) aunque eso afecte la operación.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 3.4: Firma de pedidos extraordinarios en ausencia de Gerencia General
@@ -1680,35 +1713,35 @@ Creado: 10 de marzo de 2026 10:32
 - TAREA 3.5: Firma y validación semanal de requisiciones para Almacén (A&B)
     - AS-IS 3.5: Firma y validación semanal de requisiciones para Almacén (A&B)
         - ¿Qué es esta tarea?
-            - Revisión y firma por parte de Adriana de las solicitudes semanales de insumos que hace el departamento de cocina/A&B para su abastecimiento desde almacén.
+            - Revisión y firma por parte de Adriana Montes Caceres de las solicitudes semanales de insumos que hace el departamento de cocina/A&B para su abastecimiento desde almacén.
         - ¿Para qué se hace?
             - Para controlar y autorizar las solicitudes de insumos de A&B antes de que almacén los entregue, evitando pedidos excesivos o fuera de lo habitual.
         - ¿Qué roles ejecutan esta tarea?
             - Cocina/A&B (elabora la lista de requisición).
-            - Adriana (revisa, valida y firma la requisición).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): revisa, valida y firma la requisición.
             - Almacén (recibe la requisición firmada y entrega los insumos o los solicita a compras si no los tiene).
         - ¿Cuándo se hace?
-            - Disparador: El departamento de cocina elabora su lista de necesidades semanales y se la entrega a Adriana para aprobación.
+            - Disparador: El departamento de cocina elabora su lista de necesidades semanales y se la entrega a Adriana Montes Caceres para aprobación.
             - Frecuencia: Semanal (aunque en la práctica puede ocurrir dos o tres veces por semana porque cocina no planifica con suficiente anticipación).
         - ¿Cómo se hace?
-            - Paso 1: Cocina entrega a Adriana una lista en papel con los insumos requeridos para la semana (harina, arroz, huevos, leche, etc.).
-            - Paso 2: Adriana revisa la lista visualmente: verifica que los productos y cantidades sean razonables para el volumen de operación actual.
-            - Paso 3: Si todo está en orden, Adriana firma la requisición.
+            - Paso 1: Cocina entrega a Adriana Montes Caceres una lista en papel con los insumos requeridos para la semana (harina, arroz, huevos, leche, etc.).
+            - Paso 2: Adriana Montes Caceres revisa la lista visualmente: verifica que los productos y cantidades sean razonables para el volumen de operación actual.
+            - Paso 3: Si todo está en orden, Adriana Montes Caceres firma la requisición.
             - Paso 4: Cocina lleva la requisición firmada a almacén.
             - Paso 5: Almacén entrega los insumos disponibles y, si algo no está en stock, lo solicita a compras.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de requisición en papel elaborada por cocina.
-            - Criterio de Adriana para validar cantidades.
+            - Criterio de Adriana Montes Caceres para validar cantidades.
         - ¿Qué se genera al terminar?
             - Requisición firmada que cocina lleva a almacén.
         - ¿Qué sistemas o herramientas usan?
             - **Papel físico**: La requisición es completamente manual.
-            - No se utilizan sistemas por parte de Adriana en este proceso.
+            - No se utilizan sistemas por parte de Adriana Montes Caceres en este proceso.
         - ¿Qué pasa cuando las cosas no salen normal?
             - **Cocina hace múltiples requisiciones por semana**: En lugar de planificar una sola vez por semana, cocina entrega dos o tres listas diferentes porque se les olvidan productos o no calcularon bien las cantidades.
-            - **Pedidos que exceden lo razonable**: Adriana lo detecta visualmente y pregunta la razón antes de firmar (ej. piden más queso del habitual en temporada alta).
+            - **Pedidos que exceden lo razonable**: Adriana Montes Caceres lo detecta visualmente y pregunta la razón antes de firmar (ej. piden más queso del habitual en temporada alta).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Llevar la trazabilidad del consumo de materia prima de cocina en el sistema (por ejemplo, registrando cada preparación al momento de hacerla), de modo que pueda anticiparse el agotamiento de insumos con suficiente antelación y se elaboren los pedidos una sola vez por semana, en lugar de las múltiples requisiciones que hoy se generan por falta de planificación. Adriana Montes Caceres coincidió en que esto es importante para que almacén mantenga un stock confiable de productos básicos.
     - Propuesta 3.5: Firma y validación semanal de requisiciones para Almacén (A&B)
         - Pendiente.
 
@@ -1721,24 +1754,24 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para garantizar que el personal de A&B cumpla con los estándares de atención, presentación y operación establecidos, en ausencia de un gerente de A&B propio del departamento.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (supervisión directa).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): supervisión directa.
         - ¿Cuándo se hace?
             - Disparador: Durante la operación diaria; también cuando se presenta una situación especial (reclamo de cliente, cobro de servicio en disputa, error en comanda).
             - Frecuencia: Diaria, de forma continua durante la operación.
         - ¿Cómo se hace?
-            - Paso 1: Adriana se desplaza físicamente al área de A&B o las observa en el transcurso de su trabajo en recepción.
+            - Paso 1: Adriana Montes Caceres se desplaza físicamente al área de A&B o las observa en el transcurso de su trabajo en recepción.
             - Paso 2: Verifica vestimenta, presencia, que estén trabajando y no distraídos.
-            - Paso 3: Si hay un reclamo de cliente (ej. huésped que disputa el cobro del servicio), Adriana interviene directamente.
-            - Paso 4: Si el reclamo es grave (huésped que no quiere pagar el servicio), Adriana evalúa si exonerar el cobro o escalar a gerencia.
+            - Paso 3: Si hay un reclamo de cliente (ej. huésped que disputa el cobro del servicio), Adriana Montes Caceres interviene directamente.
+            - Paso 4: Si el reclamo es grave (huésped que no quiere pagar el servicio), Adriana Montes Caceres evalúa si exonerar el cobro o escalar a gerencia.
         - ¿Qué necesitan para hacer esta tarea?
-            - Presencia física de Adriana en las áreas de A&B.
+            - Presencia física de Adriana Montes Caceres en las áreas de A&B.
         - ¿Qué se genera al terminar?
             - Correcciones en el comportamiento o presentación del personal (cuando aplica).
             - Reclamos de clientes resueltos.
         - ¿Qué sistemas o herramientas usan?
             - No se utilizan sistemas para esta tarea. Es completamente presencial.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Mesonero que cobra el servicio sin informar al cliente**: Se presenta al check-out y el cliente no quiere pagar. Adriana interviene para resolver.
+            - **Mesonero que cobra el servicio sin informar al cliente**: Se presenta al check-out y el cliente no quiere pagar. Adriana Montes Caceres interviene para resolver.
             - **Mesonero que carga a la habitación equivocada**: Genera discrepancias al momento del check-out que deben ser investigadas con A&B.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el cobro del servicio (10%) sea gestionado directamente por los mesoneros en el área de A&B, y no pase por recepción ni se cargue a la habitación. Esto eliminaría la mayoría de los conflictos en el check-out relacionados con este concepto.
@@ -1747,22 +1780,26 @@ Creado: 10 de marzo de 2026 10:32
 
 ---
 
+# Área 4: Ama de Llaves (Housekeeping) - Control y Calidad
+
 - TAREA 4.1: Firma y control de requisiciones semanales de insumos para Almacén (Ama de Llaves)
     - AS-IS 4.1: Firma y control de requisiciones semanales de insumos para Almacén (Ama de Llaves)
         - ¿Qué es esta tarea?
-            - Proceso idéntico al de A&B (tarea 3.5), aplicado al departamento de Ama de Llaves: revisión y firma de Adriana sobre las solicitudes semanales de insumos de limpieza y habitaciones.
+            - Proceso idéntico al de A&B (tarea 3.5), aplicado al departamento de Ama de Llaves: revisión y firma de Adriana Montes Caceres sobre las solicitudes semanales de insumos de limpieza y habitaciones.
         - ¿Para qué se hace?
             - Para controlar y autorizar el abastecimiento semanal de productos e insumos del departamento de Ama de Llaves.
         - ¿Qué roles ejecutan esta tarea?
             - Ama de Llaves (elabora la solicitud).
-            - Adriana (revisa y firma).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): revisa y firma.
             - Almacén (entrega los insumos o los solicita a compras).
         - ¿Cuándo se hace?
-            - Disparador: El departamento de Ama de Llaves entrega su requisición semanal a Adriana.
+            - Disparador: El departamento de Ama de Llaves entrega su requisición semanal a Adriana Montes Caceres.
             - Frecuencia: Semanal.
         - ¿Cómo se hace?
-            - El proceso es idéntico al de la tarea 3.5: ama de llaves entrega lista en papel → Adriana revisa y firma → va a almacén.
-            - La única diferencia es que en este caso no hay contacto de Adriana con proveedores externos; almacén ya debe tener los insumos (jabón, cloro, productos de limpieza, papel higiénico, etc.).
+            - Paso 1: El departamento de Ama de Llaves entrega la lista de insumos en papel a Adriana Montes Caceres.
+            - Paso 2: Adriana Montes Caceres revisa la lista y firma la requisición.
+            - Paso 3: Ama de Llaves lleva la requisición firmada a almacén.
+            - Nota: A diferencia de la tarea 3.5, no hay contacto con proveedores externos; almacén ya debe tener los insumos (jabón, cloro, productos de limpieza, papel higiénico, amenities, champú, etc.).
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tarea 3.5.
         - ¿Qué se genera al terminar?
@@ -1770,7 +1807,8 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Qué sistemas o herramientas usan?
             - **Papel físico**: Requisición completamente manual.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - **Pedidos exagerados respecto a la ocupación**: Adriana Montes Caceres detecta visualmente si se pide más de lo razonable (ej. demasiado jabón sin huéspedes que lo justifiquen) y pregunta o tacha antes de firmar.
+            - **Sin intervención de proveedores ni de compras**: Adriana Montes Caceres no se comunica con compras en este proceso; almacén ya debe tener el producto en existencia o lo solicita a compras por su cuenta. Solo interviene con compras en casos muy puntuales (ej. un producto especial indicado por gerencia, como un quitamanchas de óxido).
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 4.1: Firma y control de requisiciones semanales de insumos para Almacén (Ama de Llaves)
@@ -1787,7 +1825,7 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Qué roles ejecutan esta tarea?
             - Ama de Llaves (debería actualizar Cloudbeds; está en proceso de adopción del sistema).
             - Recepcionista (verifica físicamente antes de asignar una habitación).
-            - Adriana (verifica cuando la recepcionista no puede).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): verifica cuando la recepcionista no puede.
         - ¿Cuándo se hace?
             - Disparador: Antes de asignar una habitación a una reserva o check-in.
             - Frecuencia: Cada vez que se va a asignar una habitación.
@@ -1823,14 +1861,14 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para que el estado de las habitaciones en Cloudbeds refleje con precisión cuáles están disponibles para la venta y cuáles no, evitando asignar habitaciones que no estén en condiciones.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (verifica y decide bloqueo o desbloqueo).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): verifica y decide bloqueo o desbloqueo.
             - Ama de Llaves (debería notificar y eventualmente actualizar en sistema).
         - ¿Cuándo se hace?
             - Disparador: Una habitación entra o sale de un proceso de mantenimiento, o se detecta que una habitación tiene un problema que impide su uso.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
             - Paso 1: Se detecta que una habitación tiene un problema (mantenimiento de equipo, daño estructural, colchón retirado, etc.).
-            - Paso 2: Adriana o la recepcionista verifica físicamente el estado de la habitación.
+            - Paso 2: Adriana Montes Caceres o la recepcionista verifica físicamente el estado de la habitación.
             - Paso 3: Si la habitación no está en condiciones de ser vendida, se bloquea en Cloudbeds.
             - Paso 4: Cuando el mantenimiento es completado y la habitación está lista, se desbloquea en Cloudbeds.
         - ¿Qué necesitan para hacer esta tarea?
@@ -1845,7 +1883,6 @@ Creado: 10 de marzo de 2026 10:32
             - **Ama de llaves no notifica a recepción**: Recepción no se entera de que una habitación tiene un problema hasta que ya fue vendida o el huésped llega a ella.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que ama de llaves actualice directamente en Cloudbeds el estado de cada habitación al momento de detectar un problema o al terminar su preparación, eliminando la dependencia de notificaciones manuales.
-    
     - Propuesta 4.3: Chequeo de habitaciones en mantenimiento para bloqueo o desbloqueo
         - Pendiente.
 
@@ -1858,24 +1895,24 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para garantizar que el personal de ama de llaves cumpla con los estándares de calidad, presentación y atención definidos por el hotel, en ausencia de una jefatura propia del departamento.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (supervisión directa).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): supervisión directa.
         - ¿Cuándo se hace?
             - Disparador: Rondas durante la operación diaria, o cuando se reporta una situación específica con algún miembro del personal.
             - Frecuencia: Diaria.
         - ¿Cómo se hace?
-            - Paso 1: Adriana realiza rondas de supervisión por las áreas del hotel donde trabaja ama de llaves (pasillos, habitaciones, áreas comunes).
+            - Paso 1: Adriana Montes Caceres realiza rondas de supervisión por las áreas del hotel donde trabaja ama de llaves (pasillos, habitaciones, áreas comunes).
             - Paso 2: Verifica vestimenta (uniforme adecuado, no pantalones rotos, no ropa inapropiada), comportamiento (no usar el teléfono, no hablar con confianza excesiva con los huéspedes) y limpieza de las áreas a su cargo.
             - Paso 3: Si detecta algún problema, corrige directamente en el momento (le indica a la persona lo que debe ajustar).
-            - Nota: Aunque hay normativas sobre uniforme, no siempre hay uniformes disponibles para entregar al personal. Adriana orienta sobre la vestimenta apropiada cuando no hay uniforme formal.
+            - Nota: Aunque hay normativas sobre uniforme, no siempre hay uniformes disponibles para entregar al personal. Adriana Montes Caceres orienta sobre la vestimenta apropiada cuando no hay uniforme formal.
         - ¿Qué necesitan para hacer esta tarea?
-            - Presencia física de Adriana en las áreas del hotel.
+            - Presencia física de Adriana Montes Caceres en las áreas del hotel.
         - ¿Qué se genera al terminar?
             - Correcciones en el comportamiento, presentación o trabajo del personal (cuando aplica).
         - ¿Qué sistemas o herramientas usan?
             - No se utilizan sistemas. Es un proceso completamente presencial.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Personal que habla confianzudamente con huéspedes**: Adriana interviene para recordar el protocolo de trato.
-            - **Falta de uniformes disponibles**: Adriana orienta sobre vestimenta apropiada en su ausencia.
+            - **Personal que habla confianzudamente con huéspedes**: Adriana Montes Caceres interviene para recordar el protocolo de trato.
+            - **Falta de uniformes disponibles**: Adriana Montes Caceres orienta sobre vestimenta apropiada en su ausencia.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 4.4: Supervisión del personal de ama de llaves
@@ -1883,21 +1920,25 @@ Creado: 10 de marzo de 2026 10:32
 
 ---
 
+# Área 5: Lavandería - Insumos y Supervisión
+
 - TAREA 5.1: Firma y control de requisiciones semanales de productos químicos e insumos para Almacén (Lavandería)
     - AS-IS 5.1: Firma y control de requisiciones semanales de productos químicos e insumos (Lavandería)
         - ¿Qué es esta tarea?
-            - Revisión y firma de Adriana sobre las solicitudes semanales de productos químicos e insumos del departamento de Lavandería, siguiendo el mismo proceso que las tareas 3.5 y 4.1.
+            - Revisión y firma de Adriana Montes Caceres sobre las solicitudes semanales de productos químicos e insumos del departamento de Lavandería, siguiendo el mismo proceso que las tareas 3.5 y 4.1.
         - ¿Para qué se hace?
             - Para controlar y autorizar el abastecimiento semanal de productos de lavandería (jabón, químicos, insumos de limpieza de lencería), evitando pedidos excesivos o irregulares.
         - ¿Qué roles ejecutan esta tarea?
             - Lavandería (elabora la solicitud).
-            - Adriana (revisa y firma).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): revisa y firma.
             - Almacén (entrega los productos o los solicita a compras).
         - ¿Cuándo se hace?
-            - Disparador: El departamento de Lavandería entrega su requisición semanal a Adriana.
+            - Disparador: El departamento de Lavandería entrega su requisición semanal a Adriana Montes Caceres.
             - Frecuencia: Semanal (aunque puede haber solicitudes adicionales a mitad de semana por procesos de desmanche u otras necesidades puntuales).
         - ¿Cómo se hace?
-            - El proceso es idéntico al de las tareas 3.5 y 4.1: lavandería entrega lista en papel → Adriana revisa y firma → va a almacén.
+            - Paso 1: Lavandería entrega la lista de productos en papel a Adriana Montes Caceres.
+            - Paso 2: Adriana Montes Caceres revisa la lista y firma la requisición.
+            - Paso 3: Lavandería lleva la requisición firmada a almacén.
         - ¿Qué necesitan para hacer esta tarea?
             - Mismo que tareas 3.5 y 4.1.
         - ¿Qué se genera al terminar?
@@ -1921,25 +1962,25 @@ Creado: 10 de marzo de 2026 10:32
         - ¿Para qué se hace?
             - Para garantizar que el personal de lavandería esté trabajando correctamente y que el proceso de limpieza de lencería se realice con los estándares requeridos, en ausencia de una jefatura propia del departamento.
         - ¿Qué roles ejecutan esta tarea?
-            - Adriana (supervisión directa).
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento): supervisión directa.
         - ¿Cuándo se hace?
-            - Disparador: Adriana se desplaza al área de lavandería durante la jornada operativa para verificar que el personal esté trabajando. No hay una ronda fija establecida; es bajo demanda y criterio propio.
+            - Disparador: Adriana Montes Caceres se desplaza al área de lavandería durante la jornada operativa para verificar que el personal esté trabajando. No hay una ronda fija establecida; es bajo demanda y criterio propio.
             - Frecuencia: Periódica durante la jornada; frecuencia exacta no estandarizada.
             - Fuente: kmmin003 (20260309 sesion 2).
         - ¿Cómo se hace?
-            - Paso 1: Adriana se desplaza físicamente al área de lavandería (ubicada en un sector separado del hotel, alejado de recepción y ama de llaves).
+            - Paso 1: Adriana Montes Caceres se desplaza físicamente al área de lavandería (ubicada en un sector separado del hotel, alejado de recepción y ama de llaves).
             - Paso 2: Verifica que el personal esté trabajando y no perdiendo tiempo.
             - Paso 3: Revisa el estado de los equipos (lavadoras, secadoras).
             - Paso 4: Verifica el volumen de lencería sucia pendiente de lavar y el avance del trabajo.
             - Nota: El área está físicamente separada y el personal trabaja sin supervisión directa continua, lo que hace necesaria esta visita periódica.
         - ¿Qué necesitan para hacer esta tarea?
-            - Presencia física de Adriana en el área de lavandería.
+            - Presencia física de Adriana Montes Caceres en el área de lavandería.
         - ¿Qué se genera al terminar?
             - Correcciones en el trabajo del personal o en el uso de equipos (cuando aplica).
         - ¿Qué sistemas o herramientas usan?
             - No se utilizan sistemas. Es un proceso completamente presencial.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - **Personal que no cumple con sus tareas**: Adriana los corrige directamente en el momento.
+            - **Personal que no cumple con sus tareas**: Adriana Montes Caceres los corrige directamente en el momento.
             - **Solicitudes excesivas de productos**: Se detectan durante la supervisión cuando hay discrepancia entre el volumen de trabajo visible y los productos solicitados.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Contar con algún tipo de matriz o control estándar de consumo de productos por tipo de proceso (lavado normal, desmanche), para poder controlar mejor las requisiciones y detectar desviaciones con mayor facilidad.
@@ -1954,44 +1995,42 @@ No se identificaron tareas documentadas en transcripts (kmmin001, kmmin002, kmmi
 
 **Observaciones con potencial de adición (requieren aprobación):**
 
-1. **Recepción de pedidos en Odoo por parte de cajeros (A&B)** — Adriana menciona en kmmin003 que el ideal es que los cajeros de A&B realicen la recepción de agua, gas y otros suministros en Odoo, en lugar de que lo haga recepción. Esto sugiere una tarea futura en el área de A&B, no una tarea nueva en Gerencia Hotelera.
+1. **Recepción de pedidos en Odoo por parte de cajeros (A&B)** — Adriana Montes Caceres menciona en kmmin003 que el ideal es que los cajeros de A&B realicen la recepción de agua, gas y otros suministros en Odoo, en lugar de que lo haga recepción. Esto sugiere una tarea futura en el área de A&B, no una tarea nueva en Gerencia Hotelera.
 
-2. **Gestión de solicitudes de huéspedes in-house vía Visito** — Adriana señala que la IA de Visito responde automáticamente solicitudes operativas de huéspedes ya hospedados (ej. "necesito agua"), sin que recepción lo vea a tiempo. Esto podría constituir una tarea diferenciada de atención in-house que no está explícitamente en el Inventario (diferente de 2.1.1 que cubre canales de prospectos y reservas). Pendiente de evaluar si corresponde agregar como subtarea de 2.1.1 o como tarea independiente.
+2. **Gestión de solicitudes de huéspedes in-house vía Visito** — Adriana Montes Caceres señala que la IA de Visito responde automáticamente solicitudes operativas de huéspedes ya hospedados (ej. "necesito agua"), sin que recepción lo vea a tiempo. Esto podría constituir una tarea diferenciada de atención in-house que no está explícitamente en el Inventario (diferente de 2.1.1 que cubre canales de prospectos y reservas). Pendiente de evaluar si corresponde agregar como subtarea de 2.1.1 o como tarea independiente.
 
 ---
 
 ## ITEMS ⚠️ PENDIENTES DE VALIDACION EN SESION PROXIMA
 
-Los siguientes campos no pudieron ser llenados con las tres fuentes disponibles (kmmin001, kmmin002, kmmin003) y permanecen pendientes:
+Tras el repaso de los transcripts (kmmin001, kmmin002, kmmin003), se llenaron los campos de excepción e ideal que el informante efectivamente cubrió. Los siguientes campos permanecen pendientes porque el informante no los articuló o respondió explícitamente que no aplican:
 
 | Tarea | Campo pendiente |
 |---|---|
-| 1.1.2 | ¿Cómo les gustaría que funcionara idealmente? |
-| 1.1.4 | ¿Cómo les gustaría que funcionara idealmente? |
-| 1.1.5 | ¿Cómo les gustaría que funcionara idealmente? |
-| 1.1.6 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 1.1.7 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 1.1.9 | ¿Cómo les gustaría que funcionara idealmente? |
-| 1.2.2 | ¿Cómo les gustaría que funcionara idealmente? |
-| 1.2.3 | ¿Cómo les gustaría que funcionara idealmente? |
-| 1.2.4 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 1.3.2 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
+| 1.1.2 | ¿Ideal? (no articulado para esta tarea) |
+| 1.1.4 | ¿Ideal? (no articulado) |
+| 1.1.5 | ¿Ideal? (no articulado) |
+| 1.1.6 | ¿Ideal? (excepción resuelta: no aplica) |
+| 1.1.7 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? (no articulados) |
+| 1.1.9 | ¿Ideal? (no articulado; el ideal de unificar a TT Hotel pertenece a 1.1.8) |
+| 1.2.2 | ¿Ideal? (el ideal del servicio 10% pertenece a 1.2.1) |
+| 1.2.3 | ¿Ideal? (no articulado) |
+| 1.2.4 | ¿Ideal? (excepción resuelta: no aplica) |
+| 1.3.2 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? (proceso automático; no articulados) |
 | 1.4.1 | Disparador: día exacto del mes no confirmado |
-| 1.4.2 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 1.4.5 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 2.1.4 | ¿Cómo les gustaría que funcionara idealmente? |
-| 2.1.5 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 2.1.7 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 2.1.8 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 2.2.3 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 2.1.2 | ¿Cómo les gustaría que funcionara idealmente? |
-| 2.3.1 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 2.3.3 | ¿Qué pasa cuando las cosas no salen normal? |
+| 1.4.2 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? (no articulados) |
+| 1.4.5 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? (no articulados) |
+| 2.1.2 | ¿Ideal? (el ideal de mensajería dedicada pertenece a 2.1.1) |
+| 2.1.4 | ¿Ideal? (informante respondió "no" a excepción/mejora) |
+| 2.1.5 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? (informante respondió "por el momento no") |
+| 2.1.7 | ¿Ideal? (excepciones llenadas) |
+| 2.1.8 | ¿Ideal? (excepción llenada) |
+| 2.2.3 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? (no articulados; proceso presencial directo) |
+| 2.3.1 | ¿Ideal? (excepción llenada) |
 | 2.4.1 | Disparador exacto / Frecuencia / ¿Ideal? |
-| 2.4.2 | ¿Qué pasa cuando las cosas no salen normal? |
-| 2.4.4 | ¿Cómo les gustaría que funcionara idealmente? |
-| 2.4.5 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 3.4 | ¿Cómo les gustaría que funcionara idealmente? |
-| 3.5 | ¿Cómo les gustaría que funcionara idealmente? |
-| 4.1 | ¿Qué pasa cuando las cosas no salen normal? / ¿Ideal? |
-| 4.4 | ¿Cómo les gustaría que funcionara idealmente? |
+| 2.4.4 | ¿Ideal? (no articulado) |
+| 2.4.5 | ¿Ideal? (excepciones llenadas) |
+| 3.4 | ¿Ideal? (no articulado para esta tarea) |
+| 4.4 | ¿Ideal? (no articulado; el ideal de actualización en tiempo real pertenece a 4.2/4.3) |
+
+**Campos llenados en este repaso:** 1.1.6 (excepción), 1.2.4 (excepción), 2.1.7 (excepciones), 2.1.8 (excepción), 2.3.1 (excepción), 2.3.3 (excepción), 2.4.2 (excepción), 2.4.5 (excepciones), 3.5 (ideal), 4.1 (excepción).

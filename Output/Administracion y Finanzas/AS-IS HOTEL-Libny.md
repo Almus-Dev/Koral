@@ -1,12 +1,12 @@
 # AS - IS: Administración y Finanzas (HOTEL-Libny)
 
 Creado: 18 de marzo de 2026 9:50
-Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Campos con fuente disponible en transcripción completados.
+Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Campos con fuente disponible en transcripción completados. Normalizado contra plantilla 2026-06-12.
 
-## FASE 1: CIERRES DIARIO DE CAJAS RECEPCION (1er TURNO / 2DO TURNO)
+# Área 1: Cierres Diarios de Cajas Recepción (1er Turno / 2do Turno)
 
-- **TAREA 1.1: Ingreso a los bancos nacionales para verificar los pagos de clientes y confirmarlos al departamento (Transferencias/Pago Móvil)**
-    - **AS-IS 1.1: Verificación de pagos bancarios y confirmación a recepción**
+- TAREA 1.1: Ingreso a los bancos nacionales para verificar los pagos de clientes y confirmarlos al departamento (Transferencias/Pago Móvil)
+    - AS-IS 1.1: Verificación de pagos bancarios y confirmación a recepción
         - ¿Qué es esta tarea?
             - Revisión directa en los portales bancarios de los comprobantes de pago móvil o transferencia enviados por recepción, para confirmar si el pago efectivamente ingresó a la cuenta, con qué datos y por qué monto.
         - ¿Para qué se hace?
@@ -40,17 +40,20 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Recepción no registra el pago en Odoo por carga operativa (ej. múltiples check-outs simultáneos): Administración asume el registro del recibo de cobro en Odoo para no retrasar la facturación.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 1.1:**
+    - Propuesta 1.1: Verificación de pagos bancarios y confirmación a recepción
         - Pendiente.
-- **TAREA 1.2: Generación de archivo xlsx en el sistema Cloudbeds — Informe de actividad diaria / Informes de Caja Efectivo Bs y Divisas**
-    - **AS-IS 1.2: Exportación y validación del informe de caja desde Cloudbeds al cierre de turno**
+
+---
+
+- TAREA 1.2: Generación de archivo xlsx en el sistema Cloudbeds — Informe de actividad diaria / Informes de Caja Efectivo Bs y Divisas
+    - AS-IS 1.2: Exportación y validación del informe de caja desde Cloudbeds al cierre de turno
         - ¿Qué es esta tarea?
             - Exportación del informe de actividad diaria desde Cloudbeds en formato Excel, utilizado para conciliar los pagos registrados en el sistema contra los comprobantes físicos (punto de venta, pago móvil, transferencias) y el efectivo entregado.
         - ¿Para qué se hace?
             - Para que recepción verifique que todo lo registrado en Cloudbeds es correcto y completo antes del cierre de turno. Permite detectar montos mal ingresados o pagos faltantes para ser corregidos o anulados antes de entregar la caja.
         - ¿Qué roles ejecutan esta tarea?
             - Rol principal: Administración (Libny Carina Tarazon Gallegos) — exporta el archivo y realiza la revisión.
-            - Rol alternativo: Adriana Montes Caceres (supervisora de recepción) — puede exportarlo en ausencia de Libny Carina Tarazon Gallegos. ⚠️ Pendiente validar en sesión próxima.
+            - Rol alternativo: Adriana Montes Caceres (supervisora de recepción) — puede exportar el archivo, aunque normalmente lo exporta Libny Carina Tarazon Gallegos.
             - Destinatario de la validación: Recepción — revisa el archivo contra sus comprobantes y corrige lo necesario.
         - ¿Cuándo se hace?
             - Disparador: Recepción solicita el archivo al finalizar su turno, una vez que han cerrado su caja en Cloudbeds.
@@ -77,10 +80,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Recepción registró un monto incorrecto (ej. cien dólares en lugar de cincuenta): Se anula el pago (lo ejecuta Adriana Montes Caceres) y se vuelve a registrar el monto correcto. De no corregirse, el faltante queda a cargo del recepcionista.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 1.2:**
+    - Propuesta 1.2: Exportación y validación del informe de caja desde Cloudbeds al cierre de turno
         - Pendiente.
-- **TAREA 1.3: Recepción del Efectivo en Bolívares y en Divisas**
-    - **AS-IS 1.3: Recepción física del efectivo al cierre de turno de recepción**
+
+---
+
+- TAREA 1.3: Recepción del Efectivo en Bolívares y en Divisas
+    - AS-IS 1.3: Recepción física del efectivo al cierre de turno de recepción
         - ¿Qué es esta tarea?
             - Recepción física del efectivo en bolívares y divisas que el recepcionista entrega a administración al cierre de su turno, con verificación de que el monto coincida con lo registrado en Cloudbeds.
         - ¿Para qué se hace?
@@ -112,10 +118,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - El monto físico no coincide con el informe de Cloudbeds: Se revisa el número de cierre en Cloudbeds para identificar anulaciones u errores. Se deja observación en la caja de Odoo explicando la diferencia.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente un recibo de caja imprimible (recibo de ingreso/egreso) en formato pequeño (aproximadamente 8 cm), compatible con impresora de ticketera/comanda, para que la persona firme directamente ese comprobante sin necesidad de hacerlo manualmente. Actualmente el recibo se hace a mano, se imprime en impresora normal, se corta y se archiva.
-    - **Propuesta 1.3:**
+    - Propuesta 1.3: Recepción física del efectivo al cierre de turno de recepción
         - Pendiente.
-- **TAREA 1.4: Verificación de pagos clientes reportado en Cloudbeds con el efectivo entregado en Administración**
-    - **AS-IS 1.4: Conciliación del efectivo entregado contra los registros de Cloudbeds**
+
+---
+
+- TAREA 1.4: Verificación de pagos clientes reportado en Cloudbeds con el efectivo entregado en Administración
+    - AS-IS 1.4: Conciliación del efectivo entregado contra los registros de Cloudbeds
         - ¿Qué es esta tarea?
             - Validación cruzada entre el efectivo físicamente entregado por recepción y los registros de pagos en Cloudbeds, para asegurar que todo lo recibido esté correctamente registrado y no haya diferencias sin justificar.
         - ¿Para qué se hace?
@@ -152,10 +161,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
     
-    - **Propuesta 1.4:**
+    - Propuesta 1.4: Conciliación del efectivo entregado contra los registros de Cloudbeds
         - Pendiente.
-- **TAREA 1.5: Registro en Odoo del efectivo recibido en los Diarios Caja Principal USD y BDS**
-    - **AS-IS 1.5: Registro del efectivo del cierre de turno en los diarios de caja de Odoo**
+
+---
+
+- TAREA 1.5: Registro en Odoo del efectivo recibido en los Diarios Caja Principal USD y BDS
+    - AS-IS 1.5: Registro del efectivo del cierre de turno en los diarios de caja de Odoo
         - ¿Qué es esta tarea?
             - Registro contable en Odoo del efectivo en bolívares y divisas recibido de recepción, en los diarios de caja correspondientes (Caja Principal USD y Caja Principal BDS).
         - ¿Para qué se hace?
@@ -179,10 +191,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente el recibo de caja imprimible al registrar el movimiento, sin necesidad de hacerlo manualmente en papel (ver también Tarea 1.3).
-    - **Propuesta 1.5:**
+    - Propuesta 1.5: Registro del efectivo del cierre de turno en los diarios de caja de Odoo
         - Pendiente.
-- **TAREA 1.6: Generación de archivo xlsx en el sistema Cloudbeds — Informe de actividad diaria / Informe de Conciliación de Pagos**
-    - **AS-IS 1.6: Exportación del informe de conciliación de pagos desde Cloudbeds**
+
+---
+
+- TAREA 1.6: Generación de archivo xlsx en el sistema Cloudbeds — Informe de actividad diaria / Informe de Conciliación de Pagos
+    - AS-IS 1.6: Exportación del informe de conciliación de pagos desde Cloudbeds
         - ¿Qué es esta tarea?
             - Exportación desde Cloudbeds del informe de conciliación de pagos en formato Excel, que detalla todos los pagos registrados en el turno para cruzarlos contra los comprobantes físicos y el reporte de punto de venta.
         - ¿Para qué se hace?
@@ -211,10 +226,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 1.6:**
+    - Propuesta 1.6: Exportación del informe de conciliación de pagos desde Cloudbeds
         - Pendiente.
-- **TAREA 1.7: Verificación/Conciliación de pagos clientes con el Reporte Detallado de los Puntos de Ventas Bancarios, Transferencias y Pagos Móvil**
-    - **AS-IS 1.7: Verificación cruzada de pagos electrónicos contra Cloudbeds y reportes bancarios**
+
+---
+
+- TAREA 1.7: Verificación/Conciliación de pagos clientes con el Reporte Detallado de los Puntos de Ventas Bancarios, Transferencias y Pagos Móvil
+    - AS-IS 1.7: Verificación cruzada de pagos electrónicos contra Cloudbeds y reportes bancarios
         - ¿Qué es esta tarea?
             - Validación cruzada de todos los pagos electrónicos del turno (punto de venta bancario, transferencias y pago móvil) contra el informe de Cloudbeds exportado, para asegurar que lo registrado en el sistema coincide con lo recibido.
         - ¿Para qué se hace?
@@ -246,10 +264,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Error detectado en algún pago: Se notifica a Adriana Montes Caceres, quien anula el pago en Cloudbeds; recepción lo vuelve a registrar con el monto o método correcto.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 1.7:**
+    - Propuesta 1.7: Verificación cruzada de pagos electrónicos contra Cloudbeds y reportes bancarios
         - Pendiente.
-- **TAREA 1.8: En caso de encontrar cualquier error se le informa a recepción, para que realicen anulación/modificación**
-    - **AS-IS 1.8: Notificación de errores a recepción y gestión de anulaciones**
+
+---
+
+- TAREA 1.8: En caso de encontrar cualquier error se le informa a recepción, para que realicen anulación/modificación
+    - AS-IS 1.8: Notificación de errores a recepción y gestión de anulaciones
         - ¿Qué es esta tarea?
             - Comunicación formal del error detectado a recepción para que soliciten a Adriana Montes Caceres la anulación del pago incorrecto en Cloudbeds, y posterior re-registro del pago correcto.
         - ¿Para qué se hace?
@@ -281,15 +302,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 1.8:**
+    - Propuesta 1.8: Notificación de errores a recepción y gestión de anulaciones
         - Pendiente.
 
 ---
 
-## **FASE 2: FACTURACION DE VENTAS RECEPCION (1er TURNO / 2DO TURNO)**
+# Área 2: Facturación de Ventas Recepción (1er Turno / 2do Turno)
 
-- **TAREA 2.1: Análisis de las cuentas de clientes en el sistema Cloudbeds**
-    - **AS-IS 2.1: Revisión de la cuenta del cliente en Cloudbeds previo a la facturación**
+- TAREA 2.1: Análisis de las cuentas de clientes en el sistema Cloudbeds
+    - AS-IS 2.1: Revisión de la cuenta del cliente en Cloudbeds previo a la facturación
         - ¿Qué es esta tarea?
             - Revisión detallada en Cloudbeds de la ficha/cuenta del cliente al momento de su check-out, verificando todos los conceptos que conforman su cuenta: hospedaje, pack adicional, consumos, penalidades u otros cargos.
         - ¿Para qué se hace?
@@ -322,10 +343,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Que Odoo cuente con un tarifario integrado que traiga automáticamente los montos según el tipo de servicio (hospedaje, pack adicional, consumo), sin necesidad de ingresarlos manualmente.
             - Que Odoo calcule automáticamente la discriminación del IVA al ingresar el monto total, sin requerir que el usuario calcule la base imponible manualmente.
             - Que el sistema se adapte al flujo del negocio (desglose por tipo de pago, tasa promedio, pack adicional) sin depender de una hoja de Excel auxiliar externa.
-    - **Propuesta 2.1:**
+    - Propuesta 2.1: Revisión de la cuenta del cliente en Cloudbeds previo a la facturación
         - Pendiente.
-- **TAREA 2.2: Verificación del registro en Odoo del Contacto Cliente**
-    - **AS-IS 2.2: Validación de la existencia del contacto del cliente en Odoo previo a facturar**
+
+---
+
+- TAREA 2.2: Verificación del registro en Odoo del Contacto Cliente
+    - AS-IS 2.2: Validación de la existencia del contacto del cliente en Odoo previo a facturar
         - ¿Qué es esta tarea?
             - Búsqueda en Odoo del contacto del cliente por cédula o nombre, para confirmar que recepción lo haya registrado previamente. Si no existe, se crea o se solicita su creación antes de proceder con la factura.
         - ¿Para qué se hace?
@@ -354,10 +378,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - El contacto existe con cédula incorrecta (posible duplicado): Se busca por nombre antes de crear uno nuevo, para evitar duplicidad de contactos.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 2.2:**
+    - Propuesta 2.2: Validación de la existencia del contacto del cliente en Odoo previo a facturar
         - Pendiente.
-- **TAREA 2.3: Verificación del registro en Odoo de los Recibos de Cobros del cliente**
-    - **AS-IS 2.3: Validación de los recibos de cobro del cliente en Odoo antes de facturar**
+
+---
+
+- TAREA 2.3: Verificación del registro en Odoo de los Recibos de Cobros del cliente
+    - AS-IS 2.3: Validación de los recibos de cobro del cliente en Odoo antes de facturar
         - ¿Qué es esta tarea?
             - Revisión en Odoo de que todos los pagos realizados por el cliente estén registrados como recibos de cobro, para que al emitir la factura los pagos puedan asociarse correctamente y el saldo quede en cero.
         - ¿Para qué se hace?
@@ -384,10 +411,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Los recibos tienen montos incorrectos: ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 2.3:**
+    - Propuesta 2.3: Validación de los recibos de cobro del cliente en Odoo antes de facturar
         - Pendiente.
-- **TAREA 2.4: Registro en Odoo de los datos verificados en Cloudbeds para su facturación (Hospedaje, Pax Adicional, Consumos, entre otros)**
-    - **AS-IS 2.4: Creación de la factura de venta en Odoo con los datos de la cuenta del cliente**
+
+---
+
+- TAREA 2.4: Registro en Odoo de los datos verificados en Cloudbeds para su facturación (Hospedaje, Pax Adicional, Consumos, entre otros)
+    - AS-IS 2.4: Creación de la factura de venta en Odoo con los datos de la cuenta del cliente
         - ¿Qué es esta tarea?
             - Registro manual en Odoo de todos los conceptos de la factura del cliente (hospedaje, pack adicional, consumos y otros) con sus bases imponibles calculadas previamente, para generar la factura de contingencia.
         - ¿Para qué se hace?
@@ -420,16 +450,18 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Cloudbeds: Fuente de la información de la cuenta del cliente.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Cliente de un grupo cuyos consumos deben facturarse por separado del hospedaje: Se crea un contacto distinto para quien paga los consumos y se emite una factura separada.
-            - Visitante no hospedado que requiere factura: Se registra como contacto nuevo con sus datos completos y se emite factura por los consumos.
-            - ⚠️ Procedimiento específico para facturar visitantes no hospedados: Pendiente validar en sesión próxima.
+            - Visitante no hospedado que requiere factura, o integrante de un grupo que pide factura aparte del cliente que paga la reserva: Se registra a esa persona como contacto nuevo en Odoo con sus datos completos (nombre y dirección corta; no se usa contacto genérico ni cliente de contabilidad) y se emite una factura independiente por sus consumos.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo cuente con un tarifario que traiga automáticamente los montos por tipo de servicio.
             - Que Odoo calcule automáticamente la base imponible al ingresar el monto total (discriminación automática del IVA).
             - Que el sistema integre la información de Cloudbeds para evitar el uso del archivo de Excel auxiliar y el ingreso manual de datos.
-    - **Propuesta 2.4:**
+    - Propuesta 2.4: Creación de la factura de venta en Odoo con los datos de la cuenta del cliente
         - Pendiente.
-- **TAREA 2.5: Impresión de la factura**
-    - **AS-IS 2.5: Impresión de la factura de contingencia generada en Odoo**
+
+---
+
+- TAREA 2.5: Impresión de la factura
+    - AS-IS 2.5: Impresión de la factura de contingencia generada en Odoo
         - ¿Qué es esta tarea?
             - Impresión física de la factura de contingencia generada en Odoo, para entregársela al cliente al momento del check-out.
         - ¿Para qué se hace?
@@ -456,15 +488,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que se disponga de una máquina fiscal integrada a Odoo para emitir facturas fiscales directamente, sin necesidad de emitir facturas de contingencia.
             - Que la integración con la impresora fiscal sea a través del código (desarrollo en el sistema), no solo una conexión física directa.
-    - **Propuesta 2.5:**
+    - Propuesta 2.5: Impresión de la factura de contingencia generada en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 3: CIERRES DIARIO DE CAJAS DE  A&B (1er TURNO / 2DO TURNO)**
+# Área 3: Cierres Diarios de Cajas de A&B (1er Turno / 2do Turno)
 
-- **TAREA 3.1: Ingreso a los bancos nacionales para verificar los pagos de Clientes y confirmarlos al departamento (Transferencias/Pago Móvil)**
-    - **AS-IS 3.1: Verificación de pagos bancarios para la caja de A&B**
+- TAREA 3.1: Ingreso a los bancos nacionales para verificar los pagos de Clientes y confirmarlos al departamento (Transferencias/Pago Móvil)
+    - AS-IS 3.1: Verificación de pagos bancarios para la caja de A&B
         - ¿Qué es esta tarea?
             - Igual que la Tarea 1.1, pero aplicada a los pagos recibidos por la caja de Alimentos y Bebidas (A&B). Se ingresa al banco para confirmar si los pagos móviles o transferencias informados por la caja de A&B efectivamente ingresaron.
         - ¿Para qué se hace?
@@ -487,15 +519,18 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Confirmación de pago enviada a la caja de A&B.
         - ¿Qué sistemas o herramientas usan?
             - Portal bancario (web): Para verificar el ingreso del pago.
-            - ⚠️ Canal de comunicación con la caja de A&B para la confirmación: Pendiente validar en sesión próxima.
+            - WhatsApp (grupo): Canal por el que la caja de A&B notifica el comprobante a confirmar y por el que Administración devuelve la confirmación. Es el mismo grupo donde los cajeros reportan errores de registro (ej. "Señora Libny, por error coloqué efectivo y era tarjeta").
         - ¿Qué pasa cuando las cosas no salen normal?
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 3.1:**
+    - Propuesta 3.1: Verificación de pagos bancarios para la caja de A&B
         - Pendiente.
-- **TAREA 3.2: Generación de archivo xlsx en el sistema Poster — Informe de Turnos de Caja Efectivo Bs y Divisas**
-    - **AS-IS 3.2: Exportación del informe de turno de caja desde Poster**
+
+---
+
+- TAREA 3.2: Generación de archivo xlsx en el sistema Poster — Informe de Turnos de Caja Efectivo Bs y Divisas
+    - AS-IS 3.2: Exportación del informe de turno de caja desde Poster
         - ¿Qué es esta tarea?
             - Descarga desde Poster del informe de turno de caja en formato Excel, que detalla el efectivo en bolívares y divisas recibido durante el turno de la caja de A&B.
         - ¿Para qué se hace?
@@ -523,10 +558,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Poster sea reemplazado por Odoo como sistema de punto de venta, centralizado con el resto de las operaciones, para evitar el doble registro y la descarga manual de informes.
-    - **Propuesta 3.2:**
+    - Propuesta 3.2: Exportación del informe de turno de caja desde Poster
         - Pendiente.
-- **TAREA 3.3: Recepción de Efectivo en Bolívares y en Divisas**
-    - **AS-IS 3.3: Recepción física del efectivo del cierre de turno de A&B**
+
+---
+
+- TAREA 3.3: Recepción de Efectivo en Bolívares y en Divisas
+    - AS-IS 3.3: Recepción física del efectivo del cierre de turno de A&B
         - ¿Qué es esta tarea?
             - Recepción física del efectivo en bolívares y divisas que la caja de A&B entrega a administración al cierre de su turno.
         - ¿Para qué se hace?
@@ -541,23 +579,27 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Paso 1: La caja de A&B cierra su turno en Poster.
             - Paso 2: Se desplaza a administración con el efectivo en bolívares y divisas.
             - Paso 3: Administración recibe el efectivo y lo compara contra el informe de turno descargado de Poster (Tarea 3.2).
-            - Paso 4: ⚠️ Pendiente validar si se emite un recibo físico de recepción de efectivo equivalente al de recepción (Tarea 1.3).
+            - Paso 4: Emite el recibo físico manual de recepción de efectivo, indicando el nombre de quien entrega y el de quien recibe, equivalente al usado en el cierre de recepción (Tarea 1.3). El mismo formato de recibo se utiliza tanto para los cierres de A&B (IBIS) como para los de recepción.
         - ¿Qué necesitan para hacer esta tarea?
             - Informe de turno descargado de Poster (Tarea 3.2).
             - Efectivo físico entregado por la caja de A&B.
+            - Formato de recibo manual de recepción de efectivo.
         - ¿Qué se genera al terminar?
             - Efectivo recibido y custodiado en administración.
-            - ⚠️ Pendiente validar si se genera recibo físico de recepción.
+            - Recibo físico manual de recepción de efectivo, con el nombre de quien entrega y quien recibe.
         - ¿Qué sistemas o herramientas usan?
             - Poster: Fuente del informe de turno para verificar el efectivo.
         - ¿Qué pasa cuando las cosas no salen normal?
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 3.3:**
+    - Propuesta 3.3: Recepción física del efectivo del cierre de turno de A&B
         - Pendiente.
-- **TAREA 3.4: Verificación de pagos clientes reportado en Poster con el efectivo entregado en Administración**
-    - **AS-IS 3.4: Conciliación del efectivo entregado por A&B contra los registros de Poster**
+
+---
+
+- TAREA 3.4: Verificación de pagos clientes reportado en Poster con el efectivo entregado en Administración
+    - AS-IS 3.4: Conciliación del efectivo entregado por A&B contra los registros de Poster
         - ¿Qué es esta tarea?
             - Validación cruzada entre el efectivo físicamente entregado por la caja de A&B y los registros del informe de turno descargado de Poster, para asegurar que lo recibido coincide con lo registrado.
         - ¿Para qué se hace?
@@ -587,10 +629,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Error de método de pago en Poster (ej. registraron efectivo y era tarjeta): En Poster no se pueden hacer anulaciones ni rectificaciones. Se registra una fe de errata en la caja indicando el error y el monto corregido, con referencia al comprobante correspondiente. La única persona con acceso para modificar algo en Poster es Enrique Rafael Cid (administrador del sistema).
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 3.4:**
+    - Propuesta 3.4: Conciliación del efectivo entregado por A&B contra los registros de Poster
         - Pendiente.
-- **TAREA 3.5: Registro en Odoo del efectivo recibido en los Diarios Caja Principal USD y BDS**
-    - **AS-IS 3.5: Registro contable del efectivo de A&B en los diarios de caja de Odoo**
+
+---
+
+- TAREA 3.5: Registro en Odoo del efectivo recibido en los Diarios Caja Principal USD y BDS
+    - AS-IS 3.5: Registro contable del efectivo de A&B en los diarios de caja de Odoo
         - ¿Qué es esta tarea?
             - Registro en Odoo del efectivo en bolívares y divisas recibido de la caja de A&B, en los diarios de Caja Principal USD y Caja Principal BDS, equivalente al proceso descrito en la Tarea 1.5 pero para el flujo de A&B.
         - ¿Para qué se hace?
@@ -613,10 +658,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 3.5:**
+    - Propuesta 3.5: Registro contable del efectivo de A&B en los diarios de caja de Odoo
         - Pendiente.
-- **TAREA 3.6: Generación de archivo xlsx en el sistema Poster — Informe de Recibos**
-    - **AS-IS 3.6: Exportación del informe de recibos desde Poster para verificar pagos por punto de venta**
+
+---
+
+- TAREA 3.6: Generación de archivo xlsx en el sistema Poster — Informe de Recibos
+    - AS-IS 3.6: Exportación del informe de recibos desde Poster para verificar pagos por punto de venta
         - ¿Qué es esta tarea?
             - Descarga desde Poster del informe de recibos en formato Excel, que detalla lo recibido por punto de venta durante el turno de A&B. Es un informe distinto al de turno (Tarea 3.2): el de turno muestra solo el efectivo y divisas, mientras que el de recibos muestra lo recibido por tarjeta/punto de venta.
         - ¿Para qué se hace?
@@ -645,10 +693,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el sistema discrimine automáticamente entre pagos por tarjeta bancaria y pagos procesados por Cloudbeds, sin necesidad de revisión manual recibo por recibo.
             - Que la centralización en Odoo elimine la necesidad de cruzar información entre Poster y Cloudbeds.
-    - **Propuesta 3.6:**
+    - Propuesta 3.6: Exportación del informe de recibos desde Poster para verificar pagos por punto de venta
         - Pendiente.
-- **TAREA 3.7: Verificación/Conciliación de pagos clientes con el Reporte Detallado de los Puntos de Ventas Bancarios, Transferencias y Pagos Móvil**
-    - **AS-IS 3.7: Conciliación de pagos electrónicos de A&B contra reportes bancarios y Poster**
+
+---
+
+- TAREA 3.7: Verificación/Conciliación de pagos clientes con el Reporte Detallado de los Puntos de Ventas Bancarios, Transferencias y Pagos Móvil
+    - AS-IS 3.7: Conciliación de pagos electrónicos de A&B contra reportes bancarios y Poster
         - ¿Qué es esta tarea?
             - Validación cruzada de los pagos electrónicos de A&B (punto de venta bancario, transferencias y pago móvil) contra el informe de recibos de Poster y los extractos bancarios, equivalente al proceso de la Tarea 1.7 pero aplicado a la caja de A&B.
         - ¿Para qué se hace?
@@ -681,10 +732,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Discrepancia entre Poster y el banco: No se pueden hacer anulaciones en Poster. Se registra fe de errata con la descripción del error.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 3.7:**
+    - Propuesta 3.7: Conciliación de pagos electrónicos de A&B contra reportes bancarios y Poster
         - Pendiente.
-- **TAREA 3.8: En caso de encontrar cualquier error se le informa a Caja A&B/Recepción, para que realicen anulación/modificación**
-    - **AS-IS 3.8: Gestión de errores en el cierre de A&B — fe de errata por limitaciones de Poster**
+
+---
+
+- TAREA 3.8: En caso de encontrar cualquier error se le informa a Caja A&B/Recepción, para que realicen anulación/modificación
+    - AS-IS 3.8: Gestión de errores en el cierre de A&B — fe de errata por limitaciones de Poster
         - ¿Qué es esta tarea?
             - Documentación y registro de errores detectados en el cierre de A&B que no pueden corregirse directamente en Poster, mediante la emisión de una fe de errata en la caja que explica la discrepancia.
         - ¿Para qué se hace?
@@ -698,14 +752,34 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Disparador: Detección de un error de registro en Poster durante la verificación del cierre (Tarea 3.7).
             - Frecuencia: Bajo demanda — cada vez que se detecta un error.
         - ¿Cómo se hace?
-            - Paso 1: La caja de A&B detecta el error y lo notifica a administración: "
+            - Paso 1: El cajero de A&B detecta que registró mal un pago en Poster (ej. cargó efectivo cuando era tarjeta, o viceversa) y lo notifica de inmediato a Administración por el grupo de WhatsApp, indicando lo que colocó por error y lo que correspondía (ej. "Señora Libny, por error coloqué efectivo y era tarjeta").
+            - Paso 2: Como Poster no permite anulaciones, reversiones ni rectificaciones, el registro errado queda fijo en el sistema; no se modifica.
+            - Paso 3: Al momento de registrar ese pago en Odoo, Administración (Libny Carina Tarazon Gallegos) coloca la observación completa (fe de errata) describiendo el error: por error se procesó tal monto/método y lo correcto era tal monto/método, según el comprobante correspondiente.
+            - Paso 4: El registro en Odoo refleja la situación real del pago, dejando constancia documental de la discrepancia.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Notificación del error por parte del cajero de A&B (grupo de WhatsApp), con el detalle de lo registrado y lo correcto.
+            - Comprobante de pago correspondiente como soporte de la corrección.
+            - Acceso a Odoo para registrar el pago con la observación.
+        - ¿Qué se genera al terminar?
+            - Pago registrado en Odoo con la observación (fe de errata) que documenta el error y la corrección.
+            - Constancia documental de la discrepancia, dado que en Poster no es posible anular ni rectificar.
+        - ¿Qué sistemas o herramientas usan?
+            - WhatsApp (grupo): Para la notificación del error por parte del cajero de A&B.
+            - Poster: Sistema donde quedó el registro errado (no permite anulación ni reverso).
+            - Odoo: Para registrar el pago con la observación que documenta la fe de errata.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - El único con acceso para modificar algo en Poster es Enrique Rafael Cid (administrador del sistema); fuera de él, ningún registro de Poster puede corregirse, por lo que toda corrección se documenta vía observación en Odoo.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - Que Odoo reemplace a Poster como sistema de punto de venta de A&B, de modo que las correcciones de pagos puedan ejecutarse directamente en el sistema sin depender de fe de errata.
+    - Propuesta 3.8: Gestión de errores en el cierre de A&B — fe de errata por limitaciones de Poster
+        - Pendiente.
 
 ---
 
-## **FASE 4: FACTURACION DE VENTAS CAJAS DE  A&B (1er TURNO / 2DO TURNO)**
+# Área 4: Facturación de Ventas Cajas de A&B (1er Turno / 2do Turno)
 
-- **TAREA 4.1: Registro en Odoo del Contacto Cliente**
-    - **AS-IS 4.1: Creación del contacto del cliente en Odoo para facturación de A&B**
+- TAREA 4.1: Registro en Odoo del Contacto Cliente
+    - AS-IS 4.1: Creación del contacto del cliente en Odoo para facturación de A&B
         - ¿Qué es esta tarea?
             - Registro en Odoo del contacto del cliente que consumió en la caja de A&B, previo a emitir su factura. A diferencia del flujo de recepción (Tarea 2.2), aquí es Administración quien realiza esta tarea directamente, ya que la caja de A&B no tiene usuario de Odoo.
         - ¿Para qué se hace?
@@ -730,10 +804,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 4.1:**
+    - Propuesta 4.1: Creación del contacto del cliente en Odoo para facturación de A&B
         - Pendiente.
-- **TAREA 4.2: Registro en Odoo de los datos verificados en Poster para su facturación (Consumos)**
-    - **AS-IS 4.2: Registro de recibos de cobro y creación de factura de consumos de A&B en Odoo**
+
+---
+
+- TAREA 4.2: Registro en Odoo de los datos verificados en Poster para su facturación (Consumos)
+    - AS-IS 4.2: Registro de recibos de cobro y creación de factura de consumos de A&B en Odoo
         - ¿Qué es esta tarea?
             - Registro en Odoo de todos los pagos realizados por el cliente de A&B (uno por uno como recibos de cobro) y posterior creación de la factura de consumos, tomando como base la información verificada en Poster.
         - ¿Para qué se hace?
@@ -768,10 +845,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que la caja de A&B tenga usuario de Odoo para registrar directamente sus pagos, evitando que administración deba hacer doble trabajo al finalizar cada turno.
             - Que Odoo reemplace a Poster como sistema de punto de venta de A&B, centralizando todas las operaciones en una sola plataforma.
-    - **Propuesta 4.2:**
+    - Propuesta 4.2: Registro de recibos de cobro y creación de factura de consumos de A&B en Odoo
         - Pendiente.
-- **TAREA 4.3: Impresión de la factura**
-    - **AS-IS 4.3: Impresión de la factura de contingencia de A&B generada en Odoo**
+
+---
+
+- TAREA 4.3: Impresión de la factura
+    - AS-IS 4.3: Impresión de la factura de contingencia de A&B generada en Odoo
         - ¿Qué es esta tarea?
             - Impresión física de la factura de contingencia de consumos de A&B generada en Odoo, equivalente al proceso de la Tarea 2.5 pero para el flujo de A&B.
         - ¿Para qué se hace?
@@ -797,15 +877,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que se disponga de máquina fiscal integrada a Odoo para emitir facturas fiscales directamente, sin depender de facturas de contingencia.
-    - **Propuesta 4.3:**
+    - Propuesta 4.3: Impresión de la factura de contingencia de A&B generada en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 5: CIERRES DIARIO DE ESTACIONAMIENTO**
+# Área 5: Cierres Diarios de Estacionamiento
 
-- **TAREA 5.1: Ingreso a los bancos nacionales para verificar los pagos de Clientes y confirmarlos al departamento (Transferencias/Pago Móvil)**
-    - **AS-IS 5.1: Verificación de pagos bancarios para el cierre de estacionamiento**
+- TAREA 5.1: Ingreso a los bancos nacionales para verificar los pagos de Clientes y confirmarlos al departamento (Transferencias/Pago Móvil)
+    - AS-IS 5.1: Verificación de pagos bancarios para el cierre de estacionamiento
         - ¿Qué es esta tarea?
             - Verificación en los portales bancarios de los pagos por transferencia o pago móvil recibidos por el servicio de estacionamiento/muelle, para confirmar su ingreso antes de procesar el cierre y la facturación.
         - ¿Para qué se hace?
@@ -814,7 +894,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Rol principal: Administración (Libny Carina Tarazon Gallegos) — única con acceso a los portales bancarios.
             - Rol de solicitud: Juan Jose Herrera Rangel — presenta los comprobantes a Administración para que los confirme.
         - ¿Cuándo se hace?
-            - Disparador: El jefe de seguridad o el guardia de turno entrega el reporte de estacionamiento del día a Juan, quien a su vez solicita la confirmación de los pagos electrónicos a Administración.
+            - Disparador: El jefe de seguridad o el guardia de turno entrega el reporte de estacionamiento del día a Juan Jose Herrera Rangel, quien a su vez solicita la confirmación de los pagos electrónicos a Administración.
             - Frecuencia: Diaria — después de las 3:00 PM, que es el horario de cierre del estacionamiento.
         - ¿Cómo se hace?
             - Paso 1: El jefe de seguridad (o guardia de turno) entrega a Juan Jose Herrera Rangel el reporte de los pagos recibidos durante el día (efectivo Bs., divisas, pago móvil, punto de venta, exonerados).
@@ -837,10 +917,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 5.1:**
+    - Propuesta 5.1: Verificación de pagos bancarios para el cierre de estacionamiento
         - Pendiente.
-- **TAREA 5.2: Recepción del Reporte emitido por Estacionamiento/Muelle de los pagos recibidos (Efectivo Bs./Divisa, Pagos Móvil y Transferencias)**
-    - **AS-IS 5.2: Recepción del reporte físico de estacionamiento**
+
+---
+
+- TAREA 5.2: Recepción del Reporte emitido por Estacionamiento/Muelle de los pagos recibidos (Efectivo Bs./Divisa, Pagos Móvil y Transferencias)
+    - AS-IS 5.2: Recepción del reporte físico de estacionamiento
         - ¿Qué es esta tarea?
             - Recepción por parte de Juan Jose Herrera Rangel del reporte físico que emite el jefe de seguridad o el guardia de turno, detallando todos los pagos recibidos por el servicio de estacionamiento/muelle durante el día. Las tarifas del servicio son: vehículo pequeño 5 EUR, vehículo mediano 10 EUR, buseta/autobús/expreso 20 EUR. El pago puede ser en efectivo Bs., divisas, pago móvil o punto de venta.
         - ¿Para qué se hace?
@@ -860,7 +943,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Formato físico de registro de estacionamiento (elaborado por Administración — Tarea 18).
             - Cierre de punto de venta del día entregado por el personal de seguridad.
         - ¿Qué se genera al terminar?
-            - Reporte físico de estacionamiento recibido por Juan, listo para ser procesado.
+            - Reporte físico de estacionamiento recibido por Juan Jose Herrera Rangel, listo para ser procesado.
         - ¿Qué sistemas o herramientas usan?
             - Formato físico de registro de estacionamiento (papel).
             - Cierre de punto de venta bancario (físico).
@@ -868,10 +951,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 5.2:**
+    - Propuesta 5.2: Recepción del reporte físico de estacionamiento
         - Pendiente.
-- **TAREA 5.3: Envío por Teams del Reporte emitido por Estacionamiento/Muelle de los pagos recibidos (Efectivo Bs./Divisa, Pagos Móvil y Transferencias)**
-    - **AS-IS 5.3: Elaboración y envío del reporte de cierre de estacionamiento a Administración vía Teams**
+
+---
+
+- TAREA 5.3: Envío por Teams del Reporte emitido por Estacionamiento/Muelle de los pagos recibidos (Efectivo Bs./Divisa, Pagos Móvil y Transferencias)
+    - AS-IS 5.3: Elaboración y envío del reporte de cierre de estacionamiento a Administración vía Teams
         - ¿Qué es esta tarea?
             - Juan Jose Herrera Rangel elabora un reporte de cierre de estacionamiento desglosando todos los pagos recibidos durante el día (efectivo, divisas, pago móvil, punto de venta y exonerados) y lo envía a Administración por Microsoft Teams para que proceda a la facturación.
         - ¿Para qué se hace?
@@ -898,18 +984,21 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 5.3:**
+    - Propuesta 5.3: Elaboración y envío del reporte de cierre de estacionamiento a Administración vía Teams
         - Pendiente.
-- **TAREA 5.4: Registro en Odoo de los pagos recibidos para su facturación**
-    - **AS-IS 5.4: Registro en Odoo de los pagos de estacionamiento previo a la facturación**
+
+---
+
+- TAREA 5.4: Registro en Odoo de los pagos recibidos para su facturación
+    - AS-IS 5.4: Registro en Odoo de los pagos de estacionamiento previo a la facturación
         - ¿Qué es esta tarea?
-            - Registro en Odoo de los pagos recibidos por el servicio de estacionamiento, tomando como base el reporte enviado por Juan Jose Herrera Rangel(Tarea 5.3), como paso previo a emitir la factura.
+            - Registro en Odoo de los pagos recibidos por el servicio de estacionamiento, tomando como base el reporte enviado por Juan Jose Herrera Rangel (Tarea 5.3), como paso previo a emitir la factura.
         - ¿Para qué se hace?
             - Para reflejar contablemente en Odoo los ingresos de estacionamiento del día y poder asociarlos a la factura correspondiente.
         - ¿Qué roles ejecutan esta tarea?
             - Rol principal: Administración (Libny Carina Tarazon Gallegos).
         - ¿Cuándo se hace?
-            - Disparador: Recepción del reporte de cierre de estacionamiento enviado por Juan Jose Herrera Rangel(Tarea 5.3).
+            - Disparador: Recepción del reporte de cierre de estacionamiento enviado por Juan Jose Herrera Rangel (Tarea 5.3).
             - Frecuencia: Diaria.
         - ¿Cómo se hace?
             - ⚠️ Pendiente validar en sesión próxima — la transcripción confirma que el registro se hace en Odoo previo a la facturación, pero no describe el paso a paso detallado del proceso dentro del sistema.
@@ -925,10 +1014,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 5.4:**
+    - Propuesta 5.4: Registro en Odoo de los pagos de estacionamiento previo a la facturación
         - Pendiente.
-- **TAREA 5.5: Impresión de la factura**
-    - **AS-IS 5.5: Impresión de la factura de contingencia de estacionamiento generada en Odoo**
+
+---
+
+- TAREA 5.5: Impresión de la factura
+    - AS-IS 5.5: Impresión de la factura de contingencia de estacionamiento generada en Odoo
         - ¿Qué es esta tarea?
             - Impresión física de la factura de contingencia del servicio de estacionamiento generada en Odoo, equivalente al proceso de las Tareas 2.5 y 4.3 pero para el flujo de estacionamiento.
         - ¿Para qué se hace?
@@ -952,29 +1044,29 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 5.5:**
+    - Propuesta 5.5: Impresión de la factura de contingencia de estacionamiento generada en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 6: CIERRES SEMANAL DE TRASLADOS (MARINA)**
+# Área 6: Cierres Semanales de Traslados (Marina)
 
-- **TAREA 6.1: Realización del Reporte emitido por MARINA de los traslados realizados en la semana, para su respectivo pago**
-    - **AS-IS 6.1: Recepción y desglose del reporte semanal de traslados de la Marina**
+- TAREA 6.1: Realización del Reporte emitido por MARINA de los traslados realizados en la semana, para su respectivo pago
+    - AS-IS 6.1: Recepción y desglose del reporte semanal de traslados de la Marina
         - ¿Qué es esta tarea?
             - Recepción del reporte semanal que la Marina entrega a Juan Jose Herrera Rangel los domingos, detallando todos los traslados realizados durante la semana, y elaboración del desglose para identificar qué monto corresponde como ingreso al hotel.
         - ¿Para qué se hace?
             - Para determinar el monto que la Marina debe pagar al hotel por los traslados realizados en la semana, y preparar la información para que Administración confirme el pago y proceda a facturar.
         - ¿Qué roles ejecutan esta tarea?
             - Quien entrega el reporte: Personal de la Marina.
-            - Quien lo recibe y procesa: Juan Jose Herrera Rangel(Asistente Administrativo).
+            - Quien lo recibe y procesa: Juan Jose Herrera Rangel (Asistente Administrativo).
         - ¿Cuándo se hace?
             - Disparador: La Marina entrega su relación semanal de traslados.
             - Frecuencia: Semanal — los domingos.
         - ¿Cómo se hace?
             - Paso 1: La Marina lleva su registro de traslados de lunes a domingo.
             - Paso 2: El domingo entrega a Juan Jose Herrera Rangel la relación completa de traslados de la semana.
-            - Paso 3: Juan Jose Herrera Rangel desglosá la relación para determinar qué porción corresponde como pago al hotel.
+            - Paso 3: Juan Jose Herrera Rangel desglosa la relación para determinar qué porción corresponde como pago al hotel.
             - Paso 4: Elabora el reporte con el desglose y lo envía a Administración por Teams (Tarea 6.3).
         - ¿Qué necesitan para hacer esta tarea?
             - Relación semanal de traslados entregada por la Marina.
@@ -987,10 +1079,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 6.1:**
+    - Propuesta 6.1: Recepción y desglose del reporte semanal de traslados de la Marina
         - Pendiente.
-- **TAREA 6.2: Verificación del pago emitido por la Marina, después de la realización del Reporte**
-    - **AS-IS 6.2: Confirmación del pago de la Marina por parte de Administración**
+
+---
+
+- TAREA 6.2: Verificación del pago emitido por la Marina, después de la realización del Reporte
+    - AS-IS 6.2: Confirmación del pago de la Marina por parte de Administración
         - ¿Qué es esta tarea?
             - Verificación por parte de Administración (Libny Carina Tarazon Gallegos) de que el pago emitido por la Marina efectivamente ingresó a la cuenta bancaria del hotel, como paso previo al registro en Odoo y la facturación.
         - ¿Para qué se hace?
@@ -999,15 +1094,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Rol principal: Administración (Libny Carina Tarazon Gallegos) — confirma el pago en el banco.
             - Nota: Juan Jose Herrera Rangel no puede procesar el reporte sin que Administración confirme el pago primero.
         - ¿Cuándo se hace?
-            - Disparador: Reporte semanal de traslados elaborado y enviado por Juan Jose Herrera Rangel(Tarea 6.1 / 6.3).
-            - Frecuencia: Semanal — los domingos, tras recibir el reporte de Juan.
+            - Disparador: Reporte semanal de traslados elaborado y enviado por Juan Jose Herrera Rangel (Tarea 6.1 / 6.3).
+            - Frecuencia: Semanal — los domingos, tras recibir el reporte de Juan Jose Herrera Rangel.
         - ¿Cómo se hace?
             - Paso 1: Juan Jose Herrera Rangel envía el reporte de traslados a Administración por Teams (Tarea 6.3).
             - Paso 2: Administración verifica en el banco que el pago de la Marina haya ingresado.
-            - Paso 3: Confirma el pago a Juan.
+            - Paso 3: Confirma el pago a Juan Jose Herrera Rangel.
             - Paso 4: Con la confirmación, Administración procede al registro en Odoo (Tarea 6.4).
         - ¿Qué necesitan para hacer esta tarea?
-            - Reporte de traslados enviado por Juan.
+            - Reporte de traslados enviado por Juan Jose Herrera Rangel.
             - Acceso a los portales bancarios.
         - ¿Qué se genera al terminar?
             - Confirmación de pago válido, que habilita el registro en Odoo y la facturación.
@@ -1017,10 +1112,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 6.2:**
+    - Propuesta 6.2: Confirmación del pago de la Marina por parte de Administración
         - Pendiente.
-- **TAREA 6.3: Envío por Teams del Reporte emitido y su respectivo pago**
-    - **AS-IS 6.3: Envío del reporte semanal de traslados de la Marina a Administración vía Teams**
+
+---
+
+- TAREA 6.3: Envío por Teams del Reporte emitido y su respectivo pago
+    - AS-IS 6.3: Envío del reporte semanal de traslados de la Marina a Administración vía Teams
         - ¿Qué es esta tarea?
             - Envío por Microsoft Teams del reporte desglosado de traslados de la semana a Administración, para que confirme el pago y proceda al registro en Odoo y la facturación.
         - ¿Para qué se hace?
@@ -1045,10 +1143,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 6.3:**
+    - Propuesta 6.3: Envío del reporte semanal de traslados de la Marina a Administración vía Teams
         - Pendiente.
-- **TAREA 6.4: Registro en Odoo del pago recibido para su facturación**
-    - **AS-IS 6.4: Registro en Odoo del pago de traslados de la Marina**
+
+---
+
+- TAREA 6.4: Registro en Odoo del pago recibido para su facturación
+    - AS-IS 6.4: Registro en Odoo del pago de traslados de la Marina
         - ¿Qué es esta tarea?
             - Registro en Odoo del pago semanal de traslados recibido de la Marina, como paso previo a la emisión de la factura.
         - ¿Para qué se hace?
@@ -1062,7 +1163,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima — la transcripción confirma que el registro se hace en Odoo, pero no describe el paso a paso detallado.
         - ¿Qué necesitan para hacer esta tarea?
             - Pago de la Marina confirmado (Tarea 6.2).
-            - Reporte de traslados enviado por Juan Jose Herrera Rangel(Tarea 6.3).
+            - Reporte de traslados enviado por Juan Jose Herrera Rangel (Tarea 6.3).
             - Acceso a Odoo con permisos para registrar pagos.
         - ¿Qué se genera al terminar?
             - Pago de traslados registrado en Odoo, listo para asociar a la factura.
@@ -1072,10 +1173,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 6.4:**
+    - Propuesta 6.4: Registro en Odoo del pago de traslados de la Marina
         - Pendiente.
-- **TAREA 6.5: Impresión de la factura**
-    - **AS-IS 6.5: Impresión de la factura de contingencia de traslados de la Marina**
+
+---
+
+- TAREA 6.5: Impresión de la factura
+    - AS-IS 6.5: Impresión de la factura de contingencia de traslados de la Marina
         - ¿Qué es esta tarea?
             - Impresión física de la factura de contingencia correspondiente a los traslados semanales de la Marina, generada en Odoo.
         - ¿Para qué se hace?
@@ -1099,22 +1203,22 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 6.5:**
+    - Propuesta 6.5: Impresión de la factura de contingencia de traslados de la Marina
         - Pendiente.
 
 ---
 
-## **FASE 7: CIERRES SEMANAL BOCA SECA**
+# Área 7: Cierres Semanales Boca Seca
 
-- **TAREA 7.1: Realización del Reporte de las ventas realizadas en la semana, para su respectivo pago**
-    - **AS-IS 7.1: Recepción y desglose del reporte semanal de ventas de Boca Seca**
+- TAREA 7.1: Realización del Reporte de las ventas realizadas en la semana, para su respectivo pago
+    - AS-IS 7.1: Recepción y desglose del reporte semanal de ventas de Boca Seca
         - ¿Qué es esta tarea?
             - Recepción del reporte semanal de ventas de Boca Seca (servicio del Cayo) y elaboración del desglose de los ingresos generados por alquiler de toldos, mesas, sillas y tumbonas durante la semana.
         - ¿Para qué se hace?
             - Para determinar el monto a cobrar por los servicios prestados en Boca Seca durante la semana y preparar la información para su pago y eventual registro.
         - ¿Qué roles ejecutan esta tarea?
             - Quien entrega el reporte: Personal de administración del Cayo (Boca Seca).
-            - Quien lo recibe y procesa: Juan Jose Herrera Rangel(Asistente Administrativo).
+            - Quien lo recibe y procesa: Juan Jose Herrera Rangel (Asistente Administrativo).
         - ¿Cuándo se hace?
             - Disparador: Cierre semanal de operaciones de Boca Seca.
             - Frecuencia: Semanal.
@@ -1132,16 +1236,19 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 7.1:**
+    - Propuesta 7.1: Recepción y desglose del reporte semanal de ventas de Boca Seca
         - Pendiente.
-- **TAREA 7.2: Verificación del pago emitido, después de la realización del Reporte**
-    - **AS-IS 7.2: Confirmación del pago de Boca Seca**
+
+---
+
+- TAREA 7.2: Verificación del pago emitido, después de la realización del Reporte
+    - AS-IS 7.2: Confirmación del pago de Boca Seca
         - ¿Qué es esta tarea?
             - Verificación de que el pago correspondiente a las ventas de Boca Seca de la semana haya sido efectuado y confirmado, antes de proceder al registro.
         - ¿Para qué se hace?
             - Para asegurar que el pago se realizó efectivamente antes de registrarlo y cerrar el ciclo semanal de Boca Seca.
         - ¿Qué roles ejecutan esta tarea?
-            - Rol principal: Juan Jose Herrera Rangel — recibe la relación semanal de Boca Seca, verifica los pagos y elabora el reporte. A diferencia del flujo de la Marina, no hay verificación bancaria por parte de Administración: el personal de Boca Seca hace el pago directamente y Juan lo confirma al recibirlo.
+            - Rol principal: Juan Jose Herrera Rangel — recibe la relación semanal de Boca Seca, verifica los pagos y elabora el reporte. A diferencia del flujo de la Marina, no hay verificación bancaria por parte de Administración: el personal de Boca Seca hace el pago directamente y Juan Jose Herrera Rangel lo confirma al recibirlo.
         - ¿Cuándo se hace?
             - Disparador: Reporte semanal de ventas de Boca Seca elaborado (Tarea 7.1).
             - Frecuencia: Semanal.
@@ -1160,10 +1267,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 7.2:**
+    - Propuesta 7.2: Confirmación del pago de Boca Seca
         - Pendiente.
-- **TAREA 7.3: Envío por Teams del Reporte emitido y su respectivo pago**
-    - **AS-IS 7.3: Envío del reporte semanal de Boca Seca a Administración vía Teams**
+
+---
+
+- TAREA 7.3: Envío por Teams del Reporte emitido y su respectivo pago
+    - AS-IS 7.3: Envío del reporte semanal de Boca Seca a Administración vía Teams
         - ¿Qué es esta tarea?
             - Envío por Microsoft Teams del reporte semanal de ventas de Boca Seca a Administración, para que gestione el registro y el cierre correspondiente.
         - ¿Para qué se hace?
@@ -1188,10 +1298,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 7.3:**
+    - Propuesta 7.3: Envío del reporte semanal de Boca Seca a Administración vía Teams
         - Pendiente.
-- **TAREA 7.4: Si el pago se efectuó en Efectivo se registra en Odoo NF**
-    - **AS-IS 7.4: Registro en Odoo de pagos en efectivo de Boca Seca**
+
+---
+
+- TAREA 7.4: Si el pago se efectuó en Efectivo se registra en Odoo NF
+    - AS-IS 7.4: Registro en Odoo de pagos en efectivo de Boca Seca
         - ¿Qué es esta tarea?
             - Registro en Odoo del pago en efectivo recibido de Boca Seca, cuando el cierre semanal se liquida en efectivo. El inventario indica que se registra como NF (sin factura).
         - ¿Para qué se hace?
@@ -1205,7 +1318,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima — la transcripción confirma que Boca Seca no se factura y que si el pago es en efectivo se registra en Odoo, pero no describe el proceso detallado dentro del sistema.
         - ¿Qué necesitan para hacer esta tarea?
             - Efectivo recibido de Boca Seca.
-            - Reporte semanal de ventas de Boca Seca enviado por Juan.
+            - Reporte semanal de ventas de Boca Seca enviado por Juan Jose Herrera Rangel.
             - Acceso a Odoo.
         - ¿Qué se genera al terminar?
             - Registro del ingreso en efectivo de Boca Seca en Odoo, sin emisión de factura.
@@ -1215,15 +1328,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 7.4:**
+    - Propuesta 7.4: Registro en Odoo de pagos en efectivo de Boca Seca
         - Pendiente.
 
 ---
 
-## **FASE 8: RESGUARDO Y ADMINISTRACION DE LA CAJA PRINCIPAL**
+# Área 8: Resguardo y Administración de la Caja Principal
 
-- **TAREA 8.1: Recepción de Efectivo en Bs y Divisas**
-    - **AS-IS 8.1: Recepción y resguardo del efectivo en la caja principal**
+- TAREA 8.1: Recepción de Efectivo en Bs y Divisas
+    - AS-IS 8.1: Recepción y resguardo del efectivo en la caja principal
         - ¿Qué es esta tarea?
             - Recepción y custodia del efectivo en bolívares y divisas proveniente de todos los cierres de caja del hotel (recepción, A&B, estacionamiento, Marina, Boca Seca), centralizado en la caja principal bajo la responsabilidad de Administración.
         - ¿Para qué se hace?
@@ -1235,7 +1348,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Cuándo se hace?
             - Disparador: Cualquier entrega de efectivo proveniente de los distintos puntos de recaudación del hotel.
             - Frecuencia: Diaria / bajo demanda — cada vez que se recibe efectivo de cualquier fuente.
-            - Frecuencia de suplencia de Juan: Una o dos veces por mes, cuando Libny Carina Tarazon Gallegos toma sus días de descanso.
+            - Frecuencia de suplencia de Juan Jose Herrera Rangel: Una o dos veces por mes, cuando Libny Carina Tarazon Gallegos toma sus días de descanso.
         - ¿Cómo se hace?
             - Paso 1: Se recibe el efectivo en bolívares y/o divisas del punto de recaudación correspondiente.
             - Paso 2: Se verifica el monto contra el cierre o reporte correspondiente.
@@ -1257,10 +1370,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente el recibo de caja imprimible al registrar el movimiento, tanto de ingresos como de egresos, eliminando el proceso manual de emisión de recibos en papel (ver Tarea 1.3).
-    - **Propuesta 8.1:**
+    - Propuesta 8.1: Recepción y resguardo del efectivo en la caja principal
         - Pendiente.
-- **TAREA 8.2: Registro en Odoo en los respectivos diarios (Bs. y USD)**
-    - **AS-IS 8.2: Registro contable de movimientos de la caja principal en Odoo**
+
+---
+
+- TAREA 8.2: Registro en Odoo en los respectivos diarios (Bs. y USD)
+    - AS-IS 8.2: Registro contable de movimientos de la caja principal en Odoo
         - ¿Qué es esta tarea?
             - Registro en Odoo de los ingresos y egresos de efectivo de la caja principal en los diarios correspondientes (bolívares y USD), dejando constancia contable de cada movimiento.
         - ¿Para qué se hace?
@@ -1274,7 +1390,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Cómo se hace?
             - Paso 1: Tras recibir o entregar efectivo, Administración ingresa a Odoo.
             - Paso 2: Registra la transacción en el diario de caja correspondiente (Bs. o USD).
-            - Paso 3: Para los egresos (pagos a proveedores o empleados), crea la transacción en Odoo y la deja en el aire para que la persona de compras (Juan) o talento humano (Marle) la concilien contra sus respectivos recibos de pago.
+            - Paso 3: Para los egresos (pagos a proveedores o empleados), crea la transacción en Odoo y la deja en el aire para que la persona de compras (Juan Jose Herrera Rangel) o talento humano (Marle) la concilien contra sus respectivos recibos de pago.
             - Nota: La transacción de egreso queda con estado "En proceso de pago" hasta que la parte correspondiente la concilia contra el recibo o la factura del proveedor/empleado.
         - ¿Qué necesitan para hacer esta tarea?
             - Efectivo recibido o entregado con su respectivo soporte (recibo, reporte de cierre, factura de proveedor).
@@ -1287,10 +1403,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - La persona de compras o talento humano no concilia la transacción de egreso: La factura del proveedor queda en estado "En proceso de pago" y no cierra hasta que se realice la conciliación.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente el recibo de caja imprimible (ingreso y egreso), eliminando la necesidad de hacerlo manualmente.
-    - **Propuesta 8.2:**
+    - Propuesta 8.2: Registro contable de movimientos de la caja principal en Odoo
         - Pendiente.
-- **TAREA 8.3: Pago a Proveedores (Previa autorización de la Gerencia General)**
-    - **AS-IS 8.3: Pago a proveedores desde la caja principal con autorización de gerencia**
+
+---
+
+- TAREA 8.3: Pago a Proveedores (Previa autorización de la Gerencia General)
+    - AS-IS 8.3: Pago a proveedores desde la caja principal con autorización de gerencia
         - ¿Qué es esta tarea?
             - Entrega de efectivo a proveedores desde la caja principal, previa autorización expresa de la Gerencia General, con registro físico del pago y registro posterior en Odoo.
         - ¿Para qué se hace?
@@ -1298,7 +1417,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
         - ¿Qué roles ejecutan esta tarea?
             - Autorización: Gerencia General.
             - Ejecución del pago físico: Administración (Libny Carina Tarazon Gallegos) o Juan Jose Herrera Rangel en suplencia.
-            - Conciliación en Odoo: Juan Jose Herrera Rangel(compras) — cruza la transacción de egreso creada por Administración contra el recibo de pago al proveedor.
+            - Conciliación en Odoo: Juan Jose Herrera Rangel (compras) — cruza la transacción de egreso creada por Administración contra el recibo de pago al proveedor.
         - ¿Cuándo se hace?
             - Disparador: Autorización de la Gerencia General para pagar a un proveedor.
             - Frecuencia: Bajo demanda — según disponibilidad de efectivo y autorización de gerencia.
@@ -1308,7 +1427,7 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Paso 2: Administración entrega el efectivo al proveedor.
             - Paso 3: Emite el recibo físico de egreso (actualmente manual) que el proveedor firma.
             - Paso 4: Registra la transacción de egreso en Odoo y la deja en el aire.
-            - Paso 5: Juan Jose Herrera Rangel(compras) genera el recibo de pago al proveedor en Odoo y cruza la transacción de egreso de caja contra ese recibo.
+            - Paso 5: Juan Jose Herrera Rangel (compras) genera el recibo de pago al proveedor en Odoo y cruza la transacción de egreso de caja contra ese recibo.
             - Paso 6: La factura del proveedor pasa de "En proceso de pago" a "Pagada" una vez conciliada.
         - ¿Qué necesitan para hacer esta tarea?
             - Autorización de Gerencia General.
@@ -1323,14 +1442,17 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Odoo: Para registrar la transacción de egreso y conciliar contra la factura del proveedor.
             - Recibo físico manual: Comprobante de entrega de efectivo firmado por el proveedor.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - No hay efectivo disponible en la caja para el pago: ⚠️ Pendiente validar en sesión próxima.
+            - No hay efectivo en divisas disponible: Los pagos a proveedores en divisas quedan restringidos. Al momento de la sesión, el pago en dólares a proveedores estaba suspendido por falta de efectivo en divisas en circulación, a la espera de que vuelva a fluir el efectivo en dólares.
             - Juan Jose Herrera Rangel no concilia la transacción a tiempo: La factura del proveedor queda en estado "En proceso de pago" indefinidamente.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente el recibo de egreso de caja imprimible, para que el proveedor lo firme directamente sin necesidad del proceso manual actual.
-    - **Propuesta 8.3:**
+    - Propuesta 8.3: Pago a proveedores desde la caja principal con autorización de gerencia
         - Pendiente.
-- **TAREA 8.4: Pago a Empleados (Previa autorización de la Gerencia General)**
-    - **AS-IS 8.4: Pago a empleados desde la caja principal con autorización de gerencia**
+
+---
+
+- TAREA 8.4: Pago a Empleados (Previa autorización de la Gerencia General)
+    - AS-IS 8.4: Pago a empleados desde la caja principal con autorización de gerencia
         - ¿Qué es esta tarea?
             - Entrega de efectivo a empleados desde la caja principal (ej. bono de alimentación u otros conceptos de nómina), previa autorización de la Gerencia General, con registro físico y posterior conciliación en Odoo por parte de talento humano.
         - ¿Para qué se hace?
@@ -1366,14 +1488,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima otros escenarios de excepción.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente el recibo de egreso de caja imprimible, para que el empleado lo firme directamente sin necesidad del proceso manual actual.
-    - **Propuesta 8.4:**
+    - Propuesta 8.4: Pago a empleados desde la caja principal con autorización de gerencia
         - Pendiente.
-- **TAREA 8.5: Conciliación (Fase 11)**
-    - **AS-IS 8.5: Conciliación de la caja principal — remisión a Fase 11**
+
+---
+
+- TAREA 8.5: Conciliación (Fase 11)
+    - AS-IS 8.5: Conciliación de la caja principal — remisión a Fase 11
         - ¿Qué es esta tarea?
-            - La conciliación de la caja principal está descrita en detalle en la Fase 11 (Tareas 11.1, 11.2 y 11.3). Esta tarea en la Fase 8 hace referencia al mismo proceso.
-        - ¿Qué es esta tarea?
-            - ⚠️ Ver Fase 11 — el contenido de esta tarea es idéntico al levantado en las Tareas 11.1, 11.2 y 11.3. No se duplica aquí para evitar inconsistencias.
+            - La conciliación de la caja principal está descrita en detalle en la Fase 11 (Tareas 11.1, 11.2 y 11.3). Esta tarea en la Fase 8 hace referencia al mismo proceso; su contenido es idéntico al levantado en las Tareas 11.1, 11.2 y 11.3 y no se duplica aquí para evitar inconsistencias.
         - ¿Para qué se hace?
             - ⚠️ Ver Fase 11.
         - ¿Qué roles ejecutan esta tarea?
@@ -1392,15 +1515,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Ver Fase 11.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Ver Fase 11.
-    - **Propuesta 8.5:**
+    - Propuesta 8.5: Conciliación de la caja principal — remisión a Fase 11
         - Pendiente.
 
 ---
 
-## **FASE 9: REPORTE DIARIO DE OCUPACIÓN HOTELERA E INGRESOS FINANCIEROS (VENETUR / INATUR)**
+# Área 9: Reporte Diario de Ocupación Hotelera e Ingresos Financieros (Venetur / INATUR)
 
-- **TAREA 9.1: Generación de archivo xlsx en el sistema Odoo del Informes de Estado de Ganancia y Perdidas**
-    - **AS-IS 9.1: Exportación del informe de Estado de Ganancias y Pérdidas desde Odoo**
+- TAREA 9.1: Generación de archivo xlsx en el sistema Odoo del Informes de Estado de Ganancia y Perdidas
+    - AS-IS 9.1: Exportación del informe de Estado de Ganancias y Pérdidas desde Odoo
         - ¿Qué es esta tarea?
             - Exportación desde Odoo del informe de Estado de Ganancias y Pérdidas en formato Excel, para extraer los ingresos operativos del día (hospedaje, consumos, arrendamientos, servicios de Marina) y reportarlos a Venetur.
         - ¿Para qué se hace?
@@ -1428,10 +1551,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 9.1:**
+    - Propuesta 9.1: Exportación del informe de Estado de Ganancias y Pérdidas desde Odoo
         - Pendiente.
-- **TAREA 9.2: Verificación de los Ingresos Operativos: Hospedaje, Consumos, Arrendamientos/Alquileres, Servicio de Marina**
-    - **AS-IS 9.2: Verificación y clasificación de los ingresos operativos del día**
+
+---
+
+- TAREA 9.2: Verificación de los Ingresos Operativos: Hospedaje, Consumos, Arrendamientos/Alquileres, Servicio de Marina
+    - AS-IS 9.2: Verificación y clasificación de los ingresos operativos del día
         - ¿Qué es esta tarea?
             - Revisión de los ingresos operativos descargados del informe de Odoo para verificar que estén correctamente discriminados por categoría (hospedaje, consumos de A&B, arrendamientos/alquileres y servicio de Marina), antes de incorporarlos al reporte para Venetur.
         - ¿Para qué se hace?
@@ -1456,10 +1582,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 9.2:**
+    - Propuesta 9.2: Verificación y clasificación de los ingresos operativos del día
         - Pendiente.
-- **TAREA 9.3: Generación de archivo xlsx en el sistema Cloudbeds — Informe de actividad diaria / Informes de Hospedados/Salidas**
-    - **AS-IS 9.3: Exportación del informe de hospedados desde Cloudbeds**
+
+---
+
+- TAREA 9.3: Generación de archivo xlsx en el sistema Cloudbeds — Informe de actividad diaria / Informes de Hospedados/Salidas
+    - AS-IS 9.3: Exportación del informe de hospedados desde Cloudbeds
         - ¿Qué es esta tarea?
             - Descarga desde Cloudbeds del informe de hospedados/salidas del día, que indica la cantidad de habitaciones ocupadas, la cantidad de huéspedes y el tipo de ocupación (venta o institucional), para incorporar esta información al reporte de Venetur.
         - ¿Para qué se hace?
@@ -1488,10 +1617,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el sistema genere automáticamente el reporte consolidado de ocupación e ingresos sin necesidad de descargar datos de dos sistemas distintos (Odoo y Cloudbeds) y cruzarlos manualmente en Excel.
-    - **Propuesta 9.3:**
+    - Propuesta 9.3: Exportación del informe de hospedados desde Cloudbeds
         - Pendiente.
-- **TAREA 9.4: Registro en un archivo Excel de toda la información descargada de ambos sistemas**
-    - **AS-IS 9.4: Consolidación de datos de Odoo y Cloudbeds en el archivo Excel de reporte para Venetur**
+
+---
+
+- TAREA 9.4: Registro en un archivo Excel de toda la información descargada de ambos sistemas
+    - AS-IS 9.4: Consolidación de datos de Odoo y Cloudbeds en el archivo Excel de reporte para Venetur
         - ¿Qué es esta tarea?
             - Registro manual en el archivo Excel de formato provisto por Venetur de toda la información descargada: ingresos operativos por categoría (de Odoo) e indicadores de ocupación hotelera (de Cloudbeds), para preparar el reporte diario.
         - ¿Para qué se hace?
@@ -1522,10 +1654,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el sistema genere automáticamente el reporte consolidado en el formato de Venetur, sin necesidad de cruzar datos manualmente de Odoo y Cloudbeds.
-    - **Propuesta 9.4:**
+    - Propuesta 9.4: Consolidación de datos de Odoo y Cloudbeds en el archivo Excel de reporte para Venetur
         - Pendiente.
-- **TAREA 9.5: Envío por correo a la Gerencia General de Operaciones Hotelera Venezolana de Turismo del Reporte Diario de Ocupación Hotelera e Ingresos Financieros**
-    - **AS-IS 9.5: Envío del reporte diario a Venetur por correo electrónico y WhatsApp**
+
+---
+
+- TAREA 9.5: Envío por correo a la Gerencia General de Operaciones Hotelera Venezolana de Turismo del Reporte Diario de Ocupación Hotelera e Ingresos Financieros
+    - AS-IS 9.5: Envío del reporte diario a Venetur por correo electrónico y WhatsApp
         - ¿Qué es esta tarea?
             - Envío del reporte diario de ocupación hotelera e ingresos financieros a la Gerencia General de Venezolana de Turismo (Venetur) por correo electrónico, con respaldo por WhatsApp en caso de que el correo no llegue.
         - ¿Para qué se hace?
@@ -1551,10 +1686,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - El correo no llega a Venetur: Se envía el reporte por WhatsApp como respaldo.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 9.5:**
+    - Propuesta 9.5: Envío del reporte diario a Venetur por correo electrónico y WhatsApp
         - Pendiente.
-- **TAREA 9.6: Envío por WhatsApp al Instituto Nacional de Turismo del Reporte de Ocupación de Alojamiento Turístico**
-    - **AS-IS 9.6: Envío del reporte de ocupación a INATUR por WhatsApp**
+
+---
+
+- TAREA 9.6: Envío por WhatsApp al Instituto Nacional de Turismo del Reporte de Ocupación de Alojamiento Turístico
+    - AS-IS 9.6: Envío del reporte de ocupación a INATUR por WhatsApp
         - ¿Qué es esta tarea?
             - Envío por WhatsApp al Instituto Nacional de Turismo (INATUR) del reporte de ocupación de alojamiento turístico, que es un reporte complementario al enviado a Venetur con los indicadores de ocupación del día.
         - ¿Para qué se hace?
@@ -1578,15 +1716,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 9.6:**
+    - Propuesta 9.6: Envío del reporte de ocupación a INATUR por WhatsApp
         - Pendiente.
 
 ---
 
-## **FASE 10: CONCILIACION BANCARIA**
+# Área 10: Conciliación Bancaria
 
-- **TAREA 10.1: Generación del Estado de cuenta Bancario en archivo xlsx (Banesco, Banplus, Bancamiga)**
-    - **AS-IS 10.1: Descarga del extracto bancario de cada banco para la conciliación**
+- TAREA 10.1: Generación del Estado de cuenta Bancario en archivo xlsx (Banesco, Banplus, Bancamiga)
+    - AS-IS 10.1: Descarga del extracto bancario de cada banco para la conciliación
         - ¿Qué es esta tarea?
             - Descarga del extracto de movimientos bancarios en formato Excel desde los portales de Banesco, Banplus y Bancamiga (y Banco Exterior, mencionado en la transcripción), abarcando desde el primer día del mes hasta la fecha actual, para ser usado como base de la conciliación bancaria.
         - ¿Para qué se hace?
@@ -1614,10 +1752,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima — la transcripción menciona la posibilidad de usar plataformas que exporten movimientos bancarios directamente a Odoo (como Tesote), pero no hay una solicitud formal registrada en sesión.
-    - **Propuesta 10.1:**
+    - Propuesta 10.1: Descarga del extracto bancario de cada banco para la conciliación
         - Pendiente.
-- **TAREA 10.2: Generación del Detalle de los Movimientos de Lotes Bancarios en Credicard (Bancamiga, Activo, Banplus)**
-    - **AS-IS 10.2: Descarga del detalle de movimientos de lotes de punto de venta desde Credicard**
+
+---
+
+- TAREA 10.2: Generación del Detalle de los Movimientos de Lotes Bancarios en Credicard (Bancamiga, Activo, Banplus)
+    - AS-IS 10.2: Descarga del detalle de movimientos de lotes de punto de venta desde Credicard
         - ¿Qué es esta tarea?
             - Descarga desde Credicard del detalle de los movimientos procesados por los terminales de punto de venta (POS) de Bancamiga, Activo y Banplus, para cruzarlos contra los pagos registrados en Odoo durante la conciliación bancaria.
         - ¿Para qué se hace?
@@ -1642,10 +1783,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 10.2:**
+    - Propuesta 10.2: Descarga del detalle de movimientos de lotes de punto de venta desde Credicard
         - Pendiente.
-- **TAREA 10.3: Conciliación de Recibos de Cobros Clientes con el extracto Bancario Odoo**
-    - **AS-IS 10.3: Conciliación bancaria en Odoo cruzando recibos de cobro con extractos bancarios**
+
+---
+
+- TAREA 10.3: Conciliación de Recibos de Cobros Clientes con el extracto Bancario Odoo
+    - AS-IS 10.3: Conciliación bancaria en Odoo cruzando recibos de cobro con extractos bancarios
         - ¿Qué es esta tarea?
             - Conciliación en Odoo de los recibos de cobro de clientes contra el extracto bancario importado, para marcar como conciliados los pagos que ya ingresaron al banco y detectar los que aún no han sido registrados o cruzados.
         - ¿Para qué se hace?
@@ -1685,15 +1829,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Hay un ingreso en el banco sin recibo de cobro en Odoo: Se crea el recibo de cobro antes de proceder al match.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima — la transcripción menciona la posibilidad de integrar plataformas que exporten movimientos bancarios directamente a Odoo, lo que eliminaría la descarga manual de extractos.
-    - **Propuesta 10.3:**
+    - Propuesta 10.3: Conciliación bancaria en Odoo cruzando recibos de cobro con extractos bancarios
         - Pendiente.
 
 ---
 
-## **FASE 11: CONCILIACION DE CAJA (BDS / USD)**
+# Área 11: Conciliación de Caja (BDS / USD)
 
-- **TAREA 11.1: Registro en Odoo del recibo de cobro cliente en Efectivo Bolívares o en Divisas**
-    - **AS-IS 11.1: Registro del recibo de cobro en efectivo en Odoo para la conciliación de caja**
+- TAREA 11.1: Registro en Odoo del recibo de cobro cliente en Efectivo Bolívares o en Divisas
+    - AS-IS 11.1: Registro del recibo de cobro en efectivo en Odoo para la conciliación de caja
         - ¿Qué es esta tarea?
             - Registro en Odoo de los recibos de cobro de clientes correspondientes a pagos en efectivo (bolívares o divisas), como primer paso del proceso de conciliación de la caja principal.
         - ¿Para qué se hace?
@@ -1716,10 +1860,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo genere automáticamente el recibo de caja imprimible al registrar el movimiento.
-    - **Propuesta 11.1:**
+    - Propuesta 11.1: Registro del recibo de cobro en efectivo en Odoo para la conciliación de caja
         - Pendiente.
-- **TAREA 11.2: Registro en Odoo del extracto en Efectivo Bolívares o Divisas**
-    - **AS-IS 11.2: Creación manual del extracto de caja en Odoo**
+
+---
+
+- TAREA 11.2: Registro en Odoo del extracto en Efectivo Bolívares o Divisas
+    - AS-IS 11.2: Creación manual del extracto de caja en Odoo
         - ¿Qué es esta tarea?
             - Creación manual en Odoo del extracto de la caja en efectivo (bolívares o divisas), equivalente al extracto bancario pero para los movimientos de la caja física. A diferencia de los bancos, el extracto de caja no se importa automáticamente sino que se crea manualmente en Odoo.
         - ¿Para qué se hace?
@@ -1742,10 +1889,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 11.2:**
+    - Propuesta 11.2: Creación manual del extracto de caja en Odoo
         - Pendiente.
-- **TAREA 11.3: Conciliación de Recibos de Cobros Clientes con el extracto de caja en Odoo**
-    - **AS-IS 11.3: Conciliación de recibos de cobro en efectivo contra el extracto de caja en Odoo**
+
+---
+
+- TAREA 11.3: Conciliación de Recibos de Cobros Clientes con el extracto de caja en Odoo
+    - AS-IS 11.3: Conciliación de recibos de cobro en efectivo contra el extracto de caja en Odoo
         - ¿Qué es esta tarea?
             - Conciliación en Odoo de los recibos de cobro en efectivo de clientes contra el extracto de caja creado manualmente, para cerrar la transacción contable y que la factura quede marcada como pagada.
         - ¿Para qué se hace?
@@ -1774,15 +1924,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el estado de la factura refleje claramente la diferencia entre "sin monto pendiente pero sin conciliar" y "pagada y conciliada", para evitar confusiones operativas. El equipo señala que la etiqueta actual "En proceso de pago" no describe bien la situación real cuando el saldo es cero pero no hay conciliación.
-    - **Propuesta 11.3:**
+    - Propuesta 11.3: Conciliación de recibos de cobro en efectivo contra el extracto de caja en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 12: CONCILIACION DE USD**
+# Área 12: Conciliación de USD
 
-- **TAREA 12.1: Registro en Odoo del recibo de cobro cliente en Divisas (PAYPAL, BINANCE, ZELLE)**
-    - **AS-IS 12.1: Registro del recibo de cobro en divisas digitales en Odoo**
+- TAREA 12.1: Registro en Odoo del recibo de cobro cliente en Divisas (PAYPAL, BINANCE, ZELLE)
+    - AS-IS 12.1: Registro del recibo de cobro en divisas digitales en Odoo
         - ¿Qué es esta tarea?
             - Registro en Odoo de los recibos de cobro de clientes correspondientes a pagos realizados en divisas a través de plataformas digitales (PayPal, Binance, Zelle), como primer paso de la conciliación de divisas.
         - ¿Para qué se hace?
@@ -1806,10 +1956,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 12.1:**
+    - Propuesta 12.1: Registro del recibo de cobro en divisas digitales en Odoo
         - Pendiente.
-- **TAREA 12.2: Registro en Odoo del extracto en Divisas**
-    - **AS-IS 12.2: Creación manual del extracto de divisas digitales en Odoo**
+
+---
+
+- TAREA 12.2: Registro en Odoo del extracto en Divisas
+    - AS-IS 12.2: Creación manual del extracto de divisas digitales en Odoo
         - ¿Qué es esta tarea?
             - Creación manual en Odoo del extracto correspondiente a los movimientos en divisas de PayPal, Binance y Zelle, ya que estas plataformas no permiten importar el extracto automáticamente como los bancos nacionales.
         - ¿Para qué se hace?
@@ -1834,10 +1987,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 12.2:**
+    - Propuesta 12.2: Creación manual del extracto de divisas digitales en Odoo
         - Pendiente.
-- **TAREA 12.3: Conciliación de Recibos de Cobros Clientes con el extracto en Odoo**
-    - **AS-IS 12.3: Conciliación de recibos de cobro en divisas digitales contra el extracto en Odoo**
+
+---
+
+- TAREA 12.3: Conciliación de Recibos de Cobros Clientes con el extracto en Odoo
+    - AS-IS 12.3: Conciliación de recibos de cobro en divisas digitales contra el extracto en Odoo
         - ¿Qué es esta tarea?
             - Conciliación en Odoo de los recibos de cobro en divisas de clientes (PayPal, Binance, Zelle) contra el extracto creado manualmente, siguiendo el mismo proceso que la conciliación bancaria pero para plataformas de divisas digitales.
         - ¿Para qué se hace?
@@ -1866,15 +2022,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 12.3:**
+    - Propuesta 12.3: Conciliación de recibos de cobro en divisas digitales contra el extracto en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 13: CREACION DE PRODUCTOS / USUARIOS**
+# Área 13: Creación de Productos / Usuarios
 
-- **TAREA 13.1: Registro en Odoo de productos para la venta**
-    - **AS-IS 13.1: Creación de productos en Odoo**
+- TAREA 13.1: Registro en Odoo de productos para la venta
+    - AS-IS 13.1: Creación de productos en Odoo
         - ¿Qué es esta tarea?
             - Creación y mantenimiento del catálogo de productos en Odoo para los servicios y artículos que se venden en el hotel.
         - ¿Para qué se hace?
@@ -1899,10 +2055,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 13.1:**
+    - Propuesta 13.1: Creación de productos en Odoo
         - Pendiente.
-- **TAREA 13.2: Registro en Cloudbeds de productos**
-    - **AS-IS 13.2: Creación de productos en Cloudbeds**
+
+---
+
+- TAREA 13.2: Registro en Cloudbeds de productos
+    - AS-IS 13.2: Creación de productos en Cloudbeds
         - ¿Qué es esta tarea?
             - Creación de productos en Cloudbeds para que estén disponibles en el sistema de reservas y gestión hotelera al momento de facturar consumos adicionales o servicios.
         - ¿Para qué se hace?
@@ -1926,10 +2085,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 13.2:**
+    - Propuesta 13.2: Creación de productos en Cloudbeds
         - Pendiente.
-- **TAREA 13.3: Registro en Cloudbeds de métodos de pagos**
-    - **AS-IS 13.3: Configuración de métodos de pago en Cloudbeds**
+
+---
+
+- TAREA 13.3: Registro en Cloudbeds de métodos de pagos
+    - AS-IS 13.3: Configuración de métodos de pago en Cloudbeds
         - ¿Qué es esta tarea?
             - Registro y configuración de los métodos de pago disponibles en Cloudbeds para que recepción pueda seleccionarlos al registrar pagos de clientes.
         - ¿Para qué se hace?
@@ -1951,10 +2113,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 13.3:**
+    - Propuesta 13.3: Configuración de métodos de pago en Cloudbeds
         - Pendiente.
-- **TAREA 13.4: Registro en Cloudbeds de usuarios**
-    - **AS-IS 13.4: Creación de usuarios en Cloudbeds**
+
+---
+
+- TAREA 13.4: Registro en Cloudbeds de usuarios
+    - AS-IS 13.4: Creación de usuarios en Cloudbeds
         - ¿Qué es esta tarea?
             - Creación de cuentas de usuario en Cloudbeds para el personal que necesita acceso al sistema (recepcionistas, supervisores).
         - ¿Para qué se hace?
@@ -1978,10 +2143,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 13.4:**
+    - Propuesta 13.4: Creación de usuarios en Cloudbeds
         - Pendiente.
-- **TAREA 13.5: Registro en Poster de productos para la venta**
-    - **AS-IS 13.5: Creación de productos en Poster**
+
+---
+
+- TAREA 13.5: Registro en Poster de productos para la venta
+    - AS-IS 13.5: Creación de productos en Poster
         - ¿Qué es esta tarea?
             - Creación del catálogo de productos en Poster para que estén disponibles como opciones de venta en la caja de A&B.
         - ¿Para qué se hace?
@@ -2004,10 +2172,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Odoo reemplace a Poster como sistema de punto de venta, centralizando el catálogo de productos en una sola plataforma.
-    - **Propuesta 13.5:**
+    - Propuesta 13.5: Creación de productos en Poster
         - Pendiente.
-- **TAREA 13.6: Cambio de Precios en Poster a los productos para la venta**
-    - **AS-IS 13.6: Actualización de precios de productos en Poster**
+
+---
+
+- TAREA 13.6: Cambio de Precios en Poster a los productos para la venta
+    - AS-IS 13.6: Actualización de precios de productos en Poster
         - ¿Qué es esta tarea?
             - Modificación de los precios de los productos en Poster cuando hay cambios de tarifas en el menú o catálogo de A&B.
         - ¿Para qué se hace?
@@ -2030,10 +2201,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el menú físico del restaurante (actualmente elaborado en Canva) esté sincronizado con los precios del sistema, de forma que un cambio de precio en el sistema actualice automáticamente el menú imprimible, eliminando el riesgo de discrepancias entre el menú físico y el sistema.
-    - **Propuesta 13.6:**
+    - Propuesta 13.6: Actualización de precios de productos en Poster
         - Pendiente.
-- **TAREA 13.7: Registro en Poster de usuarios**
-    - **AS-IS 13.7: Creación de usuarios en Poster**
+
+---
+
+- TAREA 13.7: Registro en Poster de usuarios
+    - AS-IS 13.7: Creación de usuarios en Poster
         - ¿Qué es esta tarea?
             - Creación de cuentas de usuario en Poster para el personal de la caja de A&B que necesita acceso al sistema.
         - ¿Para qué se hace?
@@ -2056,10 +2230,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 13.7:**
+    - Propuesta 13.7: Creación de usuarios en Poster
         - Pendiente.
-- **TAREA 13.8: Registro en Poster de Clientes**
-    - **AS-IS 13.8: Creación de clientes en Poster**
+
+---
+
+- TAREA 13.8: Registro en Poster de Clientes
+    - AS-IS 13.8: Creación de clientes en Poster
         - ¿Qué es esta tarea?
             - Registro de clientes en Poster, para aquellos casos en que se requiere asociar un consumo de A&B a un cliente específico dentro del sistema.
         - ¿Para qué se hace?
@@ -2080,10 +2257,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 13.8:**
+    - Propuesta 13.8: Creación de clientes en Poster
         - Pendiente.
-- **TAREA 13.9: Creación en Canva del Menú**
-    - **AS-IS 13.9: Diseño e impresión del menú físico de A&B en Canva**
+
+---
+
+- TAREA 13.9: Creación en Canva del Menú
+    - AS-IS 13.9: Diseño e impresión del menú físico de A&B en Canva
         - ¿Qué es esta tarea?
             - Diseño del menú físico de la caja de A&B en Canva, con los productos y precios actuales, para enviarlo a imprimir y plastificar como menú de uso en el restaurante.
         - ¿Para qué se hace?
@@ -2111,28 +2291,28 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Error de precio en el menú impreso que no coincide con el sistema: Se debe reimprimir el menú y corregir el precio en Poster. Este escenario es el que motivó la solicitud de mejora (menú sincronizado con el sistema).
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que el menú físico esté sincronizado con los precios del sistema (Odoo o Poster), de forma que al actualizar un precio en el sistema el menú imprimible se actualice automáticamente, eliminando el riesgo de discrepancias y la necesidad de mantener dos fuentes de precios.
-    - **Propuesta 13.9:**
+    - Propuesta 13.9: Diseño e impresión del menú físico de A&B en Canva
         - Pendiente.
 
 ---
 
-## **FASE 14: SOLICITUD Y RECEPCION DE PRODUCTOS**
+# Área 14: Solicitud y Recepción de Productos
 
-- **TAREA 14.1: Solicitud de Artículos de Oficina / Mercancía**
-    - **AS-IS 14.1: Solicitud de artículos de oficina y mercancía al departamento de compras**
+- TAREA 14.1: Solicitud de Artículos de Oficina / Mercancía
+    - AS-IS 14.1: Solicitud de artículos de oficina y mercancía al departamento de compras
         - ¿Qué es esta tarea?
-            - Solicitud formal al departamento de compras (a cargo de Juan/Agrubank) de artículos de oficina o mercancía que administración necesita, para que compras genere el pedido correspondiente.
+            - Solicitud formal al departamento de compras (a cargo de Juan Jose Herrera Rangel/Asdrubal) de artículos de oficina o mercancía que administración necesita, para que compras genere el pedido correspondiente.
         - ¿Para qué se hace?
             - Para abastecer a administración de los insumos necesarios para su operación diaria, siguiendo el proceso formal de solicitud a través del departamento de compras.
         - ¿Qué roles ejecutan esta tarea?
-            - Quien solicita: Administración (Libny Carina Tarazon Gallegos) o Juan.
-            - Quien gestiona el pedido: Compras (Juan/Agrubank) — crea el pedido en el sistema.
+            - Quien solicita: Administración (Libny Carina Tarazon Gallegos) o Juan Jose Herrera Rangel.
+            - Quien gestiona el pedido: Compras (Juan Jose Herrera Rangel/Asdrubal) — crea el pedido en el sistema.
         - ¿Cuándo se hace?
             - Disparador: Necesidad de artículos de oficina o mercancía para administración.
             - Frecuencia: Bajo demanda.
         - ¿Cómo se hace?
-            - Paso 1: Administración (Libny Carina Tarazon Gallegos o Juan) identifica la necesidad de artículos de oficina o mercancía.
-            - Paso 2: Realiza la solicitud directamente al departamento de compras (Agrubank/Juan).
+            - Paso 1: Administración (Libny Carina Tarazon Gallegos o Juan Jose Herrera Rangel) identifica la necesidad de artículos de oficina o mercancía.
+            - Paso 2: Realiza la solicitud directamente al departamento de compras (Asdrubal/Juan Jose Herrera Rangel).
             - Paso 3: Compras crea el pedido en el sistema.
             - Paso 4: Cuando el producto llega al hotel, se procede a la recepción (Tarea 14.2).
         - ¿Qué necesitan para hacer esta tarea?
@@ -2146,10 +2326,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 14.1:**
+    - Propuesta 14.1: Solicitud de artículos de oficina y mercancía al departamento de compras
         - Pendiente.
-- **TAREA 14.2: Recepción en Odoo de Pedidos**
-    - **AS-IS 14.2: Recepción física y en Odoo de pedidos de artículos o mercancía**
+
+---
+
+- TAREA 14.2: Recepción en Odoo de Pedidos
+    - AS-IS 14.2: Recepción física y en Odoo de pedidos de artículos o mercancía
         - ¿Qué es esta tarea?
             - Recepción física del pedido cuando llega al hotel y registro de la recepción en Odoo, con posibilidad de solicitar una expedición (traslado interno) desde el almacén general al almacén de administración.
         - ¿Para qué se hace?
@@ -2182,15 +2365,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 14.2:**
+    - Propuesta 14.2: Recepción física y en Odoo de pedidos de artículos o mercancía
         - Pendiente.
 
 ---
 
-## **FASE 15: SUPERVICION DE INVENTARIOS ALMACENES**
+# Área 15: Supervisión de Inventarios Almacenes
 
-- **TAREA 15.1: Inventarios, Solicitud de Mercancías, Pedidos entre otros**
-    - **AS-IS 15.1: Supervisión aleatoria de inventarios en almacenes**
+- TAREA 15.1: Inventarios, Solicitud de Mercancías, Pedidos entre otros
+    - AS-IS 15.1: Supervisión aleatoria de inventarios en almacenes
         - ¿Qué es esta tarea?
             - Revisión aleatoria de cinco o seis productos del inventario de los almacenes para verificar que el stock físico coincide con lo registrado en Odoo, como parte de la supervisión del proceso de inventario.
         - ¿Para qué se hace?
@@ -2219,15 +2402,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Discrepancia entre stock físico y Odoo: Se reporta para corrección. En el contexto actual, la depuración de datos es un proceso activo.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 15.1:**
+    - Propuesta 15.1: Supervisión aleatoria de inventarios en almacenes
         - Pendiente.
 
 ---
 
-## **FASE 16: ALQUILERES Y ARRENDAMIENTOS**
+# Área 16: Alquileres y Arrendamientos
 
-- **TAREA 16.1: Cobranza de Alquileres y Arrendamiento**
-    - **AS-IS 16.1: Gestión de cobro a arrendatarios y emisión de factura previa al pago**
+- TAREA 16.1: Cobranza de Alquileres y Arrendamiento
+    - AS-IS 16.1: Gestión de cobro a arrendatarios y emisión de factura previa al pago
         - ¿Qué es esta tarea?
             - Contacto con los arrendatarios (Jolly Country, Catamaranía Venezuela/La Bámbola, Indio Libre y otros) para gestionar el cobro mensual de alquileres y arrendamientos, verificando disponibilidad de pago antes de emitir la factura.
         - ¿Para qué se hace?
@@ -2259,10 +2442,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Arrendatario con morosidad recurrente: ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 16.1:**
+    - Propuesta 16.1: Gestión de cobro a arrendatarios y emisión de factura previa al pago
         - Pendiente.
-- **TAREA 16.2: Facturación**
-    - **AS-IS 16.2: Emisión de factura de arrendamiento en Odoo**
+
+---
+
+- TAREA 16.2: Facturación
+    - AS-IS 16.2: Emisión de factura de arrendamiento en Odoo
         - ¿Qué es esta tarea?
             - Creación y validación en Odoo de la factura de arrendamiento o alquiler, una vez confirmada la disponibilidad de pago del arrendatario.
         - ¿Para qué se hace?
@@ -2286,15 +2472,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 16.2:**
+    - Propuesta 16.2: Emisión de factura de arrendamiento en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 17: COMPROBANTES DE RETENCION**
+# Área 17: Comprobantes de Retención
 
-- **TAREA 17.1: Registro de Comprobantes de Retención IVA**
-    - **AS-IS 17.1: Registro de comprobantes de retención de IVA en Odoo**
+- TAREA 17.1: Registro de Comprobantes de Retención IVA
+    - AS-IS 17.1: Registro de comprobantes de retención de IVA en Odoo
         - ¿Qué es esta tarea?
             - Registro en Odoo de los comprobantes de retención de IVA emitidos por los clientes contribuyentes especiales al momento de pagar sus facturas.
         - ¿Para qué se hace?
@@ -2317,10 +2503,13 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 17.1:**
+    - Propuesta 17.1: Registro de comprobantes de retención de IVA en Odoo
         - Pendiente.
-- **TAREA 17.2: Registro de Comprobantes de Retención ISLR**
-    - **AS-IS 17.2: Registro de comprobantes de retención de ISLR en Odoo**
+
+---
+
+- TAREA 17.2: Registro de Comprobantes de Retención ISLR
+    - AS-IS 17.2: Registro de comprobantes de retención de ISLR en Odoo
         - ¿Qué es esta tarea?
             - Registro en Odoo de los comprobantes de retención de Impuesto Sobre la Renta (ISLR) emitidos por los clientes contribuyentes especiales al pagar sus facturas.
         - ¿Para qué se hace?
@@ -2343,15 +2532,15 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - **Propuesta 17.2:**
+    - Propuesta 17.2: Registro de comprobantes de retención de ISLR en Odoo
         - Pendiente.
 
 ---
 
-## **FASE 18: CREACION DE FORMATOS**
+# Área 18: Creación de Formatos
 
-- **TAREA 18.1: Inventarios, Solicitud de Mercancías, Muelle, Listados, Requisiciones, Orden de salidas/entradas, entre otros**
-    - **AS-IS 18.1: Diseño y mantenimiento de formatos operativos para los distintos departamentos**
+- TAREA 18.1: Inventarios, Solicitud de Mercancías, Muelle, Listados, Requisiciones, Orden de salidas/entradas, entre otros
+    - AS-IS 18.1: Diseño y mantenimiento de formatos operativos para los distintos departamentos
         - ¿Qué es esta tarea?
             - Creación y actualización de los formatos físicos utilizados por los distintos departamentos del hotel para sus operaciones diarias: inventarios de A&B (snack, bar, cocina), control de vehículos de estacionamiento, requisiciones de materiales, órdenes de entrada y salida de personal, listados y otros formatos operativos.
         - ¿Para qué se hace?
@@ -2388,5 +2577,5 @@ Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia compl
             - Que Odoo genere directamente los formatos de requisición y control de inventario, eliminando los documentos físicos manuales.
             - Que el sistema de control de asistencia (entrada y salida de personal) esté integrado a Odoo mediante un captahuella o lector de carnet, para automatizar el registro y eventualmente vincularlo con la nómina.
             - Que el control de vehículos de estacionamiento también esté integrado al sistema para automatizar su registro.
-    - **Propuesta 18.1:**
+    - Propuesta 18.1: Diseño y mantenimiento de formatos operativos para los distintos departamentos
         - Pendiente.

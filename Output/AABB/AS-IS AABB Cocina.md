@@ -1,8 +1,12 @@
-<!-- Procesado: 2026-05-25 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. -->
+<!-- Procesado: 2026-05-25 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Normalizado contra plantilla 2026-06-12. -->
 
 # AS - IS: Inventario: A y B (Cocina)
 
 Creado: 30 de marzo de 2026 9:36
+
+---
+
+# Área 1: Desayunos
 
 - TAREA 1.1: Recepción de lista de desayunos
     - AS-IS 1.1: Recepción de lista de desayunos
@@ -19,19 +23,22 @@ Creado: 30 de marzo de 2026 9:36
             - Paso 1: Recepción genera la lista de desayunos con la cantidad de huéspedes y la envía a cocina.
             - Paso 2: Cocina recepciona la lista.
             - Paso 3: Con base en la lista, cocina determina la cantidad de producto a preparar para el desayuno.
-            - ⚠️ Pendiente validar en sesión próxima: canal por el que recepción envía la lista (físico, digital, verbal, sistema).
+            - Paso 4: El canal es digital; recepción envía la lista a través del grupo de WhatsApp operativo del hotel.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de desayunos generada por recepción.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El Plan de Producción de Desayunos: guía interna con la que el equipo de cocina determina cuántas raciones de cada ingrediente (huevos, arepas, frutas) debe procesar durante el mise en place.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - WhatsApp en teléfonos inteligentes, como sistema de comunicación inmediata entre recepción y cocina.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si llega un grupo sin reserva tarde en la noche, recepción debe informar directamente al encargado de cocina para ajustar la cantidad de insumos.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Integración directa mediante una tablet en cocina conectada al sistema de recepción en tiempo real.
     - Propuesta 1.1: Recepción de lista de desayunos
         - Pendiente.
+
+---
+
 - TAREA 1.2: Mise en place de productos y utensilios
     - AS-IS 1.2: Mise en place de productos y utensilios
         - ¿Qué es esta tarea?
@@ -44,19 +51,25 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Recepción de la lista de desayunos y verificación de insumos disponibles.
             - Frecuencia: Diaria, en la mañana antes del inicio del servicio de desayuno.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: pasos específicos del mise en place para desayunos (qué se adelanta, qué se descongela, qué se monta).
+            - Paso 1: Lavado y desinfección de frutas.
+            - Paso 2: Picado de vegetales para tortillas y perico.
+            - Paso 3: Preparación de masa para arepas.
+            - Paso 4: Precalentamiento de planchas y hornos.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles en el almacén de cocina. Lista de desayunos recibida de recepción.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Estaciones de trabajo abastecidas y listas para el servicio (mise en place completo).
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Utensilios de cocina y procesadores de alimentos.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Ante fallas en equipos, se activa el protocolo de respaldo con equipos manuales o de otras áreas (bar).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con procesadores industriales para reducir el tiempo de preparación.
     - Propuesta 1.2: Mise en place de productos y utensilios
         - Pendiente.
+
+---
+
 - TAREA 1.3: Verificación de productos/insumos para el desayuno
     - AS-IS 1.3: Verificación de productos/insumos para el desayuno
         - ¿Qué es esta tarea?
@@ -75,16 +88,19 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de desayunos recibida de recepción. Acceso al almacén interno de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - La Lista de Faltantes Críticos: insumo informativo que determina si se puede iniciar la producción o si es obligatorio activar una requisición de emergencia a Almacén General.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Hoja de inventario.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si faltan productos en el almacén de cocina: se hace una requisición a almacén general (ver Fase 4).
             - Si almacén general tampoco tiene los productos: almacén gestiona la solicitud de compra con compras.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con un sistema de stock mínimo integrado a una tablet en cocina, de modo que al recibir la lista de recepción el sistema reste automáticamente lo necesario del inventario y genere una alerta visual si algún insumo es insuficiente, eliminando el conteo manual bajo presión cada mañana.
     - Propuesta 1.3: Verificación de productos/insumos para el desayuno
         - Pendiente.
+
+---
+
 - TAREA 1.4: Desayunos del personal
     - AS-IS 1.4: Desayunos del personal
         - ¿Qué es esta tarea?
@@ -97,19 +113,26 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Inicio de la jornada de cocina en la mañana.
             - Frecuencia: Diaria. Inicia a las 5:00 AM con la llegada del primer cocinero del turno.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: procedimiento detallado de preparación, menú del personal, cantidad de raciones.
+            - Paso 1: El cocinero de turno (Falcón) llega a las 5:00 AM y realiza el encendido de planchas y estufas.
+            - Paso 2: Elaboración de masa de maíz en grandes cantidades para las arepas.
+            - Paso 3: Se asan las arepas en los budares/planchas.
+            - Paso 4: Se prepara un acompañamiento sencillo (queso, huevos revueltos o mortadela) según la disponibilidad.
+            - Paso 5: Se calcula 1 arepa por empleado, según el listado de personal de turno.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles en el almacén de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El servicio de comedor de empleados habilitado y un registro interno con el total de raciones servidas para el control de costos de A&B.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Utensilios de cocina básica.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si hay retraso en la llegada del cocinero o falta de gas o energía, se atrasa el desayuno del personal, lo que complica también el desayuno de los huéspedes.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el personal tenga su propio autoservicio, de modo que se sirvan ellos mismos y el cocinero no tenga que dejar de preparar el desayuno de los huéspedes para atenderlos.
     - Propuesta 1.4: Desayunos del personal
         - Pendiente.
+
+---
+
 - TAREA 1.5: Desayunos de huéspedes
     - AS-IS 1.5: Desayunos de huéspedes
         - ¿Qué es esta tarea?
@@ -122,19 +145,27 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Inicio del servicio de desayuno para huéspedes, posterior a la preparación del desayuno del personal.
             - Frecuencia: Diaria, en la mañana. El turno de la mañana opera de 7:00 AM a 4:00 PM.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: procedimiento de servicio, horario específico de inicio del desayuno para huéspedes, menú.
+            - Paso 1: El servicio inicia a las 8:00 AM y termina a las 10:00 AM, con un menú que incluye distintos platillos (entre ellos pabellón y empanadas).
+            - Paso 2: Montaje del mise en place.
+            - Paso 3: Recepción de la comanda de servicio.
+            - Paso 4: Preparación del plato.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de desayunos de huéspedes recibida de recepción. Productos e insumos disponibles y mise en place realizado.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El Reporte de Comensales: conteo final de cuántos huéspedes desayunaron frente a los registrados en la lista de recepción. También se realiza la limpieza y cierre de la línea de calor.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Vajilla del hotel y la lista física enviada por recepción, en la que se van tachando los huéspedes.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si bajan más huéspedes de los anotados en la lista (por errores de recepción o visitas extra), cocina debe preparar raciones de emergencia rápidamente. Si se acaba un insumo principal, se ofrece una alternativa.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que los sistemas de recepción y cocina estén conectados, de modo que al hacer el check-in el huésped aparezca automáticamente en una pantalla en cocina, evitando el uso de listas de papel que se pueden mojar o perder.
     - Propuesta 1.5: Desayunos de huéspedes
         - Pendiente.
+
+---
+
+# Área 2: Almuerzo
+
 - TAREA 2.1: Almuerzos de personal
     - AS-IS 2.1: Almuerzos de personal
         - ¿Qué es esta tarea?
@@ -147,19 +178,24 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Finalización del servicio de desayuno de huéspedes.
             - Frecuencia: Diaria, dentro del turno de la mañana (7:00 AM – 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: Una vez cerrado el desayuno de huéspedes (10:30 AM), se limpian las estaciones y se inicia la cocción de carbohidratos (arroz, pasta o granos) en grandes cantidades.
+            - Paso 2: Se prepara una proteína principal y una ensalada o guarnición.
+            - Paso 3: El almuerzo se sirve en un horario escalonado (generalmente entre 12:00 PM y 1:00 PM) para que los departamentos no queden solos.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles en el almacén de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El servicio de comedor de mediodía finalizado y el registro de raciones entregadas para el control administrativo de A&B.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Ollas industriales de gran volumen, cubertería y vajilla de uso interno, y las hojas de registro de comidas por turno.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si hay un evento especial o mucha ocupación y la cocina está saturada con pedidos de huéspedes, el almuerzo del personal puede retrasarse o simplificarse a un menú de rápida ejecución.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el hotel asignara un cocinero dedicado al comedor de personal, de modo que el equipo de cocina principal no tenga que interrumpir la preparación de la carta de huéspedes.
     - Propuesta 2.1: Almuerzos de personal
         - Pendiente.
+
+---
+
 - TAREA 2.2: Verificación de productos/insumos para almuerzo
     - AS-IS 2.2: Verificación de productos/insumos para almuerzo
         - ¿Qué es esta tarea?
@@ -172,19 +208,25 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Necesidad de preparar el almuerzo dentro del turno de la mañana.
             - Frecuencia: Diaria, dentro del turno de la mañana (7:00 AM – 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: El jefe de cocina (Emil) revisa físicamente las cavas de refrigeración y congelación para verificar las proteínas (pollo, carne, pescado).
+            - Paso 2: Se inspecciona la despensa seca para asegurar carbohidratos (arroz, pasta).
+            - Paso 3: Se hace un conteo rápido de vegetales frescos.
+            - Paso 4: Se cruza esta información con los pedidos proyectados o el menú del día.
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso al almacén interno de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Un Reporte de Disponibilidad de Almuerzo. Si algo falta, se genera de inmediato la hoja de requisición urgente para el Almacén General.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Inventario físico manual.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si faltan productos: se hace una requisición a almacén general (ver Fase 4).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el hotel tuviera un sistema de inventario digital.
     - Propuesta 2.2: Verificación de productos/insumos para almuerzo
         - Pendiente.
+
+---
+
 - TAREA 2.3: Mise en place de productos y utensilios
     - AS-IS 2.3: Mise en place de productos y utensilios
         - ¿Qué es esta tarea?
@@ -197,19 +239,25 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Verificación de insumos completada y disponibilidad confirmada para el almuerzo.
             - Frecuencia: Diaria, dentro del turno de la mañana (7:00 AM – 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: pasos específicos del mise en place para almuerzo.
+            - Paso 1: Cortes de vegetales (julianas, brunoise o dados de cebolla, ají dulce y pimentón) para los sofritos.
+            - Paso 2: Porcionado (pesaje y corte) de proteínas (bistecs, pechugas, filetes de pescado).
+            - Paso 3: Pre-cocciones (adelanto de salsas base como pomodoro o española y sancocho de tubérculos si aplica).
+            - Paso 4: Organización y disposición de utensilios (sartenes, pinzas, espátulas) en la línea caliente según el menú.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles en el almacén de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Todos los ingredientes dispuestos en sus recipientes y listos para entrar al fuego al momento de recibir la primera comanda de almuerzo.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Cuchillería y tablas de corte.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si hay un volumen inesperado de pedidos y se agota el mise en place antes de tiempo, se activa un refuerzo para procesar alimentos al momento, lo que puede aumentar el tiempo de espera del huésped.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el hotel contara con una estación de preparación independiente (cocina fría) con temperatura controlada, de modo que mientras unos cocinan el desayuno otros adelanten los cortes del almuerzo, evitando las prisas de última hora.
     - Propuesta 2.3: Mise en place de productos y utensilios
         - Pendiente.
+
+---
+
 - TAREA 2.4: Recepción de pedidos de huéspedes
     - AS-IS 2.4: Recepción de pedidos de huéspedes
         - ¿Qué es esta tarea?
@@ -217,24 +265,30 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Para qué se hace?
             - Para conocer qué platos deben prepararse para los huéspedes en el servicio de almuerzo, dado que este no está incluido en el paquete de hospedaje y funciona por pedido y venta.
         - ¿Qué roles ejecutan esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima: quién toma el pedido del huésped y cómo lo transmite a cocina.
+            - El mesero toma el pedido del huésped y lo transmite al cocinero de turno mediante una comanda física.
         - ¿Cuándo se hace?
             - Disparador: Solicitud de almuerzo por parte de un huésped.
             - Frecuencia: Bajo demanda, cada vez que un huésped realiza un pedido de almuerzo.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: El mesero se acerca al huésped con la carta.
+            - Paso 2: Toma la orden detallando términos de cocción o alergias.
+            - Paso 3: El mesero entrega la comanda en cocina.
+            - Paso 4: Cocina confirma la recepción del pedido e informa las comandas a todo el equipo para iniciar la preparación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Menú o carta de almuerzos vigente, comandero, bolígrafo y conocimiento de la disponibilidad de platos (comunicada previamente por cocina).
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - La Comanda de Cocina: documento físico que guía la preparación y que luego sirve para que caja realice el cargo a la habitación del huésped.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Comanderos físicos.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si se pide un plato que se acaba de agotar, el mesero debe regresar de inmediato a la mesa para ofrecer una alternativa. Si hay un error en la comanda, el cocinero detiene el proceso hasta aclarar el pedido con el mesero.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que los meseros usen tablets de comandas conectadas a una impresora térmica en cocina, de modo que el pedido llegue al cocinero al instante sin que el mesero tenga que caminar hasta la cocina, agilizando el servicio.
     - Propuesta 2.4: Recepción de pedidos de huéspedes
         - Pendiente.
+
+---
+
 - TAREA 2.5: Almuerzos de huéspedes
     - AS-IS 2.5: Almuerzos de huéspedes
         - ¿Qué es esta tarea?
@@ -247,19 +301,27 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Recepción de pedidos de almuerzo de huéspedes (Tarea 2.4).
             - Frecuencia: Bajo demanda, dentro del turno de la mañana (7:00 AM – 4:00 PM), cuando hay huéspedes que solicitan almuerzo.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: Al recibir la comanda, el cocinero inicia la cocción de la proteína según el término solicitado.
+            - Paso 2: Se preparan o calientan los contornos (guarniciones) del mise en place.
+            - Paso 3: Se realiza el emplatado siguiendo los estándares de presentación del hotel.
+            - Paso 4: Se coloca el plato en la zona de despacho y se avisa al mesero para su retiro inmediato.
         - ¿Qué necesitan para hacer esta tarea?
             - Pedidos de huéspedes recibidos. Productos e insumos disponibles y mise en place realizado.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El plato terminado y servido.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Equipos de cocción, vajilla para huéspedes y lámparas de calor en el área de despacho.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si hay una devolución por parte del huésped, se prioriza la corrección del plato sobre los demás pedidos. Si hay un retraso crítico, el jefe de cocina informa al mesero para que gestione una cortesía o explique la demora al cliente.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con un sistema de monitores de cocina en lugar de tickets de papel, lo que permitiría medir los tiempos exactos desde el pedido hasta la salida del plato, mejorando la eficiencia y evitando que los tickets se mojen o se pierdan.
     - Propuesta 2.5: Almuerzos de huéspedes
         - Pendiente.
+
+---
+
+# Área 3: Snacks
+
 - TAREA 3.1: Inventario de productos para snacks
     - AS-IS 3.1: Inventario de productos para snacks
         - ¿Qué es esta tarea?
@@ -272,19 +334,24 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Inicio del turno de la tarde en el área de snacks.
             - Frecuencia: Diaria, al inicio del turno de la tarde (desde las 3:00 PM / 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: El encargado del turno de la tarde llega al área y realiza una inspección visual y conteo de los insumos críticos: panes de hamburguesa, porciones de carne, tequeños y vegetales.
+            - Paso 2: Se verifica el nivel de aceite en las freidoras y el gas.
+            - Paso 3: Se comparan las cantidades físicas con el stock ideal para el turno.
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso al área y almacén de snacks.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Una lista de lo que se debe pedir a la cocina principal o al almacén general para cubrir la demanda de la tarde y la noche.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Hoja de control de inventario de snacks (física).
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si se detecta que no hay suficiente de algún ingrediente y el almacén ya cerró, se informa a cocina principal para verificar si tienen stock de emergencia o, en última instancia, se informa al mesero para que retire el plato de la venta por ese turno.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el área de snacks tuviera su propio sistema de inventario que, al vender una hamburguesa en la caja, descontara automáticamente el pan y la carne y avisara cuando queden solo 5 unidades disponibles.
     - Propuesta 3.1: Inventario de productos para snacks
         - Pendiente.
+
+---
+
 - TAREA 3.2: Mise en place de productos y utensilios
     - AS-IS 3.2: Mise en place de productos y utensilios
         - ¿Qué es esta tarea?
@@ -299,19 +366,24 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Cómo se hace?
             - Paso 1: Se adelantan preparaciones de ingredientes (lechuga, cebolla, tomate y similares).
             - Paso 2: Se descongelan los productos que lo requieran.
-            - ⚠️ Pendiente validar en sesión próxima: pasos adicionales del mise en place para snacks.
+            - Paso 3: Porcionado y organización de salsas.
+            - Paso 4: Organización de empaques desechables, servilletas y pitillos en la estación de despacho.
+            - Paso 5: Verificación de la temperatura de la freidora y la plancha para asegurar que estén listas para el primer pedido.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles en el área de snacks.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - La estación de snacks abastecida, lo que garantiza que el cocinero tenga todo a mano y pueda armar un plato en menos de 10-12 minutos desde que recibe la comanda.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Cuchillos para el área, tablas de picar, recipientes plásticos, pinzas de cocina y cestas de freidora.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si los productos no se descongelaron a tiempo, se usa la técnica de descongelación bajo chorro de agua fría o se informa al cliente sobre un tiempo de espera mayor. Si falla un equipo, se usa la cocina principal como respaldo.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que la estación de snacks tuviera una pantalla táctil que avisara al cocinero qué productos se están vendiendo más en el momento, para adelantar el montaje de los platos más pedidos antes de la hora pico.
     - Propuesta 3.2: Mise en place de productos y utensilios
         - Pendiente.
+
+---
+
 - TAREA 3.3: Recepción de pedidos de huéspedes (Snacks/Cena)
     - AS-IS 3.3: Recepción de pedidos de huéspedes (Snacks/Cena)
         - ¿Qué es esta tarea?
@@ -319,24 +391,30 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Para qué se hace?
             - Para conocer qué debe prepararse en el turno de la tarde, tanto snacks como cena, dado que estos servicios funcionan por pedido y venta.
         - ¿Qué roles ejecutan esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima: quién toma el pedido del huésped y cómo lo transmite al área de snacks/cocina.
+            - El mesero o el cajero. El mesero toma el pedido en las mesas o la piscina, o el huésped se acerca directamente al mostrador donde el cajero lo atiende.
         - ¿Cuándo se hace?
             - Disparador: Solicitud de snack o cena por parte de un huésped.
             - Frecuencia: Bajo demanda, durante el turno de la tarde (3:00 PM / 4:00 PM – 11:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: Se aborda al huésped y se le ofrece la carta de snacks/cena.
+            - Paso 2: Se toma nota del pedido y se verifica la disponibilidad del plato con el cocinero de snacks.
+            - Paso 3: Se ingresa el pedido al sistema o se escribe la comanda.
+            - Paso 4: Se entrega la comanda al área de preparación.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Carta de snacks y cena actualizada, comandero físico y conocimiento de los platos que están fuera de servicio por falta de insumos.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Una comanda. Este documento sirve tanto para que el cocinero empiece a trabajar como para que el cajero asegure el cobro (a la habitación o pago inmediato).
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Sistema de facturación, comanderos de papel y bolígrafos.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el sistema de facturación se cae, se trabaja con comandas manuales de contingencia y se cobra en efectivo o se anota para cargar a la cuenta más tarde. Si el cocinero de snacks está saturado, el mesero informa al huésped que el tiempo de espera será mayor a lo habitual.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que los huéspedes pudieran escanear un código QR en las mesas o habitaciones para hacer el pedido desde su celular, de modo que llegue directo a la pantalla del cocinero de snacks sin necesidad de buscar a un mesero.
     - Propuesta 3.3: Recepción de pedidos de huéspedes (Snacks/Cena)
         - Pendiente.
+
+---
+
 - TAREA 3.4: Snacks para huéspedes
     - AS-IS 3.4: Snacks para huéspedes
         - ¿Qué es esta tarea?
@@ -352,20 +430,26 @@ Creado: 30 de marzo de 2026 9:36
             - Paso 1: Se recepciona el pedido del huésped.
             - Paso 2: Se prepara el snack solicitado (hamburguesas, tequeños, empanadas, entre otros) usando la freidora u otros equipos del área de snacks.
             - Paso 3: Se despacha al huésped.
-            - ⚠️ Pendiente validar en sesión próxima: proceso completo de despacho y registro del pedido.
+            - Paso 4: Una vez listo el snack, el cocinero coloca el plato en la barra de despacho y avisa al mesero.
+            - Paso 5: El mesero verifica que el plato coincida con la comanda, añade cubiertos o servilletas necesarios y lo lleva a la mesa.
         - ¿Qué necesitan para hacer esta tarea?
             - Mise en place del área de snacks completado. Pedido recibido del huésped.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El producto terminado entregado al huésped.
         - ¿Qué sistemas o herramientas usan?
-            - Freidora: para la preparación de snacks fritos (tequeños, empanadas, etc.).
-            - ⚠️ Pendiente validar en sesión próxima: sistema de caja o registro del pedido.
+            - Freidora para snacks fritos (tequeños, empanadas), plancha industrial (para carnes y calentar el pan) y microondas.
+            - Sistema de caja (POS) para el registro fiscal de la venta e impresora de tickets térmica.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si hay mucha demanda y la freidora no se da abasto, se informa al huésped que su pedido tardará más de lo habitual. Si un equipo falla, se traslada la preparación a la cocina principal del hotel para no detener el servicio.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con un monitor de visualización en el área de snacks que organice los pedidos por tiempo de llegada, indique al cocinero qué debe sacar primero y avise si un pedido lleva más de 15 minutos sin despacharse, para evitar quejas de los huéspedes.
     - Propuesta 3.4: Snacks para huéspedes
         - Pendiente.
+
+---
+
+# Área 4: Requisiciones (Diario, después de las 3pm)
+
 - TAREA 4.1: Inventario diario/manual en el almacén de cocina
     - AS-IS 4.1: Inventario diario/manual en el almacén de cocina
         - ¿Qué es esta tarea?
@@ -379,7 +463,7 @@ Creado: 30 de marzo de 2026 9:36
             - Frecuencia: Diaria, después de las 3:00 PM (entre turno de mañana y tarde). En temporada alta puede ser más frecuente dado el mayor consumo.
         - ¿Cómo se hace?
             - Paso 1: Se realiza el conteo manual de los productos disponibles en el almacén de cocina.
-            - ⚠️ Pendiente validar en sesión próxima: si existe algún formato o herramienta para registrar el inventario.
+            - Paso 2: Se utiliza una hoja de inventario (formato impreso con el listado de los insumos utilizados), en la que Emil o el encargado anotan a mano la cantidad física encontrada y la restan del stock ideal para saber cuánto pedir.
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso al almacén interno de cocina.
         - ¿Qué se genera al terminar?
@@ -387,11 +471,14 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué sistemas o herramientas usan?
             - Manual: el inventario se realiza de forma manual, sin sistema.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si se detecta una diferencia muy grande entre lo que debería haber y lo que hay, el jefe de cocina lo reporta de inmediato a la Gerencia de Operaciones. Si el inventario se retrasa por exceso de trabajo, se corre el riesgo de no entregar la requisición a tiempo y quedarse sin insumos para la cena o el desayuno del día siguiente.
         - ¿Cómo les gustaría que funcionara idealmente?
             - El equipo indica que se intenta que la requisición no sea diaria, pero en la práctica, cuando hay necesidad de abastecimiento, sí es diaria.
     - Propuesta 4.1: Inventario diario/manual en el almacén de cocina
         - Pendiente.
+
+---
+
 - TAREA 4.2: Relleno de formato de requisiciones (lista de lo que falta)
     - AS-IS 4.2: Relleno de formato de requisiciones (lista de lo que falta)
         - ¿Qué es esta tarea?
@@ -407,7 +494,7 @@ Creado: 30 de marzo de 2026 9:36
             - Paso 1: Se toma el formato de requisiciones (documento físico con numeración).
             - Paso 2: Se anota cada producto faltante con su cantidad requerida.
             - Paso 3: Se indica si el producto es para huéspedes o para personal (el formato tiene diferenciación entre ambos destinos).
-            - ⚠️ Pendiente validar en sesión próxima: campos específicos del formato, si existe copia, si tiene numeración correlativa.
+            - Paso 4: Se llenan los campos específicos: fecha, departamento solicitante, descripción, cantidad solicitada y unidad de medida. El formato posee una numeración correlativa en rojo en la esquina superior derecha para el control de auditoría.
         - ¿Qué necesitan para hacer esta tarea?
             - Resultado del inventario diario (lista de faltantes). Formato físico de requisiciones disponible.
         - ¿Qué se genera al terminar?
@@ -415,11 +502,14 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué sistemas o herramientas usan?
             - Formato físico de requisiciones: documento manual numerado donde se registran los productos solicitados diferenciando entre huéspedes y personal.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si se comete un error en el llenado, el formato debe anularse físicamente (escribiendo "ANULADO"). Si se agota el formato físico, se genera un retraso administrativo, ya que almacén no puede entregar mercancía sin el documento oficial numerado.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el formato fuera 100% digital: en lugar de escribir a mano, el encargado de cocina seleccionaría los productos de una lista precargada en el sistema; al enviar, se generaría un número de folio automático y llegaría una notificación a Gerencia para su aprobación inmediata, ahorrando papel y tiempo de traslado físico.
     - Propuesta 4.2: Relleno de formato de requisiciones (lista de lo que falta)
         - Pendiente.
+
+---
+
 - TAREA 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de cocina (autorización)
     - AS-IS 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de cocina (autorización)
         - ¿Qué es esta tarea?
@@ -443,11 +533,14 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué sistemas o herramientas usan?
             - Formato físico de requisiciones: documento manual que circula para recabar firmas.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si Operaciones no se encuentra en el hotel o está en una reunión prolongada, la firma queda pendiente, lo que retrasa la salida de insumos del almacén y afecta la producción de la cena.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el proceso fuera descentralizado y digital: Operaciones debería poder autorizar la requisición desde una app en su teléfono, de modo que la aprobación llegue al instante al almacén aunque esté fuera de su oficina, eliminando el tiempo que pierde el personal de cocina buscando una firma.
     - Propuesta 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de cocina (autorización)
         - Pendiente.
+
+---
+
 - TAREA 4.4: Entrega de productos desde almacén y firma de entrega de formato
     - AS-IS 4.4: Entrega de productos desde almacén y firma de entrega de formato
         - ¿Qué es esta tarea?
@@ -476,6 +569,9 @@ Creado: 30 de marzo de 2026 9:36
             - Se menciona la intención de que el personal de A&B (cajeros u otro encargado con acceso a Odoo) pueda recepcionar directamente en el sistema los pedidos que llegan a almacén, en lugar de que lo haga Gerencia de Operaciones.
     - Propuesta 4.4: Entrega de productos desde almacén y firma de entrega de formato
         - Pendiente.
+
+---
+
 - TAREA 4.5: Si no hay, se hace una solicitud de compra
     - AS-IS 4.5: Solicitud de compra cuando almacén no tiene el producto
         - ¿Qué es esta tarea?
@@ -495,15 +591,18 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué necesitan para hacer esta tarea?
             - Formato de requisiciones con los productos faltantes identificados.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - La orden de compra formal enviada al proveedor; una copia queda en almacén para hacer seguimiento a la recepción de la mercancía.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Módulo de compras del sistema Odoo para registrar la necesidad y, en paralelo, WhatsApp o correo electrónico para la comunicación rápida con los proveedores habituales.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el producto es de extrema urgencia y el proveedor habitual no tiene existencia, se autoriza una compra local: un responsable sale a comprar el insumo en comercios cercanos para no detener el servicio, aunque el costo sea ligeramente mayor.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el sistema tuviera configurados stocks mínimos automáticos, generando una alerta de compra cuando queden, por ejemplo, 5 unidades, de modo que la mercancía llegue antes de que cocina la pida.
     - Propuesta 4.5: Solicitud de compra cuando almacén no tiene el producto
         - Pendiente.
+
+---
+
 - TAREA 4.6: Notificación a Gerencia de reabastecimiento de Agua potable y Gas
     - AS-IS 4.6: Notificación a Gerencia de reabastecimiento de Agua potable y Gas
         - ¿Qué es esta tarea?
@@ -523,17 +622,22 @@ Creado: 30 de marzo de 2026 9:36
             - Paso 5: Gerencia de Operaciones recepciona el servicio actualmente en Odoo.
             - ⚠️ Pendiente validar en sesión próxima: canal de notificación de cocina a gerencia, criterios de nivel para notificar, datos del proveedor.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Acceso visual a los medidores de presión de los tanques de gas, revisión de los niveles del tanque de agua potable de cocina y la lista de contactos directos de Gerencia de Operaciones para el aviso inmediato.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - La recepción del servicio en Odoo (realizada actualmente por Gerencia) y el recibo de entrega firmado por el proveedor, que confirma que los litros de agua o kilos de gas fueron suministrados correctamente.
         - ¿Qué sistemas o herramientas usan?
             - Odoo: Gerencia de Operaciones lo usa actualmente para recepcionar el pedido cuando llega el proveedor.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el proveedor no puede llegar el mismo día, se activan medidas de ahorro: se restringe el uso de gas a solo preparaciones esenciales y se reserva el agua estrictamente para consumo humano.
         - ¿Cómo les gustaría que funcionara idealmente?
             - El equipo expresa que la recepción en sistema debería hacerla el propio personal de A&B (cajeros u otro encargado con acceso a Odoo) en lugar de Gerencia de Operaciones, de modo que el área gestione directamente sus propias recepciones de insumos críticos.
     - Propuesta 4.6: Notificación a Gerencia de reabastecimiento de Agua potable y Gas
         - Pendiente.
+
+---
+
+# Área 5: Cena
+
 - TAREA 5.1: Inventario de productos para cena
     - AS-IS 5.1: Inventario de productos para cena
         - ¿Qué es esta tarea?
@@ -546,19 +650,24 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Inicio del turno de la tarde en cocina.
             - Frecuencia: Diaria, al inicio del turno de la tarde (3:00 PM – 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: El personal del turno de la tarde recibe el área y realiza un chequeo de las proteínas y guarniciones que quedaron del turno de la mañana.
+            - Paso 2: Se verifica la cantidad de insumos específicos para el menú de cena (que suele ser distinto al almuerzo).
+            - Paso 3: Se revisan los suministros para la cena del personal, asegurando que las cantidades sean suficientes para todo el equipo de guardia.
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso al almacén de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El Estado de Disponibilidad para Cena: confirmación interna que permite al encargado de cocina saber si puede ofrecer todos los platos de la carta o si debe informar a los meseros sobre algún plato agotado antes de abrir el servicio.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si faltan productos: se gestiona requisición a almacén (ver Fase 4).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Implementar un Formato de Entrega de Turno Digital: al finalizar la mañana, el equipo saliente registraría en una tablet los saldos de insumos clave, de modo que el equipo de la tarde solo valide visualmente las cantidades, optimizando el tiempo de preparación de la cena y reduciendo el margen de error en el conteo.
     - Propuesta 5.1: Inventario de productos para cena
         - Pendiente.
+
+---
+
 - TAREA 5.2: Mise en place de productos y utensilios
     - AS-IS 5.2: Mise en place de productos y utensilios
         - ¿Qué es esta tarea?
@@ -571,19 +680,24 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Inventario de productos para cena completado.
             - Frecuencia: Diaria, al inicio del turno de la tarde (3:00 PM – 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: pasos específicos del mise en place para cena.
+            - Paso 1: Se cortan y pesan las proteínas según el gramaje del menú de cena.
+            - Paso 2: Se elaboran salsas calientes y guarniciones (purés, vegetales salteados) y se pre-cocinan carbohidratos.
+            - Paso 3: Se organizan los utensilios de servicio (pinzas, cucharones, sartenes limpios) y la vajilla específica para la cena en la zona de despacho.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles en el almacén de cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - La línea de servicio operativa: estado en el que la cocina está lista para recibir la primera comanda de la noche, con todos los ingredientes organizados por estaciones (fría, caliente y despacho).
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Equipos de cocción (estufas, hornos), licuadoras y recipientes de acero.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el mise en place se retrasa por falta de personal, se simplifica el menú o se preparan solo los platos de mayor rotación. Si un ingrediente clave no está listo, se avisa a los meseros antes de que los huéspedes se sienten para que no ofrezcan ese plato.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con una estación de preparación climatizada para mantener la cadena de frío de vegetales y proteínas durante el corte, y disponer de equipos de cocción al vacío (sous-vide) que permitan tener las proteínas listas para un sellado rápido, garantizando siempre el mismo término y calidad.
     - Propuesta 5.2: Mise en place de productos y utensilios
         - Pendiente.
+
+---
+
 - TAREA 5.3: Cena de personal
     - AS-IS 5.3: Cena de personal
         - ¿Qué es esta tarea?
@@ -596,19 +710,24 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Inicio del servicio de cena dentro del turno de la tarde.
             - Frecuencia: Diaria, dentro del turno de la tarde (3:00 PM – 11:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: Se revisa el menú programado para el personal.
+            - Paso 2: Se preparan las porciones en grandes cantidades para optimizar el tiempo.
+            - Paso 3: Se establece un horario escalonado (6:00 PM a 7:00 PM) para que los distintos departamentos bajen a cenar sin descuidar sus áreas.
         - ¿Qué necesitan para hacer esta tarea?
             - Productos e insumos disponibles y mise en place realizado.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Un registro de control de raciones servidas para el cálculo de costos operativos del hotel.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Ollas de gran capacidad, utensilios de servicio y el formato de control de cena, donde el personal firma y se anota al recibir su comida.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si la cocina está saturada con los pedidos de huéspedes, la cena del personal puede retrasarse.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Implementar un sistema de registro por huella dactilar o tarjeta de empleado al entrar al comedor, que descuente automáticamente las raciones del inventario y genere reportes exactos de consumo por departamento, facilitando la gestión administrativa y evitando el desperdicio.
     - Propuesta 5.3: Cena de personal
         - Pendiente.
+
+---
+
 - TAREA 5.4: Cena de huéspedes
     - AS-IS 5.4: Cena de huéspedes
         - ¿Qué es esta tarea?
@@ -621,19 +740,27 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Recepción de pedido de cena por parte de un huésped (Tarea 3.3).
             - Frecuencia: Bajo demanda, durante el turno de la tarde, cuando hay huéspedes que solicitan cena.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Paso 1: Se recibe la comanda proveniente de caja.
+            - Paso 2: El cocinero canta la comanda y comienza la cocción final de los alimentos usando el mise en place previo.
+            - Paso 3: Se procede al emplatado siguiendo los estándares de presentación del hotel.
+            - Paso 4: Se coloca el plato en la zona de despacho para que el mesero lo retire de inmediato.
         - ¿Qué necesitan para hacer esta tarea?
             - Pedido de cena recibido del huésped. Productos e insumos disponibles y mise en place realizado.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El plato servido al huésped y la actualización del consumo en el sistema de facturación. También genera satisfacción del cliente, que puede derivar en propinas para el personal y buenas reseñas para el hotel.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Equipos de cocina (parrillas, hornos, estufas) y vajilla para cena.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el pedido sale con error, se aplica la reposición inmediata, priorizando ese plato sobre los demás para calmar la molestia del huésped.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el hotel ofreciera un menú digital interactivo en las mesas, donde el huésped pueda ver fotos reales de los platos y sus ingredientes, idealmente conectado a una pantalla en cocina para agilizar el proceso.
     - Propuesta 5.4: Cena de huéspedes
         - Pendiente.
+
+---
+
+# Área 6: Limpiezas de áreas de Cocina/Restaurant
+
 - TAREA 6.1: Limpieza general del turno de la mañana (7am – 4pm)
     - AS-IS 6.1: Limpieza general del turno de la mañana (7am – 4pm)
         - ¿Qué es esta tarea?
@@ -646,19 +773,24 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Finalización del turno de la mañana / cambio de turno.
             - Frecuencia: Diaria, al finalizar el turno de la mañana (hasta las 4:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: áreas específicas que cubre la limpieza del turno de mañana, insumos de limpieza utilizados, procedimiento.
+            - Paso 1: Se limpian los topes de trabajo, estufas y planchas utilizadas en el desayuno y almuerzo, y se hace el barrido y coleto del piso de la cocina y el área de servicio del restaurante.
+            - Paso 2: Se utiliza desengrasante para las áreas de cocción.
+            - Paso 3: Se retiran restos de comida, se aplica desengrasante, se deja actuar, se remueve con agua caliente y se finaliza con la desinfección de superficies de contacto.
         - ¿Qué necesitan para hacer esta tarea?
             - Insumos de limpieza disponibles en cocina. El equipo indica que los insumos de limpieza de cocina los maneja el propio personal de cocina, sin depender de mantenimiento para la limpieza regular.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Un entorno seguro para que el turno de la tarde reciba la cocina sin contaminación cruzada y pueda iniciar el mise en place de inmediato.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Cepillos de cerdas duras para las hornillas, espátulas de limpieza para la plancha, pulverizadores para los químicos y guantes de protección.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Para casos especiales (cañerías, desagües tapados): se solicita apoyo a mantenimiento vía radio (ver Tarea 6.3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que se implementara un Cronograma de Limpieza Profunda Programada digital, en el que cada trabajador marque en una tablet o checklist de pared las tareas de limpieza realizadas, asegurando que ninguna esquina quede olvidada y que el uso de insumos químicos sea el adecuado, sin desperdicios.
     - Propuesta 6.1: Limpieza general del turno de la mañana (7am – 4pm)
         - Pendiente.
+
+---
+
 - TAREA 6.2: Limpieza general del turno de la tarde/noche (4pm – 11pm)
     - AS-IS 6.2: Limpieza general del turno de la tarde/noche (4pm – 11pm)
         - ¿Qué es esta tarea?
@@ -671,19 +803,25 @@ Creado: 30 de marzo de 2026 9:36
             - Disparador: Finalización del turno de la tarde / cierre del servicio nocturno.
             - Frecuencia: Diaria, al finalizar el turno de la tarde/noche (hasta las 11:00 PM).
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima: áreas específicas que cubre la limpieza del turno de tarde, insumos de limpieza utilizados, procedimiento.
+            - Paso 1: Desengrasado total de las estaciones de snacks y cena, limpieza de planchas y freidoras (filtrado de aceite si aplica), fregaderos, y vaciado de todas las papeleras de cocina y restaurante.
+            - Paso 2: Se apagan todos los equipos térmicos.
+            - Paso 3: Se retiran los utensilios sucios al área de lavado.
+            - Paso 4: Se aplican químicos en las superficies calientes (tibias) para facilitar la remoción de grasa, se friegan los pisos con cepillo y se dejan las superficies secas para evitar la proliferación de bacterias durante la noche.
         - ¿Qué necesitan para hacer esta tarea?
             - Insumos de limpieza disponibles en cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - El área lista para la inspección de apertura del día siguiente.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Mopas, paños desechables o de uso rotativo y envases para el almacenamiento de químicos.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Para casos especiales (cañerías, desagües tapados): se solicita apoyo a mantenimiento vía radio (ver Tarea 6.3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima: se menciona que existe un mantenimiento extenso cada quince días para áreas como campanas y carnicería, pero no se especifica si aplica a esta tarea o a una separada.
+            - Que el mantenimiento extenso de cada quince días (campanas, filtros de aire y cavas de carnicería) estuviera integrado en un calendario digital que asigne tareas específicas por día de la semana, de modo que la limpieza nocturna no sea solo superficial sino que cada noche adelante una parte de la limpieza profunda, evitando que se acumule grasa en áreas críticas como los extractores.
     - Propuesta 6.2: Limpieza general del turno de la tarde/noche (4pm – 11pm)
         - Pendiente.
+
+---
+
 - TAREA 6.3: Solicitud de apoyo con Mantenimiento para casos especiales (cañerías, reparaciones, etc.)
     - AS-IS 6.3: Solicitud de apoyo con Mantenimiento para casos especiales
         - ¿Qué es esta tarea?
@@ -699,19 +837,24 @@ Creado: 30 de marzo de 2026 9:36
             - Paso 1: El personal de cocina detecta el problema (cañería tapada, desagüe bloqueado u otro).
             - Paso 2: Se llama por radio a mantenimiento solicitando el apoyo.
             - Paso 3: Mantenimiento acude con las herramientas necesarias (se menciona el hidrojet como ejemplo de herramienta de mantenimiento).
-            - ⚠️ Pendiente validar en sesión próxima: si existe algún formato o registro de la solicitud, tiempos de respuesta esperados.
+            - No existe un formato ni registro escrito de la solicitud: la solicitud es directa por radio, identificada como caso de emergencia o caso puntual (confirmado en sesión kmmin001).
         - ¿Qué necesitan para hacer esta tarea?
             - Radio para comunicarse con mantenimiento.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Notificación al jefe de cocina de que la tarea ya está realizada.
         - ¿Qué sistemas o herramientas usan?
             - Radio: medio de comunicación para solicitar apoyo a mantenimiento.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el departamento de mantenimiento interno no cuenta con la herramienta necesaria o la falla es eléctrica mayor, se escala a la Gerencia de Operaciones para contratar un servicio técnico externo de emergencia.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Implementar un Plan de Mantenimiento Preventivo Mensual: en lugar de llamar a mantenimiento cuando la cañería ya está tapada, que el equipo técnico realice limpiezas profundas de desagües y revisión de equipos cada 30 días de forma obligatoria.
     - Propuesta 6.3: Solicitud de apoyo con Mantenimiento para casos especiales
         - Pendiente.
+
+---
+
+# Área 7: Carnicería
+
 - TAREA 7.1: Limpiezas de proteínas (Carne, pollo, mariscos y pescado)
     - AS-IS 7.1: Limpiezas de proteínas (Carne, pollo, mariscos y pescado)
         - ¿Qué es esta tarea?
@@ -728,17 +871,20 @@ Creado: 30 de marzo de 2026 9:36
             - Paso 2: Se limpia la pieza según el tipo: al pollo se le quitan huesos (deshuesado); a la carne se le quita grasa u otras partes; al pescado y mariscos se les aplica el proceso de limpieza correspondiente.
             - ⚠️ Pendiente validar en sesión próxima: procedimiento detallado para cada tipo de proteína, herramientas específicas usadas.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima: herramientas (cuchillos, mesones, etc.) e insumos de limpieza del área.
+            - Mesones de acero inoxidable desinfectados, recipientes para separar la merma (desperdicio) del producto aprovechable, agua potable constante, equipo de protección personal (delantal plástico y guantes de malla si es necesario) e insumos de limpieza del área.
         - ¿Qué se genera al terminar?
             - Piezas de proteína limpias y listas para pesado (Tarea 7.2).
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Piedras de afilar, cuchillos y tablas.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si se detecta una pieza con olor, color o textura irregular (signos de descomposición), se aparta de inmediato, se informa a Gerencia y se procede a la devolución al proveedor o al descarte, registrándolo como pérdida para no afectar el costo de alimentos.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con una cava de carnicería climatizada específicamente para el procesamiento de proteínas, que mantenga la cadena de frío durante la limpieza, y disponer de una sierra eléctrica industrial para cortes con hueso, haciendo el proceso más rápido y preciso.
     - Propuesta 7.1: Limpiezas de proteínas (Carne, pollo, mariscos y pescado)
         - Pendiente.
+
+---
+
 - TAREA 7.2: Pesos de proteínas (Carne, pollo, mariscos y pescado)
     - AS-IS 7.2: Pesos de proteínas (Carne, pollo, mariscos y pescado)
         - ¿Qué es esta tarea?
@@ -761,11 +907,14 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué sistemas o herramientas usan?
             - Balanza / báscula: para el pesado de las porciones de proteína.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si la balanza digital presenta fallas de calibración o se queda sin batería, el proceso se detiene para evitar errores en el gramaje. Si el peso de una pieza es menor al estándar por un mal corte previo, se completa la porción con recortes de la misma proteína.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Contar con una balanza inteligente conectada a un sistema que emita al instante una etiqueta adhesiva con el peso, la fecha de empaque y el tipo de proteína.
     - Propuesta 7.2: Pesos de proteínas (Carne, pollo, mariscos y pescado)
         - Pendiente.
+
+---
+
 - TAREA 7.3: Embolsado de proteínas (Carne, pollo, mariscos y pescado)
     - AS-IS 7.3: Embolsado de proteínas (Carne, pollo, mariscos y pescado)
         - ¿Qué es esta tarea?
@@ -776,7 +925,7 @@ Creado: 30 de marzo de 2026 9:36
             - Personal de carnicería de cocina.
         - ¿Cuándo se hace?
             - Disparador: Pesado de proteínas completado (Tarea 7.2).
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo se hace?
             - Paso 1: Se toman las porciones ya pesadas.
             - Paso 2: Se embolsan las proteínas, separadas por tipo (carne, pollo, mariscos, pescado).
@@ -790,11 +939,14 @@ Creado: 30 de marzo de 2026 9:36
             - Neveras: para el almacenamiento de las proteínas embolsadas.
             - ⚠️ Pendiente validar en sesión próxima: otros equipos o insumos de empaque.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si las bolsas de empaque se agotan, se notifica a Almacén de inmediato; no se almacena la proteína al desnudo en las bandejas para evitar quemaduras por frío o contaminación cruzada. Si una nevera presenta fallas de temperatura durante el proceso, se traslada el producto embolsado a una cava de contingencia y se etiquetan los lotes para usar primero los que perdieron frío momentáneamente.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Implementar un sistema de empacado al vacío, que garantizaría una conservación más prolongada y profesional y evitaría por completo la formación de cristales de hielo dentro de la bolsa.
     - Propuesta 7.3: Embolsado de proteínas (Carne, pollo, mariscos y pescado)
         - Pendiente.
+
+---
+
 - TAREA 7.4: Inventario de lo que se saca (Conteo)
     - AS-IS 7.4: Inventario de lo que se saca (Conteo)
         - ¿Qué es esta tarea?
@@ -805,23 +957,26 @@ Creado: 30 de marzo de 2026 9:36
             - Personal de carnicería de cocina.
         - ¿Cuándo se hace?
             - Disparador: Finalización del proceso de embolsado de proteínas (Tarea 7.3).
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo se hace?
             - Paso 1: Se realiza el conteo de las piezas o porciones procesadas en la jornada.
             - Paso 2: Se registra manualmente el inventario de lo procesado.
             - ⚠️ Pendiente validar en sesión próxima: formato o herramienta utilizada para el registro, destino del registro (quién lo recibe o dónde se archiva).
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Hojas de reportes de producción y bolígrafo.
         - ¿Qué se genera al terminar?
             - Registro manual del inventario de proteínas procesadas.
         - ¿Qué sistemas o herramientas usan?
             - Manual: el inventario se registra de forma manual.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Si el conteo final no cuadra con el peso inicial (considerando la merma permitida), se realiza una revisión inmediata de las mermas. Si la diferencia es muy alta, se informa a Gerencia por sospecha de desperdicio excesivo o error en el pesaje y se repite el conteo de las bolsas antes de guardarlas en la cava.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Que el registro fuera totalmente digital mediante una tablet: al terminar de embolsar, la persona encargada marcaría las cantidades en una pantalla táctil sincronizada en tiempo real con el sistema.
     - Propuesta 7.4: Inventario de lo que se saca (Conteo)
         - Pendiente.
+
+---
+
 - TAREA 7.5: Limpieza de área de carnicería
     - AS-IS 7.5: Limpieza de área de carnicería
         - ¿Qué es esta tarea?
@@ -832,7 +987,7 @@ Creado: 30 de marzo de 2026 9:36
             - Personal de carnicería de cocina.
         - ¿Cuándo se hace?
             - Disparador: Finalización del procesamiento de proteínas (limpieza, pesado, embolsado e inventario).
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima: si es diaria o cada vez que se usa el área. Se menciona que existe un mantenimiento extenso del área de carnicería cada quince días, pero no se aclara si esta tarea lo incluye o si es un proceso separado.
+            - Frecuencia: Diaria y obligatoria cada vez que se termina de procesar proteínas.
         - ¿Cómo se hace?
             - Paso 1: Se limpian las mesas de trabajo del área de carnicería.
             - Paso 2: Se limpia el piso del área.
@@ -841,13 +996,13 @@ Creado: 30 de marzo de 2026 9:36
         - ¿Qué necesitan para hacer esta tarea?
             - Insumos de limpieza disponibles en cocina.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Un área de procesamiento sanitizada, asegurando que el espacio está libre de riesgos biológicos para el siguiente uso.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Cepillos de mano y mopas exclusivas para el área de carnicería.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Para casos especiales (cañerías, desagüe tapado): se solicita apoyo a mantenimiento vía radio (Tarea 6.3).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Implementar un sistema de desinfección por vapor saturado al final de cada jornada, que permita alcanzar rincones difíciles de los mesones y las juntas de las cavas que la limpieza manual a veces no cubre.
     - Propuesta 7.5: Limpieza de área de carnicería
         - Pendiente.
 

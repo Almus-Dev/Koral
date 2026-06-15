@@ -1,6 +1,29 @@
 # Pendientes del Proyecto
 
-Ultima actualizacion: 2026-05-04 (sesion Gerencia Hotelera)
+Ultima actualizacion: 2026-06-15 (sesion normalizacion + propuestas + correo Genesy)
+
+---
+
+## Estado tras sesion 2026-06-15
+
+12 AS-IS normalizados contra plantilla. Propuestas de adicion aprobadas y aplicadas. ~45 campos rellenados desde transcripts. Correo de Genesy aplicado a Legal. **529 ⚠️ restantes** = requieren Fase 2 (segunda sesion de validacion por area); verificado que no estan en el material disponible.
+
+**Cerrado esta sesion:**
+- [x] Propuestas Caja Fase 4 (4.2-4.10) — aplicadas
+- [x] Propuesta Bar plateria/manteleria (2.11) — aplicada
+- [x] Propuesta A RRHH bono camareras (2.3.5) — aplicada
+- [x] Fusiones RRHH B (1.2.3<-3.5.3) y C (3.6.1<-3.6.2) — aplicadas
+- [x] Propuestas Legal 16 tareas Areas 3-6 (D1.3.1-D1.6.4) — aplicadas
+- [x] Propuesta CCS Cashea (4.4.10) + fusion duplicado 4.2.7<-4.3.11 — aplicadas
+- [x] Correo de correccion de Genesy aplicado a Legal (mando + flujos macro) — guardado en Input/Legal/
+- [x] Douglas = Douglas Efrain Reyes Serverie (Bar)
+- [x] TAREA 3.8 HOTEL-Libny reconstruida (estaba truncada)
+- [x] Contexto Legal actualizado (cargo Genesy + nota Odoo)
+
+**Pendiente de decision del usuario:**
+- [ ] 6 tareas Legal mencionadas en transcript fuera de Inventario (RAPDA, cedula catastral Colina Palas, impuestos Hermitage, sellado de libros, asesoria a deptos, solicitudes de presidencia) — siguen como propuestas sin aplicar; las 1-3 con duda corporativo/personal.
+
+**Apellidos/nombres aun pendientes:** Francis (Ama de Llaves), Francisco (refrigeracion), Luis (piscinero), Isaias (bombas), Meche (Contraloria), Mariglori (gestora Legal).
 
 ---
 

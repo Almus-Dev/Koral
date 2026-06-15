@@ -1,9 +1,11 @@
 # AS - IS: Compras y almacén
 
 Creado: 17 de marzo de 2026 12:24
-Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos.
+Procesado: 2026-05-04 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Normalizado contra plantilla 2026-06-12.
 
-COMPRAS
+---
+
+# Área 1: Compras
 
 - TAREA 1.1: Crear proveedores nuevos
     - AS-IS 1.1: Creación de proveedores nuevos en el sistema
@@ -12,7 +14,7 @@ COMPRAS
         - ¿Para qué se hace?
             - Para habilitar al proveedor dentro del sistema y poder gestionar compras, retenciones y pagos correctamente, asociando su información fiscal, bancaria y de contacto a su ficha.
         - ¿Qué roles ejecutan esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Departamento de Compras: Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) y Asdrubal (Compras) ejecutan el registro de proveedores en Odoo. La creación de proveedores es una actividad recurrente del departamento de Compras (en Administración es eventual).
         - ¿Cuándo se hace?
             - Disparador: Cuando se necesita incorporar un proveedor que no existe previamente en el sistema.
             - Frecuencia: Bajo demanda, cada vez que surge un proveedor nuevo.
@@ -39,6 +41,9 @@ COMPRAS
             - Exigir a los proveedores con facturación natural que proporcionen su número de cuenta bancaria completa en lugar de operar mediante pago móvil, para facilitar las conciliaciones del área de administración.
     - Propuesta 1.1: Creación de proveedores nuevos
         - Pendiente.
+
+---
+
 - TAREA 1.2: Crear productos
     - AS-IS 1.2: Creación de productos en el sistema
         - ¿Qué es esta tarea?
@@ -46,7 +51,8 @@ COMPRAS
         - ¿Para qué se hace?
             - Para disponer de un catálogo de productos parametrizado en el sistema que permita gestionar compras, inventario y contabilidad de forma organizada, reduciendo la duplicidad y fragmentación excesiva de ítems.
         - ¿Qué roles ejecutan esta tarea?
-            - El departamento de Administración/Compras es quien define los criterios de clasificación (tipo de producto, categoría). ⚠️ Pendiente validar en sesión próxima quién ejecuta operativamente la carga en el sistema.
+            - El departamento de Administración/Compras es quien define los criterios de clasificación (tipo de producto, categoría).
+            - Departamento de Compras: Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) y Asdrubal (Compras) ejecutan operativamente la carga del producto en Odoo. La creación de productos está restringida al departamento de Compras, dado que son quienes compran. Actualmente Lourdes y Asdrubal reclasifican la base de datos usando un producto general con atribuciones.
         - ¿Cuándo se hace?
             - Disparador: Cuando se incorpora un producto nuevo que no existe en el catálogo del sistema.
             - Frecuencia: Bajo demanda.
@@ -66,12 +72,15 @@ COMPRAS
             - Odoo: creación y parametrización de la ficha de producto, incluyendo atribuciones y categorías.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Discrepancia de criterio entre almacén (visión física) y administración/contabilidad (visión contable) sobre cuándo un producto es almacenable o consumible: actualmente se está reclasificando la base de datos de productos para unificar criterios, pero aún no hay una lista definitiva aprobada.
-            - Productos del almacén que no corresponden con lo que Victor Manuel Perez Carrizalez (encargado de almacén) tiene físicamente: hay registros en el sistema desde 2024 y parte de 2025 que no reflejan el inventario físico real actual.
+            - Productos del almacén que no corresponden con lo que Victor Manuel Perez Carrizalez (Almacenista) tiene físicamente: hay registros en el sistema desde 2024 y parte de 2025 que no reflejan el inventario físico real actual.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que Administración y Contabilidad emitan una lista oficial que indique explícitamente cuáles productos son consumibles y cuáles almacenables, para que el criterio sea uniforme y no dependa de interpretaciones individuales por área.
             - Usar el esquema de producto general con atribuciones (marca, color, presentación) en lugar de crear un producto distinto por cada variante, reduciendo así la lista extensa de ítems fragmentados.
     - Propuesta 1.2: Creación de productos
         - Pendiente.
+
+---
+
 - TAREA 1.3: Crear presupuestos con distintos proveedores
     - AS-IS 1.3: Comparación de precios y selección de proveedor
         - ¿Qué es esta tarea?
@@ -79,7 +88,7 @@ COMPRAS
         - ¿Para qué se hace?
             - Para optimizar el gasto de la empresa seleccionando la opción más conveniente en precio antes de realizar el pedido.
         - ¿Qué roles ejecutan esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Departamento de Compras: Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) y Asdrubal (Compras) realizan la comparación de precios cuando aplica. En la práctica, el análisis de precio solo ocurre en aproximadamente el 10% de los casos; en el resto, el departamento transcribe la compra indicada por la Gerencia General.
         - ¿Cuándo se hace?
             - Disparador: Antes de ejecutar una compra cuando se considera necesario comparar precios.
             - Frecuencia: Solo en aproximadamente el 10% de los casos. En el 90% restante, la compra se transcribe directamente sin análisis de precio previo, siguiendo la indicación de Gerencia General sobre a qué proveedor comprar.
@@ -92,15 +101,18 @@ COMPRAS
             - Acceso al módulo de compras en Odoo.
             - Proveedores registrados en el sistema con sus precios asociados.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Qué sistemas o herramientas usan?
             - Odoo: selección de producto y comparación de precios entre proveedores.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Los pedidos frecuentemente llegan el fin de semana por indicación del Alberto Cid Navarro, lo que impide hacer comparación de precios con otros proveedores por falta de tiempo hábil y disponibilidad del equipo de Compras.
+            - Los pedidos frecuentemente llegan el fin de semana por indicación de Alberto Cid Navarro (Gerencia General), lo que impide hacer comparación de precios con otros proveedores por falta de tiempo hábil y disponibilidad del equipo de Compras.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que las compras se planifiquen de lunes a viernes para tener tiempo de realizar solicitudes de presupuesto formales y comparar precios entre proveedores antes de ejecutar el pedido, en lugar de transcribir directamente la indicación de Gerencia.
     - Propuesta 1.3: Comparación de precios y selección de proveedor
         - Pendiente.
+
+---
+
 - TAREA 1.4: Solicitud del documento
     - AS-IS 1.4: Solicitud y gestión de documentos al proveedor según condición de pago
         - ¿Qué es esta tarea?
@@ -127,11 +139,14 @@ COMPRAS
         - ¿Qué sistemas o herramientas usan?
             - Odoo: registro y archivo de los documentos de la compra (factura, nota de entrega, comprobante de retención).
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.4: Solicitud y gestión de documentos al proveedor
         - Pendiente.
+
+---
+
 - TAREA 2: Revisión de pedido para el cierre quincenal
     - AS-IS 2: Revisión y cierre quincenal de pedidos
         - ¿Qué es esta tarea?
@@ -159,15 +174,18 @@ COMPRAS
             - Odoo (módulo de Compras): revisión del estado de los pedidos de compra.
             - Odoo (módulo de Inventario): validación cruzada de recepciones y pedidos.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2: Revisión y cierre quincenal de pedidos
         - Pendiente.
+
+---
+
 - TAREA 3: Apoyo con los reembolsos
     - AS-IS 3: Gestión de reembolsos de IVA e ISLR con proveedores
         - ¿Qué es esta tarea?
-            - Gestión de los reembolsos de IVA o ISLR en casos donde proveedores exigen el pago completo de la factura sin aceptar montos descontados por retenciones, o cuando las compras son realizadas con la tarjeta de débito del Alberto Cid Navarro.
+            - Gestión de los reembolsos de IVA o ISLR en casos donde proveedores exigen el pago completo de la factura sin aceptar montos descontados por retenciones, o cuando las compras son realizadas con la tarjeta de débito de Alberto Cid Navarro (Gerencia General).
         - ¿Para qué se hace?
             - Para recuperar el monto correspondiente a las retenciones (IVA o ISLR) que la empresa, como contribuyente especial, está obligada a aplicar pero que el proveedor no acepta descontar al momento del pago, garantizando que esos fondos sean reintegrados a la empresa.
         - ¿Qué roles ejecutan esta tarea?
@@ -192,13 +210,16 @@ COMPRAS
             - Reembolso del monto de retención (IVA o ISLR) por parte del proveedor a la cuenta de la empresa.
         - ¿Qué sistemas o herramientas usan?
             - Correo electrónico: envío de factura y comprobante de pago al proveedor, y gestión del proceso de reembolso.
-            - ⚠️ Pendiente validar en sesión próxima si se registra este proceso en Odoo.
+            - ⚠️ Pendiente validar en sesión próxima: si este proceso se registra en Odoo.
         - ¿Qué pasa cuando las cosas no salen normal?
             - El proveedor demora o no responde en realizar el reembolso: se requiere insistencia continua por correo para que el proveedor efectúe el pago, ya que ese dinero pertenece a la empresa y no hay un mecanismo formal de seguimiento más allá del correo.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 3: Gestión de reembolsos de IVA e ISLR
         - Pendiente.
+
+---
+
 - TAREA 4: Acuerdos marcos
     - AS-IS 4: Gestión de acuerdos marco con proveedores recurrentes
         - ¿Qué es esta tarea?
@@ -225,15 +246,17 @@ COMPRAS
             - Acuerdo marco registrado en Odoo, disponible para que Administración genere pedidos recurrentes de forma automatizada.
         - ¿Qué sistemas o herramientas usan?
             - Odoo: creación, consulta y ejecución de pedidos a partir del acuerdo marco.
-            - WhatsApp: comunicación con el proveedor durante la gestión del acuerdo. ⚠️ Pendiente validar en sesión próxima si hay otro canal formal de comunicación.
+            - WhatsApp: comunicación con el proveedor durante la gestión del acuerdo. Confirmado en sesión que la comunicación con el proveedor del acuerdo marco se realiza por WhatsApp; la negociación de condiciones la ejecuta la Gerencia General.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Acuerdos marco que vencen y no se cierran a tiempo: mencionado en la sesión como una situación que ocurre (ej. acuerdo marco de depósitos de tallo que debe cerrarse y aún no se ha procesado).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 4: Gestión de acuerdos marco con proveedores recurrentes
         - Pendiente.
 
-ALMACEN
+---
+
+# Área 2: Almacén
 
 - TAREA 1.1 (Almacén): Verificación y conteo de mercancías para organizar pedidos
     - AS-IS 1.1: Conteo físico de mercancías para determinar pedidos semanales
@@ -242,16 +265,17 @@ ALMACEN
         - ¿Para qué se hace?
             - Para identificar la cantidad de productos a reponer según un stock mínimo definido por Gerencia General, y presentar esa información a Gerencia para que apruebe la compra.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) realiza el conteo. El Alberto Cid Navarro (Gerencia General) aprueba la compra.
+            - Victor Manuel Perez Carrizalez (Almacenista) realiza el conteo.
+            - Alberto Cid Navarro (Gerencia General) aprueba la compra.
         - ¿Cuándo se hace?
             - Disparador: Revisión periódica del stock disponible frente al stock mínimo indicado por Gerencia General.
             - Frecuencia: Semanal.
         - ¿Cómo se hace?
-            - Paso 1: Se toma como referencia el stock mínimo establecido por Alberto Cid Navarro para cada producto (ej. stock mínimo de doce unidades de leche).
+            - Paso 1: Se toma como referencia el stock mínimo establecido por Alberto Cid Navarro (Gerencia General) para cada producto (ej. stock mínimo de doce unidades de leche).
             - Paso 2: Se realiza el conteo físico de los productos en el almacén.
             - Paso 3: Se calcula la diferencia entre el stock mínimo y la cantidad física disponible para determinar cuánto pedir.
             - Paso 4: Se elabora una lista en hoja física con los productos a reponer y las cantidades.
-            - Paso 5: Se entrega la lista al Alberto Cid Navarro en una reunión presencial para su aprobación.
+            - Paso 5: Se entrega la lista a Alberto Cid Navarro (Gerencia General) en una reunión presencial para su aprobación.
         - ¿Qué necesitan para hacer esta tarea?
             - Stock mínimo de referencia por producto, definido por Gerencia General.
             - Hoja física para registrar el conteo.
@@ -260,11 +284,14 @@ ALMACEN
         - ¿Qué sistemas o herramientas usan?
             - Conteo manual y registro en hoja física. No se menciona uso de Odoo en esta tarea específica.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - El inventario en el sistema no refleja la realidad física: existen registros en Odoo desde 2024 y parte de 2025 que Victor Manuel Perez Carrizalez \1o puede validar, por lo que el conteo se hace exclusivamente en físico hasta realizar una toma física formal.
+            - El inventario en el sistema no refleja la realidad física: existen registros en Odoo desde 2024 y parte de 2025 que Victor Manuel Perez Carrizalez (Almacenista) no puede validar, por lo que el conteo se hace exclusivamente en físico hasta realizar una toma física formal.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Realizar una toma física completa del inventario para sincronizar el estado físico real con el sistema, y que Victor Manuel Perez Carrizalez \1uede formalmente responsable de lo que tiene en almacén.
+            - Realizar una toma física completa del inventario para sincronizar el estado físico real con el sistema, y que Victor Manuel Perez Carrizalez (Almacenista) quede formalmente responsable de lo que tiene en almacén.
     - Propuesta 1.1: Conteo físico de mercancías para organizar pedidos
         - Pendiente.
+
+---
+
 - TAREA 1.2 (Almacén): Crear listas de los productos necesarios
     - AS-IS 1.2: Planificación y requisición de reposición de productos
         - ¿Qué es esta tarea?
@@ -272,14 +299,15 @@ ALMACEN
         - ¿Para qué se hace?
             - Para comunicar al departamento de Compras qué productos deben adquirirse y en qué cantidades, iniciando el proceso de reposición de inventario.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) elabora y envía las listas. Las destinatarias en el departamento de Compras son la Lourdes Concepcion Sifontes Guerrero y el Asdrúbal (Compras).
+            - Victor Manuel Perez Carrizalez (Almacenista) elabora y envía las listas.
+            - Los destinatarios en el departamento de Compras son Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) y Asdrúbal (Compras).
         - ¿Cuándo se hace?
             - Disparador: Revisión periódica del inventario disponible.
-            - Frecuencia: Cada dos semanas (para productos como refrescos). ⚠️ Pendiente validar en sesión próxima si la frecuencia varía según tipo de producto.
+            - Frecuencia: Cada dos semanas (para productos como refrescos). ⚠️ Pendiente validar en sesión próxima: si la frecuencia varía según tipo de producto.
         - ¿Cómo se hace?
-            - Paso 1: Se valida el inventario disponible. ⚠️ Pendiente validar en sesión próxima si esta validación es física, en sistema o ambas en esta tarea específica.
+            - Paso 1: Se valida el inventario disponible. La validación se realiza en físico, dado que Victor Manuel Perez Carrizalez (Almacenista) indicó que el sistema contiene registros de 2024 y parte de 2025 que no reflejan el inventario físico real; mientras no se realice la toma física formal, el conteo se hace exclusivamente en físico.
             - Paso 2: Se elabora la lista de productos necesarios con las cantidades requeridas.
-            - Paso 3: Se envía la lista al departamento de Compras (Lourdes Concepcion Sifontes Guerrero o Asdrúbal (Compras)) por WhatsApp.
+            - Paso 3: Se envía la lista al departamento de Compras (Lourdes Concepcion Sifontes Guerrero o Asdrúbal) por WhatsApp.
         - ¿Qué necesitan para hacer esta tarea?
             - Información del inventario disponible.
             - WhatsApp para la comunicación con Compras.
@@ -288,11 +316,14 @@ ALMACEN
         - ¿Qué sistemas o herramientas usan?
             - WhatsApp: canal de comunicación para el envío de la lista al departamento de Compras.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.2: Planificación y requisición de reposición de productos
         - Pendiente.
+
+---
+
 - TAREA 1.3 (Almacén): Recepción de listas de los departamentos para solicitar mercancía
     - AS-IS 1.3: Atención a solicitudes de suministros de los departamentos internos
         - ¿Qué es esta tarea?
@@ -300,17 +331,20 @@ ALMACEN
         - ¿Para qué se hace?
             - Para centralizar en el almacén todas las solicitudes de suministros de los departamentos, evitar que lleguen pedidos dispersos directamente a Compras, y asegurar que primero se verifique existencia antes de generar una orden de compra.
         - ¿Qué roles ejecutan esta tarea?
-            - Los departamentos internos generan las solicitudes por escrito. Victor Manuel Perez Carrizalez (encargado de almacén) las recibe, valida existencias y gestiona la entrega o el pedido. Gerencia General (Alberto Cid Navarro) aprueba las compras cuando no hay existencia en almacén. El departamento de Compras recibe la lista de pedidos aprobados.
+            - Los departamentos internos generan las solicitudes por escrito.
+            - Victor Manuel Perez Carrizalez (Almacenista) las recibe, valida existencias y gestiona la entrega o el pedido.
+            - Alberto Cid Navarro (Gerencia General) aprueba las compras cuando no hay existencia en almacén.
+            - El departamento de Compras recibe la lista de pedidos aprobados.
         - ¿Cuándo se hace?
             - Disparador: Cuando un departamento interno necesita un suministro y lo solicita por escrito al almacén.
             - Frecuencia: Bajo demanda, cada vez que un departamento realiza una solicitud.
         - ¿Cómo se hace?
-            - Paso 1: El departamento solicitante entrega por escrito la solicitud de suministros a Victor Manuel Perez Carrizalez \1n el almacén.
-            - Paso 2: Victor Manuel Perez Carrizalez \1evisa si el producto solicitado tiene existencia en el almacén, tanto físicamente como en el sistema.
+            - Paso 1: El departamento solicitante entrega por escrito la solicitud de suministros a Victor Manuel Perez Carrizalez (Almacenista) en el almacén.
+            - Paso 2: Victor Manuel Perez Carrizalez revisa si el producto solicitado tiene existencia en el almacén, tanto físicamente como en el sistema.
             - Paso 3a (si hay existencia): Se entrega el producto directamente al departamento solicitante. Se registra la salida de inventario en Odoo.
-            - Paso 3b (si no hay existencia): Se notifica a Gerencia General (Alberto Cid Navarro) para obtener aprobación de compra.
+            - Paso 3b (si no hay existencia): Se notifica a Alberto Cid Navarro (Gerencia General) para obtener aprobación de compra.
             - Paso 4 (cuando no hay existencia): Gerencia General aprueba y puede indicar cantidades o ajustes (más o menos de lo solicitado) y el proveedor al que comprar.
-            - Paso 5: Victor Manuel Perez Carrizalez \1nvía la lista de pedidos aprobados al departamento de Compras para que ejecute la compra.
+            - Paso 5: Victor Manuel Perez Carrizalez envía la lista de pedidos aprobados al departamento de Compras para que ejecute la compra.
         - ¿Qué necesitan para hacer esta tarea?
             - Solicitud escrita del departamento.
             - Acceso al inventario físico y al sistema Odoo para verificar existencias.
@@ -322,9 +356,12 @@ ALMACEN
         - ¿Qué pasa cuando las cosas no salen normal?
             - Antes de que este proceso se ordenara, Compras recibía solicitudes de pedidos de todos lados directamente, sin pasar por almacén, lo que generaba desorganización y duplicidad.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.3: Atención a solicitudes de suministros de departamentos internos
         - Pendiente.
+
+---
+
 - TAREA 1.4 (Almacén): Reunión con Gerencia para aprobación de pedidos
     - AS-IS 1.4: Aprobación de pedidos por Gerencia General
         - ¿Qué es esta tarea?
@@ -332,26 +369,30 @@ ALMACEN
         - ¿Para qué se hace?
             - Para que Gerencia General autorice formalmente las compras, pudiendo ajustar cantidades y definir el proveedor al que se comprará.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) presenta los pedidos. El Alberto Cid Navarro (Gerencia General) aprueba o ajusta.
+            - Victor Manuel Perez Carrizalez (Almacenista) presenta los pedidos.
+            - Alberto Cid Navarro (Gerencia General) aprueba o ajusta.
         - ¿Cuándo se hace?
             - Disparador: Cuando se tiene una lista de productos a comprar que requieren aprobación de Gerencia General, ya sea resultado del conteo semanal de víveres o de solicitudes de departamentos sin existencia en almacén.
             - Frecuencia: Semanal (para víveres) y bajo demanda (para solicitudes de departamentos).
         - ¿Cómo se hace?
-            - Paso 1: Victor Manuel Perez Carrizalez \1resenta la lista de productos a reponer al Alberto Cid Navarro en reunión.
+            - Paso 1: Victor Manuel Perez Carrizalez presenta la lista de productos a reponer a Alberto Cid Navarro (Gerencia General) en reunión.
             - Paso 2: Gerencia General revisa la lista y aprueba, ajusta cantidades o indica el proveedor al que debe comprarse.
-            - Paso 3: Con la aprobación de Gerencia, Victor Manuel Perez Carrizalez \1rocede a enviar la lista al departamento de Compras.
+            - Paso 3: Con la aprobación de Gerencia, Victor Manuel Perez Carrizalez procede a enviar la lista al departamento de Compras.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista física de productos a reponer elaborada por Victor Manuel Perez Carrizalez.
         - ¿Qué se genera al terminar?
             - Pedido aprobado por Gerencia General, listo para ser remitido al departamento de Compras.
         - ¿Qué sistemas o herramientas usan?
-            - Hoja física: Victor Manuel Perez Carrizalez \1leva la lista en papel para la reunión con Gerencia.
+            - Hoja física: Victor Manuel Perez Carrizalez lleva la lista en papel para la reunión con Gerencia.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.4: Aprobación de pedidos por Gerencia General
         - Pendiente.
+
+---
+
 - TAREA 1.5 (Almacén): Remisión de información a departamento de Compras para hacer el pedido
     - AS-IS 1.5: Envío de pedidos aprobados al departamento de Compras
         - ¿Qué es esta tarea?
@@ -359,13 +400,14 @@ ALMACEN
         - ¿Para qué se hace?
             - Para que el departamento de Compras cuente con la información necesaria y ejecute la compra con los proveedores correspondientes.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) envía la información. El departamento de Compras la recibe y gestiona el pedido.
+            - Victor Manuel Perez Carrizalez (Almacenista) envía la información.
+            - El departamento de Compras la recibe y gestiona el pedido.
         - ¿Cuándo se hace?
             - Disparador: Una vez que Gerencia General aprueba los pedidos.
             - Frecuencia: Semanal (para víveres) y bajo demanda (para otras solicitudes).
         - ¿Cómo se hace?
-            - Paso 1: Con la aprobación de Gerencia General, Victor Manuel Perez Carrizalez \1oma la lista de pedidos aprobados.
-            - Paso 2: Se comunica con el departamento de Compras (Lourdes Concepcion Sifontes Guerrero o Asdrúbal (Compras)) por WhatsApp para enviar la información de los pedidos.
+            - Paso 1: Con la aprobación de Gerencia General, Victor Manuel Perez Carrizalez toma la lista de pedidos aprobados.
+            - Paso 2: Se comunica con el departamento de Compras (Lourdes Concepcion Sifontes Guerrero o Asdrúbal) por WhatsApp para enviar la información de los pedidos.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de pedidos aprobados por Gerencia General.
             - WhatsApp como canal de comunicación con Compras.
@@ -374,40 +416,46 @@ ALMACEN
         - ¿Qué sistemas o herramientas usan?
             - WhatsApp: canal de comunicación entre almacén y departamento de Compras.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.5: Envío de pedidos aprobados al departamento de Compras
         - Pendiente.
+
+---
+
 - TAREA 1.6 (Almacén): Verificación de pedidos
     - AS-IS 1.6: Verificación de pedidos en tránsito
         - ¿Qué es esta tarea?
-            - Revisión de los pedidos que Victor Manuel Perez Carrizalez \1a realizado o que están en camino, para confirmar que lo que se va a recibir coincide con lo solicitado en el sistema antes de ejecutar la recepción física.
+            - Revisión de los pedidos que Victor Manuel Perez Carrizalez (Almacenista) ha realizado o que están en camino, para confirmar que lo que se va a recibir coincide con lo solicitado en el sistema antes de ejecutar la recepción física.
         - ¿Para qué se hace?
             - Para asegurarse de que los pedidos en camino correspondan a lo solicitado y preparar la recepción física de manera ordenada.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén).
+            - Victor Manuel Perez Carrizalez (Almacenista).
         - ¿Cuándo se hace?
             - Disparador: Cuando se tiene información de que un proveedor va a hacer entrega de mercancía.
             - Frecuencia: Cada vez que se espera la llegada de un proveedor.
         - ¿Cómo se hace?
-            - Paso 1: Victor Manuel Perez Carrizalez \1evisa los pedidos que él ha generado, de los cuales conoce la fecha y proveedor esperado.
+            - Paso 1: Victor Manuel Perez Carrizalez revisa los pedidos que él ha generado, de los cuales conoce la fecha y proveedor esperado.
             - Paso 2: Para pedidos que no fueron iniciados por él, Compras le informa por WhatsApp qué proveedor llegará y cuándo (ej. "en la tarde te llega tal proveedor").
             - Paso 3: Se verifica en el sistema que el pedido en camino coincide con lo solicitado, antes de pasar a la recepción física.
         - ¿Qué necesitan para hacer esta tarea?
             - Información de los pedidos en Odoo.
-            - Comunicación de Compras por WhatsApp para pedidos que Victor Manuel Perez Carrizalez \1o gestionó directamente.
+            - Comunicación de Compras por WhatsApp para pedidos que Victor Manuel Perez Carrizalez no gestionó directamente.
         - ¿Qué se genera al terminar?
             - Confirmación de que el pedido en camino corresponde al pedido registrado en el sistema, habilitando el proceso de recepción.
         - ¿Qué sistemas o herramientas usan?
             - Odoo: consulta de pedidos registrados en el sistema.
             - WhatsApp: canal por el que Compras notifica a almacén sobre entregas pendientes.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Llegan pedidos de los que Victor Manuel Perez Carrizalez \1o tiene conocimiento previo porque fueron generados sin su participación: en esos casos depende de que Compras lo notifique oportunamente por WhatsApp. ⚠️ Pendiente validar en sesión próxima qué ocurre si la notificación no llega.
+            - Llegan pedidos de los que Victor Manuel Perez Carrizalez no tiene conocimiento previo porque fueron generados sin su participación: en esos casos depende de que Compras lo notifique oportunamente por WhatsApp. ⚠️ Pendiente validar en sesión próxima: qué ocurre si la notificación no llega.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.6: Verificación de pedidos en tránsito
         - Pendiente.
+
+---
+
 - TAREA 1.7 (Almacén): Recepción de proveedores en el despacho
     - AS-IS 1.7: Recepción física y en sistema de mercancía de proveedores
         - ¿Qué es esta tarea?
@@ -415,7 +463,7 @@ ALMACEN
         - ¿Para qué se hace?
             - Para dar ingreso formal a la mercancía tanto físicamente como en el sistema, garantizando que lo recibido coincide con lo pedido en cantidad y producto.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) recibe físicamente y registra en el sistema. Notifica al departamento de Compras una vez completada la recepción.
+            - Victor Manuel Perez Carrizalez (Almacenista) recibe físicamente y registra en el sistema. Notifica al departamento de Compras una vez completada la recepción.
         - ¿Cuándo se hace?
             - Disparador: Llegada de un proveedor con mercancía al despacho del almacén.
             - Frecuencia: Bajo demanda. Los proveedores locales pueden llegar el mismo día en que se hace el pedido (mañana-tarde). Los de Valencia entregan aproximadamente una semana después. Los de Caracas son los que más demoran.
@@ -435,11 +483,14 @@ ALMACEN
             - Odoo: verificación del pedido y registro de la entrada de mercancía.
             - WhatsApp: notificación al departamento de Compras sobre la recepción completada.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Alberto Cid Navarro realiza pedidos los fines de semana, lo que impide a Compras hacer comparación de precios y obliga a Victor Manuel Perez Carrizalez \1 a la Lourdes Concepcion Sifontes Guerrero a atender solicitudes en días libres.
+            - Alberto Cid Navarro (Gerencia General) realiza pedidos los fines de semana, lo que impide a Compras hacer comparación de precios y obliga a Victor Manuel Perez Carrizalez o a Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) a atender solicitudes en días libres.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que los pedidos se planifiquen y ejecuten de lunes a viernes para no interrumpir los días libres del equipo y poder hacer comparación de precios previamente.
     - Propuesta 1.7: Recepción física y en sistema de mercancía de proveedores
         - Pendiente.
+
+---
+
 - TAREA 1.8 (Almacén): Verificación y validación de que la mercancía esté acorde con el pedido, la factura y/o la nota de despacho
     - AS-IS 1.8: Validación cruzada entre mercancía recibida, pedido, factura y nota de despacho
         - ¿Qué es esta tarea?
@@ -447,14 +498,16 @@ ALMACEN
         - ¿Para qué se hace?
             - Para evitar diferencias entre lo comprado, lo recibido y lo registrado en inventario, y poder corregir el pedido en Odoo antes de que Administración procese la factura, evitando así complicaciones en devoluciones posteriores.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) detecta la incongruencia y notifica a Compras. Compras (Lourdes Concepcion Sifontes Guerrero) modifica el pedido en Odoo antes de confirmar la recepción. Administración factura sobre la base del pedido ya corregido.
+            - Victor Manuel Perez Carrizalez (Almacenista) detecta la incongruencia y notifica a Compras.
+            - Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) modifica el pedido en Odoo antes de confirmar la recepción.
+            - Administración factura sobre la base del pedido ya corregido.
         - ¿Cuándo se hace?
             - Disparador: Al momento de recibir la mercancía del proveedor, como parte del proceso de recepción.
             - Frecuencia: Cada vez que se recepciona mercancía.
         - ¿Cómo se hace?
             - Paso 1: Se compara físicamente la mercancía recibida con lo indicado en la nota de entrega o factura del proveedor.
             - Paso 2: Se compara la nota de entrega/factura contra el pedido registrado en Odoo.
-            - Paso 3: Si se detecta una incongruencia (ej. el proveedor envió un producto diferente al solicitado), Victor Manuel Perez Carrizalez \1otifica a Compras indicando el producto recibido y la discrepancia con el sistema.
+            - Paso 3: Si se detecta una incongruencia (ej. el proveedor envió un producto diferente al solicitado), Victor Manuel Perez Carrizalez notifica a Compras indicando el producto recibido y la discrepancia con el sistema.
             - Paso 4: Compras modifica el pedido en Odoo antes de que se confirme la recepción.
             - Paso 5: Una vez corregido el pedido, se procede con la recepción y Administración factura sobre la base actualizada.
         - ¿Qué necesitan para hacer esta tarea?
@@ -466,13 +519,16 @@ ALMACEN
             - Recepción de mercancía confirmada en sistema, lista para que Administración facture.
         - ¿Qué sistemas o herramientas usan?
             - Odoo: consulta del pedido y modificación antes de confirmar la recepción.
-            - ⚠️ Pendiente validar en sesión próxima el canal de comunicación entre Victor Manuel Perez Carrizalez \1 Compras para notificar las incongruencias.
+            - WhatsApp: canal por el que Victor Manuel Perez Carrizalez (Almacenista) notifica a Compras (Lourdes Concepcion Sifontes Guerrero) las incongruencias entre el producto recibido y el pedido en el sistema, para que se modifique el pedido antes de confirmar la recepción.
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si la recepción se confirma sin corregir primero el pedido y el producto recibido no coincide, generar una devolución posterior resulta más complejo para Administración.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.8: Validación cruzada entre mercancía recibida, pedido y documentos del proveedor
         - Pendiente.
+
+---
+
 - TAREA 1.9 (Almacén): Recepción de la mercancía
     - AS-IS 1.9: Confirmación y registro de entrada de mercancía en el sistema
         - ¿Qué es esta tarea?
@@ -480,7 +536,7 @@ ALMACEN
         - ¿Para qué se hace?
             - Para actualizar el inventario en el sistema con la mercancía efectivamente ingresada al almacén.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén).
+            - Victor Manuel Perez Carrizalez (Almacenista).
         - ¿Cuándo se hace?
             - Disparador: Después de validar que la mercancía recibida coincide con el pedido y la nota de entrega/factura.
             - Frecuencia: Cada vez que llega mercancía de un proveedor.
@@ -494,11 +550,14 @@ ALMACEN
         - ¿Qué sistemas o herramientas usan?
             - Odoo: registro de la entrada de mercancía en el almacén general.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.9: Confirmación y registro de entrada de mercancía
         - Pendiente.
+
+---
+
 - TAREA 1.10 (Almacén): Organizar la mercancía en los diferentes espacios
     - AS-IS 1.10: Ubicación física de mercancía recepcionada en el almacén
         - ¿Qué es esta tarea?
@@ -506,12 +565,12 @@ ALMACEN
         - ¿Para qué se hace?
             - Para mantener el almacén organizado y asegurar que cada tipo de producto tenga un espacio definido que facilite su localización y despacho.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén).
+            - Victor Manuel Perez Carrizalez (Almacenista).
         - ¿Cuándo se hace?
             - Disparador: Inmediatamente después de recepcionar y registrar la mercancía en el sistema.
             - Frecuencia: Cada vez que se recepciona mercancía.
         - ¿Cómo se hace?
-            - Paso 1: Completada la recepción, Victor Manuel Perez Carrizalez \1dentifica el tipo de producto recibido (ej. víveres, químicos).
+            - Paso 1: Completada la recepción, Victor Manuel Perez Carrizalez identifica el tipo de producto recibido (ej. víveres, químicos).
             - Paso 2: Se coloca la mercancía en el espacio físico establecido para ese tipo de producto dentro del almacén.
         - ¿Qué necesitan para hacer esta tarea?
             - Espacios físicos previamente definidos por tipo de producto en el almacén.
@@ -521,11 +580,14 @@ ALMACEN
             - No se menciona uso de sistema para esta tarea. Se gestiona de forma física.
             - En Odoo existe actualmente un almacén general único (antes había múltiples: 1101, 1102, 1103, etc.), sin ubicaciones específicas configuradas en el sistema.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.10: Ubicación física de mercancía en el almacén
         - Pendiente.
+
+---
+
 - TAREA 1.11 (Almacén): Atención a los departamentos que soliciten mercancía validando las requisiciones por escrito
     - AS-IS 1.11: Despacho de mercancía a departamentos internos contra requisición escrita
         - ¿Qué es esta tarea?
@@ -533,13 +595,14 @@ ALMACEN
         - ¿Para qué se hace?
             - Para controlar la salida de mercancía del almacén hacia los departamentos internos con respaldo documental, evitando despachos sin soporte.
         - ¿Qué roles ejecutan esta tarea?
-            - Los departamentos internos elaboran y entregan las requisiciones. Victor Manuel Perez Carrizalez (encargado de almacén) las recibe, valida y despacha.
+            - Los departamentos internos elaboran y entregan las requisiciones.
+            - Victor Manuel Perez Carrizalez (Almacenista) las recibe, valida y despacha.
         - ¿Cuándo se hace?
             - Disparador: Recepción de una requisición escrita de un departamento interno.
             - Frecuencia: Bajo demanda, cada vez que un departamento solicita mercancía.
         - ¿Cómo se hace?
-            - Paso 1: El departamento solicitante entrega a Victor Manuel Perez Carrizalez \1a requisición por escrito.
-            - Paso 2: Victor Manuel Perez Carrizalez \1erifica que hay existencia del producto en el almacén.
+            - Paso 1: El departamento solicitante entrega a Victor Manuel Perez Carrizalez (Almacenista) la requisición por escrito.
+            - Paso 2: Victor Manuel Perez Carrizalez verifica que hay existencia del producto en el almacén.
             - Paso 3: Se entrega el producto al departamento solicitante.
             - Paso 4: Se registra la salida de inventario en Odoo.
         - ¿Qué necesitan para hacer esta tarea?
@@ -554,33 +617,39 @@ ALMACEN
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si no hay existencia del producto, se activa el flujo de solicitud de compra (tareas 1.4 y 1.5).
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.11: Despacho de mercancía a departamentos internos
         - Pendiente.
+
+---
+
 - TAREA 1.12 (Almacén): Limpieza general del almacén
     - AS-IS 1.12: Mantenimiento de limpieza del almacén
         - ¿Qué es esta tarea?
-            - Limpieza general del espacio físico del almacén.
+            - Limpieza general del espacio físico del almacén. En sesión se clasificó como mantenimiento general del área; no se profundizó en su detalle.
         - ¿Para qué se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - Para mantener el almacén limpio y ordenado como parte del mantenimiento general del área. ⚠️ Pendiente validar en sesión próxima el detalle adicional (no se profundizó en sesión).
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) la ejecuta personalmente.
+            - Victor Manuel Perez Carrizalez (Almacenista) la ejecuta personalmente.
         - ¿Cuándo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo se hace?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Qué sistemas o herramientas usan?
             - No aplica sistema. Tarea manual.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 1.12: Mantenimiento de limpieza del almacén
         - Pendiente.
+
+---
+
 - TAREA 1.13 (Almacén): Organización de los pedidos de fines de semana para abordar la ocupación, en línea con Gerencia General
     - AS-IS 1.13: Planificación y coordinación de pedidos para fines de semana
         - ¿Qué es esta tarea?
@@ -588,14 +657,16 @@ ALMACEN
         - ¿Para qué se hace?
             - Para asegurar que el hotel cuente con los productos necesarios para atender la ocupación del fin de semana, planificando los pedidos con suficiente anticipación.
         - ¿Qué roles ejecutan esta tarea?
-            - Victor Manuel Perez Carrizalez (encargado de almacén) elabora la lista y coordina con Gerencia. El Alberto Cid Navarro (Gerencia General) aprueba. El departamento de Compras ejecuta la compra.
+            - Victor Manuel Perez Carrizalez (Almacenista) elabora la lista y coordina con Gerencia.
+            - Alberto Cid Navarro (Gerencia General) aprueba.
+            - El departamento de Compras ejecuta la compra.
         - ¿Cuándo se hace?
             - Disparador: Necesidad de cubrir la operación del hotel durante el fin de semana.
             - Frecuencia: Semanal, para los fines de semana.
         - ¿Cómo se hace?
-            - Paso 1: Victor Manuel Perez Carrizalez \1labora la lista de pedidos necesarios para el fin de semana en una hoja física.
+            - Paso 1: Victor Manuel Perez Carrizalez elabora la lista de pedidos necesarios para el fin de semana en una hoja física.
             - Paso 2: Habla con Gerencia General para presentar la lista y obtener aprobación. Gerencia puede pedir más o menos de lo propuesto.
-            - Paso 3: Con la aprobación de Gerencia, Victor Manuel Perez Carrizalez \1e comunica con el departamento de Compras para que ejecute los pedidos.
+            - Paso 3: Con la aprobación de Gerencia, Victor Manuel Perez Carrizalez se comunica con el departamento de Compras para que ejecute los pedidos.
         - ¿Qué necesitan para hacer esta tarea?
             - Hoja física para elaborar la lista de pedidos.
             - Aprobación de Gerencia General.
@@ -604,9 +675,9 @@ ALMACEN
             - Lista de pedidos aprobada, comunicada al departamento de Compras para su ejecución.
         - ¿Qué sistemas o herramientas usan?
             - Hoja física: registro de los pedidos de fin de semana.
-            - ⚠️ Pendiente validar en sesión próxima el canal de comunicación utilizado con Compras en este caso específico (WhatsApp u otro).
+            - WhatsApp: canal de comunicación con el departamento de Compras una vez obtenida la aprobación de Gerencia General. Victor Manuel Perez Carrizalez (Almacenista) primero habla con Gerencia y luego se comunica con Compras por WhatsApp.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Alberto Cid Navarro tiene la costumbre de pedir compras los sábados, lo que no da tiempo a comparar precios con otros proveedores y obliga a Victor Manuel Perez Carrizalez \1 a la Lourdes Concepcion Sifontes Guerrero a atender solicitudes en sus días libres.
+            - Alberto Cid Navarro (Gerencia General) tiene la costumbre de pedir compras los sábados, lo que no da tiempo a comparar precios con otros proveedores y obliga a Victor Manuel Perez Carrizalez o a Lourdes Concepcion Sifontes Guerrero (Coordinadora de Compras) a atender solicitudes en sus días libres.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Que los pedidos de fin de semana se planifiquen y aprueben entre lunes y viernes, para evitar interrupciones en días libres y permitir comparación de precios con distintos proveedores.
     - Propuesta 1.13: Planificación y coordinación de pedidos para fines de semana

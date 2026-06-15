@@ -1,8 +1,12 @@
-<!-- Procesado: 2026-05-25 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. -->
+<!-- Procesado: 2026-05-25 — Revisión de cobertura, completitud y coherencia completada. Alias corregidos. Normalizado contra plantilla 2026-06-12. -->
 
 # AS - IS: Inventario: A y B (Bar)
 
 Creado: 30 de marzo de 2026 9:45
+
+---
+
+# Área 1: Desayunos
 
 - TAREA 1.1: Recepción de lista de huéspedes desde Grupo de WhatsApp (Entregado por recepción)
     - AS-IS 1.1: Recepción de lista de huéspedes desde Grupo de WhatsApp
@@ -11,7 +15,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para que el capitán de servicio y los mesoneros sepan con cuántos comensales van a trabajar y organicen el mise en place de productos y materiales en función de esa cantidad.
         - ¿Qué roles ejecutan esta tarea?
-            - Recepción envía la lista al grupo de WhatsApp. El capitán de servicio (Douglas) y los mesoneros la reciben y verifican.
+            - Recepción envía la lista al grupo de WhatsApp. El capitán de servicio (Douglas Efrain Reyes Serverie) y los mesoneros la reciben y verifican.
         - ¿Cuándo se hace?
             - Disparador: Envío de la lista de huéspedes por parte de recepción al grupo de WhatsApp del departamento.
             - Frecuencia: Diaria, antes del inicio del servicio de desayuno.
@@ -30,6 +34,9 @@ Creado: 30 de marzo de 2026 9:45
             - Integrar un sistema de gestión del hotel con una pantalla en el área de restaurante. En lugar de depender de un mensaje manual de WhatsApp que puede perderse entre otros chats, el equipo de servicio debería tener una pantalla de visualización en tiempo real que muestre el número de habitaciones ocupadas y el total de comensales, actualizado automáticamente cada vez que recepción hace un check-in.
     - Propuesta 1.1: Recepción de lista de huéspedes desde Grupo de WhatsApp
         - Pendiente.
+
+---
+
 - TAREA 1.2: Mise en place de productos y materiales para la producción
     - AS-IS 1.2: Mise en place de productos y materiales para la producción
         - ¿Qué es esta tarea?
@@ -37,7 +44,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para que cuando lleguen los comensales ya se tenga todo organizado y disponible para ejecutar el servicio de desayuno sin demoras.
         - ¿Qué roles ejecutan esta tarea?
-            - Capitán de servicio (Douglas) y mesoneros del turno de la mañana.
+            - Capitán de servicio (Douglas Efrain Reyes Serverie) y mesoneros del turno de la mañana.
         - ¿Cuándo se hace?
             - Disparador: Recepción de la lista de huéspedes (Tarea 1.1).
             - Frecuencia: Diaria, al inicio del turno de la mañana antes del servicio de desayuno.
@@ -57,6 +64,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un checklist de montaje estándar plastificado o digital para marcar cuando todo esté listo.
     - Propuesta 1.2: Mise en place de productos y materiales para la producción
         - Pendiente.
+
+---
+
 - TAREA 1.3: Verificación de salón de restaurante (validar que esté en óptimas condiciones de higiene)
     - AS-IS 1.3: Verificación de salón de restaurante
         - ¿Qué es esta tarea?
@@ -64,7 +74,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para garantizar que el salón esté en condiciones óptimas de higiene y presentación antes de recibir a los huéspedes.
         - ¿Qué roles ejecutan esta tarea?
-            - Capitán de servicio (Douglas).
+            - Capitán de servicio (Douglas Efrain Reyes Serverie).
         - ¿Cuándo se hace?
             - Disparador: Inicio del turno de la mañana, luego del mise en place.
             - Frecuencia: Diaria, antes del inicio del servicio de desayuno.
@@ -85,6 +95,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un checklist digital de inspección vía tablet que no sea solo visual, sino que incluya parámetros específicos como estado de la iluminación, funcionamiento del aire acondicionado y ventilación, y ausencia de olores.
     - Propuesta 1.3: Verificación de salón de restaurante
         - Pendiente.
+
+---
+
 - TAREA 1.4: Limpieza de área de restaurante
     - AS-IS 1.4: Limpieza de área de restaurante
         - ¿Qué es esta tarea?
@@ -92,7 +105,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para dejar el salón en condiciones óptimas de higiene antes de recibir a los comensales.
         - ¿Qué roles ejecutan esta tarea?
-            - El propio equipo de servicio (capitán y mesoneros). El capitán (Douglas) indica que son ellos mismos quienes realizan la limpieza, sin depender del departamento de mantenimiento.
+            - El propio equipo de servicio (capitán y mesoneros). El capitán (Douglas Efrain Reyes Serverie) indica que son ellos mismos quienes realizan la limpieza, sin depender del departamento de mantenimiento.
         - ¿Cuándo se hace?
             - Disparador: Resultado de la verificación del salón (Tarea 1.3) que indica que el área no está en condiciones óptimas de higiene.
             - Frecuencia: Bajo demanda, cada vez que la verificación detecta que el salón requiere limpieza antes del servicio.
@@ -113,6 +126,9 @@ Creado: 30 de marzo de 2026 9:45
             - Tener una estación de limpieza oculta (closet de servicio) cerca del salón con insumos ergonómicos para que el repaso sea más rápido y discreto ante la vista de los huéspedes.
     - Propuesta 1.4: Limpieza de área de restaurante
         - Pendiente.
+
+---
+
 - TAREA 1.5: Verificación de productos a servir (Inventario de lo que se vaya a ofrecer en el desayuno)
     - AS-IS 1.5: Verificación de productos a servir
         - ¿Qué es esta tarea?
@@ -120,7 +136,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para confirmar que cocina cuenta con todos los productos que se van a ofrecer en el servicio de desayuno y que la cantidad es suficiente para los comensales del día.
         - ¿Qué roles ejecutan esta tarea?
-            - Capitán de servicio (Douglas) o mesonero asignado.
+            - Capitán de servicio (Douglas Efrain Reyes Serverie) o mesonero asignado.
         - ¿Cuándo se hace?
             - Disparador: Salón del restaurante verificado y listo para el servicio.
             - Frecuencia: Diaria, antes del inicio del servicio de desayuno.
@@ -140,6 +156,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un tablero de disponibilidad digital o físico en la entrada de la cocina donde cocina marque con un color (verde, amarillo, rojo) el estado de cada preparación. De este modo el servicio sabría qué productos están en estado crítico o agotados sin tener que interrumpir el flujo de los cocineros.
     - Propuesta 1.5: Verificación de productos a servir
         - Pendiente.
+
+---
+
 - TAREA 1.6: Toma de pedido de huéspedes (toma de comandas)
     - AS-IS 1.6: Toma de pedido de huéspedes
         - ¿Qué es esta tarea?
@@ -147,15 +166,14 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para registrar lo que cada comensal desea consumir en el desayuno y transmitirlo a caja para que sea procesado y enviado a cocina.
         - ¿Qué roles ejecutan esta tarea?
-            - Mesoneros (y/o capitán de servicio Douglas).
+            - Mesoneros (y/o capitán de servicio Douglas Efrain Reyes Serverie).
         - ¿Cuándo se hace?
             - Disparador: Llegada de un huésped al restaurante para desayunar.
             - Frecuencia: Bajo demanda, cada vez que llega un huésped a desayunar. Diaria durante el turno de la mañana.
         - ¿Cómo se hace?
             - Paso 1: El mesonero se acerca al huésped en su mesa.
             - Paso 2: Toma el pedido del comensal.
-            - Paso 3: Anota el pedido manualmente en un papel (comanda manual), indicando los ítems solicitados (por ejemplo: dos empanadas, un jugo y otros).
-            - La comanda manual anota únicamente los ítems solicitados. El número de habitación y de mesa se registran en el sistema Poster por caja al procesar la comanda (Tarea 1.7), no en el papel manual del mesonero.
+            - Paso 3: Anota el pedido manualmente en un papel (comanda manual), indicando únicamente los ítems solicitados (por ejemplo: dos empanadas, un jugo y otros). El número de habitación y de mesa los registra caja en el sistema Poster al procesar la comanda (Tarea 1.7), no el mesonero en el papel manual.
         - ¿Qué necesitan para hacer esta tarea?
             - Papel y bolígrafo para anotar la comanda manualmente. Conocimiento del menú disponible.
         - ¿Qué se genera al terminar?
@@ -168,6 +186,9 @@ Creado: 30 de marzo de 2026 9:45
             - El capitán expresa que cada mesonero debería poder tomar el pedido directamente desde su tablet y enviarlo a cocina sin necesidad de pasar por caja. Caja quedaría únicamente para el proceso de cobro y facturación. Esto requiere mejor conectividad de red y posiblemente una tablet adicional para cubrir el área de piscina y otras zonas donde hay dos o tres mesoneros. Anteriormente existía una impresora en cocina que recibía las comandas directamente desde las tablets, pero se dañó por el volumen de uso.
     - Propuesta 1.6: Toma de pedido de huéspedes
         - Pendiente.
+
+---
+
 - TAREA 1.7: Entrega de comandas a Caja para enviar a Cocina (Procesamiento de la orden)
     - AS-IS 1.7: Entrega de comandas a Caja para enviar a Cocina
         - ¿Qué es esta tarea?
@@ -181,9 +202,8 @@ Creado: 30 de marzo de 2026 9:45
             - Frecuencia: Bajo demanda, cada vez que se toma un pedido de huésped.
         - ¿Cómo se hace?
             - Paso 1: El mesonero lleva la comanda manual a caja.
-            - Paso 2: El cajero recibe la comanda y la procesa en su sistema (computadora de caja).
-            - Paso 3: El cajero envía el pedido a cocina desde su sistema.
-            - El cajero procesa la comanda en el sistema Poster (PC de caja), asigna el número de habitación y de mesa, y desde Poster genera la impresión que se hace llegar a cocina y/o barra. La impresora de cocina está fuera de servicio; caja centraliza todas las impresiones.
+            - Paso 2: El cajero recibe la comanda y la procesa en el sistema Poster (PC de caja), asignando el número de habitación y de mesa.
+            - Paso 3: El cajero genera desde Poster la impresión de la comanda, que se hace llegar a cocina y/o barra (la impresora de cocina está fuera de servicio; caja centraliza todas las impresiones).
         - ¿Qué necesitan para hacer esta tarea?
             - Comanda manual con el pedido del huésped. Sistema de caja operativo y con conectividad para enviar el pedido a cocina.
         - ¿Qué se genera al terminar?
@@ -197,6 +217,9 @@ Creado: 30 de marzo de 2026 9:45
             - Que cada mesonero pueda enviar el pedido directamente a cocina desde su tablet, sin necesidad de pasar por caja. Caja quedaría únicamente para el proceso de facturación y cobro. Esto requiere mejorar la conectividad de red del área y contar con una tablet adicional para las zonas de piscina.
     - Propuesta 1.7: Entrega de comandas a Caja para enviar a Cocina
         - Pendiente.
+
+---
+
 - TAREA 1.8: Verificar que el pedido haya llegado completo a cocina
     - AS-IS 1.8: Verificar que el pedido haya llegado completo a cocina
         - ¿Qué es esta tarea?
@@ -204,13 +227,12 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para asegurar que lo que se le entregó a caja para enviar a cocina llegó completo, evitando que algún ítem se pierda en el proceso y generando una entrega deficiente al huésped.
         - ¿Qué roles ejecutan esta tarea?
-            - Mesonero o capitán de servicio (Douglas).
+            - Mesonero o capitán de servicio (Douglas Efrain Reyes Serverie).
         - ¿Cuándo se hace?
             - Disparador: Envío del pedido a cocina por parte de caja (Tarea 1.7).
             - Frecuencia: Bajo demanda, cada vez que se procesa un pedido.
         - ¿Cómo se hace?
-            - Paso 1: Luego de que caja envía el pedido a cocina, el mesonero o capitán verifica que el pedido haya llegado completo a cocina.
-            - El mesonero o capitán verifica vía WhatsApp que el pedido llegó completo a cocina. Este uso de WhatsApp como mecanismo de verificación fue confirmado en la sesión del 25/03/2026 (kmmin002).
+            - Paso 1: Luego de que caja envía el pedido a cocina, el mesonero o capitán verifica vía WhatsApp que el pedido haya llegado completo (mecanismo confirmado en la sesión del 25/03/2026, kmmin002).
         - ¿Qué necesitan para hacer esta tarea?
             - Acceso al grupo de WhatsApp del departamento para comunicarse con cocina y confirmar la recepción del pedido.
         - ¿Qué se genera al terminar?
@@ -223,6 +245,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de ticketing digital donde, al procesar el pedido en caja, este aparezca automáticamente en una pantalla táctil dentro de cocina con una alerta sonora. Cocina simplemente tocaría la pantalla para confirmar la recepción ("Aceptado").
     - Propuesta 1.8: Verificar que el pedido haya llegado completo a cocina
         - Pendiente.
+
+---
+
 - TAREA 1.9: Preparación del pedido
     - AS-IS 1.9: Preparación del pedido
         - ¿Qué es esta tarea?
@@ -250,6 +275,9 @@ Creado: 30 de marzo de 2026 9:45
             - Un sistema de sensores en la zona de despacho de cocina que envíen una vibración al teléfono del mesonero asignado, permitiéndole estar atendiendo a otros huéspedes sin tener que asomarse constantemente a cocina.
     - Propuesta 1.9: Preparación del pedido
         - Pendiente.
+
+---
+
 - TAREA 1.10: Entrega al comensal
     - AS-IS 1.10: Entrega al comensal
         - ¿Qué es esta tarea?
@@ -278,6 +306,9 @@ Creado: 30 de marzo de 2026 9:45
             - Que al momento de entregar el plato o retirar los platos sucios, el mesonero cuente con un dispositivo de valoración rápida para que el huésped califique la experiencia con un solo toque antes de retirarse.
     - Propuesta 1.10: Entrega al comensal
         - Pendiente.
+
+---
+
 - TAREA 1.11: Limpieza de área
     - AS-IS 1.11: Limpieza de área
         - ¿Qué es esta tarea?
@@ -307,6 +338,11 @@ Creado: 30 de marzo de 2026 9:45
             - Que el área de desbarase y limpieza cuente con una estación de pesaje para desperdicios que registre qué productos se están botando más, generando un reporte semanal al capitán y a cocina para ajustar el porcionamiento o el menú y reducir el desperdicio.
     - Propuesta 1.11: Limpieza de área
         - Pendiente.
+
+---
+
+# Área 2: Organización, limpieza y preparación
+
 - TAREA 2.1: Limpieza de área de restaurante
     - AS-IS 2.1: Limpieza de área de restaurante
         - ¿Qué es esta tarea?
@@ -332,9 +368,12 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si se detecta una avería estructural (silla rota, mesa coja o filtración) durante la limpieza profunda, se genera una orden de trabajo inmediata a Mantenimiento.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 2.1: Limpieza de área de restaurante
         - Pendiente.
+
+---
+
 - TAREA 2.2: Inventario de productos y mise en place de suministros y materiales
     - AS-IS 2.2: Inventario de productos y mise en place de suministros y materiales
         - ¿Qué es esta tarea?
@@ -342,7 +381,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para aprovechar el tiempo sin comensales en organizar, reabastecer y preparar todo lo necesario para los servicios del turno de la tarde (snack y cena), dejando el inventario actualizado y los insumos listos.
         - ¿Qué roles ejecutan esta tarea?
-            - Capitán de servicio (Douglas) y mesoneros del turno de la mañana.
+            - Capitán de servicio (Douglas Efrain Reyes Serverie) y mesoneros del turno de la mañana.
         - ¿Cuándo se hace?
             - Disparador: Finalización del servicio de desayuno y período de baja afluencia de comensales.
             - Frecuencia: Diaria, entre aproximadamente las 11:00 AM y las 3:00 PM / 4:00 PM del turno de la mañana.
@@ -364,6 +403,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de inventario digital integrado con la base de datos del almacén central del hotel, de modo que el registro del inventario se actualice de forma inmediata al anotarlo, eliminando la libreta manual.
     - Propuesta 2.2: Inventario de productos y mise en place de suministros y materiales
         - Pendiente.
+
+---
+
 - TAREA 2.3: Prevención de cualquier pedido de huéspedes
     - AS-IS 2.3: Prevención de cualquier pedido de huéspedes
         - ¿Qué es esta tarea?
@@ -390,6 +432,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de pedidos por código QR desde las áreas sociales del hotel, de modo que el huésped pueda pedir su almuerzo desde cualquier lugar y el equipo de servicio reciba la alerta en una tablet con la hora de llegada estimada al salón o a la piscina.
     - Propuesta 2.3: Prevención de cualquier pedido de huéspedes
         - Pendiente.
+
+---
+
 - TAREA 2.4: Toma de pedido de huéspedes (toma de comandas)
     - AS-IS 2.4: Toma de pedido de huéspedes (toma de comandas)
         - ¿Qué es esta tarea?
@@ -402,10 +447,10 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Llegada de un huésped al restaurante durante el período de organización solicitando almuerzo u otro pedido.
             - Frecuencia: Bajo demanda, esporádica. Se menciona que el almuerzo tiene muy poca salida.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 1.6: se anota el pedido manualmente en papel (comanda manual) para entregarlo a caja.
-            - Se verifica con cocina si el plato del día o ciertos ingredientes están listos, dado que la cocina no opera a plena capacidad al mediodía.
-            - Al ser pedidos esporádicos, el mesonero prioriza ofrecer bebidas refrescantes o snacks de salida rápida para no detener las tareas de limpieza del resto del equipo.
-            - Se informa al huésped si el área donde desea sentarse está en proceso de limpieza.
+            - Paso 1: Se anota el pedido manualmente en papel (comanda manual) para entregarlo a caja, siguiendo el mismo proceso que la Tarea 1.6.
+            - Paso 2: Se verifica con cocina si el plato del día o ciertos ingredientes están listos, dado que la cocina no opera a plena capacidad al mediodía.
+            - Paso 3: Al ser pedidos esporádicos, el mesonero prioriza ofrecer bebidas refrescantes o snacks de salida rápida para no detener las tareas de limpieza del resto del equipo.
+            - Paso 4: Se informa al huésped si el área donde desea sentarse está en proceso de limpieza.
         - ¿Qué necesitan para hacer esta tarea?
             - Papel y bolígrafo para anotar la comanda. Conocimiento del menú disponible para el almuerzo.
         - ¿Qué se genera al terminar?
@@ -418,6 +463,9 @@ Creado: 30 de marzo de 2026 9:45
             - Misma oportunidad de mejora que la Tarea 1.6: envío directo del pedido a cocina desde la tablet del mesonero, sin pasar por caja.
     - Propuesta 2.4: Toma de pedido de huéspedes (toma de comandas)
         - Pendiente.
+
+---
+
 - TAREA 2.5: Entrega de comandas a Caja para enviar a Cocina (Procesamiento de la orden)
     - AS-IS 2.5: Entrega de comandas a Caja para enviar a Cocina
         - ¿Qué es esta tarea?
@@ -430,8 +478,9 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Toma de pedido del huésped completada (Tarea 2.4).
             - Frecuencia: Bajo demanda, esporádica durante el período de organización.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 1.7.
-            - El mesonero debe interrumpir su labor para caminar hasta la estación de caja, entregar el papel, esperar que el cajero deje su tarea administrativa, digite el pedido y confirme a cocina antes de regresar al salón.
+            - Paso 1: El mesonero interrumpe su labor y lleva la comanda manual hasta la estación de caja (mismo proceso que la Tarea 1.7).
+            - Paso 2: El mesonero entrega el papel al cajero y espera a que este deje su tarea administrativa.
+            - Paso 3: El cajero digita el pedido y confirma el envío a cocina antes de que el mesonero regrese al salón.
         - ¿Qué necesitan para hacer esta tarea?
             - Comanda manual con el pedido. Sistema de caja operativo.
         - ¿Qué se genera al terminar?
@@ -444,6 +493,9 @@ Creado: 30 de marzo de 2026 9:45
             - Misma oportunidad de mejora que la Tarea 1.7.
     - Propuesta 2.5: Entrega de comandas a Caja para enviar a Cocina
         - Pendiente.
+
+---
+
 - TAREA 2.6: Verificar que el pedido haya llegado completo a cocina
     - AS-IS 2.6: Verificar que el pedido haya llegado completo a cocina
         - ¿Qué es esta tarea?
@@ -456,8 +508,9 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Envío del pedido a cocina por parte de caja (Tarea 2.5).
             - Frecuencia: Bajo demanda, esporádica.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 1.8.
-            - El mesonero se traslada físicamente al área de despacho de cocina, revisa que la comanda impresa por la comandera coincida exactamente con lo que el huésped pidió, y "canta" el pedido en voz alta al cocinero de guardia para asegurarse de que fue escuchado y aceptado.
+            - Paso 1: El mesonero se traslada físicamente al área de despacho de cocina (mismo proceso que la Tarea 1.8).
+            - Paso 2: Revisa que la comanda impresa por la comandera coincida exactamente con lo que el huésped pidió.
+            - Paso 3: "Canta" el pedido en voz alta al cocinero de guardia para asegurarse de que fue escuchado y aceptado.
         - ¿Qué necesitan para hacer esta tarea?
             - La copia de la comanda manual (para comparar) y acceso despejado a la zona de comunicación con cocina.
         - ¿Qué se genera al terminar?
@@ -470,6 +523,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un monitor de confirmación digital donde el cocinero toque el pedido en pantalla para marcarlo como "En preparación", enviando una notificación a la tablet del mesonero sin necesidad de que este entre a cocina a verificar.
     - Propuesta 2.6: Verificar que el pedido haya llegado completo a cocina
         - Pendiente.
+
+---
+
 - TAREA 2.7: Preparación del pedido
     - AS-IS 2.7: Preparación del pedido
         - ¿Qué es esta tarea?
@@ -497,6 +553,9 @@ Creado: 30 de marzo de 2026 9:45
             - Contar con un temporizador de comandas inteligente que active una cuenta regresiva visible tanto en cocina como en la tablet del mesonero; si el tiempo supera los 15 minutos, el sistema envía una alerta automática al capitán para agilizar el despacho.
     - Propuesta 2.7: Preparación del pedido
         - Pendiente.
+
+---
+
 - TAREA 2.8: Entrega al comensal
     - AS-IS 2.8: Entrega al comensal
         - ¿Qué es esta tarea?
@@ -525,6 +584,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de aviso al móvil del huésped para cuando el pedido está siendo servido, de modo que el huésped llegue justo a tiempo desde la playa o piscina y el mesonero no tenga el plato enfriándose.
     - Propuesta 2.8: Entrega al comensal
         - Pendiente.
+
+---
+
 - TAREA 2.9: Limpieza de área
     - AS-IS 2.9: Limpieza de área
         - ¿Qué es esta tarea?
@@ -552,6 +614,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de checklist digital para registrar las actividades de limpieza de cada turno.
     - Propuesta 2.9: Limpieza de área
         - Pendiente.
+
+---
+
 - TAREA 2.10: Entrega de Guardia de Turno
     - AS-IS 2.10: Entrega de Guardia de Turno
         - ¿Qué es esta tarea?
@@ -566,7 +631,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Cómo se hace?
             - Paso 1: El capitán del turno de la mañana informa al del turno de la tarde sobre el estado general del área.
             - Paso 2: Se comunican los pendientes: si hay frutas por procesar, faltantes de productos, tareas sin completar u otras situaciones relevantes.
-            - La entrega es predominantemente verbal, apoyada en anotaciones informales en la "Libreta de Faltantes" o mensajes de WhatsApp. No existe un formato de acta formal de entrega, lo que a veces causa que detalles importantes (como una queja de un huésped o una falla técnica leve) se olviden en el cambio de turno.
+            - Paso 3: Se apoya la entrega verbal con anotaciones informales en la "Libreta de Faltantes" o mensajes de WhatsApp. No existe un formato de acta formal de entrega, lo que a veces causa que detalles importantes (como una queja de un huésped o una falla técnica leve) se olviden en el cambio de turno.
         - ¿Qué necesitan para hacer esta tarea?
             - Área limpia y organizada (resultado de la Tarea 2.9). Inventario actualizado del turno de la mañana.
         - ¿Qué se genera al terminar?
@@ -579,6 +644,42 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un libro digital (bitácora en la nube) donde se pueda marcar el check a las tareas completadas y dejar notas de los pendientes, de modo que el capitán de la tarde pueda leer el reporte al llegar a su turno.
     - Propuesta 2.10: Entrega de Guardia de Turno
         - Pendiente.
+
+---
+
+- TAREA 2.11: Inventario de platería y mantelería
+    - AS-IS 2.11: Inventario de platería y mantelería
+        - ¿Qué es esta tarea?
+            - Control de inventario que lleva el capitán de servicio sobre la platería y la mantelería del área de restaurante, incluyendo el manejo del depósito de reposición de estos ítems. Se trata de dos inventarios diferenciados: uno de platería (vajilla, cubertería y cristalería) y otro de mantelería (manteles, caminos de mesa y servilletas de tela).
+        - ¿Para qué se hace?
+            - Para mantener el control de las existencias de platería y mantelería del área, conocer las cantidades disponibles y gestionar la reposición desde el depósito cuando se requiera.
+        - ¿Qué roles ejecutan esta tarea?
+            - Capitán de servicio (Douglas Efrain Reyes Serverie): lleva el inventario de platería y el de mantelería, y maneja el depósito de reposición.
+        - ¿Cuándo se hace?
+            - Disparador: ⚠️ Pendiente validar en sesión próxima.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo se hace?
+            - Paso 1: El capitán de servicio realiza el conteo de la platería disponible en el área.
+            - Paso 2: El capitán de servicio realiza el conteo de la mantelería disponible en el área.
+            - Paso 3: Se gestiona la reposición desde el depósito correspondiente cuando se detecta faltante.
+            - ⚠️ Pendiente validar el detalle del procedimiento en sesión próxima.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al área de restaurante y al depósito de reposición de platería y mantelería.
+        - ¿Qué se genera al terminar?
+            - Inventario de platería y de mantelería actualizado, base para la reposición desde el depósito.
+        - ¿Qué sistemas o herramientas usan?
+            - ⚠️ Pendiente validar en sesión próxima. (No se especifica si el inventario se lleva de forma manual o en sistema.)
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 2.11: Inventario de platería y mantelería
+        - Pendiente.
+
+---
+
+# Área 3: Snacks/Cena
+
 - TAREA 3.1: Mise en place de productos y materiales para la producción
     - AS-IS 3.1: Mise en place de productos y materiales para la producción
         - ¿Qué es esta tarea?
@@ -608,6 +709,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de preparación dinámica vinculado al sistema de reservas y recepción del hotel, de modo que al iniciar el turno a las 3:00 PM el sistema muestre una lista de tareas priorizada con información sobre cantidad de huéspedes, restricciones alimentarias y eventos especiales del día.
     - Propuesta 3.1: Mise en place de productos y materiales para la producción
         - Pendiente.
+
+---
+
 - TAREA 3.2: Verificación de salón de restaurante (validar que esté en óptimas condiciones de higiene)
     - AS-IS 3.2: Verificación de salón de restaurante
         - ¿Qué es esta tarea?
@@ -635,6 +739,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un checklist digital donde estén todos los ítems para verificar la limpieza.
     - Propuesta 3.2: Verificación de salón de restaurante
         - Pendiente.
+
+---
+
 - TAREA 3.3: Limpieza de área de restaurante
     - AS-IS 3.3: Limpieza de área de restaurante
         - ¿Qué es esta tarea?
@@ -662,6 +769,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un carrito de limpieza fijo por el área del restaurante para agilizar la limpieza en momentos de emergencia.
     - Propuesta 3.3: Limpieza de área de restaurante
         - Pendiente.
+
+---
+
 - TAREA 3.4: Verificación de productos a servir (Inventario de lo que se vaya a ofrecer en la Cena)
     - AS-IS 3.4: Verificación de productos a servir
         - ¿Qué es esta tarea?
@@ -689,6 +799,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un menú digital interconectado donde, cuando la cocina use la última porción de un ingrediente, el sistema actualice automáticamente el menú en las tablets de los mesoneros y en los códigos QR de las mesas, marcando el plato como "Agotado".
     - Propuesta 3.4: Verificación de productos a servir
         - Pendiente.
+
+---
+
 - TAREA 3.5: Toma de pedido de huéspedes (toma de comandas)
     - AS-IS 3.5: Toma de pedido de huéspedes
         - ¿Qué es esta tarea?
@@ -701,9 +814,9 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Llegada de un huésped al restaurante o área de snacks solicitando un pedido de snack o cena.
             - Frecuencia: Bajo demanda, durante el turno de la tarde (3:00 PM – 11:00 PM). La cena tiene mayor afluencia que el almuerzo.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 1.6: se anota el pedido manualmente en papel (comanda manual) para entregarlo a caja.
-            - El mesonero informa al comensal si hay platos que requieren más tiempo de preparación.
-            - Al haber platos más elaborados, se pregunta activamente por restricciones alimentarias, anotándolas en grande en la comanda manual para evitar riesgos de salud.
+            - Paso 1: Se anota el pedido manualmente en papel (comanda manual) para entregarlo a caja, siguiendo el mismo proceso que la Tarea 1.6.
+            - Paso 2: El mesonero informa al comensal si hay platos que requieren más tiempo de preparación.
+            - Paso 3: Al haber platos más elaborados, se pregunta activamente por restricciones alimentarias, anotándolas en grande en la comanda manual para evitar riesgos de salud.
         - ¿Qué necesitan para hacer esta tarea?
             - Papel y bolígrafo para anotar la comanda. Conocimiento del menú de snacks y cena disponible.
         - ¿Qué se genera al terminar?
@@ -716,6 +829,9 @@ Creado: 30 de marzo de 2026 9:45
             - Misma oportunidad de mejora que la Tarea 1.6: envío directo del pedido a cocina desde la tablet del mesonero.
     - Propuesta 3.5: Toma de pedido de huéspedes
         - Pendiente.
+
+---
+
 - TAREA 3.6: Entrega de comandas a Caja para enviar a Cocina (Procesamiento de la orden)
     - AS-IS 3.6: Entrega de comandas a Caja para enviar a Cocina
         - ¿Qué es esta tarea?
@@ -728,8 +844,8 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Toma de pedido completada (Tarea 3.5).
             - Frecuencia: Bajo demanda, durante el turno de la tarde.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 1.7.
-            - El mesonero debe esperar su turno si otros compañeros están entregando comandas o si el cajero está procesando pagos de huéspedes que se retiran.
+            - Paso 1: El mesonero lleva la comanda manual a caja (mismo proceso que la Tarea 1.7).
+            - Paso 2: Si otros compañeros están entregando comandas o el cajero está procesando pagos de huéspedes que se retiran, el mesonero espera su turno.
         - ¿Qué necesitan para hacer esta tarea?
             - Comanda manual con el pedido. Sistema de caja operativo.
         - ¿Qué se genera al terminar?
@@ -742,6 +858,9 @@ Creado: 30 de marzo de 2026 9:45
             - Misma oportunidad de mejora que la Tarea 1.7.
     - Propuesta 3.6: Entrega de comandas a Caja para enviar a Cocina
         - Pendiente.
+
+---
+
 - TAREA 3.7: Verificar que el pedido haya llegado completo a cocina
     - AS-IS 3.7: Verificar que el pedido haya llegado completo a cocina
         - ¿Qué es esta tarea?
@@ -754,8 +873,9 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Envío del pedido a cocina por parte de caja (Tarea 3.6).
             - Frecuencia: Bajo demanda, durante el turno de la tarde.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 1.8.
-            - El mesonero se dirige a la zona de cocina, verifica que la comanda impresa por la impresora de caja tenga todos los platos de su comanda manual, y se comunica con el jefe de cocina o el responsable de despacho para confirmar que se entendieron las especificaciones.
+            - Paso 1: El mesonero se dirige a la zona de cocina (mismo proceso que la Tarea 1.8).
+            - Paso 2: Verifica que la comanda impresa por la impresora de caja tenga todos los platos de su comanda manual.
+            - Paso 3: Se comunica con el jefe de cocina o el responsable de despacho para confirmar que se entendieron las especificaciones.
         - ¿Qué necesitan para hacer esta tarea?
             - La copia de la comanda manual como respaldo y la comanda impresa por el sistema de caja.
         - ¿Qué se genera al terminar?
@@ -768,6 +888,9 @@ Creado: 30 de marzo de 2026 9:45
             - Implementar un sistema de confirmación de lectura donde el cocinero toque el pedido en pantalla para marcarlo como "En Preparación", enviando un mensaje a la tablet del mesonero sin necesidad de que este entre a cocina.
     - Propuesta 3.7: Verificar que el pedido haya llegado completo a cocina
         - Pendiente.
+
+---
+
 - TAREA 3.8: Preparación del pedido
     - AS-IS 3.8: Preparación del pedido
         - ¿Qué es esta tarea?
@@ -780,9 +903,9 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Confirmación de que el pedido llegó completo a cocina (Tarea 3.7).
             - Frecuencia: Bajo demanda, durante el turno de la tarde.
         - ¿Cómo se hace?
-            - El jefe de cocina organiza las comandas según el tiempo de cocción.
-            - Se sigue la ficha técnica del plato para garantizar que la presentación sea idéntica en cada servicio.
-            - Los platos se colocan bajo lámparas de calor mientras se completa el resto de la orden de la mesa.
+            - Paso 1: El jefe de cocina organiza las comandas según el tiempo de cocción.
+            - Paso 2: Se sigue la ficha técnica del plato para garantizar que la presentación sea idéntica en cada servicio.
+            - Paso 3: Los platos se colocan bajo lámparas de calor mientras se completa el resto de la orden de la mesa.
         - ¿Qué necesitan para hacer esta tarea?
             - Pedido recibido completo en cocina. Productos e insumos disponibles y mise en place realizado.
         - ¿Qué se genera al terminar?
@@ -795,6 +918,9 @@ Creado: 30 de marzo de 2026 9:45
             - Un monitor de progreso para el mesonero con una barra de progreso visible por mesa (ej. "Mesa 5: 60% preparado"), de modo que el equipo de servicio sepa exactamente cuándo acercarse al pass a recoger la comida caliente.
     - Propuesta 3.8: Preparación del pedido
         - Pendiente.
+
+---
+
 - TAREA 3.9: Entrega al comensal
     - AS-IS 3.9: Entrega al comensal
         - ¿Qué es esta tarea?
@@ -807,10 +933,10 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Pedido preparado y listo en cocina (Tarea 3.8).
             - Frecuencia: Bajo demanda, durante el turno de la tarde.
         - ¿Cómo se hace?
-            - El mesonero limpia cualquier gota de salsa en el borde del plato antes de cargarlo.
-            - Se usan bandejas (para snacks/bebidas) o se cargan los platos con la técnica de los tres dedos, usando siempre el lito para no quemarse.
-            - Se sirve primero a las damas o niños.
-            - Inmediatamente después de servir la comida, se verifica si el cliente desea otra copa de vino o bebida para acompañar el plato fuerte.
+            - Paso 1: El mesonero limpia cualquier gota de salsa en el borde del plato antes de cargarlo.
+            - Paso 2: Se usan bandejas (para snacks/bebidas) o se cargan los platos con la técnica de los tres dedos, usando siempre el lito para no quemarse.
+            - Paso 3: Se sirve primero a las damas o niños.
+            - Paso 4: Inmediatamente después de servir la comida, se verifica si el cliente desea otra copa de vino o bebida para acompañar el plato fuerte.
         - ¿Qué necesitan para hacer esta tarea?
             - Pedido preparado por cocina.
         - ¿Qué se genera al terminar?
@@ -823,6 +949,9 @@ Creado: 30 de marzo de 2026 9:45
             - Colocar un sistema automático que avise al mesonero cuando el plato está listo para la entrega.
     - Propuesta 3.9: Entrega al comensal
         - Pendiente.
+
+---
+
 - TAREA 3.10: Limpieza de área
     - AS-IS 3.10: Limpieza de área
         - ¿Qué es esta tarea?
@@ -835,10 +964,10 @@ Creado: 30 de marzo de 2026 9:45
             - Disparador: Finalización del servicio de cena y cierre del turno de la noche.
             - Frecuencia: Diaria, al cierre del turno de la tarde/noche (hasta las 11:00 PM).
         - ¿Cómo se hace?
-            - Se limpian a fondo los aparadores, la barra y las máquinas de café, asegurando que no queden residuos orgánicos que atraigan plagas durante la madrugada.
-            - Se realiza una limpieza de pisos en todo el salón y el área de la piscina, usando desinfectantes.
-            - Se vacían todos los botes de basura y se trasladan al depósito central del hotel.
-            - Se verifica que luces, aires acondicionados y equipos de música queden apagados o en modo ahorro.
+            - Paso 1: Se limpian a fondo los aparadores, la barra y las máquinas de café, asegurando que no queden residuos orgánicos que atraigan plagas durante la madrugada.
+            - Paso 2: Se realiza una limpieza de pisos en todo el salón y el área de la piscina, usando desinfectantes.
+            - Paso 3: Se vacían todos los botes de basura y se trasladan al depósito central del hotel.
+            - Paso 4: Se verifica que luces, aires acondicionados y equipos de música queden apagados o en modo ahorro.
         - ¿Qué necesitan para hacer esta tarea?
             - Insumos de limpieza disponibles en el área.
         - ¿Qué se genera al terminar?
@@ -848,9 +977,12 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Qué pasa cuando las cosas no salen normal?
             - Si una mesa se queda después de las 11:00 PM, la limpieza debe empezar por las zonas ya desocupadas para no molestar a los huéspedes, lo que retrasa la salida del personal.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima
+            - ⚠️ Pendiente validar en sesión próxima.
     - Propuesta 3.10: Limpieza de área
         - Pendiente.
+
+---
+
 - TAREA 3.11: Entrega de Guardia de Turno
     - AS-IS 3.11: Entrega de Guardia de Turno
         - ¿Qué es esta tarea?
@@ -864,8 +996,7 @@ Creado: 30 de marzo de 2026 9:45
             - Frecuencia: Diaria, al cierre del turno de la tarde/noche (hasta las 11:00 PM).
         - ¿Cómo se hace?
             - Paso 1: Al final del turno de la noche, se realiza el inventario final del área.
-            - Paso 2: Se deja el inventario documentado para que el turno de la mañana siguiente lo reciba y verifique el estado en que quedó.
-            - El inventario se registra en el libro de novedades al final del turno de la noche, quedando documentado para que el turno de la mañana siguiente lo reciba y verifique.
+            - Paso 2: Se registra el inventario en el libro de novedades, quedando documentado para que el turno de la mañana siguiente lo reciba y verifique el estado en que quedó el área.
         - ¿Qué necesitan para hacer esta tarea?
             - Área limpia (resultado de la Tarea 3.10).
         - ¿Qué se genera al terminar?
@@ -878,6 +1009,11 @@ Creado: 30 de marzo de 2026 9:45
             - El equipo indica que anteriormente contaban con un programa en computadora donde quedaban plasmados los inventarios, solicitudes de suministros y otros procesos operativos, y que les gustaría retomar ese nivel de digitalización para reducir el papeleo.
     - Propuesta 3.11: Entrega de Guardia de Turno
         - Pendiente.
+
+---
+
+# Área 4: Reabastecimiento e Inventario
+
 - TAREA 4.1: Inventario diario/manual en el almacén de cocina
     - AS-IS 4.1: Inventario diario/manual en el almacén de cocina
         - ¿Qué es esta tarea?
@@ -885,7 +1021,7 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para conocer el estado real del stock disponible en el área y determinar qué debe solicitarse a almacén general antes de que se agoten los productos.
         - ¿Qué roles ejecutan esta tarea?
-            - Capitán de servicio (Douglas) o mesonero asignado del área de bebidas/servicio.
+            - Capitán de servicio (Douglas Efrain Reyes Serverie) o mesonero asignado del área de bebidas/servicio.
         - ¿Cuándo se hace?
             - Disparador: Detección de faltantes durante el mise en place o la verificación de productos a servir, o bien de forma rutinaria al identificar que el inventario no cubre la demanda del día.
             - Frecuencia: Diaria. Se menciona que el capitán maneja un estándar de inventario para cincuenta personas; cuando la cantidad supera ese estándar o cuando hay faltantes, se activa el proceso de requisición.
@@ -904,6 +1040,9 @@ Creado: 30 de marzo de 2026 9:45
             - El equipo expresa que les gustaría retomar el nivel de digitalización que tenían anteriormente, donde los inventarios y solicitudes de suministros quedaban registrados en un programa de computadora, reduciendo el papeleo del proceso actual.
     - Propuesta 4.1: Inventario diario/manual en el almacén de cocina
         - Pendiente.
+
+---
+
 - TAREA 4.2: Relleno de formato de requisiciones (lista de lo que falta)
     - AS-IS 4.2: Relleno de formato de requisiciones (lista de lo que falta)
         - ¿Qué es esta tarea?
@@ -911,12 +1050,13 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Para qué se hace?
             - Para documentar formalmente los productos que se necesitan y presentarlos a gerencia para su autorización antes de ir a almacén.
         - ¿Qué roles ejecutan esta tarea?
-            - Capitán de servicio (Douglas) o el responsable del área que necesita el suministro.
+            - Capitán de servicio (Douglas Efrain Reyes Serverie) o el responsable del área que necesita el suministro.
         - ¿Cuándo se hace?
             - Disparador: Resultado del inventario que muestra faltantes (Tarea 4.1).
             - Frecuencia: Bajo demanda, según el consumo y los faltantes detectados.
         - ¿Cómo se hace?
-            - Mismo proceso que la Tarea 4.2 del área de cocina: se toma el formato físico de requisiciones y se anota cada suministro o material faltante con su cantidad requerida.
+            - Paso 1: Se toma el formato físico de requisiciones (mismo proceso que la Tarea 4.2 del área de cocina).
+            - Paso 2: Se anota cada suministro o material faltante con su cantidad requerida.
         - ¿Qué necesitan para hacer esta tarea?
             - Lista de faltantes del inventario. Formato físico de requisiciones.
         - ¿Qué se genera al terminar?
@@ -929,6 +1069,9 @@ Creado: 30 de marzo de 2026 9:45
             - El equipo indica que idealmente la solicitud de suministros debería hacerse directamente desde un sistema (computadora), sin necesidad de papeleo manual. Anteriormente contaban con un programa que permitía hacer el pedido en la computadora y este llegaba directamente a almacén con su respectivo inventario.
     - Propuesta 4.2: Relleno de formato de requisiciones (lista de lo que falta)
         - Pendiente.
+
+---
+
 - TAREA 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de área (autorización)
     - AS-IS 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de área
         - ¿Qué es esta tarea?
@@ -956,6 +1099,9 @@ Creado: 30 de marzo de 2026 9:45
             - Misma oportunidad de mejora que la Tarea 4.2: que el pedido pueda enviarse directamente desde el sistema al almacén, eliminando el proceso de búsqueda de firma física.
     - Propuesta 4.3: Solicitud de firma de formato de requisición a Gerencia de Operaciones / Jefe de área
         - Pendiente.
+
+---
+
 - TAREA 4.4: Entrega de productos desde almacén y firma de entrega de formato
     - AS-IS 4.4: Entrega de productos desde almacén y firma de entrega de formato
         - ¿Qué es esta tarea?
@@ -984,6 +1130,9 @@ Creado: 30 de marzo de 2026 9:45
             - Misma oportunidad de mejora que la Tarea 4.2: digitalizar el proceso para que el pedido llegue directamente a almacén desde el sistema, reduciendo el papeleo.
     - Propuesta 4.4: Entrega de productos desde almacén y firma de entrega de formato
         - Pendiente.
+
+---
+
 - TAREA 4.5: Si no hay, se hace una solicitud de compra
     - AS-IS 4.5: Solicitud de compra cuando almacén no tiene el producto
         - ¿Qué es esta tarea?
@@ -998,7 +1147,6 @@ Creado: 30 de marzo de 2026 9:45
         - ¿Cómo se hace?
             - Paso 1: Almacén detecta que no tiene el producto solicitado.
             - Paso 2: Almacén gestiona la solicitud de compra con el departamento de compras o administración.
-            - Paso 3: El producto queda en lista de espera hasta que llegue la compra.
             - Paso 3: El producto queda en lista de espera hasta que llegue la compra.
         - ¿Qué necesitan para hacer esta tarea?
             - Formato de requisiciones con los productos faltantes identificados.
@@ -1017,11 +1165,11 @@ Creado: 30 de marzo de 2026 9:45
 
 ## Propuestas de Adición
 
-Existen tareas documentadas en los transcripts de sesión (kmmin002 — sesión con Douglas, capitán de servicio) que no aparecen en el Inventario ni en el AS-IS original. Se propone evaluar su inclusión:
+Propuestas de adición de tareas: ninguna pendiente. La propuesta "Inventario de platería y mantelería" (fuente kmmin002, aprox. 30:13-30:46, sesión con Douglas Efrain Reyes Serverie) fue aprobada e incorporada como Tarea 2.11 en el Área 2 (Organización, limpieza y preparación) el 2026-06-12.
 
-1. **Inventario de platería y mantelería**: En la sesión kmmin002 (aprox. 30:13-30:46), Douglas menciona que el capitán de servicio lleva un inventario de platería y otro de mantelería. No están contemplados en ninguna fase del Inventario ni del AS-IS. Fuente: "¿Está el inventario de platería? ¿Está el inventario de mantelería?" — se confirma que el capitán maneja estos inventarios, incluyendo depósito de reposición. Propuesta: agregar como Tarea dentro de la Fase 2 (Organización, limpieza y preparación) o como sub-tarea de la Tarea 2.2.
+Se mantienen los siguientes registros de alias/actores identificados en transcripts, para actualización de Arquitectura/Contexto Departamental:
 
-2. **Alias nuevo identificado en transcripts**: "Douglas" — capitán de servicio de bar/salón. No estaba en la tabla de alias del CLAUDE.md. Apellido completo pendiente de confirmar. Usar "Douglas" como referencia hasta validar nombre completo. Documentado para actualización de Arquitectura/Contexto Departamental.
+1. **Alias nuevo identificado en transcripts**: "Douglas" — capitán de servicio de bar/salón. No estaba en la tabla de alias del CLAUDE.md. Apellido completo pendiente de confirmar. Usar "Douglas" como referencia hasta validar nombre completo. Documentado para actualización de Arquitectura/Contexto Departamental.
 
 3. **Alias nuevo identificado en transcripts**: "Emil" / "Emir" — jefe de cocina. Aparece en kmmin001 y kmmin002. Apellido pendiente de confirmar. Las transcripciones lo identifican como el encargado del turno de cocina. Documentado para actualización de contexto.
 

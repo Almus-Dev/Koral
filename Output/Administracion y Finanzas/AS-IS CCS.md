@@ -1,4 +1,4 @@
-Procesado: 2026-05-27 — Campos pendientes actualizados con respuestas de Ericka Milagro Antequera.
+Procesado: 2026-05-27 — Campos pendientes actualizados con respuestas de Ericka Milagro Antequera. Normalizado contra plantilla 2026-06-12. Propuestas de adición aplicadas 2026-06-12.
 
 # AS - IS: Administración y Finanzas (CCS)
 
@@ -124,13 +124,13 @@ Creado: 17 de marzo de 2026 11:54
             - Para garantizar que los puntos de venta estén operativos y ubicados en las áreas que generen mayor ingreso, y para mantener una buena relación comercial con los bancos de modo que ofrezcan beneficios financieros (actualizaciones, subastas de dólares, APIs, etc.).
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): monitorea los ingresos por punto de venta, decide rotación y ubicación, gestiona ante el banco.
-            - Adriana / Lindy: notifican el estado operativo de los puntos de venta en el hotel.
+            - Adriana Montes Caceres (Gerente de Gestión de Calidad y Seguimiento) / Libny Carina Tarazon Gallegos (Coordinadora de Administración Hotel): notifican el estado operativo de los puntos de venta en el hotel.
         - ¿Cuándo se hace?
             - Disparador: notificación del personal del hotel sobre fallas, o detección propia de ausencia de ingresos por uno o varios puntos de venta durante una semana o más.
             - Frecuencia: bajo demanda; no tiene una periodicidad fija, se activa al detectar anomalías en los ingresos o al recibir notificación de falla.
         - ¿Cómo se hace?
             - Paso 1: Revisar los ingresos por banco en el portal bancario para detectar puntos sin movimiento.
-            - Paso 2: Si se detecta ausencia de ingresos por una semana o más, contactar a Adriana o Lindy para confirmar estado del punto de venta.
+            - Paso 2: Si se detecta ausencia de ingresos por una semana o más, contactar a Adriana Montes Caceres o Libny Carina Tarazon Gallegos para confirmar estado del punto de venta.
             - Paso 3: Decidir si se rota el punto de venta a otro banco o área, o si se reporta la falla técnica al servicio técnico correspondiente.
             - Paso 4: Gestionar ante la entidad bancaria la reubicación, sustitución o actualización del punto de venta según la estrategia comercial del período.
         - ¿Qué necesitan para hacer esta tarea?
@@ -162,7 +162,7 @@ Creado: 17 de marzo de 2026 11:54
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): arma el expediente, recopila documentos, gestiona ante el banco y coordina el envío de documentos físicos.
         - ¿Cuándo se hace?
-            - Disparador: instrucción del señor Rafael (Presidencia) para cuentas jurídicas; para cuentas nómina, una vez que el personal nuevo cumple su período de prueba y es evaluado.
+            - Disparador: instrucción de Enrique Rafael Cid (Presidente) para cuentas jurídicas; para cuentas nómina, una vez que el personal nuevo cumple su período de prueba y es evaluado.
             - Frecuencia: eventual, no tiene una periodicidad fija. Las cuentas jurídicas ocurren con poca frecuencia; las nóminas son más recurrentes al ritmo del ingreso de personal.
         - ¿Cómo se hace?
             - Paso 1: Recibir la instrucción de apertura por parte de la gerencia o de Talento Humano.
@@ -184,7 +184,7 @@ Creado: 17 de marzo de 2026 11:54
         - ¿Qué pasa cuando las cosas no salen normal?
             - El banco informa los detalles del inconveniente; Talento Humano aclara, corrige y reenvía la documentación que corresponda.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Mientras Banplus sea el banco de nómina, el proceso funciona de forma aceptable. Pendiente de validar con Talento Humano si existe necesidad de mejora.
+            - Mientras Banplus sea el banco de nómina, el proceso funciona de forma aceptable. ⚠️ Pendiente validar con Talento Humano: si existe necesidad de mejora.
     - Propuesta 4.1.5: Apertura de Cuentas Jurídicas
         - Pendiente.
 
@@ -217,7 +217,7 @@ Creado: 17 de marzo de 2026 11:54
         - ¿Qué pasa cuando las cosas no salen normal?
             - El banco informa los detalles del inconveniente; Talento Humano aclara, corrige y reenvía la documentación requerida.
         - ¿Cómo les gustaría que funcionara idealmente?
-            - Mientras Banplus sea el banco de nómina, el proceso funciona de forma aceptable. Pendiente de validar con Talento Humano si existe necesidad de mejora.
+            - Mientras Banplus sea el banco de nómina, el proceso funciona de forma aceptable. ⚠️ Pendiente validar con Talento Humano: si existe necesidad de mejora.
     - Propuesta 4.1.6: Apertura de Cuentas Nóminas
         - Pendiente.
 
@@ -309,20 +309,20 @@ Creado: 17 de marzo de 2026 11:54
             - Libny Carina Tarazon Gallegos (Coordinadora de Administración Hotel): reporta el evento a Ericka Milagro Antequera.
             - Yoselyn Sojo Fernandez (Asistente Administrativa): concilia el movimiento en Odoo.
         - ¿Cuándo se hace?
-            - Disparador: reporte de Libni vía WhatsApp informando una propina, vuelto o error en cobro.
+            - Disparador: reporte de Libny Carina Tarazon Gallegos vía WhatsApp informando una propina, vuelto o error en cobro.
             - Frecuencia: bajo demanda, cada vez que ocurre el evento.
         - ¿Cómo se hace?
-            - Paso 1: Recibir el reporte de Libni vía WhatsApp con el detalle del pago a realizar.
+            - Paso 1: Recibir el reporte de Libny Carina Tarazon Gallegos vía WhatsApp con el detalle del pago a realizar.
             - Paso 2: Ejecutar la transferencia desde la plataforma bancaria.
             - Paso 3: Pasar la información a Yoselyn Sojo Fernandez para que concilie el movimiento en Odoo.
         - ¿Qué necesitan para hacer esta tarea?
-            - Reporte de Libni con el detalle del pago (monto, destinatario, concepto).
+            - Reporte de Libny Carina Tarazon Gallegos con el detalle del pago (monto, destinatario, concepto).
             - Acceso a la plataforma bancaria para ejecutar la transferencia.
         - ¿Qué se genera al terminar?
             - Transferencia ejecutada.
             - Información enviada a Yoselyn Sojo Fernandez para conciliación en Odoo.
         - ¿Qué sistemas o herramientas usan?
-            - WhatsApp: para recepción del reporte de Libni.
+            - WhatsApp: para recepción del reporte de Libny Carina Tarazon Gallegos.
             - Plataforma bancaria (banca en línea): para ejecución de la transferencia.
             - Odoo: para conciliación del movimiento (ejecutada por Yoselyn Sojo Fernandez).
         - ¿Qué pasa cuando las cosas no salen normal?
@@ -334,25 +334,27 @@ Creado: 17 de marzo de 2026 11:54
 
 ---
 
-- TAREA 4.1.10: Recarga de Cobre TAG Sr. Racid a Nombre de SERAC
-    - AS-IS 4.1.10: Recarga de Cobre TAG Sr. Racid a Nombre de SERAC
+- TAREA 4.1.10: Recarga de Cobre TAG de Enrique Rafael Cid a Nombre de SERAC
+    - AS-IS 4.1.10: Recarga de Cobre TAG de Enrique Rafael Cid a Nombre de SERAC
         - ¿Qué es esta tarea?
-            - Pago puntual para la recarga del TAG de Cobre del señor Rafael, registrado a nombre de SERAC.
+            - Pago puntual para la recarga del TAG de Cobre de Enrique Rafael Cid (Presidente), registrado a nombre de SERAC.
         - ¿Para qué se hace?
-            - La tarjeta de Cobre TAG está registrada a nombre de SERAC pero su uso es personal del señor Rafael, principalmente cuando viaja al hotel.
+            - La tarjeta de Cobre TAG está registrada a nombre de SERAC pero su uso es personal de Enrique Rafael Cid, principalmente cuando viaja al hotel.
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta o coordina el pago.
             - Yoselyn Sojo Fernandez (Asistente Administrativa): concilia el movimiento en Odoo, según el mismo flujo descrito para pagos similares (combustible, Simple TV).
         - ¿Cuándo se hace?
-            - Disparador: ⚠️ Pendiente validar en sesión próxima.
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima. En la sesión se mencionó junto a Simple TV y arrendamiento como pago recurrente de carácter puntual.
+            - Disparador: necesidad de recarga del TAG de Cobre de Enrique Rafael Cid.
+            - Frecuencia: puntual. En la sesión Ericka Milagro Antequera lo clasificó como pago particular dentro del mismo grupo de Simple TV, el arrendamiento y el combustible de Alexis Enrique Escalona Figueroa (pagos de presidencia).
         - ¿Cómo se hace?
-            - Paso 1: ⚠️ Pendiente validar en sesión próxima.
-            - Paso 2: Pasar la información a Yoselyn Sojo Fernandez para conciliación en Odoo.
+            - Paso 1: Ejecutar o coordinar el pago de la recarga.
+            - Paso 2: Pasar la información a Yoselyn Sojo Fernandez para conciliación en Odoo, cumpliendo el protocolo establecido para este tipo de pagos.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Acceso a la plataforma o medio de pago para ejecutar la recarga.
+            - Acceso a Odoo para la conciliación (ejecutada por Yoselyn Sojo Fernandez).
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Recarga del TAG ejecutada.
+            - Información enviada a Yoselyn Sojo Fernandez para conciliación en Odoo.
         - ¿Qué sistemas o herramientas usan?
             - Odoo: para conciliación del movimiento (ejecutada por Yoselyn Sojo Fernandez).
             - ⚠️ Pendiente validar plataforma bancaria o medio de pago específico utilizado.
@@ -478,17 +480,17 @@ Creado: 17 de marzo de 2026 11:54
 - TAREA 4.2.4: Retenciones Urgentes / Compras Urgentes
     - AS-IS 4.2.4: Retenciones Urgentes / Compras Urgentes
         - ¿Qué es esta tarea?
-            - Procesamiento en Odoo de facturas de compras urgentes solicitadas fuera de la planificación por Presidencia (señor Rafael) o Gerencia (doctor Alberto), incluyendo verificación documental, registro de la factura, aplicación de retenciones, emisión del comprobante y ejecución del pago.
+            - Procesamiento en Odoo de facturas de compras urgentes solicitadas fuera de la planificación por Presidencia (Enrique Rafael Cid) o Gerencia (Alberto Cid Navarro), incluyendo verificación documental, registro de la factura, aplicación de retenciones, emisión del comprobante y ejecución del pago.
         - ¿Para qué se hace?
             - Para atender compras o pagos que no pueden esperar al ciclo de planificación semanal y que son solicitados directamente por la alta dirección.
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): verifica documentos, procesa la factura en Odoo, aplica retenciones, emite el comprobante y ejecuta el pago.
             - Juan o Yoselyn Sojo Fernandez: concilian el movimiento en Odoo tras la ejecución del pago.
         - ¿Cuándo se hace?
-            - Disparador: solicitud directa del señor Rafael o del doctor Alberto requiriendo procesamiento inmediato de una factura o compra.
+            - Disparador: solicitud directa de Enrique Rafael Cid o de Alberto Cid Navarro requiriendo procesamiento inmediato de una factura o compra.
             - Frecuencia: bajo demanda, cada vez que ocurre una solicitud urgente.
         - ¿Cómo se hace?
-            - Paso 1: Recibir la solicitud del señor Rafael o doctor Alberto.
+            - Paso 1: Recibir la solicitud de Enrique Rafael Cid o Alberto Cid Navarro.
             - Paso 2: Verificar que los documentos de la compra cumplan con el protocolo administrativo (factura fiscal válida, datos del proveedor, etc.).
             - Paso 3: Si el proveedor no existe en Odoo, crearlo previo a continuar (ver tarea 4.5.1).
             - Paso 4: Registrar la factura de compra en Odoo.
@@ -521,12 +523,12 @@ Creado: 17 de marzo de 2026 11:54
 
 ---
 
-- TAREA 4.2.5: Recarga de Combustible Todos los Viernes a Escalona
-    - AS-IS 4.2.5: Recarga de Combustible Todos los Viernes a Escalona
+- TAREA 4.2.5: Recarga de Combustible Todos los Viernes a Alexis Enrique Escalona Figueroa
+    - AS-IS 4.2.5: Recarga de Combustible Todos los Viernes a Alexis Enrique Escalona Figueroa
         - ¿Qué es esta tarea?
-            - Pago semanal de combustible al chofer del señor Rafael (Escalona), ejecutado todos los viernes.
+            - Pago semanal de combustible al chofer de Enrique Rafael Cid (Presidente), Alexis Enrique Escalona Figueroa (Contralor de Riesgo / chofer en uso operativo), ejecutado todos los viernes.
         - ¿Para qué se hace?
-            - ⚠️ Pendiente validar en sesión próxima el destino y uso específico del vehículo asociado a este pago.
+            - Para cubrir el combustible de Alexis Enrique Escalona Figueroa, quien funge como chofer de Enrique Rafael Cid (Presidente). ⚠️ Pendiente validar en sesión próxima el uso específico del vehículo asociado a este pago.
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta o coordina el pago.
             - Yoselyn Sojo Fernandez (Asistente Administrativa): concilia el movimiento en Odoo, según el mismo flujo de pagos puntuales.
@@ -534,10 +536,10 @@ Creado: 17 de marzo de 2026 11:54
             - Disparador: llegada del día viernes de cada semana.
             - Frecuencia: semanal, todos los viernes.
         - ¿Cómo se hace?
-            - Paso 1: Ejecutar la transferencia del monto de combustible a Escalona desde la plataforma bancaria.
+            - Paso 1: Ejecutar la transferencia del monto de combustible a Alexis Enrique Escalona Figueroa desde la plataforma bancaria.
             - Paso 2: Pasar la información a Yoselyn Sojo Fernandez para conciliación en Odoo.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima el monto fijo o variable del pago y los datos bancarios de Escalona.
+            - ⚠️ Pendiente validar en sesión próxima el monto fijo o variable del pago y los datos bancarios de Alexis Enrique Escalona Figueroa.
         - ¿Qué se genera al terminar?
             - Transferencia ejecutada.
             - Información enviada a Yoselyn Sojo Fernandez para conciliación en Odoo.
@@ -548,7 +550,7 @@ Creado: 17 de marzo de 2026 11:54
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
             - ⚠️ Pendiente validar en sesión próxima.
-    - Propuesta 4.2.5: Recarga de Combustible Todos los Viernes a Escalona
+    - Propuesta 4.2.5: Recarga de Combustible Todos los Viernes a Alexis Enrique Escalona Figueroa
         - Pendiente.
 
 ---
@@ -564,7 +566,7 @@ Creado: 17 de marzo de 2026 11:54
             - Yoselyn Sojo Fernandez (Asistente Administrativa): concilia el movimiento en Odoo.
         - ¿Cuándo se hace?
             - Disparador: ⚠️ Pendiente validar en sesión próxima.
-            - Frecuencia: ⚠️ Pendiente validar en sesión próxima. En sesión se mencionó en el mismo bloque que el combustible de Escalona, sugiriendo fusión de ambas tareas.
+            - Frecuencia: ⚠️ Pendiente validar en sesión próxima. En sesión se mencionó en el mismo bloque que el combustible de Alexis Enrique Escalona Figueroa, sugiriendo fusión de ambas tareas.
         - ¿Cómo se hace?
             - Paso 1: Ejecutar la transferencia del monto de combustible desde la plataforma bancaria.
             - Paso 2: Pasar la información a Yoselyn Sojo Fernandez para conciliación en Odoo.
@@ -588,22 +590,29 @@ Creado: 17 de marzo de 2026 11:54
 - TAREA 4.2.7: Pago de Arrendamiento Dr. Acid Margarita
     - AS-IS 4.2.7: Pago de Arrendamiento Dr. Acid Margarita
         - ¿Qué es esta tarea?
-            - Pago del canon de arrendamiento correspondiente al Dr. Alberto (Acid) por la sede de Margarita. En sesión el equipo lo clasificó como un pago de gerencia general, fuera de la operación directa del hotel pero dentro de las responsabilidades del departamento.
+            - Pago del canon de arrendamiento correspondiente a Alberto Cid Navarro (Gerencia General) por la sede de Margarita, ejecutado únicamente cuando él lo indique, con registro del movimiento como cuenta por cobrar al Dr. Acid (CxC del Dr. Acid) en Odoo. En sesión el equipo lo clasificó como un pago de gerencia general, fuera de la operación directa del hotel pero dentro de las responsabilidades del departamento.
+            - Nota: Esta tarea consolida las entradas que figuraban como 4.2.7 y 4.3.11 del documento original. Ericka Milagro Antequera confirmó que en ambos casos el proceso es el mismo: pagar cuando lo indique Alberto Cid Navarro y registrar como CxC del Dr. Acid en Odoo. Por tratarse de la misma tarea, se fusionaron en este bloque (4.2.7) y se eliminó la entrada 4.3.11.
         - ¿Para qué se hace?
-            - Para cumplir con la obligación contractual de arrendamiento del inmueble en Margarita a nombre del Dr. Alberto.
+            - Para cumplir con la obligación de arrendamiento del inmueble en Margarita asociada a Alberto Cid Navarro, cuyo pago queda registrado como CxC del socio hasta su regularización.
         - ¿Qué roles ejecutan esta tarea?
-            - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta o coordina el pago.
+            - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta el pago cuando recibe instrucción de Alberto Cid Navarro y registra el movimiento en Odoo.
         - ¿Cuándo se hace?
-            - Disparador: ⚠️ Pendiente validar en sesión próxima la fecha límite de pago mensual.
-            - Frecuencia: mensual.
+            - Disparador: instrucción directa de Alberto Cid Navarro solicitando el pago.
+            - Frecuencia: mensual, condicionada a la instrucción de Alberto Cid Navarro.
         - ¿Cómo se hace?
-            - Paso 1: ⚠️ Pendiente validar en sesión próxima el detalle del proceso (plataforma de pago, monto, destinatario, instrucción de pago).
+            - Paso 1: Recibir la instrucción de Alberto Cid Navarro para ejecutar el pago, con monto y destinatario.
+            - Paso 2: Ejecutar el pago desde la plataforma bancaria.
+            - Paso 3: Registrar el movimiento en Odoo como CxC del Dr. Acid.
         - ¿Qué necesitan para hacer esta tarea?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Instrucción de Alberto Cid Navarro con monto y destinatario del pago.
+            - Acceso a la plataforma bancaria.
+            - Acceso a Odoo para registro de la CxC.
         - ¿Qué se genera al terminar?
-            - ⚠️ Pendiente validar en sesión próxima si se genera comprobante, registro en Odoo o notificación formal.
+            - Pago ejecutado.
+            - Registro en Odoo como CxC del Dr. Acid.
         - ¿Qué sistemas o herramientas usan?
-            - ⚠️ Pendiente validar en sesión próxima.
+            - Plataforma bancaria: para ejecución del pago.
+            - Odoo: para registro del movimiento como CxC del Dr. Acid.
         - ¿Qué pasa cuando las cosas no salen normal?
             - ⚠️ Pendiente validar en sesión próxima.
         - ¿Cómo les gustaría que funcionara idealmente?
@@ -616,9 +625,9 @@ Creado: 17 de marzo de 2026 11:54
 - TAREA 4.2.8: Pago Corpoelec Dr. Acid Margarita + Prados del Este
     - AS-IS 4.2.8: Pago Corpoelec Dr. Acid Margarita + Prados del Este
         - ¿Qué es esta tarea?
-            - Pago del servicio eléctrico de Corpoelec correspondiente a dos inmuebles del Dr. Alberto: la sede de Margarita y Prados del Este. En sesión fue clasificado como pago de gerencia general, fuera de la operación directa del hotel pero dentro de las responsabilidades del departamento.
+            - Pago del servicio eléctrico de Corpoelec correspondiente a dos inmuebles de Alberto Cid Navarro: la sede de Margarita y Prados del Este. En sesión fue clasificado como pago de gerencia general, fuera de la operación directa del hotel pero dentro de las responsabilidades del departamento.
         - ¿Para qué se hace?
-            - Para mantener el servicio eléctrico activo en los inmuebles del Dr. Alberto gestionados desde el departamento de Finanzas de SERAC.
+            - Para mantener el servicio eléctrico activo en los inmuebles de Alberto Cid Navarro gestionados desde el departamento de Finanzas de SERAC.
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta o coordina el pago.
         - ¿Cuándo se hace?
@@ -644,31 +653,31 @@ Creado: 17 de marzo de 2026 11:54
 - TAREA 4.2.9: Relación de CxP de Arrendamiento Piso 4 (Mensual)
     - AS-IS 4.2.9: Relación de CxP de Arrendamiento Piso 4
         - ¿Qué es esta tarea?
-            - Elaboración mensual del reporte del canon de arrendamiento de la oficina del piso 4 y dos discos (sede de Chacaíto), gestión del pago en efectivo coordinado con el señor Rafael, y formalización del estado de cuenta por correo electrónico al arrendador.
+            - Elaboración mensual del reporte del canon de arrendamiento de la oficina del piso 4 y dos discos (sede de Chacaíto), gestión del pago en efectivo coordinado con Enrique Rafael Cid, y formalización del estado de cuenta por correo electrónico al arrendador.
         - ¿Para qué se hace?
             - Para cumplir con la obligación mensual de arrendamiento del piso 4 y mantener evidencia formal del cumplimiento del compromiso, dado que el pago se realiza en efectivo y no tiene respaldo de factura fiscal.
         - ¿Qué roles ejecutan esta tarea?
-            - Ericka Milagro Antequera (Gerente de Administración y Finanzas): reporta el monto al señor Rafael, coordina la entrega del efectivo, gestiona el recibo con el arrendador y formaliza por correo.
-            - Señor Rafael (Presidencia): provee el efectivo a través de un mensajero (Escalona, Daniel u otro designado).
+            - Ericka Milagro Antequera (Gerente de Administración y Finanzas): reporta el monto a Enrique Rafael Cid, coordina la entrega del efectivo, gestiona el recibo con el arrendador y formaliza por correo.
+            - Enrique Rafael Cid (Presidente): provee el efectivo a través de un mensajero (Alexis Enrique Escalona Figueroa, Daniel u otro designado).
             - Arrendador (Royal Palace / representante del piso 4): emite el recibo de pago.
         - ¿Cuándo se hace?
             - Disparador: cierre del mes o vencimiento del canon de arrendamiento.
             - Frecuencia: mensual.
         - ¿Cómo se hace?
-            - Paso 1: Reportar al señor Rafael el monto del canon de arrendamiento del piso 4 vía WhatsApp.
-            - Paso 2: El señor Rafael envía el dinero en efectivo a través de un mensajero (Escalona, Daniel u otro designado).
+            - Paso 1: Reportar a Enrique Rafael Cid el monto del canon de arrendamiento del piso 4 vía WhatsApp.
+            - Paso 2: Enrique Rafael Cid envía el dinero en efectivo a través de un mensajero (Alexis Enrique Escalona Figueroa, Daniel u otro designado).
             - Paso 3: Coordinar con el arrendador para que emita el recibo de pago.
             - Paso 4: Efectuar el pago en efectivo y recibir el recibo.
             - Paso 5: Enviar un correo electrónico al arrendador actualizando el estado de cuenta como evidencia formal del cumplimiento del compromiso.
         - ¿Qué necesitan para hacer esta tarea?
             - Monto del canon de arrendamiento vigente.
-            - Efectivo provisto por el señor Rafael.
+            - Efectivo provisto por Enrique Rafael Cid.
             - Datos de contacto del arrendador para coordinar el recibo y el correo.
         - ¿Qué se genera al terminar?
             - Recibo de pago emitido por el arrendador.
             - Correo electrónico enviado al arrendador con el estado de cuenta actualizado, como respaldo formal del pago.
         - ¿Qué sistemas o herramientas usan?
-            - WhatsApp: para reporte del monto al señor Rafael y coordinación logística.
+            - WhatsApp: para reporte del monto a Enrique Rafael Cid y coordinación logística.
             - Correo electrónico: para formalización del estado de cuenta con el arrendador.
         - ¿Qué pasa cuando las cosas no salen normal?
             - ⚠️ Pendiente validar en sesión próxima qué ocurre si el mensajero no puede entregar el efectivo o si el arrendador no emite el recibo a tiempo.
@@ -684,7 +693,7 @@ Creado: 17 de marzo de 2026 11:54
         - ¿Qué es esta tarea?
             - Pago mensual del VACC antes del día 10 de cada mes y su registro en Odoo como una cuenta por cobrar a los socios Racid.
         - ¿Para qué se hace?
-            - ⚠️ Pendiente validar la naturaleza exacta del VACC. En sesión fue clasificado por Ericka Milagro Antequera como "pago de presidencia", en el mismo grupo que la recarga de Cobre TAG y el combustible de Escalona. Se registra en Odoo como CxC socios Racid porque el pago es a nombre de la presidencia (Enrique Rafael Cid) y se deberá recuperar como cuenta por cobrar al socio.
+            - ⚠️ Pendiente validar la naturaleza exacta del VACC. En sesión fue clasificado por Ericka Milagro Antequera como "pago de presidencia", en el mismo grupo que la recarga de Cobre TAG y el combustible de Alexis Enrique Escalona Figueroa. Se registra en Odoo como CxC socios Racid porque el pago es a nombre de la presidencia (Enrique Rafael Cid) y se deberá recuperar como cuenta por cobrar al socio.
         - ¿Qué roles ejecutan esta tarea?
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta el pago y registra en Odoo. En sesión fue mencionada junto al combustible y el Cobre TAG como pago de presidencia dentro de las responsabilidades del departamento.
         - ¿Cuándo se hace?
@@ -1069,41 +1078,6 @@ Creado: 17 de marzo de 2026 11:54
 
 ---
 
-- TAREA 4.3.11: Pago de Arrendamiento Dr. Acid Margarita
-    - AS-IS 4.3.11: Pago de Arrendamiento Dr. Acid Margarita
-        - ⚠️ Nota: Este ítem aparece también como tarea 4.2.7. Según Ericka Milagro Antequera, el proceso en ambos casos es el mismo: pagar en el momento que lo indique el Dr. Alberto (Acid) y registrar como CxC del Dr. Acid en Odoo. Pendiente confirmar en sesión si las dos entradas corresponden al mismo contrato de arrendamiento o a contratos distintos.
-        - ¿Qué es esta tarea?
-            - Pago del arrendamiento correspondiente al Dr. Alberto (Acid) ejecutado únicamente cuando él lo indique, con registro del movimiento como cuenta por cobrar al Dr. Acid en Odoo.
-        - ¿Para qué se hace?
-            - Para cumplir con la obligación de arrendamiento asociada al Dr. Alberto, cuyo pago queda registrado como CxC del socio hasta su regularización.
-        - ¿Qué roles ejecutan esta tarea?
-            - Ericka Milagro Antequera (Gerente de Administración y Finanzas): ejecuta el pago cuando recibe instrucción del Dr. Alberto.
-        - ¿Cuándo se hace?
-            - Disparador: instrucción directa del Dr. Alberto (Acid) solicitando el pago.
-            - Frecuencia: mensual, condicionada a la instrucción del Dr. Alberto.
-        - ¿Cómo se hace?
-            - Paso 1: Recibir la instrucción del Dr. Alberto para ejecutar el pago.
-            - Paso 2: Ejecutar el pago desde la plataforma bancaria.
-            - Paso 3: Registrar el movimiento en Odoo como CxC del Dr. Acid.
-        - ¿Qué necesitan para hacer esta tarea?
-            - Instrucción del Dr. Alberto con monto y destinatario del pago.
-            - Acceso a la plataforma bancaria.
-            - Acceso a Odoo para registro de la CxC.
-        - ¿Qué se genera al terminar?
-            - Pago ejecutado.
-            - Registro en Odoo como CxC del Dr. Acid.
-        - ¿Qué sistemas o herramientas usan?
-            - Plataforma bancaria: para ejecución del pago.
-            - Odoo: para registro del movimiento como CxC del Dr. Acid.
-        - ¿Qué pasa cuando las cosas no salen normal?
-            - ⚠️ Pendiente validar en sesión próxima.
-        - ¿Cómo les gustaría que funcionara idealmente?
-            - ⚠️ Pendiente validar en sesión próxima.
-    - Propuesta 4.3.11: Arrendamiento Dr. Acid Margarita
-        - Pendiente.
-
----
-
 # Área 4: Contabilidad y Registro en Odoo
 
 - TAREA 4.4.1: Seguimiento de las Gestiones y Reportes Internos
@@ -1221,17 +1195,17 @@ Creado: 17 de marzo de 2026 11:54
 - TAREA 4.4.4: Hacer Asientos en Facturas de Compras que Alimenten CxP Socios Racid y Cerrar Facturas de Compra
     - AS-IS 4.4.4: Asientos Contables en Facturas de Compra para CxP Socios Racid
         - ¿Qué es esta tarea?
-            - Registro de asientos contables en las facturas de compra emitidas por el Sr. Racid o el Dr. Acid (Alberto), para alimentar las cuentas por pagar (CxP) correspondientes a los socios Racid, y posterior cierre de dichas facturas en Odoo.
+            - Registro de asientos contables en las facturas de compra emitidas por Enrique Rafael Cid o Alberto Cid Navarro, para alimentar las cuentas por pagar (CxP) correspondientes a los socios Racid, y posterior cierre de dichas facturas en Odoo.
         - ¿Para qué se hace?
             - Para reflejar correctamente en contabilidad las obligaciones de la empresa con los socios, diferenciando estas CxP del flujo ordinario de proveedores externos.
         - ¿Qué roles ejecutan esta tarea?
             - Yoselyn Sojo Fernandez (Asistente Administrativa): registra los asientos y cierra las facturas en Odoo.
             - Ericka Milagro Antequera (Gerente de Administración y Finanzas): supervisa.
         - ¿Cuándo se hace?
-            - Disparador: recepción de factura emitida por el Sr. Racid o el Dr. Acid.
+            - Disparador: recepción de factura emitida por Enrique Rafael Cid o Alberto Cid Navarro.
             - Frecuencia: bajo demanda, cada vez que se recibe una factura de los socios.
         - ¿Cómo se hace?
-            - Paso 1: Recibir la factura del Sr. Racid o Dr. Acid.
+            - Paso 1: Recibir la factura de Enrique Rafael Cid o Alberto Cid Navarro.
             - Paso 2: Registrar el asiento contable en Odoo que alimenta la cuenta CxP Socios Racid.
             - Paso 3: Cerrar la factura de compra en Odoo.
         - ¿Qué necesitan para hacer esta tarea?
@@ -1245,7 +1219,7 @@ Creado: 17 de marzo de 2026 11:54
         - ¿Qué sistemas o herramientas usan?
             - Odoo: para registro de asientos y cierre de facturas.
         - ¿Qué pasa cuando las cosas no salen normal?
-            - Se acumulan las CxP a proveedor cuando en realidad la deuda no es con el proveedor externo sino con el Sr. Racid, que fue quien efectuó el pago. Esto distorsiona el saldo de proveedores y la posición real de CxP.
+            - Se acumulan las CxP a proveedor cuando en realidad la deuda no es con el proveedor externo sino con Enrique Rafael Cid, que fue quien efectuó el pago. Esto distorsiona el saldo de proveedores y la posición real de CxP.
         - ¿Cómo les gustaría que funcionara idealmente?
             - Designar un responsable con perfil autorizado para la creación de asientos contables, de modo que la tarea quede centralizada y no se dependa de múltiples usuarios con acceso irrestricto a asientos.
     - Propuesta 4.4.4: Asientos CxP Socios Racid
@@ -1426,6 +1400,46 @@ Creado: 17 de marzo de 2026 11:54
 
 ---
 
+- TAREA 4.4.10: Supervisión y Conciliación de Ventas Ejecutadas por Cashea
+    - AS-IS 4.4.10: Supervisión y Conciliación de Ventas Ejecutadas por Cashea
+        - ¿Qué es esta tarea?
+            - Supervisión de las órdenes de venta creadas en la plataforma Cashea (incluidas las ventas iniciadas por Recepción del hotel) y seguimiento de la conciliación de las cuotas de pago de cada período, verificando la periodicidad de pago y la morosidad de los huéspedes. Cashea aplica únicamente a las ventas del hotel; Administración CCS es quien ejecuta el seguimiento de las conciliaciones de las cuotas de cada período.
+        - ¿Para qué se hace?
+            - Para controlar el comportamiento de pago de los huéspedes que compran a través de Cashea y determinar la posición financiera resultante con la plataforma: Cashea puede cobrar a SERAC un 4% (cuando los huéspedes pagaron bien) o SERAC puede recibir un pago de Cashea (cuando los huéspedes resultaron morosos).
+        - ¿Qué roles ejecutan esta tarea?
+            - Ericka Milagro Antequera (Gerente de Administración y Finanzas): accede a su usuario en Cashea, verifica las órdenes, da seguimiento a la periodicidad de pago y la morosidad, y concilia el movimiento.
+            - Recepción Hotel: ejecuta las ventas en Cashea.
+        - ¿Cuándo se hace?
+            - Disparador: bajo demanda; Recepción notifica ventas por WhatsApp o Ericka Milagro Antequera verifica directamente en Cashea.
+            - Frecuencia: por período de cuotas. ⚠️ Pendiente validar en sesión próxima la periodicidad exacta del ciclo de conciliación.
+        - ¿Cómo se hace?
+            - Paso 1: Ingresar al usuario de Cashea y verificar las órdenes creadas, incluidas las ventas iniciadas por Recepción del hotel.
+            - Paso 2: Verificar la periodicidad de pago y la morosidad de los huéspedes para cada orden.
+            - Paso 3: Determinar la posición con Cashea según el comportamiento de pago: 4% a pagar a Cashea si los huéspedes pagaron bien, o monto a recibir de Cashea si fueron morosos.
+            - Paso 4: Recibir por correo electrónico las facturas de compra correspondientes al 4% a pagar a Cashea.
+            - Paso 5: Conciliar el movimiento en Odoo.
+        - ¿Qué necesitan para hacer esta tarea?
+            - Acceso al usuario de Cashea.
+            - Notificación de ventas de Recepción del hotel (vía WhatsApp) o verificación directa en Cashea.
+            - Facturas de compra recibidas por correo electrónico.
+            - Acceso a Odoo para conciliación.
+        - ¿Qué se genera al terminar?
+            - Conciliación de las cuotas del período registrada en Odoo.
+            - Posición financiera con Cashea determinada (pago del 4% a Cashea o cobro a Cashea por morosidad).
+        - ¿Qué sistemas o herramientas usan?
+            - Cashea (plataforma de ventas): para verificación de órdenes y seguimiento de cuotas.
+            - Correo electrónico: para recepción de las facturas de compra del 4%.
+            - WhatsApp: para notificación de ventas por parte de Recepción del hotel.
+            - Odoo: para conciliación del movimiento.
+        - ¿Qué pasa cuando las cosas no salen normal?
+            - ⚠️ Pendiente validar en sesión próxima.
+        - ¿Cómo les gustaría que funcionara idealmente?
+            - ⚠️ Pendiente validar en sesión próxima.
+    - Propuesta 4.4.10: Supervisión y Conciliación de Ventas Ejecutadas por Cashea
+        - Pendiente.
+
+---
+
 # Área 5: Maestros y Configuración en Odoo
 
 - TAREA 4.5.1: Creación de Proveedores en Odoo (Eventual)
@@ -1500,7 +1514,7 @@ Creado: 17 de marzo de 2026 11:54
     - AS-IS 4.6.1: Actualización de Inventario Intercompany Eracon Salud — SERAC
         - ⚠️ Nota: Según sesión, esta tarea NO es activa en este momento. Es una actividad de seguimiento pendiente de decisión de la Gerencia General.
         - ¿Qué es esta tarea?
-            - Seguimiento del inventario de activos enviados por Eracon Salud a SERAC durante 2025 (camillas, bombonas, ambulancias, medicamentos, desfibriladores, equipos de electroshock), para determinar si procede emitir facturación intercompany. La tarea está en estado de espera: no se ha recibido instrucción del señor Rafael sobre si el inventario se facturará, se dejará como envío sin factura u otro tratamiento.
+            - Seguimiento del inventario de activos enviados por Eracon Salud a SERAC durante 2025 (camillas, bombonas, ambulancias, medicamentos, desfibriladores, equipos de electroshock), para determinar si procede emitir facturación intercompany. La tarea está en estado de espera: no se ha recibido instrucción de Enrique Rafael Cid sobre si el inventario se facturará, se dejará como envío sin factura u otro tratamiento.
         - ¿Para qué se hace?
             - Para mantener el registro y control de los activos transferidos entre entidades relacionadas, y habilitar la facturación intragrupo cuando se reciba instrucción de la Gerencia General.
         - ¿Qué roles ejecutan esta tarea?
@@ -1510,7 +1524,7 @@ Creado: 17 de marzo de 2026 11:54
             - Disparador: instrucción de Enrique Rafael Cid sobre el tratamiento del inventario enviado por Eracon Salud.
             - Frecuencia: no es recurrente; es una actividad de seguimiento puntual bloqueada a la espera de decisión.
         - ¿Cómo se hace?
-            - Paso 1: Levantar el inventario de lo que se envió a Tucacas como activo (camillas, ambulancias, medicamentos, entre otros) y validar con el señor Rafael si eso se facturará fiscalmente o se dejará sin facturación.
+            - Paso 1: Levantar el inventario de lo que se envió a Tucacas como activo (camillas, ambulancias, medicamentos, entre otros) y validar con Enrique Rafael Cid si eso se facturará fiscalmente o se dejará sin facturación.
         - ¿Qué necesitan para hacer esta tarea?
             - Instrucción formal de Enrique Rafael Cid sobre el tratamiento del inventario.
             - Inventario detallado de activos enviados por Eracon Salud durante 2025.
@@ -1557,16 +1571,3 @@ Creado: 17 de marzo de 2026 11:54
         - Pendiente.
 
 ---
-
-# Propuestas de Adición — Tareas Identificadas en Sesión No Incluidas en Inventario
-
-Existe 1 tarea documentada en la transcripción de sesión que no está incluida en el Inventario original. Propongo agregar:
-
-**Nueva tarea: Supervisión y Conciliación de Ventas Ejecutadas por Cashea**
-
-- Descripción: Ericka Milagro Antequera accede a su usuario en Cashea, verifica las órdenes creadas (incluidas ventas iniciadas por Recepción del hotel), verifica la periodicidad de pago y la morosidad de los huéspedes. En función del comportamiento de pago, Cashea puede cobrar a SERAC un 4% (si los huéspedes pagaron bien) o SERAC puede recibir un pago de Cashea (si los huéspedes fueron morosos). Las facturas de compra (4% a pagar a Cashea) llegan por correo electrónico.
-- Fuente: Transcripción de sesión CCS (líneas 1h37:10 - 1h39:28).
-- Disparador: bajo demanda; recepción notifica ventas por WhatsApp o Ericka verifica directamente en Cashea.
-- Roles: Ericka Milagro Antequera (supervisión y conciliación); Recepción Hotel (ejecuta venta en Cashea).
-- Sistemas: Cashea (plataforma de ventas), correo electrónico (recepción de facturas), Odoo (conciliación).
-- ⚠️ Pendiente: confirmar si esta tarea aplica al alcance de este AS-IS (CCS / SERAC hotel) o corresponde a otra unidad de negocio, y si debe incluirse en el Inventario formal.
