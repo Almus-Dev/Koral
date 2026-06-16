@@ -1,0 +1,1612 @@
+{
+ "proyecto": "Koral Morrocoy (Hotel)",
+ "estado": "Borrador",
+ "total_propuestas": 62,
+ "total_nativas": 43,
+ "total_desarrollos": 10,
+ "propuestas": [
+  {
+   "id": "PROP-NAT-001",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-001"
+   ],
+   "descripcion": "Unificar el alta del proveedor en un unico contacto-proveedor con su RIF, datos bancarios conformes y porcentaje de retencion calificado, eliminando los registros temporales con cuenta personal.",
+   "modulos": "Purchase, Accounting",
+   "anclas": [
+    "[ODOO:19.0/purchase/vendor-bills]",
+    "[L10N:l10n-ve/retenciones]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "Proveedores juridicos se registran con cuentas personales y se aceptan pagos moviles sin cuenta completa, situacion que el AS-IS marca como no conforme al criterio de la empresa y que Contraloria exige corregir; complica ademas las conciliaciones de Administracion."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Al crear un proveedor se valida el porcentaje de retencion calificado en el portal del SENIAT antes de habilitarlo para procesar facturas."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-002",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-002"
+   ],
+   "descripcion": "Mantener un maestro unico de productos con categorias que definan las cuentas contables por defecto y variantes por atributos, sustituyendo la asignacion por criterio del equipo y la actualizacion en paralelo en varios sistemas.",
+   "modulos": "Inventory, Accounting, Sales",
+   "anclas": [
+    "[ODOO:19.0/accounting/chart-of-accounts]",
+    "[ODOO:19.0/accounting/taxes]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "Las categorias de productos se asignaron segun el mejor criterio del equipo y no necesariamente reflejan el tratamiento contable correcto; la revision de cuentas en cada factura corrige manualmente esa configuracion."
+    },
+    {
+     "depto": "COM",
+     "texto": "No existe lista oficial aprobada por Administracion y Contabilidad sobre que productos son almacenables o consumibles; el criterio depende de interpretaciones por area."
+    },
+    {
+     "depto": "AFL",
+     "texto": "Los productos se crean y los precios se actualizan por separado en Odoo, Cloudbeds y Poster, lo que permite discrepancias entre el precio cobrado y el registrado."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-003",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-003"
+   ],
+   "descripcion": "Centralizar el abastecimiento externo en solicitudes de cotizacion a multiples proveedores y ordenes de compra, con acuerdos marco para proveedores recurrentes, en lugar de transcribir compras por indicacion directa sin comparacion de precios.",
+   "modulos": "Purchase",
+   "anclas": [
+    "[ODOO:19.0/purchase/purchase-order]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "Solo cerca del 10% de las compras pasa por analisis de precio; el 90% restante se transcribe segun la indicacion de Gerencia General sobre a que proveedor comprar, sin presupuesto comparativo."
+    },
+    {
+     "depto": "COM",
+     "texto": "Las condiciones y precios fijos de proveedores constantes se configuran en Odoo, permitiendo generar pedidos recurrentes de forma rapida sin renegociar cada vez."
+    },
+    {
+     "depto": "COC",
+     "texto": "La solicitud de compra que hoy gestiona el almacen cuando no tiene existencia podria originarse desde reglas de reabastecimiento."
+    },
+    {
+     "depto": "OPE",
+     "texto": "La solicitud de materiales faltantes se canaliza a traves de almacen y no directamente al departamento de compras, lo que el equipo senala como ruta incorrecta que anade demora a las reparaciones."
+    },
+    {
+     "depto": "BAR",
+     "texto": "Cuando Almacen no tiene el producto solicitado se gestiona una solicitud de compra, pero no existe sistema que avise al Capitan hasta que el producto llega fisicamente al mostrador."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "Compras que ocurren sin orden previa obligan a montar un pedido a posteriori para dar cobertura contable, generando pedidos abiertos sin receptor formal y retrabajo."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-004",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-004"
+   ],
+   "descripcion": "Registrar las requisiciones internas de reposicion de los departamentos hacia almacen como solicitudes con flujo de aprobacion, sustituyendo el conteo en papel, la lista por WhatsApp y la firma fisica de Gerencia.",
+   "modulos": "Purchase, Inventory",
+   "anclas": [
+    "[ODOO:19.0/purchase/purchase-order]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "El conteo semanal de viveres, la lista de reposicion y la aprobacion de Gerencia se llevan en papel y se comunican por WhatsApp, sin registro en Odoo del flujo de requisicion-aprobacion."
+    },
+    {
+     "depto": "CAJ",
+     "texto": "El formato manual se anula y rehace completo ante tachaduras, enmiendas o corrector, y circula fisicamente para recabar firma de autorizacion, generando traslados y reprocesos."
+    },
+    {
+     "depto": "COC",
+     "texto": "La solicitud de insumos depende de un formato fisico numerado que debe circular para recabar la firma de Gerencia de Operaciones; si el autorizador no esta presente, la firma queda pendiente y se retrasa la salida de insumos."
+    },
+    {
+     "depto": "BAR",
+     "texto": "La requisicion se llena en papel, circula para recabar la firma de autorizacion de Gerencia de Operaciones y luego se presenta en Almacen para la firma de entrega; un formato fisico que viaja entre areas puede traspapelarse."
+    },
+    {
+     "depto": "GHO",
+     "texto": "A&B, Ama de Llaves y Lavanderia entregan requisiciones en papel que se firman a criterio visual; cocina hace multiples pedidos por semana y lavanderia no lleva control de consumo por ciclo."
+    },
+    {
+     "depto": "OPE",
+     "texto": "La solicitud de insumos a almacen y la entrega de herramientas desde el taller se manejan con formatos fisicos o de forma directa, sin registro."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-005",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-005"
+   ],
+   "descripcion": "Ejecutar la recepcion de mercancia como albaran de entrada validado contra la orden de compra y el documento del proveedor antes de confirmar, dando entrada al stock y habilitando la facturacion solo sobre el pedido corregido.",
+   "modulos": "Inventory, Purchase",
+   "anclas": [
+    "[ODOO:19.0/inventory/delivery-picking]",
+    "[ODOO:19.0/purchase/vendor-bills]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "El almacen compara la mercancia fisica contra el pedido en Odoo y contra el documento del proveedor, corrige el pedido en Odoo antes de confirmar la recepcion y solo entonces Administracion factura."
+    },
+    {
+     "depto": "COC",
+     "texto": "La recepcion de agua, gas y mercancia que hoy ejecuta Gerencia podria asignarse al area con acceso al sistema mediante el registro de recepciones."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "La norma de que todo pedido pase primero por Almacen con firmas, sellos y documento de entrega corrigio el extravio de documentos y la desvinculacion factura-mercancia."
+    },
+    {
+     "depto": "AFL",
+     "texto": "La recepcion de pedidos y las expediciones entre almacen general y administracion ya se gestionan en Odoo y se sostienen sobre el modulo de inventario, hoy con datos en depuracion."
+    },
+    {
+     "depto": "GHO",
+     "texto": "El agua, el gas y los servicios de reparacion se reciben en Odoo cuando el rol gerencial tiene tiempo; a veces se entera dias despues por factura, retrasando el registro y el pago."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-006",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-006"
+   ],
+   "descripcion": "Modelar el despacho a departamentos internos y la entrega de herramientas como transferencias internas de inventario entre ubicaciones, en lugar del formato fisico que se rehace por errores.",
+   "modulos": "Inventory",
+   "anclas": [
+    "[ODOO:19.0/inventory/warehouses-locations]",
+    "[ODOO:19.0/inventory/delivery-picking]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "La salida de mercancia a los departamentos exige requisicion por escrito y se registra como salida de inventario en Odoo, dando respaldo documental al movimiento."
+    },
+    {
+     "depto": "CAJ",
+     "texto": "El movimiento entre sub-almacen de caja y almacen general puede modelarse como transferencia interna con autorizacion, en lugar de formato fisico que se rehace por errores."
+    },
+    {
+     "depto": "BAR",
+     "texto": "El flujo de requisicion fisica con firmas podria manejarse como una solicitud interna de reabastecimiento entre ubicaciones, con su autorizacion registrada, eliminando el traslado del papel entre areas."
+    },
+    {
+     "depto": "OPE",
+     "texto": "La solicitud de insumos a almacen y la salida de material podrian gestionarse como requisiciones y movimientos de inventario, evitando que el operador descubra el faltante en sitio."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-007",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-007"
+   ],
+   "descripcion": "Configurar ubicaciones internas dentro del almacen reflejando el esquema fisico por tipo de producto, en lugar de operar un almacen general unico sin ubicaciones.",
+   "modulos": "Inventory",
+   "anclas": [
+    "[ODOO:19.0/inventory/warehouses-locations]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "La mercancia se ubica fisicamente por tipo de producto, pero Odoo opera con un almacen general unico sin ubicaciones especificas configuradas."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-008",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-008"
+   ],
+   "descripcion": "Llevar el conteo, el inventario ciclico y el ajuste de existencias dentro del modulo de inventario, sustituyendo las hojas fisicas y resolviendo la desalineacion entre el fisico y el sistema mediante recuentos y ajustes registrados.",
+   "modulos": "Inventory",
+   "anclas": [
+    "[ODOO:19.0/inventory/warehouses-locations]",
+    "[ODOO:19.0/inventory/lots-serial]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COM",
+     "texto": "Odoo contiene registros desde 2024 y parte de 2025 que no reflejan el inventario fisico real; el almacenista no puede validarlos y realiza el conteo exclusivamente en fisico hasta una toma fisica formal."
+    },
+    {
+     "depto": "CTR",
+     "texto": "Existe un flujo definido y recurrente de seleccion de productos, conteo fisico con el almacenista, verificacion contra sistema y ajuste, con notificacion a gerencia."
+    },
+    {
+     "depto": "CAJ",
+     "texto": "Las verificaciones de nevera, vitrina y almacen de caja (tres veces al dia) se registran en hoja manual sin calculo automatico de reposicion ni respaldo en sistema."
+    },
+    {
+     "depto": "COC",
+     "texto": "La verificacion de stock para cada servicio y el inventario diario del almacen de cocina se hacen por conteo fisico contra un stock ideal anotado a mano, sin sistema."
+    },
+    {
+     "depto": "BAR",
+     "texto": "El inventario de productos, el de barra y el de plateria y manteleria se realizan en libreta o conteo fisico, sin registro digital."
+    },
+    {
+     "depto": "AFL",
+     "texto": "El inventario presenta productos duplicados y referencias incorrectas en depuracion, y la supervision es aleatoria sobre cinco o seis productos sin frecuencia fija."
+    },
+    {
+     "depto": "GHO",
+     "texto": "Las ventas a huespedes registradas en Cloudbeds generan el descuento automatico del stock; el inventario mensual se contrasta fisicamente contra el sistema."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-009",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-009"
+   ],
+   "descripcion": "Definir reglas de reabastecimiento por stock minimo que disparen la reposicion antes del agotamiento, en lugar de la verificacion manual y el calculo mental de disponibilidad.",
+   "modulos": "Inventory, Purchase",
+   "anclas": [
+    "[ODOO:19.0/purchase/purchase-order]",
+    "[ODOO:19.0/inventory/warehouses-locations]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "BAR",
+     "texto": "La confirmacion de que cocina tiene stock suficiente se hace de forma manual y por comunicacion verbal o radio, usando la lista de huespedes como referencia para estimar mentalmente; no hay visibilidad sistematizada del agotamiento de un item."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-DEV-001",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-010"
+   ],
+   "descripcion": "Disponer de un punto de venta de restaurante que registre la comanda, asigne mesa o habitacion y enrute el pedido a la estacion de preparacion, sustituyendo la comanda en papel, la doble digitacion y la impresion centralizada en caja.",
+   "modulos": "Point of Sale, Restaurant",
+   "anclas": [
+    "[DEV:pos-restaurante-fiscal-ve]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CAJ",
+     "texto": "Caja imprime todas las comandas de cocina y barra porque la impresora de cocina esta fuera de servicio; el flujo directo tablet-a-cocina existia antes y dejo de operar, anadiendo carga e intermediacion a caja."
+    },
+    {
+     "depto": "BAR",
+     "texto": "El mesonero anota el pedido a mano y lo traslada fisicamente a Caja, donde recien se digita en Poster; la tablet existe pero no se usa por limitaciones de red, y la impresora de cocina esta fuera de servicio."
+    },
+    {
+     "depto": "COC",
+     "texto": "Almuerzo, snacks y cena dependen de comanderos fisicos que el mesero traslada caminando a cocina; no hay medicion de tiempos pedido-despacho y los tickets pueden mojarse o perderse."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale/restaurant.html (nucleo no-fiscal)",
+   "validacion": "POS restaurante (mesas, ruteo a cocina) existe nativo, pero la VENTA emite documento fiscal: El nucleo POS de Odoo es nativo, pero la emision fiscal venezolana (maquina/impresora fiscal homologada, IGTF en ticket, correlativos y formatos fiscales) NO es nativa; requiere desarrollo/integracion de localizacion fiscal VE."
+  },
+  {
+   "id": "PROP-DEV-002",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-011"
+   ],
+   "descripcion": "Cerrar el turno de A&B con arqueo de sesion y entrega de guardia en el punto de venta, sustituyendo el cuaderno de novedades y los traspasos informales.",
+   "modulos": "Point of Sale",
+   "anclas": [
+    "[ODOO:19.0/pos/use#close-register]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CAJ",
+     "texto": "El traspaso de turno y la verificacion de fondo de caja que hoy se anotan en cuaderno de novedades corresponden al cierre de sesion y arqueo nativo del POS."
+    },
+    {
+     "depto": "BAR",
+     "texto": "La entrega de guardia se sustenta en anotaciones informales en la Libreta de Faltantes, el libro de novedades fisico y mensajes de WhatsApp; no existe un acta formal de entrega."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale/use.html",
+   "validacion": "Cierre de sesion con arqueo y diferencia de efectivo nativo."
+  },
+  {
+   "id": "PROP-DEV-003",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-012"
+   ],
+   "descripcion": "Cargar el consumo del huesped desde el punto de venta de A&B al folio de la habitacion para cobro al check-out, sustituyendo el envio Poster-Clover y el control manual de check-outs para no perder cargos.",
+   "modulos": "Point of Sale, Hotel/PMS",
+   "anclas": [
+    "[DEV:room-charge-folio]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CAJ",
+     "texto": "El envio del consumo de Poster a Clover para cargar a la habitacion apunta a la capacidad de facturar/diferir el cargo a un cliente o folio en el POS."
+    },
+    {
+     "depto": "CAJ",
+     "texto": "Si recepcion no avisa el check-out a tiempo o el envio digital a Clover falla, una comanda puede quedar sin trasladar y el huesped sale sin que se cargue su consumo."
+    },
+    {
+     "depto": "GHO",
+     "texto": "El servicio se cobra exclusivamente por pago movil a la cuenta de los mesoneros; cuando el huesped paga por PDV, se generan dos pagos y una devolucion gestionada con Administracion."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(sin PMS oficial)",
+   "validacion": "Cargo de consumo POS al folio de habitacion requiere PMS de terceros o desarrollo."
+  },
+  {
+   "id": "PROP-DEV-004",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-013"
+   ],
+   "descripcion": "Relacionar cada plato con sus insumos mediante recetas/escandallos que descuenten la materia prima al producir, sustituyendo el calculo manual de raciones del mise en place.",
+   "modulos": "Manufacturing",
+   "anclas": [
+    "[ODOO:19.0/mrp/bom-configuration]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COC",
+     "texto": "El calculo de raciones por ingrediente en el mise en place y el descuento de insumos al producir podria apoyarse en listas de materiales/recetas que relacionan plato e insumos."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/manufacturing/basic_setup/bill_configuration.html",
+   "validacion": "BOM/escandallos con consumo de componentes nativo (descuento por venta POS para A&B)."
+  },
+  {
+   "id": "PROP-NAT-010",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-014"
+   ],
+   "descripcion": "Registrar la produccion de proteinas de carniceria y sus descartes como movimientos de ajuste/desecho de inventario, dando seguimiento historico de merma sobre el insumo de mayor valor.",
+   "modulos": "Inventory",
+   "anclas": [
+    "[ODOO:19.0/inventory/lots-serial]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "COC",
+     "texto": "El conteo de proteinas procesadas se registra a mano en hojas de produccion y la merma se controla por revision manual contra el peso inicial; las diferencias se escalan a Gerencia, pero no hay registro estructurado que permita seguimiento historico de mermas."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-011",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-015"
+   ],
+   "descripcion": "Controlar el prestamo de cavas al huesped mediante numeros de serie y un registro de salida y devolucion, en lugar del listado manual sin identificacion univoca.",
+   "modulos": "Inventory",
+   "anclas": [
+    "[ODOO:19.0/inventory/lots-serial]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CAJ",
+     "texto": "El prestamo de cavas se gestiona en un listado manual exclusivo de caja, sin numero grabado por cava ni registro digital; el AS-IS senala que no se lleva orden ni conteo y que el huesped podria devolver una distinta sin que se note."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-012",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-016"
+   ],
+   "descripcion": "Registrar el efectivo de los cierres de turno de cada punto de venta en los diarios de caja y conciliar el efectivo entregado contra los reportes del sistema y los comprobantes, formalizando la doble revision.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/accounting/customer-invoice]",
+    "[ISO:9001:2015 §8.5.1]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFL",
+     "texto": "Cada cierre de turno se valida primero por el punto de venta (recepcion o A&B) y luego por Administracion, cruzando el sistema (Cloudbeds/Poster) contra el efectivo fisico, los reportes de punto de venta bancario y los comprobantes electronicos antes de aceptar la entrega."
+    },
+    {
+     "depto": "GHO",
+     "texto": "El cierre de turno se consolida en Excel y se publica en Teams; el control de redobles depende de una agenda fisica."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-013",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-017"
+   ],
+   "descripcion": "Registrar el cobro del huesped como recibo de cobro vinculado a su factura una vez confirmado el ingreso en banco, eliminando el triple registro manual (Cloudbeds, Odoo, Teams) del mismo pago.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/accounting/customer-invoice]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "Cada pago se carga en Cloudbeds, luego en Odoo (recibo de cliente) y luego se copia/pega en una carpeta de Microsoft Teams con el comprobante adjunto. La misma transaccion se reescribe en tres entornos sin integracion."
+    },
+    {
+     "depto": "AFL",
+     "texto": "Ningun pago movil o transferencia se da por valido hasta confirmarse su ingreso real en el portal del banco, dato que se devuelve sobre el propio comprobante."
+    },
+    {
+     "depto": "AFL",
+     "texto": "Como la caja de A&B no tiene usuario de Odoo, Administracion registra manualmente cada recibo de cobro (uno por pago) y la factura de consumos al cierre, duplicando el trabajo ya capturado en Poster."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-DEV-005",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-018"
+   ],
+   "descripcion": "Importar los extractos bancarios y los lotes de POS y conciliarlos contra los recibos y pagos mediante reglas de conciliacion, sustituyendo el cotejo manual de extractos, comisiones y tasas.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/finance/accounting/bank/transactions]",
+    "[ODOO:19.0/finance/accounting/bank/reconciliation]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "El cotejo manual de extractos, comisiones y EDC podria apoyarse en la conciliacion bancaria de Odoo con reglas de conciliacion."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "La conciliacion pago-extracto es diaria y la ejecutan varios roles; los pagos devueltos no detectados a tiempo generan notas de debito, disputas y retrabajo que toman de dias a semanas."
+    },
+    {
+     "depto": "AFL",
+     "texto": "El cruce manual de extractos descargados de Banesco, Banplus, Bancamiga y Banco Exterior, y de lotes de Credicard, contra los recibos de cobro podria apoyarse en la conciliacion nativa con importacion de extractos bancarios."
+    },
+    {
+     "depto": "RRH",
+     "texto": "La conciliacion se valida en Odoo pero los estados de CxC por trabajador se mantienen manualmente en Excel, generando desfases temporales entre ambos."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community (import) / Enterprise (sync auto)",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
+   "validacion": "Importacion de extractos (CAMT/CSV/OFX/QIF) + reglas de conciliacion nativo; pagos POS via diarios puente."
+  },
+  {
+   "id": "PROP-DEV-006",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-019"
+   ],
+   "descripcion": "Conciliar los recibos de efectivo y de divisas digitales contra extractos de caja y de plataformas, y distinguir el estado de factura pagada de la conciliacion pendiente, sin crear los extractos a mano.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/finance/accounting/bank/reconciliation]",
+    "[DEV:integracion-plataformas-divisas]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFL",
+     "texto": "A diferencia del extracto bancario importable, los extractos de la caja fisica y de las plataformas de divisas (PayPal, Binance, Zelle) se crean manualmente en Odoo antes de poder conciliar los recibos de cobro."
+    },
+    {
+     "depto": "AFL",
+     "texto": "Una factura con saldo cero pero sin conciliar permanece en En proceso de pago en lugar de Pagada, generando confusion operativa sobre el estado real del cobro."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/finance/accounting/bank/reconciliation.html",
+   "validacion": "Conciliacion caja/multimoneda nativa; integracion con plataformas de divisas digitales = desarrollo."
+  },
+  {
+   "id": "PROP-NAT-014",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-020"
+   ],
+   "descripcion": "Emitir las facturas de venta de los servicios del hotel con el motor de impuestos y la gestion multimoneda del sistema, discriminando la base imponible del IVA sin Excel externo.",
+   "modulos": "Accounting, Sales",
+   "anclas": [
+    "[ODOO:19.0/accounting/customer-invoice]",
+    "[ODOO:19.0/accounting/taxes]",
+    "[NORMA:LIVA Art. 20, 28-29]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFL",
+     "texto": "Para cada factura se descarga la cuenta del cliente a un Excel auxiliar donde se calcula la tasa promedio de pagos en distintas fechas y se discrimina la base imponible, porque Odoo recibe la base y no el total con IVA."
+    },
+    {
+     "depto": "AFL",
+     "texto": "Todas las facturas (recepcion, A&B, estacionamiento, Marina, arrendamientos) se emiten como facturas de contingencia y se imprimen en impresora comun por no contar con maquina fiscal integrada."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-015",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-021"
+   ],
+   "descripcion": "Sostener tarifas por segmento (agencias, grupos) y reglas de descuento en listas de precio sobre el catalogo unico, reduciendo la consulta caso por caso a presidencia y la desincronizacion del menu.",
+   "modulos": "Sales",
+   "anclas": [
+    "[ODOO:19.0/sales/pricelists]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "Comisiones de agencias, descuentos de grupos/eventos y compensaciones se consultan individualmente con presidencia/gerencia, sin tabla de tarifas o descuentos predefinida; la demora hace perder clientes."
+    },
+    {
+     "depto": "AFL",
+     "texto": "El menu impreso en Canva puede quedar desincronizado de los precios de Poster, obligando a reimprimir y arriesgando cobrar un precio distinto al registrado."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-016",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-022"
+   ],
+   "descripcion": "Gestionar las cuentas por pagar por vencimiento y antiguedad de saldos directamente sobre las facturas de proveedor, e incorporar las obligaciones recurrentes, sustituyendo la plantilla manual de Excel y el reporte diario por WhatsApp.",
+   "modulos": "Accounting, Purchase",
+   "anclas": [
+    "[ODOO:19.0/purchase/vendor-bills]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFJ",
+     "texto": "La relacion de CxP se mantiene manualmente en Excel porque el modulo de Compras contiene pedidos basura que impiden extraer la informacion directa del sistema; la actualizacion se hace tres veces al dia."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "Facturas de proveedores con factura directa y servicios fijos mensuales (CORPOELEC, TELMACA, seguridad) deben cargarse a mano en el Excel o quedan fuera de la planificacion de pagos."
+    },
+    {
+     "depto": "CCS",
+     "texto": "La planificacion de pagos depende de una plantilla manual de cuentas por pagar en Excel para identificar vencimientos y priorizar, manteniendo doble gestion respecto del sistema contable."
+    },
+    {
+     "depto": "COM",
+     "texto": "El estado de los pedidos (cerrados, por facturar, por recibir) se revisa al cierre de cada quincena cruzando los modulos de Compras e Inventario, y se entrega informe al tesorero."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-017",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-023"
+   ],
+   "descripcion": "Registrar la factura de proveedor, ejecutar el pago contra el pedido autorizado y aplicar/conciliar la partida en el sistema, cerrando el ciclo de compra a pago.",
+   "modulos": "Accounting, Purchase",
+   "anclas": [
+    "[ODOO:19.0/purchase/vendor-bills]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFJ",
+     "texto": "La revision documental contra requisitos SENIAT y la verificacion de tasa de cambio antes de registrar funcionan como control de calidad robusto en el primer eslabon."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Todo pago a proveedores se verifica contra un pedido previamente autorizado por la Gerencia General antes de ejecutarse desde la plataforma bancaria."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Las 23 tarjetas se pagan una a una con un archivo manual y la conciliacion se imputa tarjeta por tarjeta; no existe un sistema interno que mida el estado de corte de cada tarjeta."
+    },
+    {
+     "depto": "AFL",
+     "texto": "Todo pago a proveedores o empleados desde la caja principal exige autorizacion previa de la Gerencia General, recibo fisico firmado por el receptor y conciliacion posterior en Odoo por el area responsable."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-018",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-024"
+   ],
+   "descripcion": "Registrar los anticipos a proveedor y aplicarlos a la factura como partidas pendientes del sistema, facilitando la depuracion de los saldos antiguos abiertos.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/purchase/vendor-bills]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFJ",
+     "texto": "El control de pagos anticipados se apoya en una carpeta local del computador y en recordatorios; la depuracion de saldos de anticipo 2023-2024 es compleja y voluminosa, y los anticipos antiguos quedan abiertos distorsionando el balance."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-019",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-025"
+   ],
+   "descripcion": "Diferenciar contablemente las deudas y pagos con socios respecto de los proveedores externos y registrar las cuentas por cobrar a socios, evitando que distorsionen el saldo de proveedores.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/accounting/chart-of-accounts]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "Los asientos de facturas pagadas por los socios se acumulan como CxP a proveedor cuando la deuda real es con el socio que efectuo el pago, distorsionando el saldo de proveedores y la posicion real de CxP."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-020",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-026"
+   ],
+   "descripcion": "Procesar las devoluciones por error de costo o cantidad mediante notas de credito y reversiones, en lugar de la deteccion tardia y devolucion manual.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/accounting/credit-debit-notes]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "Los errores de costo o cantidad se detectan al procesar la factura, 7 a 15 dias despues de que Compras monto el pedido y Almacen lo recepciono, generando devoluciones que retrasan el pago al proveedor."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-021",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-027"
+   ],
+   "descripcion": "Generar los comprobantes y archivos de retencion de IVA e ISLR con la localizacion fiscal venezolana, eliminando la correccion manual de XML y la macro externa, y registrar el seguimiento de reembolsos de retencion.",
+   "modulos": "Accounting (localizacion VE)",
+   "anclas": [
+    "[ODOO:19.0/accounting/withholding-taxes]",
+    "[L10N:l10n-ve/retenciones]",
+    "[NORMA:retencion IVA/ISLR contribuyente especial SENIAT]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "La version actual de Odoo genera XML invalido cuando una factura tiene mas de dos impuestos o base imponible alterada, lo que obliga a correccion manual antes de enviar al contador, bajo riesgo de rechazo del SENIAT."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Odoo no genera el XML de retencion sobre nomina; se produce con una macro manual y se fusiona con el XML de compras, proceso enteramente manual de consolidacion."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "La generacion, validacion quincenal y emision del certificado de retencion ya se apoyan en Odoo; la localizacion fiscal venezolana es el marco nativo para sostener este flujo."
+    },
+    {
+     "depto": "AFL",
+     "texto": "El registro de los comprobantes de retencion de contribuyentes especiales corresponde a la funcionalidad de retenciones de la localizacion fiscal venezolana."
+    },
+    {
+     "depto": "COM",
+     "texto": "La recuperacion de retenciones de IVA/ISLR ante proveedores que exigen pago completo se gestiona solo por correo con insistencia manual, sin mecanismo formal de seguimiento."
+    },
+    {
+     "depto": "RRH",
+     "texto": "Elaboracion de archivo XML para declaracion de retenciones ISLR."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-022",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-028"
+   ],
+   "descripcion": "Producir el libro de compras del periodo y soportar el cierre fiscal quincenal desde el diario contable, reduciendo el escaneo, conteo y enumeracion manual de documentos.",
+   "modulos": "Accounting (localizacion VE)",
+   "anclas": [
+    "[L10N:l10n-ve/libros-fiscales]",
+    "[NORMA:contribuyente especial IVA quincenal SENIAT]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFJ",
+     "texto": "El conteo exacto de facturas escaneadas contra las declaradas y la numeracion del libro de compras solo cuando el periodo esta cerrado garantizan que el libro a declarar sea integro."
+    },
+    {
+     "depto": "CTR",
+     "texto": "Los libros de IVA compras y ventas no cuadran cada mes, generando inconsistencias en los libros fiscales."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-023",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-029"
+   ],
+   "descripcion": "Bloquear las fechas de los periodos contables cerrados para impedir la modificacion retroactiva y emitir los libros legales (diario, mayor, inventario) exigidos por el Codigo de Comercio.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/accounting/chart-of-accounts]",
+    "[NORMA:Codigo de Comercio Art. 32-34]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CTR",
+     "texto": "Los reportes descargados no son confiables porque periodos anteriores siguen siendo modificados, alterando cifras de reportes ya emitidos e invalidando analisis previos."
+    },
+    {
+     "depto": "CTR",
+     "texto": "Falta incorporar libro diario, libro de inventario y balance; el Codigo de Comercio exige impresion mensual y no se cumple por ausencia de cierres."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-024",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-030"
+   ],
+   "descripcion": "Registrar los aportes parafiscales y municipales de fecha fija (FONACIT, INATUR, Alcaldia, INPARQUES, aseo urbano, VACC) como obligaciones contables con su base y vencimiento, evitando multas por incumplimiento de plazo.",
+   "modulos": "Accounting (localizacion VE)",
+   "anclas": [
+    "[NORMA:obligaciones parafiscales y municipales VE]",
+    "[L10N:l10n-ve/impuestos-municipales]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "INPARQUES (dia 5), INATUR (dia 5), Alcaldia Silva (dia 15), VACC (dia 10) y la facturacion intercompany de Eracon Alimentos tienen plazos estrictos cuyo incumplimiento genera multa."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-025",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-031"
+   ],
+   "descripcion": "Soportar el cumplimiento parafiscal laboral y las declaraciones de tributos sobre nomina (ARC/ARI, IPP, ISLR/IGP) con el mecanismo de retenciones de la localizacion venezolana.",
+   "modulos": "Accounting (localizacion VE)",
+   "anclas": [
+    "[ODOO:19.0/accounting/withholding-taxes]",
+    "[L10N:l10n-ve/retenciones]",
+    "[NORMA:LOTTT — obligaciones parafiscales del empleador]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "El area ejecuta un ciclo definido de revision, validacion, solicitud de compromiso de pago y archivo para IVSS, INCES, FAOV y MPPPST, con documentacion consolidada en la carpeta Oslo."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Los cierres y cuadres no razonables en Odoo obligan a que el contador externo elabore una propuesta de trabajo para declarar ISLR e IGP, dependiendo de un criterio externo en lugar de saldos del sistema."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-DEV-007",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-032"
+   ],
+   "descripcion": "Centralizar el archivo digital ordenado por departamento y periodo y la gestion de notificaciones de entes, sustituyendo el archivo reactivo en nube sin estructura y la busqueda de urgencia ante fiscalizaciones.",
+   "modulos": "Documents",
+   "anclas": [
+    "[ODOO:19.0/productivity/documents]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CTR",
+     "texto": "Desde 2023 la documentacion no se archiva preventivamente; al llegar una fiscalizacion los departamentos buscan y escanean papeles de urgencia, con riesgo de presentar informacion incompleta."
+    },
+    {
+     "depto": "RRH",
+     "texto": "No existe registro interno estandarizado ni flujo con responsables y plazos para atender notificaciones de inspecciones gubernamentales."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "La factura original solo llega despues del pago y los documentos se acumulan hasta el envio trimestral de la valija a Caracas; el incumplimiento en el archivo y disponibilidad en la nube es sancionable."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Existe un acumulado de facturas fiscales de compra y venta pendiente de archivar y ordenar, ejecutado de forma esporadica y con apoyo variable."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Enterprise",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/productivity/documents.html",
+   "validacion": "Documents (Enterprise): workspaces/carpetas, etiquetas, permisos, alias de correo."
+  },
+  {
+   "id": "PROP-DEV-008",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-033"
+   ],
+   "descripcion": "Marcar el seguimiento de la recepcion de la guia SUNAGRO SICA dentro del plazo del portal; capacidad sectorial sin via nativa ni de localizacion disponible.",
+   "modulos": "Externo (SUNAGRO)",
+   "anclas": [
+    "[DEV:integracion-SUNAGRO-SICA]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFJ",
+     "texto": "La guia tiene fecha de vencimiento para su recepcion en el portal; el incumplimiento genera multa y medidas disciplinarias de gerencia."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(portal gubernamental VE)",
+   "validacion": "Seguimiento guia SUNAGRO SICA: portal estatal VE, sin via nativa."
+  },
+  {
+   "id": "PROP-DEV-009",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-034"
+   ],
+   "descripcion": "Calcular y procesar la nomina, las horas extras, los bonos, los descuentos y las liquidaciones con estructuras y reglas salariales del modulo de nomina, sustituyendo las hojas de Excel paralelas.",
+   "modulos": "Payroll",
+   "anclas": [
+    "[ODOO:19.0/hr/payroll]",
+    "[DEV:l10n-ve-payroll]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Todo el procesamiento de pago se realiza en hojas paralelas, con consolidacion, sumatorias y transcripcion manuales sujetas a error y reproceso."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Enterprise",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/payroll.html",
+   "validacion": "Motor de nomina nativo (Enterprise) pero NO hay localizacion VE oficial; reglas LOTTT/IVSS/FAOV/INCES = config/desarrollo o modulo de tercero."
+  },
+  {
+   "id": "PROP-DEV-010",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-035"
+   ],
+   "descripcion": "Generar el archivo de pago bancario de la nomina y las horas extras desde el sistema, sustituyendo la elaboracion manual del TXT y las transferencias individuales.",
+   "modulos": "Payroll, Accounting",
+   "anclas": [
+    "[ODOO:19.0/hr/payroll]",
+    "[DEV:archivo-pago-banco-ve]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Elaboracion de archivo masivo (TXT) para pago de horas extras y nomina; transferencias individuales a colaboradores con cuentas de otros bancos."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Enterprise",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/payroll.html",
+   "validacion": "Pago batch nativo es SEPA; archivo TXT por banco venezolano = desarrollo de formato."
+  },
+  {
+   "id": "PROP-DEV-011",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-036"
+   ],
+   "descripcion": "Registrar la asistencia, los retardos y las horas extras digitalmente para que alimenten el calculo de nomina, sustituyendo Tango Uno, el listado manual y los formatos fisicos.",
+   "modulos": "Attendances",
+   "anclas": [
+    "[ODOO:19.0/hr/attendances]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "La asistencia se lleva entre Tango Uno, un listado manual y Excel; las horas extras circulan en formatos fisicos impresos y distribuidos, con riesgo de descuentos incorrectos por coberturas no notificadas."
+    },
+    {
+     "depto": "GHO",
+     "texto": "El control de redobles depende de una agenda fisica, con riesgo de olvido si no se anota en el momento."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/attendances.html",
+   "validacion": "Asistencia, retardos (tolerancia), horas extra que alimentan nomina, nativo."
+  },
+  {
+   "id": "PROP-DEV-012",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-037"
+   ],
+   "descripcion": "Canalizar la captacion y preseleccion de candidatos en un pipeline unico de reclutamiento con postulaciones y documentacion, sustituyendo la recepcion dispersa de curriculos y la preseleccion sin formato.",
+   "modulos": "Recruitment",
+   "anclas": [
+    "[ODOO:19.0/hr/recruitment]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "La preseleccion se basa en criterio profesional sin formato estructurado; los curriculos llegan por correo, presencial y grupos dispersos, dificultando la comparacion objetiva."
+    },
+    {
+     "depto": "GHO",
+     "texto": "Analisis de perfiles para reclutamiento de recepcion."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/recruitment.html",
+   "validacion": "Pipeline de reclutamiento con etapas, postulaciones y documentacion, nativo."
+  },
+  {
+   "id": "PROP-DEV-013",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-038"
+   ],
+   "descripcion": "Capturar la informacion integral del empleado (salud, carga familiar, estado civil, datos bancarios, foto), el expediente y el organigrama en un registro unico, eliminando la base Excel paralela y la dispersion en multiples repositorios.",
+   "modulos": "Employees, Documents",
+   "anclas": [
+    "[ODOO:19.0/hr/employees]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "La base de datos detallada vive en Excel (activos/egresados) porque Odoo no captura salud, carga familiar, estado civil ni datos bancarios; coexiste con expedientes fisicos, OneDrive/SharePoint y Odoo."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/employees.html",
+   "validacion": "Maestro de empleado (datos personales, bancarios, dependientes, foto), expediente y organigrama nativo."
+  },
+  {
+   "id": "PROP-DEV-014",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-039"
+   ],
+   "descripcion": "Gestionar la incorporacion y el egreso (induccion, contrato, liquidacion, devolucion de activos, baja y revocacion de accesos) como un flujo registrado del empleado, formalizando las aprobaciones hoy verbales.",
+   "modulos": "Employees",
+   "anclas": [
+    "[ODOO:19.0/hr/employees/offboarding]",
+    "[DEV:revocacion-accesos]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "El egreso integra notificacion a departamentos, baja en Odoo y canales, revocacion de accesos por IT y verificacion de devolucion de uniformes y equipos mediante checklist."
+    },
+    {
+     "depto": "RRH",
+     "texto": "La aprobacion final de ingreso por Gerencia General, los cambios de condiciones laborales y varias notificaciones se transmiten verbalmente o por WhatsApp, sin respaldo escrito sistematico."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/employees/offboarding.html",
+   "validacion": "Onboarding/offboarding via planes de actividades nativo; revocacion de accesos/usuario no es paso nativo; liquidacion depende de Payroll."
+  },
+  {
+   "id": "PROP-DEV-015",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-040"
+   ],
+   "descripcion": "Atender permisos, reposos, vacaciones, prestamos y dias libres como solicitudes de ausencia con flujo de aprobacion registrado, sustituyendo los recibos manuales y la planificacion en Excel.",
+   "modulos": "Time Off",
+   "anclas": [
+    "[ODOO:19.0/hr/time_off]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Las solicitudes en recibos manuales y la planificacion de vacaciones en Excel podrian atenderse con solicitudes de ausencia y aprobaciones registradas."
+    },
+    {
+     "depto": "GHO",
+     "texto": "Elaboracion de horarios del departamento y planificacion estrategica de equipos para temporadas altas."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/time_off.html",
+   "validacion": "Permisos, reposos, vacaciones, dias libres con aprobacion y acumulacion, nativo."
+  },
+  {
+   "id": "PROP-DEV-016",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-041"
+   ],
+   "descripcion": "Ejecutar la evaluacion de desempeno por cargo con indicadores y escala dentro del sistema, conservando el mecanismo formal existente.",
+   "modulos": "Appraisals",
+   "anclas": [
+    "[ODOO:19.0/hr/appraisals]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Existen plantillas predeterminadas con 20-25 indicadores por cargo y escala 1-5, aplicadas al cierre del periodo de prueba con participacion del coordinador de area."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/appraisals.html",
+   "validacion": "Evaluacion de desempeno con plantillas, metas y escala, nativo."
+  },
+  {
+   "id": "PROP-DEV-017",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-042"
+   ],
+   "descripcion": "Registrar la entrega y devolucion de uniformes, dotacion y equipos/llaves asignados al personal como activos rastreables, sustituyendo la tabla de ganchos y los cuadernos fisicos.",
+   "modulos": "Employees, Inventory",
+   "anclas": [
+    "[ODOO:19.0/hr/employees/equipment]",
+    "[DEV:flujo-entrega-devolucion-llaves]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Inventario y control de uniformes; entrega de dotacion de equipos."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "El resguardo de llaves se lleva en una tabla fisica de ganchos sin registro de control; el resguardo de equipos asignados y la entrega de equipos danados (cuaderno fisico) carecen de trazabilidad sistematizada."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community (req. Maintenance)",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/employees/equipment.html",
+   "validacion": "Equipos/dotacion como activos asignables nativo (modelo Maintenance); flujo formal entrega/devolucion y llaves fisicas no dedicado."
+  },
+  {
+   "id": "PROP-DEV-018",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-043"
+   ],
+   "descripcion": "Controlar la vigencia de los certificados sanitarios del personal de A&B con actividades programadas que alerten antes del vencimiento.",
+   "modulos": "Employees",
+   "anclas": [
+    "[ODOO:19.0/hr/employees/new_employee]",
+    "[ODOO:19.0/essentials/activities]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Se controla mensualmente la vigencia de certificados de manipulacion de alimentos y de salud del personal de A&B, preparando al area ante visitas de Sanidad."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/employees/new_employee.html",
+   "validacion": "Alerta de vencimiento nativa para permiso/visa (Expires on + Notice Period); certificados sanitarios via mismo mecanismo o Activities."
+  },
+  {
+   "id": "PROP-DEV-019",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-044"
+   ],
+   "descripcion": "Gestionar el ciclo de pasantes (convenio, expediente, horarios, evaluacion final y reporte) como un flujo registrado del area de personal.",
+   "modulos": "Employees, Recruitment",
+   "anclas": [
+    "[ODOO:19.0/hr/recruitment]",
+    "[ODOO:19.0/hr/employees]",
+    "[DEV:convenio-pasantia]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "Entrevistas con universidades y solicitud de documentacion; elaboracion de horarios semanales de pasantes; evaluacion final, carta de culminacion y reporte a la coordinacion universitaria."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/hr/recruitment.html",
+   "validacion": "Pasantes se modela con Recruitment+Employees+Appraisals; el convenio de pasantia especifico = config/desarrollo."
+  },
+  {
+   "id": "PROP-DEV-020",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-045"
+   ],
+   "descripcion": "Marcar el soporte a la gestion de Seguridad y Salud Laboral (politicas SST y comite ante INPSASEL); capacidad regulatoria sin via nativa identificada.",
+   "modulos": "SST",
+   "anclas": [
+    "[DEV:SST-INPSASEL-VE]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "La gestion de politicas SST y el comite de seguridad ante el INPSASEL estan en fase de implementacion, gestionados de forma reactiva y sin plataforma especializada."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(regulatorio VE)",
+   "validacion": "Cumplimiento SST/comite INPSASEL es regulatorio VE; Documents/Surveys soportan evidencia pero el cumplimiento no es nativo."
+  },
+  {
+   "id": "PROP-DEV-021",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-046"
+   ],
+   "descripcion": "Soportar la comunicacion interna, el reporte de incidencias y las comunicaciones de cumpleanos/agasajos con mensajeria interna y actividades programadas, reduciendo la dependencia de WhatsApp como primer canal.",
+   "modulos": "Discuss, Employees",
+   "anclas": [
+    "[ODOO:19.0/productivity/discuss]",
+    "[ODOO:19.0/essentials/activities]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "RRH",
+     "texto": "La coordinacion interna y el reporte de novedades parten de WhatsApp y se formalizan por correo solo despues, con riesgo de novedades que no llegan en tiempo real."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/productivity/discuss.html",
+   "validacion": "Discuss (canales/DM) + Activities programadas nativo; cumpleanos via automatizacion sobre Employees."
+  },
+  {
+   "id": "PROP-DEV-022",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-047"
+   ],
+   "descripcion": "Gestionar reservas, check-in/out, datos de huesped, disponibilidad y estado de limpieza/mantenimiento de habitaciones en un PMS hotelero sobre Odoo, sustituyendo Cloudbeds y resolviendo el estado de habitaciones no confiable.",
+   "modulos": "Hotel/PMS",
+   "anclas": [
+    "[DEV:PMS-hotel-OCA-o-terceros]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "Ama de Llaves no actualiza Cloudbeds en tiempo real, por lo que recepcion debe verificar fisicamente; se reporto la venta de una habitacion sin colchon retirado para mantenimiento."
+    },
+    {
+     "depto": "GHO",
+     "texto": "El registro de huespedes esta descrito paso a paso para entrada por puerta y con reserva previa, con captura de datos de identidad, adjuntos y firma de normativas."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(sin app hotel oficial)",
+   "validacion": "Odoo 19 no tiene PMS hotelero oficial; via OCA (pms) o terceros o desarrollo."
+  },
+  {
+   "id": "PROP-DEV-023",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-048"
+   ],
+   "descripcion": "Vender en las tiendas con un punto de venta enlazado a inventario que descuente stock y disponga de un perfil de cliente generico para visitantes, eliminando la venta en papel y el descuadre de inventario.",
+   "modulos": "Point of Sale, Inventory",
+   "anclas": [
+    "[DEV:pos-tienda-fiscal-ve]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "Las ventas de tienda a visitantes externos se anotan en papel y se ajustan manualmente en Cloudbeds porque no existe un perfil de cliente visitante, lo que descuadra el inventario."
+    },
+    {
+     "depto": "GHO",
+     "texto": "Mercancia comprada por el dueno entra a las tiendas sin factura ni paso por almacen, y la Tienda Playera cobra a cuenta externa del propietario con recibo en papel."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/sales/point_of_sale/use.html (nucleo no-fiscal)",
+   "validacion": "POS de tienda enlazado a inventario es nativo, pero la VENTA emite documento fiscal: El nucleo POS de Odoo es nativo, pero la emision fiscal venezolana (maquina/impresora fiscal homologada, IGTF en ticket, correlativos y formatos fiscales) NO es nativa; requiere desarrollo/integracion de localizacion fiscal VE."
+  },
+  {
+   "id": "PROP-DEV-024",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-049"
+   ],
+   "descripcion": "Marcar la integracion de la programacion de llaves electronicas de habitacion (TT Hotel/Time Locks); capacidad de hardware externo sin via nativa Odoo.",
+   "modulos": "Externo (cerraduras)",
+   "anclas": [
+    "[DEV:integracion-cerraduras-TTHotel]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "Las llaves se programan en TT Hotel o en Time Locks/Lockia segun el tipo de cerradura de la habitacion, con la operacion en transicion hacia cerraduras inteligentes."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(hardware externo)",
+   "validacion": "Programacion de llaves electronicas (TT Hotel): integracion de hardware a medida."
+  },
+  {
+   "id": "PROP-DEV-025",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-050"
+   ],
+   "descripcion": "Centralizar los canales de atencion (mensajeria, correo, telefono) y la gestion de prospectos en un flujo unico con conversion a reserva, conservando la asistencia automatizada y el modo manual de respaldo.",
+   "modulos": "CRM, Livechat",
+   "anclas": [
+    "[ODOO:19.0/sales/crm]",
+    "[ODOO:19.0/websites/livechat]",
+    "[DEV:conversion-a-reserva]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "Visito unifica WhatsApp e Instagram con respuesta por IA y modo manual de respaldo, con conversion a reserva en Cloudbeds."
+    },
+    {
+     "depto": "GHO",
+     "texto": "La IA de Visito responde solicitudes operativas de huespedes hospedados sin que recepcion las vea a tiempo, y no hay telefono en habitacion."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
+   "validacion": "CRM (pipeline) + Live Chat (comando /lead) nativo; conversion a reserva depende de PMS (no nativo)."
+  },
+  {
+   "id": "PROP-DEV-026",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-051"
+   ],
+   "descripcion": "Complementar la resolucion reactiva de quejas con un instrumento de medicion de satisfaccion del huesped.",
+   "modulos": "Surveys",
+   "anclas": [
+    "[ODOO:19.0/marketing/surveys]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "La satisfaccion del cliente se gestiona reactivamente, sin instrumento documentado de medicion."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
+   "validacion": "Encuestas de satisfaccion con envio, scoring y analisis, nativo."
+  },
+  {
+   "id": "PROP-DEV-027",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-052"
+   ],
+   "descripcion": "Soportar la capacitacion del personal nuevo sobre los sistemas y normativas con material disponible y vigente, reduciendo la dependencia de la memoria de un solo rol.",
+   "modulos": "eLearning",
+   "anclas": [
+    "[ODOO:19.0/websites/elearning]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "GHO",
+     "texto": "No existe instructivo actualizado y disponible; la orientacion depende de la memoria y disponibilidad del rol gerencial."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/websites/elearning.html",
+   "validacion": "Cursos con contenidos, quiz y certificacion, nativo."
+  },
+  {
+   "id": "PROP-DEV-028",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-053"
+   ],
+   "descripcion": "Capturar las solicitudes de reparacion como ordenes de mantenimiento con estado y responsable, dando trazabilidad al tiempo de respuesta y al cierre, incluyendo reparaciones con tecnico externo.",
+   "modulos": "Maintenance",
+   "anclas": [
+    "[ODOO:19.0/maintenance/maintenance_requests]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "OPE",
+     "texto": "Las solicitudes de gerencia y de los demas departamentos se reciben por WhatsApp, radio o de forma verbal y no se cargan a ninguna plataforma; no hay trazabilidad del tiempo de respuesta ni del cierre de la falla."
+    },
+    {
+     "depto": "GHO",
+     "texto": "Cada reparacion con tecnico externo se gestiona ad hoc; el tecnico a veces actua de forma autonoma sin notificar, y no hay registro que de seguimiento desde la deteccion del dano hasta el pago."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/maintenance/maintenance_requests.html",
+   "validacion": "Solicitudes de mantenimiento con responsable y etapas, trazabilidad de cierre nativo."
+  },
+  {
+   "id": "PROP-DEV-029",
+   "tipo": "Nativo (parcial)",
+   "grupos_que_atiende": [
+    "GS-054"
+   ],
+   "descripcion": "Registrar los equipos criticos como activos con planes de mantenimiento preventivo por tiempo o uso, sustituyendo la dependencia del criterio individual y la verificacion manual.",
+   "modulos": "Maintenance",
+   "anclas": [
+    "[ODOO:19.0/maintenance/add_new_equipment]",
+    "[DEV:preventivo-por-uso-medidor]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "OPE",
+     "texto": "La planificacion electrica y la atencion de fallas son mayormente reactivas; el trabajo preventivo depende del criterio del operador y no de un calendario por tiempo de uso de los activos."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/maintenance/add_new_equipment.html",
+   "validacion": "Equipos + preventivo por tiempo (MTBF) nativo; preventivo por uso/medidor no documentado nativo."
+  },
+  {
+   "id": "PROP-NAT-026",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-055"
+   ],
+   "descripcion": "Gestionar la solicitud y recepcion de los servicios basicos (agua, gasoil, gas) como orden de compra y recepcion de inventario con control de niveles, sustituyendo la lectura manual y la solicitud bajo demanda.",
+   "modulos": "Purchase, Inventory",
+   "anclas": [
+    "[ODOO:19.0/purchase/purchase-order]",
+    "[ODOO:19.0/inventory/delivery-picking]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "OPE",
+     "texto": "La gestion de niveles de gasoil/gas por lectura manual y solicitud bajo demanda expone al hotel a quedarse sin autonomia energetica o sin gas para cocinas si el proveedor se retrasa."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-DEV-030",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-057"
+   ],
+   "descripcion": "Generar el reporte regulatorio diario de ocupacion e ingresos para Venetur e INATUR a partir de los datos del sistema, reduciendo la reconstruccion nocturna y manual que cruza dos sistemas.",
+   "modulos": "Accounting, Hotel/PMS",
+   "anclas": [
+    "[DEV:reporte-venetur-inatur]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFL",
+     "texto": "El reporte diario a Venetur consolida a mano, en el formato Excel del organismo, los ingresos por categoria de Odoo y los indicadores de ocupacion de Cloudbeds, con plazos nocturnos estrictos en temporada alta."
+    },
+    {
+     "depto": "CCS",
+     "texto": "El cruce de pagos, EDR e informe de obras a Venetur se prepara manualmente, lo que el equipo identifica como riesgo de actas de reparo en futuras revisiones."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(reporte regulatorio VE)",
+   "validacion": "No existe reporte Venetur/INATUR nativo; ingresos salen de Accounting/POS pero ocupacion requiere PMS."
+  },
+  {
+   "id": "PROP-DEV-031",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-058"
+   ],
+   "descripcion": "Marcar la administracion de cuentas y usuarios de las plataformas bancarias con un responsable unico y niveles de aprobacion, separada de la operacion que controla; gestion de acceso externo sin via nativa.",
+   "modulos": "Externo (banca)",
+   "anclas": [
+    "[DEV:gestion-usuarios-banca]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CTR",
+     "texto": "La gestion del usuario master esta dividida entre dos roles (Contraloria y Administracion y Finanzas) sin responsable unico ni niveles de aprobacion definidos."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Apertura de cuentas juridicas y de cuentas nominas."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(externo banca)",
+   "validacion": "Administracion de cuentas/usuarios de plataformas bancarias es externo a Odoo."
+  },
+  {
+   "id": "PROP-NAT-027",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-059"
+   ],
+   "descripcion": "Conciliar las ventas y cuotas gestionadas por Cashea y los lotes de Credicard contra los recibos de cobro y la posicion financiera, formalizando el seguimiento del cierre de lote de los puntos de venta.",
+   "modulos": "Accounting",
+   "anclas": [
+    "[ODOO:19.0/accounting/customer-invoice]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "Verificacion de ordenes y seguimiento de cuotas de ventas del hotel; posicion financiera 4% a pagar / cobro por morosidad."
+    },
+    {
+     "depto": "CCS",
+     "texto": "Seguimiento y actualizacion de puntos de venta del hotel; cierre de lote de puntos de venta."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-NAT-028",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-060"
+   ],
+   "descripcion": "Facturar entre las companias del grupo (Eracon Salud/Alimentos y SERAC) con la facturacion entre companias, sustituyendo la actualizacion manual del inventario intercompany.",
+   "modulos": "Accounting, Inter-company",
+   "anclas": [
+    "[ODOO:19.0/accounting/customer-invoice]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CCS",
+     "texto": "La facturacion recurrente de Eracon Alimentos a SERAC y la eventual de Eracon Salud corresponde a la facturacion entre companias de Odoo."
+    }
+   ],
+   "aliado_experto_sugerido": ""
+  },
+  {
+   "id": "PROP-DEV-032",
+   "tipo": "Nativo Odoo",
+   "grupos_que_atiende": [
+    "GS-061"
+   ],
+   "descripcion": "Soportar la supervision de control de gestion con cuestionarios periodicos por departamento, plan de trabajo y seguimiento de hallazgos y novedades, sustituyendo Word, WhatsApp y el escalamiento informal.",
+   "modulos": "Surveys, Project",
+   "anclas": [
+    "[ODOO:19.0/marketing/surveys]",
+    "[ODOO:19.0/services/project]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "CTR",
+     "texto": "La validacion de gestion por departamento se registra en Word y se comunica por llamada o WhatsApp, sin consolidacion ni resultados en tiempo real."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "El analista detecta, reporta, asigna actividad en Odoo y da seguimiento al cierre de errores de pedidos/facturas originados por otros departamentos."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "Community",
+   "doc_oficial": "https://www.odoo.com/documentation/19.0/applications/marketing/surveys.html",
+   "validacion": "Cuestionarios periodicos (Surveys) + plan de trabajo/seguimiento (Project) nativo."
+  },
+  {
+   "id": "PROP-DEV-033",
+   "tipo": "Desarrollo",
+   "grupos_que_atiende": [
+    "GS-062"
+   ],
+   "descripcion": "Marcar la administracion de usuarios, clientes y metodos de pago de los sistemas de punto de servicio (Cloudbeds, Poster) en tanto persistan como sistemas externos; configuracion de terceros sin via nativa Odoo.",
+   "modulos": "Externo (Cloudbeds/Poster)",
+   "anclas": [
+    "[DEV:integracion-Cloudbeds-Poster]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "AFL",
+     "texto": "Creacion de usuarios en Cloudbeds; configuracion de metodos de pago en Cloudbeds; creacion de usuarios y clientes en Poster."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(sistemas externos)",
+   "validacion": "Administracion de Cloudbeds/Poster: sistemas externos, integracion a medida mientras persistan."
+  },
+  {
+   "id": "PROP-DEV-034",
+   "tipo": "Fuera de alcance",
+   "grupos_que_atiende": [
+    "GS-063",
+    "GS-056"
+   ],
+   "descripcion": "Marcar como fuera del alcance de Odoo las tareas operativas puramente fisicas y el soporte ofimatico general (limpieza, montaje, jardineria, piscina, copias, atencion general); no requieren capacidad del sistema y se documentan para descarte.",
+   "modulos": "Fuera de alcance",
+   "anclas": [
+    "[FUERA-DE-ALCANCE]"
+   ],
+   "hallazgos_rx_resuelve": [
+    {
+     "depto": "OPE",
+     "texto": "Las rutinas diarias de mantenimiento (medicion de cloro/pH, aspiracion y retrolavado, activacion de bombas, limpieza de areas verdes y recoleccion de residuos) tienen disparador, frecuencia y pasos definidos."
+    },
+    {
+     "depto": "AFJ",
+     "texto": "Operaciones de soporte administrativo (copias, sello, POS, equipos) y atencion y asesoramiento al personal y terceros en procesos."
+    },
+    {
+     "depto": "BAR",
+     "texto": "Todas las fases se cierran con limpieza del area y una entrega de guardia que comunica pendientes al turno entrante."
+    }
+   ],
+   "aliado_experto_sugerido": "",
+   "edicion": "-",
+   "doc_oficial": "(n/a)",
+   "validacion": "Tareas fisicas (limpieza, jardineria, piscina) y ofimatica general: no son objeto de Odoo."
+  }
+ ],
+ "total_nativas_parciales": 8,
+ "total_fuera_alcance": 1,
+ "validado_contra": "Documentacion oficial Odoo 19.0 (2026-06-16)"
+}

@@ -1,0 +1,592 @@
+{
+  "proyecto": "Koral Morrocoy (Hotel)",
+  "departamentos": [
+    ["COM", "Compras y Almacen"],
+    ["RRH", "Talento Humano"],
+    ["CTR", "Contraloria"],
+    ["CAJ", "AABB Caja"],
+    ["BAR", "AABB Bar"],
+    ["COC", "AABB Cocina"],
+    ["CCS", "Administracion y Finanzas (CCS)"],
+    ["AFJ", "Administracion y Finanzas (HOTEL-Juan)"],
+    ["AFL", "Administracion y Finanzas (HOTEL-Libny)"],
+    ["GHO", "Gerencia Hotelera"],
+    ["OPE", "Operaciones"]
+  ],
+  "grupos": [
+    {
+      "id": "GS-001",
+      "proceso_normalizado": "Alta y mantenimiento del maestro de proveedores",
+      "criterios": "Dato maestro proveedor (RIF, datos bancarios, % de retencion calificado SENIAT). Mismo objeto contacto-proveedor en Odoo, creado hoy en varios puntos del grupo.",
+      "celdas": {
+        "COM": ["COM-1.1"],
+        "CCS": ["CCS-4.5.1"]
+      }
+    },
+    {
+      "id": "GS-002",
+      "proceso_normalizado": "Alta y mantenimiento del maestro de productos y su clasificacion contable",
+      "criterios": "Dato maestro producto (categoria, atributos/variantes, cuentas por defecto). Mismo registro de producto duplicado entre sistemas; clasificacion almacenable/consumible y cuentas contables.",
+      "celdas": {
+        "COM": ["COM-1.2"],
+        "CCS": ["CCS-4.5.2", "CCS-4.4.5", "CCS-4.4.6"],
+        "AFL": ["AFL-13.1", "AFL-13.2", "AFL-13.5"],
+        "GHO": ["GHO-1.4.5"]
+      }
+    },
+    {
+      "id": "GS-003",
+      "proceso_normalizado": "Cotizacion, comparacion de precios y orden de compra a proveedor",
+      "criterios": "Proceso base de abastecimiento externo: RFQ, comparacion de precios, generacion de orden de compra y solicitud de compra por faltante. Modulo objetivo Purchase.",
+      "celdas": {
+        "COM": ["COM-1.3", "COM-4"],
+        "BAR": ["BAR-4.5"],
+        "COC": ["COC-4.5"],
+        "OPE": ["OPE-3.6"],
+        "AFJ": ["AFJ-1.2"]
+      }
+    },
+    {
+      "id": "GS-004",
+      "proceso_normalizado": "Requisiciones internas y aprobacion de pedidos de reposicion",
+      "criterios": "Solicitud interna de reposicion desde un area hacia almacen, con flujo de aprobacion. Proceso base de requisicion previo a la compra; hoy en papel/WhatsApp.",
+      "celdas": {
+        "COM": ["COM-Alm-1.1", "COM-Alm-1.2", "COM-Alm-1.3", "COM-Alm-1.4", "COM-Alm-1.5", "COM-Alm-1.13"],
+        "CAJ": ["CAJ-3.2", "CAJ-3.3", "CAJ-3.4"],
+        "BAR": ["BAR-4.2", "BAR-4.3"],
+        "COC": ["COC-4.2", "COC-4.3"],
+        "OPE": ["OPE-3.3", "OPE-4.4"],
+        "GHO": ["GHO-3.5", "GHO-4.1", "GHO-5.1"],
+        "AFJ": ["AFJ-8.1"],
+        "AFL": ["AFL-14.1"]
+      }
+    },
+    {
+      "id": "GS-005",
+      "proceso_normalizado": "Recepcion de mercancia y validacion cruzada contra pedido y documento del proveedor",
+      "criterios": "Operacion de entrada de inventario (albaran de recepcion) con validacion contra orden de compra y factura/nota de entrega. Modulo objetivo Inventory.",
+      "celdas": {
+        "COM": ["COM-Alm-1.6", "COM-Alm-1.7", "COM-Alm-1.8", "COM-Alm-1.9"],
+        "COC": ["COC-4.4", "COC-4.6"],
+        "AFJ": ["AFJ-3.7", "AFJ-7.1", "AFJ-7.2", "AFJ-7.5"],
+        "AFL": ["AFL-14.2"],
+        "GHO": ["GHO-3.1", "GHO-3.2"]
+      }
+    },
+    {
+      "id": "GS-006",
+      "proceso_normalizado": "Transferencias internas y despacho de mercancia entre ubicaciones",
+      "criterios": "Movimiento de stock entre almacen general y sub-almacenes/areas, con salida registrada contra requisicion. Entrega de herramientas desde taller. Modulo objetivo Inventory (transferencias internas).",
+      "celdas": {
+        "COM": ["COM-Alm-1.11"],
+        "CAJ": ["CAJ-1.5", "CAJ-3.5"],
+        "BAR": ["BAR-4.4"],
+        "OPE": ["OPE-3.5"],
+        "AFJ": ["AFJ-7.3"]
+      }
+    },
+    {
+      "id": "GS-007",
+      "proceso_normalizado": "Almacenes y ubicaciones internas de inventario",
+      "criterios": "Definicion de almacenes y ubicaciones fisicas por tipo de producto dentro del sistema. Dato maestro de inventario (ubicacion).",
+      "celdas": {
+        "COM": ["COM-Alm-1.10"]
+      }
+    },
+    {
+      "id": "GS-008",
+      "proceso_normalizado": "Conteo de existencias, inventario ciclico y ajuste contra sistema",
+      "criterios": "Conteo fisico recurrente de existencias y ajuste/recuento de inventario contra sistema, incluyendo inventario de sub-almacenes de A&B y supervision de inventario. Modulo objetivo Inventory (ajustes/recuento).",
+      "celdas": {
+        "CTR": ["CTR-3.1", "CTR-3.2", "CTR-3.3", "CTR-7.1"],
+        "CAJ": ["CAJ-1.3", "CAJ-1.4", "CAJ-1.6", "CAJ-1.16", "CAJ-3.1", "CAJ-4.8"],
+        "BAR": ["BAR-2.2", "BAR-2.11", "BAR-4.1"],
+        "COC": ["COC-1.3", "COC-2.2", "COC-3.1", "COC-4.1", "COC-5.1"],
+        "AFJ": ["AFJ-7.9"],
+        "AFL": ["AFL-15.1"],
+        "GHO": ["GHO-1.4.1", "GHO-1.4.4"]
+      }
+    },
+    {
+      "id": "GS-009",
+      "proceso_normalizado": "Reglas de reabastecimiento por stock minimo / punto de pedido",
+      "criterios": "Definicion de stock minimo y disparo automatico de reposicion. Capacidad de inventario que anticipa faltantes; agrupa los hallazgos que piden alerta de reposicion.",
+      "celdas": {
+        "BAR": ["BAR-1.5", "BAR-3.4"]
+      }
+    },
+    {
+      "id": "GS-010",
+      "proceso_normalizado": "Punto de venta de restaurante: comanda, mesa/habitacion y envio a cocina",
+      "criterios": "Registro de comanda en POS, asignacion de mesa/habitacion, toma de pedido y enrutamiento a estacion de preparacion. Modulo objetivo Point of Sale (Restaurant). Cruza Caja, Bar y Cocina.",
+      "celdas": {
+        "CAJ": ["CAJ-1.7", "CAJ-1.8", "CAJ-1.9", "CAJ-1.10", "CAJ-1.11", "CAJ-1.15", "CAJ-4.1", "CAJ-4.2", "CAJ-4.3", "CAJ-4.4", "CAJ-4.5", "CAJ-2.8"],
+        "BAR": ["BAR-1.6", "BAR-1.7", "BAR-1.8", "BAR-1.9", "BAR-1.10", "BAR-2.4", "BAR-2.5", "BAR-2.6", "BAR-2.7", "BAR-2.8", "BAR-3.5", "BAR-3.6", "BAR-3.7", "BAR-3.8", "BAR-3.9"],
+        "COC": ["COC-2.4", "COC-3.3", "COC-5.4", "COC-3.4", "COC-2.5"]
+      }
+    },
+    {
+      "id": "GS-011",
+      "proceso_normalizado": "Cierre y arqueo de sesion de POS / entrega de turno de A&B",
+      "criterios": "Cierre de turno, arqueo de fondo de caja y entrega de guardia de la operacion de A&B. Modulo objetivo Point of Sale (cierre de sesion).",
+      "celdas": {
+        "CAJ": ["CAJ-4.0", "CAJ-1.12"],
+        "BAR": ["BAR-2.10", "BAR-3.11"]
+      }
+    },
+    {
+      "id": "GS-012",
+      "proceso_normalizado": "Cargo del consumo de A&B a la cuenta del huesped (POS a folio)",
+      "criterios": "Traslado del consumo desde el POS de A&B a la cuenta/folio de la habitacion para cobro al check-out. Modulo objetivo Point of Sale / folio del huesped.",
+      "celdas": {
+        "CAJ": ["CAJ-1.13", "CAJ-1.14", "CAJ-1.18", "CAJ-4.7", "CAJ-2.6", "CAJ-2.5", "CAJ-4.6"],
+        "GHO": ["GHO-1.2.1"]
+      }
+    },
+    {
+      "id": "GS-013",
+      "proceso_normalizado": "Recetas / escandallos y consumo de insumos por produccion",
+      "criterios": "Relacion plato-insumo y descuento de materia prima al producir; mise en place por racion. Modulo objetivo Manufacturing (listas de materiales).",
+      "celdas": {
+        "COC": ["COC-1.2", "COC-2.3", "COC-3.2", "COC-5.2"]
+      }
+    },
+    {
+      "id": "GS-014",
+      "proceso_normalizado": "Control de mermas y procesamiento de proteinas (carniceria)",
+      "criterios": "Registro de produccion de proteinas, conteo y merma como ajuste/desecho de inventario. Modulo objetivo Inventory (scrap/ajustes).",
+      "celdas": {
+        "COC": ["COC-7.1", "COC-7.2", "COC-7.3", "COC-7.4"]
+      }
+    },
+    {
+      "id": "GS-015",
+      "proceso_normalizado": "Servicio de prestamo de cavas con identificacion y registro de devolucion",
+      "criterios": "Prestamo de activo (cava) al huesped con identificacion univoca, registro de entrega y control de devolucion. Activo prestado rastreable; hoy en listado manual de caja.",
+      "celdas": {
+        "CAJ": ["CAJ-2.1", "CAJ-2.2", "CAJ-2.3", "CAJ-2.4", "CAJ-2.7"]
+      }
+    },
+    {
+      "id": "GS-016",
+      "proceso_normalizado": "Cierre de caja por punto de venta y conciliacion del efectivo entregado",
+      "criterios": "Validacion y conciliacion del cierre de turno de cada punto de venta (recepcion, A&B, estacionamiento) contra efectivo, comprobantes y sistema. Diarios de efectivo. Modulo objetivo Accounting.",
+      "celdas": {
+        "AFL": ["AFL-1.2", "AFL-1.3", "AFL-1.4", "AFL-1.5", "AFL-1.6", "AFL-3.2", "AFL-3.3", "AFL-3.4", "AFL-3.5", "AFL-3.6", "AFL-5.2", "AFL-5.3", "AFL-5.4", "AFL-8.1", "AFL-8.2"],
+        "GHO": ["GHO-1.1.7"]
+      }
+    },
+    {
+      "id": "GS-017",
+      "proceso_normalizado": "Verificacion bancaria del cobro y registro contable del pago del huesped",
+      "criterios": "Confirmacion del ingreso del pago en banco y su registro como recibo de cobro/asiento contable; gestion de cobros multimetodo del huesped y envio de comprobantes. Modulo objetivo Accounting (cobros). Cruza Recepcion y Administracion.",
+      "celdas": {
+        "AFL": ["AFL-1.1", "AFL-1.7", "AFL-1.8", "AFL-3.1", "AFL-3.7", "AFL-3.8", "AFL-4.1", "AFL-4.2", "AFL-5.1", "AFL-6.1", "AFL-6.2", "AFL-6.3", "AFL-6.4", "AFL-7.1", "AFL-7.2", "AFL-7.3", "AFL-7.4", "AFL-11.1", "AFL-12.1"],
+        "GHO": ["GHO-1.1.3", "GHO-1.1.4", "GHO-1.1.5", "GHO-1.1.6", "GHO-1.2.2", "GHO-1.2.3", "GHO-1.2.4", "GHO-1.3.1", "GHO-1.3.2"]
+      }
+    },
+    {
+      "id": "GS-018",
+      "proceso_normalizado": "Conciliacion bancaria asistida con importacion de extractos",
+      "criterios": "Importacion de extractos bancarios y de lotes de POS y conciliacion contra recibos/pagos por reglas; cotejo de tasas y comisiones. Modulo objetivo Accounting (bank reconciliation). Cruza CCS, AFJ y AFL.",
+      "celdas": {
+        "CCS": ["CCS-4.1.1", "CCS-4.1.3", "CCS-4.1.7", "CCS-4.1.8"],
+        "AFJ": ["AFJ-1.10", "AFJ-1.11"],
+        "AFL": ["AFL-10.1", "AFL-10.2", "AFL-10.3"],
+        "RRH": ["RRH-2.4.1"]
+      }
+    },
+    {
+      "id": "GS-019",
+      "proceso_normalizado": "Conciliacion de caja fisica y de divisas digitales",
+      "criterios": "Creacion de extractos de caja y de plataformas de divisas y conciliacion de recibos contra ellos; diferenciacion de estado pagada/en proceso. Modulo objetivo Accounting (diarios de efectivo).",
+      "celdas": {
+        "AFL": ["AFL-8.5", "AFL-11.2", "AFL-11.3", "AFL-12.2", "AFL-12.3"]
+      }
+    },
+    {
+      "id": "GS-020",
+      "proceso_normalizado": "Facturacion de venta de servicios y emision del comprobante fiscal",
+      "criterios": "Emision de la factura de venta de los servicios del hotel (hospedaje, A&B, estacionamiento, marina, arrendamiento) con calculo de impuestos, multimoneda y discriminacion de base imponible. Modulo objetivo Accounting/Sales (facturacion).",
+      "celdas": {
+        "AFL": ["AFL-2.1", "AFL-2.2", "AFL-2.3", "AFL-2.4", "AFL-2.5", "AFL-4.3", "AFL-5.5", "AFL-6.5", "AFL-16.1", "AFL-16.2"]
+      }
+    },
+    {
+      "id": "GS-021",
+      "proceso_normalizado": "Listas de precio, tarifario y reglas de descuento por segmento",
+      "criterios": "Tarifas por segmento de cliente (agencias, grupos, mayorista/minorista) y descuentos parametrizados sobre catalogo unico. Modulo objetivo Sales (pricelists). Cruza facturacion y recepcion.",
+      "celdas": {
+        "AFL": ["AFL-13.6", "AFL-13.9"],
+        "GHO": ["GHO-2.2.1", "GHO-2.2.2", "GHO-2.2.3", "GHO-2.2.4", "GHO-2.3.3"]
+      }
+    },
+    {
+      "id": "GS-022",
+      "proceso_normalizado": "Cuentas por pagar: vencimientos, antiguedad y planificacion de pagos",
+      "criterios": "Gestion de CxP por vencimiento y antiguedad de saldos, hoy en plantilla Excel paralela; facturas/obligaciones recurrentes; planificacion de pagos; cierre quincenal y estado de pedidos por facturar/recibir. Modulo objetivo Accounting (Aged Payable).",
+      "celdas": {
+        "CCS": ["CCS-4.1.2"],
+        "AFJ": ["AFJ-3.1", "AFJ-3.2", "AFJ-3.3", "AFJ-3.4", "AFJ-3.5", "AFJ-3.6", "AFJ-3.8", "AFJ-3.9", "AFJ-3.10"],
+        "COM": ["COM-2"]
+      }
+    },
+    {
+      "id": "GS-023",
+      "proceso_normalizado": "Registro de factura de proveedor, pago y conciliacion de la partida",
+      "criterios": "Ciclo de factura de proveedor: validacion documental, registro, ejecucion del pago contra autorizacion y aplicacion/cierre del pago. Modulo objetivo Accounting/Purchase (vendor bills). Cruza CCS, AFJ, AFL, GHO, OPE.",
+      "celdas": {
+        "CCS": ["CCS-4.2.1", "CCS-4.2.3", "CCS-4.2.5", "CCS-4.2.6", "CCS-4.2.8", "CCS-4.1.9", "CCS-4.1.10"],
+        "AFJ": ["AFJ-1.1", "AFJ-1.3", "AFJ-1.4", "AFJ-1.5", "AFJ-1.7", "AFJ-1.8", "AFJ-1.9"],
+        "AFL": ["AFL-8.3", "AFL-8.4"],
+        "COM": ["COM-1.4"],
+        "GHO": ["GHO-3.4"],
+        "OPE": ["OPE-5.2"]
+      }
+    },
+    {
+      "id": "GS-024",
+      "proceso_normalizado": "Anticipos de proveedor y depuracion de partidas abiertas",
+      "criterios": "Registro de anticipos a proveedor y su aplicacion/encuadre sobre factura; depuracion de saldos antiguos y cuentas en limbo. Modulo objetivo Accounting (outstanding payments).",
+      "celdas": {
+        "AFJ": ["AFJ-1.18", "AFJ-1.19"]
+      }
+    },
+    {
+      "id": "GS-025",
+      "proceso_normalizado": "Cuentas por pagar/cobrar con socios y contabilidad analitica",
+      "criterios": "Diferenciacion contable de deudas y pagos con socios respecto de proveedores externos; CxC por arrendamientos y VACC. Modulo objetivo Accounting (analitica/CxC-CxP).",
+      "celdas": {
+        "CCS": ["CCS-4.4.4", "CCS-4.2.7", "CCS-4.2.9", "CCS-4.2.10"]
+      }
+    },
+    {
+      "id": "GS-026",
+      "proceso_normalizado": "Notas de credito y devoluciones contables",
+      "criterios": "Procesamiento de devoluciones y ajustes por error de costo/cantidad mediante notas de credito. Modulo objetivo Accounting (credit notes).",
+      "celdas": {
+        "CCS": ["CCS-4.4.8"]
+      }
+    },
+    {
+      "id": "GS-027",
+      "proceso_normalizado": "Retenciones de IVA e ISLR y generacion de comprobantes (localizacion VE)",
+      "criterios": "Calculo, validacion y emision de comprobantes y archivos de retencion IVA/ISLR del periodo, hoy con correccion manual de XML y macros. Localizacion fiscal venezolana. Cruza CCS, AFJ, AFL, RRH.",
+      "celdas": {
+        "CCS": ["CCS-4.3.1", "CCS-4.3.2", "CCS-4.4.7", "CCS-4.2.2"],
+        "AFJ": ["AFJ-2.6", "AFJ-3.11"],
+        "AFL": ["AFL-17.1", "AFL-17.2"],
+        "RRH": ["RRH-2.6.1", "RRH-2.6.2"],
+        "COM": ["COM-3"]
+      }
+    },
+    {
+      "id": "GS-028",
+      "proceso_normalizado": "Declaracion fiscal quincenal de IVA y libro de compras",
+      "criterios": "Cese de registro, conteo de documentos, validacion del cierre y enumeracion/descarga del libro de compras del periodo (contribuyente especial). Modulo objetivo Accounting (purchase journal / libros).",
+      "celdas": {
+        "AFJ": ["AFJ-2.1", "AFJ-2.2", "AFJ-2.3", "AFJ-2.5", "AFJ-2.7"],
+        "CTR": ["CTR-5.2", "CTR-7.2"]
+      }
+    },
+    {
+      "id": "GS-029",
+      "proceso_normalizado": "Bloqueo de periodos contables y emision de libros legales",
+      "criterios": "Cierre y bloqueo de fechas para impedir modificacion retroactiva; emision de libro diario, mayor e inventario exigidos por el Codigo de Comercio. Modulo objetivo Accounting (lock dates / reportes legales).",
+      "celdas": {
+        "CTR": ["CTR-1.2", "CTR-1.3"]
+      }
+    },
+    {
+      "id": "GS-030",
+      "proceso_normalizado": "Aportes parafiscales y municipales de fecha fija",
+      "criterios": "Pagos periodicos de FONACIT, INATUR, Alcaldia, INPARQUES, aseo urbano y VACC con base de calculo y plazo. Obligaciones tributarias/parafiscales recurrentes. Modulo objetivo Accounting + localizacion.",
+      "celdas": {
+        "CCS": ["CCS-4.3.6", "CCS-4.3.7", "CCS-4.3.8", "CCS-4.3.9", "CCS-4.3.10"]
+      }
+    },
+    {
+      "id": "GS-031",
+      "proceso_normalizado": "Cumplimiento parafiscal laboral y declaracion de tributos sobre nomina",
+      "criterios": "Ciclo parafiscal del empleador (IVSS, INCES, FAOV, MPPPST), IPP, ARC/ARI y declaracion anual ISLR/IGP. Tributos derivados de la relacion laboral. Cruza RRH y CCS.",
+      "celdas": {
+        "RRH": ["RRH-1.1.1", "RRH-1.1.2", "RRH-1.1.3", "RRH-1.1.4", "RRH-3.6.3", "RRH-3.6.4"],
+        "CCS": ["CCS-4.3.3", "CCS-4.3.4", "CCS-4.3.5"]
+      }
+    },
+    {
+      "id": "GS-032",
+      "proceso_normalizado": "Gestion documental para fiscalizaciones y cumplimiento ante entes",
+      "criterios": "Archivo digital ordenado por departamento y periodo, soporte de fiscalizaciones y atencion a entes; gestion de notificaciones y solvencias. Modulo objetivo Documents. Cruza CTR, RRH, AFJ, CCS.",
+      "celdas": {
+        "CTR": ["CTR-5.1", "CTR-5.3"],
+        "RRH": ["RRH-1.2.1/1.2.2", "RRH-1.2.3", "RRH-3.6.5"],
+        "AFJ": ["AFJ-1.12", "AFJ-1.13", "AFJ-1.14", "AFJ-2.4"],
+        "CCS": ["CCS-4.4.3", "CCS-4.4.9"]
+      }
+    },
+    {
+      "id": "GS-033",
+      "proceso_normalizado": "Recepcion de guia SUNAGRO de traslado de mercancia",
+      "criterios": "Recepcion en el portal SUNAGRO de la guia de traslado dentro del plazo. Cumplimiento regulatorio sectorial especifico, externo a Odoo.",
+      "celdas": {
+        "AFJ": ["AFJ-1.6"]
+      }
+    },
+    {
+      "id": "GS-034",
+      "proceso_normalizado": "Calculo y procesamiento de nomina, conceptos, bonos y deducciones",
+      "criterios": "Calculo de nomina, horas extras, bonos, descuentos por consumo/ausencia y liquidaciones, hoy en Excel. Modulo objetivo Payroll (estructuras y reglas salariales).",
+      "celdas": {
+        "RRH": ["RRH-2.1.2", "RRH-2.1.3", "RRH-2.3.1", "RRH-2.3.2", "RRH-2.3.5", "RRH-2.5.1", "RRH-2.5.2", "RRH-2.4.2", "RRH-3.7.1"]
+      }
+    },
+    {
+      "id": "GS-035",
+      "proceso_normalizado": "Ejecucion de pagos de nomina por archivo bancario",
+      "criterios": "Generacion del archivo masivo TXT y transferencias individuales para el pago de nomina y horas extras. Pago de remuneraciones (Payroll a banca).",
+      "celdas": {
+        "RRH": ["RRH-2.3.3", "RRH-2.3.4"]
+      }
+    },
+    {
+      "id": "GS-036",
+      "proceso_normalizado": "Registro de asistencia, retardos y horas extras",
+      "criterios": "Fichaje, control de retardos/ausencias y validacion de horas extras por departamento que alimenta la nomina. Modulo objetivo Attendances. Cruza RRH y GHO (redobles).",
+      "celdas": {
+        "RRH": ["RRH-2.2.1", "RRH-2.2.2", "RRH-2.2.3"],
+        "GHO": ["GHO-2.4.4"]
+      }
+    },
+    {
+      "id": "GS-037",
+      "proceso_normalizado": "Reclutamiento, preseleccion y aprobacion de ingreso de candidatos",
+      "criterios": "Pipeline de captacion: publicacion de vacantes, recepcion de candidatos, preseleccion, pruebas y presentacion a gerencia. Modulo objetivo Recruitment. Cruza RRH y GHO.",
+      "celdas": {
+        "RRH": ["RRH-3.1.1", "RRH-3.1.2", "RRH-3.1.3", "RRH-3.1.4", "RRH-3.1.5"],
+        "GHO": ["GHO-2.4.5"]
+      }
+    },
+    {
+      "id": "GS-038",
+      "proceso_normalizado": "Ficha integral del empleado, expediente y organigrama",
+      "criterios": "Registro unico del empleado (salud, carga familiar, bancarios, foto), creacion/baja, documentos del expediente, descripciones de cargo y organigrama. Modulo objetivo Employees/Documents.",
+      "celdas": {
+        "RRH": ["RRH-3.2.2", "RRH-3.2.4", "RRH-3.3.1", "RRH-3.3.2", "RRH-3.3.3", "RRH-3.3.4", "RRH-3.3.5"]
+      }
+    },
+    {
+      "id": "GS-039",
+      "proceso_normalizado": "Induccion, contrato, egreso y revocacion de accesos",
+      "criterios": "Ciclo de incorporacion (induccion, solicitud de contrato a Legal) y egreso (liquidacion, kit, devolucion de uniformes, baja y revocacion de accesos). Modulo objetivo Employees (onboarding/offboarding).",
+      "celdas": {
+        "RRH": ["RRH-3.2.1", "RRH-3.2.3", "RRH-3.7.2", "RRH-3.7.3", "RRH-3.7.4"]
+      }
+    },
+    {
+      "id": "GS-040",
+      "proceso_normalizado": "Solicitudes de ausencia, permisos y vacaciones con aprobacion",
+      "criterios": "Gestion de permisos, reposos, vacaciones, prestamos y dias libres con flujo de aprobacion. Modulo objetivo Time Off. Cruza RRH y GHO.",
+      "celdas": {
+        "RRH": ["RRH-3.4.1", "RRH-3.4.2", "RRH-3.4.4", "RRH-3.4.5", "RRH-3.5.1"],
+        "GHO": ["GHO-2.4.1", "GHO-2.4.3"]
+      }
+    },
+    {
+      "id": "GS-041",
+      "proceso_normalizado": "Evaluacion de desempeno por cargo",
+      "criterios": "Aplicacion de evaluacion de desempeno con indicadores por cargo al cierre del periodo de prueba. Modulo objetivo Appraisals/Employees.",
+      "celdas": {
+        "RRH": ["RRH-3.6.1"]
+      }
+    },
+    {
+      "id": "GS-042",
+      "proceso_normalizado": "Control de uniformes, dotacion y activos asignados al personal",
+      "criterios": "Inventario y entrega de uniformes, dotacion de equipos y resguardo de equipos/llaves asignados, con devolucion. Dato de activos asignados a empleados. Cruza RRH y AFJ.",
+      "celdas": {
+        "RRH": ["RRH-3.8.1", "RRH-3.8.2"],
+        "AFJ": ["AFJ-7.6", "AFJ-7.7", "AFJ-7.8", "AFJ-7.10"]
+      }
+    },
+    {
+      "id": "GS-043",
+      "proceso_normalizado": "Control de certificados sanitarios del personal de A&B",
+      "criterios": "Verificacion mensual de vigencia de certificados de manipulacion de alimentos y de salud. Vencimiento de documentos del empleado (actividades programadas).",
+      "celdas": {
+        "RRH": ["RRH-1.3.1", "RRH-1.3.2"]
+      }
+    },
+    {
+      "id": "GS-044",
+      "proceso_normalizado": "Gestion de pasantes",
+      "criterios": "Ciclo de pasantes: convenio con universidades, expediente, horarios, evaluacion final y reporte. Subconjunto de gestion de personal con flujo propio.",
+      "celdas": {
+        "RRH": ["RRH-4.1.1", "RRH-4.1.3", "RRH-4.1.4/4.1.5", "RRH-4.1.7", "RRH-4.1.8", "RRH-4.1.9/4.1.10"]
+      }
+    },
+    {
+      "id": "GS-045",
+      "proceso_normalizado": "Seguridad y salud laboral (SST)",
+      "criterios": "Politicas SST y comite ante INPSASEL en implementacion. Cumplimiento LOPCYMAT; sin via nativa clara.",
+      "celdas": {
+        "RRH": ["RRH-5.2"]
+      }
+    },
+    {
+      "id": "GS-046",
+      "proceso_normalizado": "Comunicacion interna corporativa y agasajos",
+      "criterios": "Comunicacion interna, reporte de incidencias, agasajos y comunicaciones de cumpleanos/aniversarios. Mensajeria interna y actividades programadas. Modulo objetivo Discuss/Employees.",
+      "celdas": {
+        "RRH": ["RRH-3.4.3", "RRH-3.4.6", "RRH-3.5.2", "RRH-3.5.4", "RRH-5.1", "RRH-5.3", "RRH-5.4"]
+      }
+    },
+    {
+      "id": "GS-047",
+      "proceso_normalizado": "PMS hotelero: reservas, check-in/out y estado de habitacion",
+      "criterios": "Gestion de reservas, cotizaciones, check-in/out, datos de huesped, disponibilidad y estado de limpieza/mantenimiento de habitaciones. Modulo objetivo Hotel/PMS. Cruza GHO recepcion y soporte a Ama de Llaves.",
+      "celdas": {
+        "GHO": ["GHO-1.1.1", "GHO-1.1.2", "GHO-2.1.4", "GHO-2.1.6", "GHO-2.1.7", "GHO-2.1.8", "GHO-2.3.1", "GHO-4.2", "GHO-4.3"]
+      }
+    },
+    {
+      "id": "GS-048",
+      "proceso_normalizado": "Punto de venta de tienda con descuento de inventario y cliente generico",
+      "criterios": "Venta de tienda a huespedes y visitantes con descuento automatico de stock y perfil de cliente visitante; pagos a propietarios por cuentas externas. Modulo objetivo Point of Sale / Inventory.",
+      "celdas": {
+        "GHO": ["GHO-1.4.2", "GHO-1.4.3"]
+      }
+    },
+    {
+      "id": "GS-049",
+      "proceso_normalizado": "Programacion de llaves electronicas de habitacion",
+      "criterios": "Elaboracion de llaves de huesped y maestras en sistemas de cerradura (TT Hotel/Time Locks). Capacidad de hardware externo; sin via nativa Odoo.",
+      "celdas": {
+        "GHO": ["GHO-1.1.8", "GHO-1.1.9"]
+      }
+    },
+    {
+      "id": "GS-050",
+      "proceso_normalizado": "Canales de atencion al cliente y mensajeria de prospectos",
+      "criterios": "Centralizacion de mensajeria (WhatsApp/Instagram via Visito), correo, telefono y atencion de solicitudes de huesped/prospecto. Modulo objetivo CRM/Livechat.",
+      "celdas": {
+        "GHO": ["GHO-2.1.1", "GHO-2.1.2", "GHO-2.1.3", "GHO-2.1.5"]
+      }
+    },
+    {
+      "id": "GS-051",
+      "proceso_normalizado": "Medicion de satisfaccion y resolucion de conflictos del huesped",
+      "criterios": "Instrumento de medicion de satisfaccion y escalamiento de quejas. Modulo objetivo Surveys.",
+      "celdas": {
+        "GHO": ["GHO-2.3.2"]
+      }
+    },
+    {
+      "id": "GS-052",
+      "proceso_normalizado": "Capacitacion del personal y formacion sobre sistemas",
+      "criterios": "Orientacion de personal nuevo sobre los sistemas y normativas, con instructivo vigente. Modulo objetivo eLearning/Employees.",
+      "celdas": {
+        "GHO": ["GHO-2.4.2"]
+      }
+    },
+    {
+      "id": "GS-053",
+      "proceso_normalizado": "Ordenes y solicitudes de mantenimiento correctivo",
+      "criterios": "Registro de solicitudes de reparacion de gerencia y departamentos y su seguimiento hasta el cierre, incluyendo reparaciones con tecnico externo. Modulo objetivo Maintenance. Cruza OPE y GHO.",
+      "celdas": {
+        "OPE": ["OPE-3.1", "OPE-3.2", "OPE-3.4", "OPE-4.3", "OPE-4.5", "OPE-4.6"],
+        "GHO": ["GHO-3.3"]
+      }
+    },
+    {
+      "id": "GS-054",
+      "proceso_normalizado": "Mantenimiento preventivo por activo y verificacion de equipos criticos",
+      "criterios": "Registro de equipos como activos con planes de mantenimiento preventivo por tiempo/uso y rutinas de verificacion de infraestructura. Modulo objetivo Maintenance (preventivo).",
+      "celdas": {
+        "OPE": ["OPE-4.2", "OPE-6.1", "OPE-6.2", "OPE-6.3", "OPE-6.4"]
+      }
+    },
+    {
+      "id": "GS-055",
+      "proceso_normalizado": "Recepcion y control de niveles de servicios basicos (agua, gasoil, gas)",
+      "criterios": "Solicitud, recepcion y verificacion de niveles de tanques de agua, gasoil y gas. Recepcion de insumo critico contra pedido/lectura. Modulo objetivo Inventory/Purchase. Cruza OPE y COC.",
+      "celdas": {
+        "OPE": ["OPE-5.1", "OPE-5.3", "OPE-5.4", "OPE-5.5", "OPE-5.6"]
+      }
+    },
+    {
+      "id": "GS-056",
+      "proceso_normalizado": "Rutinas operativas fisicas sin captura digital",
+      "criterios": "Tareas operativas puramente fisicas (limpieza, montaje, ambientacion, jardineria, piscina, alimentar fauna) sin transaccion ni dato maestro asociado; fuera del alcance de Odoo.",
+      "celdas": {
+        "COM": ["COM-Alm-1.12"],
+        "CAJ": ["CAJ-1.0", "CAJ-1.1", "CAJ-1.2", "CAJ-1.17", "CAJ-4.9", "CAJ-4.10"],
+        "BAR": ["BAR-1.1", "BAR-1.2", "BAR-1.3", "BAR-1.4", "BAR-1.11", "BAR-2.1", "BAR-2.3", "BAR-2.9", "BAR-3.1", "BAR-3.2", "BAR-3.3", "BAR-3.10"],
+        "COC": ["COC-1.1", "COC-1.4", "COC-1.5", "COC-2.1", "COC-5.3", "COC-6.1", "COC-6.2", "COC-6.3", "COC-7.5"],
+        "OPE": ["OPE-1.1", "OPE-1.2", "OPE-1.3", "OPE-1.4", "OPE-2.1", "OPE-2.2", "OPE-2.3", "OPE-4.1", "OPE-4.7"]
+      }
+    },
+    {
+      "id": "GS-057",
+      "proceso_normalizado": "Reportes regulatorios de ocupacion e ingresos (Venetur / INATUR)",
+      "criterios": "Consolidacion y envio del reporte diario de ocupacion e ingresos cruzando informes de Odoo y Cloudbeds. Reporte regulatorio turistico recurrente.",
+      "celdas": {
+        "AFL": ["AFL-9.1", "AFL-9.2", "AFL-9.3", "AFL-9.4", "AFL-9.5", "AFL-9.6"],
+        "CCS": ["CCS-4.4.2"]
+      }
+    },
+    {
+      "id": "GS-058",
+      "proceso_normalizado": "Apertura de cuentas bancarias y administracion de usuarios bancarios",
+      "criterios": "Apertura de cuentas juridicas y de nomina y administracion de usuarios/perfiles de las plataformas bancarias con niveles de aprobacion. Gestion de acceso a banca externa.",
+      "celdas": {
+        "CCS": ["CCS-4.1.5", "CCS-4.1.6"],
+        "CTR": ["CTR-6.1", "CTR-6.2"]
+      }
+    },
+    {
+      "id": "GS-059",
+      "proceso_normalizado": "Conciliacion de cobros por financiamiento y pasarelas externas",
+      "criterios": "Supervision y conciliacion de ventas y cuotas gestionadas por Cashea/Credicard contra la posicion financiera; verificacion del cierre de lote de POS y de cuotas. Conciliacion de cobros de terceros. Cruza CCS y AFL.",
+      "celdas": {
+        "CCS": ["CCS-4.4.10", "CCS-4.1.4"]
+      }
+    },
+    {
+      "id": "GS-060",
+      "proceso_normalizado": "Facturacion entre companias del grupo (intercompany)",
+      "criterios": "Facturacion y actualizacion de inventario intercompany entre Eracon Salud/Alimentos y SERAC. Modulo objetivo Accounting (inter-company).",
+      "celdas": {
+        "CCS": ["CCS-4.6.1", "CCS-4.6.2"]
+      }
+    },
+    {
+      "id": "GS-061",
+      "proceso_normalizado": "Supervision de control de gestion por departamento (cuestionarios)",
+      "criterios": "Supervision general, plan de trabajo de control, ambiente de riesgos, cuestionarios periodicos a departamentos e informe de resultados a gerencia. Modulo objetivo Surveys + Project (plan/seguimiento). Cruza CTR.",
+      "celdas": {
+        "CTR": ["CTR-1.1", "CTR-1.4", "CTR-2.1", "CTR-2.2", "CTR-2.3", "CTR-4.1"],
+        "CCS": ["CCS-4.4.1"],
+        "AFL": ["AFL-18.1"],
+        "AFJ": ["AFJ-1.15", "AFJ-1.16", "AFJ-1.17", "AFJ-8.3"],
+        "GHO": ["GHO-3.6", "GHO-4.4", "GHO-5.2"]
+      }
+    },
+    {
+      "id": "GS-062",
+      "proceso_normalizado": "Maestro de usuarios, clientes y metodos de pago en sistemas de punto de servicio",
+      "criterios": "Creacion de usuarios, clientes y metodos de pago en los sistemas operativos de recepcion y A&B (Cloudbeds, Poster). Dato maestro de configuracion de sistemas operativos.",
+      "celdas": {
+        "AFL": ["AFL-13.3", "AFL-13.4", "AFL-13.7", "AFL-13.8"]
+      }
+    },
+    {
+      "id": "GS-063",
+      "proceso_normalizado": "Soporte administrativo ofimatico y atencion general",
+      "criterios": "Operaciones de soporte de oficina (copias, sello, POS, atencion a personal/terceros) sin transaccion contable ni dato maestro. Fuera del alcance de Odoo.",
+      "celdas": {
+        "AFJ": ["AFJ-7.4", "AFJ-8.2"]
+      }
+    }
+  ]
+}
