@@ -11,7 +11,7 @@
    "grupos_que_atiende": [
     "GS-001"
    ],
-   "descripcion": "Unificar el alta del proveedor en un unico contacto-proveedor con su RIF, datos bancarios conformes y porcentaje de retencion calificado, eliminando los registros temporales con cuenta personal.",
+   "descripcion": "Implementacion nativa del maestro de proveedores de Odoo (contacto-proveedor unico con RIF, datos bancarios y porcentaje de retencion calificado) que centraliza el alta en un solo registro conforme y elimina los proveedores con cuenta personal creados de forma dispersa en compras y administracion.",
    "modulos": "Purchase, Accounting",
    "anclas": [
     "[ODOO:19.0/purchase/vendor-bills]",
@@ -35,7 +35,7 @@
    "grupos_que_atiende": [
     "GS-002"
    ],
-   "descripcion": "Mantener un maestro unico de productos con categorias que definan las cuentas contables por defecto y variantes por atributos, sustituyendo la asignacion por criterio del equipo y la actualizacion en paralelo en varios sistemas.",
+   "descripcion": "Uso del maestro de productos nativo con categorias que predeterminan el tratamiento contable y variantes por atributos, de modo que el producto se da de alta una sola vez como fuente unica; sustituye la clasificacion por criterio del equipo y elimina la captura paralela del mismo producto en varios sistemas.",
    "modulos": "Inventory, Accounting, Sales",
    "anclas": [
     "[ODOO:19.0/accounting/chart-of-accounts]",
@@ -63,7 +63,7 @@
    "grupos_que_atiende": [
     "GS-003"
    ],
-   "descripcion": "Centralizar el abastecimiento externo en solicitudes de cotizacion a multiples proveedores y ordenes de compra, con acuerdos marco para proveedores recurrentes, en lugar de transcribir compras por indicacion directa sin comparacion de precios.",
+   "descripcion": "Configuracion del flujo de compras nativo (solicitudes de cotizacion a varios proveedores, comparacion y orden de compra, con acuerdos marco para recurrentes) que centraliza todo el abastecimiento externo en un unico circuito con comparacion de precios y elimina las compras transcritas por indicacion directa sin orden previa.",
    "modulos": "Purchase",
    "anclas": [
     "[ODOO:19.0/purchase/purchase-order]"
@@ -102,7 +102,7 @@
    "grupos_que_atiende": [
     "GS-004"
    ],
-   "descripcion": "Registrar las requisiciones internas de reposicion de los departamentos hacia almacen como solicitudes con flujo de aprobacion, sustituyendo el conteo en papel, la lista por WhatsApp y la firma fisica de Gerencia.",
+   "descripcion": "Implementacion de la requisicion interna nativa con flujo de aprobacion en el sistema, que reemplaza el conteo en papel, la lista por WhatsApp y la firma fisica de Gerencia por una solicitud digital trazable y aprobada en linea, eliminando la circulacion de formatos entre areas.",
    "modulos": "Purchase, Inventory",
    "anclas": [
     "[ODOO:19.0/purchase/purchase-order]"
@@ -141,7 +141,7 @@
    "grupos_que_atiende": [
     "GS-005"
    ],
-   "descripcion": "Ejecutar la recepcion de mercancia como albaran de entrada validado contra la orden de compra y el documento del proveedor antes de confirmar, dando entrada al stock y habilitando la facturacion solo sobre el pedido corregido.",
+   "descripcion": "Uso del albaran de entrada nativo del modulo de inventario, validado contra la orden de compra y el documento del proveedor antes de confirmar, que da entrada al stock y habilita la facturacion solo sobre el pedido conciliado; elimina la desvinculacion entre factura y mercancia y el registro tardio de recepciones.",
    "modulos": "Inventory, Purchase",
    "anclas": [
     "[ODOO:19.0/inventory/delivery-picking]",
@@ -177,7 +177,7 @@
    "grupos_que_atiende": [
     "GS-006"
    ],
-   "descripcion": "Modelar el despacho a departamentos internos y la entrega de herramientas como transferencias internas de inventario entre ubicaciones, en lugar del formato fisico que se rehace por errores.",
+   "descripcion": "Uso de las transferencias internas nativas entre ubicaciones para el despacho a departamentos y la entrega de herramientas, que deja respaldo digital de cada salida contra requisicion y elimina el formato fisico que viaja entre areas y se rehace por errores.",
    "modulos": "Inventory",
    "anclas": [
     "[ODOO:19.0/inventory/warehouses-locations]",
@@ -209,7 +209,7 @@
    "grupos_que_atiende": [
     "GS-007"
    ],
-   "descripcion": "Configurar ubicaciones internas dentro del almacen reflejando el esquema fisico por tipo de producto, en lugar de operar un almacen general unico sin ubicaciones.",
+   "descripcion": "Configuracion de ubicaciones internas dentro del almacen que reflejan el esquema fisico por tipo de producto, dando al sistema la estructura de la que hoy carece al operar con un unico almacen general sin ubicaciones.",
    "modulos": "Inventory",
    "anclas": [
     "[ODOO:19.0/inventory/warehouses-locations]"
@@ -228,7 +228,7 @@
    "grupos_que_atiende": [
     "GS-008"
    ],
-   "descripcion": "Llevar el conteo, el inventario ciclico y el ajuste de existencias dentro del modulo de inventario, sustituyendo las hojas fisicas y resolviendo la desalineacion entre el fisico y el sistema mediante recuentos y ajustes registrados.",
+   "descripcion": "Uso del recuento e inventario ciclico nativos del modulo de inventario, que llevan el conteo y el ajuste de existencias al sistema con registro auditable, sustituyen las hojas y libretas fisicas y resuelven la desalineacion entre el stock fisico y el del sistema.",
    "modulos": "Inventory",
    "anclas": [
     "[ODOO:19.0/inventory/warehouses-locations]",
@@ -272,7 +272,7 @@
    "grupos_que_atiende": [
     "GS-009"
    ],
-   "descripcion": "Definir reglas de reabastecimiento por stock minimo que disparen la reposicion antes del agotamiento, en lugar de la verificacion manual y el calculo mental de disponibilidad.",
+   "descripcion": "Configuracion de las reglas de reabastecimiento nativas por stock minimo, que disparan la reposicion automaticamente antes del agotamiento y eliminan la verificacion manual y el calculo mental de disponibilidad por radio o lista de huespedes.",
    "modulos": "Inventory, Purchase",
    "anclas": [
     "[ODOO:19.0/purchase/purchase-order]",
@@ -292,7 +292,7 @@
    "grupos_que_atiende": [
     "GS-010"
    ],
-   "descripcion": "Disponer de un punto de venta de restaurante que registre la comanda, asigne mesa o habitacion y enrute el pedido a la estacion de preparacion, sustituyendo la comanda en papel, la doble digitacion y la impresion centralizada en caja.",
+   "descripcion": "Punto de venta de restaurante cuyo nucleo es nativo (comanda, mesa/habitacion y ruteo a la estacion de preparacion) y que elimina la comanda en papel, la doble digitacion y la impresion centralizada en caja; la emision del documento fiscal venezolano requiere desarrollo/integracion de localizacion fiscal sobre ese nucleo.",
    "modulos": "Point of Sale, Restaurant",
    "anclas": [
     "[DEV:pos-restaurante-fiscal-ve]"
@@ -322,7 +322,7 @@
    "grupos_que_atiende": [
     "GS-011"
    ],
-   "descripcion": "Cerrar el turno de A&B con arqueo de sesion y entrega de guardia en el punto de venta, sustituyendo el cuaderno de novedades y los traspasos informales.",
+   "descripcion": "Uso del cierre de sesion con arqueo nativo del punto de venta, que formaliza la entrega de guardia y la diferencia de efectivo en un acta del sistema y sustituye el cuaderno de novedades, la libreta de faltantes y los traspasos por WhatsApp.",
    "modulos": "Point of Sale",
    "anclas": [
     "[ODOO:19.0/pos/use#close-register]"
@@ -348,7 +348,7 @@
    "grupos_que_atiende": [
     "GS-012"
    ],
-   "descripcion": "Cargar el consumo del huesped desde el punto de venta de A&B al folio de la habitacion para cobro al check-out, sustituyendo el envio Poster-Clover y el control manual de check-outs para no perder cargos.",
+   "descripcion": "Desarrollo/integracion que traslada el consumo del punto de venta de A&B al folio de la habitacion para su cobro unico al check-out, centralizando el cargo en la cuenta del huesped y eliminando el envio Poster-Clover, el control manual de check-outs y los pagos a cuentas personales de mesoneros que hoy generan devoluciones.",
    "modulos": "Point of Sale, Hotel/PMS",
    "anclas": [
     "[DEV:room-charge-folio]"
@@ -378,7 +378,7 @@
    "grupos_que_atiende": [
     "GS-013"
    ],
-   "descripcion": "Relacionar cada plato con sus insumos mediante recetas/escandallos que descuenten la materia prima al producir, sustituyendo el calculo manual de raciones del mise en place.",
+   "descripcion": "Uso de las listas de materiales (escandallos) nativas que relacionan cada plato con sus insumos y descuentan la materia prima al producir o vender, dando una base unica de raciones del mise en place y sustituyendo el calculo manual contra un stock ideal anotado a mano.",
    "modulos": "Manufacturing",
    "anclas": [
     "[ODOO:19.0/mrp/bom-configuration]"
@@ -400,7 +400,7 @@
    "grupos_que_atiende": [
     "GS-014"
    ],
-   "descripcion": "Registrar la produccion de proteinas de carniceria y sus descartes como movimientos de ajuste/desecho de inventario, dando seguimiento historico de merma sobre el insumo de mayor valor.",
+   "descripcion": "Uso de los movimientos de desecho y ajuste nativos del inventario para registrar la produccion de carniceria y sus descartes, que consolida un historico estructurado de merma sobre el insumo de mayor valor y sustituye las hojas de produccion en papel y el control manual contra el peso inicial.",
    "modulos": "Inventory",
    "anclas": [
     "[ODOO:19.0/inventory/lots-serial]"
@@ -419,7 +419,7 @@
    "grupos_que_atiende": [
     "GS-015"
    ],
-   "descripcion": "Controlar el prestamo de cavas al huesped mediante numeros de serie y un registro de salida y devolucion, en lugar del listado manual sin identificacion univoca.",
+   "descripcion": "Uso del seguimiento por numero de serie nativo del inventario para identificar cada cava de forma univoca y registrar su salida y devolucion, dando trazabilidad al prestamo y eliminando el listado manual de caja que no distingue una cava de otra.",
    "modulos": "Inventory",
    "anclas": [
     "[ODOO:19.0/inventory/lots-serial]"
@@ -438,7 +438,7 @@
    "grupos_que_atiende": [
     "GS-016"
    ],
-   "descripcion": "Registrar el efectivo de los cierres de turno de cada punto de venta en los diarios de caja y conciliar el efectivo entregado contra los reportes del sistema y los comprobantes, formalizando la doble revision.",
+   "descripcion": "Uso de los diarios de efectivo nativos para registrar el cierre de cada punto de venta y conciliar el efectivo entregado contra los reportes del sistema, los comprobantes electronicos y los reportes de punto de venta bancario, dejando la doble revision como un control formal en linea y eliminando la consolidacion en Excel publicada en Teams.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/accounting/customer-invoice]",
@@ -462,7 +462,7 @@
    "grupos_que_atiende": [
     "GS-017"
    ],
-   "descripcion": "Registrar el cobro del huesped como recibo de cobro vinculado a su factura una vez confirmado el ingreso en banco, eliminando el triple registro manual (Cloudbeds, Odoo, Teams) del mismo pago.",
+   "descripcion": "Uso del recibo de cobro nativo vinculado a la factura del huesped, registrado una sola vez al confirmar el ingreso en banco, que centraliza el cobro en el sistema contable y elimina el triple registro manual del mismo pago entre Cloudbeds, Odoo y la carpeta de Teams.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/accounting/customer-invoice]"
@@ -489,7 +489,7 @@
    "grupos_que_atiende": [
     "GS-018"
    ],
-   "descripcion": "Importar los extractos bancarios y los lotes de POS y conciliarlos contra los recibos y pagos mediante reglas de conciliacion, sustituyendo el cotejo manual de extractos, comisiones y tasas.",
+   "descripcion": "Uso de la conciliacion bancaria nativa con importacion de extractos (y lotes de POS via diarios puente) y reglas de conciliacion, que cruza automaticamente los movimientos de banco contra recibos y pagos y sustituye el cotejo manual de extractos de varios bancos, comisiones, tasas y lotes de Credicard; los estados de cuenta dejan de mantenerse en paralelo en Excel.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/finance/accounting/bank/transactions]",
@@ -524,7 +524,7 @@
    "grupos_que_atiende": [
     "GS-019"
    ],
-   "descripcion": "Conciliar los recibos de efectivo y de divisas digitales contra extractos de caja y de plataformas, y distinguir el estado de factura pagada de la conciliacion pendiente, sin crear los extractos a mano.",
+   "descripcion": "El nucleo es la conciliacion nativa de diarios de caja y multimoneda, que distingue la factura pagada de la conciliacion pendiente y resuelve la confusion de saldos; la carga de los extractos de caja fisica y de plataformas de divisas (PayPal, Binance, Zelle), hoy creados a mano, requiere desarrollo de integracion para evitar ese registro manual.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/finance/accounting/bank/reconciliation]",
@@ -551,7 +551,7 @@
    "grupos_que_atiende": [
     "GS-020"
    ],
-   "descripcion": "Emitir las facturas de venta de los servicios del hotel con el motor de impuestos y la gestion multimoneda del sistema, discriminando la base imponible del IVA sin Excel externo.",
+   "descripcion": "Uso del motor de impuestos y la gestion multimoneda nativos para emitir las facturas de venta de los servicios del hotel, que calculan y discriminan la base imponible del IVA dentro del sistema y eliminan el Excel auxiliar de tasa promedio y discriminacion de base por factura.",
    "modulos": "Accounting, Sales",
    "anclas": [
     "[ODOO:19.0/accounting/customer-invoice]",
@@ -576,7 +576,7 @@
    "grupos_que_atiende": [
     "GS-021"
    ],
-   "descripcion": "Sostener tarifas por segmento (agencias, grupos) y reglas de descuento en listas de precio sobre el catalogo unico, reduciendo la consulta caso por caso a presidencia y la desincronizacion del menu.",
+   "descripcion": "Uso de las listas de precio nativas para parametrizar tarifas por segmento (agencias, grupos, eventos) y descuentos sobre el catalogo unico, dejando el precio predefinido en el sistema; elimina la consulta caso por caso a presidencia y la desincronizacion del menu impreso frente al precio cobrado.",
    "modulos": "Sales",
    "anclas": [
     "[ODOO:19.0/sales/pricelists]"
@@ -599,7 +599,7 @@
    "grupos_que_atiende": [
     "GS-022"
    ],
-   "descripcion": "Gestionar las cuentas por pagar por vencimiento y antiguedad de saldos directamente sobre las facturas de proveedor, e incorporar las obligaciones recurrentes, sustituyendo la plantilla manual de Excel y el reporte diario por WhatsApp.",
+   "descripcion": "Uso del reporte de antiguedad de saldos por pagar nativo, alimentado directamente por las facturas de proveedor y las obligaciones recurrentes registradas (servicios fijos mensuales), que centraliza la planificacion de pagos en el sistema y sustituye la plantilla manual de CxP en Excel actualizada tres veces al dia.",
    "modulos": "Accounting, Purchase",
    "anclas": [
     "[ODOO:19.0/purchase/vendor-bills]"
@@ -630,7 +630,7 @@
    "grupos_que_atiende": [
     "GS-023"
    ],
-   "descripcion": "Registrar la factura de proveedor, ejecutar el pago contra el pedido autorizado y aplicar/conciliar la partida en el sistema, cerrando el ciclo de compra a pago.",
+   "descripcion": "Uso de las facturas de proveedor y los pagos nativos vinculados al pedido autorizado, que cierran el ciclo de compra a pago dentro del sistema (validacion documental, ejecucion del pago y aplicacion/conciliacion de la partida) y dan estado unico al avance de cada pago en lugar del control disperso por tarjeta y por archivo manual.",
    "modulos": "Accounting, Purchase",
    "anclas": [
     "[ODOO:19.0/purchase/vendor-bills]"
@@ -661,7 +661,7 @@
    "grupos_que_atiende": [
     "GS-024"
    ],
-   "descripcion": "Registrar los anticipos a proveedor y aplicarlos a la factura como partidas pendientes del sistema, facilitando la depuracion de los saldos antiguos abiertos.",
+   "descripcion": "Uso de los anticipos y pagos pendientes nativos para registrar el adelanto al proveedor y aplicarlo a su factura dentro del sistema, sustituyendo la carpeta local y los recordatorios manuales y facilitando la depuracion de los saldos de anticipo antiguos que hoy quedan abiertos y distorsionan el balance.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/purchase/vendor-bills]"
@@ -680,7 +680,7 @@
    "grupos_que_atiende": [
     "GS-025"
    ],
-   "descripcion": "Diferenciar contablemente las deudas y pagos con socios respecto de los proveedores externos y registrar las cuentas por cobrar a socios, evitando que distorsionen el saldo de proveedores.",
+   "descripcion": "Uso de cuentas y partidas contables dedicadas para separar las deudas y cobros con socios de los proveedores externos, que aisla la posicion real de CxP y CxC y elimina la acumulacion de pagos de socios como deuda a proveedor que hoy distorsiona el saldo.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/accounting/chart-of-accounts]"
@@ -699,7 +699,7 @@
    "grupos_que_atiende": [
     "GS-026"
    ],
-   "descripcion": "Procesar las devoluciones por error de costo o cantidad mediante notas de credito y reversiones, en lugar de la deteccion tardia y devolucion manual.",
+   "descripcion": "Uso de las notas de credito y reversiones nativas para procesar los errores de costo o cantidad de la factura de proveedor, dejando el ajuste documentado en el sistema en lugar de la devolucion manual que hoy se detecta tarde y retrasa el pago.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/accounting/credit-debit-notes]"
@@ -718,7 +718,7 @@
    "grupos_que_atiende": [
     "GS-027"
    ],
-   "descripcion": "Generar los comprobantes y archivos de retencion de IVA e ISLR con la localizacion fiscal venezolana, eliminando la correccion manual de XML y la macro externa, y registrar el seguimiento de reembolsos de retencion.",
+   "descripcion": "Uso de las retenciones de la localizacion fiscal venezolana para calcular y emitir los comprobantes y archivos de retencion de IVA e ISLR del periodo dentro del sistema, eliminando la correccion manual de XML y la macro externa de consolidacion; deja el certificado y el seguimiento de reembolsos de retencion en un unico flujo formal.",
    "modulos": "Accounting (localizacion VE)",
    "anclas": [
     "[ODOO:19.0/accounting/withholding-taxes]",
@@ -759,7 +759,7 @@
    "grupos_que_atiende": [
     "GS-028"
    ],
-   "descripcion": "Producir el libro de compras del periodo y soportar el cierre fiscal quincenal desde el diario contable, reduciendo el escaneo, conteo y enumeracion manual de documentos.",
+   "descripcion": "Uso del libro de compras de la localizacion venezolana generado desde el diario contable, que produce el documento integro del periodo para el cierre quincenal del contribuyente especial y reduce el conteo, escaneo y enumeracion manual de facturas que hoy provoca descuadres entre libros.",
    "modulos": "Accounting (localizacion VE)",
    "anclas": [
     "[L10N:l10n-ve/libros-fiscales]",
@@ -783,7 +783,7 @@
    "grupos_que_atiende": [
     "GS-029"
    ],
-   "descripcion": "Bloquear las fechas de los periodos contables cerrados para impedir la modificacion retroactiva y emitir los libros legales (diario, mayor, inventario) exigidos por el Codigo de Comercio.",
+   "descripcion": "Uso del bloqueo de fechas y los reportes contables nativos, que cierran los periodos para impedir la modificacion retroactiva (devolviendo confiabilidad a los reportes ya emitidos) y emiten los libros legales de diario, mayor e inventario exigidos por el Codigo de Comercio que hoy no se imprimen.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/accounting/chart-of-accounts]",
@@ -807,7 +807,7 @@
    "grupos_que_atiende": [
     "GS-030"
    ],
-   "descripcion": "Registrar los aportes parafiscales y municipales de fecha fija (FONACIT, INATUR, Alcaldia, INPARQUES, aseo urbano, VACC) como obligaciones contables con su base y vencimiento, evitando multas por incumplimiento de plazo.",
+   "descripcion": "Registro de los aportes parafiscales y municipales de fecha fija (FONACIT, INATUR, Alcaldia, INPARQUES, aseo urbano, VACC) como obligaciones contables recurrentes con base y vencimiento en el sistema, dando visibilidad de los plazos y evitando las multas por incumplimiento que hoy dependen del seguimiento manual de cada fecha.",
    "modulos": "Accounting (localizacion VE)",
    "anclas": [
     "[NORMA:obligaciones parafiscales y municipales VE]",
@@ -827,7 +827,7 @@
    "grupos_que_atiende": [
     "GS-031"
    ],
-   "descripcion": "Soportar el cumplimiento parafiscal laboral y las declaraciones de tributos sobre nomina (ARC/ARI, IPP, ISLR/IGP) con el mecanismo de retenciones de la localizacion venezolana.",
+   "descripcion": "Uso del mecanismo de retenciones de la localizacion venezolana para soportar el cumplimiento parafiscal laboral y las declaraciones de tributos sobre nomina (ARC/ARI, IPP, ISLR/IGP) sobre saldos del propio sistema, reduciendo la dependencia del criterio externo del contador y la consolidacion manual.",
    "modulos": "Accounting (localizacion VE)",
    "anclas": [
     "[ODOO:19.0/accounting/withholding-taxes]",
@@ -852,7 +852,7 @@
    "grupos_que_atiende": [
     "GS-032"
    ],
-   "descripcion": "Centralizar el archivo digital ordenado por departamento y periodo y la gestion de notificaciones de entes, sustituyendo el archivo reactivo en nube sin estructura y la busqueda de urgencia ante fiscalizaciones.",
+   "descripcion": "Uso del modulo de gestion documental (Enterprise) con espacios por departamento y periodo, etiquetas, permisos y alias de correo, que centraliza el archivo digital ordenado y el flujo de notificaciones de entes, sustituyendo el archivo reactivo en nube sin estructura y la busqueda de urgencia ante fiscalizaciones.",
    "modulos": "Documents",
    "anclas": [
     "[ODOO:19.0/productivity/documents]"
@@ -886,7 +886,7 @@
    "grupos_que_atiende": [
     "GS-033"
    ],
-   "descripcion": "Marcar el seguimiento de la recepcion de la guia SUNAGRO SICA dentro del plazo del portal; capacidad sectorial sin via nativa ni de localizacion disponible.",
+   "descripcion": "Capacidad sectorial sin via nativa ni de localizacion: el seguimiento de la guia SUNAGRO SICA dentro del plazo del portal requiere desarrollo de integracion con el portal estatal para dar alerta del vencimiento y evitar la multa, ya que Odoo no la cubre de forma estandar.",
    "modulos": "Externo (SUNAGRO)",
    "anclas": [
     "[DEV:integracion-SUNAGRO-SICA]"
@@ -908,7 +908,7 @@
    "grupos_que_atiende": [
     "GS-034"
    ],
-   "descripcion": "Calcular y procesar la nomina, las horas extras, los bonos, los descuentos y las liquidaciones con estructuras y reglas salariales del modulo de nomina, sustituyendo las hojas de Excel paralelas.",
+   "descripcion": "El nucleo es el motor de nomina nativo (Enterprise) con estructuras y reglas salariales que procesa conceptos, horas extras, bonos, descuentos y liquidaciones y elimina las hojas de Excel paralelas con transcripcion manual; las reglas venezolanas (LOTTT, IVSS, FAOV, INCES) no tienen localizacion oficial y requieren configuracion/desarrollo o modulo de tercero.",
    "modulos": "Payroll",
    "anclas": [
     "[ODOO:19.0/hr/payroll]",
@@ -931,7 +931,7 @@
    "grupos_que_atiende": [
     "GS-035"
    ],
-   "descripcion": "Generar el archivo de pago bancario de la nomina y las horas extras desde el sistema, sustituyendo la elaboracion manual del TXT y las transferencias individuales.",
+   "descripcion": "El pago por lote es nativo, pero usa el formato SEPA: generar el archivo TXT del banco venezolano desde la nomina requiere desarrollo del formato de pais, con lo que el archivo de pago de nomina y horas extras sale del sistema y sustituye la elaboracion manual del TXT y las transferencias una a una.",
    "modulos": "Payroll, Accounting",
    "anclas": [
     "[ODOO:19.0/hr/payroll]",
@@ -954,7 +954,7 @@
    "grupos_que_atiende": [
     "GS-036"
    ],
-   "descripcion": "Registrar la asistencia, los retardos y las horas extras digitalmente para que alimenten el calculo de nomina, sustituyendo Tango Uno, el listado manual y los formatos fisicos.",
+   "descripcion": "Uso del modulo de asistencias nativo para capturar fichaje, retardos con tolerancia y horas extras que alimentan directamente la nomina, unificando en el sistema lo que hoy se reparte entre Tango Uno, un listado manual, Excel y formatos fisicos y eliminando los descuentos incorrectos por coberturas no notificadas.",
    "modulos": "Attendances",
    "anclas": [
     "[ODOO:19.0/hr/attendances]"
@@ -980,7 +980,7 @@
    "grupos_que_atiende": [
     "GS-037"
    ],
-   "descripcion": "Canalizar la captacion y preseleccion de candidatos en un pipeline unico de reclutamiento con postulaciones y documentacion, sustituyendo la recepcion dispersa de curriculos y la preseleccion sin formato.",
+   "descripcion": "Uso del pipeline de reclutamiento nativo con etapas, postulaciones y documentacion, que canaliza la captacion y preseleccion en un unico flujo comparable y sustituye la recepcion de curriculos por correo, presencial y grupos dispersos y la preseleccion sin formato.",
    "modulos": "Recruitment",
    "anclas": [
     "[ODOO:19.0/hr/recruitment]"
@@ -1006,7 +1006,7 @@
    "grupos_que_atiende": [
     "GS-038"
    ],
-   "descripcion": "Capturar la informacion integral del empleado (salud, carga familiar, estado civil, datos bancarios, foto), el expediente y el organigrama en un registro unico, eliminando la base Excel paralela y la dispersion en multiples repositorios.",
+   "descripcion": "Uso del maestro de empleado nativo (datos personales y bancarios, salud, carga familiar, estado civil, foto, expediente y organigrama) como registro unico, que elimina la base de datos paralela en Excel y la dispersion del expediente entre fisico, OneDrive/SharePoint y Odoo.",
    "modulos": "Employees, Documents",
    "anclas": [
     "[ODOO:19.0/hr/employees]"
@@ -1028,7 +1028,7 @@
    "grupos_que_atiende": [
     "GS-039"
    ],
-   "descripcion": "Gestionar la incorporacion y el egreso (induccion, contrato, liquidacion, devolucion de activos, baja y revocacion de accesos) como un flujo registrado del empleado, formalizando las aprobaciones hoy verbales.",
+   "descripcion": "El nucleo son los planes de actividades nativos de onboarding/offboarding que registran induccion, contrato, devolucion de activos y baja con sus aprobaciones, formalizando lo que hoy se transmite verbalmente o por WhatsApp; la revocacion de accesos y la liquidacion dependen de pasos no nativos y de Payroll, por lo que parte requiere configuracion/desarrollo.",
    "modulos": "Employees",
    "anclas": [
     "[ODOO:19.0/hr/employees/offboarding]",
@@ -1055,7 +1055,7 @@
    "grupos_que_atiende": [
     "GS-040"
    ],
-   "descripcion": "Atender permisos, reposos, vacaciones, prestamos y dias libres como solicitudes de ausencia con flujo de aprobacion registrado, sustituyendo los recibos manuales y la planificacion en Excel.",
+   "descripcion": "Uso del modulo de ausencias nativo para gestionar permisos, reposos, vacaciones, prestamos y dias libres con aprobacion y acumulacion registradas, sustituyendo los recibos manuales y la planificacion de vacaciones y horarios en Excel.",
    "modulos": "Time Off",
    "anclas": [
     "[ODOO:19.0/hr/time_off]"
@@ -1081,7 +1081,7 @@
    "grupos_que_atiende": [
     "GS-041"
    ],
-   "descripcion": "Ejecutar la evaluacion de desempeno por cargo con indicadores y escala dentro del sistema, conservando el mecanismo formal existente.",
+   "descripcion": "Uso del modulo de evaluacion de desempeno nativo (plantillas con indicadores por cargo, metas y escala), que lleva al sistema el mecanismo formal ya existente y consolida los resultados en el expediente del empleado en lugar de plantillas sueltas.",
    "modulos": "Appraisals",
    "anclas": [
     "[ODOO:19.0/hr/appraisals]"
@@ -1103,7 +1103,7 @@
    "grupos_que_atiende": [
     "GS-042"
    ],
-   "descripcion": "Registrar la entrega y devolucion de uniformes, dotacion y equipos/llaves asignados al personal como activos rastreables, sustituyendo la tabla de ganchos y los cuadernos fisicos.",
+   "descripcion": "El nucleo es la asignacion de equipos y dotacion como activos al empleado (modelo Maintenance), que da trazabilidad a uniformes, equipos y llaves y sustituye la tabla de ganchos y los cuadernos fisicos; el flujo formal de entrega/devolucion y el control de llaves fisicas no son dedicados y requieren configuracion/desarrollo.",
    "modulos": "Employees, Inventory",
    "anclas": [
     "[ODOO:19.0/hr/employees/equipment]",
@@ -1130,7 +1130,7 @@
    "grupos_que_atiende": [
     "GS-043"
    ],
-   "descripcion": "Controlar la vigencia de los certificados sanitarios del personal de A&B con actividades programadas que alerten antes del vencimiento.",
+   "descripcion": "Uso de la alerta de vencimiento nativa del maestro de empleado (actividades programadas) para controlar la vigencia de los certificados de manipulacion de alimentos y de salud del personal de A&B, sustituyendo la revision mensual manual y preparando al area ante visitas de Sanidad.",
    "modulos": "Employees",
    "anclas": [
     "[ODOO:19.0/hr/employees/new_employee]",
@@ -1153,7 +1153,7 @@
    "grupos_que_atiende": [
     "GS-044"
    ],
-   "descripcion": "Gestionar el ciclo de pasantes (convenio, expediente, horarios, evaluacion final y reporte) como un flujo registrado del area de personal.",
+   "descripcion": "El nucleo combina los modulos nativos de reclutamiento, empleados y evaluacion para llevar el ciclo de pasantes (expediente, horarios, evaluacion final y reporte) como un flujo registrado; el convenio de pasantia especifico con universidades requiere configuracion/desarrollo.",
    "modulos": "Employees, Recruitment",
    "anclas": [
     "[ODOO:19.0/hr/recruitment]",
@@ -1177,7 +1177,7 @@
    "grupos_que_atiende": [
     "GS-045"
    ],
-   "descripcion": "Marcar el soporte a la gestion de Seguridad y Salud Laboral (politicas SST y comite ante INPSASEL); capacidad regulatoria sin via nativa identificada.",
+   "descripcion": "Capacidad regulatoria sin via nativa: el cumplimiento SST y el comite ante INPSASEL requieren desarrollo; los modulos de gestion documental y encuestas pueden soportar la evidencia y los registros, pero el cumplimiento en si no es cubierto por Odoo de forma estandar.",
    "modulos": "SST",
    "anclas": [
     "[DEV:SST-INPSASEL-VE]"
@@ -1199,7 +1199,7 @@
    "grupos_que_atiende": [
     "GS-046"
    ],
-   "descripcion": "Soportar la comunicacion interna, el reporte de incidencias y las comunicaciones de cumpleanos/agasajos con mensajeria interna y actividades programadas, reduciendo la dependencia de WhatsApp como primer canal.",
+   "descripcion": "Uso de la mensajeria interna nativa (canales y mensajes directos) y las actividades programadas para la coordinacion interna, el reporte de novedades y las comunicaciones de cumpleanos/agasajos, dejando trazo de las novedades en el sistema y reduciendo la dependencia de WhatsApp como primer canal.",
    "modulos": "Discuss, Employees",
    "anclas": [
     "[ODOO:19.0/productivity/discuss]",
@@ -1222,7 +1222,7 @@
    "grupos_que_atiende": [
     "GS-047"
    ],
-   "descripcion": "Gestionar reservas, check-in/out, datos de huesped, disponibilidad y estado de limpieza/mantenimiento de habitaciones en un PMS hotelero sobre Odoo, sustituyendo Cloudbeds y resolviendo el estado de habitaciones no confiable.",
+   "descripcion": "Odoo 19 no tiene PMS hotelero oficial: la gestion de reservas, check-in/out, datos de huesped, disponibilidad y estado de limpieza/mantenimiento de habitacion requiere via OCA, modulo de tercero o desarrollo, que sustituiria a Cloudbeds y resolveria el estado de habitacion no confiable que hoy obliga a verificar fisicamente.",
    "modulos": "Hotel/PMS",
    "anclas": [
     "[DEV:PMS-hotel-OCA-o-terceros]"
@@ -1248,7 +1248,7 @@
    "grupos_que_atiende": [
     "GS-048"
    ],
-   "descripcion": "Vender en las tiendas con un punto de venta enlazado a inventario que descuente stock y disponga de un perfil de cliente generico para visitantes, eliminando la venta en papel y el descuadre de inventario.",
+   "descripcion": "Punto de venta de tienda cuyo nucleo enlazado a inventario es nativo (descuento automatico de stock y cliente generico para visitantes) y que elimina la venta en papel ajustada a mano en Cloudbeds y el descuadre de inventario; la emision del documento fiscal venezolano requiere desarrollo/integracion de localizacion fiscal sobre ese nucleo.",
    "modulos": "Point of Sale, Inventory",
    "anclas": [
     "[DEV:pos-tienda-fiscal-ve]"
@@ -1274,7 +1274,7 @@
    "grupos_que_atiende": [
     "GS-049"
    ],
-   "descripcion": "Marcar la integracion de la programacion de llaves electronicas de habitacion (TT Hotel/Time Locks); capacidad de hardware externo sin via nativa Odoo.",
+   "descripcion": "Capacidad de hardware externo sin via nativa: la programacion de llaves electronicas de habitacion (TT Hotel/Time Locks/Lockia) requiere desarrollo de integracion a medida con las cerraduras, no cubierto por Odoo de forma estandar.",
    "modulos": "Externo (cerraduras)",
    "anclas": [
     "[DEV:integracion-cerraduras-TTHotel]"
@@ -1296,7 +1296,7 @@
    "grupos_que_atiende": [
     "GS-050"
    ],
-   "descripcion": "Centralizar los canales de atencion (mensajeria, correo, telefono) y la gestion de prospectos en un flujo unico con conversion a reserva, conservando la asistencia automatizada y el modo manual de respaldo.",
+   "descripcion": "El nucleo son los modulos nativos de CRM y chat en vivo que centralizan mensajeria, correo y telefono y convierten la conversacion en prospecto en un pipeline unico, conservando la asistencia automatizada y el modo manual de respaldo; la conversion del prospecto a reserva depende del PMS, por lo que esa parte no es nativa y requiere desarrollo.",
    "modulos": "CRM, Livechat",
    "anclas": [
     "[ODOO:19.0/sales/crm]",
@@ -1324,7 +1324,7 @@
    "grupos_que_atiende": [
     "GS-051"
    ],
-   "descripcion": "Complementar la resolucion reactiva de quejas con un instrumento de medicion de satisfaccion del huesped.",
+   "descripcion": "Uso del modulo de encuestas nativo (envio, scoring y analisis) como instrumento documentado de medicion de satisfaccion del huesped, que sustituye la gestion puramente reactiva de quejas por un dato estructurado y consultable.",
    "modulos": "Surveys",
    "anclas": [
     "[ODOO:19.0/marketing/surveys]"
@@ -1346,7 +1346,7 @@
    "grupos_que_atiende": [
     "GS-052"
    ],
-   "descripcion": "Soportar la capacitacion del personal nuevo sobre los sistemas y normativas con material disponible y vigente, reduciendo la dependencia de la memoria de un solo rol.",
+   "descripcion": "Uso del modulo de formacion nativo (cursos con contenidos, evaluaciones y certificacion) para la capacitacion del personal nuevo sobre sistemas y normativas, que centraliza un instructivo vigente y disponible y reduce la dependencia de la memoria y disponibilidad de un solo rol.",
    "modulos": "eLearning",
    "anclas": [
     "[ODOO:19.0/websites/elearning]"
@@ -1368,7 +1368,7 @@
    "grupos_que_atiende": [
     "GS-053"
    ],
-   "descripcion": "Capturar las solicitudes de reparacion como ordenes de mantenimiento con estado y responsable, dando trazabilidad al tiempo de respuesta y al cierre, incluyendo reparaciones con tecnico externo.",
+   "descripcion": "Uso del modulo de mantenimiento nativo para capturar las solicitudes de reparacion como ordenes con responsable y etapas, que centraliza en el sistema lo que hoy llega por WhatsApp, radio o de forma verbal y da trazabilidad del tiempo de respuesta y del cierre, incluyendo las reparaciones con tecnico externo.",
    "modulos": "Maintenance",
    "anclas": [
     "[ODOO:19.0/maintenance/maintenance_requests]"
@@ -1394,7 +1394,7 @@
    "grupos_que_atiende": [
     "GS-054"
    ],
-   "descripcion": "Registrar los equipos criticos como activos con planes de mantenimiento preventivo por tiempo o uso, sustituyendo la dependencia del criterio individual y la verificacion manual.",
+   "descripcion": "El nucleo es el modulo de mantenimiento nativo que registra los equipos criticos como activos con planes preventivos por tiempo (MTBF), sustituyendo el trabajo reactivo basado en el criterio del operador; el preventivo por uso/medidor no esta documentado como nativo y requiere configuracion/desarrollo.",
    "modulos": "Maintenance",
    "anclas": [
     "[ODOO:19.0/maintenance/add_new_equipment]",
@@ -1417,7 +1417,7 @@
    "grupos_que_atiende": [
     "GS-055"
    ],
-   "descripcion": "Gestionar la solicitud y recepcion de los servicios basicos (agua, gasoil, gas) como orden de compra y recepcion de inventario con control de niveles, sustituyendo la lectura manual y la solicitud bajo demanda.",
+   "descripcion": "Uso de la orden de compra y la recepcion de inventario nativas para gestionar agua, gasoil y gas con control de niveles de stock, que anticipa la reposicion y sustituye la lectura manual y la solicitud bajo demanda que hoy expone al hotel a quedarse sin autonomia energetica o sin gas.",
    "modulos": "Purchase, Inventory",
    "anclas": [
     "[ODOO:19.0/purchase/purchase-order]",
@@ -1437,7 +1437,7 @@
    "grupos_que_atiende": [
     "GS-057"
    ],
-   "descripcion": "Generar el reporte regulatorio diario de ocupacion e ingresos para Venetur e INATUR a partir de los datos del sistema, reduciendo la reconstruccion nocturna y manual que cruza dos sistemas.",
+   "descripcion": "No existe reporte Venetur/INATUR nativo: aunque los ingresos por categoria salen de contabilidad y POS, los indicadores de ocupacion dependen del PMS, por lo que generar el reporte regulatorio diario requiere desarrollo que consolide ambas fuentes y elimine la reconstruccion nocturna y manual en el formato Excel del organismo.",
    "modulos": "Accounting, Hotel/PMS",
    "anclas": [
     "[DEV:reporte-venetur-inatur]"
@@ -1463,7 +1463,7 @@
    "grupos_que_atiende": [
     "GS-058"
    ],
-   "descripcion": "Marcar la administracion de cuentas y usuarios de las plataformas bancarias con un responsable unico y niveles de aprobacion, separada de la operacion que controla; gestion de acceso externo sin via nativa.",
+   "descripcion": "Gestion de acceso externo sin via nativa: la administracion de cuentas y usuarios de las plataformas bancarias vive fuera de Odoo, por lo que se aborda como definicion de un responsable unico y niveles de aprobacion separados de la operacion que controla, no como capacidad del sistema.",
    "modulos": "Externo (banca)",
    "anclas": [
     "[DEV:gestion-usuarios-banca]"
@@ -1489,7 +1489,7 @@
    "grupos_que_atiende": [
     "GS-059"
    ],
-   "descripcion": "Conciliar las ventas y cuotas gestionadas por Cashea y los lotes de Credicard contra los recibos de cobro y la posicion financiera, formalizando el seguimiento del cierre de lote de los puntos de venta.",
+   "descripcion": "Uso de la facturacion y los recibos de cobro nativos para conciliar las ventas y cuotas de Cashea y los lotes de Credicard contra la posicion financiera, formalizando en el sistema el seguimiento del cierre de lote de cada punto de venta y el cobro por morosidad.",
    "modulos": "Accounting",
    "anclas": [
     "[ODOO:19.0/accounting/customer-invoice]"
@@ -1512,7 +1512,7 @@
    "grupos_que_atiende": [
     "GS-060"
    ],
-   "descripcion": "Facturar entre las companias del grupo (Eracon Salud/Alimentos y SERAC) con la facturacion entre companias, sustituyendo la actualizacion manual del inventario intercompany.",
+   "descripcion": "Uso de la facturacion entre companias nativa para las operaciones recurrentes entre Eracon Alimentos/Salud y SERAC, que genera de forma cruzada la factura y el movimiento en la otra compania y sustituye la actualizacion manual del inventario intercompany.",
    "modulos": "Accounting, Inter-company",
    "anclas": [
     "[ODOO:19.0/accounting/customer-invoice]"
@@ -1531,7 +1531,7 @@
    "grupos_que_atiende": [
     "GS-061"
    ],
-   "descripcion": "Soportar la supervision de control de gestion con cuestionarios periodicos por departamento, plan de trabajo y seguimiento de hallazgos y novedades, sustituyendo Word, WhatsApp y el escalamiento informal.",
+   "descripcion": "Uso de los modulos nativos de encuestas y de proyectos para la supervision de control de gestion (cuestionarios periodicos por departamento, plan de trabajo y seguimiento de hallazgos al cierre), que consolida los resultados en tiempo real y sustituye el registro en Word, la comunicacion por WhatsApp y el escalamiento informal.",
    "modulos": "Surveys, Project",
    "anclas": [
     "[ODOO:19.0/marketing/surveys]",
@@ -1558,7 +1558,7 @@
    "grupos_que_atiende": [
     "GS-062"
    ],
-   "descripcion": "Marcar la administracion de usuarios, clientes y metodos de pago de los sistemas de punto de servicio (Cloudbeds, Poster) en tanto persistan como sistemas externos; configuracion de terceros sin via nativa Odoo.",
+   "descripcion": "Configuracion de terceros sin via nativa: mientras persistan Cloudbeds y Poster como sistemas externos, la administracion de sus usuarios, clientes y metodos de pago se mantiene fuera de Odoo y solo una integracion a medida la acercaria al sistema; de migrar a POS/PMS sobre Odoo se absorberia en sus maestros.",
    "modulos": "Externo (Cloudbeds/Poster)",
    "anclas": [
     "[DEV:integracion-Cloudbeds-Poster]"
@@ -1581,7 +1581,7 @@
     "GS-063",
     "GS-056"
    ],
-   "descripcion": "Marcar como fuera del alcance de Odoo las tareas operativas puramente fisicas y el soporte ofimatico general (limpieza, montaje, jardineria, piscina, copias, atencion general); no requieren capacidad del sistema y se documentan para descarte.",
+   "descripcion": "Fuera del alcance de Odoo: las tareas operativas puramente fisicas y el soporte ofimatico general (limpieza, montaje, jardineria, piscina, copias, atencion general) no implican transaccion ni dato maestro y no son objeto del sistema; se documentan para descarte explicito.",
    "modulos": "Fuera de alcance",
    "anclas": [
     "[FUERA-DE-ALCANCE]"

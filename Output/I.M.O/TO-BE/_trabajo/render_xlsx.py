@@ -7,6 +7,13 @@ OUT = os.path.join(os.path.dirname(BASE), "Matriz_y_Propuestas.xlsx")
 
 matriz = json.load(open(os.path.join(BASE, "matriz.json")))
 prop = json.load(open(os.path.join(BASE, "propuestas.json")))
+inv = json.load(open(os.path.join(BASE, "inventario.json")))
+
+# lookup codigo -> nombre de tarea
+NAME = {}
+for dep in inv["departamentos"]:
+    for t in dep["tareas"]:
+        NAME[t["codigo"]] = t.get("nombre", "")
 
 def esc(s):
     s = "" if s is None else str(s)
@@ -43,24 +50,22 @@ for g in matriz["grupos"]:
     base = [g["id"], g.get("proceso_normalizado", ""), g.get("criterios", "")]
     celdas = g.get("celdas", {})
     for c, _ in deptos:
-        base.append(", ".join(celdas.get(c, [])))
+        codes = celdas.get(c, [])
+        base.append("\n".join(f"{code} — {NAME.get(code, '')}" for code in codes))
     rows1.append(base)
-w1 = [10, 38, 50] + [16] * len(deptos)
+w1 = [10, 34, 44] + [30] * len(deptos)
 
 # --- Hoja 2: Propuestas ---
-h2 = ["ID", "Tipo", "Edicion", "Grupos que atiende", "Descripcion (el que, no el como)",
-      "Modulos", "Anclas (Odoo / L10N / DEV)", "Hallazgos RX que resuelve",
-      "Validacion vs doc oficial Odoo 19", "Doc oficial", "Aliado experto sugerido"]
+h2 = ["ID", "Clasificacion", "Edicion", "Grupos que atiende", "Propuesta de solucion",
+      "Modulos", "Validacion vs doc oficial Odoo 19", "Doc oficial"]
 rows2 = []
 for p in prop["propuestas"]:
-    hall = "\n".join(f"[{h['depto']}] {h['texto']}" for h in p.get("hallazgos_rx_resuelve", []))
     rows2.append([
         p["id"], p.get("tipo", ""), p.get("edicion", ""), ", ".join(p.get("grupos_que_atiende", [])),
         p.get("descripcion", ""), p.get("modulos", ""),
-        " ".join(p.get("anclas", [])), hall,
-        p.get("validacion", ""), p.get("doc_oficial", ""), p.get("aliado_experto_sugerido", "") or "",
+        p.get("validacion", ""), p.get("doc_oficial", ""),
     ])
-w2 = [14, 18, 22, 16, 50, 20, 38, 55, 50, 45, 18]
+w2 = [14, 20, 22, 16, 60, 22, 55, 45]
 
 CT = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
